@@ -109,6 +109,10 @@ def prepare_columns():
 def search_index():
     idx = [{"title": s["name"], "url": "services/%s.html" % s["slug"], "type": "진료 안내",
             "keywords": s["short"] + " " + " ".join(s["who"])} for s in SERVICES]
+    idx.append({"title": "오창 안면마비 한의원 | 구안와사 맞춤한약 진료",
+                "url": "treatment/facial-palsy/herbal-care.html",
+                "type": "안면마비 진료",
+                "keywords": "오창한의원 오창 안면마비 한의원 오창 구안와사 안면신경마비 한약 상담"})
     for c in CONDITIONS:
         idx.append({"title": "오창 %s 한의원" % c["name"],
                     "url": "conditions/%s.html" % urllib.parse.quote(c["slug"], safe=""),
@@ -187,10 +191,14 @@ def main():
         target = next((c["slug"] for c in CONDITIONS if c["name"].replace(" ", "") == key), None)
         ticker_links[t] = ("conditions/%s.html" % urllib.parse.quote(target, safe="")) if target else "conditions/index.html"
 
+    website_ld = {"@context": "https://schema.org", "@type": "WebSite",
+                  "name": SITE["seo_site_name"], "alternateName": SITE["name"],
+                  "url": SITE["url"] + "/", "inLanguage": "ko-KR"}
     render("index.html", "index.html", featured=FEATURED, ticker1=TICKER_ROW1, ticker2=TICKER_ROW2,
            ticker_links=ticker_links, stats=STATS, record=RECORD, core=CORE, who=WHO, why=WHY,
-           home_faq=HOME_FAQ, search_index=idx_json)
+           home_faq=HOME_FAQ, search_index=idx_json, jsonld=jsonld("index.html", website_ld))
 
+    render("facial_palsy_herbal.html", "treatment/facial-palsy/herbal-care.html")
     render("services_index.html", "services/index.html")
     for s in SERVICES:
         faq_ld = {"@context": "https://schema.org", "@type": "FAQPage",
