@@ -23,6 +23,12 @@
 
 <section class="section">
   <div class="container">
+    <div class="answer-box" style="margin:0 0 32px;border-left:4px solid var(--jade)">
+      <div class="label">안면·두통 진료 안내</div>
+      <h2 style="font-size:clamp(22px,2.5vw,29px);margin:10px 0">오창 안면마비 한의원 · 구안와사 맞춤한약</h2>
+      <p>초기 원인 확인, 한약 상담 전 복용약 점검, 눈 보호와 회복기 관리 사항을 정리했습니다.</p>
+      <a class="btn btn-jade" style="margin-top:16px" href="{{ root }}treatment/facial-palsy/herbal-care.html">안면마비 상세페이지 보기 →</a>
+    </div>
     <nav class="cat-nav" aria-label="질환 분류 바로가기">
       {% for cat in categories %}<a href="#{{ cat.id }}">{{ cat.name }} <span>{{ cat.rows|length }}</span></a>{% endfor %}
     </nav>
