@@ -1,0 +1,3 @@
+# Prevent indexing of temporary Cloudflare staging site.
+/*
+  X-Robots-Tag: noindex, nofollow
