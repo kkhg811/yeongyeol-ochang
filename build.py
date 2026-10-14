@@ -134,11 +134,12 @@ def search_index():
 
 def jsonld(page_path, extra=None):
     data = {
-        "@context": "https://schema.org", "@type": "MedicalClinic", "name": SITE["name"],
+        "@context": "https://schema.org", "@type": "MedicalClinic",
+        "@id": SITE["url"] + "/#clinic", "name": SITE["name"],
         "url": canon(page_path), "telephone": "+82-" + SITE["phone"][1:],
         "image": SITE["url"] + "/images/hero/directors-team.webp",
         "logo": SITE["url"] + "/images/logo/symbol-green-512.png",
-        "address": {"@type": "PostalAddress", "streetAddress": "오창읍 2산단로 132, 301·302호",
+        "address": {"@type": "PostalAddress", "streetAddress": "오창읍 2산단로 132, 부민빌딩 3층",
                     "addressLocality": "청주시 청원구", "addressRegion": "충청북도",
                     "postalCode": "28116", "addressCountry": "KR"},
         "geo": {"@type": "GeoCoordinates", "latitude": SITE["coords"]["lat"], "longitude": SITE["coords"]["lng"]},
@@ -192,13 +193,21 @@ def main():
         ticker_links[t] = ("conditions/%s.html" % urllib.parse.quote(target, safe="")) if target else "conditions/index.html"
 
     website_ld = {"@context": "https://schema.org", "@type": "WebSite",
+                  "@id": SITE["url"] + "/#website",
                   "name": SITE["seo_site_name"], "alternateName": SITE["name"],
-                  "url": SITE["url"] + "/", "inLanguage": "ko-KR"}
+                  "url": SITE["url"] + "/", "inLanguage": "ko-KR",
+                  "publisher": {"@id": SITE["url"] + "/#clinic"}}
     render("index.html", "index.html", featured=FEATURED, ticker1=TICKER_ROW1, ticker2=TICKER_ROW2,
            ticker_links=ticker_links, stats=STATS, record=RECORD, core=CORE, who=WHO, why=WHY,
            home_faq=HOME_FAQ, search_index=idx_json, jsonld=jsonld("index.html", website_ld))
 
     render("facial_palsy_herbal.html", "treatment/facial-palsy/herbal-care.html")
+    guide_ld = {"@context": "https://schema.org", "@type": "WebPage",
+                "name": "오창한의원 선택 가이드 | 연결한의원 청주오창",
+                "url": SITE["url"] + "/guide/ochang-clinic",
+                "description": "오창한의원 선택 전 확인할 의료진, 진료 분야, 방문 조건 안내"}
+    render("guide_ochang.html", "guide/ochang-clinic.html",
+           jsonld=jsonld("guide/ochang-clinic.html", guide_ld))
     render("services_index.html", "services/index.html")
     for s in SERVICES:
         faq_ld = {"@context": "https://schema.org", "@type": "FAQPage",
