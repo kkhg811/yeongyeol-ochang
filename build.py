@@ -134,7 +134,8 @@ def search_index():
 
 def jsonld(page_path, extra=None):
     data = {
-        "@context": "https://schema.org", "@type": "MedicalClinic", "name": SITE["name"],
+        "@context": "https://schema.org", "@type": "MedicalClinic",
+        "@id": SITE["url"] + "/#clinic", "name": SITE["name"],
         "url": canon(page_path), "telephone": "+82-" + SITE["phone"][1:],
         "image": SITE["url"] + "/images/hero/directors-team.webp",
         "logo": SITE["url"] + "/images/logo/symbol-green-512.png",
@@ -192,8 +193,10 @@ def main():
         ticker_links[t] = ("conditions/%s.html" % urllib.parse.quote(target, safe="")) if target else "conditions/index.html"
 
     website_ld = {"@context": "https://schema.org", "@type": "WebSite",
+                  "@id": SITE["url"] + "/#website",
                   "name": SITE["seo_site_name"], "alternateName": SITE["name"],
-                  "url": SITE["url"] + "/", "inLanguage": "ko-KR"}
+                  "url": SITE["url"] + "/", "inLanguage": "ko-KR",
+                  "publisher": {"@id": SITE["url"] + "/#clinic"}}
     render("index.html", "index.html", featured=FEATURED, ticker1=TICKER_ROW1, ticker2=TICKER_ROW2,
            ticker_links=ticker_links, stats=STATS, record=RECORD, core=CORE, who=WHO, why=WHY,
            home_faq=HOME_FAQ, search_index=idx_json, jsonld=jsonld("index.html", website_ld))

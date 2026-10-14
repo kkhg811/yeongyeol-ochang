@@ -6,6 +6,8 @@
 <title>{% block title %}{{ site.title }}{% endblock %}</title>
 <meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
 <meta name="keywords" content="{% block keywords %}{{ site.keywords }}{% endblock %}">
+<meta name="application-name" content="{{ site.seo_site_name }}">
+<meta name="apple-mobile-web-app-title" content="{{ site.seo_site_name }}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{{ canonical }}">
 <meta property="og:type" content="website">
