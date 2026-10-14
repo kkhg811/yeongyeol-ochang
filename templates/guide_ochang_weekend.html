@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}오창 한의원 토요일·일요일 진료시간 | 연결한의원 청주오창{% endblock %}
+{% block description %}오창 한의원 토요일·일요일·공휴일 09:30~15:00 진료 안내. 연결한의원 청주오창 주말 진료, 의료진 일정, 예약·주차 정보.{% endblock %}
+{% block og_image %}images/location/map-poster.webp{% endblock %}
+{% block keywords %}오창 한의원 토요일,오창 한의원 일요일,오창 주말 한의원,연결한의원 청주오창{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb"><a href="{{ root }}index.html">홈</a><span>/</span><span>주말 진료 안내</span></nav>
+    <p class="eyebrow">Weekend and holidays</p>
+    <h1>오창 한의원 토요일·일요일 진료 안내</h1>
+    <p class="lead">연결한의원 청주오창의 토요일·일요일·공휴일 진료시간과 예약·주차 정보를 한곳에 정리했습니다. 검색 시점과 실제 접수 상황이 다를 수 있으므로 방문 전 확인해 주세요.</p>
+    <div class="btn-group" style="margin-top:22px">
+      <a class="btn btn-brick" href="{{ site.naver_booking }}" target="_blank" rel="noopener">네이버 예약</a>
+      <a class="btn btn-outline" href="tel:{{ site.phone_tel }}">전화 확인 {{ site.phone }}</a>
+      <a class="btn btn-outline" href="{{ root }}location.html">위치·주차 안내</a>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Weekend opening hours</p>
+    <h2 class="h2">토요일·일요일·공휴일 진료시간</h2>
+    <div class="grid-3">
+      <div class="tile" id="saturday"><h3>토요일 진료</h3><p><strong>09:30~15:00</strong></p><p>점심시간 없이 진료를 안내합니다. 원장별 진료 요일과 접수 마감은 방문 전 확인해 주세요.</p></div>
+      <div class="tile" id="sunday"><h3>일요일 진료</h3><p><strong>09:30~15:00</strong></p><p>점심시간 없이 진료를 안내합니다. 당일 예약과 의료진 근무 상황은 사전 확인이 필요합니다.</p></div>
+      <div class="tile"><h3>공휴일 및 평일 진료</h3><p>공휴일은 09:30~15:00로 안내합니다. 평일은 09:30~20:00, 점심 13:00~14:00입니다. 특별 일정은 변동될 수 있습니다.</p></div>
+    </div>
+    <p class="small muted" style="margin-top:18px">안내된 진료시간은 연결한의원 청주오창 홈페이지의 운영정보 기준이며, 특정 날짜의 실시간 진료 가능 여부를 보장하지 않습니다.</p>
+  </div>
+</section>
+<section class="section ivory">
+  <div class="container">
+    <p class="eyebrow">Before your visit</p>
+    <h2 class="h2">오창에서 주말 한의원을 찾을 때 확인할 것</h2>
+    <div class="why-list">
+      <div class="why-item"><h3>1. 토요일·일요일에도 원하는 진료를 받을 수 있나요?</h3><p>침·약침·추나요법·한약 상담의 적용 여부는 진찰과 의료진 일정에 따라 달라집니다. 방문 목적을 예약 시 미리 알려주세요.</p><a class="link-arrow" href="{{ root }}services/index.html">진료과목 확인 →</a></div>
+      <div class="why-item"><h3>2. 토요일과 일요일에 담당 원장이 같은가요?</h3><p>김현교·신재형·이상현 의료진은 요일별로 진료 일정이 다릅니다. 원하는 의료진의 주말 근무 여부를 미리 확인하세요.</p><a class="link-arrow" href="{{ root }}about.html">의료진과 진료요일 확인 →</a></div>
+      <div class="why-item"><h3>3. 주말 교통사고 진료를 문의할 수 있나요?</h3><p>증상 시작 시점과 사고 발생일, 기존 검사·진료 내역, 자동차보험 접수 상황을 알려주시면 진료 가능 여부를 안내받는 데 도움이 됩니다. 보험 적용 범위는 개별 조건에 따라 다릅니다.</p><a class="link-arrow" href="{{ root }}services/accident.html">교통사고 후 진료 안내 →</a></div>
+      <div class="why-item"><h3>4. 급성 증상이 있다면 한의원으로 바로 가도 되나요?</h3><p>갑작스러운 편측 마비나 언어 장애, 의식 변화, 심한 흉통, 호흡곤란 등은 주말 여부와 관계없이 119 또는 응급실 진료가 우선입니다.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Directions and booking</p>
+    <h2 class="h2">주말 진료 위치·예약 안내</h2>
+    <p><strong>의료기관명:</strong> 연결한의원 청주오창</p>
+    <p><strong>주소:</strong> 충북 청주시 청원구 오창읍 2산단로 132, 부민빌딩 3층 (부영6단지 정문 건너편)</p>
+    <p><strong>전화:</strong> 043-715-3688</p>
+    <p><strong>안내 진료시간:</strong> 토요일·일요일·공휴일 09:30~15:00 · 평일 09:30~20:00(점심 13:00~14:00)</p>
+    <p>주말에는 방문 가능한 시간과 담당 의료진을 먼저 확인하시고, 주차장 위치는 오시는 길 안내 페이지를 참고해 주세요.</p>
+    <div class="btn-group" style="margin-top:22px">
+      <a class="btn btn-jade" href="{{ root }}location.html">오시는 길·주차</a>
+      <a class="btn btn-brick" href="{{ site.naver_booking }}" target="_blank" rel="noopener">네이버 예약</a>
+      <a class="btn btn-outline" href="tel:{{ site.phone_tel }}">전화 문의</a>
+    </div>
+  </div>
+</section>
+<section class="section ivory tight"><div class="container"><p class="small muted">페이지 정리일: 2026.10.14 · 진료시간과 담당 의료진 일정은 변경될 수 있습니다. 방문 전 한의원에 확인해 주세요. 검색순위나 다른 의료기관보다 우수한 진료 결과를 보장하는 내용이 아닙니다.</p></div></section>
+{% endblock %}
