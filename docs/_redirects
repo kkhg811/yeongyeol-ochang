@@ -1,0 +1,3 @@
+# Test only: verify whether Cloudflare Workers static assets honors these before automatic 307 HTML canonicalization.
+/index.html / 301
+/services/chuna.html /services/chuna 301
