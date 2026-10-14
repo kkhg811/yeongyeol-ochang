@@ -138,7 +138,7 @@ def jsonld(page_path, extra=None):
         "url": canon(page_path), "telephone": "+82-" + SITE["phone"][1:],
         "image": SITE["url"] + "/images/hero/directors-team.webp",
         "logo": SITE["url"] + "/images/logo/symbol-green-512.png",
-        "address": {"@type": "PostalAddress", "streetAddress": "오창읍 2산단로 132, 301·302호",
+        "address": {"@type": "PostalAddress", "streetAddress": "오창읍 2산단로 132, 부민빌딩 3층",
                     "addressLocality": "청주시 청원구", "addressRegion": "충청북도",
                     "postalCode": "28116", "addressCountry": "KR"},
         "geo": {"@type": "GeoCoordinates", "latitude": SITE["coords"]["lat"], "longitude": SITE["coords"]["lng"]},
