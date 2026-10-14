@@ -203,6 +203,8 @@ def main():
 
     render("facial_palsy_herbal.html", "treatment/facial-palsy/herbal-care.html")
     render("guide_ochang_weekend.html", "guide/ochang-weekend-clinic.html")
+    render("guide_ochang_saturday.html", "guide/ochang-saturday.html")
+    render("guide_ochang_sunday.html", "guide/ochang-sunday.html")
     guide_ld = {"@context": "https://schema.org", "@type": "WebPage",
                 "name": "오창한의원 선택 가이드 | 연결한의원 청주오창",
                 "url": SITE["url"] + "/guide/ochang-clinic",
