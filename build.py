@@ -199,6 +199,12 @@ def main():
            home_faq=HOME_FAQ, search_index=idx_json, jsonld=jsonld("index.html", website_ld))
 
     render("facial_palsy_herbal.html", "treatment/facial-palsy/herbal-care.html")
+    guide_ld = {"@context": "https://schema.org", "@type": "WebPage",
+                "name": "오창한의원 선택 가이드 | 연결한의원 청주오창",
+                "url": SITE["url"] + "/guide/ochang-clinic",
+                "description": "오창한의원 선택 전 확인할 의료진, 진료 분야, 방문 조건 안내"}
+    render("guide_ochang.html", "guide/ochang-clinic.html",
+           jsonld=jsonld("guide/ochang-clinic.html", guide_ld))
     render("services_index.html", "services/index.html")
     for s in SERVICES:
         faq_ld = {"@context": "https://schema.org", "@type": "FAQPage",
