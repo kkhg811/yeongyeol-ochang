@@ -50,3 +50,29 @@ python serve.py        # http://localhost:8791 로 브라우저가 열립니다
 
 `docs/` 폴더 안의 파일을 그대로 웹호스팅(카페24·가비아·Netlify·Vercel·GitHub Pages 등)에 업로드하면 됩니다.
 도메인은 `src/site_info.py`의 `url` 값(현재 https://www.yeongyeolochangkmc.co.kr)을 기준으로 canonical·sitemap이 생성됩니다.
+
+## 변경 페이지를 네이버에 알리기 (IndexNow)
+
+네이버 계정 로그인 없이 공식 IndexNow API로 실제 변경 페이지를 알릴 수 있습니다.
+소유 확인용 텍스트 파일은 `docs/`에 포함되며 `tools/indexnow.json`이 해당 파일을 가리킵니다.
+이 파일은 빌드 시 지워지지 않으므로 배포 결과에 함께 포함해 주세요.
+
+변경한 HTML을 빌드한 뒤, 먼저 전송 없이 설정과 대표 주소를 검사합니다.
+
+```sh
+python tools/notify_indexnow.py --dry-run --files docs/index.html docs/guide/ochang-clinic.html
+```
+
+운영 사이트 배포가 성공한 뒤에만 실제 알림을 실행합니다.
+
+```sh
+python tools/notify_indexnow.py --submit --files docs/index.html docs/guide/ochang-clinic.html
+```
+
+실제 알림 전에 운영 사이트의 소유 확인 파일과 페이지 제목·본문·링크가 로컬 수정본과
+일치하는지 확인합니다. 이전 내용이 남아 있으면 전송하지 않습니다.
+HTTP 200은 알림 전송 성공, 202는 수신 후 소유 확인 중이라는 뜻입니다.
+색인 완료나 검색 순위 상승을 뜻하지는 않습니다. 과거의 모든 URL을 일괄 제출하지 말고
+도입 이후 실제로 변경한 페이지만 지정하세요. 실패 시 자동 반복 전송은 하지 않습니다.
+
+공식 안내: https://searchadvisor.naver.com/guide/indexnow-about

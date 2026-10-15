@@ -318,6 +318,13 @@ button { font-family: inherit; cursor: pointer; }
 .clinic-choice-guide .section > .container > .h2 { margin-bottom: 18px; }
 .clinic-choice-guide .section > .container > p + p { margin-top: 14px; }
 .clinic-choice-guide .why-list { margin-top: 28px; }
+.clinic-choice-guide [id] { scroll-margin-top: calc(var(--header-h) + 20px); }
+.clinic-choice-guide .hero-chips a { color: var(--jade); background: var(--white); border-color: var(--line); }
+.clinic-choice-guide .hero-chips a:hover { background: var(--jadetint); }
+.clinic-choice-guide .visit-photos { margin-top: 28px; align-items: start; }
+.clinic-choice-guide .visit-photos figure { margin: 0; }
+.clinic-choice-guide .visit-photos img { width: 100%; border: 1px solid var(--line); border-radius: var(--radius); }
+.clinic-choice-guide .visit-photos figcaption { margin-top: 10px; }
 
 /* ── WHY ────────────────────────────────────────────────────────────────── */
 .why-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 48px; margin-top: 8px; }
