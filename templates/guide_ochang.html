@@ -11,6 +11,11 @@
     <p class="eyebrow">Choosing a clinic · Cheongju Ochang</p>
     <h1>오창한의원 추천·선택 가이드</h1>
     <p class="lead">내 증상에 맞는 의료진과 진료 분야, 치료 전 비용 상담, 방문 시간과 주차까지. 연결한의원 청주오창에 내원하기 전 직접 확인할 정보를 정리했습니다.</p>
+    <nav class="hero-chips" aria-label="첫 방문 안내 바로가기">
+      <a href="#doctors-schedule">의료진·진료일정</a>
+      <a href="#cost-questions">비용·보험 확인</a>
+      <a href="#visit-preparation">진료시간·방문 준비</a>
+    </nav>
     <div class="btn-group" style="margin-top:22px">
       <a class="btn btn-brick" href="{{ site.naver_booking }}" target="_blank" rel="noopener">네이버 예약</a>
       <a class="btn btn-outline" href="{{ root }}location.html">위치·주차 확인</a>
@@ -33,7 +38,7 @@
     <p>검색순위나 후기만으로 특정 의료기관이 모든 환자에게 적합하다고 판단하기 어렵습니다. 현재 증상을 진료하는 의료진이 있는지, 기존 검사자료를 살피는지, 치료 필요성과 주의사항을 설명하는지, 실제 방문 시간·비용·주차 조건이 맞는지를 확인하는 것이 좋습니다.</p>
     <div class="why-list">
       <div class="why-item"><h3>1. 내 증상을 상담할 원장과 진료 요일은?</h3><p>방문 목적을 목·허리 통증, 교통사고 후 불편감, 소화기 증상, 한약 상담 등으로 정리해 주세요. 김현교·신재형·이상현 원장의 주요 진료 분야와 요일별 일정을 의료진 소개에서 확인하고, 예약할 때 원하는 원장의 당일 진료 여부를 문의하세요.</p><a class="link-arrow" href="{{ root }}about.html">의료진·진료요일 보기 →</a></div>
-      <div class="why-item"><h3>2. 치료 전 비용과 보험 범위를 확인했나요?</h3><p>침·약침·추나·한약 중 어떤 치료를 고려하는지, 필요한 이유와 주의사항은 무엇인지 진찰 후 설명을 확인하세요. 예상 치료 횟수와 비용, 건강보험·자동차보험 적용 여부도 함께 문의하면 진료 계획을 이해하는 데 도움이 됩니다.</p><a class="link-arrow" href="{{ root }}services/index.html">진료 분야 확인 →</a></div>
+      <div class="why-item" id="cost-questions"><h3>2. 치료 전 비용과 보험 범위를 확인했나요?</h3><p>침·약침·추나·한약 중 어떤 치료를 고려하는지, 필요한 이유와 주의사항은 무엇인지 진찰 후 설명을 확인하세요. 예상 치료 횟수와 비용, 건강보험·자동차보험 적용 여부도 함께 문의하면 진료 계획을 이해하는 데 도움이 됩니다.</p><a class="link-arrow" href="{{ root }}services/index.html">진료 분야 확인 →</a></div>
       <div class="why-item"><h3>3. 방문 시간과 접수 가능 여부가 맞나요?</h3><p>연결한의원 청주오창은 평일 09:30~20:00에 진료하며 13:00~14:00는 점심시간입니다. 토·일·공휴일은 09:30~15:00, 점심시간 없이 진료합니다. 담당 원장과 당일 접수 마감은 전화 {{ site.phone }} 또는 예약 과정에서 확인해 주세요.</p><a class="link-arrow" href="{{ root }}guide/ochang-weekend-clinic.html">주말 진료·예약 안내 →</a></div>
       <div class="why-item"><h3>4. 주차장과 실제 내원 위치를 확인했나요?</h3><p>진료실은 {{ site.address }}에 있습니다. 건물 지하 1층 주차장은 협소하므로 건너편 뚜레쥬르 건물 옆 전용 주차장(엔비휘트니스 주차장)을 이용해 주세요. 내비게이션 검색은 ‘주성리 617’, 진료 후 데스크에서 출차용 코인을 받으시면 됩니다.</p><a class="link-arrow" href="{{ root }}location.html">지도·주차 동선 보기 →</a></div>
     </div>
@@ -68,19 +73,29 @@
     </div>
   </div>
 </section>
-<section class="section ivory">
+<section class="section ivory" id="doctors-schedule">
   <div class="container">
     <p class="eyebrow">Doctors and visits</p>
     <h2 class="h2">연결한의원 청주오창 의료진 안내</h2>
     <p>기존 홈페이지에 공개된 경력과 진료 분야를 바탕으로 정리했습니다. 방문을 원하는 원장이 있다면 진료 요일을 예약 시 확인하세요.</p>
     <div class="grid-3">
-      <a class="tile" href="{{ root }}about.html"><h3>김현교 대표원장</h3><p>두통·목디스크·어깨 통증, 소화기 질환, 다이어트·체질한약 관련 진료 분야를 안내합니다.</p><span class="link-arrow">약력과 진료 요일 확인 →</span></a>
-      <a class="tile" href="{{ root }}about.html"><h3>신재형 진료원장</h3><p>교통사고 후유증, 허리디스크·요추협착증 등 척추 질환, 소화불량 관련 진료 분야를 안내합니다.</p><span class="link-arrow">약력과 진료 요일 확인 →</span></a>
-      <a class="tile" href="{{ root }}about.html"><h3>이상현 진료원장</h3><p>허리디스크·교통사고 후유증, 추나요법, 체질한약 관련 진료 분야를 안내합니다.</p><span class="link-arrow">약력과 진료 요일 확인 →</span></a>
+      <a class="tile" href="{{ root }}about.html#kim-hyeongyo"><h3>김현교 대표원장</h3><p>두통·목디스크·어깨 통증, 소화기 질환, 다이어트·체질한약 관련 진료 분야를 안내합니다.</p><span class="link-arrow">약력과 진료 요일 확인 →</span></a>
+      <a class="tile" href="{{ root }}about.html#shin-jaehyeong"><h3>신재형 진료원장</h3><p>교통사고 후유증, 허리디스크·요추협착증 등 척추 질환, 소화불량 관련 진료 분야를 안내합니다.</p><span class="link-arrow">약력과 진료 요일 확인 →</span></a>
+      <a class="tile" href="{{ root }}about.html#lee-sanghyeon"><h3>이상현 진료원장</h3><p>허리디스크·교통사고 후유증, 추나요법, 체질한약 관련 진료 분야를 안내합니다.</p><span class="link-arrow">약력과 진료 요일 확인 →</span></a>
     </div>
+    <table class="visit-criteria">
+      <caption class="sr-only">홈페이지에 안내된 의료진별 진료일정</caption>
+      <thead><tr><th scope="col">의료진</th><th scope="col">안내된 진료일정</th></tr></thead>
+      <tbody>
+        {% for d in directors %}
+        <tr><th scope="row">{{ d.name }}<br>{{ d.role }}</th><td>{% for day, status in d.schedule.items() if status %}{{ day }}요일{% if status != 'O' %} ({{ status }}){% endif %}{% if not loop.last %} · {% endif %}{% endfor %}<br><a class="link-arrow" href="{{ root }}about.html#{{ d.slug }}">{{ d.name }} 원장 소개 →</a></td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p class="small muted" style="margin-top:14px">의료진 소개에 공개된 일정을 요약했습니다. 휴가·대진 등에 따라 달라질 수 있으므로 예약 시 담당 원장과 당일 접수 가능 여부를 확인해 주세요.</p>
   </div>
 </section>
-<section class="section">
+<section class="section" id="visit-preparation">
   <div class="container">
     <p class="eyebrow">Location and schedule</p>
     <h2 class="h2">오창읍 진료 위치와 방문 전 준비</h2>
@@ -94,6 +109,16 @@
       <a class="btn btn-brick" href="{{ site.naver_booking }}" target="_blank" rel="noopener">네이버 예약</a>
       <a class="btn btn-outline" href="{{ site.naver_place }}" target="_blank" rel="noopener">네이버 지도·방문자 리뷰</a>
     </div>
+    <div class="grid-2 visit-photos">
+      <figure>
+        <a href="{{ root }}about.html#clinic"><img src="{{ root }}images/clinic/treatment-room-1.webp" alt="연결한의원 청주오창의 칸막이와 커튼으로 구분된 치료 공간" width="1600" height="1200" loading="lazy"></a>
+        <figcaption class="small muted">청주오창점 실제 치료 공간 · <a class="link-arrow" href="{{ root }}about.html#clinic">원내 사진 더 보기 →</a></figcaption>
+      </figure>
+      <figure>
+        <a href="{{ root }}location.html"><img src="{{ root }}images/location/parking-photos.webp" alt="주성리 617 전용 주차장의 입구 사진과 한의원에서 주차장까지의 위치 안내" width="1070" height="565" loading="lazy"></a>
+        <figcaption class="small muted">전용 주차장 사진·위치 안내 · <a class="link-arrow" href="{{ root }}location.html">주차·출차 방법 보기 →</a></figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 <section class="section">
@@ -105,6 +130,7 @@
       <details><summary>야간이나 주말에도 진료하나요?</summary><div class="answer"><p>현재 안내 시간은 평일 오후 8시까지, 토·일·공휴일 오후 3시까지입니다. 담당 의료진 일정과 실제 접수 여부는 방문 전 전화 또는 예약에서 확인해 주세요.</p></div></details>
       <details><summary>치료비나 보험 적용은 어떻게 확인하나요?</summary><div class="answer"><p>시행하는 치료 종류, 건강보험·자동차보험 적용 여부, 개인별 진료 조건에 따라 달라질 수 있으므로 상담과 접수 과정에서 확인해 주세요. 보험 적용 여부를 일률적으로 보장하지 않습니다.</p></div></details>
       <details><summary>어떤 검사를 받았는지 알려야 하나요?</summary><div class="answer"><p>기존 영상자료, 진단명, 복용약과 최근 변화가 있다면 공유하는 것이 좋습니다. 추가 검사나 타 의료기관 진료가 우선인 경우에는 그 필요성을 설명받는 것이 중요합니다.</p></div></details>
+      <details><summary>방문자 후기는 어디에서 확인할 수 있나요?</summary><div class="answer"><p><a class="link-arrow" href="{{ site.naver_place }}" target="_blank" rel="noopener">연결한의원 청주오창 네이버 플레이스</a>에서 방문자 리뷰와 사진을 직접 확인하실 수 있습니다. 방문하려는 원장의 진료 여부와 접수시간은 예약 시 함께 확인해 주세요.</p></div></details>
     </div>
   </div>
 </section>
