@@ -302,6 +302,23 @@ button { font-family: inherit; cursor: pointer; }
 .info-list .sub { display: block; font-size: 12.5px; color: var(--inkfade); font-weight: 400; text-align: right; }
 @media (max-width: 900px) { .about-band { grid-template-columns: 1fr; gap: 32px; } }
 
+/* ── 진료 선택·방문 안내 ─────────────────────────────────────────────────── */
+.visit-criteria { width: 100%; margin-top: 28px; border-collapse: collapse; font-size: 15px; text-align: left; }
+.visit-criteria th, .visit-criteria td { padding: 18px 20px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.visit-criteria thead { background: var(--jadetint); color: var(--jadedeep); }
+.visit-criteria th:first-child { width: 22%; }
+.visit-criteria tbody th { font-weight: 600; }
+.visit-criteria td { color: var(--inkfade); }
+.visit-criteria .link-arrow { display: inline-block; margin-top: 6px; }
+@media (max-width: 600px) {
+  .visit-criteria { font-size: 14px; }
+  .visit-criteria th, .visit-criteria td { padding: 14px 10px; }
+  .visit-criteria th:first-child { width: 26%; }
+}
+.clinic-choice-guide .section > .container > .h2 { margin-bottom: 18px; }
+.clinic-choice-guide .section > .container > p + p { margin-top: 14px; }
+.clinic-choice-guide .why-list { margin-top: 28px; }
+
 /* ── WHY ────────────────────────────────────────────────────────────────── */
 .why-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 48px; margin-top: 8px; }
 .why-item { padding-top: 22px; border-top: 2px solid var(--jade); }
