@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.yeongyeolochangkmc.co.kr/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.yeongyeolochangkmc.co.kr/treatment/facial-palsy/herbal-care</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yeongyeolochangkmc.co.kr/guide/ochang-weekend-clinic</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yeongyeolochangkmc.co.kr/guide/ochang-saturday</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yeongyeolochangkmc.co.kr/guide/ochang-sunday</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yeongyeolochangkmc.co.kr/guide/ochang-clinic</loc><changefreq>monthly</changefreq></url>
   <url><loc>https://www.yeongyeolochangkmc.co.kr/services/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://www.yeongyeolochangkmc.co.kr/services/gongjindan</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://www.yeongyeolochangkmc.co.kr/services/diet</loc><changefreq>weekly</changefreq></url>
@@ -633,9 +638,4 @@
   <url><loc>https://www.yeongyeolochangkmc.co.kr/location</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://www.yeongyeolochangkmc.co.kr/faq</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://www.yeongyeolochangkmc.co.kr/privacy-policy</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.yeongyeolochangkmc.co.kr/treatment/facial-palsy/herbal-care</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://www.yeongyeolochangkmc.co.kr/guide/ochang-clinic</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://www.yeongyeolochangkmc.co.kr/guide/ochang-weekend-clinic</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://www.yeongyeolochangkmc.co.kr/guide/ochang-saturday</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://www.yeongyeolochangkmc.co.kr/guide/ochang-sunday</loc><changefreq>monthly</changefreq></url>
 </urlset>

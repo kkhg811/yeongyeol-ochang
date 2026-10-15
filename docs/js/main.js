@@ -96,27 +96,68 @@
 
   // ── 빠른 정보 검색 ───────────────────────────────────────────────────────
   var searchForm = document.querySelector("[data-search]");
-  if (searchForm && window.SITE_INDEX) {
+  if (searchForm) {
     var input = searchForm.querySelector("input");
     var results = document.querySelector("[data-search-results]");
+    var indexPromise;
+    results.setAttribute("aria-live", "polite");
     function norm(s) { return (s || "").toLowerCase().replace(/\s+/g, ""); }
-    function run() {
-      var q = norm(input.value);
+    function loadIndex() {
+      if (!indexPromise) {
+        indexPromise = fetch(searchForm.getAttribute("data-index-url"))
+          .then(function (response) {
+            if (!response.ok) throw new Error("Search index unavailable");
+            return response.json();
+          })
+          .then(function (index) {
+            if (!Array.isArray(index)) throw new Error("Invalid search index");
+            return index;
+          })
+          .catch(function (error) {
+            indexPromise = null;
+            throw error;
+          });
+      }
+      return indexPromise;
+    }
+    function message(text) {
       results.innerHTML = "";
-      if (!q || q.length < 1) return;
-      var hits = window.SITE_INDEX.filter(function (it) {
+      var p = document.createElement("p");
+      p.className = "search-empty";
+      p.textContent = text;
+      results.appendChild(p);
+    }
+    function showHits(index, q) {
+      results.innerHTML = "";
+      var hits = index.filter(function (it) {
         return norm(it.title).indexOf(q) > -1 || norm(it.keywords).indexOf(q) > -1;
       }).slice(0, 8);
       if (!hits.length) {
-        var p = document.createElement("p"); p.className = "search-empty";
-        p.textContent = "검색 결과가 없습니다. 전화(043-715-3688)로 문의해 주세요.";
-        results.appendChild(p); return;
+        message("검색 결과가 없습니다. 전화(043-715-3688)로 문의해 주세요.");
+        return;
       }
       hits.forEach(function (h) {
         var a = document.createElement("a"); a.href = h.url;
         var s1 = document.createElement("span"); s1.textContent = h.title;
         var s2 = document.createElement("span"); s2.textContent = h.type;
         a.appendChild(s1); a.appendChild(s2); results.appendChild(a);
+      });
+    }
+    function run() {
+      var q = norm(input.value);
+      results.innerHTML = "";
+      results.setAttribute("aria-busy", "false");
+      if (!q) return;
+      results.setAttribute("aria-busy", "true");
+      message("검색 정보를 불러오는 중입니다.");
+      loadIndex().then(function (index) {
+        if (q !== norm(input.value)) return;
+        showHits(index, q);
+        results.setAttribute("aria-busy", "false");
+      }).catch(function () {
+        if (q !== norm(input.value)) return;
+        results.setAttribute("aria-busy", "false");
+        message("검색 정보를 불러오지 못했습니다. 잠시 후 다시 검색하거나 전화(043-715-3688)로 문의해 주세요.");
       });
     }
     searchForm.addEventListener("submit", function (e) { e.preventDefault(); run(); });

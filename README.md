@@ -33,6 +33,10 @@ python serve.py        # http://localhost:8791 로 브라우저가 열립니다
 3. 사진을 바꾸면 `assets/`에 넣고 `tools/build_images.py`의 매핑을 수정한 뒤 실행
 4. 마지막에 `python build.py` 실행 → `docs/` 갱신
 
+빌드 시 검색용 `docs/search-index.json`과 기존 로고를 사용한 정사각형 파비콘도 생성합니다. 검색 데이터는 검색창을 사용할 때 불러오며, 모든 검색 결과 링크는 사이트 루트를 기준으로 연결합니다.
+
+공식 사이트명은 `SITE["seo_site_name"]`, 검색결과용 페이지 제목은 `SITE["title"]`로 구분합니다. 구조화된 정보에는 한의원 대표 URL과 각 페이지의 URL을 구분해 기록합니다.
+
 필요 패키지: `pip install jinja2 pillow`
 
 ## 연동 링크 (src/site_info.py)

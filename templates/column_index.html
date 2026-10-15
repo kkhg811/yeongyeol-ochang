@@ -8,7 +8,7 @@
     <p class="eyebrow">Health guide</p>
     <h1>건강정보</h1>
     <p class="lead">증상이 시작되는 생활 속 장면부터 자가관리로 되는 것과 안 되는 것, 진료 전에 메모하면 좋은 내용까지 정리했습니다. 현재 <b>{{ columns|length }}편</b>의 건강정보를 제공하고 있습니다.</p>
-    <form class="hero-search" data-search role="search" style="margin-top:22px;max-width:640px">
+    <form class="hero-search" data-search data-index-url="/search-index.json" role="search" style="margin-top:22px;max-width:640px">
       <label class="sr-only" for="q">건강정보 검색</label>
       <div class="hero-search-field">
         <span class="hero-search-icon" aria-hidden="true">⌕</span>
@@ -46,7 +46,4 @@
     <div class="notice" style="margin-top:40px">본 건강정보는 이해를 돕기 위한 일반적인 내용으로, 개인의 진단과 치료를 대신하지 않습니다. 증상이 지속되면 내원 진료를 통해 확인해 주세요.</div>
   </div>
 </section>
-{% endblock %}
-{% block scripts %}
-<script>window.SITE_INDEX = {{ search_index | safe }};</script>
 {% endblock %}

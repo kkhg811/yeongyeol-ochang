@@ -17,7 +17,7 @@
 </section>
 <section class="section">
   <div class="container">
-    <form class="hero-search" data-search role="search" style="max-width:680px">
+    <form class="hero-search" data-search data-index-url="/search-index.json" role="search" style="max-width:680px">
       <label class="sr-only" for="q">질환·증상 검색</label>
       <div class="hero-search-field">
         <span class="hero-search-icon" aria-hidden="true">⌕</span>
@@ -28,7 +28,4 @@
     <div class="search-results" data-search-results></div>
   </div>
 </section>
-{% endblock %}
-{% block scripts %}
-<script>window.SITE_INDEX = {{ search_index | safe }};</script>
 {% endblock %}

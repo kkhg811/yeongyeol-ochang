@@ -9,7 +9,7 @@
     <h1>질환별 치료</h1>
     <p class="lead">연결한의원 청주오창은 청주 오창읍(2산단로)에서 근골격·통증, 안면·두통, 신경정신·수면, 소화기, 산부인과·여성, 호흡기·알레르기 질환과 교통사고 후유증을 진료하는 한의원입니다. 현재 <b>{{ conditions|length }}개 질환</b>에 대해 원인 감별부터 침·약침·추나·한약 치료까지 안내하고 있습니다.</p>
     <p class="muted small" style="margin-top:12px">평일 저녁 8시까지 야간진료, 토·일·공휴일 오전 9시 30분~오후 3시 진료로 직장인도 치료를 이어갈 수 있습니다. 한의사 원장 3인이 요일별로 협진합니다.</p>
-    <form class="hero-search" data-search role="search" style="margin-top:22px;max-width:640px">
+    <form class="hero-search" data-search data-index-url="/search-index.json" role="search" style="margin-top:22px;max-width:640px">
       <label class="sr-only" for="q">질환·증상 검색</label>
       <div class="hero-search-field">
         <span class="hero-search-icon" aria-hidden="true">⌕</span>
@@ -53,7 +53,4 @@
     <div class="notice" style="margin-top:40px">본 페이지의 의학 정보는 이해를 돕기 위한 일반적인 내용으로, 개인의 진단과 치료를 대신하지 않습니다. 정확한 진단은 내원 진료를 통해 받으시기 바랍니다.</div>
   </div>
 </section>
-{% endblock %}
-{% block scripts %}
-<script>window.SITE_INDEX = {{ search_index | safe }};</script>
 {% endblock %}

@@ -12,9 +12,11 @@ import json
 import os
 import sys
 import urllib.parse
+from html import unescape
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "src"))
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from PIL import Image
 
 from site_info import SITE, NAV, DIRECTORS, FEATURED, TICKER_ROW1, TICKER_ROW2, STATS, CORE, WHO, WHY, HOME_FAQ, RECORD
 from services import SERVICES
@@ -129,6 +131,9 @@ def search_index():
         {"title": "진료철학", "url": "philosophy.html", "type": "안내", "keywords": "진료 원칙 철학 치료 강도 반응 보정"},
         {"title": "자주 묻는 질문", "url": "faq.html", "type": "안내", "keywords": "FAQ 예약 보험 실비 비용 한약 침 주차 진료시간"},
     ]
+    # 검색창은 메인·하위 디렉터리 어디에서 사용하더라도 같은 페이지로 연결한다.
+    for item in idx:
+        item["url"] = "/" + item["url"]
     return idx
 
 
@@ -136,7 +141,7 @@ def jsonld(page_path, extra=None):
     data = {
         "@context": "https://schema.org", "@type": "MedicalClinic",
         "@id": SITE["url"] + "/#clinic", "name": SITE["name"],
-        "url": canon(page_path), "telephone": "+82-" + SITE["phone"][1:],
+        "url": SITE["url"] + "/", "telephone": "+82-" + SITE["phone"][1:],
         "image": SITE["url"] + "/images/hero/directors-team.webp",
         "logo": SITE["url"] + "/images/logo/symbol-green-512.png",
         "address": {"@type": "PostalAddress", "streetAddress": "오창읍 2산단로 132, 부민빌딩 3층",
@@ -144,7 +149,8 @@ def jsonld(page_path, extra=None):
                     "postalCode": "28116", "addressCountry": "KR"},
         "geo": {"@type": "GeoCoordinates", "latitude": SITE["coords"]["lat"], "longitude": SITE["coords"]["lng"]},
         "openingHoursSpecification": [
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:30", "closes": "20:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:30", "closes": "13:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:00"},
             {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday", "PublicHolidays"], "opens": "09:30", "closes": "15:00"},
         ],
         "medicalSpecialty": "한의학",
@@ -173,17 +179,57 @@ def render(template, out_path, **ctx):
                 directors=DIRECTORS, directors_by_name={d["name"]: d for d in DIRECTORS},
                 root=root, page_path=out_path, canonical=canon(out_path), jsonld=ctx.pop("jsonld", None) or jsonld(out_path))
     base.update(ctx)
-    html = env.get_template(template).render(**base)
+    page_template = env.get_template(template)
+    metadata_ctx = page_template.new_context(base)
+    title = ("".join(page_template.blocks["title"](metadata_ctx)).strip()
+             if "title" in page_template.blocks else SITE["title"])
+    description = ("".join(page_template.blocks["description"](metadata_ctx)).strip()
+                   if "description" in page_template.blocks else SITE["description"])
+    title, description = unescape(title), unescape(description)
+    schemas = json.loads(base["jsonld"])
+    if not isinstance(schemas, list):
+        schemas = [schemas]
+    page_schema = next((node for node in schemas if node.get("@type") == "WebPage"), None)
+    if page_schema is None:
+        page_schema = {}
+        schemas.append(page_schema)
+    page_schema.update({
+        "@context": "https://schema.org", "@type": "WebPage",
+        "@id": canon(out_path) + "#webpage", "url": canon(out_path),
+        "name": title, "description": description, "inLanguage": "ko-KR",
+        "isPartOf": {"@id": SITE["url"] + "/#website"},
+        "publisher": {"@id": SITE["url"] + "/#clinic"},
+    })
+    if out_path == "index.html":
+        page_schema["mainEntity"] = {"@id": SITE["url"] + "/#clinic"}
+    base["jsonld"] = json.dumps(schemas, ensure_ascii=False, indent=1)
+    html = page_template.render(**base)
     full = os.path.join(OUT, urllib.parse.unquote(out_path).replace("/", os.sep))
     os.makedirs(os.path.dirname(full), exist_ok=True)
     open(full, "w", encoding="utf-8").write(html)
     PAGES.append(out_path)
 
 
+def build_favicons():
+    """기존 로고의 투명 여백을 정리해 정사각형 파비콘을 만든다."""
+    with Image.open(os.path.join(OUT, "images", "logo", "symbol-green-512.png")) as source:
+        mark = source.convert("RGBA")
+    mark = mark.crop(mark.getchannel("A").getbbox())
+    scale = 448 / max(mark.size)
+    mark = mark.resize((round(mark.width * scale), round(mark.height * scale)), Image.Resampling.LANCZOS)
+    icon = Image.new("RGBA", (512, 512), (255, 255, 255, 0))
+    icon.alpha_composite(mark, ((512 - mark.width) // 2, (512 - mark.height) // 2))
+    icon.save(os.path.join(OUT, "favicon.ico"), sizes=[(16, 16), (32, 32), (48, 48)])
+    for size, filename in [(32, "favicon-32.png"), (180, "apple-touch-icon.png")]:
+        icon.resize((size, size), Image.Resampling.LANCZOS).save(os.path.join(OUT, filename))
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
+    build_favicons()
     col_groups = prepare_columns()
-    idx_json = json.dumps(search_index(), ensure_ascii=False)
+    with open(os.path.join(OUT, "search-index.json"), "w", encoding="utf-8") as f:
+        json.dump(search_index(), f, ensure_ascii=False, separators=(",", ":"))
     cats = categories()
 
     ticker_links = {}
@@ -194,12 +240,12 @@ def main():
 
     website_ld = {"@context": "https://schema.org", "@type": "WebSite",
                   "@id": SITE["url"] + "/#website",
-                  "name": SITE["seo_site_name"], "alternateName": SITE["name"],
+                  "name": SITE["seo_site_name"], "alternateName": SITE["short"],
                   "url": SITE["url"] + "/", "inLanguage": "ko-KR",
                   "publisher": {"@id": SITE["url"] + "/#clinic"}}
     render("index.html", "index.html", featured=FEATURED, ticker1=TICKER_ROW1, ticker2=TICKER_ROW2,
            ticker_links=ticker_links, stats=STATS, record=RECORD, core=CORE, who=WHO, why=WHY,
-           home_faq=HOME_FAQ, search_index=idx_json, jsonld=jsonld("index.html", website_ld))
+           home_faq=HOME_FAQ, jsonld=jsonld("index.html", website_ld))
 
     render("facial_palsy_herbal.html", "treatment/facial-palsy/herbal-care.html")
     render("guide_ochang_weekend.html", "guide/ochang-weekend-clinic.html")
@@ -219,7 +265,7 @@ def main():
         render("service.html", "services/%s.html" % s["slug"], s=s, related_conditions=rel,
                jsonld=jsonld("services/%s.html" % s["slug"], faq_ld))
 
-    render("conditions_index.html", "conditions/index.html", categories=cats, search_index=idx_json)
+    render("conditions_index.html", "conditions/index.html", categories=cats)
     for c in CONDITIONS:
         sib = [o for o in CONDITIONS if o["category"] == c["category"] and o["slug"] != c["slug"]][:10]
         rel = [COND[r] for r in c.get("related", []) if r in COND][:8]
@@ -232,7 +278,7 @@ def main():
         p = "conditions/%s.html" % urllib.parse.quote(c["slug"], safe="")
         render("condition.html", p, c=c, siblings=sib, related=rel, columns_rel=cols, jsonld=jsonld(p, ld))
 
-    render("column_index.html", "column/index.html", groups=col_groups, search_index=idx_json)
+    render("column_index.html", "column/index.html", groups=col_groups)
     for c in COLUMNS:
         sib = [o for o in COLUMNS if o["group"] == c["group"] and o["slug"] != c["slug"]][:8]
         rel = [x for x in CONDITIONS if x["name"] in c["title"]][:6]
@@ -248,14 +294,15 @@ def main():
                             [{"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in HOME_FAQ]}
     render("faq.html", "faq.html", faq_groups=FAQ_GROUPS, home_faq=HOME_FAQ, jsonld=jsonld("faq.html", faq_ld))
     render("privacy.html", "privacy-policy.html")
-    render("404.html", "404.html", search_index=idx_json)
+    render("404.html", "404.html")
 
     with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         for p in PAGES:
             if p == "404.html":
                 continue
-            f.write("  <url><loc>%s</loc><changefreq>weekly</changefreq></url>\n" % canon(p))
+            frequency = "monthly" if p.startswith(("guide/", "treatment/")) else "weekly"
+            f.write("  <url><loc>%s</loc><changefreq>%s</changefreq></url>\n" % (canon(p), frequency))
         f.write("</urlset>\n")
     open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(
         "User-agent: *\nAllow: /\nSitemap: %s/sitemap.xml\n" % SITE["url"])
