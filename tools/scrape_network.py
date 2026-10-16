@@ -20,6 +20,9 @@ import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "src"))
+from clinic_details import normalize_clinic_details
+
 RAW = os.path.join(ROOT, "assets", "scraped")
 GEN = os.path.join(ROOT, "src", "generated")
 BASE = "https://yghani.kr"
@@ -39,7 +42,6 @@ SUBS = [
     ("홍성우", "김현교"),
     ("파주시", "청주시 청원구"), ("파주", "청주"), ("운정", "오창"),
     ("야당동", "각리"), ("교하", "오창"), ("금촌", "오창"), ("문산", "오창"), ("일산", "청주"),
-    ("옥산", "오창"), ("내수", "오창"),
     ("평일 10:00 - 20:00", "평일 09:30 - 20:00"), ("10:00 - 20:00", "09:30 - 20:00"),
     ("점심시간 13:00 - 14:30", "점심시간 13:00 - 14:00"),
     ("주말·공휴일 09:30 - 15:00", "토·일·공휴일 09:30 - 15:00"),
@@ -60,13 +62,15 @@ def fetch(url, timeout=40):
 def clean_text(t):
     if not isinstance(t, str):
         return t
+    # Complete addresses must be recognized before partial city/street rules.
+    t = normalize_clinic_details(t)
     for a, b in SUBS:
         t = t.replace(a, b)
     if any(k in t for k in DROP_SENTENCE):
         parts = re.split(r"(?<=[.!?다요])\s+", t)
         parts = [p for p in parts if not any(k in p for k in DROP_SENTENCE)]
         t = " ".join(parts).strip()
-    return re.sub(r"\s{2,}", " ", t)
+    return normalize_clinic_details(re.sub(r"\s{2,}", " ", t))
 
 
 def clean_deep(o):
