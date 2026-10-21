@@ -8,9 +8,9 @@
 <meta name="keywords" content="{% block keywords %}{{ site.keywords }}{% endblock %}">
 <meta name="application-name" content="{{ site.seo_site_name }}">
 <meta name="apple-mobile-web-app-title" content="{{ site.seo_site_name }}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="{{ 'noindex, nofollow, noarchive' if review_mode else 'index, follow' }}">
 <link rel="canonical" href="{{ canonical }}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{% block og_type %}website{% endblock %}">
 <meta property="og:site_name" content="{{ site.seo_site_name }}">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="{{ self.title() }}">
@@ -27,12 +27,16 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap">
 <link rel="stylesheet" href="{{ root }}css/style.css">
+{% if pain_series or review_mode or clinical_catalog %}<link rel="stylesheet" href="/css/pain-series.css">{% endif %}
+{% if clinical_catalog %}<link rel="stylesheet" href="/css/clinical-guides.css">{% endif %}
 {% block head %}{% endblock %}
 <script type="application/ld+json">
 {{ jsonld | safe }}
 </script>
 </head>
 <body>
+<a class="pain-skip" href="#main-content">본문 바로가기</a>
+{% if review_mode %}<div class="pain-review-banner" role="note">검토용 사이트 · 운영 사이트 반영 전 · 새 가이드 의료진 검수 전</div>{% endif %}
 <header class="site-header">
   <div class="container">
     <a class="brand" href="{{ root }}index.html" aria-label="{{ site.name }} 홈">
@@ -59,7 +63,7 @@
   </nav>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
 {% block content %}{% endblock %}
 </main>
 
@@ -111,6 +115,8 @@
         <a href="{{ root }}about.html">한의원 소개</a>
         <a href="{{ root }}faq.html">FAQ</a>
         <a href="{{ root }}conditions/index.html">질환정보</a>
+        {% if clinical_catalog %}<a href="/{{ clinical_catalog.config.index_path }}">질환별 가이드</a>{% endif %}
+        {% if pain_series %}<a href="/{{ pain_series.path }}">통증 가이드</a>{% endif %}
         <a href="{{ root }}column/index.html">건강칼럼</a>
         <a href="{{ root }}philosophy.html">진료철학</a>
         <a href="{{ root }}location.html">오시는 길</a>

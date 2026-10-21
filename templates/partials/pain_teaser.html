@@ -1,0 +1,11 @@
+{% if pain_series %}
+<section class="section pain-teaser" aria-labelledby="pain-teaser-title">
+  <div class="container">
+    <p class="eyebrow">Everyday pain guide</p>
+    <div class="pain-teaser-row">
+      <div><h2 id="pain-teaser-title" class="h2">불편한 일상에서 시작하는 통증 가이드</h2><p class="lead">목·허리·어깨·팔꿈치·손목·발. 그림으로 주제를 고르고, 상담 전 확인할 변화를 정리해 보세요.</p></div>
+      <a class="btn btn-jade" href="/{{ pain_series.path }}">여섯 가지 가이드 보기 <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+{% endif %}

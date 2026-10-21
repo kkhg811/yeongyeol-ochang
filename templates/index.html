@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block description %}오창한의원 추천을 찾으신다면 의료진·진료 분야·방문 조건을 확인하세요. 연결한의원 청주오창의 침·약침·추나·한약, 평일 야간·주말 진료와 오창읍 부민빌딩 3층 위치·주차를 안내합니다.{% endblock %}
 {% block content %}
+{% include "partials/pain_teaser.html" %}
 <!-- 히어로 -->
 <section class="hero-light">
   <div class="container hero-grid">
@@ -332,4 +333,5 @@
 </section>
 
 
+{% include "partials/clinical_teaser.html" %}
 {% endblock %}

@@ -3,6 +3,7 @@
 {% block description %}{{ s.lead }}{% endblock %}
 {% block og_image %}{{ s.image }}{% endblock %}
 {% block content %}
+{% if s.slug == "chuna" %}{% include "partials/pain_teaser.html" %}{% endif %}
 <section class="page-hero">
   <div class="container">
     <nav class="breadcrumb" aria-label="현재 위치"><a href="{{ root }}index.html">홈</a><span>/</span><a href="{{ root }}services/index.html">진료안내</a><span>/</span><span>{{ s.name }}</span></nav>
@@ -109,4 +110,5 @@
     </aside>
   </div>
 </section>
+{% if s.slug == "chuna" %}{% include "partials/clinical_teaser.html" %}{% endif %}
 {% endblock %}

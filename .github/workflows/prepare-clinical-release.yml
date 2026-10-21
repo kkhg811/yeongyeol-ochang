@@ -1,0 +1,41 @@
+name: Prepare clinical guide release
+on:
+  push:
+    branches: [release/ochang-clinical-guides-20261021]
+    paths-ignore: ['docs/**', 'verification/**']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          ref: release/ochang-clinical-guides-20261021
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12'
+      - name: Install build dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Compile approved content and reproduce images
+        run: |
+          python tools/ensure_clinical_font.py
+          python tools/compile_clinical_catalog.py
+          python tools/render_clinical_cards.py --catalog src/content/clinical-catalog.json --output-root docs/images/clinical-guides --manifest src/content/clinical-card-images.json
+      - name: Build and verify operating site
+        env:
+          SITE_STAGE: production
+        run: |
+          python build.py
+          python tools/check_clinical_guides.py
+          python -m compileall -q src build.py serve.py tools
+          python -m unittest discover -s tests -v
+      - name: Save verified static output on release branch
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add docs src/content/clinical-catalog.json src/content/clinical-card-images.json verification
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Generate validated clinical guide pages and image cards"
+          git push origin HEAD:release/ochang-clinical-guides-20261021
