@@ -1,0 +1,25 @@
+{
+  "status": "published",
+  "created_at": "2026-10-21",
+  "updated_at": "2026-10-21",
+  "published_at": "2026-10-21",
+  "reviewed_at": null,
+  "reviewed_by": null,
+  "target_origin": "https://www.yeongyeolochangkmc.co.kr",
+  "index_path": "guide/ochang-condition-guides",
+  "coverage_path": "review/carousel-coverage",
+  "profile_files": [
+    "msk.json",
+    "women.json",
+    "mind.json",
+    "digestive-skin.json",
+    "other.json"
+  ],
+  "publication_authorization": {
+    "authorized_at": "2026-10-21",
+    "instruction": "배포까지 진행해",
+    "actor": "site owner in this conversation",
+    "scope": "187 clinical series and all associated pages",
+    "medical_review_claimed": false
+  }
+}

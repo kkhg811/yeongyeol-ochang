@@ -1,0 +1,25 @@
+<nav class="pain-nav{% if topic %} pain-nav--compact{% endif %}" aria-labelledby="pain-nav-title">
+  <div class="pain-nav-head">
+    <h2 id="pain-nav-title">그림으로 고르는 여섯 가지 통증 가이드</h2>
+    {% if topic %}<a href="/{{ pain_series.path }}">전체 가이드로 돌아가기 <span aria-hidden="true">↗</span></a>{% else %}<span>내 생활과 가까운 질문부터 살펴보세요</span>{% endif %}
+  </div>
+  <ol class="pain-cards">
+    {% for card in pain_series.topics %}
+    <li>
+      <a class="pain-card{% if topic and topic.id == card.id %} is-current{% endif %}" href="/{{ card.path }}"{% if topic and topic.id == card.id %} aria-current="page"{% endif %}>
+        <div class="pain-card-image">
+          <img src="/{{ card.image }}" srcset="/{{ card.image_small }} 480w, /{{ card.image }} 1080w" sizes="(max-width: 719px) calc((100vw - 44px) / 2), (max-width: 1199px) 30vw, 360px" width="1080" height="1080" alt="{{ card.image_alt }}"{% if loop.index > 3 %} loading="lazy"{% endif %} decoding="async">
+          <span class="pain-card-number" aria-hidden="true">0{{ loop.index }}</span>
+          {% if topic and topic.id == card.id %}<span class="pain-current">읽고 있는 글</span>{% endif %}
+        </div>
+        <div class="pain-card-copy">
+          <span class="pain-card-topic">{{ card.topic }} <span aria-hidden="true">↗</span></span>
+          <h3>{{ card.card_title }}</h3>
+          <p>{{ card.card_description }}</p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+  <p class="pain-image-note">카드 이미지는 이해를 돕기 위한 AI 생성 일러스트입니다. 실제 환자·진료 장면이나 진단 결과를 나타내지 않습니다.</p>
+</nav>

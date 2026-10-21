@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block title %}{{ topic.title if topic else pain_series.title }}{% endblock %}
+{% block description %}{{ topic.description if topic else pain_series.description }}{% endblock %}
+{% block og_image %}{{ topic.image if topic else pain_series.topics[0].image }}{% endblock %}
+{% block head %}
+<meta name="twitter:title" content="{{ topic.title if topic else pain_series.title }}">
+<meta name="twitter:description" content="{{ topic.description if topic else pain_series.description }}">
+<meta name="twitter:image" content="{{ site.url }}/{{ topic.image if topic else pain_series.topics[0].image }}">
+<meta property="og:image:alt" content="{{ topic.image_alt if topic else pain_series.topics[0].image_alt }}">
+<meta property="og:image:width" content="1080"><meta property="og:image:height" content="1080">
+{% endblock %}
+{% block content %}
+<div class="pain-page">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="현재 위치">
+      <ol><li><a href="/">홈</a></li><li>{% if topic %}<a href="/{{ pain_series.path }}">통증 가이드</a>{% else %}<span aria-current="page">통증 가이드</span>{% endif %}</li>{% if topic %}<li><span aria-current="page">{{ topic.topic }}</span></li>{% endif %}</ol>
+    </nav>
+    <header class="pain-heading{% if topic %} pain-heading--detail{% endif %}">
+      <p class="eyebrow">YEONGYEOL · EVERYDAY PAIN GUIDE <span aria-hidden="true">/ 06</span></p>
+      <h1>{{ topic.h1 if topic else pain_series.h1 }}</h1>
+      <p class="pain-subtitle">{{ topic.subtitle if topic else pain_series.subtitle }}</p>
+      <p class="pain-deck">{{ topic.summary if topic else pain_series.summary }}</p>
+      {% if not topic %}<div class="pain-intro-links"><a href="#guide-overview">가이드 읽는 법 ↓</a><a href="/location">오창읍 진료 위치·시간 ↗</a></div>{% endif %}
+    </header>
+    {% include "partials/pain_cards.html" %}
+  </div>
+
+  {% if topic %}
+  <div class="container pain-reading-layout">
+    <article class="pain-article" aria-labelledby="reading-title">
+      <div class="pain-article-lead" id="reading-title"><span class="pain-section-label">{{ topic.body_part }}</span><h2>{{ topic.subtitle }}</h2></div>
+      <figure class="pain-feature">
+        <img src="/{{ topic.image }}" width="1080" height="1080" loading="lazy" decoding="async" alt="{{ topic.image_alt }}">
+        <figcaption>주제를 설명하기 위한 AI 생성 일러스트</figcaption>
+      </figure>
+      {% for section in topic.sections %}
+      <section class="pain-section" id="{{ section.id }}" aria-labelledby="{{ section.id }}-title">
+        <p class="pain-section-label">0{{ loop.index }} · {{ ['증상 구분', '진찰·검사', '생활 관리', '진료 상담'][loop.index0] }}</p>
+        <h2 id="{{ section.id }}-title">{{ section.title }}</h2>
+        {% for paragraph in section.paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+        {% if section.sources %}<p class="pain-citations">관련 자료 {% for n in section.sources %}<a href="#source-{{ n }}">[{{ n }}]</a>{% endfor %}</p>{% endif %}
+      </section>
+      {% endfor %}
+      <section class="pain-check" id="checklist" aria-labelledby="checklist-title">
+        <p class="pain-section-label">진료 전 메모</p><h2 id="checklist-title">이 네 가지를 정리해 보세요</h2>
+        <ul>{% for item in topic.checklist %}<li><span aria-hidden="true">✓</span>{{ item }}</li>{% endfor %}</ul>
+        <p>진단이나 중증도 점수를 계산하는 자가검사가 아닙니다. 평소 겪은 변화를 상담에 활용하세요.</p>
+      </section>
+      <aside class="pain-alert" aria-labelledby="urgent-title"><h2 id="urgent-title">생활 관리보다 평가가 먼저인 신호</h2><p>{{ topic.red_flag }}</p></aside>
+      <section class="pain-section" id="questions" aria-labelledby="questions-title">
+        <p class="pain-section-label">자주 묻는 질문</p><h2 id="questions-title">{{ topic.topic }} 상담 전 궁금한 점</h2>
+        <div class="pain-faq">{% for f in topic.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+      </section>
+      <section class="pain-section pain-sources" id="sources" aria-labelledby="sources-title">
+        <h2 id="sources-title">출처와 함께 읽을 정보</h2>
+        <ol>{% for s in topic.sources %}<li id="source-{{ loop.index }}"><span>[{{ loop.index }}]</span><div><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.name }} ↗</a><p>{{ s.scope }}</p></div></li>{% endfor %}</ol>
+        <p>자료 확인: {{ pain_series.updated_at }}. 질환의 일반 정보에 대한 참고자료이며, 이 한의원의 치료 성과나 특정 한방치료의 효과를 입증하는 자료는 아닙니다.</p>
+        <div class="pain-text-links"><a href="/services/chuna">추나·통증 진료 안내 ↗</a><a href="/about">의료진 소개 ↗</a></div>
+      </section>
+      <div class="pain-editorial">콘텐츠 정리: {{ site.name }} · 구성 수정 {{ pain_series.updated_at }}{% if pain_series.reviewed_by %}<br>의료진 검토: {{ pain_series.reviewed_by }} · {{ pain_series.reviewed_at }}{% else %}<br>검토용 초안 · 의료진 검수 전{% endif %}<br>일반적인 건강 정보이며 개인의 진단과 처방을 대신하지 않습니다.</div>
+    </article>
+    <aside class="pain-side" aria-label="본문 목차와 방문 안내">
+      <div class="pain-side-sticky"><p class="pain-section-label">이 글에서 확인할 것</p>
+        <nav aria-label="본문 목차"><ol>{% for s in topic.sections %}<li><a href="#{{ s.id }}">0{{ loop.index }} {{ s.title }}</a></li>{% endfor %}<li><a href="#checklist">진료 전 메모</a></li><li><a href="#questions">자주 묻는 질문</a></li><li><a href="#sources">출처</a></li></ol></nav>
+        <div class="pain-side-visit"><b>연결한의원 청주오창</b><p>{{ site.address }}</p><a href="/location">위치·시간 확인 ↗</a><a class="btn btn-jade" href="tel:{{ site.phone_tel }}">{{ site.phone }} 전화 상담</a></div>
+      </div>
+    </aside>
+  </div>
+  {% else %}
+  <div class="container pain-hub-body">
+    <section class="pain-section" id="guide-overview" aria-labelledby="guide-overview-title">
+      <p class="pain-section-label">읽는 순서</p><h2 id="guide-overview-title">병명보다, 불편한 장면부터 골라보세요</h2>
+      <div class="pain-principles">
+        <div><span>01</span><h3>어느 때 불편한가요?</h3><p>독서 뒤 목, 컵을 쥘 때 팔꿈치, 아침 첫걸음처럼 실제 경험과 가까운 카드를 선택합니다.</p></div>
+        <div><span>02</span><h3>무엇을 함께 확인하나요?</h3><p>통증의 위치와 저림·힘·움직임의 변화를 구분하고, 진료에서 물어볼 항목을 살펴봅니다.</p></div>
+        <div><span>03</span><h3>다음 변화는 무엇인가요?</h3><p>일상에서 가능한 관리와 다시 평가받아야 할 신호를 나누어 상담 메모를 준비합니다.</p></div>
+      </div>
+    </section>
+    <section class="pain-check" aria-labelledby="hub-check-title"><p class="pain-section-label">첫 상담 준비</p><h2 id="hub-check-title">같은 동작, 같은 기준으로 기록합니다</h2><ul><li><span aria-hidden="true">✓</span>처음 시작된 시점과 계기</li><li><span aria-hidden="true">✓</span>아픈 위치와 저린 범위</li><li><span aria-hidden="true">✓</span>하기 어려워진 일상 동작</li><li><span aria-hidden="true">✓</span>기존 검사·복용약·과거 치료 반응</li></ul><p>불편한 동작을 억지로 반복해서 확인하지 마세요. 갑작스러운 마비 등 급성 변화가 있으면 예약 상담보다 응급 평가가 우선입니다.</p></section>
+    <section class="pain-section" aria-labelledby="hub-faq-title"><p class="pain-section-label">자주 묻는 질문</p><h2 id="hub-faq-title">오창한의원 통증 상담 전 궁금한 점</h2><div class="pain-faq">{% for f in pain_series.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</div></section>
+    <section class="pain-section pain-hub-sources" aria-labelledby="hub-sources-title"><h2 id="hub-sources-title">출처와 콘텐츠 확인 기준</h2><p>각 상세 글은 AAOS OrthoInfo와 NHS의 질환별 환자 안내를 참고하고, 해당 글 하단에 원문과 참고 범위를 표시했습니다. 의학 정보는 일반 안내이며 진찰을 대체하지 않습니다.</p><a href="https://www.orthoinfo.org/" target="_blank" rel="noopener">AAOS OrthoInfo ↗</a> · <a href="https://www.nhs.uk/conditions/" target="_blank" rel="noopener">NHS Health A to Z ↗</a><p class="pain-editorial">콘텐츠 구성 {{ pain_series.created_at }} · 실제 수정 {{ pain_series.updated_at }} · {% if pain_series.reviewed_by %}의료진 검토 {{ pain_series.reviewed_by }}{% else %}의료진 검수 전{% endif %}</p></section>
+  </div>
+  {% endif %}
+
+  <section class="pain-local" aria-labelledby="pain-local-title"><div class="container pain-local-layout"><div><p class="eyebrow">CHEONGJU · OCHANG</p><h2 id="pain-local-title">청주 오창에서 상담을 준비하신다면</h2><p>{{ site.name }}의 실제 진료 장소는<br><b>{{ site.address }}</b>입니다.</p><p>현재 진료 일정과 예약 가능 여부, 이동 경로는 방문 전 확인해 주세요.</p><div class="pain-text-links"><a href="/location">위치·진료시간 ↗</a><a href="/about">의료진·진료 요일 ↗</a></div></div><div class="pain-local-contact"><span>전화 상담·예약</span><a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a><a class="btn btn-outline" href="{{ site.naver_booking }}" target="_blank" rel="noopener">네이버 예약 ↗</a></div></div></section>
+  <div class="container pain-series-end">
+    {% if topic %}<nav class="pain-pager" aria-label="이전·다음 상세 가이드">
+      {% if previous_topic %}<a href="/{{ previous_topic.path }}" rel="prev"><span>← 이전 글</span><b>{{ previous_topic.topic }}</b></a>{% else %}<a href="/{{ pain_series.path }}"><span>전체 보기</span><b>통증 가이드</b></a>{% endif %}
+      {% if next_topic %}<a href="/{{ next_topic.path }}" rel="next"><span>다음 글 →</span><b>{{ next_topic.topic }}</b></a>{% else %}<a href="/{{ pain_series.path }}"><span>전체 보기</span><b>통증 가이드</b></a>{% endif %}
+    </nav>{% endif %}
+    <nav class="pain-bottom-nav" aria-label="통증 시리즈 전체 탐색"><a href="/{{ pain_series.path }}"{% if not topic %} aria-current="page"{% endif %}>전체 가이드</a>{% for t in pain_series.topics %}<a href="/{{ t.path }}"{% if topic and t.id == topic.id %} aria-current="page"{% endif %}>{{ t.topic }}</a>{% endfor %}</nav>
+    <p class="pain-scope">이 시리즈는 목·허리·어깨·팔꿈치·손목·발의 여섯 주제를 통해 흔한 생활 속 불편, 진찰에서 확인할 점, 관리와 재평가 신호를 안내합니다. 모든 통증 질환을 다루지는 않으며 개인의 진단·치료 계획은 실제 진찰 후 결정합니다.</p>
+  </div>
+</div>
+{% endblock %}

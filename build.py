@@ -21,9 +21,19 @@ from PIL import Image
 from site_info import SITE, NAV, DIRECTORS, FEATURED, TICKER_ROW1, TICKER_ROW2, STATS, CORE, WHO, WHY, HOME_FAQ, RECORD
 from services import SERVICES
 from columns import PRINCIPLES, PATIENT_QUESTIONS, FAQ_GROUPS
+from pain_series import load_series, schemas as pain_schemas
+from clinical_guides import load_catalog, page_nodes as clinical_nodes, clean_column_blocks, column_focus
+
+REVIEW_MODE = os.environ.get("SITE_STAGE", "production") == "review"
+SOURCE_SITE_URL = SITE["url"]
+SITE = dict(SITE)
+SITE["url"] = os.environ.get("SITE_ORIGIN", SITE["url"]).rstrip("/")
+PAIN_SERIES = load_series(review=REVIEW_MODE)
+PAIN_TOPICS = {t["slug"]: t for t in PAIN_SERIES["topics"]} if PAIN_SERIES else {}
+CLINICAL = load_catalog(review=REVIEW_MODE)
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(ROOT, "docs")
+OUT = os.environ.get("SITE_OUTPUT", os.path.join(ROOT, "docs"))
 GEN = os.path.join(ROOT, "src", "generated")
 
 env = Environment(
@@ -33,6 +43,7 @@ env = Environment(
     lstrip_blocks=True,
 )
 env.filters["urlencode"] = lambda s: urllib.parse.quote(str(s), safe="")
+env.filters["urldecode"] = urllib.parse.unquote
 
 # ── 수집 데이터 (연결한의원 네트워크 공개 콘텐츠를 청주오창 버전으로 변환) ──────
 CONDITIONS = json.load(open(os.path.join(GEN, "conditions.json"), encoding="utf-8"))
@@ -56,6 +67,14 @@ COND_IMAGE = {
 }
 for _c in CONDITIONS:
     _c["image"] = COND_IMAGE.get(_c["slug"])
+    if _c["slug"] in PAIN_TOPICS:
+        _c["image"] = PAIN_TOPICS[_c["slug"]]["image"]
+        _c["summary"] = PAIN_TOPICS[_c["slug"]]["summary"]
+    if CLINICAL:
+        _entry = CLINICAL["conditions_by_slug"][_c["slug"]]
+        _profile = CLINICAL["profiles_by_id"][_entry["profile_id"]]
+        _c["image"] = _profile["topics"][0]["image"]
+        _c["summary"] = _profile["overview"]
 
 CAT_ORDER = ["근골격·통증", "교통사고", "안면·두통", "신경정신·수면", "소화기", "산부인과·여성",
              "호흡기·알레르기", "피부", "턱관절", "소아·성장", "다이어트", "보약·공진단"]
@@ -100,6 +119,10 @@ def prepare_columns():
         c["summary"] = (body[0]["text"] if body else c["title"])[:170]
         c["reviewer"] = "김현교 대표원장"
         c["blocks"] = [b for b in c["blocks"] if b["text"].strip() != c["title"].strip()]
+        if CLINICAL:
+            entry = CLINICAL["columns_by_slug"][c["slug"]]
+            c["title"] = entry["title"]
+            c["summary"] = entry["description"]
     groups = []
     for i, name in enumerate([g[0] for g in COL_GROUPS] + ["기타 건강정보"]):
         items = sorted([c for c in COLUMNS if c["group"] == name], key=lambda c: (c["date"] or ""), reverse=True)
@@ -131,6 +154,12 @@ def search_index():
         {"title": "진료철학", "url": "philosophy.html", "type": "안내", "keywords": "진료 원칙 철학 치료 강도 반응 보정"},
         {"title": "자주 묻는 질문", "url": "faq.html", "type": "안내", "keywords": "FAQ 예약 보험 실비 비용 한약 침 주차 진료시간"},
     ]
+    if PAIN_SERIES:
+        idx.append({"title": PAIN_SERIES["h1"], "url": PAIN_SERIES["path"], "type": "통증 가이드", "keywords": PAIN_SERIES["description"]})
+    if CLINICAL:
+        for profile in CLINICAL["profiles"]:
+            for topic in profile["topics"]:
+                idx.append({"title": topic["h1"], "url": topic["path"], "type": "질환별 가이드", "keywords": topic["description"]})
     # 검색창은 메인·하위 디렉터리 어디에서 사용하더라도 같은 페이지로 연결한다.
     for item in idx:
         item["url"] = "/" + item["url"]
@@ -171,13 +200,14 @@ def canon(path):
 
 
 PAGES = []
+PAGE_META = {}
 
 
 def render(template, out_path, **ctx):
     root = "../" * out_path.count("/")
     base = dict(site=SITE, nav=NAV, services=SERVICES, conditions=CONDITIONS, columns=COLUMNS,
                 directors=DIRECTORS, directors_by_name={d["name"]: d for d in DIRECTORS},
-                root=root, page_path=out_path, canonical=canon(out_path), jsonld=ctx.pop("jsonld", None) or jsonld(out_path))
+                root=root, page_path=out_path, canonical=canon(out_path), pain_series=PAIN_SERIES, clinical_catalog=CLINICAL, review_mode=REVIEW_MODE, jsonld=ctx.pop("jsonld", None) or jsonld(out_path))
     base.update(ctx)
     page_template = env.get_template(template)
     metadata_ctx = page_template.new_context(base)
@@ -195,7 +225,7 @@ def render(template, out_path, **ctx):
         schemas.append(page_schema)
     page_schema.update({
         "@context": "https://schema.org", "@type": "WebPage",
-        "@id": canon(out_path) + "#webpage", "url": canon(out_path),
+        "@id": base["canonical"] + "#webpage", "url": base["canonical"],
         "name": title, "description": description, "inLanguage": "ko-KR",
         "isPartOf": {"@id": SITE["url"] + "/#website"},
         "publisher": {"@id": SITE["url"] + "/#clinic"},
@@ -208,6 +238,30 @@ def render(template, out_path, **ctx):
     os.makedirs(os.path.dirname(full), exist_ok=True)
     open(full, "w", encoding="utf-8").write(html)
     PAGES.append(out_path)
+    PAGE_META[out_path] = {"canonical": base["canonical"], "images": ctx.get("sitemap_images", [])}
+
+
+def render_clinical(profile, entry=None, topic=None, column=None):
+    path = topic["path"] if topic else entry["path"]
+    canonical_path = path if topic else entry["canonical_path"]
+    all_topics = profile["topics"]
+    i = topic["position"] - 1 if topic else 0
+    related = [e for e in CLINICAL["columns"] if e["profile_id"] == profile["id"] and e["path"] != path][:4]
+    blocks, withheld = clean_column_blocks(column["blocks"]) if column else ([], [])
+    focus, companion = column_focus(profile, entry["title"]) if column else (None, None)
+    first = profile["overview"]
+    context = profile.get("member_contexts", {}).get(entry["slug"], []) if entry else []
+    render("clinical_guide.html", path + ".html", profile=profile, entry=entry, topic=topic,
+           is_column=bool(column), article_blocks=blocks, article_lead=first,
+           is_profile_hub=path == profile["hub_path"],
+           article_focus=focus, article_companion=companion,
+           related_articles=related, entry_context=context,
+           previous_topic=all_topics[i-1] if topic and i else None,
+           next_topic=all_topics[i+1] if topic and i+1 < 6 else None,
+           canonical=SITE["url"] + "/" + canonical_path,
+           sitemap_images=[t["image"] for t in all_topics],
+           jsonld=json.dumps([json.loads(jsonld(path))] + clinical_nodes(CLINICAL, profile, SITE["url"], canonical_path, entry=entry, topic=topic, is_column=bool(column)), ensure_ascii=False))
+    return withheld
 
 
 def build_favicons():
@@ -231,6 +285,17 @@ def main():
     with open(os.path.join(OUT, "search-index.json"), "w", encoding="utf-8") as f:
         json.dump(search_index(), f, ensure_ascii=False, separators=(",", ":"))
     cats = categories()
+    if PAIN_SERIES:
+        page = PAIN_SERIES["path"] + ".html"
+        render("pain_series.html", page, topic=None, previous_topic=None, next_topic=None,
+               jsonld=json.dumps([json.loads(jsonld(page))] + pain_schemas(PAIN_SERIES, None, SITE["url"]), ensure_ascii=False))
+    if CLINICAL:
+        render("clinical_index.html", CLINICAL["config"]["index_path"] + ".html")
+        if REVIEW_MODE:
+            render("clinical_coverage.html", CLINICAL["config"]["coverage_path"] + ".html")
+        for profile in CLINICAL["profiles"]:
+            for topic in profile["topics"]:
+                render_clinical(profile, topic=topic)
 
     ticker_links = {}
     for t in TICKER_ROW1 + TICKER_ROW2:
@@ -267,6 +332,20 @@ def main():
 
     render("conditions_index.html", "conditions/index.html", categories=cats)
     for c in CONDITIONS:
+        if CLINICAL:
+            entry = CLINICAL["conditions_by_slug"][c["slug"]]
+            render_clinical(CLINICAL["profiles_by_id"][entry["profile_id"]], entry=entry)
+            continue
+        if c["slug"] in PAIN_TOPICS:
+            topic = PAIN_TOPICS[c["slug"]]
+            i = topic["position"] - 1
+            topics = PAIN_SERIES["topics"]
+            page = topic["path"] + ".html"
+            render("pain_series.html", page, topic=topic,
+                   previous_topic=topics[i-1] if i else None,
+                   next_topic=topics[i+1] if i+1 < len(topics) else None,
+                   jsonld=json.dumps([json.loads(jsonld(page))] + pain_schemas(PAIN_SERIES, topic, SITE["url"]), ensure_ascii=False))
+            continue
         sib = [o for o in CONDITIONS if o["category"] == c["category"] and o["slug"] != c["slug"]][:10]
         rel = [COND[r] for r in c.get("related", []) if r in COND][:8]
         cols = [k for k in COLUMNS if c["name"] in k["title"]][:5]
@@ -279,7 +358,12 @@ def main():
         render("condition.html", p, c=c, siblings=sib, related=rel, columns_rel=cols, jsonld=jsonld(p, ld))
 
     render("column_index.html", "column/index.html", groups=col_groups)
+    withheld_audit = {}
     for c in COLUMNS:
+        if CLINICAL:
+            entry = CLINICAL["columns_by_slug"][c["slug"]]
+            withheld_audit[c["slug"]] = render_clinical(CLINICAL["profiles_by_id"][entry["profile_id"]], entry=entry, column=c)
+            continue
         sib = [o for o in COLUMNS if o["group"] == c["group"] and o["slug"] != c["slug"]][:8]
         rel = [x for x in CONDITIONS if x["name"] in c["title"]][:6]
         render("column.html", "column/%s.html" % urllib.parse.quote(c["slug"], safe=""),
@@ -296,16 +380,120 @@ def main():
     render("privacy.html", "privacy-policy.html")
     render("404.html", "404.html")
 
-    with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as f:
-        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-        for p in PAGES:
-            if p == "404.html":
+    # A private review must not advertise candidate URLs to search engines.
+    from xml.etree import ElementTree as ET
+    sm = "http://www.sitemaps.org/schemas/sitemap/0.9"
+    im = "http://www.google.com/schemas/sitemap-image/1.1"
+    ET.register_namespace("", sm)
+    ET.register_namespace("image", im)
+    urlset = ET.Element("{" + sm + "}urlset")
+    series_images = {}
+    if PAIN_SERIES:
+        series_images[PAIN_SERIES["path"] + ".html"] = [t["image"] for t in PAIN_SERIES["topics"]]
+        series_images.update({t["path"] + ".html": [t["image"]] for t in PAIN_SERIES["topics"]})
+    if not REVIEW_MODE:
+        seen = set()
+        for page in PAGES:
+            url = PAGE_META[page]["canonical"]
+            if page == "404.html" or url != canon(page) or url in seen or page.startswith("review/"):
                 continue
-            frequency = "monthly" if p.startswith(("guide/", "treatment/")) else "weekly"
-            f.write("  <url><loc>%s</loc><changefreq>%s</changefreq></url>\n" % (canon(p), frequency))
-        f.write("</urlset>\n")
+            seen.add(url)
+            node = ET.SubElement(urlset, "{" + sm + "}url")
+            ET.SubElement(node, "{" + sm + "}loc").text = url
+            images = PAGE_META[page]["images"] or series_images.get(page, [])
+            if images:
+                ET.SubElement(node, "{" + sm + "}lastmod").text = CLINICAL["config"]["updated_at"] if CLINICAL else PAIN_SERIES["updated_at"]
+                for image in images:
+                    ino = ET.SubElement(node, "{" + im + "}image")
+                    ET.SubElement(ino, "{" + im + "}loc").text = SITE["url"] + "/" + image
+    ET.ElementTree(urlset).write(os.path.join(OUT, "sitemap.xml"), encoding="utf-8", xml_declaration=True)
     open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(
-        "User-agent: *\nAllow: /\nSitemap: %s/sitemap.xml\n" % SITE["url"])
+        "User-agent: *\nAllow: /\n" + ("# Private review; HTML and X-Robots-Tag use noindex.\n" if REVIEW_MODE else "Sitemap: %s/sitemap.xml\n" % SITE["url"]))
+    routes_file = os.path.join(OUT, "review-routes.json")
+    headers_file = os.path.join(OUT, "_headers")
+    if REVIEW_MODE:
+        open(headers_file, "w", encoding="utf-8").write("/*\n  X-Robots-Tag: noindex, nofollow, noarchive\n")
+        routes = [PAIN_SERIES["path"]] + [t["path"] for t in PAIN_SERIES["topics"]] if PAIN_SERIES else []
+        if CLINICAL:
+            routes += [e["path"] for e in CLINICAL["conditions"] + CLINICAL["columns"]]
+            routes += [t["path"] for p in CLINICAL["profiles"] for t in p["topics"]]
+            routes += [CLINICAL["config"]["index_path"], CLINICAL["config"]["coverage_path"]]
+            routes = list(dict.fromkeys(routes))
+            review_dir = os.path.join(OUT, "review")
+            os.makedirs(review_dir, exist_ok=True)
+            import hashlib
+            assets = []
+            for profile in CLINICAL["profiles"]:
+                for topic in profile["topics"]:
+                    for key in ("image", "image_small"):
+                        path = os.path.join(OUT, topic[key])
+                        if not os.path.isfile(path):
+                            raise ValueError("Render clinical card assets before build: " + path)
+                        raw = open(path, "rb").read()
+                        assets.append({"path": "/" + topic[key], "kind": "image", "bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()})
+            with open(os.path.join(review_dir, "asset-routes.json"), "w", encoding="utf-8") as f:
+                json.dump(assets, f, ensure_ascii=False, separators=(",", ":"))
+            samples = [{"path": "/" + CLINICAL["config"]["index_path"], "name": "전체 목록", "cards": False}]
+            for group in CLINICAL["groups"]:
+                profile = group["profiles"][0]
+                samples.append({"path": "/" + profile["hub_path"], "name": group["name"] + " / " + profile["name"], "cards": True})
+            for slug in ("목디스크", "발목염좌"):
+                entry = CLINICAL["conditions_by_slug"].get(slug)
+                if not entry:
+                    entry = next((e for e in CLINICAL["conditions"] if e["slug"].replace("-", "") == slug), None)
+                if entry:
+                    samples.append({"path": "/" + entry["path"], "name": entry["name"], "cards": True})
+                    profile = CLINICAL["profiles_by_id"][entry["profile_id"]]
+                    samples.append({"path": "/" + profile["topics"][0]["path"], "name": profile["name"] + " 상세", "cards": True})
+            longest = max(CLINICAL["profiles"], key=lambda p: len(p["name"]))
+            samples.append({"path": "/" + longest["topics"][3]["path"], "name": "긴 제목 / " + longest["name"], "cards": True})
+            for e in CLINICAL["columns"][:2]:
+                samples.append({"path": "/" + e["path"], "name": e["title"], "cards": True})
+            with open(os.path.join(review_dir, "qa-samples.json"), "w", encoding="utf-8") as f:
+                json.dump(samples, f, ensure_ascii=False, indent=2)
+            with open(os.path.join(review_dir, "clinical-coverage.json"), "w", encoding="utf-8") as f:
+                json.dump({k: CLINICAL[k] for k in ("config", "counts", "conditions", "columns", "search_exposure")}, f, ensure_ascii=False, indent=2)
+            import csv
+            with open(os.path.join(review_dir, "clinical-coverage.csv"), "w", encoding="utf-8-sig", newline="") as f:
+                w = csv.writer(f)
+                w.writerow(["type", "topic", "keyword", "review_url", "target_url", "series_id", "canonical", "relationship", "medical_review", "search_exposure"])
+                for kind, entries in (("condition", CLINICAL["conditions"]), ("column", CLINICAL["columns"])):
+                    for e in entries:
+                        w.writerow([kind, e["name"], "청주 오창 " + e["name"], SITE["url"]+"/"+e["path"], SOURCE_SITE_URL+"/"+e["path"], e["profile_id"], SITE["url"]+"/"+e["canonical_path"], e["relationship"], "pending", "unconfirmed"])
+            with open(os.path.join(ROOT, "src/content/legacy-column-withheld.json"), "w", encoding="utf-8") as f:
+                json.dump(withheld_audit, f, ensure_ascii=False, indent=2)
+        with open(routes_file, "w", encoding="utf-8") as f:
+            json.dump({"stage": "review", "origin": SITE["url"], "target_origin": SOURCE_SITE_URL,
+                       "series_routes": routes, "search_submission": "not submitted", "index_policy": "noindex"}, f, ensure_ascii=False, indent=2)
+    else:
+        for path in (routes_file, headers_file, os.path.join(OUT, "qa", "routes.html"), os.path.join(OUT, "qa", "responsive.html")):
+            if os.path.exists(path):
+                os.remove(path)
+        if not PAIN_SERIES:
+            # Remove a review-only hub left over by an earlier preview build.
+            stale = os.path.join(OUT, "guide", "ochang-pain.html")
+            if os.path.exists(stale):
+                os.remove(stale)
+        if not CLINICAL:
+            import shutil
+            config = json.load(open(os.path.join(ROOT, "src/content/clinical-guides-config.json"), encoding="utf-8"))
+            for path in (os.path.join(OUT, config["index_path"] + ".html"), os.path.join(OUT, "review")):
+                if os.path.isdir(path):
+                    shutil.rmtree(path)
+                elif os.path.exists(path):
+                    os.remove(path)
+            for filename in ("clinical.html", "clinical-responsive.html"):
+                path = os.path.join(OUT, "qa", filename)
+                if os.path.exists(path):
+                    os.remove(path)
+            catalog_path = os.path.join(ROOT, "src/content/clinical-catalog.json")
+            if os.path.exists(catalog_path):
+                cat = json.load(open(catalog_path, encoding="utf-8"))
+                for profile in cat["profiles"]:
+                    for topic in profile["topics"]:
+                        path = os.path.join(OUT, topic["path"] + ".html")
+                        if os.path.exists(path):
+                            os.remove(path)
 
     print("built %d pages → %s" % (len(PAGES), OUT))
 

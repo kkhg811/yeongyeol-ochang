@@ -1,0 +1,9 @@
+{
+  "name": "yeongyeol-ochang-static-review",
+  "private": true,
+  "scripts": {
+    "dev": "python3 serve.py --port 4173 --no-browser",
+    "build": "python3 build.py",
+    "lint": "python3 -m compileall -q src build.py serve.py tools"
+  }
+}

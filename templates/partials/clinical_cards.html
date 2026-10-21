@@ -1,0 +1,11 @@
+<nav class="clinical-card-nav" aria-label="{{ profile.name }} 여섯 세부 주제">
+  <div class="clinical-nav-heading"><h2>질문별로 살펴보는 {{ profile.name }}</h2><a href="/{{ profile.hub_path }}"{% if not topic and not is_column %} aria-current="page"{% endif %}>전체 가이드 ↗</a></div>
+  <ol class="clinical-cards">
+  {% for card in profile.topics %}
+    <li><a class="clinical-card" href="/{{ card.path }}"{% if topic and topic.id == card.id %} aria-current="page"{% endif %}>
+      <img src="/{{ card.image_small }}" srcset="/{{ card.image_small }} 480w, /{{ card.image }} 1080w" sizes="(min-width: 800px) 350px, (min-width: 480px) 44vw, 45vw" width="1080" height="1080" alt="{{ card.image_alt }}" loading="{{ 'eager' if loop.index < 3 else 'lazy' }}" decoding="async">
+      <div class="clinical-card-copy"><span>0{{ loop.index }} · {{ card.label }}{% if topic and topic.id == card.id %} · 읽는 중{% endif %}</span><h3>{{ card.question }}</h3><p>{{ card.points[0] }}</p></div>
+    </a></li>
+  {% endfor %}
+  </ol>
+</nav>

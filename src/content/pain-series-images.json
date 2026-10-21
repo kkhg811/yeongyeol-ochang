@@ -1,0 +1,92 @@
+[
+  {
+    "id": "neck",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story\nAsset type: square editorial illustration for a Korean medical information website's topic card.\nPrimary request: An adult with dark hair in a loose cream shirt reading a book at a desk using a simple wooden book stand raised comfortably, one hand gently touching side of neck; profile three-quarter view, chest and head, quiet neutral home. The neck and reading setup are the focus.\nStyle/medium: refined editorial illustration with soft gouache texture and subtle dimensional shading; clear human proportions, tasteful empty space, quietly reassuring and professional.\nColor palette: warm ivory #faf8f4, forest green #3e6b5c, muted sage, warm beige with small terracotta accents; skin rendered naturally. Colors fit an established Korean medicine clinic website.\nComposition/framing: 1:1 square, main subject centered with generous padding for square card and image display; use the whole frame, no multi-panel composition.\nConstraints: a conceptual educational illustration, never an actual clinic or real physician, no diagnostic anatomical cutaway, no before/after, no promise of pain relief. No text, labels, numbers, logos, watermark, red X, arrows or border. Keep hands natural and correct.",
+    "generated_at": "2026-10-21",
+    "original_path": "/workspace/scratch/2ae4de8f7557/generated_images/exec-f1fb77a0-b97d-4f9d-9e93-888a5d65c409.png",
+    "final_path": "docs/images/ochang-pain/neck.webp",
+    "thumbnail_path": "docs/images/ochang-pain/neck-480.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "sha256": "b95c729628e8ccb0346bb88317da2e3042bd0d8b470e8eb77a4bddcf743640b2",
+    "disclosure": "AI-generated explanatory illustration; not an actual patient or clinic scene"
+  },
+  {
+    "id": "lumbar",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story\nAsset type: square editorial illustration for a Korean medical information website's topic card.\nPrimary request: An adult wearing a forest green sweater and beige trousers rising carefully from a desk chair after long sitting, one hand on lower back; side three-quarter view showing waist, hips and legs in an uncluttered neutral home. Low back and sitting are the focus.\nStyle/medium: refined editorial illustration with soft gouache texture and subtle dimensional shading; clear human proportions, tasteful empty space, quietly reassuring and professional.\nColor palette: warm ivory #faf8f4, forest green #3e6b5c, muted sage, warm beige with small terracotta accents; skin rendered naturally. Colors fit an established Korean medicine clinic website.\nComposition/framing: 1:1 square, main subject centered with generous padding for square card and image display; use the whole frame, no multi-panel composition.\nConstraints: a conceptual educational illustration, never an actual clinic or real physician, no diagnostic anatomical cutaway, no before/after, no promise of pain relief. No text, labels, numbers, logos, watermark, red X, arrows or border. Keep hands natural and correct.",
+    "generated_at": "2026-10-21",
+    "original_path": "/workspace/scratch/2ae4de8f7557/generated_images/exec-16a4b4aa-f4c3-47fb-aa2c-72bdbc5cc155.png",
+    "final_path": "docs/images/ochang-pain/lumbar.webp",
+    "thumbnail_path": "docs/images/ochang-pain/lumbar-480.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "sha256": "3ffeef085cb599604f8f7982febc242c3d854a62084564753cc2c5efbc365f41",
+    "disclosure": "AI-generated explanatory illustration; not an actual patient or clinic scene"
+  },
+  {
+    "id": "shoulder",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story\nAsset type: square editorial illustration for a Korean medical information website's topic card.\nPrimary request: A middle-aged adult in a soft sage short sleeve shirt gently attempting to raise one arm to shoulder height with the opposite hand supporting the upper arm; three-quarter upper body, calm expression, neutral background. The shoulder movement is the focus.\nStyle/medium: refined editorial illustration with soft gouache texture and subtle dimensional shading; clear human proportions, tasteful empty space, quietly reassuring and professional.\nColor palette: warm ivory #faf8f4, forest green #3e6b5c, muted sage, warm beige with small terracotta accents; skin rendered naturally. Colors fit an established Korean medicine clinic website.\nComposition/framing: 1:1 square, main subject centered with generous padding for square card and image display; use the whole frame, no multi-panel composition.\nConstraints: a conceptual educational illustration, never an actual clinic or real physician, no diagnostic anatomical cutaway, no before/after, no promise of pain relief. No text, labels, numbers, logos, watermark, red X, arrows or border. Keep hands natural and correct.",
+    "generated_at": "2026-10-21",
+    "original_path": "/workspace/scratch/2ae4de8f7557/generated_images/exec-18ca0381-524c-4017-aa88-7b3f04616785.png",
+    "final_path": "docs/images/ochang-pain/shoulder.webp",
+    "thumbnail_path": "docs/images/ochang-pain/shoulder-480.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "sha256": "09f3133fd8ef3332cdf8112c51bcb2681a729560631b3adcf80c62a34d9f0c1b",
+    "disclosure": "AI-generated explanatory illustration; not an actual patient or clinic scene"
+  },
+  {
+    "id": "elbow",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story\nAsset type: square editorial illustration for a Korean medical information website's topic card.\nPrimary request: Close three-quarter view of an adult forearm and hand holding a plain cream mug just above a table, other hand resting gently on the outer side of the elbow, wearing a rolled beige sleeve. The grip and outer elbow are the focus; anatomically ordinary hands.\nStyle/medium: refined editorial illustration with soft gouache texture and subtle dimensional shading; clear human proportions, tasteful empty space, quietly reassuring and professional.\nColor palette: warm ivory #faf8f4, forest green #3e6b5c, muted sage, warm beige with small terracotta accents; skin rendered naturally. Colors fit an established Korean medicine clinic website.\nComposition/framing: 1:1 square, main subject centered with generous padding for square card and image display; use the whole frame, no multi-panel composition.\nConstraints: a conceptual educational illustration, never an actual clinic or real physician, no diagnostic anatomical cutaway, no before/after, no promise of pain relief. No text, labels, numbers, logos, watermark, red X, arrows or border. Keep hands natural and correct.",
+    "generated_at": "2026-10-21",
+    "original_path": "/workspace/scratch/2ae4de8f7557/generated_images/exec-a6814cb0-639b-4c21-8664-ddc256029dff.png",
+    "final_path": "docs/images/ochang-pain/elbow.webp",
+    "thumbnail_path": "docs/images/ochang-pain/elbow-480.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "sha256": "98615f06b0667b6125f144ae1e3389142adad5aee1983af9bcfbbc2ae57818dd",
+    "disclosure": "AI-generated explanatory illustration; not an actual patient or clinic scene"
+  },
+  {
+    "id": "wrist",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story\nAsset type: square editorial illustration for a Korean medical information website's topic card.\nPrimary request: An adult wearing cream pajamas sitting on the edge of a bed at night with a soft dark sage backdrop, looking at one hand and gently supporting the wrist with the other, close waist-up. The hand and wrist are the focus; calm and clear, not dramatic.\nStyle/medium: refined editorial illustration with soft gouache texture and subtle dimensional shading; clear human proportions, tasteful empty space, quietly reassuring and professional.\nColor palette: warm ivory #faf8f4, forest green #3e6b5c, muted sage, warm beige with small terracotta accents; skin rendered naturally. Colors fit an established Korean medicine clinic website.\nComposition/framing: 1:1 square, main subject centered with generous padding for square card and image display; use the whole frame, no multi-panel composition.\nConstraints: a conceptual educational illustration, never an actual clinic or real physician, no diagnostic anatomical cutaway, no before/after, no promise of pain relief. No text, labels, numbers, logos, watermark, red X, arrows or border. Keep hands natural and correct.",
+    "generated_at": "2026-10-21",
+    "original_path": "/workspace/scratch/2ae4de8f7557/generated_images/exec-03982666-f555-465c-b336-32c77fedcd35.png",
+    "final_path": "docs/images/ochang-pain/wrist.webp",
+    "thumbnail_path": "docs/images/ochang-pain/wrist-480.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "sha256": "76be1a288dd432dbe4df424999bbd6e7c259eab9f7acdfcd6726fe04c2b20b7b",
+    "disclosure": "AI-generated explanatory illustration; not an actual patient or clinic scene"
+  },
+  {
+    "id": "heel",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story\nAsset type: square editorial illustration for a Korean medical information website's topic card.\nPrimary request: Low-angle side close view of an adult's lower legs and feet in comfortable home clothes, cautiously placing the heel onto a soft cream rug next to a bed, simple early morning light. The heel and first step after getting out of bed are the focus.\nStyle/medium: refined editorial illustration with soft gouache texture and subtle dimensional shading; clear human proportions, tasteful empty space, quietly reassuring and professional.\nColor palette: warm ivory #faf8f4, forest green #3e6b5c, muted sage, warm beige with small terracotta accents; skin rendered naturally. Colors fit an established Korean medicine clinic website.\nComposition/framing: 1:1 square, main subject centered with generous padding for square card and image display; use the whole frame, no multi-panel composition.\nConstraints: a conceptual educational illustration, never an actual clinic or real physician, no diagnostic anatomical cutaway, no before/after, no promise of pain relief. No text, labels, numbers, logos, watermark, red X, arrows or border. Keep hands natural and correct.",
+    "generated_at": "2026-10-21",
+    "original_path": "/workspace/scratch/2ae4de8f7557/generated_images/exec-241abf21-b49e-46cc-964d-fedd2f447fa8.png",
+    "final_path": "docs/images/ochang-pain/heel.webp",
+    "thumbnail_path": "docs/images/ochang-pain/heel-480.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "sha256": "a17389a91bb1f326f17d7e5d5ab81b886374dc1c5cda7866c788eec874cb1b80",
+    "disclosure": "AI-generated explanatory illustration; not an actual patient or clinic scene"
+  }
+]
