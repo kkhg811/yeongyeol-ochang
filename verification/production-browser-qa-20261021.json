@@ -1,0 +1,223 @@
+{
+  "checkedAt": "2026-10-21T07:04:47.505Z",
+  "origin": "https://www.yeongyeolochangkmc.co.kr",
+  "commit": "ebfd39f4de9cb9e0cfa0e7dc9d7a9208895ef887",
+  "index": {
+    "series": 187,
+    "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-condition-guides",
+    "robots": "index, follow"
+  },
+  "neck": [
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/symptoms",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/symptoms",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/conditions/%EB%AA%A9%EB%94%94%EC%8A%A4%ED%81%AC",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/context"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 목디스크·경추 추간판 문제 · 목 통증과 팔로 내려가는 증상을 어떻게 기록하나요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/symptoms"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/context",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/context",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/symptoms",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/assessment"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 목디스크·경추 추간판 문제 · 손이 저리면 모두 목디스크인가요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/context"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/assessment",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/assessment",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/context",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/care"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 목디스크·경추 추간판 문제 · 진찰과 영상검사는 어떤 질문에 답하나요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/assessment"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/care",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/care",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/assessment",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/daily"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 목디스크·경추 추간판 문제 · 치료 목표를 통증 외에 무엇으로 정하나요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/care"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/daily",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/daily",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/care",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/followup"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 목디스크·경추 추간판 문제 · 책상과 휴식은 어떻게 바꾸면 좋나요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/daily"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/followup",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/followup",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/daily",
+        "https://www.yeongyeolochangkmc.co.kr/conditions/%EB%AA%A9%EB%94%94%EC%8A%A4%ED%81%AC"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 목디스크·경추 추간판 문제 · 언제 경과 관찰보다 빠른 평가가 필요한가요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-cervical-disc/followup"
+    }
+  ],
+  "ankle": [
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/symptoms",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/symptoms",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/conditions/%EB%B0%9C%EB%AA%A9-%EC%97%BC%EC%A2%8C",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/context"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 발목 염좌 · 접질린 뒤 어디가 붓고 얼마나 걸을 수 있나요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/symptoms"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/context",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/context",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/symptoms",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/assessment"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 발목 염좌 · 어떤 방향으로 다쳤는지가 중요한가요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/context"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/assessment",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/assessment",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/context",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/care"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 발목 염좌 · 엑스레이나 다른 검사는 언제 필요한가요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/assessment"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/care",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/care",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/assessment",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/daily"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 발목 염좌 · 초기 보호와 재활은 어떻게 나누나요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/care"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/daily",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/daily",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/care",
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/followup"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 발목 염좌 · 집에서 압박과 활동을 할 때 무엇을 주의하나요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/daily"
+    },
+    {
+      "canonical": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/followup",
+      "cards": 6,
+      "current": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/followup",
+      "h1": 1,
+      "loadedCardImages": 6,
+      "orderedListMatches": true,
+      "overflow": false,
+      "pager": [
+        "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/daily",
+        "https://www.yeongyeolochangkmc.co.kr/conditions/%EB%B0%9C%EB%AA%A9-%EC%97%BC%EC%A2%8C"
+      ],
+      "robots": "index, follow",
+      "title": "청주·오창 발목 염좌 · 스포츠와 일상 복귀는 무엇으로 판단하나요? | 연결한의원 청주오창",
+      "url": "https://www.yeongyeolochangkmc.co.kr/guide/ochang-msk-ankle-sprain/followup"
+    }
+  ],
+  "robots": "User-agent: *\nAllow: /\nSitemap: https://www.yeongyeolochangkmc.co.kr/sitemap.xml\n",
+  "sitemap": {
+    "ankleDetails": 6,
+    "hubPresent": true,
+    "imageEntries": 10320,
+    "mime": "application/xml",
+    "neckDetails": 6,
+    "publicUrls": 1742,
+    "reviewHostIncluded": false,
+    "url": "https://www.yeongyeolochangkmc.co.kr/sitemap.xml"
+  },
+  "publicHttpSweep": "blocked by HTTP 403/1010; not completed",
+  "naver": {
+    "crawling": "unconfirmed",
+    "indexing": "unconfirmed",
+    "carousel": "unconfirmed"
+  }
+}
