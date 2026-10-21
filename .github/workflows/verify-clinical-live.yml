@@ -1,0 +1,91 @@
+name: Verify live clinical deployment
+on:
+  push:
+    branches: [ops/verify-clinical-live-20261021]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+      - name: Verify published HTML, images, robots and sitemap
+        shell: bash
+        run: |
+          python -u - <<'PY'
+          import concurrent.futures, hashlib, json, os, time, urllib.request
+          from pathlib import Path
+          from urllib.parse import quote
+          BASE = "https://www.yeongyeolochangkmc.co.kr"
+          ROOT = Path("docs")
+          started = time.monotonic()
+          def fetch_check(item):
+              path, expected = item
+              url = BASE + quote(path, safe="/-._~")
+              try:
+                  with urllib.request.urlopen(url, timeout=30) as response:
+                      actual = response.read()
+                      result = {"path":path,"status":response.status,"bytes":len(actual),"same":hashlib.sha256(actual).hexdigest()==expected}
+                      if response.geturl()!=url: result["redirected_to"]=response.geturl()
+                      if response.status!=200 or not result["same"]: result["error"]="status or deployed-file checksum differs"
+                      return result
+              except Exception as error:
+                  return {"path":path,"error":str(error)}
+          def item(file, route=None):
+              rel=file.relative_to(ROOT).as_posix()
+              return (route or "/"+rel, hashlib.sha256(file.read_bytes()).hexdigest())
+          probe = [
+              item(ROOT/"guide/ochang-condition-guides.html", "/guide/ochang-condition-guides"),
+              item(ROOT/"robots.txt"),
+              item(ROOT/"sitemap.xml"),
+          ]
+          probe_results = [fetch_check(x) for x in probe]
+          print("Initial public-origin probes:", json.dumps(probe_results, ensure_ascii=False), flush=True)
+          errors = [x for x in probe_results if x.get("error")]
+          results = list(probe_results)
+          if not errors:
+              checks=[]
+              for file in sorted(ROOT.rglob("*.html")):
+                  if b'class="clinical-page"' not in file.read_bytes(): continue
+                  rel=file.relative_to(ROOT).as_posix()
+                  route="/"+rel[:-5]
+                  if rel.endswith("index.html"): route="/"+rel[:-10]
+                  if route=="/guide/ochang-condition-guides": continue
+                  checks.append(item(file,route))
+              pages=len(checks)+1
+              images=sorted((ROOT/"images/clinical-guides").rglob("*.webp"))
+              checks.extend(item(file) for file in images)
+              print(f"Checking {pages} clinical pages and {len(images)} original/responsive images (4 concurrent requests).", flush=True)
+              with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+                  for number,result in enumerate(pool.map(fetch_check,checks),1):
+                      results.append(result)
+                      if result.get("error"):
+                          errors.append(result)
+                          if len(errors)<=20: print("ERROR:", json.dumps(result,ensure_ascii=False),flush=True)
+                      if number%100==0: print(f"Verified {number}/{len(checks)} files; errors={len(errors)}",flush=True)
+          else:
+              pages=0
+              images=[]
+              print("Stopping after the initial probe; no bulk requests sent.",flush=True)
+          summary={
+              "origin":BASE,
+              "source_commit":"ebfd39f4de9cb9e0cfa0e7dc9d7a9208895ef887",
+              "checked_at_utc":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),
+              "clinical_pages":pages,
+              "webp_originals_and_renditions":len(images),
+              "responses_checked":len(results),
+              "http_200_and_exact_file_match":sum(x.get("status")==200 and x.get("same",False) for x in results),
+              "elapsed_seconds":round(time.monotonic()-started,1),
+              "errors":errors,
+              "naver_crawling":"unconfirmed",
+              "naver_indexing":"unconfirmed",
+              "naver_carousel":"unconfirmed",
+          }
+          print("FINAL_REPORT",json.dumps(summary,ensure_ascii=False),flush=True)
+          with open(os.environ["GITHUB_STEP_SUMMARY"],"a",encoding="utf-8") as file:
+              file.write("# Live clinical deployment verification\n\n")
+              file.write("Public GET requests only. HTML and image SHA-256 compared against the merged deployment source.\n\n")
+              file.write("\x60\x60\x60json\n"+json.dumps(summary,ensure_ascii=False,indent=2)+"\n\x60\x60\x60\n")
+          if errors: raise SystemExit(1)
+          PY
