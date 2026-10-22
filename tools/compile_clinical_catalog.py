@@ -99,6 +99,9 @@ def column_title(original, subject):
 
 def main():
     config = read(CONTENT / "clinical-guides-config.json")
+    priority_file = CONTENT / "priority80.json"
+    priority_data = read(priority_file) if priority_file.exists() else {"status": "draft", "profiles": []}
+    priority = {p["id"]: p for p in priority_data["profiles"]} if priority_data["status"] == "published" else {}
     conditions = read(ROOT / "src/generated/conditions.json")
     columns = read(ROOT / "src/generated/columns.json")
     condition_by_slug = {c["slug"]: c for c in conditions}
@@ -109,6 +112,9 @@ def main():
         if not source.exists():
             raise SystemExit("Editorial research incomplete: " + filename)
         for profile in read(source)["profiles"]:
+            if profile["id"] in priority:
+                profile["priority"] = priority[profile["id"]]
+                profile["name"] = priority[profile["id"]]["name"]
             validate_profile(profile)
             profile["editorial_source"] = filename
             profiles.append(profile)
@@ -131,7 +137,7 @@ def main():
         profile["category"] = profile.get("category") or (condition_by_slug[primary]["category"] if primary in condition_by_slug else "피부")
         profile.setdefault("status", "review")
         profile["created_at"] = config["created_at"]
-        profile["updated_at"] = config["updated_at"]
+        profile["updated_at"] = priority_data["updated_at"] if profile.get("priority") else profile.get("updated_at", config["created_at"])
         profile.setdefault("reviewed_by", None)
         profile.setdefault("reviewed_at", None)
         profile["search_terms"] = " ".join([profile["name"]] + profile.get("keywords", []) +
@@ -175,6 +181,12 @@ def main():
                                   "path": path, "canonical_path": canonical, "relationship": relationship,
                                   "category": condition["category"], "title": "청주·오창 " + display_name + " | 증상·검사·관리 가이드",
                                   "description": "청주·오창에서 " + display_name + "에 관해 확인할 증상·배경·진찰·상담 선택·생활 관리·재평가 항목을 여섯 설명 도식과 상세 글로 안내합니다."})
+        # Keep already observed leading results and every public URL intact.
+        retained = {"msk-cervical-disc", "msk-lumbar-disc", "msk-carpal-tunnel", "msk-tennis-elbow", "women-menopause"}
+        if profile.get("priority") and path == profile["hub_path"] and profile["id"] not in retained:
+            keyword = profile["priority"]["keyword"]
+            condition_entries[-1]["title"] = "청주·오창 " + keyword + " | 증상 구분과 검사 준비"
+            condition_entries[-1]["description"] = "오창 " + keyword + ": " + profile["overview"].split(". ")[0] + ". 관찰한 증상과 진찰에서 확인할 차이, 검사·치료 선택 전 질문을 정리했습니다."
     unmatched = []
     for column in columns:
         slug = column["slug"]

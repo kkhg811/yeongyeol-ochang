@@ -1,7 +1,7 @@
 {
   "status": "published",
   "created_at": "2026-10-21",
-  "updated_at": "2026-10-21",
+  "updated_at": "2026-10-22",
   "published_at": "2026-10-21",
   "reviewed_at": null,
   "reviewed_by": null,
@@ -19,7 +19,7 @@
     "authorized_at": "2026-10-21",
     "instruction": "배포까지 진행해",
     "actor": "site owner in this conversation",
-    "scope": "187 clinical series and all associated pages",
+    "scope": "Existing 187 series; audit topics 1-80 enhanced with symptom observations and differentiation on 2026-10-22 by owner instruction.",
     "medical_review_claimed": false
   }
 }

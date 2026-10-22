@@ -1,0 +1,7 @@
+{
+  "profiles": 80,
+  "verified_primary_and_detail_pages": 560,
+  "checks_per_page": 3,
+  "two_observation_branches_and_uncertain_case": true,
+  "search_exposure": "not_asserted"
+}
