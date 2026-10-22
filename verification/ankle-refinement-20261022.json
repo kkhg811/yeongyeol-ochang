@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-22",
+  "scope": "One topic: KMC ankle sprain",
+  "primary_url": "https://www.yeongyeolochangkmc.co.kr/conditions/%EB%B0%9C%EB%AA%A9-%EC%97%BC%EC%A2%8C",
+  "updated_html_pages": [
+    "docs/column/오창-발목염좌-자가관리-경계.html",
+    "docs/conditions/발목-염좌.html",
+    "docs/guide/ochang-msk-ankle-sprain/assessment.html",
+    "docs/guide/ochang-msk-ankle-sprain/care.html",
+    "docs/guide/ochang-msk-ankle-sprain/context.html",
+    "docs/guide/ochang-msk-ankle-sprain/daily.html",
+    "docs/guide/ochang-msk-ankle-sprain/followup.html",
+    "docs/guide/ochang-msk-ankle-sprain/symptoms.html"
+  ],
+  "original_urls_preserved": true,
+  "other_clinical_profiles_unchanged": 186,
+  "all_other_generated_html_unchanged": true,
+  "existing_six_original_images_preserved": true,
+  "image_directory": "docs/images/clinical-guides/msk-ankle-sprain/",
+  "new_site": "Unchanged; deployed version 11 retained as comparison",
+  "explanatory_sections": 11,
+  "patient_faq_per_hub_and_detail": 2,
+  "symptom_checkboxes_per_page": 3,
+  "differential_table": "two branches plus overlapping or uncertain symptoms",
+  "validation": "production build, 1739 clinical pages, 560 priority pages, 9 existing unit tests; optional revision validation rejects empty answers and undeclared sources",
+  "browser_qa": {
+    "environment": "PC browser, 1363x936",
+    "six_card_images_loaded": true,
+    "faq_enter_key": true,
+    "checkbox_space_key": true,
+    "horizontal_overflow": false,
+    "real_mobile_device": "not_verified"
+  },
+  "medical_review": "pending",
+  "query_variants": [
+    "오창 발목염좌",
+    "오창 발목 염좌",
+    "청주 오창 발목염좌",
+    "청주 오창 발목 염좌"
+  ],
+  "search_verification": "not_run; existing Naver search restriction and full-audit pause respected",
+  "next_topics": [
+    "오창 허리 염좌",
+    "오창 목담결림"
+  ],
+  "deployment": "prepared; not yet deployed"
+}

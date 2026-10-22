@@ -72,6 +72,22 @@ def validate_profile(profile):
     for source in profile["sources"]:
         if not source.get("title") or not source.get("scope") or urlsplit(source.get("url", "")).scheme != "https":
             raise ValueError(f"{profile['id']}: source needs title, https URL and supported scope")
+    # Optional revisions are source-backed content, never placeholder text.
+    known_sources = {source["url"] for source in profile["sources"]}
+    known_sources.update(source["url"] for source in profile.get("priority", {}).get("evidence", []))
+    for owner in [profile] + list(profile["sections"].values()):
+        for block in owner.get("reading_sections", []):
+            if not all(isinstance(block.get(key), str) and block[key].strip() for key in ("heading", "text")):
+                raise ValueError(f"{profile['id']}: incomplete explanatory section")
+            if not block.get("source_urls") or not set(block["source_urls"]) <= known_sources:
+                raise ValueError(f"{profile['id']}: explanatory section needs a declared source")
+        for faq in owner.get("faq", []):
+            if not all(isinstance(faq.get(key), str) and faq[key].strip() for key in ("question", "answer")):
+                raise ValueError(f"{profile['id']}: incomplete patient question")
+            if not faq.get("source_urls") or not set(faq["source_urls"]) <= known_sources:
+                raise ValueError(f"{profile['id']}: patient answer needs a declared source")
+    if profile.get("page_metadata") and not all(profile["page_metadata"].get(key) for key in ("title", "description")):
+        raise ValueError(f"{profile['id']}: incomplete primary-page metadata")
 
 
 def column_title(original, subject):
@@ -187,6 +203,8 @@ def main():
             keyword = profile["priority"]["keyword"]
             condition_entries[-1]["title"] = "청주·오창 " + keyword + " | 증상 구분과 검사 준비"
             condition_entries[-1]["description"] = "오창 " + keyword + ": " + profile["overview"].split(". ")[0] + ". 관찰한 증상과 진찰에서 확인할 차이, 검사·치료 선택 전 질문을 정리했습니다."
+        if path == profile["hub_path"] and profile.get("page_metadata"):
+            condition_entries[-1].update(profile["page_metadata"])
     unmatched = []
     for column in columns:
         slug = column["slug"]
