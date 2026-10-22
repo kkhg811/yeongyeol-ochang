@@ -2,9 +2,9 @@
   "renderer_version": "clinical-information-diagrams-v2",
   "renderer": "Pillow / exact text and editorial shapes; no generative model",
   "diagram_policy": "Supplied observation/discussion labels only; not a diagnostic algorithm or treatment outcome graphic",
-  "built_at": "2026-10-22T17:47:51+09:00",
+  "built_at": "2026-10-22T23:25:08+09:00",
   "catalog_path": "src/content/clinical-catalog.json",
-  "catalog_sha256": "fb991bd3b6cb76e3c020e797c0f1d6800e8f9985693c87fcbe06ab5d9318dc75",
+  "catalog_sha256": "9b120e095d24e84320e8496ff96549e7eceba2eebc629c2aa70d0ed62bf24261",
   "font_path": "tools/fonts/NotoSansKR-Variable.ttf",
   "font_sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
   "font_license": "SIL Open Font License 1.1; tools/fonts/OFL-NotoSansKR.txt",
@@ -1568,7 +1568,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-chuna",
@@ -1650,7 +1650,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-chuna",
@@ -1732,7 +1732,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-chuna",
@@ -1814,7 +1814,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-chuna",
@@ -1896,7 +1896,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-chuna",
@@ -1978,7 +1978,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-fibromyalgia",
@@ -5996,7 +5996,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-forward-head",
@@ -6078,7 +6078,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-forward-head",
@@ -6160,7 +6160,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-forward-head",
@@ -6242,7 +6242,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-forward-head",
@@ -6324,7 +6324,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-forward-head",
@@ -6406,7 +6406,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-hip-pain",
@@ -7472,7 +7472,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pelvic-alignment",
@@ -7554,7 +7554,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pelvic-alignment",
@@ -7636,7 +7636,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pelvic-alignment",
@@ -7718,7 +7718,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pelvic-alignment",
@@ -7800,7 +7800,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pelvic-alignment",
@@ -7882,7 +7882,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-golfers-elbow",
@@ -8456,7 +8456,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-kyphosis",
@@ -8538,7 +8538,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-kyphosis",
@@ -8620,7 +8620,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-kyphosis",
@@ -8702,7 +8702,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-kyphosis",
@@ -8784,7 +8784,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-kyphosis",
@@ -8866,7 +8866,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-myalgia",
@@ -10916,7 +10916,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-manual-therapy",
@@ -10998,7 +10998,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-manual-therapy",
@@ -11080,7 +11080,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-manual-therapy",
@@ -11162,7 +11162,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-manual-therapy",
@@ -11244,7 +11244,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-manual-therapy",
@@ -11326,7 +11326,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-occipital-pain",
@@ -13376,7 +13376,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-rounded-shoulders",
@@ -13458,7 +13458,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-rounded-shoulders",
@@ -13540,7 +13540,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-rounded-shoulders",
@@ -13622,7 +13622,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-rounded-shoulders",
@@ -13704,7 +13704,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-rounded-shoulders",
@@ -13786,7 +13786,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-neck-tingling",
@@ -15836,7 +15836,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-scalene-symptoms",
@@ -15918,7 +15918,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-scalene-symptoms",
@@ -16000,7 +16000,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-scalene-symptoms",
@@ -16082,7 +16082,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-scalene-symptoms",
@@ -16164,7 +16164,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-scalene-symptoms",
@@ -16246,7 +16246,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-hand-numbness",
@@ -18788,7 +18788,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-neuralgia",
@@ -18870,7 +18870,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-neuralgia",
@@ -18952,7 +18952,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-neuralgia",
@@ -19034,7 +19034,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-neuralgia",
@@ -19116,7 +19116,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-neuralgia",
@@ -19198,7 +19198,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-achilles-tendinopathy",
@@ -19772,7 +19772,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pharmacopuncture",
@@ -19854,7 +19854,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pharmacopuncture",
@@ -19936,7 +19936,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pharmacopuncture",
@@ -20018,7 +20018,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pharmacopuncture",
@@ -20100,7 +20100,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-pharmacopuncture",
@@ -20182,7 +20182,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-shoulder-pain",
@@ -20264,7 +20264,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-shoulder-pain",
@@ -20346,7 +20346,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-shoulder-pain",
@@ -20428,7 +20428,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-shoulder-pain",
@@ -20510,7 +20510,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-shoulder-pain",
@@ -20592,7 +20592,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-shoulder-pain",
@@ -20674,7 +20674,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-buttock-pain",
@@ -22232,7 +22232,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-piriformis",
@@ -22314,7 +22314,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-piriformis",
@@ -22396,7 +22396,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-piriformis",
@@ -22478,7 +22478,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-piriformis",
@@ -22560,7 +22560,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-piriformis",
@@ -22642,7 +22642,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-sciatica",
@@ -23708,7 +23708,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-body-alignment",
@@ -23790,7 +23790,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-body-alignment",
@@ -23872,7 +23872,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-body-alignment",
@@ -23954,7 +23954,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-body-alignment",
@@ -24036,7 +24036,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-body-alignment",
@@ -24118,7 +24118,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-osteoarthritis",
@@ -27644,7 +27644,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-jaw-pain-tmd",
@@ -27726,7 +27726,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-jaw-pain-tmd",
@@ -27808,7 +27808,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-jaw-pain-tmd",
@@ -27890,7 +27890,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-jaw-pain-tmd",
@@ -27972,7 +27972,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-jaw-pain-tmd",
@@ -28054,7 +28054,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-period-pain",
@@ -30104,7 +30104,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-ovarian-reserve",
@@ -30186,7 +30186,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-ovarian-reserve",
@@ -30268,7 +30268,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-ovarian-reserve",
@@ -30350,7 +30350,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-ovarian-reserve",
@@ -30432,7 +30432,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-ovarian-reserve",
@@ -30514,7 +30514,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-ovarian-cyst",
@@ -31088,7 +31088,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-male-fertility",
@@ -31170,7 +31170,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-male-fertility",
@@ -31252,7 +31252,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-male-fertility",
@@ -31334,7 +31334,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-male-fertility",
@@ -31416,7 +31416,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-male-fertility",
@@ -31498,7 +31498,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-pcos",
@@ -33548,7 +33548,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-recurrent-loss",
@@ -33630,7 +33630,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-recurrent-loss",
@@ -33712,7 +33712,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-recurrent-loss",
@@ -33794,7 +33794,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-recurrent-loss",
@@ -33876,7 +33876,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-recurrent-loss",
@@ -33958,7 +33958,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-ovulation-pain",
@@ -34532,7 +34532,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-assisted-fertility",
@@ -34614,7 +34614,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-assisted-fertility",
@@ -34696,7 +34696,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-assisted-fertility",
@@ -34778,7 +34778,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-assisted-fertility",
@@ -34860,7 +34860,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-assisted-fertility",
@@ -34942,7 +34942,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-gynecology-visit",
@@ -35024,7 +35024,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-gynecology-visit",
@@ -35106,7 +35106,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-gynecology-visit",
@@ -35188,7 +35188,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-gynecology-visit",
@@ -35270,7 +35270,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-gynecology-visit",
@@ -35352,7 +35352,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-gynecology-visit",
@@ -35434,7 +35434,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-abnormal-bleeding",
@@ -36008,7 +36008,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-female-fertility",
@@ -36090,7 +36090,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-female-fertility",
@@ -36172,7 +36172,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-female-fertility",
@@ -36254,7 +36254,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-female-fertility",
@@ -36336,7 +36336,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-female-fertility",
@@ -36418,7 +36418,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-weight",
@@ -36992,7 +36992,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-herbs",
@@ -37074,7 +37074,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-herbs",
@@ -37156,7 +37156,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-herbs",
@@ -37238,7 +37238,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-herbs",
@@ -37320,7 +37320,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-herbs",
@@ -37402,7 +37402,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-recovery",
@@ -37484,7 +37484,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-recovery",
@@ -37566,7 +37566,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-recovery",
@@ -37648,7 +37648,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-recovery",
@@ -37730,7 +37730,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-recovery",
@@ -37812,7 +37812,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-recovery",
@@ -37894,7 +37894,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "women-postpartum-swelling",
