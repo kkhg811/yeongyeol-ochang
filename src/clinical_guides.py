@@ -32,6 +32,10 @@ def load_catalog(review=False):
     catalog["columns_by_slug"] = {e["slug"]: e for e in catalog["columns"]}
     for profile in catalog["profiles"]:
         profile["kind_label"] = KIND_LABELS.get(profile["kind"], "상담 안내")
+        if profile.get("priority"):
+            related_ids = dict.fromkeys(b["related_id"] for b in profile["priority"]["branches"])
+            profile["priority_related"] = [catalog["profiles_by_id"][pid] for pid in related_ids
+                                           if pid != profile["id"] and pid in catalog["profiles_by_id"]]
     categories = {}
     for profile in catalog["profiles"]:
         categories.setdefault(profile["category"], []).append(profile)
@@ -63,7 +67,7 @@ def page_nodes(catalog, profile, origin, path, *, entry=None, topic=None, is_col
             "@id": url + ("#article" if article else "#collection"), "url": url,
             "headline" if article else "name": name, "description": description,
             "inLanguage": "ko-KR", "image": origin + "/" + (topic or profile["topics"][0])["image"],
-            "dateModified": catalog["config"]["updated_at"], "citation": [s["url"] for s in profile["sources"]],
+            "dateModified": profile["updated_at"], "citation": list(dict.fromkeys([s["url"] for s in profile["sources"]] + [s["url"] for s in profile.get("priority", {}).get("evidence", [])])),
             "publisher": {"@id": origin + "/#clinic"}, "mainEntityOfPage": {"@id": url + "#webpage"}}
     if article:
         node["author"] = {"@type": "Organization", "name": "연결한의원 청주오창"}

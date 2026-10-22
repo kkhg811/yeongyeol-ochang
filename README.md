@@ -48,6 +48,12 @@ python serve.py        # http://localhost:8791 로 브라우저가 열립니다
 
 ## 배포
 
+### 1~80번 질환 가이드 보완 (2026-10-22)
+
+189개 모바일 검색 점검표의 순서와 대표 검색어를 `src/content/priority80.json`에 보존했습니다. 이 80개 주제에는 관찰 체크, 증상별 구분표, 검사·기록 해석과 관련 질문을 추가합니다. 체크를 진단 점수로 사용하거나 저장·전송하지 않으며, 독립된 응급진료 안내 섹션은 추가하지 않습니다. 의료진 검수는 여전히 미확인으로 관리합니다. 기존 조건/칼럼/상세 URL과 이미 상위 노출된 주제의 제목은 보존합니다.
+
+검증: `python tools/compile_clinical_catalog.py`, 기존 이미지 렌더러, `python build.py`, `python tools/check_clinical_guides.py`, `python tools/check_priority_guides.py`, `python -m unittest discover -s tests -v`. 새 사이트와는 원고·라우팅·호스팅을 별도로 유지하며 이 사이트는 진찰에서 구분할 점과 검사 결과의 해석을 중심으로 구성합니다. 실제 배포가 확인된 canonical URL만 `tools/notify_indexnow.py`로 알리며, 요청 접수가 색인·순위·캐러셀을 보장하지 않습니다.
+
 `docs/` 폴더 안의 파일을 그대로 웹호스팅(카페24·가비아·Netlify·Vercel·GitHub Pages 등)에 업로드하면 됩니다.
 도메인은 `src/site_info.py`의 `url` 값(현재 https://www.yeongyeolochangkmc.co.kr)을 기준으로 canonical·sitemap이 생성됩니다.
 

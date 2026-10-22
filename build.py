@@ -238,7 +238,7 @@ def render(template, out_path, **ctx):
     os.makedirs(os.path.dirname(full), exist_ok=True)
     open(full, "w", encoding="utf-8").write(html)
     PAGES.append(out_path)
-    PAGE_META[out_path] = {"canonical": base["canonical"], "images": ctx.get("sitemap_images", [])}
+    PAGE_META[out_path] = {"canonical": base["canonical"], "images": ctx.get("sitemap_images", []), "updated_at": ctx.get("last_modified")}
 
 
 def render_clinical(profile, entry=None, topic=None, column=None):
@@ -259,6 +259,7 @@ def render_clinical(profile, entry=None, topic=None, column=None):
            previous_topic=all_topics[i-1] if topic and i else None,
            next_topic=all_topics[i+1] if topic and i+1 < 6 else None,
            canonical=SITE["url"] + "/" + canonical_path,
+           last_modified=profile["updated_at"],
            sitemap_images=[t["image"] for t in all_topics],
            jsonld=json.dumps([json.loads(jsonld(path))] + clinical_nodes(CLINICAL, profile, SITE["url"], canonical_path, entry=entry, topic=topic, is_column=bool(column)), ensure_ascii=False))
     return withheld
@@ -402,7 +403,7 @@ def main():
             ET.SubElement(node, "{" + sm + "}loc").text = url
             images = PAGE_META[page]["images"] or series_images.get(page, [])
             if images:
-                ET.SubElement(node, "{" + sm + "}lastmod").text = CLINICAL["config"]["updated_at"] if CLINICAL else PAIN_SERIES["updated_at"]
+                ET.SubElement(node, "{" + sm + "}lastmod").text = PAGE_META[page].get("updated_at") or (CLINICAL["config"]["updated_at"] if CLINICAL else PAIN_SERIES["updated_at"])
                 for image in images:
                     ino = ET.SubElement(node, "{" + im + "}image")
                     ET.SubElement(ino, "{" + im + "}loc").text = SITE["url"] + "/" + image
