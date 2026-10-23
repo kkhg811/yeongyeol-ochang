@@ -1,0 +1,12 @@
+{
+  "target_pages": 2,
+  "new_pages": 1,
+  "existing_pages_updated": 1,
+  "initial_html_cards": 6,
+  "self_canonical_and_sitemap": true,
+  "reciprocal_links": true,
+  "checks_and_faq": true,
+  "draft_not_public": true,
+  "medical_review": "pending",
+  "search_exposure": "unverified"
+}

@@ -77,6 +77,8 @@ def page_nodes(catalog, profile, origin, path, *, entry=None, topic=None, is_col
             node["datePublished"] = profile["published_at"]
     else:
         node["mainEntity"] = {"@id": url + "#clinical-topics"}
+        if entry and entry.get("published_at"):
+            node["datePublished"] = entry["published_at"]
     nodes.append(node)
     return nodes
 
