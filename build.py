@@ -23,6 +23,7 @@ from services import SERVICES
 from columns import PRINCIPLES, PATIENT_QUESTIONS, FAQ_GROUPS
 from pain_series import load_series, schemas as pain_schemas
 from clinical_guides import load_catalog, page_nodes as clinical_nodes, clean_column_blocks, column_focus
+from patient_scenarios import load_scenarios, scenario_profile
 
 REVIEW_MODE = os.environ.get("SITE_STAGE", "production") == "review"
 SOURCE_SITE_URL = SITE["url"]
@@ -31,6 +32,11 @@ SITE["url"] = os.environ.get("SITE_ORIGIN", SITE["url"]).rstrip("/")
 PAIN_SERIES = load_series(review=REVIEW_MODE)
 PAIN_TOPICS = {t["slug"]: t for t in PAIN_SERIES["topics"]} if PAIN_SERIES else {}
 CLINICAL = load_catalog(review=REVIEW_MODE)
+PATIENT_SCENARIOS = load_scenarios(CLINICAL, review=REVIEW_MODE)
+if CLINICAL:
+    CLINICAL["patient_scenarios"] = PATIENT_SCENARIOS
+    for profile in CLINICAL["profiles"]:
+        profile["patient_scenarios"] = [s for s in PATIENT_SCENARIOS if s["profile_id"] == profile["id"]]
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.environ.get("SITE_OUTPUT", os.path.join(ROOT, "docs"))
@@ -160,6 +166,9 @@ def search_index():
         for profile in CLINICAL["profiles"]:
             for topic in profile["topics"]:
                 idx.append({"title": topic["h1"], "url": topic["path"], "type": "질환별 가이드", "keywords": topic["description"]})
+    scenario_paths = {s["path"].lstrip("/") for s in PATIENT_SCENARIOS}
+    idx = [item for item in idx if item["url"].removesuffix(".html") not in scenario_paths]
+    idx.extend({"title": s["title"], "url": s["path"].lstrip("/"), "type": "다친 뒤 증상 안내", "keywords": s["summary"]} for s in PATIENT_SCENARIOS)
     # 검색창은 메인·하위 디렉터리 어디에서 사용하더라도 같은 페이지로 연결한다.
     for item in idx:
         item["url"] = "/" + item["url"]
@@ -279,6 +288,17 @@ def build_favicons():
         icon.resize((size, size), Image.Resampling.LANCZOS).save(os.path.join(OUT, filename))
 
 
+def render_patient_scenario(scenario):
+    profile = scenario_profile(CLINICAL, scenario)
+    path = scenario["path"].lstrip("/")
+    entry = {"name": scenario["keyword"], "title": scenario["title"], "description": scenario["description"], "published_at": scenario["published_at"]}
+    render("clinical_scenario.html", path + ".html", scenario=scenario, profile=profile,
+           topic=None, is_column=False, is_profile_hub=False,
+           canonical=SITE["url"] + scenario["path"], last_modified=scenario["updated_at"],
+           sitemap_images=[t["image"] for t in profile["topics"]],
+           jsonld=json.dumps([json.loads(jsonld(path))] + clinical_nodes(CLINICAL, profile, SITE["url"], path, entry=entry), ensure_ascii=False))
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     build_favicons()
@@ -291,12 +311,15 @@ def main():
         render("pain_series.html", page, topic=None, previous_topic=None, next_topic=None,
                jsonld=json.dumps([json.loads(jsonld(page))] + pain_schemas(PAIN_SERIES, None, SITE["url"]), ensure_ascii=False))
     if CLINICAL:
-        render("clinical_index.html", CLINICAL["config"]["index_path"] + ".html")
+        render("clinical_index.html", CLINICAL["config"]["index_path"] + ".html", last_modified=max([CLINICAL["config"]["updated_at"]] + [s["updated_at"] for s in PATIENT_SCENARIOS]))
         if REVIEW_MODE:
             render("clinical_coverage.html", CLINICAL["config"]["coverage_path"] + ".html")
         for profile in CLINICAL["profiles"]:
             for topic in profile["topics"]:
                 render_clinical(profile, topic=topic)
+        for scenario in PATIENT_SCENARIOS:
+            if scenario.get("route_policy") != "preserve-existing":
+                render_patient_scenario(scenario)
 
     ticker_links = {}
     for t in TICKER_ROW1 + TICKER_ROW2:
@@ -335,7 +358,11 @@ def main():
     for c in CONDITIONS:
         if CLINICAL:
             entry = CLINICAL["conditions_by_slug"][c["slug"]]
-            render_clinical(CLINICAL["profiles_by_id"][entry["profile_id"]], entry=entry)
+            scenario = next((s for s in PATIENT_SCENARIOS if s["path"] == "/" + entry["path"]), None)
+            if scenario:
+                render_patient_scenario(scenario)
+            else:
+                render_clinical(CLINICAL["profiles_by_id"][entry["profile_id"]], entry=entry)
             continue
         if c["slug"] in PAIN_TOPICS:
             topic = PAIN_TOPICS[c["slug"]]

@@ -1,0 +1,264 @@
+{
+  "status": "published",
+  "publication_authorization": {
+    "authorized_at": "2026-10-23",
+    "instruction": "사이트 소유자가 발목 삐끗·허리 삐끗 페이지 추가와 기존 목표·방법의 적용을 요청함"
+  },
+  "entries": [
+    {
+      "id": "ankle-twist",
+      "slug": "ochang-ankle-twist",
+      "path": "/guide/ochang-ankle-twist",
+      "profile_id": "msk-ankle-sprain",
+      "keyword": "발목 삐끗",
+      "title": "청주 오창 발목 삐끗 | 인대·뼈 손상과 검사 전 확인",
+      "description": "발목을 삐끗했을 때 인대와 뼈 손상은 증상이 겹칠 수 있습니다. 청주 오창 진찰 전 확인할 통증 위치·보행 변화와 관련 검사·재활 질문을 안내합니다.",
+      "h1": "청주 오창 발목 삐끗",
+      "subtitle": "인대·뼈 손상과 검사 전 확인",
+      "summary": "발목을 삐끗한 뒤에는 인대 손상인지, 뼈 등 다른 부위를 함께 다쳤는지 진찰에서 확인합니다. 붓기나 보행 여부 한 가지로 손상 정도를 정하지 않습니다.",
+      "sections": [
+        {
+          "id": "injury",
+          "heading": "접질림은 손상 상황이며 진단명은 아닙니다",
+          "paragraphs": [
+            "발목이 꺾인 방향과 충격, 다친 시점을 먼저 설명하세요. 인대 염좌에서도 붓기·멍·통증이 생기지만 골절과 겹칠 수 있어 아픈 부위와 기능을 함께 평가합니다."
+          ],
+          "source_urls": [
+            "https://www.orthoinfo.org/diseases--conditions/sprained-ankle/"
+          ]
+        },
+        {
+          "id": "exam",
+          "heading": "기존 엑스레이 결과와 현재 불편을 구분하세요",
+          "paragraphs": [
+            "엑스레이는 주로 뼈를 살핍니다. 기존 검사 결과가 있다면 가져와 인대·힘줄 등 추가로 평가할 조직이 있는지 질문하세요. 발목을 강하게 비틀어 확인할 필요는 없습니다."
+          ],
+          "source_urls": [
+            "https://www.mayoclinic.org/diseases-conditions/sprained-ankle/diagnosis-treatment/drc-20353231"
+          ]
+        },
+        {
+          "id": "course",
+          "heading": "반복 접질림도 진찰에 필요한 정보입니다",
+          "paragraphs": [
+            "같은 발목을 여러 번 다쳤거나 통증이 줄어도 흔들리는 느낌이 남으면 알려주세요. 이전 손상과 현재 활동을 바탕으로 보호와 기능 회복 계획을 확인합니다."
+          ],
+          "source_urls": [
+            "https://www.mayoclinic.org/diseases-conditions/sprained-ankle/symptoms-causes/syc-20353225"
+          ]
+        }
+      ],
+      "checks": [
+        "안으로 꺾임·바깥으로 꺾임·착지 등 다친 상황을 설명할 수 있나요?",
+        "다친 직후와 현재의 보행 가능 범위가 달라졌나요?",
+        "같은 발목의 이전 손상이나 남아 있던 불안정감이 있나요?"
+      ],
+      "checks_source_urls": [
+        "https://www.mayoclinic.org/diseases-conditions/sprained-ankle/symptoms-causes/syc-20353225"
+      ],
+      "branches": [
+        {
+          "observation": "인대 주변 통증과 붓기가 접질린 뒤 시작",
+          "possibility": "발목 염좌 가능성",
+          "distinction": "인대만 다쳤다고 단정하지 않고 뼈 주변과 발 전체의 상태도 진찰합니다.",
+          "related_id": "msk-ankle-sprain",
+          "source_urls": [
+            "https://www.orthoinfo.org/diseases--conditions/sprained-ankle/"
+          ]
+        },
+        {
+          "observation": "뼈 쪽의 뚜렷한 통증 또는 체중을 싣기 어려움",
+          "possibility": "골절 등 동반 손상을 확인할 양상",
+          "distinction": "보행만으로 골절을 제외하지 않습니다. 영상검사가 필요한지는 진찰 소견으로 판단합니다.",
+          "related_id": "msk-ankle-sprain",
+          "source_urls": [
+            "https://www.orthoinfo.org/diseases--conditions/sprained-ankle/"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "엑스레이가 정상이면 인대도 괜찮은가요?",
+          "answer": "그렇게 단정할 수 없습니다. 뼈를 보는 검사와 인대·힘줄 평가의 역할은 다르며, 진찰과 경과에 따라 추가 평가를 결정합니다.",
+          "source_urls": [
+            "https://www.mayoclinic.org/diseases-conditions/sprained-ankle/diagnosis-treatment/drc-20353231"
+          ]
+        },
+        {
+          "question": "접질릴 때 소리가 났으면 인대가 끊어진 건가요?",
+          "answer": "소리가 났다는 정보만으로 손상 정도를 확정하지 않습니다. 통증 위치와 붓기, 관절의 안정성을 함께 확인합니다.",
+          "source_urls": [
+            "https://www.mayoclinic.org/diseases-conditions/sprained-ankle/symptoms-causes/syc-20353225"
+          ]
+        },
+        {
+          "question": "집에서 발목을 움직여봐도 되나요?",
+          "answer": "통증을 유발하는 동작을 억지로 시험하지 마세요. 손상 상태에 맞는 보호와 움직임 범위를 안내받아 조절합니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/sprains-and-strains/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "AAOS OrthoInfo: Sprained Ankle",
+          "url": "https://www.orthoinfo.org/diseases--conditions/sprained-ankle/",
+          "scope": "발목 인대 손상, 골절과 겹치는 증상, 진찰·영상 및 단계적 재활",
+          "checked_at": "2026-10-23"
+        },
+        {
+          "title": "Mayo Clinic: Sprained ankle",
+          "url": "https://www.mayoclinic.org/diseases-conditions/sprained-ankle/symptoms-causes/syc-20353225",
+          "scope": "접질림의 발생 상황, 통증·붓기·불안정감과 반복 손상",
+          "checked_at": "2026-10-23"
+        },
+        {
+          "title": "NHS: Sprains and strains",
+          "url": "https://www.nhs.uk/conditions/sprains-and-strains/",
+          "scope": "인대·근육 손상의 차이와 초기 보호·생활 관리",
+          "checked_at": "2026-10-23"
+        },
+        {
+          "title": "Mayo Clinic: Sprained ankle — Diagnosis and treatment",
+          "url": "https://www.mayoclinic.org/diseases-conditions/sprained-ankle/diagnosis-treatment/drc-20353231",
+          "scope": "뼈와 인대 평가의 차이, 영상검사와 단계적 회복 계획",
+          "checked_at": "2026-10-23"
+        }
+      ],
+      "status": "published",
+      "published_at": "2026-10-23",
+      "updated_at": "2026-10-23",
+      "medical_review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "sudden-back-pain",
+      "slug": "ochang-sudden-back-pain",
+      "path": "/conditions/%ED%97%88%EB%A6%AC-%EC%82%90%EB%81%97",
+      "profile_id": "msk-lumbar-strain",
+      "keyword": "허리 삐끗",
+      "title": "청주 오창 허리 삐끗 | 요추 염좌와 신경 증상 구분",
+      "description": "허리를 삐끗한 계기와 통증의 원인은 구분해 확인합니다. 청주 오창에서 요추 염좌·다리 저림의 차이, 진찰·검사 목적과 관리 계획을 살펴보세요.",
+      "h1": "청주 오창 허리 삐끗",
+      "subtitle": "요추 염좌와 신경 증상 구분",
+      "summary": "허리를 삐끗했다는 표현만으로 근육·인대 손상이나 디스크 문제를 정할 수는 없습니다. 허리의 통증 범위와 다리 증상을 구분하고 진찰·검사의 목적을 확인하세요.",
+      "sections": [
+        {
+          "id": "meaning",
+          "heading": "비슷한 계기로 시작해도 원인은 다를 수 있습니다",
+          "paragraphs": [
+            "들기·굽히기·비틀기 뒤의 통증에는 근육·인대 손상뿐 아니라 추간판 등 다른 원인이 관련될 수 있습니다. 처음 발생인지 반복되는 통증인지도 설명하세요."
+          ],
+          "source_urls": [
+            "https://www.orthoinfo.org/diseases--conditions/low-back-pain/"
+          ]
+        },
+        {
+          "id": "exam",
+          "heading": "다리로 이어지는 증상은 따로 설명하세요",
+          "paragraphs": [
+            "엉덩이부터 다리로 이어지는 통증이나 저림, 힘의 변화가 있으면 범위와 시점을 알려주세요. 진찰에서는 감각·근력·반사 등을 함께 확인할 수 있습니다."
+          ],
+          "source_urls": [
+            "https://www.niams.nih.gov/health-topics/back-pain/diagnosis-treatment-and-steps-to-take"
+          ]
+        },
+        {
+          "id": "plan",
+          "heading": "검사 결과와 일상 기능을 함께 비교합니다",
+          "paragraphs": [
+            "영상검사는 필요한 원인을 확인하기 위해 선택합니다. 검사 이름만으로 관리법을 정하기보다 진찰 소견과 걷기·일어서기 등 기능 변화를 함께 설명받으세요."
+          ],
+          "source_urls": [
+            "https://www.niams.nih.gov/health-topics/back-pain/diagnosis-treatment-and-steps-to-take"
+          ]
+        }
+      ],
+      "checks": [
+        "어떤 동작 뒤에 시작됐고 이전에도 비슷한 통증이 있었나요?",
+        "허리 한 부위의 통증과 다리로 이어지는 증상을 구분했나요?",
+        "최근 검사 결과·복용약과 일상 동작의 변화를 가져갈 수 있나요?"
+      ],
+      "checks_source_urls": [
+        "https://www.niams.nih.gov/health-topics/back-pain/diagnosis-treatment-and-steps-to-take"
+      ],
+      "branches": [
+        {
+          "observation": "무리한 동작 후 허리 주변이 아프고 뻣뻣함",
+          "possibility": "염좌·근육 손상 등을 포함한 국소 요통 가능성",
+          "distinction": "기존 질환과 외상 여부를 살펴 원인을 구분합니다. 이 양상만으로 요추 염좌가 확정되지는 않습니다.",
+          "related_id": "msk-lumbar-strain",
+          "source_urls": [
+            "https://www.orthoinfo.org/diseases--conditions/low-back-pain/"
+          ]
+        },
+        {
+          "observation": "허리 통증과 함께 다리로 이어지는 저림·힘 변화",
+          "possibility": "신경이 관련된 원인을 함께 살펴볼 필요",
+          "distinction": "증상의 분포와 신경학적 진찰 결과를 함께 해석하고 필요한 검사를 결정합니다.",
+          "related_id": "msk-lumbar-disc",
+          "source_urls": [
+            "https://www.niams.nih.gov/health-topics/back-pain"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "몸을 비틀다 아팠으면 요추 염좌가 맞나요?",
+          "answer": "계기는 원인을 추정하는 정보입니다. 진단은 통증의 범위와 병력, 진찰 소견을 함께 보고 결정합니다.",
+          "source_urls": [
+            "https://www.niams.nih.gov/health-topics/back-pain"
+          ]
+        },
+        {
+          "question": "예전 허리 검사에서 이상이 있었는데 이번 통증도 같은 원인인가요?",
+          "answer": "기존 영상과 현재 증상이 일치하는지 다시 살펴야 합니다. 검사 날짜와 결과를 가져와 새로 달라진 증상을 설명하세요.",
+          "source_urls": [
+            "https://www.niams.nih.gov/health-topics/back-pain/diagnosis-treatment-and-steps-to-take"
+          ]
+        },
+        {
+          "question": "치료 중에는 어떤 변화를 비교하나요?",
+          "answer": "통증 외에 걷기·일어서기와 업무 수행의 변화를 비교합니다. 무리한 동작은 조절하며 활동을 이어갈 범위를 확인하세요. 새로운 근력 저하나 배뇨·배변 변화는 신속한 의료 평가가 필요합니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/back-pain/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "AAOS OrthoInfo: Low Back Pain",
+          "url": "https://www.orthoinfo.org/diseases--conditions/low-back-pain/",
+          "scope": "들기·굽히기 이후 요통과 근육·인대·추간판 원인의 구분",
+          "checked_at": "2026-10-23"
+        },
+        {
+          "title": "NIAMS: Back Pain — Diagnosis, Treatment, and Steps to Take",
+          "url": "https://www.niams.nih.gov/health-topics/back-pain/diagnosis-treatment-and-steps-to-take",
+          "scope": "문진·신경학적 진찰, 영상검사의 역할과 활동 복귀",
+          "checked_at": "2026-10-23"
+        },
+        {
+          "title": "NIAMS: Back Pain",
+          "url": "https://www.niams.nih.gov/health-topics/back-pain",
+          "scope": "허리 통증의 원인과 다리로 이어지는 증상의 구분",
+          "checked_at": "2026-10-23"
+        },
+        {
+          "title": "NHS: Back pain",
+          "url": "https://www.nhs.uk/conditions/back-pain/",
+          "scope": "요통의 다양한 원인, 활동 조절과 진료가 필요한 변화",
+          "checked_at": "2026-10-23"
+        }
+      ],
+      "status": "published",
+      "published_at": "2026-10-21",
+      "updated_at": "2026-10-23",
+      "medical_review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "route_policy": "preserve-existing"
+    }
+  ]
+}
