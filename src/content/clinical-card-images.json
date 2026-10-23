@@ -2,9 +2,9 @@
   "renderer_version": "clinical-information-diagrams-v2",
   "renderer": "Pillow / exact text and editorial shapes; no generative model",
   "diagram_policy": "Supplied observation/discussion labels only; not a diagnostic algorithm or treatment outcome graphic",
-  "built_at": "2026-10-22T23:25:08+09:00",
+  "built_at": "2026-10-23T18:05:38+09:00",
   "catalog_path": "src/content/clinical-catalog.json",
-  "catalog_sha256": "9b120e095d24e84320e8496ff96549e7eceba2eebc629c2aa70d0ed62bf24261",
+  "catalog_sha256": "a6682165fb118b79a28196b251c8f80e0aa06557d3cec0e789cd3af412e0f8d0",
   "font_path": "tools/fonts/NotoSansKR-Variable.ttf",
   "font_sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
   "font_license": "SIL Open Font License 1.1; tools/fonts/OFL-NotoSansKR.txt",
@@ -7314,7 +7314,7 @@
       "profile_id": "msk-pelvic-pain",
       "topic": "followup",
       "topic_label": "변화 확인",
-      "question": "어떤 경우 즉시 평가가 필요한가요?",
+      "question": "골반 통증의 경과와 다음 진료는 어떻게 정리하나요?",
       "labels": [
         "갑작스러운 악화",
         "임신·출혈",
@@ -7330,7 +7330,7 @@
       "thumbnail_bytes": 9414,
       "sha256": "214b4087ce775707119d0bb74cfafee815e37e14f4c8e86652d195a0184ac48b",
       "thumbnail_sha256": "78021f1c88f1a4986f93ff0373a171efe7629354382af1b4543cceb4a4bd4b93",
-      "content_hash": "c5e6e7e28ea0c2379d1c7a0b6e5ec5b96bc6a37295b9068eab22ce02dbc96333",
+      "content_hash": "bb9fc271a6447b1e708931868f7c0c8349c27d3a5ea5b264b6e86e539f7891de",
       "alt": "골반 통증: 변화 확인. 갑작스러운 악화, 임신·출혈, 다음 평가을 정리한 정보도식",
       "text_layout": {
         "profile": {
