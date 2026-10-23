@@ -86,6 +86,8 @@ def validate_profile(profile):
                 raise ValueError(f"{profile['id']}: incomplete patient question")
             if not faq.get("source_urls") or not set(faq["source_urls"]) <= known_sources:
                 raise ValueError(f"{profile['id']}: patient answer needs a declared source")
+        if owner.get("page_metadata") and not all(owner["page_metadata"].get(key) for key in ("title", "description")):
+            raise ValueError(f"{profile['id']}: incomplete page metadata")
     if profile.get("page_metadata") and not all(profile["page_metadata"].get(key) for key in ("title", "description")):
         raise ValueError(f"{profile['id']}: incomplete primary-page metadata")
 
@@ -153,7 +155,7 @@ def main():
         profile["category"] = profile.get("category") or (condition_by_slug[primary]["category"] if primary in condition_by_slug else "피부")
         profile.setdefault("status", "review")
         profile["created_at"] = config["created_at"]
-        profile["updated_at"] = priority_data["updated_at"] if profile.get("priority") else profile.get("updated_at", config["created_at"])
+        profile["updated_at"] = max(profile.get("updated_at", config["created_at"]), priority_data["updated_at"]) if profile.get("priority") else profile.get("updated_at", config["created_at"])
         profile.setdefault("reviewed_by", None)
         profile.setdefault("reviewed_at", None)
         profile["search_terms"] = " ".join([profile["name"]] + profile.get("keywords", []) +
@@ -169,6 +171,10 @@ def main():
             section["h1"] = "청주·오창 " + profile["name"] + " · " + section["question"]
             section["title"] = section["h1"] + " | 연결한의원 청주오창"
             section["description"] = "청주·오창 " + profile["name"] + " 상담을 준비하며 " + section["question"] + " " + section["points"][0]
+            if section.get("page_metadata"):
+                section["title"] = section["page_metadata"]["title"]
+                section["h1"] = section["title"].split(" | ")[0]
+                section["description"] = section["page_metadata"]["description"]
             profile["topics"].append(section)
         for member in profile["members"]:
             by_member[member] = profile

@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-23",
+  "status": "content-revised",
+  "topics": [
+    {
+      "id": "msk-chuna",
+      "keyword": "오창 추나요법"
+    },
+    {
+      "id": "msk-knee-osteoarthritis",
+      "keyword": "오창 무릎관절염"
+    },
+    {
+      "id": "msk-low-back-pain",
+      "keyword": "오창 요통"
+    },
+    {
+      "id": "msk-lumbar-stenosis",
+      "keyword": "오창 협착증"
+    },
+    {
+      "id": "msk-shoulder-impingement",
+      "keyword": "오창 충돌증후군"
+    },
+    {
+      "id": "msk-tennis-elbow",
+      "keyword": "오창 테니스엘보"
+    },
+    {
+      "id": "msk-hip-pain",
+      "keyword": "오창 고관절통증"
+    },
+    {
+      "id": "msk-pelvic-pain",
+      "keyword": "오창 골반통증"
+    }
+  ],
+  "core_pages": 56,
+  "new_urls": 0,
+  "existing_urls_preserved": true,
+  "images": "existing-topic-specific-assets-preserved",
+  "medical_review": "pending",
+  "search_exposure": {
+    "crawled": "unverified",
+    "indexed": "unverified",
+    "rank_one": "unverified",
+    "carousel": "unverified"
+  },
+  "implementation_checks": "passed",
+  "core_pages_checked": 56,
+  "distinct_detail_bodies": 48,
+  "other_profiles_unchanged": true,
+  "preserved_images": 48,
+  "source_scopes_checked": "2026-10-23",
+  "browser_qa": {
+    "environment": "managed desktop preview",
+    "hubs_checked": 8,
+    "loaded_card_images": 48,
+    "horizontal_overflow": false,
+    "keyboard_checkbox": "passed",
+    "keyboard_faq": "passed",
+    "physical_mobile": "unverified"
+  }
+}
