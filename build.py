@@ -311,7 +311,7 @@ def main():
         render("pain_series.html", page, topic=None, previous_topic=None, next_topic=None,
                jsonld=json.dumps([json.loads(jsonld(page))] + pain_schemas(PAIN_SERIES, None, SITE["url"]), ensure_ascii=False))
     if CLINICAL:
-        render("clinical_index.html", CLINICAL["config"]["index_path"] + ".html", last_modified=max([CLINICAL["config"]["updated_at"]] + [s["updated_at"] for s in PATIENT_SCENARIOS]))
+        render("clinical_index.html", CLINICAL["config"]["index_path"] + ".html", last_modified=max([CLINICAL["config"]["updated_at"]] + [p["updated_at"] for p in CLINICAL["profiles"]] + [s["updated_at"] for s in PATIENT_SCENARIOS]))
         if REVIEW_MODE:
             render("clinical_coverage.html", CLINICAL["config"]["coverage_path"] + ".html")
         for profile in CLINICAL["profiles"]:

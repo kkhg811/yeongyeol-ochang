@@ -1,6 +1,6 @@
 {
   "status": "published",
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-25",
   "medical_review_status": "pending",
   "reviewed_by": null,
   "reviewed_at": null,
@@ -521,44 +521,44 @@
     {
       "id": "msk-tennis-elbow",
       "checks": [
-        "팔꿈치의 안쪽보다 바깥쪽이 아픈가요?",
-        "컵·가방을 들거나 물건을 쥘 때 바깥 팔꿈치 통증이 커지나요?",
-        "반복해서 손목을 쓰는 작업 뒤 팔꿈치나 아래팔이 불편한가요?"
+        "바깥 팔꿈치 통증이 손 사용과 어떤 관계인지 설명할 수 있나요?",
+        "이전 손상·작업량 변화와 시작 경과를 정리했나요?",
+        "감각이나 손 동작의 변화를 통증과 나누어 설명할 수 있나요?"
       ],
       "branches": [
         {
-          "observation": "바깥 팔꿈치가 쥐기·들기·손목 사용에서 아프다면",
-          "possibility": "테니스엘보 등 바깥쪽 힘줄 관련 통증",
-          "distinction": "테니스 경험은 필수 조건이 아닙니다. 힘줄·관절과 신경 증상을 함께 확인합니다.",
+          "observation": "쥐기 관련 바깥쪽 통증이 주된 불편이라면",
+          "possibility": "테니스엘보를 포함한 바깥 힘줄 원인",
+          "distinction": "병력과 진찰을 종합하며 증상 이름과 진단명을 구분합니다.",
           "related_id": "msk-elbow-pain"
         },
         {
-          "observation": "통증 중심이 안쪽 팔꿈치이고 쥐거나 손목을 굽힐 때 불편하다면",
-          "possibility": "골프엘보 등 안쪽 힘줄 관련 통증",
-          "distinction": "통증 위치는 구분에 도움이 되지만 단독 진단 기준은 아닙니다. 저림이나 손상 경과도 설명합니다.",
-          "related_id": "msk-golfers-elbow"
+          "observation": "저림·감각 둔함이나 손의 동작 저하가 동반된다면",
+          "possibility": "말초신경 등 다른 원인을 함께 확인할 상황",
+          "distinction": "손 감각·근력을 확인하고 필요한 추가 평가를 선택합니다.",
+          "related_id": "msk-hand-numbness"
         }
       ],
       "faq": [
         {
-          "question": "테니스를 하지 않아도 테니스엘보가 생기나요?",
-          "answer": "네. 이름과 달리 일이나 집안일 등 반복적인 손목·아래팔 사용과 관련해서도 생길 수 있습니다. 어떤 물건을 쥐거나 들 때 아픈지, 바깥쪽 통증이 활동과 어떻게 연결되는지 확인하는 것이 도움이 됩니다."
+          "question": "바깥쪽 통증은 모두 힘줄 문제인가요?",
+          "answer": "관절·신경 등 다른 소견과 구분해 평가합니다."
         },
         {
-          "question": "테니스엘보와 골프엘보는 어떻게 다른가요?",
-          "answer": "테니스엘보는 주로 팔꿈치 바깥쪽, 골프엘보는 안쪽 힘줄 부위의 통증을 말합니다. 두 경우 모두 쥐기나 손목 사용이 불편할 수 있습니다. 위치와 활동을 기록하되 저림·관절 문제 등 다른 원인도 함께 평가합니다."
+          "question": "재평가에는 무엇을 가져가나요?",
+          "answer": "실제 작업량과 관리 시행 뒤 변화를 정리하세요."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/tennis-elbow/",
-          "scope": "팔꿈치 바깥 통증과 쥐기·들기·손목 사용",
-          "checked_at": "2026-10-22"
+          "url": "https://bess.ac.uk/tennis-elbow/",
+          "scope": "진단된 테니스엘보의 바깥 통증·쥐기 관련성과 지속·악화 때 재평가",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://roh.nhs.uk/services-information/therapy/golfers-elbow",
-          "scope": "안쪽 팔꿈치 힘줄 통증과 손목·쥐기 부담",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nth.nhs.uk/resources/hand-therapy-cubital-tunnel-syndrome/",
+          "scope": "척골신경 자극의 손 감각·동작 변화와 증상 기록",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 12,
@@ -714,49 +714,59 @@
     {
       "id": "msk-pelvic-alignment",
       "checks": [
-        "골반의 겉모양 외에 걷기·앉기에서 실제 불편이 있나요?",
-        "통증이 고관절 주변인지 아랫배 안쪽인지 구분할 수 있나요?",
-        "다리 길이나 골반 위치에 대한 설명과 현재 증상이 어떻게 연결되는지 질문이 있나요?"
+        "걷기·계단·옆으로 눕기에서 고관절 주변이 아픈가요?",
+        "몸이 한쪽으로 기울어 보이는 모양이 최근 달라졌나요?",
+        "배뇨·배변·생리와 관련된 아랫배 통증도 있나요?"
       ],
       "branches": [
         {
-          "observation": "비대칭으로 보이지만 통증·기능 제한이 뚜렷하지 않다면",
-          "possibility": "모양과 실제 치료 필요성을 구분하는 평가",
-          "distinction": "외형의 차이만으로 질환이나 교정 필요성을 정하지 않습니다. 목표가 필요한지부터 확인합니다.",
+          "observation": "높이 차이 소견은 있으나 통증과의 관계가 불분명하다면",
+          "possibility": "측정 조건과 보행·척추·고관절의 종합 평가",
+          "distinction": "길이 차이, 자세와 척추 소견을 같은 진단으로 묶지 않고 해석합니다.",
           "related_id": "msk-body-alignment"
         },
         {
-          "observation": "보행·계단·옆으로 눕기에서 고관절 주변이 아프다면",
-          "possibility": "관절·힘줄 등 기능을 제한하는 원인",
-          "distinction": "골반 위치를 유일한 원인으로 보지 않습니다. 아랫배나 배뇨·배변 증상이 있다면 함께 평가해야 합니다.",
+          "observation": "고관절 움직임에 따른 통증과 활동 제한이 동반된다면",
+          "possibility": "고관절·주변 연부조직 문제의 구분",
+          "distinction": "사타구니·옆쪽·아랫배 위치를 나누어 다른 원인도 함께 검토합니다.",
           "related_id": "msk-hip-pain"
         }
       ],
       "faq": [
         {
-          "question": "골반이 비대칭으로 보이면 반드시 교정해야 하나요?",
-          "answer": "겉모양만으로 치료 필요성을 정할 수 없습니다. 통증·보행·앉기 등 실제 제한과 원인을 먼저 평가해야 합니다. 수기 치료를 검토할 때도 적용 부위와 방법, 기대 이득·한계 및 대안을 확인합니다."
+          "question": "측정값이 달라지면 교정 효과가 입증되나요?",
+          "answer": "측정 조건과 통증·기능을 함께 비교해야 합니다."
         },
         {
-          "question": "교정을 받으면 골반 위치가 영구히 고정되나요?",
-          "answer": "이 안내의 근거로 영구적인 위치 변화나 교정 효과를 약속할 수는 없습니다. 목표는 외형 수치만이 아니라 통증과 일상 기능의 변화로 정하고, 개인 상태에 맞는 방법과 재평가 계획을 설명받습니다."
+          "question": "골반 진찰에서 내부 장기 증상도 설명하나요?",
+          "answer": "배변·배뇨·생리와 관련된 증상을 함께 알려주세요."
         }
       ],
       "evidence": [
         {
+          "url": "https://www.orthoinfo.org/diseases--conditions/limb-length-discrepancy/",
+          "scope": "다리 길이 차이의 병력·보행·측정 평가. 소아 중심 자료이며 성인 치료 수치나 골반 영구 교정의 근거로 적용하지 않음",
+          "checked_at": "2026-10-25"
+        },
+        {
           "url": "https://www.nhs.uk/symptoms/hip-pain/",
-          "scope": "고관절 주변 통증의 여러 원인과 기능 평가; 외형만으로 진단하지 않는 편집상 한계",
-          "checked_at": "2026-10-22"
+          "scope": "고관절 주변 통증의 다양한 원인, 활동·수면 영향과 평가 필요성",
+          "checked_at": "2026-10-25"
         },
         {
           "url": "https://www.nhs.uk/symptoms/pelvic-pain/",
-          "scope": "골반 내부 장기 관련 원인을 함께 확인할 필요",
-          "checked_at": "2026-10-22"
+          "scope": "아랫배 통증의 장·방광·생식기 원인과 진찰에서 전달할 증상",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://www.nccih.nih.gov/health/spinal-manipulation-what-you-need-to-know",
-          "scope": "수기 방법의 안전성·적용 한계. 골반 위치의 영구 교정 효과를 입증하는 자료가 아님",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nhs.uk/conditions/scoliosis/",
+          "scope": "좌우 외형 차이와 척추의 회전·측만 평가; 자세 사진만으로 병명이나 치료 필요성을 확정하지 않음",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.orthoinfo.org/diseases--conditions/malunion-in-the-lower-limb/",
+          "scope": "골절 뒤 하지 정렬·길이 차이의 병력·관절·보행 평가와 보조도구. 골반 외형만으로 부정유합을 진단하는 근거가 아님",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 16,
@@ -766,44 +776,44 @@
     {
       "id": "msk-golfers-elbow",
       "checks": [
-        "팔꿈치 바깥보다 안쪽의 뼈 주변이 아픈가요?",
-        "물건을 쥐거나 손목을 굽히는 반복 활동에서 통증이 커지나요?",
-        "아래팔이 뻣뻣하거나 물건을 잡고 유지하기 불편한가요?"
+        "안쪽 팔꿈치 통증이 쥐기·손목 사용에서 반복되나요?",
+        "다친 계기나 작업량 변화가 통증 시작과 연결되나요?",
+        "손 감각이나 손가락의 섬세한 동작에 변화가 있나요?"
       ],
       "branches": [
         {
-          "observation": "안쪽 팔꿈치가 쥐기·손목 굽힘 활동에서 아프다면",
-          "possibility": "골프엘보 등 안쪽 힘줄 부하 관련 통증",
-          "distinction": "종목 이름보다 통증 위치와 반복 활동을 봅니다. 진찰에서 힘줄·관절·신경 원인을 구분합니다.",
+          "observation": "안쪽 힘줄 부위 통증이 사용과 연관된다면",
+          "possibility": "골프엘보를 포함한 힘줄 부하 관련 원인",
+          "distinction": "압통·움직임·근력을 종합하며 한 가지 유발 소견으로 확정하지 않습니다.",
           "related_id": "msk-elbow-pain"
         },
         {
-          "observation": "바깥 팔꿈치가 들기·손목 사용에서 아프다면",
-          "possibility": "테니스엘보 등 바깥쪽 힘줄 관련 통증",
-          "distinction": "안쪽과 바깥쪽 증상이 겹칠 수 있습니다. 통증이 없는 동작을 억지로 반복해 구별하지 않습니다.",
-          "related_id": "msk-tennis-elbow"
+          "observation": "약지·새끼손가락 감각 변화나 손 동작 저하가 함께 있다면",
+          "possibility": "척골신경 평가를 함께 할 상황",
+          "distinction": "팔꿈치·손과 필요 시 목을 확인해 위치와 원인을 구분합니다.",
+          "related_id": "msk-hand-numbness"
         }
       ],
       "faq": [
         {
-          "question": "골프를 치지 않는데도 골프엘보일 수 있나요?",
-          "answer": "네. 손목과 손가락을 굽히는 근육·힘줄을 반복해서 쓰는 일이나 집안일에서도 발생할 수 있습니다. 골프 여부보다 안쪽 팔꿈치의 위치와 쥐기·손목 사용 부담을 확인합니다."
+          "question": "영상만 보고 골프엘보를 정하나요?",
+          "answer": "현재 통증·기능과 진찰 소견을 영상에 연결해 판단합니다."
         },
         {
-          "question": "아래팔까지 아프면 골프엘보가 아닌가요?",
-          "answer": "골프엘보의 통증이 팔꿈치에서 손목 방향으로 이어지기도 합니다. 다만 저림·감각 변화나 다른 관절 증상이 있다면 힘줄 문제만으로 설명하지 말고 함께 평가해야 합니다. 평소 통증 경로를 기록하세요."
+          "question": "집에서 신경을 두드려 검사할까요?",
+          "answer": "유발검사를 반복하기보다 평소 감각 변화를 전달하세요."
         }
       ],
       "evidence": [
         {
-          "url": "https://roh.nhs.uk/services-information/therapy/golfers-elbow",
-          "scope": "안쪽 팔꿈치·아래팔 통증, 쥐기와 손목 굽힘 부하",
-          "checked_at": "2026-10-22"
+          "url": "https://www.orthoinfo.org/diseases--conditions/medial-epicondylitis-golfers-elbow/",
+          "scope": "골프엘보 병력·힘줄 및 신경 진찰과 선택적 영상검사",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://www.nhs.uk/conditions/tennis-elbow/",
-          "scope": "바깥 팔꿈치 통증과 손목 사용·쥐기 불편",
-          "checked_at": "2026-10-22"
+          "url": "https://www.bssh.ac.uk/patients/conditions/22/cubital_tunnel_syndrome",
+          "scope": "팔꿈치 안쪽 신경 압박과 손 감각·섬세한 동작 변화",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 17,
@@ -813,39 +823,54 @@
     {
       "id": "msk-kyphosis",
       "checks": [
-        "등 위쪽이 둥글게 굽어 보이는 변화가 있나요?",
-        "등 모양과 함께 뻣뻣함이나 통증이 일상생활에 영향을 주나요?",
-        "성장 과정·손상 이후 등 모양이 더 달라졌다고 느끼나요?"
+        "등 모양이 변한 시기와 성장 여부를 설명할 수 있나요?",
+        "통증·저림·움직임 변화가 등 굽음과 함께 있나요?",
+        "기존 영상·골밀도 검사와 골절·약물 기록이 있나요?"
       ],
       "branches": [
         {
-          "observation": "자세에 따라 굽어 보이는 정도가 달라진다면",
-          "possibility": "자세성 요인 등을 살펴볼 상황",
-          "distinction": "보이는 변화만으로 자세성 후만을 확정하지 않습니다. 의료진이 유연성·성장 경과와 구조를 평가합니다.",
+          "observation": "진찰에서 자세 변화와 유연성 차이를 확인해야 한다면",
+          "possibility": "자세성 후만과 구조성 후만의 구분",
+          "distinction": "겉모양만으로 유형을 확정하지 않고 성장과 척추 움직임을 평가합니다.",
           "related_id": "msk-body-alignment"
         },
         {
-          "observation": "굽은 모양이 뚜렷해지거나 통증·뻣뻣함이 동반된다면",
-          "possibility": "구조 변화·손상 등을 포함한 척추 원인",
-          "distinction": "단순 습관으로 넘기지 않습니다. 진찰과 필요할 때 영상검사로 원인과 관리 필요성을 확인합니다.",
+          "observation": "성인 이후 새 굽음과 통증·골절 병력이 있다면",
+          "possibility": "뼈 건강과 척추 구조 변화의 평가",
+          "distinction": "엑스레이·골밀도·신경 평가 중 필요한 목적을 설명받습니다.",
           "related_id": "msk-upper-back-pain"
         }
       ],
       "faq": [
         {
-          "question": "굽은 등은 모두 나쁜 자세 때문인가요?",
-          "answer": "아닙니다. 자세와 관련된 경우 외에 성장 중 척추뼈 모양 변화, 선천적 구조, 손상이나 골다공증 등도 관련될 수 있습니다. 겉모양만으로 원인을 정하지 않고 변화 경과와 유연성·통증을 평가합니다."
+          "question": "한 번의 각도 측정으로 계획이 끝나나요?",
+          "answer": "유형·성장·경과와 증상을 함께 보고 추적을 정합니다."
         },
         {
-          "question": "등이 굽어 보이면 무조건 치료가 필요한가요?",
-          "answer": "원인과 정도, 통증과 기능 영향을 보고 판단합니다. 가벼운 굽음은 다른 증상이 없을 수 있지만, 눈에 띄게 변하거나 불편이 있으면 평가가 필요합니다. 교정 전후 사진만으로 치료 필요성과 효과를 판단하지 않습니다."
+          "question": "영상 변화 없이도 운동을 조정하나요?",
+          "answer": "통증과 일상 기능의 반응도 관리 계획에 반영합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/kyphosis/",
-          "scope": "자세성·구조성 원인, 등 굽음·통증·뻣뻣함, 유연성·영상 평가와 치료 필요성",
-          "checked_at": "2026-10-22"
+          "url": "https://www.orthoinfo.org/diseases--conditions/kyphosis-roundback-of-the-spine",
+          "scope": "자세성·구조성 후만의 차이, 성장과 구조 변화에 따른 진찰·관리",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/osteoporosis/",
+          "scope": "척추 골절·굽은 자세와 뼈 건강을 함께 확인할 필요",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.mayoclinic.org/diseases-conditions/kyphosis/diagnosis-treatment/drc-20374209",
+          "scope": "2026-10-07 개정 자료의 후만 진찰·영상·뼈 건강 평가와 진료 준비",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/article/001240.htm",
+          "scope": "연령별 후만의 원인, 척추·신경·뼈 건강 평가와 경과 확인",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 18,
@@ -855,44 +880,44 @@
     {
       "id": "msk-myalgia",
       "checks": [
-        "익숙하지 않은 운동이나 반복 작업 후 특정 근육이 아프기 시작했나요?",
-        "한 부위보다 여러 곳의 근육이 동시에 불편한가요?",
-        "근육통이 시작된 무렵 감염 증상이나 복용약 변화가 있었나요?"
+        "통증 지점이 특정 근육인지 넓은 범위인지 설명할 수 있나요?",
+        "평소 가능했던 들기·걷기가 통증이나 힘 저하로 달라졌나요?",
+        "운동·감염 증상·처방 변화의 발생 순서를 정리했나요?"
       ],
       "branches": [
         {
-          "observation": "특정 활동과 맞물려 사용한 근육 부위가 아프다면",
-          "possibility": "과사용·긴장·손상과 관련한 근육통",
-          "distinction": "발생 시점과 경과를 확인합니다. 모든 운동 후 통증이 같은 원인은 아니므로 지속·반복되는 양상도 평가합니다.",
+          "observation": "활동량 변화와 맞물린 국소 통증이라면",
+          "possibility": "과사용·근육 손상 등 확인",
+          "distinction": "이력과 진찰 소견을 함께 비교하고 날짜만으로 지연성 통증을 확정하지 않습니다.",
           "related_id": "msk-neck-muscle-pain"
         },
         {
-          "observation": "넓은 부위의 통증에 피로·수면 불편이 함께 있다면",
-          "possibility": "섬유근육통 등 전신적으로 살펴볼 원인",
-          "distinction": "감염·약물·다른 질환도 근육통을 만들 수 있습니다. 단순한 담이나 운동 부족으로 단정하지 않습니다.",
+          "observation": "광범위 통증에 피로·수면 문제가 겹친다면",
+          "possibility": "전신 원인을 포함한 감별",
+          "distinction": "동반 증상과 병력을 보고 다른 원인을 검토할 검사 필요성을 정합니다.",
           "related_id": "msk-fibromyalgia"
         }
       ],
       "faq": [
         {
-          "question": "근육통은 모두 운동을 많이 해서 생기나요?",
-          "answer": "아닙니다. 긴장·과사용·손상 외에 감염이나 약물, 전신 질환도 원인이 될 수 있습니다. 어떤 활동 직후인지, 여러 부위가 함께 아픈지, 약이나 전신 상태가 달라졌는지 함께 확인합니다."
+          "question": "근육통에서 근력을 왜 확인하나요?",
+          "answer": "아파서 피하는 동작과 실제 수행 능력의 변화를 구분하기 위해서입니다."
         },
         {
-          "question": "근육이 아픈 것과 힘이 약해지는 것은 같은가요?",
-          "answer": "통증 때문에 동작을 피하는 것과 실제 근력이 줄어드는 느낌은 구분해서 설명하는 것이 좋습니다. 평소 하던 들기·걷기 등에서 무엇이 달라졌는지 기록하세요. 통증 이름만으로 손상 부위나 원인을 확정하지 않습니다."
+          "question": "전신 통증은 특정 검사로 확정되나요?",
+          "answer": "한 검사만으로 판단하지 않으며 필요한 경우 다른 원인 확인 검사를 선택합니다."
         }
       ],
       "evidence": [
         {
           "url": "https://medlineplus.gov/ency/article/003178.htm",
-          "scope": "과사용·긴장·손상과 감염·약물·전신 질환 등 근육통 원인",
-          "checked_at": "2026-10-22"
+          "scope": "국소 과사용과 감염·약물·전신 원인, 병력과 기능 확인",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://www.nhs.uk/conditions/fibromyalgia/",
-          "scope": "광범위 통증과 피로·수면 문제",
-          "checked_at": "2026-10-22"
+          "url": "https://www.niams.nih.gov/health-topics/fibromyalgia/diagnosis-treatment-and-steps-to-take",
+          "scope": "다른 원인 평가, 단계적 활동과 복합 관리",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 19,
@@ -902,44 +927,49 @@
     {
       "id": "msk-coccyx-pain",
       "checks": [
-        "엉덩이 사이 척추 맨 아래쪽이 앉을 때 아픈가요?",
-        "앉거나 일어설 때 꼬리뼈 주변 통증이 더 느껴지나요?",
-        "넘어짐·출산·오래 앉기 이후 통증이 시작되거나 달라졌나요?"
+        "앉기·일어서기·배변 중 어떤 동작에서 아픈지 설명할 수 있나요?",
+        "외상이나 출산 뒤 시작한 날짜와 기능 제한을 정리했나요?",
+        "꼬리뼈 국소 통증과 다리로 퍼지는 저림을 나눠 기록했나요?"
       ],
       "branches": [
         {
-          "observation": "척추 맨 아래의 통증이 앉기·일어서기에서 두드러진다면",
-          "possibility": "꼬리뼈 주변 압박·손상 관련 통증",
-          "distinction": "위치와 경과를 진찰에서 확인합니다. 앉을 때 아프다는 이유만으로 꼬리뼈 자체의 문제로 확정하지 않습니다.",
+          "observation": "앉는 압박과 맞물린 국소 통증이라면",
+          "possibility": "미골과 주변 연부조직 문제 확인",
+          "distinction": "외상 시기와 진찰을 함께 검토하며 통증만으로 골절을 단정하지 않습니다.",
           "related_id": "msk-pelvic-pain"
         },
         {
-          "observation": "허리·엉덩이에서 다리까지 통증이나 저림이 이어진다면",
-          "possibility": "요추·신경 관련 원인",
-          "distinction": "국소 꼬리뼈 통증과 방사통을 나누어 기록합니다. 두 문제가 동시에 있는지도 확인합니다.",
+          "observation": "허리·엉덩이에서 다리로 퍼지는 증상이라면",
+          "possibility": "요추·신경 관련 감별",
+          "distinction": "감각과 근력 변화를 확인하고 미골 주변 문제와 동시 존재 여부도 살핍니다.",
           "related_id": "msk-sciatica"
         }
       ],
       "faq": [
         {
-          "question": "꼬리뼈가 아프면 오래 앉아 쉬는 것이 좋나요?",
-          "answer": "오래 앉으면 꼬리뼈에 압박이 계속될 수 있습니다. 앉는 시간을 나누고 허리를 받치거나 꼬리뼈 압박을 덜어 주는 쿠션을 검토할 수 있습니다. 지속되는 통증은 원인을 확인하고 개인에게 맞는 조절 방법을 정합니다."
+          "question": "넘어진 뒤 통증이면 곧 골절인가요?",
+          "answer": "타박과 주변 조직 손상도 있어 병력·진찰과 필요한 검사를 함께 봅니다."
         },
         {
-          "question": "넘어진 적이 없어도 꼬리뼈가 아플 수 있나요?",
-          "answer": "그럴 수 있습니다. 출산이나 오래 앉는 압박 등과 관련되거나 뚜렷한 계기가 없을 수도 있습니다. 시작 상황과 앉기·일어서기·배변에서의 변화를 기록하고 허리·골반의 다른 통증과 구분해 평가합니다."
+          "question": "앉아 있는 시간도 진료 정보인가요?",
+          "answer": "같은 환경에서의 앉기 제한은 관리 전후 기능을 비교하는 자료가 됩니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/tailbone-coccyx-pain/",
-          "scope": "꼬리뼈 통증의 앉기·일어서기 양상, 압박 조절과 가능한 발생 배경",
-          "checked_at": "2026-10-22"
+          "url": "https://medlineplus.gov/ency/article/000008.htm",
+          "scope": "넘어진 뒤 꼬리뼈 부위 타박·인대 손상과 압박 통증",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.tims.nhs.uk/wp-content/uploads/2024/08/TIMS-Coccydynia-June2024.pdf",
+          "scope": "반복 압박·지속 자세와 꼬리뼈 통증, 생활 조절과 재평가",
+          "checked_at": "2026-10-25"
         },
         {
           "url": "https://www.nhs.uk/conditions/sciatica/",
-          "scope": "엉덩이에서 다리로 퍼지는 신경 증상",
-          "checked_at": "2026-10-22"
+          "scope": "엉덩이에서 다리로 이어지는 통증·저림과 신경 기능 변화",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 20,
@@ -949,49 +979,49 @@
     {
       "id": "msk-leg-numbness",
       "checks": [
-        "다리를 누르던 자세를 풀어도 저림이 남거나 자주 반복되나요?",
-        "엉덩이에서 한쪽 다리 뒤쪽으로 저림이나 통증이 이어지나요?",
-        "발 감각 저하와 함께 발이 끌리거나 균형 잡기가 달라졌나요?"
+        "감각이 다른 구간과 한쪽·양쪽 여부를 표시했나요?",
+        "저림과 별개로 발 들기·보행 변화가 있는지 정리했나요?",
+        "당뇨병·복용약·영양 관련 병력과 발생 순서를 알릴 수 있나요?"
       ],
       "branches": [
         {
-          "observation": "다리를 깔고 앉은 뒤 잠깐 저리고 자세를 바꾸면 사라짐",
-          "possibility": "자세에 의한 일시적인 신경 압박 가능성",
-          "distinction": "계속 남거나 반복되면 일시적 압박으로 단정하지 않고 분포와 신경 기능을 확인합니다.",
+          "observation": "압박 자세 뒤 짧게 생겼다 사라지는 저림이라면",
+          "possibility": "일시적 신경 압박 관련 감별",
+          "distinction": "지속·반복 여부와 감각·근력 소견이 맞는지 확인합니다.",
           "related_id": "msk-neuralgia"
         },
         {
-          "observation": "엉덩이에서 다리 뒤쪽으로 이어지는 통증·저림",
-          "possibility": "좌골신경통 등 허리에서 이어지는 신경 증상 가능성",
-          "distinction": "양쪽 발끝의 감각 저하 등 말초신경 양상과 진찰에서 구분합니다.",
-          "related_id": "msk-sciatica"
+          "observation": "발끝의 감각·보행 변화가 지속된다면",
+          "possibility": "말초신경 원인 등 감별",
+          "distinction": "원인 병력과 진찰을 검토하고 필요할 때 혈액·신경검사를 선택합니다.",
+          "related_id": "msk-leg-pain"
         }
       ],
       "faq": [
         {
-          "question": "저린 곳을 주무르면 원인을 알 수 있나요?",
-          "answer": "아닙니다. 저림의 위치·지속 시간·근력과 감각 변화를 함께 봐야 합니다. 감각이 둔한 부위는 강하게 누르거나 뜨겁게 찜질하지 마세요."
+          "question": "통증과 감각을 왜 따로 비교하나요?",
+          "answer": "통증 변화만으로 감각이나 근력의 회복을 판단할 수 없기 때문입니다."
         },
         {
-          "question": "양쪽 발이 모두 저려도 허리디스크인가요?",
-          "answer": "꼭 그렇지는 않습니다. 말초신경 문제 등도 손발 저림을 일으킬 수 있어 당뇨병·복용약·증상 분포를 함께 확인합니다."
+          "question": "검사를 정하기 전에 어떤 기록이 필요하나요?",
+          "answer": "분포·지속 시간과 근력·보행 변화를 병력과 함께 준비하세요."
         }
       ],
       "evidence": [
         {
           "url": "https://www.nhs.uk/symptoms/pins-and-needles/",
-          "scope": "자세 압박에 따른 일시적 저림과 지속·반복 저림의 구분",
-          "checked_at": "2026-10-22"
+          "scope": "일시적 자세 압박과 반복·지속 저림의 구분",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://www.nhs.uk/conditions/sciatica/",
-          "scope": "엉덩이에서 한쪽 다리로 이어지는 통증·저림",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nhs.uk/conditions/peripheral-neuropathy/diagnosis/",
+          "scope": "감각·근력·반사 진찰과 필요한 혈액·신경검사",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://www.nhs.uk/conditions/peripheral-neuropathy/",
-          "scope": "발 감각 저하·근력·균형 변화와 말초신경 원인",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nhs.uk/conditions/peripheral-neuropathy/symptoms/",
+          "scope": "감각 저하·근력·보행 변화의 구분",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 21,
@@ -1001,39 +1031,49 @@
     {
       "id": "msk-leg-pain",
       "checks": [
-        "평소보다 걷거나 운동한 양이 늘어난 뒤 특정 근육이 아픈가요?",
-        "걸을 때 같은 구간이 아프고 쉬면 가라앉는 일이 반복되나요?",
-        "통증 부위에 붓기·피부색 변화나 저림이 함께 있나요?"
+        "활동·휴식 중 통증이 시작되는 시점과 부위를 정리했나요?",
+        "붓기·피부색과 감각·보행의 변화가 동반되나요?",
+        "수술·장시간 이동·혈관 질환·복용약 이력을 전달할 수 있나요?"
       ],
       "branches": [
         {
-          "observation": "새로운 운동이나 반복 사용 뒤 특정 근육에 통증",
-          "possibility": "과사용·근육 손상 관련 통증 가능성",
-          "distinction": "통증만으로 근육통을 확정하지 않으며 외상·부종과 보행 기능을 확인합니다.",
+          "observation": "운동량 증가 뒤 특정 부위가 아프다면",
+          "possibility": "근육·주변 조직 관련 감별",
+          "distinction": "외상과 국소 진찰을 보고 부종·보행 제한이 다른 원인을 시사하는지도 확인합니다.",
           "related_id": "msk-myalgia"
         },
         {
-          "observation": "허리·엉덩이에서 다리로 뻗거나 저림이 동반됨",
-          "possibility": "신경에서 이어지는 다리 통증 가능성",
-          "distinction": "걷기와 휴식의 관계만으로 신경·혈관 원인을 구별할 수는 없습니다.",
-          "related_id": "msk-sciatica"
+          "observation": "일정한 보행에서 반복되고 쉬면 줄어든다면",
+          "possibility": "혈류 상태를 포함한 감별",
+          "distinction": "활동 반응만으로 확정하지 않으며 진찰과 필요한 혈압 비교 검사를 선택합니다.",
+          "related_id": "msk-leg-numbness"
         }
       ],
       "faq": [
         {
-          "question": "걸으면 아프고 쉬면 좋아지면 운동 부족인가요?",
-          "answer": "그 양상만으로 판단할 수 없습니다. 혈류 문제도 걷기 통증을 만들 수 있어 반복되는 거리와 휴식 반응을 진찰 때 알려 주세요."
+          "question": "왜 다리 통증에서 피부와 발도 보나요?",
+          "answer": "혈류·감각과 상처 상태가 통증 원인과 관리 계획에 영향을 줄 수 있습니다."
         },
         {
-          "question": "다리가 아픈 위치를 어떻게 설명하면 좋을까요?",
-          "answer": "허벅지·종아리·발 중 중심 부위를 표시하고 쥐남·당김·화끈거림을 구분해 적습니다. 운동량과 붓기·색 변화도 함께 기록하세요."
+          "question": "신경 문제와 혈류 문제를 느낌만으로 구분하나요?",
+          "answer": "증상은 단서이며 병력·진찰과 필요한 검사를 함께 확인합니다."
         }
       ],
       "evidence": [
         {
           "url": "https://medlineplus.gov/ency/article/003182.htm",
-          "scope": "다리 통증의 과사용·근육·신경·혈관성 원인과 활동/휴식 양상",
-          "checked_at": "2026-10-22"
+          "scope": "다리 통증의 근육·관절·신경·혈관 원인과 발생 상황",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/diagnosis/",
+          "scope": "다리 진찰과 발목·위팔 혈압 비교 검사의 역할",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/peripheral-artery-disease/living-with",
+          "scope": "진단 후 발 관리·보행 변화와 새 혈류 증상의 재평가",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 22,
@@ -1043,39 +1083,59 @@
     {
       "id": "msk-manual-therapy",
       "checks": [
-        "통증 때문에 목 돌리기·걷기·잠자기 중 특정 활동이 제한되나요?",
-        "제안받은 수기 방법과 적용 부위·강도를 아직 설명받지 못했나요?",
-        "이전 수기 치료 뒤 오래 남은 통증이나 새로운 저림이 있었나요?"
+        "불편한 부위와 활동 제한이 구체적으로 정리되나요?",
+        "허리에서 다리로 퍼지는 통증이나 감각 변화가 있나요?",
+        "이전 시술·복용약·기저질환과 이상 반응을 알릴 수 있나요?"
       ],
       "branches": [
         {
-          "observation": "통증과 일상 기능의 제한을 줄이는 것이 목표",
-          "possibility": "운동·활동 조절을 포함한 관리 선택지 비교가 필요한 상황",
-          "distinction": "어떤 부위의 어떤 방법인지에 따라 근거와 위험이 달라 일괄적인 효과를 적용하지 않습니다.",
-          "related_id": "msk-chuna"
+          "observation": "허리 국소 통증과 움직임 제한이 주된 문제라면",
+          "possibility": "근육·관절 관련 가능성과 기능 평가",
+          "distinction": "국소 통증만으로 병명을 정하지 않고 관리 목표와 진찰 소견을 함께 봅니다.",
+          "related_id": "msk-low-back-pain"
         },
         {
-          "observation": "자세의 겉모양 변화만을 이유로 교정을 원함",
-          "possibility": "자세 차이와 실제 통증·기능을 구분할 필요",
-          "distinction": "수기 방법의 시행만으로 뼈 위치가 영구히 바뀐다고 판단하지 않습니다.",
-          "related_id": "msk-body-alignment"
+          "observation": "다리로 이어지는 통증·저림이 동반된다면",
+          "possibility": "추간판·좌골신경통 등 신경 관련 가능성",
+          "distinction": "증상의 분포와 힘·감각을 평가한 뒤 방법과 추가 검사 필요성을 정합니다.",
+          "related_id": "msk-sciatica"
         }
       ],
       "faq": [
         {
-          "question": "도수치료와 추나는 같은 말인가요?",
-          "answer": "같은 방법이라고 단정할 수 없습니다. 수기 치료에는 관절 가동과 빠른 조작 등 서로 다른 방법이 있어 실제 제공 방법·담당자·목표를 확인해야 합니다."
+          "question": "도수라는 이름이면 같은 진찰을 하나요?",
+          "answer": "부위·증상·병력에 따라 평가와 방법이 달라집니다."
         },
         {
-          "question": "받을 때 나는 소리로 효과를 판단해도 되나요?",
-          "answer": "소리만으로 효과나 뼈 위치의 변화를 판단하지 않습니다. 치료 전에 정한 걷기·수면 등 기능과 통증의 변화를 비교하는 편이 도움이 됩니다."
+          "question": "몇 회 받을지 먼저 정해야 하나요?",
+          "answer": "목표와 반응, 재평가 기준을 먼저 설명받으세요."
         }
       ],
       "evidence": [
         {
+          "url": "https://www.nhs.uk/conditions/back-pain/",
+          "scope": "근육 손상·추간판·신경 관련 통증의 가능성과 일상 활동·경과 평가",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.nhs.uk/tests-and-treatments/physiotherapy/",
+          "scope": "물리치료에서 병력·기능 평가, 수기 방법·운동·자가 관리의 구분. 국내 직역·보험·본원 제공 여부를 뜻하지 않음",
+          "checked_at": "2026-10-25"
+        },
+        {
           "url": "https://www.nccih.nih.gov/health/spinal-manipulation-what-you-need-to-know",
-          "scope": "척추 조작과 가동의 차이, 방법별 근거·통증 및 기능 목표의 범위; 국내 도수/추나 전체 효과로 일반화하지 않음",
-          "checked_at": "2026-10-22"
+          "scope": "척추 조작·가동의 차이와 기저질환·약물·이상 반응 상담. 국내 도수치료·추나 전체와 동일시하지 않음",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.nice.org.uk/guidance/ng59/chapter/recommendations",
+          "scope": "16세 이상 요통·좌골신경통에서 수기 치료를 운동을 포함한 관리와 함께 검토하는 범위. 모든 부위의 효과로 확대하지 않음",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.osteopathy.org.uk/for-patients/visiting-an-osteopath/what-to-expect-at-your-appointment/",
+          "scope": "영국 osteopathy 환자 안내의 병력·약물 전달, 방법·위험·대안 설명과 재평가 원칙. 국내 도수치료·추나의 직역·효과·본원 시행 여부와 동일시하지 않음",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 23,
@@ -1085,44 +1145,54 @@
     {
       "id": "msk-occipital-pain",
       "checks": [
-        "뒤통수 통증이 목을 오래 고정한 날이나 화면 작업과 함께 달라지나요?",
-        "목 움직임 제한 외에 메스꺼움·빛 불편 같은 두통 증상이 있나요?",
-        "두통이 생긴 날짜와 복용한 진통제 횟수를 구분해 적을 수 있나요?"
+        "처음 생긴 뒤통수 통증인지, 기존 두통이 달라진 것인지 나눌 수 있나요?",
+        "목 움직임·두피 감각과 빛·소리·메스꺼움 증상을 각각 설명할 수 있나요?",
+        "두통의 빈도·지속과 약물 사용이 이전 진료 후 달라졌나요?"
       ],
       "branches": [
         {
-          "observation": "목의 뻣뻣함과 뒤통수 불편이 함께 나타남",
-          "possibility": "목 통증과 동반되는 두통 양상 가능성",
-          "distinction": "목이 뻣뻣하다는 사실만으로 두통의 원인을 목 근육으로 확정하지 않습니다.",
+          "observation": "두통과 목 뻣뻣함이 함께 있어 목 원인으로 생각함",
+          "possibility": "두통과 경부 증상의 동반 관계 평가",
+          "distinction": "편두통 등에서도 목 증상이 나타날 수 있어 신경학적 상태와 두통 병력을 함께 살핍니다.",
           "related_id": "msk-neck-muscle-pain"
         },
         {
-          "observation": "목 움직임과 무관한 반복 두통 또는 동반 두통 증상이 중심",
-          "possibility": "편두통 등 두통 원인에 대한 평가 필요",
-          "distinction": "위치만으로 두통 종류를 정할 수 없어 지속 시간과 동반 증상을 확인합니다.",
+          "observation": "뒤통수에서 위로 이어지는 짧고 날카로운 통증이 반복됨",
+          "possibility": "후두신경통과 다른 두통을 구분할 필요",
+          "distinction": "단일 증상이나 눌렀을 때 통증만으로 진단하지 않습니다. 필요할 때 추가 검사로 다른 원인을 확인합니다.",
           "related_id": "other-headache"
         }
       ],
       "faq": [
         {
-          "question": "뒷골이 아프면 혈압이나 목 때문인가요?",
-          "answer": "위치만으로 원인을 정할 수 없습니다. 두통 양상, 목 증상, 수면·약물 사용과 동반 증상을 함께 확인해야 합니다."
+          "question": "두통과 목 통증은 따로 설명해야 하나요?",
+          "answer": "각각 언제 시작했는지 알리면 동반 관계와 다른 원인을 구분하는 데 참고가 됩니다."
         },
         {
-          "question": "두통 일지에는 무엇을 적나요?",
-          "answer": "시작 시간·지속·강도와 메스꺼움·빛 불편 등 동반 증상, 복용약을 적습니다. 반복되는 유발 상황을 찾는 참고 자료이며 진단을 대신하지는 않습니다."
+          "question": "두통 종류는 아픈 위치로 정하나요?",
+          "answer": "위치와 함께 지속·동반 증상·진찰 결과를 비교하며 한 증상으로 확정하지 않습니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/symptoms/headaches/",
-          "scope": "두통의 다양한 원인, 동반 증상과 두통 일지",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nhs.uk/conditions/migraine/",
+          "scope": "목의 뻣뻣함을 동반할 수 있는 편두통 양상과 메스꺼움·빛·소리 민감",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://www.nhs.uk/symptoms/neck-pain-and-stiff-neck/",
-          "scope": "목 통증과 자세·움직임·신경 증상의 구분",
-          "checked_at": "2026-10-22"
+          "url": "https://www.aans.org/patients/conditions-treatments/occipital-neuralgia/",
+          "scope": "찌르거나 전기가 오는 후두부 통증의 양상과 다른 두통과 겹치는 진단 한계",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.radiologyinfo.org/en/info/headache",
+          "scope": "두통의 병력·신경학적 진찰과 상태에 맞는 영상검사의 목적",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://ichd-3.org/13-painful-cranial-neuropathies-and-other-facial-pains/13-4-occipital-neuralgia/",
+          "scope": "후두신경통과 다른 목·두통 원인을 구분하며 단일 증상으로 확정하지 않는 한계",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 24,
@@ -1132,44 +1202,49 @@
     {
       "id": "msk-neck-muscle-pain",
       "checks": [
-        "통증의 중심이 목 뒤·목 옆·어깨 위 중 어디인지 구분되나요?",
-        "잠자리나 오래 고정한 작업 뒤 고개 돌리기가 불편해졌나요?",
-        "뻣뻣함과 별개로 팔이나 손의 저림·감각 변화가 있나요?"
+        "목·어깨의 통증과 팔·손의 감각 변화를 서로 나누어 전달할 수 있나요?",
+        "고개 돌리기와 업무·수면에서 제한되는 동작이 무엇인지 정리했나요?",
+        "기존 영상 결과와 별개로 새 감각·힘·균형 변화가 생겼나요?"
       ],
       "branches": [
         {
-          "observation": "목·어깨 위의 당김이 중심이고 오래 고정한 뒤 불편",
-          "possibility": "목 주변 근육·관절 부담과 관련된 통증 가능성",
-          "distinction": "담이라는 표현은 확정 진단이 아니며 움직임과 시작 계기를 확인합니다.",
+          "observation": "뒷목 통증과 움직임 제한이 있고 뚜렷한 팔 증상은 설명하기 어려움",
+          "possibility": "목과 어깨의 근육·관절 기능 평가",
+          "distinction": "팔 증상이 뚜렷하지 않다는 이유만으로 특정 구조를 원인으로 확정하지 않습니다. 병력과 진찰을 함께 봅니다.",
           "related_id": "msk-forward-head"
         },
         {
-          "observation": "목에서 팔·손까지 이어지는 통증·저림",
-          "possibility": "경추 신경근 등 신경 관련 증상 가능성",
-          "distinction": "통증 위치뿐 아니라 팔 근력·감각·반사와 필요한 검사로 구분합니다.",
+          "observation": "목에서 팔로 퍼지는 통증과 감각·힘 변화가 동반됨",
+          "possibility": "경추 신경근 및 다른 말초 신경 원인의 감별",
+          "distinction": "근력·감각·반사, 증상 분포와 필요한 검사 결과를 함께 해석합니다.",
           "related_id": "msk-cervical-disc"
         }
       ],
       "faq": [
         {
-          "question": "목에 담이 오면 세게 풀어야 하나요?",
-          "answer": "강한 압박이나 목 꺾기를 먼저 할 필요는 없습니다. 편안한 움직임을 유지하되 팔 저림이나 제한이 계속되면 원인을 확인하세요."
+          "question": "영상에 변화가 있으면 통증 원인이 확정되나요?",
+          "answer": "영상 변화와 증상은 일치하지 않을 수 있어 현재 병력·진찰과 대조합니다."
         },
         {
-          "question": "목을 돌리기 어려워도 운전해도 되나요?",
-          "answer": "주변을 안전하게 확인하기 어렵다면 운전을 피해야 합니다. 통증 자체뿐 아니라 고개를 돌려 시야를 확보할 수 있는지가 중요합니다."
+          "question": "재진에서 왜 감각과 힘을 다시 보나요?",
+          "answer": "통증 경과와 별개로 신경 기능이 달라졌는지 확인할 수 있기 때문입니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/symptoms/neck-pain-and-stiff-neck/",
-          "scope": "자세·수면·외상 등 목 통증 원인 및 회전 제한 시 운전 안전",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nhs.uk/conditions/cervical-spondylosis/",
+          "scope": "영상의 퇴행성 변화와 증상의 불일치, 목·어깨 진찰 및 움직임 관리",
+          "checked_at": "2026-10-25"
         },
         {
           "url": "https://www.orthoinfo.org/diseases--conditions/cervical-radiculopathy-pinched-nerve/",
-          "scope": "목에서 팔로 이어지는 신경근 증상과 신경 진찰",
-          "checked_at": "2026-10-22"
+          "scope": "목에서 팔로 이어지는 통증·감각 변화, 근력·감각·반사 진찰과 영상 해석",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://medlineplus.gov/lab-tests/neurological-exam/",
+          "scope": "감각·근력·균형·반사 등 신경 진찰을 시행하는 목적",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 25,
@@ -1926,49 +2001,49 @@
     {
       "id": "msk-shoulder-pain",
       "checks": [
-        "선반에 물건을 올리거나 팔을 내릴 때 어깨 앞·옆이 아픈가요?",
-        "옷 입기나 등 뒤로 손 보내기처럼 여러 방향의 움직임이 점점 굳나요?",
-        "어깨 통증과 함께 목에서 팔·손으로 이어지는 저림이 있나요?"
+        "통증이 시작된 사건과 진행 경과를 설명할 수 있나요?",
+        "팔을 움직이는 범위와 힘에 각각 변화가 있나요?",
+        "과거 영상·치료 소견과 현재 불편이 달라진 부분이 있나요?"
       ],
       "branches": [
         {
-          "observation": "팔을 들고 내리는 특정 동작에 앞·옆 어깨 통증",
-          "possibility": "회전근개·점액낭 등 어깨 조직의 통증 가능성",
-          "distinction": "같은 동작 통증은 여러 힘줄 상태에서 나타납니다. 근력·움직임과 필요 시 영상을 함께 확인하며 통증만으로 파열이나 염증을 확정하지 않습니다.",
+          "observation": "들고 내리는 특정 동작에 통증·힘 변화가 있다면",
+          "possibility": "회전근개 관련 원인을 살필 상황",
+          "distinction": "가동범위·근력과 필요 시 영상을 종합하며 파열을 단정하지 않습니다.",
           "related_id": "msk-rotator-cuff-syndrome"
         },
         {
-          "observation": "수개월에 걸쳐 통증과 움직임 제한이 함께 진행",
-          "possibility": "오십견 등 관절 움직임 제한을 살펴볼 상황",
-          "distinction": "밤 통증만으로 구분하지 않습니다. 진찰에서 제한되는 방향과 범위를 확인하고 다른 어깨 원인도 함께 평가합니다.",
+          "observation": "통증과 점차 진행하는 여러 방향의 제한이 있다면",
+          "possibility": "오십견 등 관절 굳음을 살필 상황",
+          "distinction": "병력·능동 및 수동 움직임을 확인하고 다른 관절 원인도 구분합니다.",
           "related_id": "msk-frozen-shoulder"
         }
       ],
       "faq": [
         {
-          "question": "어깨가 아프면 모두 어깨 염증인가요?",
-          "answer": "아닙니다. 힘줄·점액낭·관절이나 목의 문제 등이 어깨 통증으로 표현될 수 있습니다. ‘염증’이라는 설명을 들었다면 어느 조직을 어떤 진찰·검사 소견으로 판단했는지 확인하세요."
+          "question": "MRI 결과가 원인을 확정하나요?",
+          "answer": "영상 변화가 현재 증상·진찰과 맞는지 평가합니다."
         },
         {
-          "question": "통증이 있으면 어깨를 아예 쓰지 않아야 하나요?",
-          "answer": "장기간 모든 움직임을 멈추는 방식은 피하고 개인에게 가능한 범위를 확인합니다. 통증을 크게 만드는 작업은 조절하되, 강한 운동을 스스로 만들어 반복하지 않는 것이 좋습니다."
+          "question": "통증과 근력은 같은 항목인가요?",
+          "answer": "통증 때문에 힘을 못 쓰는지 별도의 근력 변화인지 구분합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/symptoms/shoulder-pain/",
-          "scope": "다양한 어깨 통증과 활동 유지·악화 활동 조절. 증상만으로 원인을 확정하지 않는 설명.",
-          "checked_at": "2026-10-22"
-        },
-        {
           "url": "https://www.orthoinfo.org/diseases--conditions/shoulder-impingementrotator-cuff-tendinitis/",
-          "scope": "팔 올리기·내리기 관련 힘줄 통증과 근력·가동범위 진찰.",
-          "checked_at": "2026-10-22"
+          "scope": "팔 들기·내리기 통증, 근력·가동범위와 영상의 역할",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://www.nhs.uk/conditions/frozen-shoulder/",
-          "scope": "오십견의 통증과 지속적인 움직임 제한.",
-          "checked_at": "2026-10-22"
+          "url": "https://www.cuh.nhs.uk/patient-information/frozen-shoulder/",
+          "scope": "지속 통증·관절 움직임 제한과 진찰 중심 평가",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "url": "https://www.uhmb.nhs.uk/our-services/services/musculoskeletal-msk-physiotherapy/musculoskeletal-msk-pain/shoulder-pain",
+          "scope": "어깨 영상 소견과 통증·기능의 불일치 및 검사 선택",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 42,
@@ -2354,49 +2429,49 @@
     {
       "id": "msk-elbow-pain",
       "checks": [
-        "팔꿈치 바깥쪽이 물건을 쥐거나 손목을 쓸 때 아픈가요?",
-        "팔꿈치 안쪽이 손목·손가락을 쓰는 반복 작업에서 불편한가요?",
-        "통증과 별개로 팔·손의 저림이나 감각 둔함이 동반되나요?"
+        "통증 중심과 힘을 쓸 때의 위치가 일정한가요?",
+        "팔을 굽히고 펴는 범위나 붓기에 변화가 있나요?",
+        "손 감각·작은 물건 다루기의 변화가 동반되나요?"
       ],
       "branches": [
         {
-          "observation": "팔꿈치 바깥 통증이 쥐기·손목 사용과 관련",
-          "possibility": "테니스엘보 등 바깥쪽 힘줄 통증 가능성",
-          "distinction": "운동 이름과 관계없이 반복 사용에서 나타날 수 있습니다. 외상·관절·신경 원인과 구분해 진찰합니다.",
+          "observation": "바깥 팔꿈치 통증이 손목·쥐기 사용과 연관된다면",
+          "possibility": "테니스엘보를 포함한 바깥 힘줄 원인",
+          "distinction": "병력·압통·동작 소견을 종합하고 다른 관절·신경 원인도 확인합니다.",
           "related_id": "msk-tennis-elbow"
         },
         {
-          "observation": "팔꿈치 안쪽 통증이 손목·손가락 사용과 관련",
-          "possibility": "골프엘보 등 안쪽 힘줄 통증 가능성",
-          "distinction": "안쪽 통증이라도 힘줄 문제로 단정하지 않습니다. 저림이 있으면 신경 관련 원인도 함께 살핍니다.",
+          "observation": "안쪽 팔꿈치 통증이 쥐기·손목 굽힘과 연관된다면",
+          "possibility": "골프엘보를 포함한 안쪽 힘줄 원인",
+          "distinction": "감각·힘의 변화는 따로 평가하며 위치 하나로 확정하지 않습니다.",
           "related_id": "msk-golfers-elbow"
         }
       ],
       "faq": [
         {
-          "question": "테니스나 골프를 안 해도 엘보가 생기나요?",
-          "answer": "네. 이름과 달리 쥐기·손목 사용 등의 반복 부담과 관련될 수 있습니다. 아픈 위치가 안쪽인지 바깥쪽인지, 어떤 작업과 연결되는지를 설명하는 편이 유용합니다."
+          "question": "검사에서 무엇을 묻는 것이 좋나요?",
+          "answer": "힘줄·관절·신경 중 어떤 질문을 확인하는 검사인지 물어보세요."
         },
         {
-          "question": "팔꿈치 통증과 손 저림은 같은 문제인가요?",
-          "answer": "같은 원인일 수도 있지만 구분이 필요합니다. 힘줄의 동작 통증과 신경의 감각 증상은 확인할 항목이 다릅니다. 저리는 손가락과 통증 위치를 따로 기록하세요."
+          "question": "저림도 엘보 통증의 일부로 보면 되나요?",
+          "answer": "신경 관련 소견인지 나누어 평가할 필요가 있습니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/tennis-elbow/",
-          "scope": "바깥 팔꿈치 통증과 쥐기·손목 동작 관련성.",
-          "checked_at": "2026-10-22"
+          "url": "https://www.dynamichealth.nhs.uk/help-and-advice/elbow-pain/",
+          "scope": "힘줄·관절·신경 원인, 활동 조절과 재평가",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://roh.nhs.uk/services-information/therapy/golfers-elbow",
-          "scope": "안쪽 팔꿈치 힘줄의 반복 사용 통증과 손목·손가락 굽힘 관련성.",
-          "checked_at": "2026-10-22"
+          "url": "https://www.orthoinfo.org/diseases--conditions/ulnar-nerve-entrapment-at-the-elbow",
+          "scope": "약지·새끼손가락 감각 변화, 굽힘·압박과 신경 진찰",
+          "checked_at": "2026-10-25"
         },
         {
-          "url": "https://www.orthoinfo.org/diseases--conditions/cervical-radiculopathy-pinched-nerve/",
-          "scope": "목·팔 신경 증상과 팔꿈치·손목의 말초신경 압박을 구분하는 진찰 원칙.",
-          "checked_at": "2026-10-22"
+          "url": "https://www.bssh.ac.uk/patients/conditions/22/cubital_tunnel_syndrome",
+          "scope": "팔꿈치 안쪽 신경 압박과 손 감각·섬세한 동작 변화",
+          "checked_at": "2026-10-25"
         }
       ],
       "order": 51,
@@ -3746,5 +3821,87 @@
       "keyword": "생리전증후군",
       "name": "월경전증후군과 반복되는 기분·신체 변화"
     }
-  ]
+  ],
+  "profile_updated_at": {
+    "msk-frozen-shoulder": "2026-10-22",
+    "msk-cervical-disc": "2026-10-22",
+    "msk-lumbar-disc": "2026-10-22",
+    "msk-chuna": "2026-10-22",
+    "msk-fibromyalgia": "2026-10-22",
+    "msk-carpal-tunnel": "2026-10-22",
+    "msk-plantar-fascia": "2026-10-22",
+    "msk-knee-osteoarthritis": "2026-10-22",
+    "msk-low-back-pain": "2026-10-22",
+    "msk-lumbar-stenosis": "2026-10-22",
+    "msk-shoulder-impingement": "2026-10-22",
+    "msk-tennis-elbow": "2026-10-25",
+    "msk-forward-head": "2026-10-22",
+    "msk-hip-pain": "2026-10-22",
+    "msk-pelvic-pain": "2026-10-22",
+    "msk-pelvic-alignment": "2026-10-25",
+    "msk-golfers-elbow": "2026-10-25",
+    "msk-kyphosis": "2026-10-25",
+    "msk-myalgia": "2026-10-25",
+    "msk-coccyx-pain": "2026-10-25",
+    "msk-leg-numbness": "2026-10-25",
+    "msk-leg-pain": "2026-10-25",
+    "msk-manual-therapy": "2026-10-25",
+    "msk-occipital-pain": "2026-10-25",
+    "msk-neck-muscle-pain": "2026-10-25",
+    "msk-upper-back-pain": "2026-10-22",
+    "msk-disc-terminology": "2026-10-22",
+    "msk-rounded-shoulders": "2026-10-22",
+    "msk-neck-tingling": "2026-10-22",
+    "msk-knee-pain": "2026-10-22",
+    "msk-ankle-sprain": "2026-10-22",
+    "msk-tarsal-tunnel": "2026-10-22",
+    "msk-scalene-symptoms": "2026-10-22",
+    "msk-hand-numbness": "2026-10-22",
+    "msk-finger-pain": "2026-10-22",
+    "msk-de-quervain": "2026-10-22",
+    "msk-wrist-pain": "2026-10-22",
+    "msk-cold-extremities": "2026-10-22",
+    "msk-neuralgia": "2026-10-22",
+    "msk-achilles-tendinopathy": "2026-10-22",
+    "msk-pharmacopuncture": "2026-10-22",
+    "msk-shoulder-pain": "2026-10-25",
+    "msk-buttock-pain": "2026-10-22",
+    "msk-flank-pain": "2026-10-22",
+    "msk-lumbar-strain": "2026-10-22",
+    "msk-piriformis": "2026-10-22",
+    "msk-sciatica": "2026-10-22",
+    "msk-sacroiliac-pain": "2026-10-22",
+    "msk-body-alignment": "2026-10-22",
+    "msk-osteoarthritis": "2026-10-22",
+    "msk-elbow-pain": "2026-10-25",
+    "msk-arm-numbness": "2026-10-22",
+    "msk-rotator-cuff-tear": "2026-10-22",
+    "msk-thoracic-outlet": "2026-10-22",
+    "msk-heel-pain": "2026-10-22",
+    "msk-rotator-cuff-syndrome": "2026-10-22",
+    "msk-jaw-pain-tmd": "2026-10-22",
+    "women-period-pain": "2026-10-22",
+    "women-bladder-pain": "2026-10-22",
+    "women-menopause": "2026-10-22",
+    "women-overactive-bladder": "2026-10-22",
+    "women-ovarian-reserve": "2026-10-22",
+    "women-ovarian-cyst": "2026-10-22",
+    "women-male-fertility": "2026-10-22",
+    "women-pcos": "2026-10-22",
+    "women-recurrent-cystitis": "2026-10-22",
+    "women-vaginitis": "2026-10-22",
+    "women-amenorrhea": "2026-10-22",
+    "women-recurrent-loss": "2026-10-22",
+    "women-ovulation-pain": "2026-10-22",
+    "women-assisted-fertility": "2026-10-22",
+    "women-gynecology-visit": "2026-10-22",
+    "women-abnormal-bleeding": "2026-10-22",
+    "women-female-fertility": "2026-10-22",
+    "women-postpartum-weight": "2026-10-22",
+    "women-postpartum-herbs": "2026-10-22",
+    "women-postpartum-recovery": "2026-10-22",
+    "women-postpartum-swelling": "2026-10-22",
+    "women-lochia": "2026-10-22",
+    "women-pms": "2026-10-22"
+  }
 }

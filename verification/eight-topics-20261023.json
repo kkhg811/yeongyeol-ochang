@@ -49,7 +49,7 @@
   "implementation_checks": "passed",
   "core_pages_checked": 56,
   "distinct_detail_bodies": 48,
-  "other_profiles_unchanged": true,
+  "other_profiles_unchanged": false,
   "preserved_images": 48,
   "source_scopes_checked": "2026-10-23",
   "browser_qa": {
@@ -60,5 +60,20 @@
     "keyboard_checkbox": "passed",
     "keyboard_faq": "passed",
     "physical_mobile": "unverified"
-  }
+  },
+  "later_authorized_profile_revisions": [
+    "msk-coccyx-pain",
+    "msk-elbow-pain",
+    "msk-golfers-elbow",
+    "msk-kyphosis",
+    "msk-leg-numbness",
+    "msk-leg-pain",
+    "msk-manual-therapy",
+    "msk-myalgia",
+    "msk-neck-muscle-pain",
+    "msk-occipital-pain",
+    "msk-pelvic-alignment",
+    "msk-shoulder-pain",
+    "msk-tennis-elbow"
+  ]
 }

@@ -1,0 +1,159 @@
+{
+  "updated_at": "2026-10-25",
+  "status": "published",
+  "baseline_commit": "6d21bfb6485fe30bcebd4a37d8dd773ab7b4348c",
+  "queries": [
+    {
+      "order": 1,
+      "query": "오창 골반불균형",
+      "profile_id": "msk-pelvic-alignment"
+    },
+    {
+      "order": 2,
+      "query": "오창 골반비대칭 교정",
+      "profile_id": "msk-pelvic-alignment"
+    },
+    {
+      "order": 3,
+      "query": "오창 골프엘보",
+      "profile_id": "msk-golfers-elbow"
+    },
+    {
+      "order": 4,
+      "query": "오창 팔꿈치 안쪽통증",
+      "profile_id": "msk-golfers-elbow"
+    },
+    {
+      "order": 5,
+      "query": "오창 테니스엘보",
+      "profile_id": "msk-tennis-elbow"
+    },
+    {
+      "order": 6,
+      "query": "오창 팔꿈치 바깥쪽 통증",
+      "profile_id": "msk-tennis-elbow"
+    },
+    {
+      "order": 7,
+      "query": "오창 팔꿈치 통증",
+      "profile_id": "msk-elbow-pain"
+    },
+    {
+      "order": 8,
+      "query": "오창 굽은등",
+      "profile_id": "msk-kyphosis"
+    },
+    {
+      "order": 9,
+      "query": "오창 근육통",
+      "profile_id": "msk-myalgia"
+    },
+    {
+      "order": 10,
+      "query": "오창 꼬리뼈 통증",
+      "profile_id": "msk-coccyx-pain"
+    },
+    {
+      "order": 11,
+      "query": "오창 다리저림",
+      "profile_id": "msk-leg-numbness"
+    },
+    {
+      "order": 12,
+      "query": "오창 다리 통증",
+      "profile_id": "msk-leg-pain"
+    },
+    {
+      "order": 13,
+      "query": "오창 도수치료",
+      "profile_id": "msk-manual-therapy"
+    },
+    {
+      "order": 14,
+      "query": "오창 뒷골",
+      "profile_id": "msk-occipital-pain"
+    },
+    {
+      "order": 15,
+      "query": "오창 뒤통수 통증",
+      "profile_id": "msk-occipital-pain"
+    },
+    {
+      "order": 16,
+      "query": "오창 뒷목 뻐근함",
+      "profile_id": "msk-neck-muscle-pain"
+    },
+    {
+      "order": 17,
+      "query": "오창 뒷목 통증",
+      "profile_id": "msk-neck-muscle-pain"
+    },
+    {
+      "order": 18,
+      "query": "오창 목 통증",
+      "profile_id": "msk-neck-muscle-pain"
+    },
+    {
+      "order": 19,
+      "query": "오창 어깨 통증",
+      "profile_id": "msk-shoulder-pain"
+    }
+  ],
+  "profile_ids": [
+    "msk-pelvic-alignment",
+    "msk-golfers-elbow",
+    "msk-tennis-elbow",
+    "msk-elbow-pain",
+    "msk-kyphosis",
+    "msk-myalgia",
+    "msk-coccyx-pain",
+    "msk-leg-numbness",
+    "msk-leg-pain",
+    "msk-manual-therapy",
+    "msk-occipital-pain",
+    "msk-neck-muscle-pain",
+    "msk-shoulder-pain"
+  ],
+  "profile_count": 13,
+  "detail_count": 78,
+  "core_pages": 91,
+  "image_revisions": [
+    {
+      "profile_id": "msk-leg-numbness",
+      "topic": "followup",
+      "question": "저림의 경과와 걷는 기능은 어떻게 비교하나요?",
+      "diagram": [
+        "저림 시간·범위",
+        "보행·힘 비교",
+        "새 변화 전달"
+      ]
+    },
+    {
+      "profile_id": "msk-leg-pain",
+      "topic": "followup",
+      "question": "다리 통증의 경과와 걷는 거리는 어떻게 비교하나요?",
+      "diagram": [
+        "보행 거리·휴식",
+        "다리 상태 비교",
+        "새 변화 전달"
+      ]
+    },
+    {
+      "profile_id": "msk-occipital-pain",
+      "topic": "followup",
+      "question": "뒤통수 통증의 변화와 다음 진료는 어떻게 정리하나요?",
+      "diagram": [
+        "빈도·지속 변화",
+        "생활·약물 기록",
+        "재평가 항목"
+      ]
+    }
+  ],
+  "medical_review_status": "pending",
+  "search_exposure": {
+    "crawled": "unverified",
+    "indexed": "unverified",
+    "rank_one": "unverified",
+    "carousel": "unverified"
+  }
+}

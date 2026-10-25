@@ -1,0 +1,40 @@
+{
+  "updated_at": "2026-10-25",
+  "queries": 19,
+  "profiles": 13,
+  "core_pages": 91,
+  "source_checks": "passed",
+  "rendered_html_pages_checked": 91,
+  "distinct_detail_bodies": 78,
+  "image_files_checked": 156,
+  "changed_diagrams": 3,
+  "other_profiles_unchanged": true,
+  "medical_review_status": "pending",
+  "search_exposure": {
+    "crawled": "unverified",
+    "indexed": "unverified",
+    "rank_one": "unverified",
+    "carousel": "unverified"
+  },
+  "production_build": "passed",
+  "production_pages": 1763,
+  "all_clinical_pages_checked": 1739,
+  "priority80_pages_checked": 560,
+  "legacy_eight_pages_checked": 56,
+  "patient_scenario_pages_checked": 2,
+  "unit_tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "browser_qa": {
+    "environment": "managed desktop static preview",
+    "hubs_checked": 13,
+    "loaded_card_images": 78,
+    "missing_card_alts": 0,
+    "horizontal_overflow": false,
+    "desktop_grid_columns": 3,
+    "keyboard_checkbox": "passed",
+    "keyboard_faq": "passed",
+    "physical_mobile": "unverified"
+  }
+}

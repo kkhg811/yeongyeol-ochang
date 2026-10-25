@@ -155,7 +155,8 @@ def main():
         profile["category"] = profile.get("category") or (condition_by_slug[primary]["category"] if primary in condition_by_slug else "피부")
         profile.setdefault("status", "review")
         profile["created_at"] = config["created_at"]
-        profile["updated_at"] = max(profile.get("updated_at", config["created_at"]), priority_data["updated_at"]) if profile.get("priority") else profile.get("updated_at", config["created_at"])
+        priority_updated = priority_data.get("profile_updated_at", {}).get(profile["id"], priority_data["updated_at"])
+        profile["updated_at"] = max(profile.get("updated_at", config["created_at"]), priority_updated) if profile.get("priority") else profile.get("updated_at", config["created_at"])
         profile.setdefault("reviewed_by", None)
         profile.setdefault("reviewed_at", None)
         profile["search_terms"] = " ".join([profile["name"]] + profile.get("keywords", []) +
