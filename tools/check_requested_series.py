@@ -33,8 +33,10 @@ def main():
     assert {x['profile_id'] for x in manifest['queries']} == set(ids)
     assert all(x['query'].startswith('오창 ') for x in manifest['queries'])
     assert set(before) == set(profiles)
+    later_path = CONTENT / 'series-revisions-fortyfive-20261025.json'
+    later_ids = set(read(later_path)['profile_ids']) if later_path.exists() else set()
     for pid, profile in profiles.items():
-        if pid not in ids:
+        if pid not in set(ids) | later_ids:
             assert profile == before[pid], pid + ': unrelated profile changed'
     priority = read(CONTENT / 'priority80.json')
     assessment = {p['id']: p for p in priority['profiles']}
@@ -126,7 +128,8 @@ def main():
     result.update({'updated_at': manifest['updated_at'], 'queries': 19, 'profiles': 13, 'core_pages': 91,
                    'source_checks': 'passed', 'rendered_html_pages_checked': rendered,
                    'distinct_detail_bodies': 78, 'image_files_checked': image_count,
-                   'changed_diagrams': len(revised_images), 'other_profiles_unchanged': True,
+                   'changed_diagrams': len(revised_images), 'other_profiles_unchanged': not bool(later_ids),
+                   'later_authorized_profile_revisions': sorted(later_ids),
                    'medical_review_status': 'pending',
                    'search_exposure': manifest['search_exposure']})
     report.parent.mkdir(exist_ok=True)

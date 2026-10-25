@@ -20,6 +20,8 @@ def main():
     raw=json.loads((ROOT/'src/content/clinical-catalog.json').read_text())
     later_file=ROOT/'src/content/series-revisions-20261025.json'
     later=set(json.loads(later_file.read_text())['profile_ids']) if later_file.exists() else set()
+    newer_file=ROOT/'src/content/series-revisions-fortyfive-20261025.json'
+    if newer_file.exists():later.update(json.loads(newer_file.read_text())['profile_ids'])
     for p in raw['profiles']:
         if p['id'] not in set(IDS)|later:assert p==before[p['id']],p['id']+' unexpectedly changed'
     ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9','i':'http://www.google.com/schemas/sitemap-image/1.1'}

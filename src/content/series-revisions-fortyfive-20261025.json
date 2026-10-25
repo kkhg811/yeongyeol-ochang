@@ -1,0 +1,299 @@
+{
+  "updated_at": "2026-10-25",
+  "status": "published",
+  "baseline_commit": "1d1efcd502fd417e116fcd86217e3f92352b2db3",
+  "queries": [
+    {
+      "order": 1,
+      "query": "오창 등통증",
+      "profile_id": "msk-upper-back-pain"
+    },
+    {
+      "order": 2,
+      "query": "오창 라운드 숄더 교정",
+      "profile_id": "msk-rounded-shoulders"
+    },
+    {
+      "order": 3,
+      "query": "오창 디스크",
+      "profile_id": "msk-disc-terminology"
+    },
+    {
+      "order": 4,
+      "query": "오창 추간판 탈출증",
+      "profile_id": "msk-disc-terminology"
+    },
+    {
+      "order": 5,
+      "query": "오창 목 주변 저림",
+      "profile_id": "msk-neck-tingling"
+    },
+    {
+      "order": 6,
+      "query": "오창 무릎 통증",
+      "profile_id": "msk-knee-pain"
+    },
+    {
+      "order": 7,
+      "query": "오창 발목 터널 증후군",
+      "profile_id": "msk-tarsal-tunnel"
+    },
+    {
+      "order": 8,
+      "query": "오창 사각근 증후군",
+      "profile_id": "msk-scalene-symptoms"
+    },
+    {
+      "order": 9,
+      "query": "오창 팔저림",
+      "profile_id": "msk-arm-numbness"
+    },
+    {
+      "order": 10,
+      "query": "오창 손저림",
+      "profile_id": "msk-hand-numbness"
+    },
+    {
+      "order": 11,
+      "query": "오창 손가락 저림",
+      "profile_id": "msk-hand-numbness"
+    },
+    {
+      "order": 12,
+      "query": "오창 손가락 통증",
+      "profile_id": "msk-finger-pain"
+    },
+    {
+      "order": 13,
+      "query": "오창 손목 건초염",
+      "profile_id": "msk-de-quervain"
+    },
+    {
+      "order": 14,
+      "query": "오창 손가락 힘줄 통증",
+      "profile_id": "msk-finger-pain"
+    },
+    {
+      "order": 15,
+      "query": "오창 손목통증",
+      "profile_id": "msk-wrist-pain"
+    },
+    {
+      "order": 16,
+      "query": "오창 손발 시림",
+      "profile_id": "msk-cold-extremities"
+    },
+    {
+      "order": 17,
+      "query": "오창 손발 차가움",
+      "profile_id": "msk-cold-extremities"
+    },
+    {
+      "order": 18,
+      "query": "오창 수족냉증",
+      "profile_id": "msk-cold-extremities"
+    },
+    {
+      "order": 19,
+      "query": "오창 신경통",
+      "profile_id": "msk-neuralgia"
+    },
+    {
+      "order": 20,
+      "query": "오창 신경성 통증",
+      "profile_id": "msk-neuralgia"
+    },
+    {
+      "order": 21,
+      "query": "오창 아킬레스건염",
+      "profile_id": "msk-achilles-tendinopathy"
+    },
+    {
+      "order": 22,
+      "query": "오창 아킬레스건 통증",
+      "profile_id": "msk-achilles-tendinopathy"
+    },
+    {
+      "order": 23,
+      "query": "오창 약침",
+      "profile_id": "msk-pharmacopuncture"
+    },
+    {
+      "order": 24,
+      "query": "오창 어깨 통증",
+      "profile_id": "msk-shoulder-pain"
+    },
+    {
+      "order": 25,
+      "query": "오창 어깨 염증",
+      "profile_id": "msk-shoulder-pain"
+    },
+    {
+      "order": 26,
+      "query": "오창 엉덩이 통증",
+      "profile_id": "msk-buttock-pain"
+    },
+    {
+      "order": 27,
+      "query": "오창 엉치통증",
+      "profile_id": "msk-buttock-pain"
+    },
+    {
+      "order": 28,
+      "query": "오창 둔부통증",
+      "profile_id": "msk-buttock-pain"
+    },
+    {
+      "order": 29,
+      "query": "오창 옆구리 통증",
+      "profile_id": "msk-flank-pain"
+    },
+    {
+      "order": 30,
+      "query": "오창 옆구리 결림",
+      "profile_id": "msk-flank-pain"
+    },
+    {
+      "order": 31,
+      "query": "오창 요추 염좌",
+      "profile_id": "msk-lumbar-strain"
+    },
+    {
+      "order": 32,
+      "query": "오창 허리 삐끗함",
+      "profile_id": "msk-lumbar-strain"
+    },
+    {
+      "order": 33,
+      "query": "오창 좌골신경통",
+      "profile_id": "msk-sciatica"
+    },
+    {
+      "order": 34,
+      "query": "오창 이상근 증후군",
+      "profile_id": "msk-piriformis"
+    },
+    {
+      "order": 35,
+      "query": "오창 천장관절 염증",
+      "profile_id": "msk-sacroiliac-pain"
+    },
+    {
+      "order": 36,
+      "query": "오창 천장관절 통증",
+      "profile_id": "msk-sacroiliac-pain"
+    },
+    {
+      "order": 37,
+      "query": "오창 퇴행성 관절염",
+      "profile_id": "msk-osteoarthritis"
+    },
+    {
+      "order": 38,
+      "query": "오창 골관절염",
+      "profile_id": "msk-osteoarthritis"
+    },
+    {
+      "order": 39,
+      "query": "오창 회전근개 증후군",
+      "profile_id": "msk-rotator-cuff-syndrome"
+    },
+    {
+      "order": 40,
+      "query": "오창 회전근개 힘줄염",
+      "profile_id": "msk-rotator-cuff-syndrome"
+    },
+    {
+      "order": 41,
+      "query": "오창 회전근개 부분파열",
+      "profile_id": "msk-rotator-cuff-tear"
+    },
+    {
+      "order": 42,
+      "query": "오창 흉곽출구 증후군",
+      "profile_id": "msk-thoracic-outlet"
+    },
+    {
+      "order": 43,
+      "query": "오창 발뒤꿈치 통증",
+      "profile_id": "msk-heel-pain"
+    },
+    {
+      "order": 44,
+      "query": "오창 턱관절 통증",
+      "profile_id": "msk-jaw-pain-tmd"
+    },
+    {
+      "order": 45,
+      "query": "오창 턱 통증",
+      "profile_id": "msk-jaw-pain-tmd"
+    }
+  ],
+  "profile_ids": [
+    "msk-upper-back-pain",
+    "msk-rounded-shoulders",
+    "msk-disc-terminology",
+    "msk-neck-tingling",
+    "msk-neuralgia",
+    "msk-hand-numbness",
+    "msk-finger-pain",
+    "msk-de-quervain",
+    "msk-wrist-pain",
+    "msk-cold-extremities",
+    "msk-scalene-symptoms",
+    "msk-arm-numbness",
+    "msk-thoracic-outlet",
+    "msk-rotator-cuff-syndrome",
+    "msk-rotator-cuff-tear",
+    "msk-shoulder-pain",
+    "msk-knee-pain",
+    "msk-tarsal-tunnel",
+    "msk-achilles-tendinopathy",
+    "msk-osteoarthritis",
+    "msk-heel-pain",
+    "msk-buttock-pain",
+    "msk-flank-pain",
+    "msk-lumbar-strain",
+    "msk-sciatica",
+    "msk-piriformis",
+    "msk-sacroiliac-pain",
+    "msk-pharmacopuncture",
+    "msk-jaw-pain-tmd"
+  ],
+  "profile_count": 29,
+  "detail_count": 174,
+  "core_pages": 203,
+  "image_revisions": [
+    {
+      "profile_id": "msk-cold-extremities",
+      "topic": "followup"
+    },
+    {
+      "profile_id": "msk-scalene-symptoms",
+      "topic": "followup"
+    },
+    {
+      "profile_id": "msk-arm-numbness",
+      "topic": "followup"
+    },
+    {
+      "profile_id": "msk-sciatica",
+      "topic": "followup"
+    },
+    {
+      "profile_id": "msk-pharmacopuncture",
+      "topic": "followup"
+    }
+  ],
+  "publication_authorization": {
+    "date": "2026-10-25",
+    "scope": "기존 방식으로 두 사이트의 요청한 45개 검색 의도 개정 및 배포"
+  },
+  "medical_review_status": "pending",
+  "search_exposure": {
+    "crawled": "unverified",
+    "indexed": "unverified",
+    "rank_one": "unverified",
+    "carousel": "unverified"
+  }
+}
