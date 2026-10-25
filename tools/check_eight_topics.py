@@ -18,15 +18,17 @@ def main():
     baseline=json.loads(subprocess.check_output(['git','show','258e2487bd650612626393d516f2a35ef1dfd386:src/content/clinical-catalog.json'],cwd=ROOT,text=True))
     before={p['id']:p for p in baseline['profiles']}
     raw=json.loads((ROOT/'src/content/clinical-catalog.json').read_text())
+    later_file=ROOT/'src/content/series-revisions-20261025.json'
+    later=set(json.loads(later_file.read_text())['profile_ids']) if later_file.exists() else set()
     for p in raw['profiles']:
-        if p['id'] not in IDS:assert p==before[p['id']],p['id']+' unexpectedly changed'
+        if p['id'] not in set(IDS)|later:assert p==before[p['id']],p['id']+' unexpectedly changed'
     ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9','i':'http://www.google.com/schemas/sitemap-image/1.1'}
     tree=ET.parse(ROOT/'docs/sitemap.xml');sitemap={n.find('s:loc',ns).text:n for n in tree.findall('s:url',ns)}
     details=set();titles=set();descriptions=set();count=0
     for pid in IDS:
         p=catalog['profiles_by_id'][pid];old=before[pid]
         assert p['hub_path']==old['hub_path'] and [t['path'] for t in p['topics']]==[t['path'] for t in old['topics']]
-        assert p['published_at']==old['published_at'] and p['updated_at']=='2026-10-23'
+        assert p['published_at']==old['published_at'] and p['updated_at']>='2026-10-23'
         assert p['reviewed_by'] is None and p['reviewed_at'] is None
         assert [t['image'] for t in p['topics']]==[t['image'] for t in old['topics']]
         declared={s['url'] for s in p['sources']}
@@ -53,14 +55,14 @@ def main():
                 assert body not in details,path
                 details.add(body)
             node=sitemap[origin+'/'+path]
-            assert node.find('s:lastmod',ns).text=='2026-10-23'
+            assert node.find('s:lastmod',ns).text==p['updated_at']
             assert [n.text for n in node.findall('i:image/i:loc',ns)]==[origin+'/'+t['image'] for t in p['topics']]
             count+=1
     assert count==56 and len(details)==48
     tennis=next(c for c in raw['conditions'] if c['path']==catalog['profiles_by_id']['msk-tennis-elbow']['hub_path'])
     assert tennis['title']==next(c for c in baseline['conditions'] if c['path']==tennis['path'])['title']
     result=json.loads((ROOT/'verification/eight-topics-20261023.json').read_text())
-    result.update({'implementation_checks':'passed','core_pages_checked':count,'distinct_detail_bodies':len(details),'other_profiles_unchanged':True,'preserved_images':48,'source_scopes_checked':'2026-10-23','search_exposure':{'crawled':'unverified','indexed':'unverified','rank_one':'unverified','carousel':'unverified'}})
+    result.update({'implementation_checks':'passed','core_pages_checked':count,'distinct_detail_bodies':len(details),'other_profiles_unchanged':not bool(later),'later_authorized_profile_revisions':sorted(later),'preserved_images':48,'source_scopes_checked':'2026-10-23','search_exposure':{'crawled':'unverified','indexed':'unverified','rank_one':'unverified','carousel':'unverified'}})
     (ROOT/'verification/eight-topics-20261023.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(result,ensure_ascii=False))
 

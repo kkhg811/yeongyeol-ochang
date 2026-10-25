@@ -2,9 +2,9 @@
   "renderer_version": "clinical-information-diagrams-v2",
   "renderer": "Pillow / exact text and editorial shapes; no generative model",
   "diagram_policy": "Supplied observation/discussion labels only; not a diagnostic algorithm or treatment outcome graphic",
-  "built_at": "2026-10-23T18:05:38+09:00",
+  "built_at": "2026-10-25T19:03:07+09:00",
   "catalog_path": "src/content/clinical-catalog.json",
-  "catalog_sha256": "a6682165fb118b79a28196b251c8f80e0aa06557d3cec0e789cd3af412e0f8d0",
+  "catalog_sha256": "0a68383a5f0b047e32346a267c05475c74d60dc41db9bc0b7a0119e8a01e6951",
   "font_path": "tools/fonts/NotoSansKR-Variable.ttf",
   "font_sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
   "font_license": "SIL Open Font License 1.1; tools/fonts/OFL-NotoSansKR.txt",
@@ -10266,11 +10266,11 @@
       "profile_id": "msk-leg-numbness",
       "topic": "followup",
       "topic_label": "변화 확인",
-      "question": "어떤 저림은 기다리지 말아야 하나요?",
+      "question": "저림의 경과와 걷는 기능은 어떻게 비교하나요?",
       "labels": [
-        "지속 경과",
-        "갑작스러운 편측",
-        "배뇨·회음부"
+        "저림 시간·범위",
+        "보행·힘 비교",
+        "새 변화 전달"
       ],
       "path": "docs/images/clinical-guides/msk-leg-numbness/followup.webp",
       "thumbnail_path": "docs/images/clinical-guides/msk-leg-numbness/followup-480.webp",
@@ -10278,12 +10278,12 @@
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 20474,
-      "thumbnail_bytes": 9394,
-      "sha256": "5e873964aefa9ec88383449d4c37ba58c27ce7f88b4a8e944471d42923ac755f",
-      "thumbnail_sha256": "bf22b87691d96f3aecced6d699377e9de0e9dd23a243e5794e94ff620bc9390a",
-      "content_hash": "c30b79f32138737f00edf506e4ee505ac4288b8098f514e788bf790e35ad2cf7",
-      "alt": "다리 저림: 변화 확인. 지속 경과, 갑작스러운 편측, 배뇨·회음부을 정리한 정보도식",
+      "bytes": 20338,
+      "thumbnail_bytes": 9600,
+      "sha256": "31093ad687c8f40f8262cabd7d212c08e4b86aa33600219c3855396a650c6916",
+      "thumbnail_sha256": "b52ec171e3725d439ee2d32f0d72487a8a4d8e5b9461598bea26fabd47d54e5b",
+      "content_hash": "3ff94ba0fbc021b8a20b1f8f0adb59acba4e5edecf2b203a08cda8a578e2bc04",
+      "alt": "다리 저림: 변화 확인. 저림 시간·범위, 보행·힘 비교, 새 변화 전달을 정리한 정보도식",
       "text_layout": {
         "profile": {
           "font_size": 59,
@@ -10302,13 +10302,13 @@
         "label_1": {
           "font_size": 76,
           "lines": [
-            "지속 경과"
+            "저림 시간·범위"
           ],
           "bounds": [
             [
               230,
               406,
-              527,
+              711,
               477
             ]
           ]
@@ -10316,13 +10316,13 @@
         "label_2": {
           "font_size": 76,
           "lines": [
-            "갑작스러운 편측"
+            "보행·힘 비교"
           ],
           "bounds": [
             [
               230,
               590,
-              737,
+              641,
               661
             ]
           ]
@@ -10330,19 +10330,19 @@
         "label_3": {
           "font_size": 76,
           "lines": [
-            "배뇨·회음부"
+            "새 변화 전달"
           ],
           "bounds": [
             [
               230,
               774,
-              624,
+              614,
               845
             ]
           ]
         }
       },
-      "cached": true
+      "cached": false
     },
     {
       "profile_id": "msk-leg-pain",
@@ -10758,11 +10758,11 @@
       "profile_id": "msk-leg-pain",
       "topic": "followup",
       "topic_label": "변화 확인",
-      "question": "어떤 변화가 생기면 즉시 다시 진료하나요?",
+      "question": "다리 통증의 경과와 걷는 거리는 어떻게 비교하나요?",
       "labels": [
-        "보행 변화",
-        "급성 혈류 신호",
-        "숨참·가슴 통증"
+        "보행 거리·휴식",
+        "다리 상태 비교",
+        "새 변화 전달"
       ],
       "path": "docs/images/clinical-guides/msk-leg-pain/followup.webp",
       "thumbnail_path": "docs/images/clinical-guides/msk-leg-pain/followup-480.webp",
@@ -10770,12 +10770,12 @@
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 21990,
-      "thumbnail_bytes": 9864,
-      "sha256": "ae628954cf04706c589d75026dbdcf8e897658f15fb2cd7b2617d2a58272ba46",
-      "thumbnail_sha256": "ede4914582f4a27dfaf69ba155b49fb1a754915ac6a578a0ae17f4c143c8b714",
-      "content_hash": "06f764b9ce453dcd02b82124fdd6330fbbadc7d79024f2b0d2ecd2a5e9d9cba3",
-      "alt": "다리 통증: 변화 확인. 보행 변화, 급성 혈류 신호, 숨참·가슴 통증을 정리한 정보도식",
+      "bytes": 20716,
+      "thumbnail_bytes": 9508,
+      "sha256": "f2e3739510f3d0cbc078e453fcfaf94c248c0a516830c551983c3378e85363a4",
+      "thumbnail_sha256": "07e59538f8d7f8f06d5eb14b50fe5dda6247fc07194061405d7a0597204055e2",
+      "content_hash": "32a6aaa230f2c5a5be0d7e03d827cea53294eb7fb93313a0abc71e6cbb8a1f5a",
+      "alt": "다리 통증: 변화 확인. 보행 거리·휴식, 다리 상태 비교, 새 변화 전달을 정리한 정보도식",
       "text_layout": {
         "profile": {
           "font_size": 59,
@@ -10794,13 +10794,13 @@
         "label_1": {
           "font_size": 76,
           "lines": [
-            "보행 변화"
+            "보행 거리·휴식"
           ],
           "bounds": [
             [
               230,
               406,
-              527,
+              711,
               477
             ]
           ]
@@ -10808,33 +10808,33 @@
         "label_2": {
           "font_size": 76,
           "lines": [
-            "급성 혈류 신호"
+            "다리 상태 비교"
           ],
           "bounds": [
             [
               230,
               590,
               684,
-              662
+              661
             ]
           ]
         },
         "label_3": {
           "font_size": 76,
           "lines": [
-            "숨참·가슴 통증"
+            "새 변화 전달"
           ],
           "bounds": [
             [
               230,
               774,
-              711,
+              614,
               845
             ]
           ]
         }
       },
-      "cached": true
+      "cached": false
     },
     {
       "profile_id": "msk-manual-therapy",
@@ -11742,11 +11742,11 @@
       "profile_id": "msk-occipital-pain",
       "topic": "followup",
       "topic_label": "변화 확인",
-      "question": "어떤 두통은 바로 도움을 받아야 하나요?",
+      "question": "뒤통수 통증의 변화와 다음 진료는 어떻게 정리하나요?",
       "labels": [
-        "갑작스러운 극심함",
-        "의식·발열",
-        "양상 변화"
+        "빈도·지속 변화",
+        "생활·약물 기록",
+        "재평가 항목"
       ],
       "path": "docs/images/clinical-guides/msk-occipital-pain/followup.webp",
       "thumbnail_path": "docs/images/clinical-guides/msk-occipital-pain/followup-480.webp",
@@ -11754,12 +11754,12 @@
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 23384,
-      "thumbnail_bytes": 10552,
-      "sha256": "652b3940258854918550ba39fce73419e5d6c2e03b4c38b54ebeb6a362432e56",
-      "thumbnail_sha256": "ca29e294416a2f4a5c7ea93fc1597e32196e10055593bd51d15a53a350061b9d",
-      "content_hash": "07248361b087b4b80951cca1f1ad4893d6b57f4aa77188faff64bf3da6cdecaa",
-      "alt": "뒷골·뒤통수 통증: 변화 확인. 갑작스러운 극심함, 의식·발열, 양상 변화을 정리한 정보도식",
+      "bytes": 23794,
+      "thumbnail_bytes": 10936,
+      "sha256": "23087aca2a25132a481b6f2b78f4f613ac342ece7d3e6d5ddf8c09501c572f34",
+      "thumbnail_sha256": "5141a08315660216b01f43149157cce4e91c01a1c4f5f792fef81a4604a0353e",
+      "content_hash": "39f68bbbc3d854237eec0a4d42294e59e8070f87033c63f49d8664253b870eb9",
+      "alt": "뒷골·뒤통수 통증: 변화 확인. 빈도·지속 변화, 생활·약물 기록, 재평가 항목을 정리한 정보도식",
       "text_layout": {
         "profile": {
           "font_size": 59,
@@ -11778,13 +11778,13 @@
         "label_1": {
           "font_size": 76,
           "lines": [
-            "갑작스러운 극심함"
+            "빈도·지속 변화"
           ],
           "bounds": [
             [
               230,
               406,
-              807,
+              711,
               477
             ]
           ]
@@ -11792,33 +11792,33 @@
         "label_2": {
           "font_size": 76,
           "lines": [
-            "의식·발열"
+            "생활·약물 기록"
           ],
           "bounds": [
             [
               230,
               590,
-              554,
-              661
+              711,
+              662
             ]
           ]
         },
         "label_3": {
           "font_size": 76,
           "lines": [
-            "양상 변화"
+            "재평가 항목"
           ],
           "bounds": [
             [
               230,
               774,
-              527,
-              845
+              597,
+              846
             ]
           ]
         }
       },
-      "cached": true
+      "cached": false
     },
     {
       "profile_id": "msk-neck-muscle-pain",
