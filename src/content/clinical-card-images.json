@@ -2,9 +2,9 @@
   "renderer_version": "clinical-information-diagrams-v2",
   "renderer": "Pillow / exact text and editorial shapes; no generative model",
   "diagram_policy": "Supplied observation/discussion labels only; not a diagnostic algorithm or treatment outcome graphic",
-  "built_at": "2026-10-25T19:03:07+09:00",
+  "built_at": "2026-10-25T21:21:53+09:00",
   "catalog_path": "src/content/clinical-catalog.json",
-  "catalog_sha256": "0a68383a5f0b047e32346a267c05475c74d60dc41db9bc0b7a0119e8a01e6951",
+  "catalog_sha256": "185eed5468814e44f96b8ca4b9ca4b08d53ff73d03ccbac47c9e0bb88e99e527",
   "font_path": "tools/fonts/NotoSansKR-Variable.ttf",
   "font_sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
   "font_license": "SIL Open Font License 1.1; tools/fonts/OFL-NotoSansKR.txt",
@@ -10342,7 +10342,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-leg-pain",
@@ -10834,7 +10834,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-manual-therapy",
@@ -11818,7 +11818,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-neck-muscle-pain",
@@ -16170,11 +16170,11 @@
       "profile_id": "msk-scalene-symptoms",
       "topic": "followup",
       "topic_label": "경과·재평가",
-      "question": "어떤 팔 변화는 즉시 확인해야 하나요?",
+      "question": "목 옆 불편과 손 기능의 변화는 어떻게 비교하나요?",
       "labels": [
-        "신경 경과",
-        "진단 재검토",
-        "급성 팔 변화"
+        "감각·손 기능",
+        "작업 조정 반응",
+        "진단 재검토"
       ],
       "path": "docs/images/clinical-guides/msk-scalene-symptoms/followup.webp",
       "thumbnail_path": "docs/images/clinical-guides/msk-scalene-symptoms/followup-480.webp",
@@ -16182,12 +16182,12 @@
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 22274,
-      "thumbnail_bytes": 10034,
-      "sha256": "b91533ccb02ce6e78cd69e3f3282bb64a127e896bc53daaeb30c899226f823b4",
-      "thumbnail_sha256": "80ca7e35843717745d0ef9d45eabfd6cf825b12d50f899f61574d356c5cb7fd4",
-      "content_hash": "1f895be9919cebbc573ce3d652032fd1c697b5e0336975cd62a14e64a88c168f",
-      "alt": "사각근 부위·팔 저림: 경과·재평가. 신경 경과, 진단 재검토, 급성 팔 변화을 정리한 정보도식",
+      "bytes": 23194,
+      "thumbnail_bytes": 10548,
+      "sha256": "46909d6e292cc9cf1f24f7941751e4341fea74efefbd478888e7e17d25886eb8",
+      "thumbnail_sha256": "0ef63775275640a3e785f570fb00d25905c4b51b8616c53ee31d24464bbf89c7",
+      "content_hash": "04a3b73a51f0d5c12570c0364b5ebb99ccd39ae66dd989f7f8700ff3b97ff591",
+      "alt": "사각근 부위·팔 저림: 경과·재평가. 감각·손 기능, 작업 조정 반응, 진단 재검토을 정리한 정보도식",
       "text_layout": {
         "profile": {
           "font_size": 59,
@@ -16206,13 +16206,13 @@
         "label_1": {
           "font_size": 76,
           "lines": [
-            "신경 경과"
+            "감각·손 기능"
           ],
           "bounds": [
             [
               230,
               406,
-              527,
+              641,
               477
             ]
           ]
@@ -16220,13 +16220,13 @@
         "label_2": {
           "font_size": 76,
           "lines": [
-            "진단 재검토"
+            "작업 조정 반응"
           ],
           "bounds": [
             [
               230,
               590,
-              597,
+              684,
               661
             ]
           ]
@@ -16234,19 +16234,19 @@
         "label_3": {
           "font_size": 76,
           "lines": [
-            "급성 팔 변화"
+            "진단 재검토"
           ],
           "bounds": [
             [
               230,
               774,
-              614,
+              597,
               845
             ]
           ]
         }
       },
-      "cached": true
+      "cached": false
     },
     {
       "profile_id": "msk-hand-numbness",
@@ -18630,11 +18630,11 @@
       "profile_id": "msk-cold-extremities",
       "topic": "followup",
       "topic_label": "변화 확인",
-      "question": "어떤 냉감은 바로 평가가 필요한가요?",
+      "question": "손발 시림의 경과와 생활 변화를 어떻게 비교하나요?",
       "labels": [
-        "경과 비교",
-        "상처·편측",
-        "갑작스러운 혈류 변화"
+        "시림 경과",
+        "보온 후 반응",
+        "피부·기능 변화"
       ],
       "path": "docs/images/clinical-guides/msk-cold-extremities/followup.webp",
       "thumbnail_path": "docs/images/clinical-guides/msk-cold-extremities/followup-480.webp",
@@ -18642,12 +18642,12 @@
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 24512,
-      "thumbnail_bytes": 11134,
-      "sha256": "84be51d16a0cf3d597b89a34095c50064a6c20bfb73dfaab586414bfe61c93f9",
-      "thumbnail_sha256": "0b43ba8b2289f0f6ac1be2ffc6a66039d3b69715b774c98fd3f8da9a2518b371",
-      "content_hash": "fd6d0ac0b5d15eea3948c1f290f8cee5cc057747f6443cff7a0042bbced33ff9",
-      "alt": "손발 차가움·수족냉증: 변화 확인. 경과 비교, 상처·편측, 갑작스러운 혈류 변화을 정리한 정보도식",
+      "bytes": 23244,
+      "thumbnail_bytes": 10468,
+      "sha256": "7769db6d3853cfad38d6f7c4cf1664ff516173f0641d3368a5f8d3ca7cf9b9fb",
+      "thumbnail_sha256": "151ca04b55ec44d722cf3cf407cce80e1d78826f5dfa6ac9c9bded6db281a118",
+      "content_hash": "6be9b80f91779be6c559e2ac5b13585c31fa079601807aa69cf3fc0f0593755c",
+      "alt": "손발 차가움·수족냉증: 변화 확인. 시림 경과, 보온 후 반응, 피부·기능 변화을 정리한 정보도식",
       "text_layout": {
         "profile": {
           "font_size": 59,
@@ -18666,7 +18666,7 @@
         "label_1": {
           "font_size": 76,
           "lines": [
-            "경과 비교"
+            "시림 경과"
           ],
           "bounds": [
             [
@@ -18680,13 +18680,13 @@
         "label_2": {
           "font_size": 76,
           "lines": [
-            "상처·편측"
+            "보온 후 반응"
           ],
           "bounds": [
             [
               230,
               590,
-              554,
+              614,
               661
             ]
           ]
@@ -18694,19 +18694,19 @@
         "label_3": {
           "font_size": 76,
           "lines": [
-            "갑작스러운 혈류 변화"
+            "피부·기능 변화"
           ],
           "bounds": [
             [
               230,
               774,
-              894,
-              846
+              711,
+              845
             ]
           ]
         }
       },
-      "cached": true
+      "cached": false
     },
     {
       "profile_id": "msk-neuralgia",
@@ -20106,10 +20106,10 @@
       "profile_id": "msk-pharmacopuncture",
       "topic": "followup",
       "topic_label": "경과 확인",
-      "question": "어떤 경우 바로 도움을 요청해야 하나요?",
+      "question": "시술 뒤 변화와 다음 선택을 어떻게 확인하나요?",
       "labels": [
-        "호흡·붓기",
-        "감염 의심",
+        "기능 변화",
+        "반응 기록",
         "다음 선택"
       ],
       "path": "docs/images/clinical-guides/msk-pharmacopuncture/followup.webp",
@@ -20118,12 +20118,12 @@
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 22554,
-      "thumbnail_bytes": 10122,
-      "sha256": "3a60168aea14e7e47d167b802bbb260b646769897de6c23a1f01b343f7c084a4",
-      "thumbnail_sha256": "b7fb97c66ef829b31b642dc93ef13695149e007c718ace9e8aa57b3cac1e28b9",
-      "content_hash": "3c830b87bf4313fd0e128cdee3edf37b36812bfe82c716529a223d593dc21f7b",
-      "alt": "약침 전 설명·동의와 안전: 경과 확인. 호흡·붓기, 감염 의심, 다음 선택을 정리한 정보도식",
+      "bytes": 22176,
+      "thumbnail_bytes": 9914,
+      "sha256": "6c145c00c7b11bb27125fe54d0b27923ff61545b2baef1748ed2a37552359597",
+      "thumbnail_sha256": "b3dd4e8047d39e5fe77ad0d07ba2a819f395e694c53c38c185192dabb2aac74b",
+      "content_hash": "89467fc43641db76b32f9356d85a852acf75446de6e65618dad0fd31c8b97ab7",
+      "alt": "약침 전 설명·동의와 안전: 경과 확인. 기능 변화, 반응 기록, 다음 선택을 정리한 정보도식",
       "text_layout": {
         "profile": {
           "font_size": 59,
@@ -20142,21 +20142,21 @@
         "label_1": {
           "font_size": 76,
           "lines": [
-            "호흡·붓기"
+            "기능 변화"
           ],
           "bounds": [
             [
               230,
               406,
-              554,
-              478
+              527,
+              477
             ]
           ]
         },
         "label_2": {
           "font_size": 76,
           "lines": [
-            "감염 의심"
+            "반응 기록"
           ],
           "bounds": [
             [
@@ -20182,7 +20182,7 @@
           ]
         }
       },
-      "cached": true
+      "cached": false
     },
     {
       "profile_id": "msk-shoulder-pain",
@@ -23058,11 +23058,11 @@
       "profile_id": "msk-sciatica",
       "topic": "followup",
       "topic_label": "경과·재평가",
-      "question": "무엇을 비교하고 언제 바로 도움을 받나요?",
+      "question": "다리 증상과 생활 기능은 어떻게 달라졌나요?",
       "labels": [
-        "기능 경과",
-        "악화 시 재진",
-        "마미신경 경고"
+        "기능 비교",
+        "감각·힘",
+        "계획 재평가"
       ],
       "path": "docs/images/clinical-guides/msk-sciatica/followup.webp",
       "thumbnail_path": "docs/images/clinical-guides/msk-sciatica/followup-480.webp",
@@ -23070,12 +23070,12 @@
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 21548,
-      "thumbnail_bytes": 9424,
-      "sha256": "60f965b36caabcc3547b2b4fb092fc8c03d44475cce12bc285d7156d1456bd5b",
-      "thumbnail_sha256": "d7034b8c8a6a4443213d3efcf1194a0633aa7110d1adbf68b7a1870438e34e33",
-      "content_hash": "9d25676419fafec3274f8a1243b229cd86cc3977816124b8071162780e16b75e",
-      "alt": "좌골신경통: 경과·재평가. 기능 경과, 악화 시 재진, 마미신경 경고을 정리한 정보도식",
+      "bytes": 20134,
+      "thumbnail_bytes": 8672,
+      "sha256": "da78f4bd3aaf37e8f5ba87c7d090d7153450c49c35d63a2aacf3a40126f0898e",
+      "thumbnail_sha256": "7928e27869bbbe6a7b4518c3ad68b7439c775857d1737f40c822f00026227df3",
+      "content_hash": "9ba237674719268e2749aeca7de31bac077532b281eeb12ab32fb06085a93561",
+      "alt": "좌골신경통: 경과·재평가. 기능 비교, 감각·힘, 계획 재평가을 정리한 정보도식",
       "text_layout": {
         "profile": {
           "font_size": 59,
@@ -23094,7 +23094,7 @@
         "label_1": {
           "font_size": 76,
           "lines": [
-            "기능 경과"
+            "기능 비교"
           ],
           "bounds": [
             [
@@ -23108,13 +23108,13 @@
         "label_2": {
           "font_size": 76,
           "lines": [
-            "악화 시 재진"
+            "감각·힘"
           ],
           "bounds": [
             [
               230,
               590,
-              614,
+              484,
               661
             ]
           ]
@@ -23122,19 +23122,19 @@
         "label_3": {
           "font_size": 76,
           "lines": [
-            "마미신경 경고"
+            "계획 재평가"
           ],
           "bounds": [
             [
               230,
               774,
-              667,
+              597,
               845
             ]
           ]
         }
       },
-      "cached": true
+      "cached": false
     },
     {
       "profile_id": "msk-sacroiliac-pain",
@@ -25518,11 +25518,11 @@
       "profile_id": "msk-arm-numbness",
       "topic": "followup",
       "topic_label": "변화 확인",
-      "question": "어떤 팔 저림은 기다리지 말아야 하나요?",
+      "question": "팔저림 범위와 손 기능은 어떻게 추적하나요?",
       "labels": [
-        "감각·기능 경과",
-        "갑작스러운 편측",
-        "혈관·흉부 신호"
+        "감각 범위",
+        "손 기능",
+        "관리 반응"
       ],
       "path": "docs/images/clinical-guides/msk-arm-numbness/followup.webp",
       "thumbnail_path": "docs/images/clinical-guides/msk-arm-numbness/followup-480.webp",
@@ -25530,12 +25530,12 @@
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 22494,
-      "thumbnail_bytes": 10308,
-      "sha256": "a5161e87625d1f792127e93f648981565d5446a3f84823e3921bfe8e4ae6c5d9",
-      "thumbnail_sha256": "4a62fd1c21e062d42d3364fb3919a608a4077b4f0612bde884451c569cc8c115",
-      "content_hash": "013a0fd7b582f8f5a48a0efa5686f552cc6435abfbd7691423e77d6d6eb257ef",
-      "alt": "팔 저림: 변화 확인. 감각·기능 경과, 갑작스러운 편측, 혈관·흉부 신호을 정리한 정보도식",
+      "bytes": 18250,
+      "thumbnail_bytes": 7866,
+      "sha256": "fc8ca9ee73735d441bccde9ad1961f628611fd124c962ec3e89f68710a8ccbc7",
+      "thumbnail_sha256": "0928e2e0b8f6bf95a534a34cff8a0c3f8557056c628832af928b3bb233e92c63",
+      "content_hash": "5eee1c155d435b1de9e0da48d530026d046efac182a2920d3c6cb59796d9d844",
+      "alt": "팔 저림: 변화 확인. 감각 범위, 손 기능, 관리 반응을 정리한 정보도식",
       "text_layout": {
         "profile": {
           "font_size": 59,
@@ -25554,13 +25554,13 @@
         "label_1": {
           "font_size": 76,
           "lines": [
-            "감각·기능 경과"
+            "감각 범위"
           ],
           "bounds": [
             [
               230,
               406,
-              711,
+              527,
               477
             ]
           ]
@@ -25568,33 +25568,33 @@
         "label_2": {
           "font_size": 76,
           "lines": [
-            "갑작스러운 편측"
+            "손 기능"
           ],
           "bounds": [
             [
               230,
               590,
-              737,
-              661
+              457,
+              660
             ]
           ]
         },
         "label_3": {
           "font_size": 76,
           "lines": [
-            "혈관·흉부 신호"
+            "관리 반응"
           ],
           "bounds": [
             [
               230,
               774,
-              711,
-              846
+              527,
+              845
             ]
           ]
         }
       },
-      "cached": true
+      "cached": false
     },
     {
       "profile_id": "msk-rotator-cuff-tear",
