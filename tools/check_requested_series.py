@@ -32,15 +32,21 @@ def main():
     assert len(manifest['queries']) == 19 and [x['order'] for x in manifest['queries']] == list(range(1, 20))
     assert {x['profile_id'] for x in manifest['queries']} == set(ids)
     assert all(x['query'].startswith('오창 ') for x in manifest['queries'])
-    assert set(before) == set(profiles)
+    extension_file = CONTENT / 'series-revisions-women-urology-20261026.json'
+    extension = read(extension_file) if extension_file.exists() else {'profile_ids': [], 'new_profile_ids': []}
+    assert set(profiles) == set(before) | set(extension['new_profile_ids'])
     later_path = CONTENT / 'series-revisions-fortyfive-20261025.json'
     later_ids = set(read(later_path)['profile_ids']) if later_path.exists() else set()
+    later_ids.update(extension['profile_ids'])
+    newest_file = CONTENT / 'series-revisions-women-sleep-20261027.json'
+    if newest_file.exists():
+        later_ids.update(read(newest_file)['profile_ids'])
     for pid, profile in profiles.items():
         if pid not in set(ids) | later_ids:
             assert profile == before[pid], pid + ': unrelated profile changed'
     priority = read(CONTENT / 'priority80.json')
     assessment = {p['id']: p for p in priority['profiles']}
-    assert priority['updated_at'] == manifest['updated_at']
+    assert priority['updated_at'] >= manifest['updated_at']
     revised_images = {(x['profile_id'], x['topic']) for x in manifest['image_revisions']}
     bodies, metadata_titles, descriptions = set(), set(), set()
     image_count = 0

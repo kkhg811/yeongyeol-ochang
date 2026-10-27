@@ -1,6 +1,6 @@
 {
   "status": "published",
-  "updated_at": "2026-10-25",
+  "updated_at": "2026-10-26",
   "medical_review_status": "pending",
   "reviewed_by": null,
   "reviewed_at": null,
@@ -667,44 +667,49 @@
     {
       "id": "msk-pelvic-pain",
       "checks": [
-        "골반 불편이 아랫배 안쪽인지 엉덩이·관절 주변인지 구분되나요?",
-        "배뇨·배변 때 통증이 달라지거나 관련 증상이 있나요?",
-        "월경·성생활·임신 가능성과 연결해 통증 변화를 설명할 수 있나요?"
+        "주기와 배뇨·배변 관련성이 있나요?",
+        "기존 검사 뒤 증상이 달라졌나요?",
+        "분비물·출혈 변화가 동반되나요?"
       ],
       "branches": [
         {
-          "observation": "배뇨·배변이나 월경과 통증 변화가 연결된다면",
-          "possibility": "비뇨기·소화기·생식기 관련 원인",
-          "distinction": "골반이 틀어졌다는 설명만으로 다루지 않습니다. 동반 증상과 개인 상황에 맞는 진료 분야를 확인합니다.",
-          "related_id": "women-gynecology-visit"
+          "observation": "주기와 통증이 반복해 겹침",
+          "possibility": "부인과 원인 감별",
+          "distinction": "양상만으로 단일 질환을 정하지 않습니다.",
+          "related_id": "women-period-pain"
         },
         {
-          "observation": "고관절 주변이 걷기·눕기 등 움직임에서 불편하다면",
-          "possibility": "고관절과 주변 힘줄 등 근골격 원인",
-          "distinction": "움직임 관련성만으로 내부 장기 원인을 배제할 수 없습니다. 아랫배·배뇨·배변 증상도 함께 설명합니다.",
-          "related_id": "msk-hip-pain"
+          "observation": "배뇨 불편과 통증이 함께 있음",
+          "possibility": "비뇨기 원인 감별",
+          "distinction": "소변 증상에 맞는 검사 범위를 확인합니다.",
+          "related_id": "women-recurrent-cystitis"
         }
       ],
       "faq": [
         {
-          "question": "골반 통증은 골반교정으로만 접근하면 되나요?",
-          "answer": "아닙니다. 장·방광·생식기 등 골반 안의 기관에서도 통증이 생길 수 있습니다. 위치와 움직임뿐 아니라 배뇨·배변·월경 및 임신 가능성을 함께 확인해 필요한 진료를 정합니다."
+          "question": "분기 도표가 검사 결과를 대신하나요?",
+          "answer": "대신하지 않습니다. 병력·진찰과 필요한 검사를 함께 평가합니다."
         },
         {
-          "question": "골반 통증을 설명하려면 어떤 기록이 도움이 되나요?",
-          "answer": "아픈 위치와 시작 시점, 지속되는지 반복되는지, 배뇨·배변·월경·성생활·움직임과의 관계가 도움이 됩니다. 증상이 비슷한 원인이 많으므로 한 가지 항목으로 자가 진단하지 말고 동반 증상을 함께 전달하세요."
+          "question": "골반 교정으로 모든 원인을 다루나요?",
+          "answer": "통증 위치만으로 치료를 정하지 않고 평가한 원인에 연결합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/symptoms/pelvic-pain/",
-          "scope": "통증 위치·양상, 장·방광·생식기 원인과 동반 증상 확인",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nth.nhs.uk/resources/chronic-pelvic-pain/",
+          "scope": "2026년 검토 환자 안내의 소변·감염 검사와 평가 범위",
+          "checked_at": "2026-10-26"
         },
         {
-          "url": "https://www.nhs.uk/symptoms/hip-pain/",
-          "scope": "고관절 주변의 움직임 관련 근골격 원인; 내부 원인 배제 도구가 아님",
-          "checked_at": "2026-10-22"
+          "url": "https://my.clevelandclinic.org/health/symptoms/12106-pelvic-pain",
+          "scope": "생식기·비뇨기·소화기·근골격계 감별과 재평가",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://my.clevelandclinic.org/departments/obgyn-womens-health/depts/endometriosis-chronic-pelvic-pain",
+          "scope": "복합 골반통 원인과 평가를 연결하는 문진 준비",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 15,
@@ -2898,39 +2903,44 @@
     {
       "id": "women-period-pain",
       "checks": [
-        "월경이 시작되기 직전이나 첫날부터 아랫배가 아픈가요?",
-        "이전 월경보다 통증이 강해지거나 일상 활동을 멈추게 되나요?",
-        "월경 기간 외에도 성관계·배변·배뇨 때 골반이 아픈가요?"
+        "초경 이후 비슷한 월경통과 달리 최근 통증의 시기·지속 시간이 달라졌나요?",
+        "월경 외 배변·성관계 통증이나 골반통이 함께 있나요?",
+        "기존 약 사용 후에도 활동 제한이 남거나 출혈 양상이 달라졌나요?"
       ],
       "branches": [
         {
-          "observation": "월경 시작 무렵 경련성 통증이 반복됨",
-          "possibility": "흔한 월경통의 양상과 맞는지 확인",
-          "distinction": "주기와 통증의 관계는 단서이며 자궁내막증 등 다른 원인을 배제하지 못합니다.",
-          "related_id": "women-pms"
+          "observation": "월경 외 골반통과 배변·성관계 통증이 함께 반복됨",
+          "possibility": "자궁내막증 등을 감별할 단서",
+          "distinction": "정상 초음파만으로 배제하지 않으며, 증상과 진찰·검사 범위를 종합합니다.",
+          "related_id": "women-endometriosis"
         },
         {
-          "observation": "통증이 새로 심해지거나 월경 외 통증·출혈이 동반됨",
-          "possibility": "자궁내막증·자궁선근증 등 이차 원인도 확인",
-          "distinction": "증상만으로 구분하기 어려워 병력·진찰과 필요한 검사를 함께 판단합니다.",
-          "related_id": "women-endometriosis"
+          "observation": "월경통과 이전보다 많은 출혈 또는 길어진 출혈 기간이 동반됨",
+          "possibility": "과다월경과 자궁 질환 등을 확인할 단서",
+          "distinction": "출혈량과 빈혈 관련 평가가 필요한지는 병력·진찰에 따라 결정합니다.",
+          "related_id": "women-heavy-periods"
         }
       ],
       "faq": [
         {
-          "question": "생리통이 있으면 모두 자궁에 병이 있나요?",
-          "answer": "그렇지는 않습니다. 월경통은 흔하지만, 통증이 이전과 달라지거나 월경 사이 출혈·성관계 또는 배변 시 통증이 함께 있으면 다른 원인도 살핍니다. 통증이 시작된 날과 월경일을 함께 기록하세요."
+          "question": "분기 결과는 검사 처방인가요?",
+          "answer": "아닙니다. 어떤 원인을 진찰에서 함께 볼지 설명하는 참고이며 검사 종류를 자동으로 정하지 않습니다."
         },
         {
-          "question": "생리통 진료에 어떤 기록이 도움이 되나요?",
-          "answer": "월경 시작일, 통증이 지속된 시간, 학교·업무에 미친 영향, 사용한 진통제와 반응을 적으면 도움이 됩니다. 주기와 무관한 통증이나 출혈도 별도로 알려 주세요."
+          "question": "기존 검사 결과가 있어도 증상을 다시 묻나요?",
+          "answer": "네. 검사 날짜 이후의 변화와 당시 평가 범위가 이번 증상을 충분히 설명하는지 확인합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/symptoms/period-pain/",
-          "scope": "월경통의 시기·생활 영향과 이차 원인을 살펴볼 증상",
-          "checked_at": "2026-10-22"
+          "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/endometriosis/",
+          "scope": "월경 외 동반 통증과 영상검사 배제 한계",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://womenshealth.gov/menstrual-cycle/period-problems",
+          "scope": "출혈 양상·통증·생활 제한의 평가",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 58,
@@ -3034,44 +3044,49 @@
     {
       "id": "women-overactive-bladder",
       "checks": [
-        "갑자기 소변이 마려워 화장실까지 참기 어려운가요?",
-        "요의가 생긴 직후 소변이 새거나 밤에 여러 번 깨나요?",
-        "배뇨 때 쓰라림이나 방광 부위 통증도 함께 있나요?"
+        "급박감·빈뇨·밤중 배뇨·누출을 각각 설명할 수 있나요?",
+        "현재 복용약과 수분 섭취, 소변검사 자료가 있나요?",
+        "소변 줄기 약화나 비우기 어려운 느낌도 관찰했나요?"
       ],
       "branches": [
         {
-          "observation": "갑작스러운 요의가 먼저 오고 참기 어렵거나 소변이 샘",
-          "possibility": "절박뇨·절박성 요실금 양상 확인",
-          "distinction": "배뇨일지와 진찰로 감염·배출 문제 등 다른 원인을 함께 구분합니다.",
-          "related_id": "women-bladder-pain"
+          "observation": "급박감이 중심이며 평소 활동을 제한함",
+          "possibility": "저장 증상 평가 필요",
+          "distinction": "감염과 다른 원인 배제를 함께 진행합니다.",
+          "related_id": "women-overactive-bladder"
         },
         {
-          "observation": "빈뇨와 함께 배뇨 시 통증·쓰라림이 동반됨",
-          "possibility": "요로감염 등 다른 배뇨 증상 평가",
-          "distinction": "과민성방광이라고 스스로 정해 치료하지 않고 증상과 검사 결과를 확인합니다.",
-          "related_id": "women-recurrent-cystitis"
+          "observation": "급박감에 배출 지연·잔뇨감이 동반됨",
+          "possibility": "배출 장애와 전립선 등 감별 필요",
+          "distinction": "남성에서도 모든 증상을 전립선비대증으로 확정하지 않습니다.",
+          "related_id": "urology-benign-prostate"
         }
       ],
       "faq": [
         {
-          "question": "소변이 새지 않아도 과민성방광을 살펴볼 수 있나요?",
-          "answer": "가능합니다. 갑작스럽고 참기 어려운 요의가 핵심 불편일 수 있습니다. 소변이 새는지뿐 아니라 배뇨 시간·양·절박감, 마신 음료를 기록해 평가받으세요."
+          "question": "이 도표가 검사 필요성을 결정하나요?",
+          "answer": "아닙니다. 병력·진찰에 따라 의료진이 필요한 검사 범위를 결정합니다."
         },
         {
-          "question": "기침할 때만 소변이 새는 것도 같은 문제인가요?",
-          "answer": "양상이 다를 수 있습니다. 기침·웃음·힘주기 때 새는 복압성 요실금과 갑작스러운 요의에 이어 새는 절박성 요실금은 구분하며, 두 양상이 함께 나타나기도 합니다."
+          "question": "어떤 치료 반응을 준비하면 좋나요?",
+          "answer": "급박감과 누출 변화, 수면·외출 변화 및 치료 중 새로 생긴 불편입니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/urinary-incontinence/",
-          "scope": "요실금 유형의 구분 및 배뇨일지",
-          "checked_at": "2026-10-22"
+          "url": "https://www.mayoclinic.org/diseases-conditions/overactive-bladder/diagnosis-treatment/drc-20355721",
+          "scope": "소변·잔뇨 평가와 개인별 관리",
+          "checked_at": "2026-10-26"
         },
         {
-          "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/",
-          "scope": "배뇨통을 동반하는 감염 가능성 구분",
-          "checked_at": "2026-10-22"
+          "url": "https://www.pah.nhs.uk/resources/overactive-bladder/",
+          "scope": "배뇨일지·복용약·삶의 질과 진료 준비",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/diagnosis",
+          "scope": "잔뇨 측정과 배출 장애의 원인 평가",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 61,
@@ -3081,44 +3096,44 @@
     {
       "id": "women-ovarian-reserve",
       "checks": [
-        "AMH나 초음파 난포 수 검사 결과를 갖고 있나요?",
-        "월경 간격이 길어지거나 월경이 멈춘 변화도 있나요?",
-        "검사를 시행한 목적이 임신 계획인지 시술 반응 확인인지 알고 있나요?"
+        "기존 결과지에서 검사 날짜·AMH·FSH·초음파 소견과 실제 진단명을 확인할 수 있나요?",
+        "낮은 검사 수치와 별개로 월경 중단·불규칙 월경·열감이 동반되었나요?",
+        "이전 난소 자극 반응, 수술·항암치료 또는 조기 난소 기능 저하 가족력이 있나요?"
       ],
       "branches": [
         {
-          "observation": "낮은 AMH 수치만 확인했고 월경은 계속됨",
-          "possibility": "난소예비력의 수량 지표를 임상 맥락에서 해석",
-          "distinction": "수치 하나로 난자 질이나 자연임신 가능성을 단정할 수 없습니다.",
-          "related_id": "women-female-fertility"
+          "observation": "월경 이상과 저에스트로겐을 의심할 증상이 함께 있음",
+          "possibility": "조기난소부전 등 난소·호르몬 원인의 감별 단서",
+          "distinction": "나이·임신 여부·월경 경과와 호르몬 결과를 함께 검토하며 AMH 단독 진단은 피합니다.",
+          "related_id": "women-early-menopause"
         },
         {
-          "observation": "월경 중단·주기 변화와 열감 등이 함께 있음",
-          "possibility": "임신·호르몬 변화·이른 난소기능 저하 등 평가",
-          "distinction": "AMH와 별개로 병력과 필요한 호르몬 검사로 원인을 구분합니다.",
-          "related_id": "women-amenorrhea"
+          "observation": "낮은 예비력 결과가 난임 치료 선택의 주된 질문임",
+          "possibility": "난소 자극 반응을 포함한 난임 평가의 단서",
+          "distinction": "난자 양과 질을 구분하고 다른 임신 관련 요인을 함께 검토해야 합니다.",
+          "related_id": "women-female-fertility"
         }
       ],
       "faq": [
         {
-          "question": "AMH가 낮으면 자연임신이 불가능한가요?",
-          "answer": "아닙니다. AMH 등 난소예비력 검사는 남은 난자의 수량이나 난소 자극 반응을 이해하는 데 쓰이며, 자연임신 가능성을 단독으로 예측하는 검사가 아닙니다. 나이·시도 기간·다른 검사 결과를 함께 해석합니다."
+          "question": "도표가 검사 수치의 정상·비정상을 판정하나요?",
+          "answer": "아닙니다. 검사 조건과 목적을 연결하는 안내이며 개인별 결과 판정은 진료에서 합니다."
         },
         {
-          "question": "난소예비력 수치가 난자의 질도 보여주나요?",
-          "answer": "직접 보여주지는 않습니다. 난소예비력은 주로 수량에 관한 정보이며 질이나 출산 가능성과의 관계에는 한계가 있습니다. 검사 목적을 먼저 확인하고 수치 하나로 계획을 정하지 않는 것이 좋습니다."
+          "question": "단어만 다르면 같은 질환으로 묶어도 되나요?",
+          "answer": "아닙니다. 특히 난소순환부전이라는 표현은 실제 진단과 근거를 확인한 뒤 의미를 정리해야 합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/testing-and-interpreting-measures-of-ovarian-reserve-a-committee-opinion-2020/",
-          "scope": "난소예비력 검사의 수량·시술반응 의미와 자연임신 예측 한계",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nichd.nih.gov/health/topics/poi/conditioninfo/diagnosed",
+          "scope": "월경·호르몬·병력에 기반한 난소 기능 평가",
+          "checked_at": "2026-10-26"
         },
         {
-          "url": "https://www.nhs.uk/conditions/early-or-premature-menopause/",
-          "scope": "월경 변화와 이른 폐경 평가",
-          "checked_at": "2026-10-22"
+          "url": "https://crh.ucsf.edu/about-fertility/diagnostic-fertility-testing/ovarian-reserve",
+          "scope": "난소예비력·자극 반응과 임신 관련 질문의 구분",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 62,
@@ -3128,44 +3143,44 @@
     {
       "id": "women-ovarian-cyst",
       "checks": [
-        "초음파에서 낭종의 크기와 형태를 설명받았나요?",
-        "한쪽 골반 통증·팽만감 또는 배뇨 불편이 있나요?",
-        "지난 초음파와 비교한 변화나 추적 검사 일정이 있나요?"
+        "이전 초음파 소견을 보관하고 있나요?",
+        "주기 외 통증·팽만이 있나요?",
+        "폐경 상태가 이전과 달라졌나요?"
       ],
       "branches": [
         {
-          "observation": "초음파에서 낭종이 확인됨",
-          "possibility": "낭종의 형태·크기·증상에 따른 추적 또는 진료 선택",
-          "distinction": "낭종은 흔하고 증상이 없기도 하므로 발견만으로 치료 필요성을 정하지 않습니다.",
+          "observation": "영상에서 낭종을 확인함",
+          "possibility": "형태에 따른 관찰 판단",
+          "distinction": "통증만으로 영상 소견의 의미를 정하지 않습니다.",
           "related_id": "women-gynecology-visit"
         },
         {
-          "observation": "검사 전이며 월경 사이 한쪽 통증만 있음",
-          "possibility": "배란통 등 다른 골반통 원인과 구분",
-          "distinction": "통증 위치만으로 낭종을 알 수 없고 반복·지속 양상에 따라 평가합니다.",
-          "related_id": "women-ovulation-pain"
+          "observation": "주기 불편이 함께 나타남",
+          "possibility": "다른 골반통 원인 검토",
+          "distinction": "주기 연관성만으로 낭종 원인을 확정하지 않습니다.",
+          "related_id": "women-period-pain"
         }
       ],
       "faq": [
         {
-          "question": "난소낭종이 있으면 모두 수술해야 하나요?",
-          "answer": "아닙니다. 자연히 없어지는 기능성 낭종도 있으며, 추적이나 치료 선택은 크기·형태·증상·폐경 여부 등을 고려합니다. 검사 결과와 권고된 추적 일정을 확인하세요."
+          "question": "자가 체크로 치료를 결정하나요?",
+          "answer": "아닙니다. 문진과 영상 해석에 필요한 관찰을 정리합니다."
         },
         {
-          "question": "골반이 아프면 낭종이 커졌다는 뜻인가요?",
-          "answer": "통증만으로 낭종의 크기나 변화를 알 수 없습니다. 배란통 등 다른 원인도 비슷하게 느껴질 수 있어, 기존 초음파와 통증의 시작·지속·주기 관계를 함께 봅니다."
+          "question": "폐경 후에는 모두 수술하나요?",
+          "answer": "단순 소견 중 관찰 가능한 경우도 있어 개별 평가합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/ovarian-cyst/",
-          "scope": "낭종의 흔한 경과·증상 및 초음파 추적의 역할",
-          "checked_at": "2026-10-22"
+          "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/ovarian-cysts-before-the-menopause/",
+          "scope": "폐경 전 낭종의 영상 형태·증상과 선택지 설명",
+          "checked_at": "2026-10-26"
         },
         {
-          "url": "https://www.nhs.uk/symptoms/ovulation-pain/",
-          "scope": "한쪽 골반통의 배란 관련 양상과 감별 한계",
-          "checked_at": "2026-10-22"
+          "url": "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/ovarian-cysts-in-postmenopausal-women-green-top-guideline-no-34/",
+          "scope": "2025년 12월 수정 지침의 폐경 후 단순 낭종 관찰 원칙",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 63,
@@ -3175,39 +3190,44 @@
     {
       "id": "women-male-fertility",
       "checks": [
-        "정액검사를 받은 적이 있고 결과지를 가져올 수 있나요?",
-        "임신 시도 기간과 피임 없이 관계한 빈도를 정리했나요?",
-        "복용약·보충제·과거 생식기 질환 이력을 알려줄 수 있나요?"
+        "정액 결과지에 채취일·조건과 여러 항목이 기록되어 있나요?",
+        "고환·사정·수술 관련 병력을 설명한 적이 있나요?",
+        "파트너의 배란·난관 등 평가와 일정을 함께 알고 있나요?"
       ],
       "branches": [
         {
-          "observation": "정액검사에서 정자 수나 운동성 변화가 확인됨",
-          "possibility": "남성 요인 평가와 결과 해석",
-          "distinction": "검사 하나만으로 임신 가능성을 단정하지 않고 병력과 필요한 추가 평가를 연결합니다.",
+          "observation": "여성 평가가 아직 연결되지 않았다",
+          "possibility": "두 사람의 복합 요인 여부를 검토할 필요",
+          "distinction": "남성 정액 수치만으로 전체 계획을 정하기 어렵고 파트너의 정보가 선택을 바꿀 수 있습니다.",
           "related_id": "women-female-fertility"
         },
         {
-          "observation": "검사 여부와 관계없이 임신이 잘되지 않음",
-          "possibility": "양측의 임신 관련 요인을 함께 평가",
-          "distinction": "문제를 한 사람에게만 돌리지 않고 시도 기간·나이·검사 이력을 함께 봅니다.",
+          "observation": "반복 검사에서 정자 관련 변화가 확인되었다",
+          "possibility": "원인별 치료·보조생식술 선택을 검토할 단계",
+          "distinction": "변화의 기전과 두 사람의 조건에 따라 선택하며 특정 시술이 자동으로 정해지지는 않습니다.",
           "related_id": "women-assisted-fertility"
         }
       ],
       "faq": [
         {
-          "question": "남성난임은 몸이 피곤한 정도로 알 수 있나요?",
-          "answer": "알 수 없습니다. 평가에는 정액검사와 병력 등이 필요합니다. 피로감 유무와 별개로 임신 시도 기간, 복용약, 과거 질환과 양측의 평가 상황을 함께 확인합니다."
+          "question": "한 번의 낮은 수치만으로 불임을 확정하나요?",
+          "answer": "채취 조건과 변동성, 반복 결과를 확인하며 한 항목으로 임신 불가능을 확정하지 않습니다."
         },
         {
-          "question": "여성 검사만 먼저 끝내고 남성은 나중에 검사하나요?",
-          "answer": "양측을 함께 평가하는 것이 권장됩니다. 임신 어려움은 어느 한쪽 또는 양측의 요인과 관련될 수 있으므로, 정액검사와 여성의 배란·자궁·난관 등 필요한 평가를 연결합니다."
+          "question": "정자 검사를 받았으면 여성 검사는 필요 없나요?",
+          "answer": "두 사람의 관련 요인이 함께 있을 수 있어 양측 평가를 통합해야 합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/infertility/diagnosis/",
-          "scope": "정액검사의 역할과 양측 공동 평가·병력 확인",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nhs.uk/conditions/low-sperm-count/",
+          "scope": "무증상 가능성, 정액 재검, 생활 및 추가 평가",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.nichd.nih.gov/health/topics/infertility/conditioninfo/causes",
+          "scope": "한쪽·양쪽·복합 또는 확인되지 않는 원인",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 64,
@@ -3217,44 +3237,44 @@
     {
       "id": "women-pcos",
       "checks": [
-        "월경 간격이 길거나 월경을 거르는 일이 반복되나요?",
-        "여드름·털 증가·두피 탈모 등 변화가 함께 있나요?",
-        "임신 계획이나 체중·혈당 등 대사 관련 상담도 필요한가요?"
+        "월경 불규칙·중단과 안드로겐 관련 증상의 시작·경과를 구분할 수 있나요?",
+        "검사 결과에서 진단을 위해 확인한 요소와 배제한 원인을 설명받았나요?",
+        "현재 약물·임신 계획과 혈당·지질 등 추적 목표를 확인할 수 있나요?"
       ],
       "branches": [
         {
-          "observation": "월경 불규칙과 피부·털 변화가 함께 나타남",
-          "possibility": "다낭성난소증후군을 포함한 호르몬 원인 확인",
-          "distinction": "증상 조합은 평가의 단서이며 혈액검사·초음파 등은 개인 상태에 따라 판단합니다.",
+          "observation": "월경 중단이 지속되며 PCOS 외 원인 확인이 충분하지 않음",
+          "possibility": "임신·갑상선 등 다른 무월경 원인을 감별할 상황",
+          "distinction": "다낭성 난소 형태만으로 월경 중단의 원인을 확정하지 않습니다.",
           "related_id": "women-amenorrhea"
         },
         {
-          "observation": "월경 주기 변화만 있고 원인은 확인하지 않음",
-          "possibility": "임신·체중·스트레스·다른 호르몬 원인도 평가",
-          "distinction": "주기가 불규칙하다는 사실 하나로 다낭성난소증후군을 확정하지 않습니다.",
-          "related_id": "women-irregular-cycles"
+          "observation": "배란 문제와 임신 시도 계획을 함께 평가해야 함",
+          "possibility": "배란 관련 요인을 포함한 난임 평가의 단서",
+          "distinction": "PCOS 진단 여부와 별개로 임신의 다른 조건과 적절한 치료 목적을 검토합니다.",
+          "related_id": "women-female-fertility"
         }
       ],
       "faq": [
         {
-          "question": "초음파 소견만으로 다낭성난소증후군을 판단하나요?",
-          "answer": "그렇지 않습니다. 월경·배란 양상, 호르몬 관련 증상과 필요한 검사 결과를 함께 평가합니다. 체중이나 초음파 하나만으로 진단 또는 관리 목표를 정하지 않습니다."
+          "question": "도표의 항목 수가 진단 기준 수인가요?",
+          "answer": "아닙니다. 환자 관찰과 진단 기준은 다르며 수치·연령·배제 진단을 진료에서 확인해야 합니다."
         },
         {
-          "question": "임신 계획이 없어도 관리가 필요한가요?",
-          "answer": "증상이 있다면 진료에서 확인하는 것이 좋습니다. 이 질환은 월경·임신뿐 아니라 피부·털 변화와 대사 문제 등에도 관련되므로, 현재 가장 불편한 증상과 건강 목표에 맞춰 계획을 논의합니다."
+          "question": "정상 체중이면 PCOS 가능성을 제외하나요?",
+          "answer": "제외하지 않습니다. 체중은 전체 평가의 일부이며 월경·호르몬·대사 정보를 함께 검토합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/polyendocrine-metabolic-ovarian-syndrome-pmos/",
-          "scope": "월경·안드로겐 관련 증상·대사 평가 및 증상만으로 확정하지 않는 원칙",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nichd.nih.gov/health/topics/pcos/conditioninfo/diagnose",
+          "scope": "진단 특징의 종합과 성인·청소년 평가 구분",
+          "checked_at": "2026-10-26"
         },
         {
-          "url": "https://www.nhs.uk/symptoms/missed-or-late-periods/",
-          "scope": "월경 중단의 다양한 원인",
-          "checked_at": "2026-10-22"
+          "url": "https://www.fda.gov/consumers/womens-health-topics/polycystic-ovary-syndrome-pcos",
+          "scope": "진단과 관련 건강 위험 평가, 목표별 치료 상담",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 65,
@@ -3264,44 +3284,49 @@
     {
       "id": "women-recurrent-cystitis",
       "checks": [
-        "소변 볼 때 따갑거나 자주 마려운 증상이 반복되나요?",
-        "이전 증상 때 소변 검사 결과나 복용한 약 이름을 알 수 있나요?",
-        "증상이 나아진 기간과 다시 시작된 시점을 구분할 수 있나요?"
+        "배뇨통·빈뇨의 발생일과 이전 치료 종료일을 구분할 수 있나요?",
+        "기존 소변검사나 배양 결과와 처방 내역이 있나요?",
+        "통증이 지속되는지, 소실 후 재발했는지 관찰했나요?"
       ],
       "branches": [
         {
-          "observation": "배뇨통·빈뇨가 새로 생기고 이전에도 감염을 확인함",
-          "possibility": "재발성 요로감염 가능성 평가",
-          "distinction": "예전과 비슷해도 원인이 같다고 단정하지 않고 필요한 소변 검사를 판단합니다.",
-          "related_id": "women-overactive-bladder"
+          "observation": "새 배뇨통·빈뇨와 이전 감염 기록이 있음",
+          "possibility": "감염 여부와 재발 경과 확인",
+          "distinction": "이번 증상과 검사 결과를 대조해야 합니다.",
+          "related_id": "women-recurrent-cystitis"
         },
         {
-          "observation": "감염 치료 뒤에도 방광 통증·빈뇨가 지속됨",
-          "possibility": "방광통증증후군 등 비감염성 원인도 구분",
-          "distinction": "지속 증상만으로 간질성방광염을 확정하거나 항생제를 임의 반복하지 않습니다.",
+          "observation": "치료 뒤에도 채워질 때 통증이 반복됨",
+          "possibility": "비감염성 방광통 등 감별 필요",
+          "distinction": "한 번의 검사나 증상만으로 특정 질환을 확정하지 않습니다.",
           "related_id": "women-bladder-pain"
         }
       ],
       "faq": [
         {
-          "question": "소변 냄새가 강하면 방광염이 재발한 건가요?",
-          "answer": "냄새만으로 재발을 알 수 없습니다. 수분 섭취가 적어도 소변 냄새나 색이 달라질 수 있습니다. 배뇨통·빈뇨 등 다른 증상과 기존 검사 결과를 함께 확인합니다."
+          "question": "이 질문으로 항생제 필요성을 결정하나요?",
+          "answer": "아닙니다. 처방 결정은 증상·진찰·필요 검사를 종합해야 합니다."
         },
         {
-          "question": "예전에 받은 약을 증상이 생길 때마다 먹어도 되나요?",
-          "answer": "반복 증상의 원인과 약의 적합성을 먼저 확인해야 합니다. 남은 약을 스스로 되풀이하기보다 이전 검사·복용 기간·호전 시점과 재발 기록을 가져가 진료 계획을 점검하세요."
+          "question": "진료에 가장 유용한 기존 자료는 무엇인가요?",
+          "answer": "소변·배양검사 원본, 검사 날짜와 당시 증상, 약 이름과 복용 기간입니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/",
-          "scope": "배뇨통·빈뇨와 소변 냄새만의 해석 한계",
-          "checked_at": "2026-10-22"
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults/diagnosis",
+          "scope": "병력·소변검사·배양검사의 역할",
+          "checked_at": "2026-10-26"
         },
         {
           "url": "https://www.nhs.uk/conditions/bladder-pain-syndrome/",
-          "scope": "반복되는 방광통의 감염 외 원인 평가",
-          "checked_at": "2026-10-22"
+          "scope": "지속 통증·빈뇨의 비감염성 감별과 검사의 한계",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.mayoclinic.org/diseases-conditions/cystitis/diagnosis-treatment/drc-20371311",
+          "scope": "초회·반복 감염 평가와 원인별 치료",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 66,
@@ -3311,39 +3336,49 @@
     {
       "id": "women-vaginitis",
       "checks": [
-        "평소와 다른 분비물의 양·색·냄새나 질 가려움이 있나요?",
-        "건조감이나 성관계 때 통증도 함께 있나요?",
-        "새 세정제 사용·수유·폐경 등 증상 시작 전 변화가 있었나요?"
+        "이전 검체 결과가 있나요?",
+        "분비물과 피부 불편이 함께 있나요?",
+        "약 사용 뒤에도 증상이 남나요?"
       ],
       "branches": [
         {
-          "observation": "가려움과 평소와 다른 분비물이 함께 나타남",
-          "possibility": "감염성 질염 등 원인 확인",
-          "distinction": "분비물의 색·냄새만으로 균을 정하지 않고 필요 시 진찰·검체 검사를 합니다.",
+          "observation": "분비물·가려움이 지속됨",
+          "possibility": "감염·비감염 원인 감별",
+          "distinction": "병력만으로 확진하지 않고 필요 검사를 정합니다.",
           "related_id": "women-gynecology-visit"
         },
         {
-          "observation": "건조감이 두드러지고 수유·폐경·피임 변화와 겹침",
-          "possibility": "호르몬 변화 또는 자극성 원인도 확인",
-          "distinction": "감염과 함께 있거나 다른 피부 원인일 수 있어 증상만으로 배제하지 않습니다.",
+          "observation": "건조감과 호르몬 변화가 겹침",
+          "possibility": "건조·자극 관련 원인",
+          "distinction": "감염과 피부 질환도 함께 검토합니다.",
           "related_id": "women-menopause"
         }
       ],
       "faq": [
         {
-          "question": "분비물 색을 보면 어떤 질염인지 알 수 있나요?",
-          "answer": "색만으로 확정할 수 없습니다. 감염, 호르몬 변화, 피부 자극 등 여러 원인이 겹칠 수 있습니다. 이전과 다른 분비물·가려움·통증이 반복되면 진찰로 구분합니다."
+          "question": "알고리즘이 균을 판별하나요?",
+          "answer": "진단 도구가 아닙니다. 원인 확인에 필요한 문진을 돕습니다."
         },
         {
-          "question": "질염이 반복되면 세정제를 더 자주 써야 하나요?",
-          "answer": "오히려 비누나 세정제 자극이 불편을 만들 수 있습니다. 사용한 제품과 시작 시점을 기록하고 반복되는 원인을 확인하세요. 향이 강한 제품이나 질 내부 세척으로 해결하려 하지 않는 것이 좋습니다."
+          "question": "증상이 없으면 감염 검사는 불필요한가요?",
+          "answer": "노출 가능성 등 상황에 따라 검사 필요성을 판단합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/vaginitis/",
-          "scope": "분비물·가려움·건조감의 다양한 원인과 세정제 자극",
-          "checked_at": "2026-10-22"
+          "url": "https://www.cdc.gov/trichomoniasis/about/index.html",
+          "scope": "무증상 감염 가능성과 진찰·검사 필요성",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.mayoclinic.org/diseases-conditions/vaginitis/diagnosis-treatment/drc-20354713",
+          "scope": "병력·진찰·검체 검사와 원인별 치료 선택",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://my.clevelandclinic.org/health/diseases/9131-vaginitis",
+          "scope": "감염·저에스트로겐·자극 관련 질 증상의 관찰과 개별 평가",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 67,
@@ -3353,44 +3388,44 @@
     {
       "id": "women-amenorrhea",
       "checks": [
-        "마지막 월경 시작일과 최근 임신 가능성을 확인했나요?",
-        "체중·식사·운동량이나 스트레스가 최근 크게 바뀌었나요?",
-        "월경 중단과 함께 열감·유즙·털 변화 등 새로운 증상이 있나요?"
+        "임신 확인과 이전 월경 규칙성, 중단 기간을 진료에서 검토했나요?",
+        "여드름·체모 변화와 오랜 불규칙 월경이 함께 있었나요?",
+        "열감·질 건조, 수유·피임·약물·자궁 시술 또는 섭취·운동 변화가 있나요?"
       ],
       "branches": [
         {
-          "observation": "임신 가능성이 있고 월경이 늦어짐",
-          "possibility": "임신 여부부터 확인",
-          "distinction": "월경 지연만으로 임신 또는 폐경을 단정하지 않고 상황에 맞는 검사를 합니다.",
-          "related_id": "women-preconception"
+          "observation": "오랜 불규칙 월경과 안드로겐 관련 증상이 함께 있음",
+          "possibility": "PCOS 등 배란 장애를 감별할 단서",
+          "distinction": "임신·갑상선·프로락틴 등 다른 원인을 확인하고 연령에 맞는 진단 기준을 적용합니다.",
+          "related_id": "women-pcos"
         },
         {
-          "observation": "임신과 별개로 월경 중단이 반복되거나 오래 이어짐",
-          "possibility": "다낭성난소증후군·체중·스트레스·호르몬 요인 등 평가",
-          "distinction": "나이와 동반 변화에 따라 필요한 혈액검사·전문 평가가 달라집니다.",
-          "related_id": "women-ovarian-reserve"
+          "observation": "월경 중단과 저에스트로겐 관련 증상이 함께 있음",
+          "possibility": "난소 기능 문제 등 호르몬 원인을 감별할 단서",
+          "distinction": "나이·병력·FSH와 에스트라디올 등 결과로 구분하며 증상만으로 폐경을 확정하지 않습니다.",
+          "related_id": "women-early-menopause"
         }
       ],
       "faq": [
         {
-          "question": "생리가 멈추면 바로 조기폐경인가요?",
-          "answer": "아닙니다. 임신, 수유, 피임약, 체중이나 운동량 변화, 스트레스와 호르몬 문제 등 원인이 다양합니다. 마지막 월경일과 임신 가능성을 먼저 확인하고 동반 증상을 정리하세요."
+          "question": "항목 수로 원인 가능성을 순위 매기나요?",
+          "answer": "아닙니다. 검증된 예측 점수가 아니며, 겹치는 원인과 정보 부족을 진료에서 검토합니다."
         },
         {
-          "question": "생리가 없을 때 피임약을 스스로 끊거나 시작해도 되나요?",
-          "answer": "현재 사용 중인 피임 방법과 월경 변화의 관계를 진료에서 확인하는 것이 좋습니다. 약물 영향이 원인일 수 있지만, 임신 등 다른 가능성을 배제한 뒤 개인에게 맞는 계획을 정합니다."
+          "question": "한 번 출혈하면 검사를 끝내도 되나요?",
+          "answer": "치료 후 출혈과 자연 배란은 다를 수 있습니다. 원인별로 정한 평가·추적 목표를 먼저 확인하세요."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/symptoms/missed-or-late-periods/",
-          "scope": "무월경의 임신·수유·약물·운동·호르몬 관련 원인",
-          "checked_at": "2026-10-22"
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/current-evaluation-of-amenorrhea/",
+          "scope": "임신 우선 확인과 월경·호르몬에 따른 단계적 감별",
+          "checked_at": "2026-10-26"
         },
         {
-          "url": "https://www.nhs.uk/conditions/early-or-premature-menopause/",
-          "scope": "월경 중단과 이른 폐경을 구분하는 평가",
-          "checked_at": "2026-10-22"
+          "url": "https://www.mayoclinic.org/diseases-conditions/amenorrhea/symptoms-causes/syc-20369299",
+          "scope": "저에스트로겐·안드로겐 관련 동반 증상의 관찰 범위",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 68,
@@ -3400,39 +3435,44 @@
     {
       "id": "women-recurrent-loss",
       "checks": [
-        "각 임신의 주수·검사 결과·유산 경과를 정리할 수 있나요?",
-        "이전에 권고받은 자궁·혈액·유전 관련 검사 결과가 있나요?",
-        "다음 임신 계획과 현재의 불안·수면 부담을 함께 이야기하고 싶나요?"
+        "각 임신의 주수·위치·확인 검사가 정리되어 있나요?",
+        "항인지질·유전·자궁 관련 기존 검사에 시행 날짜가 있나요?",
+        "현재 회복 상태와 다음 임신 시 처방·확인 계획을 논의했나요?"
       ],
       "branches": [
         {
-          "observation": "유산이 반복됐고 원인 평가를 아직 받지 않음",
-          "possibility": "과거 임신 경과에 맞춘 반복유산 평가",
-          "distinction": "정의와 검사 범위는 지침·상황에 따라 달라 의료진과 개별 계획을 정합니다.",
-          "related_id": "women-female-fertility"
+          "observation": "현재 유산 치료 뒤 확인이 남아 있다",
+          "possibility": "잔여 증상과 회복 평가를 우선 연결할 필요",
+          "distinction": "원인 평가와 현재 치료의 완료 여부 확인은 목적이 다를 수 있습니다.",
+          "related_id": "women-after-miscarriage"
         },
         {
-          "observation": "원인 검사 뒤에도 이유가 밝혀지지 않음",
-          "possibility": "원인 불명 반복유산의 추적·정서 지원",
-          "distinction": "원인이 없다는 뜻은 아니며 효과가 입증되지 않은 예방 치료를 단정하지 않습니다.",
-          "related_id": "women-preconception"
+          "observation": "반복되는 불안이나 수면 문제가 생활을 제한한다",
+          "possibility": "상실 이후 정서적 평가·지원을 병행할 여지",
+          "distinction": "증상과 일상 영향에 맞춰 지원하며 정서 상태를 유산 원인으로 단정하지 않습니다.",
+          "related_id": "mind-miscarriage-emotions"
         }
       ],
       "faq": [
         {
-          "question": "반복유산은 검사를 하면 원인이 항상 밝혀지나요?",
-          "answer": "항상 밝혀지지는 않습니다. 병력에 맞춰 필요한 검사를 하고, 이유가 확인되지 않아도 다음 임신의 관찰과 정서 지원 계획을 세울 수 있습니다. 검사 결과와 과거 임신 경과를 함께 검토합니다."
+          "question": "항목 수가 반복유산의 원인을 가리키나요?",
+          "answer": "관찰 항목은 원인 점수표가 아닙니다. 병력·진찰·필요한 검사로 판단합니다."
         },
         {
-          "question": "한약이나 보충제로 다음 유산을 예방한다고 말할 수 있나요?",
-          "answer": "특정 한약이나 보충제가 다음 유산을 예방한다고 보장할 수 없습니다. 원인과 개인 상태에 따라 근거가 있는 선택지를 검토하며, 복용을 고려하는 성분은 임신 진료팀과 함께 확인합니다."
+          "question": "다음 임신 계획을 세우면 출산 결과를 예측할 수 있나요?",
+          "answer": "계획은 진료 연결과 안전한 관리에 도움을 주지만 개인의 출산 결과를 보장하지 못합니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recurrent-miscarriage/",
-          "scope": "원인 불명 반복유산, 필요한 원인 평가 및 예방 치료 근거의 한계",
-          "checked_at": "2026-10-22"
+          "url": "https://www.acog.org/womens-health/faqs/repeated-miscarriages",
+          "scope": "원인 미상 가능성, 병력·검사·원인별 치료",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/after-losing-a-baby/coping-after-youve-lost-a-baby/",
+          "scope": "상실 뒤 다양한 감정과 정서 지원 요청",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 69,
@@ -3630,44 +3670,44 @@
     {
       "id": "women-female-fertility",
       "checks": [
-        "피임 없이 임신을 시도한 기간과 월경 주기를 정리했나요?",
-        "월경이 불규칙하거나 골반 수술·질환의 과거력이 있나요?",
-        "상대방의 정액검사 등 양측 평가가 함께 진행됐나요?"
+        "이전 검사에서 배란·난관·자궁 관련 설명을 들었나요?",
+        "파트너 정액검사의 시행 여부와 날짜를 알고 있나요?",
+        "월경 중단이나 이전 골반 질환·치료 이력이 있나요?"
       ],
       "branches": [
         {
-          "observation": "월경이 불규칙하거나 배란 여부가 불확실함",
-          "possibility": "배란·호르몬 관련 요인 평가",
-          "distinction": "주기만으로 난임 원인을 정하지 않고 나이·검사·시도 기간을 함께 확인합니다.",
-          "related_id": "women-pcos"
+          "observation": "남성 검사가 아직 평가에 포함되지 않았다",
+          "possibility": "정자 관련 요인을 함께 평가할 여지",
+          "distinction": "여성 검사 결과와 별개로 생식 병력과 정액검사 등을 검토합니다.",
+          "related_id": "women-male-fertility"
         },
         {
-          "observation": "월경은 규칙적이지만 임신 어려움이 이어짐",
-          "possibility": "자궁·난관·정액 등 양측 요인 평가",
-          "distinction": "규칙적 월경이나 정상 AMH만으로 모든 임신 관련 요인이 정상이라고 볼 수 없습니다.",
-          "related_id": "women-male-fertility"
+          "observation": "월경 간격이 크게 달라졌다",
+          "possibility": "배란 기능 관련 감별이 필요한 양상",
+          "distinction": "월경 변화만으로 난임 원인을 확정하지 않고 임신 여부와 내분비·병력을 확인합니다.",
+          "related_id": "women-amenorrhea"
         }
       ],
       "faq": [
         {
-          "question": "여성난임은 AMH만 검사하면 되나요?",
-          "answer": "아닙니다. 배란·자궁·난관과 상대방의 정액 등 여러 요소를 함께 평가합니다. AMH는 난소예비력 정보이며 자연임신 가능성을 단독으로 판단하는 검사가 아닙니다."
+          "question": "검사 정상이라는 말은 임신을 보장하나요?",
+          "answer": "확인한 항목에서 이상이 뚜렷하지 않다는 의미이며 개인의 임신 결과를 보장하지 않습니다."
         },
         {
-          "question": "보조 관리만 하면서 난임 검사를 미뤄도 되나요?",
-          "answer": "시도 기간과 나이·월경 양상·과거력에 맞춰 평가 시점을 정하는 것이 좋습니다. 임신이 잘되지 않을 때는 양측 평가를 연결하고, 생활 관리나 한약만으로 임신을 보장하지 않습니다."
+          "question": "두 사람 중 한 명만 검사에 이상이 있으면 원인이 확정되나요?",
+          "answer": "관련성을 해석하고 다른 요인이 함께 있는지 검토해야 합니다. 단일 수치만으로 책임을 정하지 않습니다."
         }
       ],
       "evidence": [
         {
-          "url": "https://www.nhs.uk/conditions/infertility/diagnosis/",
-          "scope": "양측 평가, 배란·자궁·난관·정액 검사의 역할",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nhs.uk/conditions/infertility/causes/",
+          "scope": "배란·난관·정자 등 원인의 범주와 원인 미상",
+          "checked_at": "2026-10-26"
         },
         {
-          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/testing-and-interpreting-measures-of-ovarian-reserve-a-committee-opinion-2020/",
-          "scope": "난소예비력만으로 자연임신 가능성을 예측할 수 없는 한계",
-          "checked_at": "2026-10-22"
+          "url": "https://www.nichd.nih.gov/health/topics/infertility/conditioninfo/causes",
+          "scope": "한쪽·양쪽·복합 또는 확인되지 않는 원인",
+          "checked_at": "2026-10-26"
         }
       ],
       "order": 74,
@@ -3967,7 +4007,7 @@
     "msk-tennis-elbow": "2026-10-25",
     "msk-forward-head": "2026-10-22",
     "msk-hip-pain": "2026-10-22",
-    "msk-pelvic-pain": "2026-10-22",
+    "msk-pelvic-pain": "2026-10-26",
     "msk-pelvic-alignment": "2026-10-25",
     "msk-golfers-elbow": "2026-10-25",
     "msk-kyphosis": "2026-10-25",
@@ -4010,23 +4050,23 @@
     "msk-heel-pain": "2026-10-25",
     "msk-rotator-cuff-syndrome": "2026-10-25",
     "msk-jaw-pain-tmd": "2026-10-25",
-    "women-period-pain": "2026-10-22",
+    "women-period-pain": "2026-10-26",
     "women-bladder-pain": "2026-10-22",
     "women-menopause": "2026-10-22",
-    "women-overactive-bladder": "2026-10-22",
-    "women-ovarian-reserve": "2026-10-22",
-    "women-ovarian-cyst": "2026-10-22",
-    "women-male-fertility": "2026-10-22",
-    "women-pcos": "2026-10-22",
-    "women-recurrent-cystitis": "2026-10-22",
-    "women-vaginitis": "2026-10-22",
-    "women-amenorrhea": "2026-10-22",
-    "women-recurrent-loss": "2026-10-22",
+    "women-overactive-bladder": "2026-10-26",
+    "women-ovarian-reserve": "2026-10-26",
+    "women-ovarian-cyst": "2026-10-26",
+    "women-male-fertility": "2026-10-26",
+    "women-pcos": "2026-10-26",
+    "women-recurrent-cystitis": "2026-10-26",
+    "women-vaginitis": "2026-10-26",
+    "women-amenorrhea": "2026-10-26",
+    "women-recurrent-loss": "2026-10-26",
     "women-ovulation-pain": "2026-10-22",
     "women-assisted-fertility": "2026-10-22",
     "women-gynecology-visit": "2026-10-22",
     "women-abnormal-bleeding": "2026-10-22",
-    "women-female-fertility": "2026-10-22",
+    "women-female-fertility": "2026-10-26",
     "women-postpartum-weight": "2026-10-22",
     "women-postpartum-herbs": "2026-10-22",
     "women-postpartum-recovery": "2026-10-22",

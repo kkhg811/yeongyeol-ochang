@@ -10,7 +10,7 @@
       ],
       "name": "불면과 얕은 잠",
       "kind": "symptom",
-      "overview": "잠들기 어렵거나 자주 깨는 이유를 확인할 때는 잠의 길이뿐 아니라 다음 날 생활이 얼마나 어려운지도 함께 살핍니다. 선잠이라는 표현만으로 수면 단계나 질환을 확정할 수 없어 실제 수면 패턴부터 정리합니다.",
+      "overview": "청주 오창 불면증 상담에서는 입면·수면 유지·이른 각성의 차이와 낮 기능을 확인합니다. 수면 기회와 동반 질환을 검토하고, 병력에 맞춰 치료 선택과 재평가 계획을 논의합니다.",
       "sections": {
         "symptoms": {
           "question": "어떤 잠의 어려움을 기록할까요?",
@@ -23,7 +23,36 @@
             "입면 지연",
             "중간 각성",
             "낮 기능"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "수면 형태와 기능 저하를 나누어 설명하기",
+              "text": "잠을 시작하지 못하는 어려움과 잠든 뒤 반복해서 깨는 어려움은 구분해 전하세요. 이른 기상, 개운하지 않은 느낌, 낮의 주의력 저하도 별도 항목입니다. 같은 불면 호소라도 주된 양상과 일상 영향이 달라 치료 목표를 개별적으로 정할 수 있습니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/insomnia/symptoms"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "밤중 각성 횟수만 줄면 충분한가요?",
+              "answer": "다시 잠드는 어려움과 낮 생활 회복도 함께 확인해야 합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/insomnia/living-with"
+              ]
+            },
+            {
+              "question": "졸림과 피로를 따로 설명해야 하나요?",
+              "answer": "네. 잠에 빠질 듯한 졸림과 기운이 없는 피로를 나누면 평가 방향에 도움이 됩니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-deprivation/diagnosis-treatment"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 불면증 · 어떤 잠의 어려움을 기록할까요? | 연결한의원 청주오창",
+            "description": "청주 오창 불면증. 어떤 잠의 어려움을 기록할까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "context": {
           "question": "왜 피곤해도 잠이 오지 않을까요?",
@@ -36,7 +65,36 @@
             "생활 시간",
             "자극물",
             "동반 증상"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "생활 리듬과 지속 요인을 함께 검토하기",
+              "text": "스트레스가 시작 계기였더라도 이후의 잠 걱정, 불규칙한 일정과 카페인 등이 불편을 이어갈 수 있습니다. 진료에서는 처음 생긴 이유와 현재 반복되는 상황을 구분합니다. 특정 원인 하나를 추정하기보다 근무·생활 변화와 수면 양상의 시간적 관계를 살펴봅니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/insomnia/causes"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "불면이 있으면 모두 불안 때문인가요?",
+              "answer": "아닙니다. 통증, 약물과 다른 수면질환도 수면을 방해할 수 있어 함께 확인합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/insomnia/"
+              ]
+            },
+            {
+              "question": "늦게 자는 생활도 불면과 구분하나요?",
+              "answer": "원하는 시각에는 잘 자지만 사회적 일정과 맞지 않다면 일주기 문제도 고려합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/types"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 불면증 · 왜 피곤해도 잠이 오지 않을까요? | 연결한의원 청주오창",
+            "description": "청주 오창 불면증. 왜 피곤해도 잠이 오지 않을까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "assessment": {
           "question": "진료 전에 무엇을 준비할까요?",
@@ -49,7 +107,36 @@
             "수면 일지",
             "복용 목록",
             "근무 형태"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "검사보다 먼저 필요한 생활·병력 정보",
+              "text": "수면 일지와 현재 복용약, 건강 상태와 근무 일정을 준비하면 문진에 도움이 됩니다. 증상에 따라 진찰이나 검사를 선택하며, 야간 호흡 이상과 다리 불편 같은 단서도 확인합니다. 검사 이름부터 정하기보다 어떤 의문을 해결할 검사인지 묻는 것이 좋습니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-deprivation/diagnosis-treatment"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "일지에 정확한 수면 시간이 없으면 쓸모없나요?",
+              "answer": "대략의 취침·기상과 낮잠, 졸림 기록도 반복되는 양상을 파악하는 데 유용합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/insomnia/diagnosis"
+              ]
+            },
+            {
+              "question": "숨이 멎는다는 말만으로 무호흡을 확진하나요?",
+              "answer": "관찰은 중요한 단서지만, 수면검사 등 임상 평가를 통해 구분합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 불면증 · 진료 전에 무엇을 준비할까요? | 연결한의원 청주오창",
+            "description": "청주 오창 불면증. 진료 전에 무엇을 준비할까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "care": {
           "question": "치료 상담에서는 무엇을 물을까요?",
@@ -62,7 +149,36 @@
             "행동 치료",
             "약물 상담",
             "재평가"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "치료별 기대 효과와 부담을 비교합니다",
+              "text": "지속적인 불면에서는 인지행동치료의 적합성과 이용 방법을 물어볼 수 있습니다. 약물은 기대 효과뿐 아니라 부작용과 다른 약과의 관계를 검토합니다. 현재 처방을 포함한 전체 사용 목록을 공유하고, 치료를 바꾸거나 줄일 시점도 의료진과 계획하세요.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/insomnia/treatment"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "수면 보조제는 부작용 없이 계속 써도 되나요?",
+              "answer": "그렇지 않습니다. 처방 없이 구입한 제품도 졸림 등 부작용이 있어 사용 상태를 알리세요.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/insomnia/"
+              ]
+            },
+            {
+              "question": "호흡 문제가 있는데 잠만 들게 하면 되나요?",
+              "answer": "수면무호흡이 의심되면 호흡 평가가 우선 필요하며, 수면 약을 임의로 추가하지 않습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/sleep-apnoea/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 불면증 · 치료 상담에서는 무엇을 물을까요? | 연결한의원 청주오창",
+            "description": "청주 오창 불면증. 치료 상담에서는 무엇을 물을까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "daily": {
           "question": "오늘부터 어떤 습관을 조정할까요?",
@@ -75,7 +191,36 @@
             "일정한 기상",
             "취침 준비",
             "운전 안전"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "실천 가능한 수면 환경과 일과를 고르기",
+              "text": "침실의 빛과 소음, 취침 전 자극적인 활동, 카페인과 음주 시각을 돌아보세요. 한꺼번에 많은 규칙을 만드는 대신 유지할 수 있는 변화를 선택합니다. 걱정거리를 정리할 시간을 따로 두는 것도 도움이 될 수 있으며, 변화 뒤 수면과 낮 상태를 기록합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "매일 기상 시각을 맞추는 이유가 있나요?",
+              "answer": "규칙적인 일정은 수면과 각성 리듬을 유지하는 데 도움이 됩니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits"
+              ]
+            },
+            {
+              "question": "못 잔 다음 날 오래 자야 하나요?",
+              "answer": "수면 기회는 필요하지만 늦잠과 긴 낮잠이 생활 리듬을 흐트러뜨리는지 함께 살펴봅니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 불면증 · 오늘부터 어떤 습관을 조정할까요? | 연결한의원 청주오창",
+            "description": "청주 오창 불면증. 오늘부터 어떤 습관을 조정할까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "followup": {
           "question": "호전 여부는 어떻게 판단할까요?",
@@ -88,7 +233,36 @@
             "잠의 부담",
             "낮의 활동",
             "원인 재검토"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "치료 반응은 기능과 부작용까지 확인합니다",
+              "text": "경과 상담에서는 잠드는 시간의 변화뿐 아니라 업무나 일상 활동을 수행하는 정도를 확인합니다. 약을 사용한다면 다음 날 졸림이나 새로운 불편도 전하세요. 일지를 활용해 변화가 이어지는지 검토하고, 효과가 충분하지 않으면 동반 원인과 치료 계획을 다시 논의합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/insomnia/living-with"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "수면 시간이 늘어도 재평가가 필요한가요?",
+              "answer": "낮 졸림이나 불편이 남으면 수면 부족 외의 원인도 검토할 수 있습니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-deprivation/diagnosis-treatment"
+              ]
+            },
+            {
+              "question": "좋아졌으면 처방약을 바로 끊어도 되나요?",
+              "answer": "약 종류와 사용 기간에 따라 계획이 달라지므로 변경 전 처방 의료진과 상의하세요.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/insomnia/living-with"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 불면증 · 호전 여부는 어떻게 판단할까요? | 연결한의원 청주오창",
+            "description": "청주 오창 불면증. 호전 여부는 어떻게 판단할까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         }
       },
       "red_flags": [
@@ -97,20 +271,101 @@
       ],
       "sources": [
         {
-          "title": "NHS: Insomnia",
+          "title": "NHS — Insomnia",
           "url": "https://www.nhs.uk/conditions/insomnia/",
-          "scope": "불면의 양상, 수면 습관, 원인 평가와 치료 상담"
+          "scope": "불면 증상·통증과 약물 등 원인·규칙적 기상·졸음 중 운전 회피·수면 보조제 상담",
+          "checked_at": "2026-10-27"
         },
         {
-          "title": "NHS: Sleep apnoea",
+          "title": "NHS — Sleep apnoea",
           "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
-          "scope": "코골이·무호흡·주간 졸림과 수면 평가"
+          "scope": "코골이·목격된 호흡 멈춤·낮 졸림과 수면 호흡검사, 평가 전 진정제 주의",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Insomnia: What Is Insomnia?",
+          "url": "https://www.nhlbi.nih.gov/health/insomnia",
+          "scope": "수면 기회가 있어도 잠들기·유지·회복감에 어려움이 있고 낮 기능에 영향을 주는 불면의 개념",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Insomnia Symptoms",
+          "url": "https://www.nhlbi.nih.gov/health/insomnia/symptoms",
+          "scope": "입면·중간 각성·이른 각성·낮 집중과 기분 등 증상 관찰",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Insomnia Causes and Risk Factors",
+          "url": "https://www.nhlbi.nih.gov/health/insomnia/causes",
+          "scope": "스트레스, 수면 걱정, 일정·빛·카페인·음주·환경과 불면의 관계",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Insomnia Diagnosis",
+          "url": "https://www.nhlbi.nih.gov/health/insomnia/diagnosis",
+          "scope": "수면 일지, 약과 질환 이력, 근무 일정 및 선택적 검사",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Insomnia Treatment",
+          "url": "https://www.nhlbi.nih.gov/health/insomnia/treatment",
+          "scope": "지속적 불면의 인지행동치료와 약물의 개별적 이득·부작용 상담",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Living With Insomnia",
+          "url": "https://www.nhlbi.nih.gov/health/insomnia/living-with",
+          "scope": "수면 일지로 경과와 낮 기능 관찰, 치료 중 부작용·새 증상 재평가",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS Every Mind Matters — Sleep problems",
+          "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/",
+          "scope": "생활 리듬·걱정·환경·카페인과 음주의 수면 영향 및 일상적 조정",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Healthy Sleep Habits",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits",
+          "scope": "충분한 수면 기회, 규칙적인 일정과 조용한 취침 전 활동",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Sleep Deprivation and Deficiency: Diagnosis and Treatment",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/diagnosis-treatment",
+          "scope": "수면 부족·낮 졸림의 병력과 기록, 동반 수면질환에 따른 선택적 수면검사",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Sleep Apnea Symptoms",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms",
+          "scope": "수면 중 호흡 이상, 낮 피로·졸림과 아이의 행동 변화",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Sleep Apnea Diagnosis",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis",
+          "scope": "병력·진찰·수면검사를 종합한 수면무호흡 평가와 검사 해석",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Circadian Rhythm Disorders: Types",
+          "url": "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/types",
+          "scope": "늦어지거나 앞당겨진 수면 시각, 교대근무 등 일주기 유형 구분",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Sleep Studies",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-studies",
+          "scope": "야간 수면검사·낮 졸림검사·활동 기록 등 목적과 의료진의 결과 종합",
+          "checked_at": "2026-10-27"
         }
       ],
       "keywords": [
         "수면 유지 어려움",
         "입면 곤란",
-        "얕은 잠"
+        "얕은 잠",
+        "불면증"
       ],
       "status": "published",
       "medical_review_status": "pending",
@@ -135,7 +390,55 @@
           "몇 번 깼는지와 아침·낮의 상태, 코골이·호흡·통증의 관찰을 연결해 자신이 느끼는 어려움을 설명하는 것이 좋습니다."
         ]
       },
-      "published_at": "2026-10-21"
+      "published_at": "2026-10-21",
+      "reading_sections": [
+        {
+          "heading": "피로와 잠이 드는 어려움을 구분하는 문진",
+          "text": "진료에서는 잠자리 시간과 잠의 느낌, 시작 시점과 반복 양상을 묻습니다. 피로·졸림·집중 저하를 따로 설명하면 좋습니다. 주관적 수면 불편과 낮 기능을 함께 검토하며, 수치 하나로 불면을 판정하지 않습니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/insomnia/diagnosis"
+          ]
+        },
+        {
+          "heading": "지속되는 불면의 치료 선택",
+          "text": "불면 인지행동치료는 잠에 관한 생각과 행동을 함께 다루는 치료입니다. 단순히 잠을 참는 훈련으로 이해하지 않는 것이 좋습니다. 약물 사용을 논의할 때도 동반 질환, 다른 약, 다음 날 기능과 부작용을 고려해 치료와 추적 계획을 세웁니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/insomnia/treatment"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "불면 진료에서 수면검사를 바로 하나요?",
+          "answer": "모두에게 시행하지는 않습니다. 다른 수면질환이 의심되는 병력이나 증상이 있을 때 검사 필요성을 판단합니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/sleep-deprivation/diagnosis-treatment"
+          ]
+        },
+        {
+          "question": "잠이 얕으면 깊은 수면이 부족한 건가요?",
+          "answer": "느낌만으로 수면 단계를 판정할 수 없습니다. 잠의 양상과 생활 영향을 구체적으로 설명하는 것이 우선입니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/sleep-studies"
+          ]
+        },
+        {
+          "question": "치료 중 무엇을 다시 알려야 하나요?",
+          "answer": "남아 있는 수면 문제, 낮 기능, 새로운 증상과 약 사용 후 불편을 알려 치료를 조정합니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/insomnia/living-with"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주·오창 불면증 | 증상·검사·관리 가이드",
+        "description": "청주 오창 불면증의 입면·야간 각성, 동반 원인과 검사 필요성을 구분합니다. 치료 선택, 생활 조정, 추적 상담 질문을 확인하세요."
+      },
+      "updated_at": "2026-10-27",
+      "source_checked_date": "2026-10-27",
+      "editorial_revision": "women-sleep-expansion-20261027",
+      "reviewed_by": null,
+      "reviewed_at": null
     },
     {
       "id": "mind-sleep-assessment",
@@ -146,7 +449,7 @@
       ],
       "name": "수면 문제의 종류와 평가",
       "kind": "service",
-      "overview": "수면장애라는 말에는 잠들기 어려움부터 코골이·무호흡, 과도한 졸림과 수면 시간대의 문제까지 서로 다른 상태가 포함됩니다. 수면클리닉은 특정 병명이나 검사 하나가 아니라 원인에 맞는 평가와 상담을 받는 진료 맥락입니다.",
+      "overview": "청주 오창 수면장애 상담은 잠의 양·시각·질과 낮의 기능을 함께 검토합니다. 불면, 호흡장애, 일주기 문제와 과도한 졸림의 단서를 구분해 검사 목적과 치료 선택을 정리합니다.",
       "sections": {
         "symptoms": {
           "question": "수면 문제를 어떻게 나눌까요?",
@@ -159,7 +462,36 @@
             "불면",
             "수면 중 호흡",
             "낮 졸림"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "잠을 못 자는 것과 잠에 빠지는 것을 구분",
+              "text": "기운이 없는 피로인지, 의도하지 않아도 반복해서 잠드는 졸림인지 먼저 나눠 설명하세요. 충분히 잘 기회가 있었는지와 낮잠 뒤 상태도 문진에 유용합니다. 졸림은 약물이나 여러 수면질환과 관련될 수 있어 한 증상으로 기면증을 단정하지 않습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/excessive-daytime-sleepiness-hypersomnia/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "밤에 깬 이유도 구분하나요?",
+              "answer": "호흡 때문에 깨는지, 다리 불편이나 입면 어려움이 있는지 나누면 감별에 도움이 됩니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-studies"
+              ]
+            },
+            {
+              "question": "웃을 때 힘이 빠지는 일도 수면 상담에 말하나요?",
+              "answer": "네. 갑작스러운 졸림과 함께 있다면 해당 상황을 구체적으로 전해 전문 평가를 받으세요.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/narcolepsy/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 수면장애 · 수면 문제를 어떻게 나눌까요? | 연결한의원 청주오창",
+            "description": "청주 오창 수면장애. 수면 문제를 어떻게 나눌까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "context": {
           "question": "수면 시간이 같아도 왜 다를까요?",
@@ -172,7 +504,36 @@
             "수면 길이",
             "수면 질",
             "수면 시간대"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "내부 수면 리듬과 외부 일정의 관계",
+              "text": "일주기 문제에서는 몸이 잠을 원하는 시각이 사회적 일정과 맞지 않을 수 있습니다. 교대근무나 야간 빛 노출이 이 관계에 영향을 줍니다. 총 수면량만 비교하기보다 근무일과 휴일의 실제 시각을 검토하고, 일정 변경 전후의 양상을 연결해 설명합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/causes"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "늦게 자는 사람은 모두 일주기 장애인가요?",
+              "answer": "시각 자체만으로 진단하지 않습니다. 수면 패턴과 생활의 어려움, 병력을 함께 확인합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/diagnosis"
+              ]
+            },
+            {
+              "question": "수면 부족과 수면장애가 동시에 있을 수 있나요?",
+              "answer": "그럴 수 있습니다. 잠잘 기회가 충분했는지와 수면을 방해하는 상태를 함께 평가합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-deprivation"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 수면장애 · 수면 시간이 같아도 왜 다를까요? | 연결한의원 청주오창",
+            "description": "청주 오창 수면장애. 수면 시간이 같아도 왜 다를까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "assessment": {
           "question": "첫 상담에 무엇을 가져갈까요?",
@@ -185,7 +546,36 @@
             "생활 기록",
             "동반 관찰",
             "검사 목적"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "병력에서 검사 질문을 정합니다",
+              "text": "잠의 시각과 근무 일정, 약물 목록, 코골이와 호흡 멈춤 관찰을 준비하세요. 수면검사는 호흡·움직임이나 심한 졸림 등 의심하는 문제에 맞춰 선택합니다. 검사 결과만 따로 보지 말고, 어떤 증상과 연결해 해석하는지와 추가 확인이 필요한지 물어보세요.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-studies"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "가정 검사와 검사실 검사는 같은가요?",
+              "answer": "측정 범위와 적합한 상황이 다르므로, 의심하는 문제에 맞는 검사를 의료진이 선택합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis"
+              ]
+            },
+            {
+              "question": "수면무호흡이 의심되면 복용약도 확인하나요?",
+              "answer": "네. 현재 약과 건강 상태를 포함한 병력을 알려 검사와 치료 계획에 반영합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 수면장애 · 첫 상담에 무엇을 가져갈까요? | 연결한의원 청주오창",
+            "description": "청주 오창 수면장애. 첫 상담에 무엇을 가져갈까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "care": {
           "question": "평가 뒤 치료는 어떻게 달라질까요?",
@@ -198,7 +588,36 @@
             "원인별 치료",
             "약물 검토",
             "진료 연계"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "유형에 따라 조정하는 치료 목표",
+              "text": "일주기 문제는 단순히 잠의 양을 늘리기보다 원하는 생활 일정에 수면·각성 리듬을 맞추는 목표를 세울 수 있습니다. 빛 노출이나 일정 조정도 시행 시점이 중요합니다. 다른 사람의 복용 시각과 방법을 따라 하기보다 자신의 유형에 맞는 계획을 의료진과 논의하세요.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/treatment"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "무호흡은 수면제와 같은 목표로 치료하나요?",
+              "answer": "아닙니다. 호흡을 유지하는 치료 등 상태에 맞는 선택이 필요합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-apnea/treatment"
+              ]
+            },
+            {
+              "question": "다리 불편이 있으면 철분부터 먹어야 하나요?",
+              "answer": "원인이 다양하므로 임의로 보충하기보다 증상과 약물, 필요한 검사를 진료에서 확인하세요.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/restless-legs-syndrome/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 수면장애 · 평가 뒤 치료는 어떻게 달라질까요? | 연결한의원 청주오창",
+            "description": "청주 오창 수면장애. 평가 뒤 치료는 어떻게 달라질까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "daily": {
           "question": "평가 전까지 무엇을 기록할까요?",
@@ -211,7 +630,36 @@
             "평소 패턴",
             "복용 확인",
             "위험 작업"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "평가에 필요한 비교 가능한 생활 기록",
+              "text": "잠이 나빴던 밤만 고르지 말고 근무일과 휴일을 이어 기록하세요. 취침·기상, 낮잠과 빛 노출, 일정이 바뀐 때를 적으면 일주기 문진에 도움이 됩니다. 기록 자체가 치료는 아니므로, 생활에 지장을 주는 졸림이나 호흡 이상을 일지만 쓰며 미루지 않습니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/diagnosis"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "자가 기록을 위해 일부러 늦게 자야 하나요?",
+              "answer": "평소 일정을 관찰하면 됩니다. 수면을 바꾸는 계획은 평가 뒤 자신의 상황에 맞춰 논의합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/treatment"
+              ]
+            },
+            {
+              "question": "기록에 약 복용 시각도 넣나요?",
+              "answer": "네. 졸림을 일으킬 수 있는 약과 음주 등은 원인 평가에 도움이 됩니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/excessive-daytime-sleepiness-hypersomnia/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 수면장애 · 평가 전까지 무엇을 기록할까요? | 연결한의원 청주오창",
+            "description": "청주 오창 수면장애. 평가 전까지 무엇을 기록할까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "followup": {
           "question": "다음 진료에서는 무엇을 확인할까요?",
@@ -224,7 +672,36 @@
             "결과 해석",
             "사용 어려움",
             "목표 조정"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "잔여 증상과 사용 부담을 결과에 더합니다",
+              "text": "수면무호흡 치료 뒤에는 낮 졸림, 수면의 느낌과 치료를 실제로 사용한 상태를 함께 검토합니다. 마스크 누출이나 건조감처럼 지속을 어렵게 하는 문제도 알려야 합니다. 필요에 따라 재검 여부를 논의하며, 수치 하나가 좋아졌다고 남은 불편을 지우지 않습니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-apnea/living-with"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "체중이나 증상이 달라지면 재검이 필요한가요?",
+              "answer": "변화에 따라 재평가가 필요할 수 있어 의료진과 검사 시점을 상의합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-apnea/living-with"
+              ]
+            },
+            {
+              "question": "일주기 치료 뒤 새 졸림이 생기면 어떻게 하나요?",
+              "answer": "증상의 시점과 치료 사용 상태를 알려 계획과 약물 불편을 다시 검토합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/living-with"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 수면장애 · 다음 진료에서는 무엇을 확인할까요? | 연결한의원 청주오창",
+            "description": "청주 오창 수면장애. 다음 진료에서는 무엇을 확인할까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         }
       },
       "red_flags": [
@@ -233,25 +710,118 @@
       ],
       "sources": [
         {
-          "title": "NHS: Sleep apnoea",
+          "title": "NHS — Sleep apnoea",
           "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
-          "scope": "코골이·무호흡·주간 졸림과 수면 평가"
+          "scope": "코골이·목격된 호흡 멈춤·낮 졸림과 수면 호흡검사, 평가 전 진정제 주의",
+          "checked_at": "2026-10-27"
         },
         {
-          "title": "NHS: Excessive daytime sleepiness",
+          "title": "NHS — Excessive daytime sleepiness",
           "url": "https://www.nhs.uk/conditions/excessive-daytime-sleepiness-hypersomnia/",
-          "scope": "낮의 졸림과 피로의 구별, 수면·약물·질환 평가"
+          "scope": "피로와 반복적으로 잠에 빠지는 졸림의 차이, 약물·수면질환 등 감별",
+          "checked_at": "2026-10-27"
         },
         {
           "title": "NHS: Insomnia",
           "url": "https://www.nhs.uk/conditions/insomnia/",
           "scope": "불면의 양상, 수면 습관, 원인 평가와 치료 상담"
+        },
+        {
+          "title": "NHLBI — Sleep Apnea Symptoms",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms",
+          "scope": "수면 중 호흡 이상, 낮 피로·졸림과 아이의 행동 변화",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Sleep Apnea Diagnosis",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis",
+          "scope": "병력·진찰·수면검사를 종합한 수면무호흡 평가와 검사 해석",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Sleep Apnea Treatment",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/treatment",
+          "scope": "수면무호흡의 유형·중증도에 따른 치료와 개별 치료 선택",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Living With Sleep Apnea",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/living-with",
+          "scope": "치료 사용 상태·불편·잔여 증상 확인과 추적검사 논의",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Circadian Rhythm Disorders: Types",
+          "url": "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/types",
+          "scope": "늦어지거나 앞당겨진 수면 시각, 교대근무 등 일주기 유형 구분",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Circadian Rhythm Disorders: Causes and Risk Factors",
+          "url": "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/causes",
+          "scope": "환경의 명암·일정과 내부 수면 리듬의 불일치",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Circadian Rhythm Disorders: Treatment",
+          "url": "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/treatment",
+          "scope": "수면 리듬 치료 목표와 유형별 일정·빛 노출 시점의 개별 조정",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Circadian Rhythm Disorders: Diagnosis",
+          "url": "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/diagnosis",
+          "scope": "평일·휴일 수면 시각, 환경·근무 패턴·병력에 따른 일주기 평가",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS — Restless legs syndrome",
+          "url": "https://www.nhs.uk/conditions/restless-legs-syndrome/",
+          "scope": "쉬거나 밤에 심해지는 다리 움직임 충동, 유사 증상과 원인별 평가",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS — Narcolepsy",
+          "url": "https://www.nhs.uk/conditions/narcolepsy/",
+          "scope": "참기 힘든 낮 졸림의 다른 원인 감별과 전문적 수면 평가",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NCCIH — Sleep Disorders and Complementary Health Approaches",
+          "url": "https://www.nccih.nih.gov/health/sleep-disorders-and-complementary-health-approaches",
+          "scope": "불면 인지행동치료의 권고, 보완요법·보조제 근거의 한계와 사용 정보 공유",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Sleep Studies",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-studies",
+          "scope": "야간 수면검사·낮 졸림검사·활동 기록 등 목적과 의료진의 결과 종합",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Circadian Rhythm Disorders Symptoms",
+          "url": "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/symptoms",
+          "scope": "일주기 문제의 입면·수면 유지·근무 중 졸림과 기능 영향",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Sleep Deprivation and Deficiency",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation",
+          "scope": "수면량뿐 아니라 시각·질·수면질환을 고려하는 수면 부족 개념과 낮 기능",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Living With Circadian Rhythm Disorders",
+          "url": "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/living-with",
+          "scope": "수면·각성 일지로 추적, 치료 부담과 새 증상·약물 불편의 재상담 및 졸음 안전",
+          "checked_at": "2026-10-27"
         }
       ],
       "keywords": [
         "수면 평가",
         "수면무호흡 감별",
-        "수면 상담"
+        "수면 상담",
+        "수면장애"
       ],
       "status": "published",
       "medical_review_status": "pending",
@@ -271,7 +841,55 @@
           "예약 전에 상담할 증상과 기존 검사·복용 기록을 정리하고 어떤 검사가 왜 필요한지, 결과 후 계획을 질문합니다."
         ]
       },
-      "published_at": "2026-10-21"
+      "published_at": "2026-10-21",
+      "reading_sections": [
+        {
+          "heading": "수면검사는 무엇을 확인하려는 검사인가요",
+          "text": "야간 수면검사는 뇌파와 호흡, 산소와 움직임 등 여러 신호를 함께 볼 수 있습니다. 낮에 잠드는 경향을 평가하는 검사는 목적이 다릅니다. 의료진에게 의심하는 문제가 무엇인지, 검사가 그 의문을 어떻게 확인하는지 물으면 결과를 이해하기 쉽습니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/sleep-studies"
+          ]
+        },
+        {
+          "heading": "불면과 수면 호흡 문제가 함께 있을 수 있습니다",
+          "text": "밤에 자주 깨는 증상만으로 불면의 원인을 정하지 않습니다. 코골이, 목격된 호흡 멈춤, 낮 졸림 같은 단서를 함께 검토합니다. 본인이 호흡 이상을 느끼지 못해도 가족이 관찰할 수 있으므로, 혼자 느낀 수면 시간 외의 정보도 중요합니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "자가 설문 점수로 무호흡을 확진할 수 있나요?",
+          "answer": "설문은 평가에 참고할 수 있지만, 병력과 진찰 및 필요한 수면검사를 종합해 판단합니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis"
+          ]
+        },
+        {
+          "question": "낮에 자주 졸면 모두 기면증인가요?",
+          "answer": "아닙니다. 수면 상태와 약물 등 다른 원인을 살피고 필요할 때 전문 검사를 진행합니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/narcolepsy/"
+          ]
+        },
+        {
+          "question": "수면 시각이 늦는 것과 불면은 어떻게 다른가요?",
+          "answer": "원하는 늦은 일정에서는 잘 자는지 확인합니다. 생활 일정과 내부 리듬의 관계가 구분 단서입니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders/types"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주 오창 수면장애 | 유형 감별과 수면검사 상담",
+        "description": "청주 오창 수면장애의 호흡·일주기·다리 불편과 낮 졸림을 구분합니다. 문진 자료, 검사 목적, 치료 선택과 추적 질문을 안내합니다."
+      },
+      "updated_at": "2026-10-27",
+      "source_checked_date": "2026-10-27",
+      "editorial_revision": "women-sleep-expansion-20261027",
+      "reviewed_by": null,
+      "reviewed_at": null
     },
     {
       "id": "mind-child-sleep",
@@ -282,7 +900,7 @@
       ],
       "name": "아이의 잠과 밤 울음",
       "kind": "symptom",
-      "overview": "아이가 잠들기 어렵거나 밤에 우는 이유는 나이와 발달, 생활 리듬, 통증이나 호흡 문제에 따라 달라집니다. 야제증이라는 이름만으로 원인을 정하지 않고 아이의 안전과 낮 동안의 상태를 함께 확인합니다.",
+      "overview": "청주 오창 소아 불면증 상담은 나이와 발달, 수면 일정을 살핍니다. 야간 각성과 호흡·낮 행동을 구분해 평가와 가정 조정 질문을 정리합니다.",
       "sections": {
         "symptoms": {
           "question": "밤 울음에서 무엇을 관찰할까요?",
@@ -295,7 +913,36 @@
             "깨는 시각",
             "동반 신체 신호",
             "낮의 상태"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "야간 사건의 시점과 반응이 감별 단서입니다",
+              "text": "밤에 운다는 표현을 사건의 시각, 지속 양상과 아이의 반응으로 나누어 설명하세요. 완전히 깨서 꿈을 말하는지, 달래도 알아보지 못하고 아침에 기억이 없는지도 다릅니다. 이 단서는 문진에 쓰이며, 반복되거나 특이한 움직임이 있다면 진료에서 별도로 평가합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/night-terrors/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "밤 공포라면 모두 검사해야 하나요?",
+              "answer": "양상과 빈도, 부상 위험과 낮 졸림 등을 검토해 평가 필요성을 정합니다.",
+              "source_urls": [
+                "https://www.rch.org.au/kidsinfo/fact_sheets/Night_terrors_night_time_wakings/"
+              ]
+            },
+            {
+              "question": "다음 날 기억이 없으면 거짓말인가요?",
+              "answer": "밤 공포에서는 사건을 기억하지 못할 수 있어 아이를 추궁하기보다 관찰을 전달하세요.",
+              "source_urls": [
+                "https://www.rch.org.au/kidsinfo/fact_sheets/Night_terrors_night_time_wakings/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 소아 불면증 · 밤 울음에서 무엇을 관찰할까요? | 연결한의원 청주오창",
+            "description": "청주 오창 소아 불면증. 밤 울음에서 무엇을 관찰할까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "context": {
           "question": "생활 변화가 잠에 영향을 줄까요?",
@@ -308,7 +955,36 @@
             "발달 단계",
             "환경 변화",
             "돌봄 부담"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "취침 문제를 생활 변화와 연결해 문진합니다",
+              "text": "가족 구성이나 집이 바뀐 뒤 잠드는 순서도 달라졌는지 확인합니다. 이전에 도움이 됐던 취침 절차와 현재 보호자의 대응을 비교해 전하세요. 일관된 순서를 회복하는 방법을 논의할 수 있지만, 새로운 신체 증상이나 걱정까지 습관 문제로 단정하지 않습니다.",
+              "source_urls": [
+                "https://medlineplus.gov/ency/article/002392.htm"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "사춘기에도 수면 양상이 달라지나요?",
+              "answer": "수면 시각과 생활 일정이 달라질 수 있어, 청소년의 실제 일과를 함께 살펴봅니다.",
+              "source_urls": [
+                "https://www.rch.org.au/kidsinfo/fact_sheets/Sleep_problems_children_and_teens/"
+              ]
+            },
+            {
+              "question": "취침 시간이 같아도 수면 필요량은 같나요?",
+              "answer": "나이와 낮잠 여부 등에 따라 다르므로 형제나 성인의 시간표를 그대로 적용하지 않습니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep/how-much-sleep"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 소아 불면증 · 생활 변화가 잠에 영향을 줄까요? | 연결한의원 청주오창",
+            "description": "청주 오창 소아 불면증. 생활 변화가 잠에 영향을 줄까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "assessment": {
           "question": "소아 진료 전에 무엇을 준비할까요?",
@@ -321,7 +997,36 @@
             "성장·식사",
             "수면 기록",
             "약물 확인"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "병력과 가정 관찰로 평가 우선순위 정하기",
+              "text": "나이와 발달, 취침·낮잠과 야간 사건, 낮 행동을 정리하세요. 기록은 감별의 출발점입니다. 의료진은 병력과 관찰에 따라 신체·수면 또는 다른 전문 평가의 필요성을 판단합니다.",
+              "source_urls": [
+                "https://www.ouh.nhs.uk/children/services/medical-services/sleep/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "호흡 문제가 의심되면 무엇을 확인하나요?",
+              "answer": "코골이와 호흡 관찰, 성장과 진찰 소견을 검토하고 필요한 수면검사를 논의합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-apnea/children"
+              ]
+            },
+            {
+              "question": "가정과 학교의 모습이 달라도 말해야 하나요?",
+              "answer": "네. 수면과 낮 기능을 여러 생활 상황에서 설명하면 평가에 도움이 됩니다.",
+              "source_urls": [
+                "https://www.rch.org.au/kidsinfo/fact_sheets/Sleep_problems_children_and_teens/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 소아 불면증 · 소아 진료 전에 무엇을 준비할까요? | 연결한의원 청주오창",
+            "description": "청주 오창 소아 불면증. 소아 진료 전에 무엇을 준비할까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "care": {
           "question": "어떤 도움을 상담할 수 있을까요?",
@@ -334,7 +1039,36 @@
             "원인 확인",
             "취침 절차",
             "소아 처방"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "제품 선택 전에 필요성과 안전성을 검토하기",
+              "text": "소아의 수면 보조제는 좋은 취침 습관을 대신하지 않습니다. 멜라토닌을 논의하는 경우에도 현재 약과 건강 상태, 기대 효과와 부작용을 의료진과 검토하세요. 장기 안전성에는 모르는 부분이 있으므로 성인 사용법이나 다른 아이의 제품을 그대로 적용하지 않습니다.",
+              "source_urls": [
+                "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "밤에 깨면 모두 같은 접근을 하나요?",
+              "answer": "발달과 수면 양상, 동반 문제에 따라 다릅니다.",
+              "source_urls": [
+                "https://www.ouh.nhs.uk/children/services/medical-services/sleep/"
+              ]
+            },
+            {
+              "question": "밤 공포가 잦으면 수면 부족도 살피나요?",
+              "answer": "피곤함과 부족한 잠이 악화 요인이 될 수 있어 취침 일과를 함께 확인합니다.",
+              "source_urls": [
+                "https://www.rch.org.au/kidsinfo/fact_sheets/Night_terrors_night_time_wakings/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 소아 불면증 · 어떤 도움을 상담할 수 있을까요? | 연결한의원 청주오창",
+            "description": "청주 오창 소아 불면증. 어떤 도움을 상담할 수 있을까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "daily": {
           "question": "가정에서는 어떻게 도울까요?",
@@ -347,7 +1081,36 @@
             "조용한 준비",
             "안전한 공간",
             "돌봄 교대"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "변경 계획은 가족이 유지할 수 있어야 합니다",
+              "text": "예측 가능한 취침 순서를 정하고 잠들기 전 자극적인 활동을 줄여 보세요. 나이와 생활에 맞춰 조정하며, 보호자가 지키기 어려운 계획은 상담 때 알려주세요. 어린아이의 야간 각성은 흔할 수 있어 한 번의 성공보다 반복되는 일과와 가족의 부담을 확인합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/baby/health/sleep-and-young-children/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "가정에서 바꿀 것은 취침 시각뿐인가요?",
+              "answer": "낮 활동과 식사, 기상 및 화면 사용을 포함한 가족의 일과를 함께 봅니다.",
+              "source_urls": [
+                "https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx"
+              ]
+            },
+            {
+              "question": "필요한 낮잠도 무조건 끊어야 하나요?",
+              "answer": "나이에 맞는 낮잠을 고려해야 하며 총 수면과 밤잠의 관계를 평가합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep/how-much-sleep"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 소아 불면증 · 가정에서는 어떻게 도울까요? | 연결한의원 청주오창",
+            "description": "청주 오창 소아 불면증. 가정에서는 어떻게 도울까요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         },
         "followup": {
           "question": "다시 상담할 변화는 무엇인가요?",
@@ -360,7 +1123,36 @@
             "낮 기능",
             "호흡·움직임",
             "재상담"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "가정 계획의 실행과 낮 기능을 재평가",
+              "text": "잠드는 과정과 밤중 각성, 보호자가 도운 방식이 전과 어떻게 다른지 전달하세요. 실천을 어렵게 한 상황도 다음 계획에 중요합니다. 아이의 낮 활력과 가족의 수면 부담을 함께 검토하고, 불편이 계속되면 생활 요인 외의 원인을 다시 살펴봅니다.",
+              "source_urls": [
+                "https://www.nhs.uk/baby/health/sleep-and-young-children/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "성장이나 학교생활 변화도 경과에 포함하나요?",
+              "answer": "네. 호흡 이상과 성장·낮 행동의 변화를 함께 확인합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/sleep-apnea/children"
+              ]
+            },
+            {
+              "question": "밤 공포 때문에 다칠 위험이 생기면 어떻게 하나요?",
+              "answer": "잠자리 주변의 안전을 지키고 반복 양상과 부상 위험을 의료진에게 알려 평가받으세요.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/night-terrors/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 소아 불면증 · 다시 상담할 변화는 무엇인가요? | 연결한의원 청주오창",
+            "description": "청주 오창 소아 불면증. 다시 상담할 변화는 무엇인가요? 본문 설명, 관찰 체크와 구분 도표, 자주 묻는 질문으로 진료 준비를 돕습니다."
+          }
         }
       },
       "red_flags": [
@@ -369,20 +1161,76 @@
       ],
       "sources": [
         {
-          "title": "NHS: Sleep and young children",
+          "title": "NHS — Sleep and young children",
           "url": "https://www.nhs.uk/baby/health/sleep-and-young-children/",
-          "scope": "발달에 따른 수면 차이와 예측 가능한 취침 습관"
+          "scope": "어린아이의 야간 각성, 나이에 맞는 일관된 취침 절차·낮잠과 가족의 어려움 상담",
+          "checked_at": "2026-10-27"
         },
         {
           "title": "NIMH: Children and Mental Health",
           "url": "https://www.nimh.nih.gov/health/publications/children-and-mental-health",
           "scope": "아동·청소년의 발달 맥락, 지속되는 어려움과 기능 평가"
+        },
+        {
+          "title": "NHS — Night terrors and nightmares",
+          "url": "https://www.nhs.uk/conditions/night-terrors/",
+          "scope": "밤 공포와 악몽의 시점·각성·기억 차이, 안전한 관찰과 반복 시 평가",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — Sleep Apnea in Children",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/children",
+          "scope": "소아 코골이·호흡 멈춤, 낮 행동·성장 변화 및 진찰·수면검사",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI — How Much Sleep Is Enough?",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/how-much-sleep",
+          "scope": "연령별 수면 필요량의 차이, 어린아이의 낮잠 포함 총 수면과 개인차",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "Oxford University Hospitals — Paediatric sleep service",
+          "url": "https://www.ouh.nhs.uk/children/services/medical-services/sleep/",
+          "scope": "소아의 다양한 수면 문제, 수면 일지와 진료 평가, 발달·신경학적 맥락의 감별",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "Royal Children’s Hospital — Sleep problems: children and teens",
+          "url": "https://www.rch.org.au/kidsinfo/fact_sheets/Sleep_problems_children_and_teens/",
+          "scope": "소아·청소년의 생활·불안·통증 등 수면 방해 요인, 나이와 발달에 맞는 생활 관리",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "American Academy of Pediatrics — Healthy Sleep Habits: How Many Hours Does Your Child Need?",
+          "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx",
+          "scope": "나이별 수면과 낮잠, 가족 일과·빛·활동·화면 사용의 조정",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "American Academy of Pediatrics — Melatonin for Kids",
+          "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx",
+          "scope": "소아 수면 보조제는 생활 습관 평가와 소아 진료 후 신중히 결정, 상호작용·불확실한 장기 안전성",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "Royal Children’s Hospital — Night terrors (night-time wakings)",
+          "url": "https://www.rch.org.au/kidsinfo/fact_sheets/Night_terrors_night_time_wakings/",
+          "scope": "밤 공포의 부분 각성·다음 날 기억, 과로·질병과 악화, 잦은 증상·부상 위험 상담",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "MedlinePlus — Bedtime habits for infants and children",
+          "url": "https://medlineplus.gov/ency/article/002392.htm",
+          "scope": "가족·이사 등 생활 변화가 취침 습관에 미치는 영향과 예측 가능한 차분한 취침 순서",
+          "checked_at": "2026-10-27"
         }
       ],
       "keywords": [
         "소아 수면 문제",
         "밤 울음",
-        "아이 잠투정"
+        "아이 잠투정",
+        "소아 불면증"
       ],
       "status": "published",
       "medical_review_status": "pending",
@@ -402,7 +1250,55 @@
           "울기 시작한 시각·지속·달랠 때 반응과 발열·통증·호흡의 동반 신호를 적고 갑작스러운 변화는 소아 진료에서 먼저 설명합니다."
         ]
       },
-      "published_at": "2026-10-21"
+      "published_at": "2026-10-21",
+      "reading_sections": [
+        {
+          "heading": "소아 수면 문진에 발달 맥락이 필요한 이유",
+          "text": "아이와 청소년은 나이, 환경과 생활 변화에 따라 잠을 방해하는 요인이 다를 수 있습니다. 통증이나 질병, 걱정과 늦어진 생활 시각도 확인합니다. 잠들기 싫어하는 행동만 떼어 평가하기보다 시작 시점과 가정·학교에서의 낮 기능을 함께 검토합니다.",
+          "source_urls": [
+            "https://www.rch.org.au/kidsinfo/fact_sheets/Sleep_problems_children_and_teens/"
+          ]
+        },
+        {
+          "heading": "코골이와 낮 행동을 함께 확인하기",
+          "text": "아이의 수면 호흡 문제는 졸림뿐 아니라 과도한 활동이나 주의 어려움으로 보일 수 있습니다. 코골이·입 호흡과 목격된 호흡 멈춤을 알려주세요. 성장과 진찰 소견에 따라 검사를 논의하며 행동만으로 원인을 단정하지 않습니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/sleep-apnea/children"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "밤 공포와 악몽은 어떻게 구분하나요?",
+          "answer": "발생 시점, 완전한 각성, 꿈의 기억과 반복 양상이 단서입니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/night-terrors/"
+          ]
+        },
+        {
+          "question": "소아 수면제나 보조제를 먼저 시도하나요?",
+          "answer": "먼저 수면 습관과 건강 상태를 평가합니다. 멜라토닌도 필요성·상호작용과 장기 안전성의 한계를 상담해야 합니다.",
+          "source_urls": [
+            "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx"
+          ]
+        },
+        {
+          "question": "아이마다 필요한 잠이 다른가요?",
+          "answer": "네. 연령에 따라 필요량이 달라지고 어린아이는 낮잠을 포함한 총 수면을 살펴봅니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/sleep/how-much-sleep"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주 오창 소아 불면증 | 발달·야간 각성·평가 질문",
+        "description": "청주 오창 소아 불면증 상담 전 발달과 생활 맥락을 확인하세요. 밤 공포·악몽·코골이 구분, 가정 기록과 치료 선택을 정리합니다."
+      },
+      "updated_at": "2026-10-27",
+      "source_checked_date": "2026-10-27",
+      "editorial_revision": "women-sleep-expansion-20261027",
+      "reviewed_by": null,
+      "reviewed_at": null
     },
     {
       "id": "mind-adhd",
@@ -412,7 +1308,7 @@
       ],
       "name": "주의력결핍 과잉행동장애",
       "kind": "condition",
-      "overview": "ADHD 평가는 집중이 안 되는 한 가지 불편보다 어릴 때부터의 주의·충동 조절 특성과 여러 생활 환경의 영향을 확인하는 과정입니다. 산만함이나 성적만으로 진단하지 않고 수면, 불안, 학습 문제 등 다른 설명도 함께 살핍니다.",
+      "overview": "청주 오창 ADHD 평가에서는 현재의 부주의뿐 아니라 발달 경과, 기능 손상과 동반 문제를 함께 확인합니다.",
       "sections": {
         "symptoms": {
           "question": "어떤 어려움이 반복되나요?",
@@ -425,7 +1321,36 @@
             "주의 조절",
             "충동 조절",
             "여러 환경"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "부주의와 충동성을 기능에 연결합니다",
+              "text": "주의가 옮겨가는 모습뿐 아니라 시작·조직화·완수에서의 곤란을 확인합니다. 겉으로 조용하더라도 생활상 부주의가 두드러질 수 있으며, 성인의 경우 약속과 업무 관리의 반복된 어려움이 평가 단서가 됩니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "안절부절못함이 꼭 있어야 하나요?",
+              "answer": "아닙니다. 부주의가 주로 나타나는 양상도 있습니다.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/signs-symptoms/index.html"
+              ]
+            },
+            {
+              "question": "일시적으로 산만한 것도 진단 대상인가요?",
+              "answer": "가끔 있는 산만함만으로 판단하지 않으며 지속성과 생활 영향을 확인합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 ADHD · 어떤 어려움이 반복되나요? | 연결한의원 청주오창",
+            "description": "오창 ADHD: 어떤 어려움이 반복되나요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "context": {
           "question": "집중 저하와 ADHD는 어떻게 다를까요?",
@@ -438,7 +1363,36 @@
             "수면·기분",
             "발달력",
             "동반 문제"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "같은 집중 문제라도 경과가 다릅니다",
+              "text": "갑자기 시작한 집중 곤란은 어린 시절부터 이어진 양상과 구별해야 합니다. 정서·학습 문제와 신체 상태를 함께 검토하고, 서로 배타적인 진단이라고 가정하지 않습니다. 필요한 경우 추가 평가 방향을 정합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/adhd-adults/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "불안 치료 뒤에만 ADHD 평가가 가능한가요?",
+              "answer": "일률적인 순서는 없습니다. 현재 영향과 동반 가능성을 의료진이 함께 판단합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know"
+              ]
+            },
+            {
+              "question": "아이의 나이도 중요한가요?",
+              "answer": "네. 발달 단계에서 기대되는 행동과 주변 환경을 고려해 해석합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/adhd-children-teenagers/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 ADHD · 집중 저하와 ADHD는 어떻게 다를까요? | 연결한의원 청주오창",
+            "description": "오창 ADHD: 집중 저하와 ADHD는 어떻게 다를까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "assessment": {
           "question": "전문 평가에는 무엇이 도움이 될까요?",
@@ -451,7 +1405,36 @@
             "과거 기록",
             "생활 사례",
             "평가 목적"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "보고자와 환경을 나누어 자료를 봅니다",
+              "text": "면담에는 어려움이 나타나는 상황, 발달·학업 이력과 현재 생활 기능을 포함합니다. 보호자·교사 등의 관찰은 맥락을 보완하며, 시청각이나 다른 건강 문제를 확인할 필요가 있는지도 판단합니다.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/diagnosis/index.html"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "검사가 정상이라면 ADHD가 배제되나요?",
+              "answer": "단일 검사만으로 배제하거나 확정하지 않습니다. 전체 평가 결과를 설명받으세요.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/diagnosis/index.html"
+              ]
+            },
+            {
+              "question": "성적표만 가져가면 되나요?",
+              "answer": "성적 외에도 정리, 기한, 관계와 일상 관리에 관한 구체적인 사례가 유용합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 ADHD · 전문 평가에는 무엇이 도움이 될까요? | 연결한의원 청주오창",
+            "description": "오창 ADHD: 전문 평가에는 무엇이 도움이 될까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "care": {
           "question": "치료와 지원은 어떻게 고를까요?",
@@ -464,7 +1447,36 @@
             "환경 지원",
             "치료 선택",
             "부작용 관찰"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "치료별 기대와 부담을 함께 묻습니다",
+              "text": "선택지는 약물만을 뜻하지 않습니다. 행동치료와 보호자 교육, 학교 지원 등에서 무엇을 목표로 할지 정하고, 약물이 필요한 경우 기대 효과와 관찰할 불편을 담당 의료진에게 확인합니다.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/treatment/index.html"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "보호자 교육은 양육 잘못을 뜻하나요?",
+              "answer": "아닙니다. 아이의 행동을 이해하고 일관된 대응 기술을 배우기 위한 지원입니다.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/treatment/behavior-therapy.html"
+              ]
+            },
+            {
+              "question": "보조요법으로 표준 치료를 대신할 수 있나요?",
+              "answer": "그렇게 단정할 근거는 없습니다. 사용하려는 방법은 알리고 검증된 치료를 임의로 대체하지 마세요.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 ADHD · 치료와 지원은 어떻게 고를까요? | 연결한의원 청주오창",
+            "description": "오창 ADHD: 치료와 지원은 어떻게 고를까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "daily": {
           "question": "일상을 쉽게 만드는 방법은 무엇인가요?",
@@ -477,7 +1489,36 @@
             "작은 과제",
             "보이는 일정",
             "구체적 격려"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "환경 조정을 치료 계획에 포함합니다",
+              "text": "과제 지시를 짧게 제시하고 작업을 나누는 방식처럼, 기능을 돕는 조정은 치료와 함께 논의할 수 있습니다. 교실과 가정에서 다른 요구를 확인하고 효과가 있었던 지원을 서로 공유합니다.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/treatment/classroom.html"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "모든 아동에게 같은 규칙을 적용하나요?",
+              "answer": "현재 발달 수준과 필요한 도움에 맞춰 기대 행동과 피드백을 구체화합니다.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/treatment/behavior-therapy.html"
+              ]
+            },
+            {
+              "question": "성인도 환경 조정이 필요한가요?",
+              "answer": "네. 업무 순서, 알림, 방해 요소를 조정하는 지원을 필요에 따라 논의합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/adhd-adults/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 ADHD · 일상을 쉽게 만드는 방법은 무엇인가요? | 연결한의원 청주오창",
+            "description": "오창 ADHD: 일상을 쉽게 만드는 방법은 무엇인가요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "followup": {
           "question": "지원이 맞는지 어떻게 확인할까요?",
@@ -490,7 +1531,36 @@
             "생활 목표",
             "새 불편",
             "환경 변화"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "반응은 증상과 생활 기능을 함께 봅니다",
+              "text": "진료 때는 원래 합의한 목표가 개선됐는지, 새로운 불편과 동반 문제가 있는지 확인합니다. 지원을 잘 수행해도 변화가 적으면 단순히 의지 문제로 보지 말고 진단과 치료 구성을 다시 검토합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "아이의 상황이 바뀌면 계획도 바꾸나요?",
+              "answer": "학년이나 생활 요구가 달라지면 학교·가정의 지원을 다시 맞출 수 있습니다.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/treatment/classroom.html"
+              ]
+            },
+            {
+              "question": "처방 후 무엇을 기록해야 하나요?",
+              "answer": "생활 목표의 변화와 복용 뒤 불편을 정리해 다음 진료에서 공유하세요.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/treatment/index.html"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 ADHD · 지원이 맞는지 어떻게 확인할까요? | 연결한의원 청주오창",
+            "description": "오창 ADHD: 지원이 맞는지 어떻게 확인할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         }
       },
       "red_flags": [
@@ -499,20 +1569,83 @@
       ],
       "sources": [
         {
-          "title": "NIMH: Attention-Deficit/Hyperactivity Disorder",
+          "title": "NIMH: Attention-Deficit/Hyperactivity Disorder: What You Need to Know",
           "url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
-          "scope": "주의력·충동성의 발달력, 여러 환경의 기능과 전문 평가"
+          "scope": "발달 과정에서 나타나는 ADHD, 동반 문제, 개별화된 치료와 일상 기능 지원.",
+          "checked_at": "2026-10-27"
         },
         {
           "title": "NIMH: Children and Mental Health",
           "url": "https://www.nimh.nih.gov/health/publications/children-and-mental-health",
           "scope": "아동·청소년의 발달 맥락, 지속되는 어려움과 기능 평가"
+        },
+        {
+          "title": "NIMH: ADHD in Adults: 4 Things to Know",
+          "url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+          "scope": "성인 평가에서 어린 시절부터의 경과, 여러 영역의 어려움과 기능 영향을 확인한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "CDC: Diagnosing ADHD",
+          "url": "https://www.cdc.gov/adhd/diagnosis/index.html",
+          "scope": "단일 검사로 확진하지 않으며 발달력, 여러 생활 환경과 기능 저하, 다른 원인을 함께 평가한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: ADHD in adults",
+          "url": "https://www.nhs.uk/conditions/adhd-adults/",
+          "scope": "성인의 전문 평가, 다른 정신건강·학습 문제 검토, 생활·직장 조정과 치료 의사결정.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: ADHD in children and teenagers",
+          "url": "https://www.nhs.uk/conditions/adhd-children-teenagers/",
+          "scope": "연령과 발달을 고려한 평가, 비슷한 행동의 다른 이유, 평가 전에도 가능한 가정·학교 지원.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "CDC: Parent Training in Behavior Management for ADHD",
+          "url": "https://www.cdc.gov/adhd/treatment/behavior-therapy.html",
+          "scope": "보호자가 배울 수 있는 구체적 행동 지원과 일관된 대응, 협력 및 치료 과정 확인.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "CDC: ADHD in the Classroom",
+          "url": "https://www.cdc.gov/adhd/treatment/classroom.html",
+          "scope": "명확한 과제, 환경 조정, 긍정적 피드백, 조직화 지원 및 가정·학교 협력. 미국 제도상의 권리는 한국에 적용하지 않는다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "CDC: Signs and Symptoms of ADHD",
+          "url": "https://www.cdc.gov/adhd/signs-symptoms/index.html",
+          "scope": "부주의·과잉행동·충동성의 다양한 양상과 반복되는 생활 어려움.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "CDC: Treatment of ADHD",
+          "url": "https://www.cdc.gov/adhd/treatment/index.html",
+          "scope": "나이와 필요에 따라 행동치료·보호자 지원·약물치료 등을 선택하고 효과를 관찰한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NIMH: Generalized Anxiety Disorder: What You Need to Know",
+          "url": "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad",
+          "scope": "조절하기 어려운 걱정과 긴장·집중 문제, 신체 원인 검토 및 심리·약물치료.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NICHD: About Learning Disabilities",
+          "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo",
+          "scope": "특정 정보 처리와 읽기·쓰기·수학의 지속적 어려움, 지능이나 의지와 단순히 동일시할 수 없음.",
+          "checked_at": "2026-10-27"
         }
       ],
       "keywords": [
         "주의력결핍 과잉행동장애",
         "성인 ADHD",
-        "주의·충동 조절"
+        "주의·충동 조절",
+        "ADHD",
+        "adhd"
       ],
       "status": "published",
       "medical_review_status": "pending",
@@ -520,7 +1653,55 @@
       "member_relationships": {
         "adhd": "canonical"
       },
-      "published_at": "2026-10-21"
+      "published_at": "2026-10-21",
+      "reading_sections": [
+        {
+          "heading": "검사 점수보다 임상적 맥락을 연결합니다",
+          "text": "주의력 관련 검사나 질문지는 평가의 보조 자료입니다. ADHD를 판단할 때는 증상의 시작, 가정·학업·직장 등에서의 영향과 진찰 결과를 연결하며, 하나의 검사 결과를 확진서처럼 해석하지 않습니다.",
+          "source_urls": [
+            "https://www.cdc.gov/adhd/diagnosis/index.html"
+          ]
+        },
+        {
+          "heading": "지원의 구성은 연령과 기능에 따라 달라집니다",
+          "text": "어린 아동의 보호자 행동 지원과 성인의 업무 조정은 필요한 방식이 다릅니다. 치료의 예상 이익과 부담을 논의하고, 실제로 개선할 목표를 정해 약물과 비약물 지원의 역할을 검토합니다.",
+          "source_urls": [
+            "https://www.cdc.gov/adhd/treatment/index.html"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "성인이 되어 처음 발견될 수도 있나요?",
+          "answer": "성인기에 평가받을 수 있습니다. 다만 어린 시절부터의 양상과 다른 설명 가능성을 확인합니다.",
+          "source_urls": [
+            "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know"
+          ]
+        },
+        {
+          "question": "우울이나 불안이 있으면 ADHD가 아닌가요?",
+          "answer": "그렇지는 않습니다. 증상이 비슷하거나 함께 나타날 수 있어 각각의 경과를 살핍니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/adhd-adults/"
+          ]
+        },
+        {
+          "question": "한 가지 치료로 정해지나요?",
+          "answer": "아닙니다. 연령, 생활 목표와 동반 문제에 따라 치료와 환경 지원을 조합합니다.",
+          "source_urls": [
+            "https://www.cdc.gov/adhd/treatment/index.html"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주 오창 ADHD | 발달력·감별 평가와 치료 선택",
+        "description": "청주 오창 ADHD·adhd를 하나의 가이드로 안내합니다. 전문 평가에 필요한 자료, 다른 원인과의 구별, 치료 선택과 추적 질문을 확인하세요."
+      },
+      "updated_at": "2026-10-27",
+      "source_checked_date": "2026-10-27",
+      "editorial_revision": "women-sleep-expansion-20261027",
+      "reviewed_by": null,
+      "reviewed_at": null
     },
     {
       "id": "mind-concentration",
@@ -530,7 +1711,7 @@
       ],
       "name": "집중이 잘되지 않을 때",
       "kind": "symptom",
-      "overview": "집중력 저하는 수면 부족, 피로, 통증, 기분 변화나 환경 부담 등 여러 상황에서 나타나는 증상입니다. 갑자기 생겼는지 오래 이어졌는지와 실제 생활의 변화를 확인하며 ADHD나 기억장애로 바로 결론 내리지 않습니다.",
+      "overview": "청주 오창 집중력저하는 증상 표현입니다. 진료에서는 경과·기능과 정서·신체·발달 원인을 살핍니다.",
       "sections": {
         "symptoms": {
           "question": "집중이 안 된다는 느낌을 어떻게 설명할까요?",
@@ -543,7 +1724,36 @@
             "주의 유지",
             "과제 시작",
             "생활 실수"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "변한 기능과 환경을 나눕니다",
+              "text": "읽기·대화·일정 관리 중 무엇이 달라졌는지 봅니다. 원래 어려웠던 과제인지 특정 환경에서만 힘든지 구분하면 주의·기억·정서 평가의 초점을 정할 수 있습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/symptoms/memory-loss-amnesia/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "주관적인 불편만 있어도 상담하나요?",
+              "answer": "생활 영향이 있다면 사례를 설명하고 평가를 상의하세요.",
+              "source_urls": [
+                "https://www.nhs.uk/symptoms/memory-loss-amnesia/"
+              ]
+            },
+            {
+              "question": "긴장하면 멍해질 수도 있나요?",
+              "answer": "불안도 집중을 어렵게 할 수 있어 발생 맥락을 확인합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 집중력저하 · 집중이 안 된다는 느낌을 어떻게 설명할까요? | 연결한의원 청주오창",
+            "description": "오창 집중력저하: 집중이 안 된다는 느낌을 어떻게 설명할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "context": {
           "question": "함께 살펴볼 원인은 무엇인가요?",
@@ -556,7 +1766,36 @@
             "수면·피로",
             "기분·통증",
             "발생 시점"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "동반 증상의 시간 순서를 확인합니다",
+              "text": "흥미 저하, 걱정과 피로가 집중 변화에 앞섰는지 묻습니다. 우울·불안도 집중을 어렵게 하지만, 신체·발달 원인이 함께 있을 가능성을 배제하지 않습니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/depression"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "갑자기 심해졌다면 ADHD가 더 의심되나요?",
+              "answer": "갑작스러운 변화만으로 ADHD를 판단하지 않습니다. 발달 경과와 새 원인을 함께 봅니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/adhd-adults/"
+              ]
+            },
+            {
+              "question": "감염 뒤 변화는 어떻게 해석하나요?",
+              "answer": "코로나19 이후 인지 증상도 가능하나 감염 경과와 다른 원인을 함께 검토해야 합니다.",
+              "source_urls": [
+                "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/cognition-and-brain-fog-post-covid-service"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 집중력저하 · 함께 살펴볼 원인은 무엇인가요? | 연결한의원 청주오창",
+            "description": "오창 집중력저하: 함께 살펴볼 원인은 무엇인가요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "assessment": {
           "question": "상담에서 어떤 정보를 전할까요?",
@@ -569,7 +1808,36 @@
             "이전과 비교",
             "복용 목록",
             "평가 범위"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "진료 자료는 변화의 흐름을 담습니다",
+              "text": "시작 시점, 건강 변화와 약 목록을 준비하세요. 집중이 나쁜 날과 나은 상황을 함께 설명하면 환경 요인과 지속되는 어려움을 구분하는 데 도움이 됩니다.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "검사 종류를 미리 정해야 하나요?",
+              "answer": "아닙니다. 피로 등 동반 단서를 보고 필요한 검사를 논의하면 됩니다.",
+              "source_urls": [
+                "https://www.nhs.uk/symptoms/tiredness-and-fatigue/"
+              ]
+            },
+            {
+              "question": "어릴 때 자료가 필요한 경우는 언제인가요?",
+              "answer": "ADHD 등 발달 과정의 특성을 평가할 때 어린 시절 경과가 중요합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 집중력저하 · 상담에서 어떤 정보를 전할까요? | 연결한의원 청주오창",
+            "description": "오창 집중력저하: 상담에서 어떤 정보를 전할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "care": {
           "question": "도움의 우선순위는 무엇일까요?",
@@ -582,7 +1850,36 @@
             "원인 확인",
             "과제 조정",
             "제품 검토"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "원인과 생활 목표를 함께 정합니다",
+              "text": "걱정·기분 변화와 업무 부담 중 무엇이 가장 방해되는지 구체화합니다. 확인되지 않은 집중력 강화 효과를 전제로 선택하지 말고, 원인에 맞는 치료를 논의합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "불안 치료를 하면 집중도 바로 회복되나요?",
+              "answer": "회복 속도는 다릅니다. 불안과 수행의 변화를 함께 관찰합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad"
+              ]
+            },
+            {
+              "question": "업무 조정도 관리에 포함되나요?",
+              "answer": "가능합니다. 부담을 정리하고 조정할 수 있는 범위를 직장 내 적절한 담당자와 논의하세요.",
+              "source_urls": [
+                "https://www.nhs.uk/every-mind-matters/lifes-challenges/work-related-stress/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 집중력저하 · 도움의 우선순위는 무엇일까요? | 연결한의원 청주오창",
+            "description": "오창 집중력저하: 도움의 우선순위는 무엇일까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "daily": {
           "question": "어떤 기록과 환경 조정이 유용할까요?",
@@ -595,7 +1892,36 @@
             "단일 과제",
             "외부 알림",
             "유리한 시간"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "실행과 평가가 가능한 조정을 고릅니다",
+              "text": "스트레스가 큰 상황에서는 큰 목표를 작은 단계로 나누고 해야 할 일을 우선순위로 정리합니다. 조정 뒤 실제 누락과 소요 부담이 달라졌는지 확인하여 유지할 방법을 선택하세요.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/tips-to-reduce-stress/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "여러 생활 습관을 한꺼번에 바꿔야 하나요?",
+              "answer": "실행 가능한 작은 변화부터 시작하고 부담이 늘어나는지 살피는 편이 좋습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/"
+              ]
+            },
+            {
+              "question": "코로나19 후 인지 피로에는 과제를 늘려 훈련하나요?",
+              "answer": "무리하게 늘리기보다 한 과제씩 수행하고 활동·휴식을 조절하는 방법을 논의합니다.",
+              "source_urls": [
+                "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/cognition-and-brain-fog-post-covid-service"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 집중력저하 · 어떤 기록과 환경 조정이 유용할까요? | 연결한의원 청주오창",
+            "description": "오창 집중력저하: 어떤 기록과 환경 조정이 유용할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "followup": {
           "question": "언제 재평가를 받아야 할까요?",
@@ -608,7 +1934,36 @@
             "지속 여부",
             "새 증상",
             "목표 비교"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "남는 문제를 다시 분류합니다",
+              "text": "초기 관리 뒤에도 흥미 저하와 결정의 어려움이 남으면 정서 상태를 재평가합니다. 집중이 나아져도 생활 기능이 회복되지 않았다면 원인과 목표를 다시 확인합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/depression"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "처음 생각한 원인이 바뀔 수 있나요?",
+              "answer": "네. 경과와 새 정보를 통해 평가와 지원 방향이 달라질 수 있습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/symptoms/tiredness-and-fatigue/"
+              ]
+            },
+            {
+              "question": "재진 때 무엇을 비교하나요?",
+              "answer": "전반적인 느낌뿐 아니라 과제 수행과 업무 부담이 어떻게 달라졌는지 비교하세요.",
+              "source_urls": [
+                "https://www.nhs.uk/every-mind-matters/lifes-challenges/work-related-stress/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 집중력저하 · 언제 재평가를 받아야 할까요? | 연결한의원 청주오창",
+            "description": "오창 집중력저하: 언제 재평가를 받아야 할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         }
       },
       "red_flags": [
@@ -622,20 +1977,100 @@
           "scope": "주의력·충동성의 발달력, 여러 환경의 기능과 전문 평가"
         },
         {
-          "title": "NHS: Memory loss",
+          "title": "NHS: Memory loss (amnesia)",
           "url": "https://www.nhs.uk/symptoms/memory-loss-amnesia/",
-          "scope": "생활에 영향을 주는 기억 변화의 평가와 감별"
+          "scope": "기억의 일상 영향과 발생 경과, 스트레스·기분 등 가능한 원인, 자가진단 대신 진료.",
+          "checked_at": "2026-10-27"
         },
         {
           "title": "NHS: Excessive daytime sleepiness",
           "url": "https://www.nhs.uk/conditions/excessive-daytime-sleepiness-hypersomnia/",
           "scope": "낮의 졸림과 피로의 구별, 수면·약물·질환 평가"
+        },
+        {
+          "title": "NIMH: ADHD in Adults: 4 Things to Know",
+          "url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+          "scope": "성인 평가에서 어린 시절부터의 경과, 여러 영역의 어려움과 기능 영향을 확인한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "CDC: Diagnosing ADHD",
+          "url": "https://www.cdc.gov/adhd/diagnosis/index.html",
+          "scope": "단일 검사로 확진하지 않으며 발달력, 여러 생활 환경과 기능 저하, 다른 원인을 함께 평가한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: ADHD in adults",
+          "url": "https://www.nhs.uk/conditions/adhd-adults/",
+          "scope": "성인의 전문 평가, 다른 정신건강·학습 문제 검토, 생활·직장 조정과 치료 의사결정.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: ADHD in children and teenagers",
+          "url": "https://www.nhs.uk/conditions/adhd-children-teenagers/",
+          "scope": "연령과 발달을 고려한 평가, 비슷한 행동의 다른 이유, 평가 전에도 가능한 가정·학교 지원.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "UCLH: Cognition and brain fog (Post-COVID service)",
+          "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/cognition-and-brain-fog-post-covid-service",
+          "scope": "코로나19 이후 인지 어려움에 한정한 주의·기억·계획 문제, 활동 조절과 외부 기억 보조.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NIMH: Depression",
+          "url": "https://www.nimh.nih.gov/health/publications/depression",
+          "scope": "흥미·기분·활력 변화와 함께 나타날 수 있는 집중·기억·결정 어려움, 개별 평가.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: Tiredness and fatigue",
+          "url": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/",
+          "scope": "피로의 생활·질환·약물·정서적 원인을 구분하고 필요시 선택하는 검사.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: Generalised anxiety disorder (GAD)",
+          "url": "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/",
+          "scope": "광범위한 걱정과 기능 영향의 평가, 우울 등 동반 문제와 치료 선택.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NIMH: Generalized Anxiety Disorder: What You Need to Know",
+          "url": "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad",
+          "scope": "조절하기 어려운 걱정과 긴장·집중 문제, 신체 원인 검토 및 심리·약물치료.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NICHD: What are some signs of learning disabilities?",
+          "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/signs",
+          "scope": "학습 영역별 다양한 신호, 연령·교육 경험에 따른 해석 및 신호만으로 진단할 수 없는 한계.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: Get help with stress",
+          "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+          "scope": "스트레스의 집중·감정·신체 영향, 부담 파악과 작은 실천, 일상 영향이 클 때의 도움.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: 10 stress busters",
+          "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/tips-to-reduce-stress/",
+          "scope": "스트레스 원인 정리, 부담 조정, 사회적 지지와 실행 가능한 생활 대처.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS Every Mind Matters: Work-related stress",
+          "url": "https://www.nhs.uk/every-mind-matters/lifes-challenges/work-related-stress/",
+          "scope": "업무 부담과 집중·감정·행동의 관계, 과제·경계 조정 및 도움 요청.",
+          "checked_at": "2026-10-27"
         }
       ],
       "keywords": [
         "주의력 저하",
         "산만함",
-        "브레인 포그"
+        "브레인 포그",
+        "집중력저하"
       ],
       "status": "published",
       "medical_review_status": "pending",
@@ -643,7 +2078,55 @@
       "member_relationships": {
         "집중력-저하": "canonical"
       },
-      "published_at": "2026-10-21"
+      "published_at": "2026-10-21",
+      "reading_sections": [
+        {
+          "heading": "주의·기억·기분을 구별합니다",
+          "text": "집중 저하에는 주의 유지, 정보 누락과 느린 판단이 섞일 수 있습니다. 면담에서는 이전 상태와 실제 기능의 변화를 비교하여 평가 방향을 정합니다.",
+          "source_urls": [
+            "https://www.nhs.uk/symptoms/memory-loss-amnesia/"
+          ]
+        },
+        {
+          "heading": "검사는 의심 원인에 맞게 선택합니다",
+          "text": "피로와 신체 변화가 함께라면 관련 병력과 약물을 검토하고 원인에 맞는 검사를 고려합니다. 검사 한 묶음으로 모든 집중 문제를 설명하거나 정상 결과만으로 생활의 어려움을 부정하지 않습니다.",
+          "source_urls": [
+            "https://www.nhs.uk/symptoms/tiredness-and-fatigue/"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "집중 검사 결과만으로 ADHD를 진단하나요?",
+          "answer": "아닙니다. 발달력, 여러 환경의 기능과 다른 원인 검토가 필요합니다.",
+          "source_urls": [
+            "https://www.cdc.gov/adhd/diagnosis/index.html"
+          ]
+        },
+        {
+          "question": "불안과 집중력저하는 무엇부터 보나요?",
+          "answer": "걱정과 집중 곤란의 경과·영향을 함께 살펴 우선순위를 정합니다.",
+          "source_urls": [
+            "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad"
+          ]
+        },
+        {
+          "question": "직장 스트레스도 평가 자료인가요?",
+          "answer": "네. 업무량·역할·관계의 변화와 증상이 연결되는지 설명할 수 있습니다.",
+          "source_urls": [
+            "https://www.nhs.uk/every-mind-matters/lifes-challenges/work-related-stress/"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주 오창 집중력저하 | 감별 평가와 검사 질문",
+        "description": "청주 오창 집중력저하의 시작 경과, 기분·피로·약물 변화와 검사·추적을 살펴봅니다."
+      },
+      "updated_at": "2026-10-27",
+      "source_checked_date": "2026-10-27",
+      "editorial_revision": "women-sleep-expansion-20261027",
+      "reviewed_by": null,
+      "reviewed_at": null
     },
     {
       "id": "mind-learning",
@@ -653,7 +2136,7 @@
       ],
       "name": "읽기·쓰기·수학 학습의 어려움",
       "kind": "condition",
-      "overview": "학습장애는 읽기·쓰기·수학 등 특정 기술을 익히고 사용하는 과정의 지속적인 어려움을 평가하는 개념입니다. 낮은 성적만으로 진단하거나 지능·노력 부족으로 설명하지 않고 적절한 교육 기회와 감각·주의·언어의 영향을 함께 살핍니다.",
+      "overview": "청주 오창 학습장애는 학습 기술·교육 경험과 발달·언어·주의 기능을 평가합니다.",
       "sections": {
         "symptoms": {
           "question": "어떤 학습 과정이 특히 어렵나요?",
@@ -666,7 +2149,36 @@
             "읽기",
             "쓰기",
             "수학"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "성취 점수보다 수행 과정을 확인합니다",
+              "text": "읽은 낱말을 해석하는 과정, 문장 구성, 계산 절차 중 반복적으로 막히는 부분을 구분합니다. 학습 영역과 연령에 따라 양상이 다르므로 한 과제의 오류를 전체 능력의 문제로 확대하지 않습니다.",
+              "source_urls": [
+                "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/signs"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "글을 이해하기 어려우면 언어도 보나요?",
+              "answer": "네. 듣기·말하기와 읽기·쓰기의 연결을 검토할 수 있습니다.",
+              "source_urls": [
+                "https://www.asha.org/public/speech/disorders/learning-disabilities/"
+              ]
+            },
+            {
+              "question": "철자 실수만으로 진단하나요?",
+              "answer": "아닙니다. 반복되는 기능의 어려움과 전체 평가 맥락이 필요합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/dyslexia-in-children/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 학습장애 · 어떤 학습 과정이 특히 어렵나요? | 연결한의원 청주오창",
+            "description": "오창 학습장애: 어떤 학습 과정이 특히 어렵나요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "context": {
           "question": "불안이나 집중 문제와 어떻게 구별할까요?",
@@ -679,7 +2191,36 @@
             "감각·언어",
             "교육 환경",
             "주의·불안"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "감별·동반 문제를 구분합니다",
+              "text": "교육 기회와 시청각·언어 상태를 확인합니다. 불안·주의 문제도 수행에 영향을 주거나 학습 어려움과 함께 나타날 수 있어 한 원인으로 단정하지 않습니다.",
+              "source_urls": [
+                "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/diagnosed"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "집중이 안 되면 ADHD로 결론 내리나요?",
+              "answer": "아닙니다. ADHD는 별도의 발달·기능 평가가 필요합니다.",
+              "source_urls": [
+                "https://www.cdc.gov/adhd/diagnosis/index.html"
+              ]
+            },
+            {
+              "question": "언어 평가가 필요한 경우도 있나요?",
+              "answer": "이해·표현의 어려움이 학습과 함께 보이면 언어 전문 평가를 논의할 수 있습니다.",
+              "source_urls": [
+                "https://www.asha.org/public/speech/disorders/learning-disabilities/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 학습장애 · 불안이나 집중 문제와 어떻게 구별할까요? | 연결한의원 청주오창",
+            "description": "오창 학습장애: 불안이나 집중 문제와 어떻게 구별할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "assessment": {
           "question": "평가 전에 무엇을 모으면 좋을까요?",
@@ -692,7 +2233,36 @@
             "과제 예시",
             "지원 이력",
             "검사 목적"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "지원 전후 자료를 봅니다",
+              "text": "학습 자료, 교사 관찰과 교육 이력을 준비하세요. 발달·의료 이력과 영역별 수행을 평가하고 결과를 구체적인 지원 계획으로 설명받습니다.",
+              "source_urls": [
+                "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/diagnosed"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "한 번의 검사 점수로 정해지나요?",
+              "answer": "학습 이력과 기능, 교육 반응을 종합합니다.",
+              "source_urls": [
+                "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/diagnosed"
+              ]
+            },
+            {
+              "question": "읽기 평가 전에 확인할 다른 문제가 있나요?",
+              "answer": "시청각 문제 등 읽기 어려움을 설명할 다른 원인을 검토할 수 있습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/dyslexia-in-children/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 학습장애 · 평가 전에 무엇을 모으면 좋을까요? | 연결한의원 청주오창",
+            "description": "오창 학습장애: 평가 전에 무엇을 모으면 좋을까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "care": {
           "question": "지원은 어떤 방향으로 정하나요?",
@@ -705,7 +2275,36 @@
             "맞춤 교육",
             "환경 조정",
             "동반 문제"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "어려운 기능과 강점을 지원에 반영합니다",
+              "text": "학습장애 지원은 개별 기술을 가르치는 교육과 접근을 돕는 조정을 포함합니다. 예를 들어 음성 자료는 읽기의 부담을 줄이는 보조 수단이며, 필요한 읽기 교육 자체를 모두 대신하는 것은 아닙니다.",
+              "source_urls": [
+                "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/treatment"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "교육 방법은 모두 같나요?",
+              "answer": "영역별 어려움과 강점에 맞춰 교육 내용과 도구를 선택합니다.",
+              "source_urls": [
+                "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/treatment"
+              ]
+            },
+            {
+              "question": "성인의 업무 조정은 무엇을 논의하나요?",
+              "answer": "문서 읽어 주기나 정보 제시 방식 등 실제 과업에 필요한 지원을 논의할 수 있습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/dyslexia-in-adults/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 학습장애 · 지원은 어떤 방향으로 정하나요? | 연결한의원 청주오창",
+            "description": "오창 학습장애: 지원은 어떤 방향으로 정하나요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "daily": {
           "question": "가정에서는 어떤 방식이 도움이 될까요?",
@@ -718,7 +2317,36 @@
             "짧은 지시",
             "표현 도구",
             "비교 줄이기"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "평가 권고를 실제 과제에 적용합니다",
+              "text": "복잡한 문서를 짧게 나누거나 음성 정보를 활용하는 등 필요한 접근을 정하세요. 성인도 자신의 강점과 부담을 파악해 공부·업무의 방식을 조정할 수 있으며, 도구의 유용성은 실제 과제로 확인합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/dyslexia-in-adults/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "보조 도구를 쓰면 진단이 없어지나요?",
+              "answer": "도구는 접근을 지원합니다. 사용할 수 있게 됐다고 원래의 어려움이 모두 사라졌다는 뜻은 아닙니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/dyslexia-in-adults/"
+              ]
+            },
+            {
+              "question": "가정과 학교의 방법이 달라도 되나요?",
+              "answer": "공통 목표를 공유하고 어떤 방식이 수행을 돕는지 비교해 조정하는 것이 좋습니다.",
+              "source_urls": [
+                "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/treatment"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 학습장애 · 가정에서는 어떤 방식이 도움이 될까요? | 연결한의원 청주오창",
+            "description": "오창 학습장애: 가정에서는 어떤 방식이 도움이 될까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "followup": {
           "question": "교육 지원의 효과는 어떻게 살필까요?",
@@ -731,7 +2359,36 @@
             "기술 변화",
             "학교 참여",
             "정서 안전"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "교육 반응으로 다음 목표를 정합니다",
+              "text": "지원 후에도 특정 기술에서 어려움이 이어지는지, 배운 기능이 실제 과제에 쓰이는지 확인합니다. 기대한 진전이 적으면 교육 방법과 동반 문제를 다시 살피며, 점수만으로 지원의 가치를 결정하지 않습니다.",
+              "source_urls": [
+                "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/treatment"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "성인이 된 뒤에도 다시 조정하나요?",
+              "answer": "업무·학업 요구가 바뀌면 보조 도구와 평가 필요성을 재검토할 수 있습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/dyslexia-in-adults/"
+              ]
+            },
+            {
+              "question": "말 이해의 어려움이 남으면 어떻게 하나요?",
+              "answer": "학습 지원과 별개로 언어 기능의 경과와 추가 지원 필요성을 확인합니다.",
+              "source_urls": [
+                "https://www.asha.org/public/speech/disorders/learning-disabilities/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 학습장애 · 교육 지원의 효과는 어떻게 살필까요? | 연결한의원 청주오창",
+            "description": "오창 학습장애: 교육 지원의 효과는 어떻게 살필까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         }
       },
       "red_flags": [
@@ -740,21 +2397,77 @@
       ],
       "sources": [
         {
-          "title": "NICHD: Learning Disabilities",
+          "title": "NICHD: About Learning Disabilities",
           "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo",
-          "scope": "읽기·쓰기·수학 학습 어려움과 적절한 평가·교육 지원"
+          "scope": "특정 정보 처리와 읽기·쓰기·수학의 지속적 어려움, 지능이나 의지와 단순히 동일시할 수 없음.",
+          "checked_at": "2026-10-27"
         },
         {
           "title": "NIMH: Children and Mental Health",
           "url": "https://www.nimh.nih.gov/health/publications/children-and-mental-health",
           "scope": "아동·청소년의 발달 맥락, 지속되는 어려움과 기능 평가"
+        },
+        {
+          "title": "CDC: Diagnosing ADHD",
+          "url": "https://www.cdc.gov/adhd/diagnosis/index.html",
+          "scope": "단일 검사로 확진하지 않으며 발달력, 여러 생활 환경과 기능 저하, 다른 원인을 함께 평가한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: ADHD in adults",
+          "url": "https://www.nhs.uk/conditions/adhd-adults/",
+          "scope": "성인의 전문 평가, 다른 정신건강·학습 문제 검토, 생활·직장 조정과 치료 의사결정.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: ADHD in children and teenagers",
+          "url": "https://www.nhs.uk/conditions/adhd-children-teenagers/",
+          "scope": "연령과 발달을 고려한 평가, 비슷한 행동의 다른 이유, 평가 전에도 가능한 가정·학교 지원.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: Dyslexia in adults",
+          "url": "https://www.nhs.uk/conditions/dyslexia-in-adults/",
+          "scope": "성인에게 지속되는 읽기·쓰기 어려움, 평가 및 보조 도구·업무 환경 조정.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: Dyslexia in children",
+          "url": "https://www.nhs.uk/conditions/dyslexia-in-children/",
+          "scope": "읽기·철자 어려움과 지능의 구별, 시청각 등 다른 이유 검토, 평가와 교육적 지원.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NICHD: How are learning disabilities diagnosed?",
+          "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/diagnosed",
+          "scope": "발달·의료·학교 이력, 학습 수행과 지원 반응을 종합하는 평가.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "ASHA: Learning Disabilities",
+          "url": "https://www.asha.org/public/speech/disorders/learning-disabilities/",
+          "scope": "언어 기반 학습 문제에서 말 이해·표현·읽기·쓰기의 관계와 언어 평가·지원.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NICHD: What are some signs of learning disabilities?",
+          "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/signs",
+          "scope": "학습 영역별 다양한 신호, 연령·교육 경험에 따른 해석 및 신호만으로 진단할 수 없는 한계.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NICHD: What are the treatments for learning disabilities?",
+          "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/treatment",
+          "scope": "어려운 기능에 맞춘 교육, 강점 활용, 보조 기술과 개별화한 학습 지원.",
+          "checked_at": "2026-10-27"
         }
       ],
       "keywords": [
         "특정 학습장애",
         "읽기 어려움",
         "난독증",
-        "쓰기·수학 학습 문제"
+        "쓰기·수학 학습 문제",
+        "학습장애"
       ],
       "status": "published",
       "medical_review_status": "pending",
@@ -762,7 +2475,55 @@
       "member_relationships": {
         "학습장애": "canonical"
       },
-      "published_at": "2026-10-21"
+      "published_at": "2026-10-21",
+      "reading_sections": [
+        {
+          "heading": "학습장애는 성적표의 다른 이름이 아닙니다",
+          "text": "읽기·쓰기·수학의 특정 어려움은 배울 기회와 발달 상태를 고려해 평가합니다. 낮은 성적만으로 정하지 않으며, 어떤 정보 처리와 학습 단계가 어려운지 구분하는 것이 지원 계획의 출발점입니다.",
+          "source_urls": [
+            "https://www.nichd.nih.gov/health/topics/learning/conditioninfo"
+          ]
+        },
+        {
+          "heading": "평가와 교육을 연결합니다",
+          "text": "평가는 어려운 기능과 지원 목표를 정합니다. 학교 관찰과 교육 반응, 언어·주의·정서 문제를 연결해 필요한 검사와 학습 계획을 논의합니다.",
+          "source_urls": [
+            "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/diagnosed"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "학습장애는 지능이 낮다는 뜻인가요?",
+          "answer": "아닙니다. 특정 학습 기능의 어려움과 전반적인 지적 능력은 구별합니다.",
+          "source_urls": [
+            "https://www.nichd.nih.gov/health/topics/learning/conditioninfo"
+          ]
+        },
+        {
+          "question": "난독증과 모든 학습장애가 같은가요?",
+          "answer": "아닙니다. 난독증은 읽기·철자 어려움과 관련되며 학습 문제 전체를 뜻하지 않습니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/dyslexia-in-children/"
+          ]
+        },
+        {
+          "question": "성인도 평가를 받을 수 있나요?",
+          "answer": "읽기·쓰기 문제가 지속되어 학업이나 업무를 방해한다면 평가와 필요한 조정을 논의할 수 있습니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/dyslexia-in-adults/"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주 오창 학습장애 | 평가·교육 지원",
+        "description": "청주 오창 학습장애의 영역별 평가·감별과 교육 지원을 안내합니다."
+      },
+      "updated_at": "2026-10-27",
+      "source_checked_date": "2026-10-27",
+      "editorial_revision": "women-sleep-expansion-20261027",
+      "reviewed_by": null,
+      "reviewed_at": null
     },
     {
       "id": "mind-palpitations",
@@ -774,7 +2535,7 @@
       ],
       "name": "가슴 두근거림과 심계항진",
       "kind": "symptom",
-      "overview": "가슴이 뛰거나 맥박이 건너뛰는 느낌은 스트레스 때도 생기지만 부정맥, 빈혈, 갑상선 문제나 약물 영향에서도 나타날 수 있습니다. 불안이 함께 있다는 이유로 심인성으로 단정하지 않고 동반 증상과 발생 상황부터 확인합니다.",
+      "overview": "청주 오창 두근거림·심계항진 평가에서는 증상의 느낌과 실제 심장 리듬을 구별하고 전신 원인도 확인합니다.",
       "sections": {
         "symptoms": {
           "question": "두근거림을 어떻게 기록할까요?",
@@ -787,7 +2548,36 @@
             "빠름·불규칙",
             "지속 시간",
             "동반 증상"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "증상과 전신 영향을 함께 묻습니다",
+              "text": "시작·종료 양상과 발생 빈도, 활동과의 관계를 확인합니다. 박동이 강하게 느껴지는 것과 실제 리듬 이상은 일치하지 않을 수 있으므로, 어지럼·호흡곤란 같은 동반 변화도 해석에 포함합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/symptoms"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "가슴이 아닌 목에서 느껴져도 해당하나요?",
+              "answer": "네. 목이나 인후 부위에서 박동을 두드러지게 느끼기도 합니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/symptoms-causes/syc-20373196"
+              ]
+            },
+            {
+              "question": "기록에서 중요한 것은 무엇인가요?",
+              "answer": "발생 상황과 지속 양상, 동반 증상, 복용한 물질을 구체적으로 남기는 것입니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/diagnosis-treatment/drc-20373201"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 두근거림 · 두근거림을 어떻게 기록할까요? | 연결한의원 청주오창",
+            "description": "오창 두근거림: 두근거림을 어떻게 기록할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "context": {
           "question": "어떤 유발 요인을 살펴야 할까요?",
@@ -800,7 +2590,36 @@
             "자극물",
             "복용약",
             "신체 질환"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "약물과 내분비 단서를 놓치지 않습니다",
+              "text": "처방약·일반약·보충제와 자극 물질을 함께 확인합니다. 더위에 예민하고 떨림이나 체중 변화가 동반된다면 갑상선 원인 등을 검토할 수 있지만, 증상 조합만으로 질환을 확정하지는 않습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "예민함과 두근거림이 있으면 불안인가요?",
+              "answer": "불안도 가능하지만 신체 원인과 함께 평가해야 합니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/symptoms-causes/syc-20373196"
+              ]
+            },
+            {
+              "question": "복용 목록은 어디까지 포함하나요?",
+              "answer": "감기약·비타민·보충제와 카페인 등도 진료에 알리세요.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/living-with"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 두근거림 · 어떤 유발 요인을 살펴야 할까요? | 연결한의원 청주오창",
+            "description": "오창 두근거림: 어떤 유발 요인을 살펴야 할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "assessment": {
           "question": "어떤 진료와 검사를 질문할까요?",
@@ -813,7 +2632,36 @@
             "병력",
             "심전도",
             "추적 계획"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "포착 가능성을 고려해 기록 방법을 고릅니다",
+              "text": "심전도는 검사하는 동안의 전기적 활동을 보여 줍니다. 증상이 간헐적이면 발생 빈도에 맞춰 홀터나 더 긴 기록을 검토할 수 있으며, 혈액검사 등은 의심되는 전신 원인에 맞게 선택합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/diagnosis"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "홀터와 이벤트 기록은 왜 쓰나요?",
+              "answer": "짧은 진료실 검사에서 나타나지 않는 증상을 기록하기 위해 고려합니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/diagnosis-treatment/drc-20373201"
+              ]
+            },
+            {
+              "question": "심장초음파는 모두 필요한가요?",
+              "answer": "심장의 구조·혈류 확인 필요성에 따라 선택하며 모든 두근거림에 일률 적용하지 않습니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/diagnosis-treatment/drc-20373201"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 두근거림 · 어떤 진료와 검사를 질문할까요? | 연결한의원 청주오창",
+            "description": "오창 두근거림: 어떤 진료와 검사를 질문할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "care": {
           "question": "원인이 확인되면 어떻게 관리하나요?",
@@ -826,7 +2674,36 @@
             "원인 치료",
             "불안 병행",
             "약물 검토"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "확인한 원인과 위험을 기준으로 결정합니다",
+              "text": "부정맥이 확인되면 종류와 임상 위험에 따라 치료가 달라집니다. 약물이나 시술 등의 예상 이익과 부담을 설명받고, 증상이 줄어드는 것 외에 어떤 목표로 치료하는지 질문하세요.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/treatment"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "다른 사람과 같은 처방을 쓰나요?",
+              "answer": "같은 두근거림이라도 원인과 부정맥 종류에 따라 선택이 달라집니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/treatment"
+              ]
+            },
+            {
+              "question": "생활 조정만 선택하는 경우도 있나요?",
+              "answer": "심장 질환 여부와 유발 요인에 따라 의료진이 관리 범위를 정할 수 있습니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/diagnosis-treatment/drc-20373201"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 두근거림 · 원인이 확인되면 어떻게 관리하나요? | 연결한의원 청주오창",
+            "description": "오창 두근거림: 원인이 확인되면 어떻게 관리하나요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "daily": {
           "question": "증상이 있을 때 무엇에 주의할까요?",
@@ -839,7 +2716,36 @@
             "활동 멈춤",
             "섭취 조정",
             "기록 범위"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "진단 후의 안전 계획을 확인합니다",
+              "text": "처방은 지시에 따라 사용하고 일반약·보충제를 추가하기 전에도 상의하세요. 진단받은 리듬 문제에 맞는 활동 범위와 증상 변화 시 행동을 확인하며, 유발 요인 조정은 실제 경과와 연결해 봅니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/living-with"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "증상이 없으면 약을 줄여도 되나요?",
+              "answer": "임의로 바꾸지 말고 치료 목표와 중단·변경 조건을 담당 의료진에게 확인하세요.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/treatment"
+              ]
+            },
+            {
+              "question": "커피와 운동은 모두 금지인가요?",
+              "answer": "일률적인 금지보다 개인별 유발 요인과 심장 상태에 맞춘 지침을 확인합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/living-with"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 두근거림 · 증상이 있을 때 무엇에 주의할까요? | 연결한의원 청주오창",
+            "description": "오창 두근거림: 증상이 있을 때 무엇에 주의할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "followup": {
           "question": "어떤 변화가 재진 이유인가요?",
@@ -852,7 +2758,36 @@
             "빈도 변화",
             "운동 영향",
             "재평가"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "새로운 양상은 이전 결과와 함께 재평가합니다",
+              "text": "횟수·지속 시간이 늘거나 활동 시 불편이 새로 생기면 이전 검사 결과와 비교해 알려 주세요. 현재 두근거림에 가슴 통증·호흡곤란·실신이 함께라면 정기 예약을 기다리지 말고 즉각 진료를 받으세요.",
+              "source_urls": [
+                "https://www.nhs.uk/symptoms/heart-palpitations/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "이전 검사 자료도 가져가나요?",
+              "answer": "검사 당시 증상이 있었는지와 함께 가져가면 기록 선택과 결과 비교에 도움이 됩니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/diagnosis"
+              ]
+            },
+            {
+              "question": "재진의 간격은 모두 같나요?",
+              "answer": "확인된 원인과 치료, 증상 변화에 따라 개별적으로 정합니다.",
+              "source_urls": [
+                "https://www.nhlbi.nih.gov/health/arrhythmias/living-with"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 두근거림 · 어떤 변화가 재진 이유인가요? | 연결한의원 청주오창",
+            "description": "오창 두근거림: 어떤 변화가 재진 이유인가요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         }
       },
       "red_flags": [
@@ -863,18 +2798,69 @@
         {
           "title": "NHS: Heart palpitations",
           "url": "https://www.nhs.uk/symptoms/heart-palpitations/",
-          "scope": "두근거림의 유발 요인, 신체 원인과 긴급 동반 증상"
+          "scope": "두근거림의 다양한 느낌과 유발 요인, 빈혈·갑상선·리듬 원인 가능성, 재진 및 동반 증상 안전 기준.",
+          "checked_at": "2026-10-27"
         },
         {
           "title": "NHS: Postural tachycardia syndrome",
           "url": "https://www.nhs.uk/conditions/postural-tachycardia-syndrome/",
           "scope": "기립 때 나타나는 증상의 감별과 자세별 맥박·혈압 평가"
+        },
+        {
+          "title": "NHS: Generalised anxiety disorder (GAD)",
+          "url": "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/",
+          "scope": "광범위한 걱정과 기능 영향의 평가, 우울 등 동반 문제와 치료 선택.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "Mayo Clinic: Heart palpitations — Diagnosis and treatment",
+          "url": "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/diagnosis-treatment/drc-20373201",
+          "scope": "간헐 증상의 심전도·홀터·이벤트 기록, 원인에 따른 치료, 진료 준비와 자극 물질 점검.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "Mayo Clinic: Heart palpitations — Symptoms and causes",
+          "url": "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/symptoms-causes/syc-20373196",
+          "scope": "쉬거나 움직일 때의 두근거림, 스트레스·약물·호르몬 등 원인과 심장질환 가능성, 동반 증상 주의.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI: Arrhythmias — Diagnosis",
+          "url": "https://www.nhlbi.nih.gov/health/arrhythmias/diagnosis",
+          "scope": "병력·가족력·진찰, 심전도와 장시간 기록, 필요에 따른 갑상선·전해질 등 검사.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI: Arrhythmias — Living With",
+          "url": "https://www.nhlbi.nih.gov/health/arrhythmias/living-with",
+          "scope": "진단 뒤 추적, 처방 준수, 모든 약·보충제 점검, 개인별 유발 요인과 증상 변화 보고.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI: Arrhythmias — Symptoms",
+          "url": "https://www.nhlbi.nih.gov/health/arrhythmias/symptoms",
+          "scope": "부정맥은 증상만으로 구별하기 어려우며 두근거림과 어지럼·호흡곤란 등의 양상을 기록한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHLBI: Arrhythmias — Treatment",
+          "url": "https://www.nhlbi.nih.gov/health/arrhythmias/treatment",
+          "scope": "확인된 부정맥의 종류·위험에 따른 개별 치료, 약물·시술 및 생활 관리의 선택.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: Overactive thyroid — Symptoms",
+          "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+          "scope": "예민함·두근거림·떨림·더위 민감·체중 변화 등의 조합은 갑상선 등 신체 원인 검토 대상이다.",
+          "checked_at": "2026-10-27"
         }
       ],
       "keywords": [
         "심장이 빨리 뜀",
         "맥박 불규칙",
-        "가슴 두근거림"
+        "가슴 두근거림",
+        "두근거림",
+        "심계항진"
       ],
       "status": "published",
       "medical_review_status": "pending",
@@ -884,7 +2870,55 @@
         "가슴-두근거림": "alias",
         "심장-두근거림": "alias"
       },
-      "published_at": "2026-10-21"
+      "published_at": "2026-10-21",
+      "reading_sections": [
+        {
+          "heading": "두근거림은 부정맥과 같은 말이 아닙니다",
+          "text": "빠르게 뛰거나 건너뛰는 듯한 느낌만으로 리듬을 진단할 수 없습니다. 발생 경과와 동반 증상, 심장 병력 등을 확인하고 진찰과 필요한 기록 검사를 연결해 해석합니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/arrhythmias/symptoms"
+          ]
+        },
+        {
+          "heading": "불안과 신체 원인을 양자택일하지 않습니다",
+          "text": "스트레스나 약물이 증상을 유발할 수 있고, 갑상선이나 심장 질환이 원인일 수도 있습니다. 불안이 느껴졌다는 사실만으로 신체 평가를 생략하지 않으며 임상 단서에 맞게 감별합니다.",
+          "source_urls": [
+            "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/symptoms-causes/syc-20373196"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "한 번의 정상 심전도로 끝나나요?",
+          "answer": "간헐적인 증상은 검사 때 잡히지 않을 수 있어 경과에 따라 추가 기록을 고려합니다.",
+          "source_urls": [
+            "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/diagnosis-treatment/drc-20373201"
+          ]
+        },
+        {
+          "question": "갑상선 검사도 할 수 있나요?",
+          "answer": "떨림·더위 민감·체중 변화 등 단서와 병력에 따라 검토할 수 있습니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/"
+          ]
+        },
+        {
+          "question": "모두 심장 치료를 받아야 하나요?",
+          "answer": "아닙니다. 확인된 원인과 위험에 따라 관리가 달라집니다.",
+          "source_urls": [
+            "https://www.nhlbi.nih.gov/health/arrhythmias/treatment"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주 오창 두근거림·심계항진 | 심전도와 원인 감별",
+        "description": "청주 오창 심계항진·두근거림 진료 질문을 정리합니다. 심전도와 장시간 기록의 역할, 약물·갑상선 등 원인과 추적 계획을 확인하세요."
+      },
+      "updated_at": "2026-10-27",
+      "source_checked_date": "2026-10-27",
+      "editorial_revision": "women-sleep-expansion-20261027",
+      "reviewed_by": null,
+      "reviewed_at": null
     },
     {
       "id": "mind-overstimulation",
@@ -895,7 +2929,7 @@
       ],
       "name": "예민함과 소진감을 느낄 때",
       "kind": "symptom",
-      "overview": "신경과민이나 신경쇠약은 예민함, 피로, 잠의 변화 같은 여러 불편을 설명할 때 쓰이는 표현이지 원인이 정해진 하나의 진단은 아닙니다. 평소와 달라진 정도와 생활 부담을 정리하며 몸과 마음의 원인을 함께 살핍니다.",
+      "overview": "청주 오창 신경과민 평가에서는 주관적인 예민함을 구체화하고 정서·환경·신체 원인을 나누어 검토합니다.",
       "sections": {
         "symptoms": {
           "question": "예민하다는 말에는 무엇이 포함되나요?",
@@ -908,7 +2942,36 @@
             "자극 민감",
             "피로·수면",
             "상황 차이"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "감정·신체·행동 영역을 나누어 봅니다",
+              "text": "예민함이 긴장, 짜증, 압도되는 느낌인지 구체화하고 집중이나 대인 관계에 미친 영향을 확인합니다. 같은 말로 표현해도 필요한 평가가 다를 수 있어 증상의 맥락을 질문합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "짜증만으로 불안장애인가요?",
+              "answer": "한 증상으로 판단하지 않고 동반 변화와 생활 영향을 봅니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad"
+              ]
+            },
+            {
+              "question": "피하는 일이 늘어난 것도 중요한가요?",
+              "answer": "네. 회피로 일상이 제한되는지는 도움의 필요성을 판단하는 자료입니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 신경과민 · 예민하다는 말에는 무엇이 포함되나요? | 연결한의원 청주오창",
+            "description": "오창 신경과민: 예민하다는 말에는 무엇이 포함되나요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "context": {
           "question": "원인을 하나로 정하면 왜 곤란할까요?",
@@ -921,7 +2984,36 @@
             "부담",
             "신체 요인",
             "기분 요인"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "자극·정서·전신 변화의 순서를 봅니다",
+              "text": "부담에 대한 반응인지 지속되는 걱정인지 구분합니다. 흥미·활력 저하나 떨림·두근거림도 함께 전하면 정서와 신체 원인의 평가 방향을 정하는 데 도움이 됩니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/depression"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "항상 스트레스부터 원인으로 보나요?",
+              "answer": "아닙니다. 부담과의 관계를 보되 다른 정서·신체 설명도 검토합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet"
+              ]
+            },
+            {
+              "question": "더위 민감과 체중 변화도 관련 있나요?",
+              "answer": "갑상선 등 신체 원인을 고려할 단서가 될 수 있지만 증상만으로 확진하지 않습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 신경과민 · 원인을 하나로 정하면 왜 곤란할까요? | 연결한의원 청주오창",
+            "description": "오창 신경과민: 원인을 하나로 정하면 왜 곤란할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "assessment": {
           "question": "상담 전에 어떤 내용을 적을까요?",
@@ -934,7 +3026,36 @@
             "생활 예시",
             "수면·복용",
             "평가 질문"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "경과와 생활 영향을 전하세요",
+              "text": "시작 시점과 회피, 약 목록을 준비하세요. 진료에서는 걱정의 조절과 일상 손상, 신체 원인과 추가 평가의 필요성을 확인합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "질문지 점수로 진단이 끝나나요?",
+              "answer": "아닙니다. 증상 경과와 병력, 기능을 종합해 해석합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/"
+              ]
+            },
+            {
+              "question": "업무량의 변화도 설명하나요?",
+              "answer": "과제·역할·관계의 변화가 증상에 어떤 영향을 줬는지 설명하면 도움이 됩니다.",
+              "source_urls": [
+                "https://www.nhs.uk/every-mind-matters/lifes-challenges/work-related-stress/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 신경과민 · 상담 전에 어떤 내용을 적을까요? | 연결한의원 청주오창",
+            "description": "오창 신경과민: 상담 전에 어떤 내용을 적을까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "care": {
           "question": "도움을 받는 순서는 무엇일까요?",
@@ -947,7 +3068,36 @@
             "부담 조정",
             "관련 진료",
             "목표 확인"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "진단·선호에 맞춰 치료를 논의합니다",
+              "text": "걱정이 생활을 방해하면 심리치료·약물치료를 논의합니다. 같은 방법을 일률적으로 적용하지 않고 기대하는 변화, 치료 부담과 건강 상태를 고려해 선택합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "생활 조정만으로 충분한가요?",
+              "answer": "생활 영향·경과에 따라 전문 치료를 검토합니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad"
+              ]
+            },
+            {
+              "question": "치료 목표는 예민함을 없애는 것인가요?",
+              "answer": "불편의 완화와 함께 회피를 줄이고 필요한 생활을 수행하는 목표를 정할 수 있습니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 신경과민 · 도움을 받는 순서는 무엇일까요? | 연결한의원 청주오창",
+            "description": "오창 신경과민: 도움을 받는 순서는 무엇일까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "daily": {
           "question": "일상에서 어떤 조정을 시도할까요?",
@@ -960,7 +3110,36 @@
             "일 나누기",
             "회복 시간",
             "도움 요청"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "조절할 수 있는 부담부터 구체화합니다",
+              "text": "하루의 요구와 감당 가능한 범위를 비교하고 작은 목표로 나누세요. 도움을 요청할 일과 유지할 활동을 구분하며, 어떤 조정이 실제 스트레스와 생활 기능을 바꾸었는지 다음 면담에서 검토합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/tips-to-reduce-stress/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "업무 조정이 치료 계획에 들어가나요?",
+              "answer": "부담 요인이라면 과제·일정의 조정과 지원 요청을 함께 논의할 수 있습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/every-mind-matters/lifes-challenges/work-related-stress/"
+              ]
+            },
+            {
+              "question": "휴식만 하면 모든 원인이 해결되나요?",
+              "answer": "그렇게 보장할 수 없습니다. 생활 방해가 이어지면 평가와 지원을 다시 확인하세요.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 신경과민 · 일상에서 어떤 조정을 시도할까요? | 연결한의원 청주오창",
+            "description": "오창 신경과민: 일상에서 어떤 조정을 시도할까요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         },
         "followup": {
           "question": "상태가 오래가면 무엇을 확인하나요?",
@@ -973,7 +3152,36 @@
             "기능 회복",
             "새 신호",
             "환경 지원"
-          ]
+          ],
+          "reading_sections": [
+            {
+              "heading": "증상과 회복을 함께 비교합니다",
+              "text": "느낌의 강도와 함께 회피, 관계와 업무의 변화를 비교합니다. 회복이 부족하거나 새 문제가 생기면 이전 평가와 선택한 지원을 다시 검토하세요.",
+              "source_urls": [
+                "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "기분 저하가 새로 생기면 말하나요?",
+              "answer": "네. 흥미·활력·집중 변화는 동반 정서 문제를 살필 자료가 됩니다.",
+              "source_urls": [
+                "https://www.nimh.nih.gov/health/publications/depression"
+              ]
+            },
+            {
+              "question": "두근거림은 같은 원인으로 봐도 되나요?",
+              "answer": "새롭거나 반복되는 두근거림은 심장·약물 등 다른 원인도 확인해야 합니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/symptoms-causes/syc-20373196"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "청주 오창 신경과민 · 상태가 오래가면 무엇을 확인하나요? | 연결한의원 청주오창",
+            "description": "오창 신경과민: 상태가 오래가면 무엇을 확인하나요? 평가에서 확인할 사항과 진료 준비, 자주 묻는 질문을 정리합니다."
+          }
         }
       },
       "red_flags": [
@@ -982,20 +3190,82 @@
       ],
       "sources": [
         {
-          "title": "NHS: Stress",
+          "title": "NHS: Get help with stress",
           "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
-          "scope": "스트레스 반응의 다양성, 일상 조절과 도움 요청"
+          "scope": "스트레스의 집중·감정·신체 영향, 부담 파악과 작은 실천, 일상 영향이 클 때의 도움.",
+          "checked_at": "2026-10-27"
         },
         {
           "title": "WHO: Stress",
           "url": "https://www.who.int/news-room/questions-and-answers/item/stress",
           "scope": "정상적인 스트레스 반응과 과도한 부담에 대한 지원"
+        },
+        {
+          "title": "NIMH: Depression",
+          "url": "https://www.nimh.nih.gov/health/publications/depression",
+          "scope": "흥미·기분·활력 변화와 함께 나타날 수 있는 집중·기억·결정 어려움, 개별 평가.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS Every Mind Matters: Stress",
+          "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/",
+          "scope": "스트레스 반응과 유발 상황, 피로·예민함·기능 영향 관찰 및 대처.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: Generalised anxiety disorder (GAD)",
+          "url": "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/",
+          "scope": "광범위한 걱정과 기능 영향의 평가, 우울 등 동반 문제와 치료 선택.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NIMH: Generalized Anxiety Disorder: What You Need to Know",
+          "url": "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad",
+          "scope": "조절하기 어려운 걱정과 긴장·집중 문제, 신체 원인 검토 및 심리·약물치료.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "Mayo Clinic: Heart palpitations — Symptoms and causes",
+          "url": "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/symptoms-causes/syc-20373196",
+          "scope": "쉬거나 움직일 때의 두근거림, 스트레스·약물·호르몬 등 원인과 심장질환 가능성, 동반 증상 주의.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: Heart palpitations",
+          "url": "https://www.nhs.uk/symptoms/heart-palpitations/",
+          "scope": "두근거림의 다양한 느낌과 유발 요인, 빈혈·갑상선·리듬 원인 가능성, 재진 및 동반 증상 안전 기준.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NIMH: I’m So Stressed Out!",
+          "url": "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet",
+          "scope": "외부 부담에 대한 스트레스와 지속되는 불안의 차이, 회피·생활 방해 시 전문적 도움.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: 10 stress busters",
+          "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/tips-to-reduce-stress/",
+          "scope": "스트레스 원인 정리, 부담 조정, 사회적 지지와 실행 가능한 생활 대처.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS: Overactive thyroid — Symptoms",
+          "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+          "scope": "예민함·두근거림·떨림·더위 민감·체중 변화 등의 조합은 갑상선 등 신체 원인 검토 대상이다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "title": "NHS Every Mind Matters: Work-related stress",
+          "url": "https://www.nhs.uk/every-mind-matters/lifes-challenges/work-related-stress/",
+          "scope": "업무 부담과 집중·감정·행동의 관계, 과제·경계 조정 및 도움 요청.",
+          "checked_at": "2026-10-27"
         }
       ],
       "keywords": [
         "예민함",
         "정서적 소진",
-        "긴장·피로"
+        "긴장·피로",
+        "신경과민"
       ],
       "status": "published",
       "medical_review_status": "pending",
@@ -1015,7 +3285,55 @@
           "쉬어도 회복되지 않는 피로와 기능 감소가 있다면 신체·수면·기분 요인을 함께 평가하며 의지나 성격의 문제로 탓하지 않습니다."
         ]
       },
-      "published_at": "2026-10-21"
+      "published_at": "2026-10-21",
+      "reading_sections": [
+        {
+          "heading": "표현을 증상과 기능으로 풀어 확인합니다",
+          "text": "예민함만으로 진단하지 않습니다. 긴장·걱정·짜증과 회피, 업무·관계의 영향과 발생 시점을 나누어 실제 어려움을 구체화하고 다른 원인도 함께 살핍니다.",
+          "source_urls": [
+            "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/"
+          ]
+        },
+        {
+          "heading": "심리·신체 원인을 함께 검토합니다",
+          "text": "불안도 긴장과 집중 곤란을 만듭니다. 신체 증상을 모두 불안 때문이라고 가정하지 말고 병력과 진찰로 다른 원인의 평가 여부를 판단합니다.",
+          "source_urls": [
+            "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "신경과민만으로 불안장애를 진단하나요?",
+          "answer": "아닙니다. 걱정의 양상과 조절 가능성, 기능 영향 등을 평가합니다.",
+          "source_urls": [
+            "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/"
+          ]
+        },
+        {
+          "question": "갑상선 문제도 비슷할 수 있나요?",
+          "answer": "예민함·떨림·두근거림 등이 나타날 수 있어 동반 단서에 따라 검토합니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/"
+          ]
+        },
+        {
+          "question": "정상 검사면 문제가 없나요?",
+          "answer": "검사로 설명되지 않는 걱정과 기능 저하도 평가·지원할 수 있습니다.",
+          "source_urls": [
+            "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주 오창 신경과민 | 증상 구분과 원인 평가",
+        "description": "청주 오창 신경과민을 하나의 질환으로 단정하지 않습니다. 걱정·긴장과 신체 단서, 평가 자료와 치료 선택, 일상 기능의 경과를 확인하세요."
+      },
+      "updated_at": "2026-10-27",
+      "source_checked_date": "2026-10-27",
+      "editorial_revision": "women-sleep-expansion-20261027",
+      "reviewed_by": null,
+      "reviewed_at": null
     },
     {
       "id": "mind-family-stress",

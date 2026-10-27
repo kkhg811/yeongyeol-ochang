@@ -22,6 +22,10 @@ def main():
     later=set(json.loads(later_file.read_text())['profile_ids']) if later_file.exists() else set()
     newer_file=ROOT/'src/content/series-revisions-fortyfive-20261025.json'
     if newer_file.exists():later.update(json.loads(newer_file.read_text())['profile_ids'])
+    extension_file=ROOT/'src/content/series-revisions-women-urology-20261026.json'
+    if extension_file.exists():later.update(json.loads(extension_file.read_text())['profile_ids'])
+    latest_file=ROOT/'src/content/series-revisions-women-sleep-20261027.json'
+    if latest_file.exists():later.update(json.loads(latest_file.read_text())['profile_ids'])
     for p in raw['profiles']:
         if p['id'] not in set(IDS)|later:assert p==before[p['id']],p['id']+' unexpectedly changed'
     ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9','i':'http://www.google.com/schemas/sitemap-image/1.1'}

@@ -2,15 +2,15 @@
   "renderer_version": "clinical-information-diagrams-v2",
   "renderer": "Pillow / exact text and editorial shapes; no generative model",
   "diagram_policy": "Supplied observation/discussion labels only; not a diagnostic algorithm or treatment outcome graphic",
-  "built_at": "2026-10-25T21:21:53+09:00",
+  "built_at": "2026-10-27T20:34:56+09:00",
   "catalog_path": "src/content/clinical-catalog.json",
-  "catalog_sha256": "185eed5468814e44f96b8ca4b9ca4b08d53ff73d03ccbac47c9e0bb88e99e527",
+  "catalog_sha256": "c4fe43568b53c381b74a6a40924a5c8f0d14f60d8f11e6ae9a28bcce421fbbd7",
   "font_path": "tools/fonts/NotoSansKR-Variable.ttf",
   "font_sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
   "font_license": "SIL Open Font License 1.1; tools/fonts/OFL-NotoSansKR.txt",
-  "profiles": 187,
-  "original_diagrams": 1122,
-  "total_renditions": 2244,
+  "profiles": 189,
+  "original_diagrams": 1134,
+  "total_renditions": 2268,
   "assets": [
     {
       "profile_id": "msk-frozen-shoulder",
@@ -16246,7 +16246,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-hand-numbness",
@@ -18706,7 +18706,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-neuralgia",
@@ -20182,7 +20182,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-shoulder-pain",
@@ -23134,7 +23134,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-sacroiliac-pain",
@@ -25594,7 +25594,7 @@
           ]
         }
       },
-      "cached": false
+      "cached": true
     },
     {
       "profile_id": "msk-rotator-cuff-tear",
@@ -92003,6 +92003,990 @@
           "font_size": 76,
           "lines": [
             "재평가 신호"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              597,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "symptoms",
+      "topic_label": "증상 확인",
+      "question": "어떤 배뇨 불편을 나누어 기록하나요?",
+      "labels": [
+        "시작 지연",
+        "약한 줄기",
+        "남은 느낌"
+      ],
+      "path": "docs/images/clinical-guides/urology-benign-prostate/symptoms.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-benign-prostate/symptoms-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 20924,
+      "thumbnail_bytes": 8918,
+      "sha256": "a654fe64be7023bb77b60a9abbc9c71578722802fa6ba25d3765241145907bf4",
+      "thumbnail_sha256": "aaef5b4435742939f253dbe2105281cea53c1145ba39ae31c04f6ffccd979c82",
+      "content_hash": "f91c22ffd6089d8e7ccd034ca8e40614c80eb62f01af2fbd70d89ce62ba68f3f",
+      "alt": "전립선비대증: 증상 확인. 시작 지연, 약한 줄기, 남은 느낌을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "전립선비대증"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              402,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "시작 지연"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              527,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "약한 줄기"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              527,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "남은 느낌"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              527,
+              844
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "context",
+      "topic_label": "관련 요인",
+      "question": "남성의 배뇨 불편은 모두 전립선비대증인가요?",
+      "labels": [
+        "전립선 크기",
+        "다른 배뇨 원인",
+        "별도 암 평가"
+      ],
+      "path": "docs/images/clinical-guides/urology-benign-prostate/context.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-benign-prostate/context-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 21458,
+      "thumbnail_bytes": 9880,
+      "sha256": "d7654f842609a076491ca2c396dc0e02faa701fc3700f205aa6b79dc0ae2c284",
+      "thumbnail_sha256": "624a4de157229aac71f97e58f9d7642be7078f31c5bf3862a341b102cfc68869",
+      "content_hash": "e1efcd7185aebd82a2aa0203bb27f373f320f6e0ec14e0c30a1e9bc8adcc084e",
+      "alt": "전립선비대증: 관련 요인. 전립선 크기, 다른 배뇨 원인, 별도 암 평가을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "전립선비대증"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              402,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "전립선 크기"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              597,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "다른 배뇨 원인"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              684,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "별도 암 평가"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              614,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "assessment",
+      "topic_label": "진찰·검사",
+      "question": "검사는 어떤 질문에 답하나요?",
+      "labels": [
+        "소변검사",
+        "요속·잔뇨",
+        "PSA 해석"
+      ],
+      "path": "docs/images/clinical-guides/urology-benign-prostate/assessment.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-benign-prostate/assessment-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 19960,
+      "thumbnail_bytes": 9008,
+      "sha256": "9ca5f829a85f5aae128256c8abbf62db5773ab85058d486c62ee3743c0b9ccda",
+      "thumbnail_sha256": "5106bf31ac63242af49ce9a2f220a6389dbc4a170379a550b1be7eed3542cda5",
+      "content_hash": "d850fcada2a758161593054f7fa23d6b5411c8dac478eef76aba99d9edb5ead2",
+      "alt": "전립선비대증: 진찰·검사. 소변검사, 요속·잔뇨, PSA 해석을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "전립선비대증"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              402,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "소변검사"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              510,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "요속·잔뇨"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              554,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "PSA 해석"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              531,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "care",
+      "topic_label": "치료 상담",
+      "question": "관찰·약물·시술은 어떻게 선택하나요?",
+      "labels": [
+        "경과 관찰",
+        "약물 선택",
+        "시술 논의"
+      ],
+      "path": "docs/images/clinical-guides/urology-benign-prostate/care.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-benign-prostate/care-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 20810,
+      "thumbnail_bytes": 9028,
+      "sha256": "a92821de9c59eb73a5149883c254045479795786023cf66e2cf8f682f5892d51",
+      "thumbnail_sha256": "a632b496a04abcbe4bb3eeb82e6c7eac56d77eabdc7ebb98c21b20dc8df21833",
+      "content_hash": "d45714636d9b80df00109f659668aa1a0a9279da511d44953509199cd4cf9829",
+      "alt": "전립선비대증: 치료 상담. 경과 관찰, 약물 선택, 시술 논의을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "전립선비대증"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              402,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "경과 관찰"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              527,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "약물 선택"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              527,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "시술 논의"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              527,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "daily",
+      "topic_label": "생활 관리",
+      "question": "일상에서 무리 없이 조절할 것은 무엇인가요?",
+      "labels": [
+        "수분 시간",
+        "카페인·약물",
+        "편안한 배뇨"
+      ],
+      "path": "docs/images/clinical-guides/urology-benign-prostate/daily.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-benign-prostate/daily-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 20652,
+      "thumbnail_bytes": 9478,
+      "sha256": "f4994095cbe8955214e5edad8a58e70a16197cc175f4fec1b16f68b9119a7741",
+      "thumbnail_sha256": "dfa145697da05fdf8f07b8cbcb471590b584f23640db528f11ae9675d7833b32",
+      "content_hash": "1c194835a1d86cbc505a9f3ea84c80ce1283b8a1c083a3d1e2801335f28f4dac",
+      "alt": "전립선비대증: 생활 관리. 수분 시간, 카페인·약물, 편안한 배뇨을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "전립선비대증"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              402,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "수분 시간"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              527,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "카페인·약물"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              624,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "편안한 배뇨"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              597,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "followup",
+      "topic_label": "경과·재평가",
+      "question": "어떤 변화로 치료 반응을 확인하나요?",
+      "labels": [
+        "수면·활동",
+        "배뇨 변화",
+        "치료 불편"
+      ],
+      "path": "docs/images/clinical-guides/urology-benign-prostate/followup.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-benign-prostate/followup-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 19786,
+      "thumbnail_bytes": 8972,
+      "sha256": "c8958eec09726ac04378a74d38396e71a2eb8caed83e4ddc7e228472a72b0457",
+      "thumbnail_sha256": "1b17926d36b3baf642f9aac2fbaf450cc814730618adcec012fbab1be5d77bea",
+      "content_hash": "4530321d364ff6b7cc8659a3a15f911620c5266b4f077b3508539de9af87d35b",
+      "alt": "전립선비대증: 경과·재평가. 수면·활동, 배뇨 변화, 치료 불편을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "전립선비대증"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              402,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "수면·활동"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              554,
+              478
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "배뇨 변화"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              527,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "치료 불편"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              527,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "symptoms",
+      "topic_label": "증상 확인",
+      "question": "언제 새는지 어떻게 구분하나요?",
+      "labels": [
+        "기침·움직임",
+        "급한 뒤 누출",
+        "다른 누출"
+      ],
+      "path": "docs/images/clinical-guides/urology-urinary-incontinence/symptoms.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-urinary-incontinence/symptoms-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 19172,
+      "thumbnail_bytes": 8608,
+      "sha256": "a49506001b6e0cdea5c561f80ff835f7cc782d2d8fdb9bccb7dff2360270a59a",
+      "thumbnail_sha256": "0334615f26e26e9d461782120b3ef74079afdb93207c81751660243597fe2a5e",
+      "content_hash": "1393ef87dab4ba806e36ce94312856b3dc26a5d3bb6c119e0100ccd0a8a3151c",
+      "alt": "요실금: 증상 확인. 기침·움직임, 급한 뒤 누출, 다른 누출을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "요실금"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              239,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "기침·움직임"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              624,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "급한 뒤 누출"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              614,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "다른 누출"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              527,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "context",
+      "topic_label": "관련 상황",
+      "question": "복압성·절박성·혼합형은 어떻게 다른가요?",
+      "labels": [
+        "복압성",
+        "절박성",
+        "혼합·기타"
+      ],
+      "path": "docs/images/clinical-guides/urology-urinary-incontinence/context.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-urinary-incontinence/context-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 18992,
+      "thumbnail_bytes": 8208,
+      "sha256": "8eef25d69c36e6fc53da9f3fbef904de5d50ec73b5409bca5fefa6f5104e0549",
+      "thumbnail_sha256": "71d8def238af3668d37edaaa0f654a6bbae50be8827887b35a6ee41dfac5805e",
+      "content_hash": "80e56b151888d3c0a61c023d86d9811980bc18bb5d1d3e698ef660b7b50727ce",
+      "alt": "요실금: 관련 상황. 복압성, 절박성, 혼합·기타을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "요실금"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              239,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "복압성"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              440,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "절박성"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              440,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "혼합·기타"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              554,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "assessment",
+      "topic_label": "진찰·검사",
+      "question": "누출 일지와 검사는 무엇을 확인하나요?",
+      "labels": [
+        "누출 일지",
+        "진찰·소변",
+        "잔뇨 확인"
+      ],
+      "path": "docs/images/clinical-guides/urology-urinary-incontinence/assessment.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-urinary-incontinence/assessment-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 17782,
+      "thumbnail_bytes": 8402,
+      "sha256": "d5aabcc803be5660925f35e5ce4577586c047ce17cfa7e44d6e6891cb9b101a9",
+      "thumbnail_sha256": "3bd5623491023b31fdd205ce15d1d413ba682a9ee7aa130d5476ae2559ff6f35",
+      "content_hash": "af51c7278c32ef44dabe6d8070ecf63f0a3e93b038b29fa2931871d0dea9c13d",
+      "alt": "요실금: 진찰·검사. 누출 일지, 진찰·소변, 잔뇨 확인을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "요실금"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              239,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "누출 일지"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              527,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "진찰·소변"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              554,
+              660
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "잔뇨 확인"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              527,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "care",
+      "topic_label": "진료 상담",
+      "question": "유형에 맞는 관리는 어떻게 고르나요?",
+      "labels": [
+        "근육 훈련",
+        "방광 훈련",
+        "개별 치료"
+      ],
+      "path": "docs/images/clinical-guides/urology-urinary-incontinence/care.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-urinary-incontinence/care-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 19154,
+      "thumbnail_bytes": 8434,
+      "sha256": "263616f3b9efad2522528ac84dfbb073de8596d736991919e29614cfe1177526",
+      "thumbnail_sha256": "3521e2ec51759981d2d2d58a7fb2858c6f18858915d4fc0b12b8e2c36dfe114b",
+      "content_hash": "7bacb47d7d3610e9204588d6caed35ae4af50e091aefb12af1aefd57a46ddd09",
+      "alt": "요실금: 진료 상담. 근육 훈련, 방광 훈련, 개별 치료을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "요실금"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              239,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "근육 훈련"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              527,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "방광 훈련"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              527,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "개별 치료"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              527,
+              845
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "daily",
+      "topic_label": "생활 관리",
+      "question": "외출·수분·피부는 어떻게 관리하나요?",
+      "labels": [
+        "수분 균형",
+        "화장실 동선",
+        "피부 보호"
+      ],
+      "path": "docs/images/clinical-guides/urology-urinary-incontinence/daily.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-urinary-incontinence/daily-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 19500,
+      "thumbnail_bytes": 8754,
+      "sha256": "405ed6c2fe5dc14eba4090cf5cebb8c558aaeb71f6f8cdf8364868db2658f260",
+      "thumbnail_sha256": "eacdbe287f9673600e3dc54ed1ba3f42f8573564e4fee3073fd86c194d8043dd",
+      "content_hash": "3ba4936e0e9e28464ef3c099a534af1e94fed7727804bfb023ab950617272030",
+      "alt": "요실금: 생활 관리. 수분 균형, 화장실 동선, 피부 보호을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "요실금"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              239,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "수분 균형"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              527,
+              478
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "화장실 동선"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              597,
+              661
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "피부 보호"
+          ],
+          "bounds": [
+            [
+              230,
+              774,
+              527,
+              844
+            ]
+          ]
+        }
+      },
+      "cached": true
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "followup",
+      "topic_label": "변화 확인",
+      "question": "누출 감소 외에 무엇을 확인하나요?",
+      "labels": [
+        "누출 빈도",
+        "생활 회복",
+        "부작용 확인"
+      ],
+      "path": "docs/images/clinical-guides/urology-urinary-incontinence/followup.webp",
+      "thumbnail_path": "docs/images/clinical-guides/urology-urinary-incontinence/followup-480.webp",
+      "width": 1080,
+      "height": 1080,
+      "thumbnail_width": 480,
+      "thumbnail_height": 480,
+      "bytes": 19040,
+      "thumbnail_bytes": 8604,
+      "sha256": "7840b8d87180acf1da2db724c6c56a9f85caaf198e7f2063066be4bddcaed0d1",
+      "thumbnail_sha256": "807f717428786aa6e6f3fca1271a640d60a5492e1e9f7bf9c3ec9cd7fc9bed6e",
+      "content_hash": "5fabb5865bf721b4d4ac7c020726df8344ff63068e503f4f022d8d76766ec529",
+      "alt": "요실금: 변화 확인. 누출 빈도, 생활 회복, 부작용 확인을 정리한 정보도식",
+      "text_layout": {
+        "profile": {
+          "font_size": 59,
+          "lines": [
+            "요실금"
+          ],
+          "bounds": [
+            [
+              76,
+              161,
+              239,
+              216
+            ]
+          ]
+        },
+        "label_1": {
+          "font_size": 76,
+          "lines": [
+            "누출 빈도"
+          ],
+          "bounds": [
+            [
+              230,
+              406,
+              527,
+              477
+            ]
+          ]
+        },
+        "label_2": {
+          "font_size": 76,
+          "lines": [
+            "생활 회복"
+          ],
+          "bounds": [
+            [
+              230,
+              590,
+              527,
+              662
+            ]
+          ]
+        },
+        "label_3": {
+          "font_size": 76,
+          "lines": [
+            "부작용 확인"
           ],
           "bounds": [
             [

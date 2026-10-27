@@ -164,6 +164,9 @@ def search_index():
         idx.append({"title": PAIN_SERIES["h1"], "url": PAIN_SERIES["path"], "type": "통증 가이드", "keywords": PAIN_SERIES["description"]})
     if CLINICAL:
         for profile in CLINICAL["profiles"]:
+            if profile.get("standalone_hub"):
+                idx.append({"title": profile["page_metadata"]["title"], "url": profile["hub_path"],
+                            "type": "질환별 가이드", "keywords": profile["overview"] + " " + " ".join(profile.get("keywords", []))})
             for topic in profile["topics"]:
                 idx.append({"title": topic["h1"], "url": topic["path"], "type": "질환별 가이드", "keywords": topic["description"]})
     scenario_paths = {s["path"].lstrip("/") for s in PATIENT_SCENARIOS}
@@ -315,6 +318,12 @@ def main():
         if REVIEW_MODE:
             render("clinical_coverage.html", CLINICAL["config"]["coverage_path"] + ".html")
         for profile in CLINICAL["profiles"]:
+            if profile.get("standalone_hub"):
+                # Dedicated series need a real hub even without a legacy condition entry.
+                entry = {"slug": profile["canonical_slug"], "name": profile["name"], "display_name": profile["name"],
+                         "path": profile["hub_path"], "canonical_path": profile["hub_path"],
+                         "published_at": profile["published_at"], **profile["page_metadata"]}
+                render_clinical(profile, entry=entry)
             for topic in profile["topics"]:
                 render_clinical(profile, topic=topic)
         for scenario in PATIENT_SCENARIOS:

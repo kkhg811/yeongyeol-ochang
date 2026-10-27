@@ -1,0 +1,83 @@
+{
+  "updated_at": "2026-10-27",
+  "queries": 21,
+  "profiles": 18,
+  "core_pages": 126,
+  "new_core_pages": 0,
+  "source_checks": "passed",
+  "rendered_html_pages_checked": 126,
+  "distinct_detail_bodies": 108,
+  "preserved_image_files": 216,
+  "other_profiles_unchanged": true,
+  "priority80_unchanged": true,
+  "previous_urology_assessments_preserved": true,
+  "previous_miscarriage_copy_preserved": true,
+  "medical_review_status": "pending",
+  "search_exposure": {
+    "crawled": "unverified",
+    "indexed": "unverified",
+    "rank_one": "unverified",
+    "carousel": "unverified"
+  },
+  "production_build": "passed",
+  "diff_check": "passed",
+  "distinct_detail_bodies_across_both_sites": 216,
+  "source_research": {
+    "pregnancy": {
+      "research_file_sha256": "3bdbb8037dcf1c542128114f977ea639973b0753da5e410e133aade4ad43be21",
+      "profiles": 5,
+      "maximum_cumulative_source_words": 196,
+      "checked_at": "2026-10-27"
+    },
+    "uterine": {
+      "research_file_sha256": "24f5fd252e2fc825848b35eced0f866cb87d0d8e2a3bf7cabdd80ee0ff00e090",
+      "profiles": 5,
+      "maximum_cumulative_source_words": 200,
+      "checked_at": "2026-10-27"
+    },
+    "sleep": {
+      "research_file_sha256": "8d82e86eaaa695026e2a3061bcdd274bfa78517ebba26af4d237460ce9d3ebda",
+      "profiles": 3,
+      "maximum_cumulative_source_words": 150,
+      "checked_at": "2026-10-27"
+    },
+    "attention": {
+      "research_file_sha256": "de78bce41c1ab4e5be8a303aec69f33c628da1f857b5945705aaf1b29f2a6543",
+      "profiles": 5,
+      "maximum_cumulative_source_words": 200,
+      "checked_at": "2026-10-27"
+    }
+  },
+  "python_compile": "passed",
+  "production_pages": 1777,
+  "clinical_profiles": 189,
+  "clinical_detail_pages": 1134,
+  "all_clinical_pages_checked": 1753,
+  "internal_targets_checked": 3893,
+  "priority80_pages_checked": 560,
+  "legacy_eight_pages_checked": 56,
+  "legacy_nineteen_pages_checked": 91,
+  "legacy_fortyfive_pages_checked": 203,
+  "prior_women_urology_pages_checked": 105,
+  "patient_scenario_pages_checked": 2,
+  "unit_tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "all_existing_url_mappings_preserved": 617,
+  "browser_qa": {
+    "environment": "managed desktop static preview",
+    "hubs_checked": 18,
+    "loaded_card_images": 108,
+    "missing_card_alts": 0,
+    "horizontal_overflow": false,
+    "desktop_grid_columns": 3,
+    "viewport_width": 1363,
+    "keyboard_checkbox": "passed",
+    "keyboard_faq": "passed",
+    "detail_current_marker": "passed",
+    "previous_next_navigation": "passed",
+    "logo_home_navigation": "passed",
+    "physical_mobile": "unverified"
+  }
+}

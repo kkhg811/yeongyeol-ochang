@@ -120,6 +120,14 @@ def main():
     priority_file = CONTENT / "priority80.json"
     priority_data = read(priority_file) if priority_file.exists() else {"status": "draft", "profiles": []}
     priority = {p["id"]: p for p in priority_data["profiles"]} if priority_data["status"] == "published" else {}
+    assessment_updated_at = dict(priority_data.get("profile_updated_at", {}))
+    extra_file = CONTENT / "additional-clinical-assessments.json"
+    extra = read(extra_file) if extra_file.exists() else {"status": "draft", "profiles": []}
+    if extra["status"] == "published":
+        if set(priority) & {p["id"] for p in extra["profiles"]}:
+            raise ValueError("Additional assessments must not replace the original priority80 records")
+        priority.update({p["id"]: p for p in extra["profiles"]})
+        assessment_updated_at.update(extra.get("profile_updated_at", {}))
     conditions = read(ROOT / "src/generated/conditions.json")
     columns = read(ROOT / "src/generated/columns.json")
     condition_by_slug = {c["slug"]: c for c in conditions}
@@ -154,8 +162,8 @@ def main():
             profile["hub_path"] = "conditions/" + quote(primary, safe="")
         profile["category"] = profile.get("category") or (condition_by_slug[primary]["category"] if primary in condition_by_slug else "피부")
         profile.setdefault("status", "review")
-        profile["created_at"] = config["created_at"]
-        priority_updated = priority_data.get("profile_updated_at", {}).get(profile["id"], priority_data["updated_at"])
+        profile.setdefault("created_at", config["created_at"])
+        priority_updated = assessment_updated_at.get(profile["id"], priority_data["updated_at"])
         profile["updated_at"] = max(profile.get("updated_at", config["created_at"]), priority_updated) if profile.get("priority") else profile.get("updated_at", config["created_at"])
         profile.setdefault("reviewed_by", None)
         profile.setdefault("reviewed_at", None)

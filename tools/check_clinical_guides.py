@@ -118,6 +118,8 @@ def main():
     for entry in cat["conditions"] + cat["columns"]:
         pages.append((entry["path"], entry["canonical_path"], profiles[entry["profile_id"]], None))
     for profile in cat["profiles"]:
+        if profile.get("standalone_hub"):
+            pages.append((profile["hub_path"], profile["hub_path"], profile, None))
         for topic in profile["topics"]:
             pages.append((topic["path"], topic["path"], profile, topic))
     titles, descriptions = [], []

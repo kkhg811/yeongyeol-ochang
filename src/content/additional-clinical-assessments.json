@@ -1,0 +1,1177 @@
+{
+  "status": "published",
+  "updated_at": "2026-10-27",
+  "medical_review_status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "scope": "Additional clinical guides outside the original ordered 1–80 audit; order zero is not a search rank.",
+  "profiles": [
+    {
+      "id": "women-after-miscarriage",
+      "order": 0,
+      "keyword": "유산후조리",
+      "name": "유산 후 신체 회복과 정서 지원",
+      "checks": [
+        "받은 관리 방식과 날짜를 알고 있나요?",
+        "안내받은 추적 확인을 마쳤나요?",
+        "남은 불편과 정서 지원 요구를 구분했나요?"
+      ],
+      "branches": [
+        {
+          "observation": "추적 결과를 이해하기 어렵거나 증상이 달라짐",
+          "possibility": "관리 후 상태 재확인",
+          "distinction": "스스로 치료 완료를 판정하지 않습니다.",
+          "related_id": "women-after-miscarriage"
+        },
+        {
+          "observation": "회복 뒤 임신을 다시 희망함",
+          "possibility": "임신 전 계획 검토",
+          "distinction": "몸과 마음의 준비를 함께 의논합니다.",
+          "related_id": "women-preconception"
+        }
+      ],
+      "faq": [
+        {
+          "question": "마음이 힘들어도 회복 진료에서 말하나요?",
+          "answer": "정서와 일상 영향도 후속 진료에서 이야기할 수 있습니다."
+        },
+        {
+          "question": "조리만으로 재유산 예방이 되나요?",
+          "answer": "특정 조리 방식이 다음 임신 결과를 보장하지 않습니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www2.hse.ie/conditions/miscarriage/recovery/",
+          "scope": "유산 뒤 신체·감정 회복, 일상 지원과 개인별 회복 속도",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/miscarriage/",
+          "scope": "유산 후 경과, 다음 임신 준비와 재평가",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/",
+          "scope": "수술 뒤 회복·활동·성생활과 추적 계획; 모든 관리 방식에 일괄 적용하지 않음",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "urology-benign-prostate",
+      "order": 0,
+      "keyword": "전립선 비대증",
+      "name": "전립선비대증",
+      "checks": [
+        "저장 증상과 배출·배뇨 후 증상을 각각 구분할 수 있나요?",
+        "PSA·전립선 검사 결과를 당시 감염·처치 이력과 함께 준비했나요?",
+        "최근 줄기·잔뇨감·누출 변화와 약물 반응을 관찰했나요?"
+      ],
+      "branches": [
+        {
+          "observation": "배출 지연·줄기 약화가 지속됨",
+          "possibility": "하부요로 배출 기능 평가 필요",
+          "distinction": "전립선 크기만으로 폐색 정도를 확정하지 않습니다.",
+          "related_id": "urology-benign-prostate"
+        },
+        {
+          "observation": "누출이 생기거나 여러 상황에서 샘",
+          "possibility": "요실금 유형과 배출 상태 확인",
+          "distinction": "남성 누출도 원인에 따라 평가하며 전립선비대증으로 통합하지 않습니다.",
+          "related_id": "urology-urinary-incontinence"
+        }
+      ],
+      "faq": [
+        {
+          "question": "증상 체크로 암 여부를 알 수 있나요?",
+          "answer": "아닙니다. 암 평가 필요성은 병력·진찰·검사 해석을 통해 논의합니다."
+        },
+        {
+          "question": "약물 반응을 볼 때 준비할 기록은 무엇인가요?",
+          "answer": "복용 기간, 배뇨·수면·활동 변화와 어지럼 등 새 불편을 함께 정리하세요."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/enlarged-prostate-benign-prostatic-hyperplasia",
+          "scope": "전립선비대증의 정의·크기와 증상 차이·평가·관리",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+          "scope": "PSA 검사의 목적·교란요인·단독 확진 불가",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/diagnosis",
+          "scope": "잔뇨 측정과 배출 장애의 원인 평가",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/symptoms-causes",
+          "scope": "남녀의 누출 양상과 여러 관련 원인",
+          "checked_at": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "urology-urinary-incontinence",
+      "order": 0,
+      "keyword": "요실금",
+      "name": "요실금",
+      "checks": [
+        "누출 직전 요의와 기침·활동의 관계를 구분할 수 있나요?",
+        "복용약·수술·신경계 질환 등 병력과 일지를 준비했나요?",
+        "누출과 함께 줄기 약화·잔뇨감·이동 어려움이 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "동작 때 누출 또는 강한 요의 뒤 누출이 반복됨",
+          "possibility": "요실금 유형 감별 필요",
+          "distinction": "혼합형도 가능하며 증상만으로 확진하지 않습니다.",
+          "related_id": "urology-urinary-incontinence"
+        },
+        {
+          "observation": "남성에서 비우기 어려움과 지속적인 소량 누출이 있음",
+          "possibility": "배출 장애·전립선 등 원인 평가 필요",
+          "distinction": "전립선비대증 외 원인도 있어 잔뇨와 병력을 종합합니다.",
+          "related_id": "urology-benign-prostate"
+        }
+      ],
+      "faq": [
+        {
+          "question": "체크로 수술 필요성을 정하나요?",
+          "answer": "아닙니다. 유형·중증도·생활 영향·기존 치료 반응을 종합해야 합니다."
+        },
+        {
+          "question": "불편을 재현하는 자가검사가 필요한가요?",
+          "answer": "평소 누출만 기록하세요. 진찰과 검사는 설명을 듣고 의료진과 결정합니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts",
+          "scope": "요실금 정의와 복압성·절박성·혼합·기타 유형",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/symptoms-causes",
+          "scope": "남녀의 누출 양상과 여러 관련 원인",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/diagnosis",
+          "scope": "누출 일지·병력·진찰 및 선택적 검사",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/urinary-incontinence/causes/",
+          "scope": "복압성·절박성·일류성 등 기전 구분",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/diagnosis",
+          "scope": "잔뇨 측정과 배출 장애의 원인 평가",
+          "checked_at": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "women-preconception",
+      "order": 0,
+      "keyword": "임신준비",
+      "name": "임신 준비와 건강·약물 점검",
+      "checks": [
+        "월경·과거 임신 이력을 정리했나요?",
+        "지속 치료의 처방 의료진과 계획을 상의했나요?",
+        "접종·보충제 기록을 준비했나요?"
+      ],
+      "branches": [
+        {
+          "observation": "임신 시도가 이어지거나 알려진 위험이 있음",
+          "possibility": "개별 난임 평가 검토",
+          "distinction": "연령·기간·양측 병력으로 시점을 정합니다.",
+          "related_id": "women-female-fertility"
+        },
+        {
+          "observation": "기존 질환의 약을 복용 중임",
+          "possibility": "전문 치료와 임신 계획 조율",
+          "distinction": "임의 중단 없이 변경 필요성을 검토합니다.",
+          "related_id": "women-preconception"
+        }
+      ],
+      "faq": [
+        {
+          "question": "체크만으로 검사 종류가 정해지나요?",
+          "answer": "병력과 진찰에 따라 필요한 검사를 별도로 결정합니다."
+        },
+        {
+          "question": "엽산 복용이 난임 평가를 대신하나요?",
+          "answer": "예방 목적의 준비이며 필요한 평가를 대체하지 않습니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nhs.uk/pregnancy/trying-for-a-baby/trying-to-get-pregnant/",
+          "scope": "임신 전 건강·관계·복용약·생활과 검사 기록 확인",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/pregnancy/existing-health-conditions/epilepsy/",
+          "scope": "뇌전증 치료의 임신 전 전문 상담과 약물 임의 중단 위험",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.cdc.gov/folic-acid/about/",
+          "scope": "임신 전부터의 엽산과 신경관 결손 예방; 난임 치료 효과와 구별",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2026/",
+          "scope": "연령·기간·병력에 따른 난임 평가, 양측 평가와 검사의 개별 적응증",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "women-pregnancy-nausea",
+      "order": 0,
+      "keyword": "임신중 입덧",
+      "name": "임신 중 입덧과 섭취 저하",
+      "checks": [
+        "임신 주수와 증상 시작 시점이 정리됐나요?",
+        "유지 가능한 음식·수분과 약을 알고 있나요?",
+        "냄새·식사 환경과 활동 부담이 달라졌나요?"
+      ],
+      "branches": [
+        {
+          "observation": "구토에 복통·배뇨 불편이 동반됨",
+          "possibility": "입덧 외 원인 검토",
+          "distinction": "주수와 진찰을 통해 구별합니다.",
+          "related_id": "women-pregnancy-nausea"
+        },
+        {
+          "observation": "섭취·소변·활동이 함께 감소함",
+          "possibility": "수분·영양 상태 평가 필요",
+          "distinction": "증상 수만으로 안전을 판정하지 않습니다.",
+          "related_id": "women-pregnancy-nausea"
+        }
+      ],
+      "faq": [
+        {
+          "question": "검사 없이 이 표로 중증도를 정하나요?",
+          "answer": "진료 준비용이며 진찰과 필요한 검사를 대신하지 않습니다."
+        },
+        {
+          "question": "생활 요령이 안 맞으면 더 강하게 시도하나요?",
+          "answer": "억지로 유지하지 말고 섭취 상태를 알려 방법을 조정하세요."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/pregnancy-sickness-nausea-and-vomiting-of-pregnancy-and-hyperemesis-gravidarum/",
+          "scope": "입덧·임신오조의 기능 영향, 평가 항목과 치료 뒤 경과",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.mayoclinic.org/diseases-conditions/morning-sickness/diagnosis-treatment/drc-20375260",
+          "scope": "입덧 평가·수액 및 약물 치료, 음식·수분 대처와 진료 준비",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/pregnancy/complications/severe-vomiting/",
+          "scope": "심한 구토와 섭취·탈수·체중 변화, 조기 치료와 산과 연결",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/patientinstructions/000604.htm",
+          "scope": "입덧은 아침에 국한되지 않음, 소량 식사·수분·냄새와 휴식; 자가 약물 용량 지시는 사용하지 않음",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "women-fibroids",
+      "order": 0,
+      "keyword": "자궁근종",
+      "name": "자궁근종과 증상·추적 진료",
+      "checks": [
+        "월경 사이 출혈도 생겼나요?",
+        "화장실 방문이나 배변이 달라졌나요?",
+        "최근 출혈 뒤 쉽게 지치나요?"
+      ],
+      "branches": [
+        {
+          "observation": "출혈과 체력 저하가 두드러짐",
+          "possibility": "과다월경의 영향 평가",
+          "distinction": "근종 외 출혈 원인도 함께 살핍니다.",
+          "related_id": "women-heavy-periods"
+        },
+        {
+          "observation": "월경통과 골반통이 함께 지속",
+          "possibility": "선근증 등 감별 필요",
+          "distinction": "근종과 동반될 수도 있어 진찰·영상이 필요합니다.",
+          "related_id": "women-adenomyosis"
+        }
+      ],
+      "faq": [
+        {
+          "question": "이 관찰로 수술 여부를 정하나요?",
+          "answer": "결정할 수 없습니다. 영상과 치료 목표를 같이 검토합니다."
+        },
+        {
+          "question": "배가 불편하면 근종 위치를 알 수 있나요?",
+          "answer": "느낌만으로는 위치를 알 수 없습니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nhs.uk/conditions/heavy-periods/",
+          "scope": "월경량 증가와 피로, 근종·선근증 등 여러 출혈 원인과 혈액검사 평가의 필요성",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "women-endometriosis",
+      "order": 0,
+      "keyword": "자궁내막증",
+      "name": "자궁내막증과 반복되는 골반통",
+      "checks": [
+        "골반통과 월경 시점이 연관되나요?",
+        "장·방광 불편이 함께 반복되나요?",
+        "성교통이나 활동 제한이 생겼나요?"
+      ],
+      "branches": [
+        {
+          "observation": "주기성 통증과 장·방광 불편",
+          "possibility": "자궁내막증을 포함한 감별",
+          "distinction": "장·방광 자체 질환과도 겹칩니다.",
+          "related_id": "women-gynecology-visit"
+        },
+        {
+          "observation": "출혈 증가와 월경통이 함께 있음",
+          "possibility": "선근증·근종 등 감별",
+          "distinction": "한 가지 증상으로 구분할 수 없습니다.",
+          "related_id": "women-adenomyosis"
+        }
+      ],
+      "faq": [
+        {
+          "question": "아픈 정도로 병기를 알 수 있나요?",
+          "answer": "통증 강도는 병변의 범위와 꼭 비례하지 않습니다."
+        },
+        {
+          "question": "관찰 항목이 적으면 평가가 필요 없나요?",
+          "answer": "한 증상만으로도 생활에 지장이 있으면 평가를 논의합니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.mayoclinic.org/diseases-conditions/endometriosis/symptoms-causes/syc-20354656",
+          "scope": "주기성·비주기성 골반통, 장·방광 증상의 겹침과 증상만으로 확진하지 않는 평가",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "women-endometrial-hyperplasia",
+      "order": 0,
+      "keyword": "자궁내막증식증",
+      "name": "자궁내막증식증과 조직검사·추적",
+      "checks": [
+        "새로운 부정출혈이 있었나요?",
+        "폐경 뒤 출혈이 다시 보였나요?",
+        "결과지의 비정형성 여부를 들었나요?"
+      ],
+      "branches": [
+        {
+          "observation": "불규칙하거나 길어진 출혈",
+          "possibility": "내막 병변을 포함한 감별",
+          "distinction": "출혈 양상만으로 세포 유형은 알 수 없습니다.",
+          "related_id": "women-heavy-periods"
+        },
+        {
+          "observation": "영상에서 내막이 두꺼워 보임",
+          "possibility": "조직검사 필요성 판단",
+          "distinction": "초음파와 조직검사는 답하는 질문이 다릅니다.",
+          "related_id": "women-gynecology-visit"
+        }
+      ],
+      "faq": [
+        {
+          "question": "증식증은 모두 암으로 진행하나요?",
+          "answer": "모두 그런 것은 아니며 비정형성 등에 따라 위험이 다릅니다."
+        },
+        {
+          "question": "이 표로 검사를 생략할 수 있나요?",
+          "answer": "생략 기준이 아니며 개인의 검사 계획을 확인해야 합니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://my.clevelandclinic.org/health/diseases/16569-atypical-endometrial-hyperplasia",
+          "scope": "비정상 출혈의 다양한 원인, 영상의 내막 비후와 조직학적 확진·비정형성 구분",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "women-adenomyosis",
+      "order": 0,
+      "keyword": "자궁선근증",
+      "name": "자궁선근증과 월경통·출혈",
+      "checks": [
+        "월경통이 이전보다 심해졌나요?",
+        "출혈량·기간과 피로가 함께 달라졌나요?",
+        "생리 밖의 골반통·성교통이 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "통증과 출혈이 함께 증가",
+          "possibility": "선근증·근종 등 감별",
+          "distinction": "진찰과 영상에서 발생 위치를 확인합니다.",
+          "related_id": "women-fibroids"
+        },
+        {
+          "observation": "주기적인 깊은 골반통이 주된 불편",
+          "possibility": "내막증 동반 가능성",
+          "distinction": "통증만으로 두 질환을 나누지 못합니다.",
+          "related_id": "women-endometriosis"
+        }
+      ],
+      "faq": [
+        {
+          "question": "관찰표로 영상 검사를 대체하나요?",
+          "answer": "대체하지 못하며 병력 설명을 돕는 자료입니다."
+        },
+        {
+          "question": "내막 검사로 근육층을 확인하나요?",
+          "answer": "평가 부위가 달라 영상과 검사 목적을 구분합니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nhs.uk/conditions/adenomyosis/",
+          "scope": "월경통·출혈·골반통 증상, 다른 자궁 질환과의 겹침, 진찰·영상의 역할",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "women-uterine-prolapse",
+      "order": 0,
+      "keyword": "자궁하수",
+      "name": "자궁하수와 골반장기탈출 상담",
+      "checks": [
+        "질 돌출·묵직함이 생활을 방해하나요?",
+        "소변이 새거나 덜 비워지나요?",
+        "배변이나 성생활에 불편이 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "질 돌출감과 기능 불편",
+          "possibility": "여러 골반장기탈출 감별",
+          "distinction": "자궁·방광·직장을 진찰로 구분합니다.",
+          "related_id": "women-gynecology-visit"
+        },
+        {
+          "observation": "요누출·급한 소변이 두드러짐",
+          "possibility": "요실금 등 배뇨 원인 평가",
+          "distinction": "탈출과 독립된 문제일 수도 있습니다.",
+          "related_id": "urology-urinary-incontinence"
+        }
+      ],
+      "faq": [
+        {
+          "question": "관찰표로 수술 필요성을 정하나요?",
+          "answer": "진찰과 생활 영향·치료 선호를 함께 판단해야 합니다."
+        },
+        {
+          "question": "출산을 안 했으면 탈출이 아닌가요?",
+          "answer": "다른 요인도 관련되므로 출산력만으로 배제하지 않습니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://my.clevelandclinic.org/health/diseases/16030-uterine-prolapse",
+          "scope": "질 돌출·묵직함·배뇨 배변 불편의 관찰, 여러 장기 탈출 동반과 진찰 필요성",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "women-early-menopause",
+      "order": 0,
+      "keyword": "조기폐경",
+      "name": "조기폐경·이른 난소기능 저하 평가",
+      "checks": [
+        "월경·열감의 시점과 수술·치료 이력이 연결되나요?",
+        "검사 날짜와 복용 호르몬을 확인했나요?",
+        "치료 목표와 개인 위험을 의논했나요?"
+      ],
+      "branches": [
+        {
+          "observation": "피임·체중 변화와 월경 중단이 겹침",
+          "possibility": "무월경의 다른 원인 감별",
+          "distinction": "난소 기능 문제로 바로 확정하지 않습니다.",
+          "related_id": "women-amenorrhea"
+        },
+        {
+          "observation": "AMH 저하 소견만 전달받음",
+          "possibility": "검사 목적과 개념 재확인",
+          "distinction": "단독 수치로 POI·폐경을 진단하지 않습니다.",
+          "related_id": "women-ovarian-reserve"
+        }
+      ],
+      "faq": [
+        {
+          "question": "증상이 적어도 장기 관리가 필요한가요?",
+          "answer": "진단·개인 위험에 따라 뼈 건강과 치료 목적을 검토합니다."
+        },
+        {
+          "question": "월경이 다시 생기면 추적을 끝내나요?",
+          "answer": "간헐적 기능 가능성과 치료 목표를 확인하고 추적 계획을 정합니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.mayoclinic.org/diseases-conditions/premature-ovarian-failure/symptoms-causes/syc-20354683",
+          "scope": "월경·저에스트로겐 증상과 수술·치료·가족력의 맥락",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-guideline-premature-ovarian-insufficiency--2024/",
+          "scope": "POI와 낮은 난소예비력의 구별, AMH의 한계, 장기 건강과 보완 치료의 근거 한계",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/symptoms/missed-or-late-periods/",
+          "scope": "임신·체중·운동·피임·호르몬 질환 등 무월경 감별",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/medicines/hormone-replacement-therapy-hrt/benefits-and-risks-of-hormone-replacement-therapy-hrt/",
+          "scope": "증상·뼈 보호와 개인별 HRT 이득·위험 상담; 구체적인 위험 수치 인용 없음",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://medlineplus.gov/primaryovarianinsufficiency.html",
+          "scope": "POI의 간헐적 난소 기능, 영구 폐경과의 구별과 치료 목적",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "women-prenatal-herbs",
+      "order": 0,
+      "keyword": "출산전 한약",
+      "name": "출산 전 한약 상담과 임신 중 안전성",
+      "checks": [
+        "주수·질환과 산과 치료 계획이 공유됐나요?",
+        "성분·복용량·시작일과 병용약이 확인됐나요?",
+        "분만·수유 계획 변화가 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "성분별 임신 안전성 자료가 충분하지 않음",
+          "possibility": "보류·대안 검토 필요",
+          "distinction": "보고가 없다는 이유로 안전을 확정하지 않습니다.",
+          "related_id": "women-prenatal-herbs"
+        },
+        {
+          "observation": "출산 뒤 수유를 계획하거나 시작함",
+          "possibility": "수유 중 노출 재평가",
+          "distinction": "임신 중 판단을 자동 적용하지 않습니다.",
+          "related_id": "women-prenatal-herbs"
+        }
+      ],
+      "faq": [
+        {
+          "question": "목록이 완성되면 처방이 확정되나요?",
+          "answer": "병력·산과 상황·근거를 함께 검토한 뒤 결정합니다."
+        },
+        {
+          "question": "치료를 선택하면 재평가는 필요 없나요?",
+          "answer": "효과·이상 반응과 임신 경과 변화에 따라 다시 확인합니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.fda.gov/consumers/womens-health-topics/medicine-and-pregnancy",
+          "scope": "임신 단계·기존 질환을 반영한 약물 선택과 복용·수유 계획 질문",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nccih.nih.gov/health/using-dietary-supplements-wisely",
+          "scope": "임신·수유 중 자료 한계, 약물 상호작용과 수술 전 전체 복용 목록 공유",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/baby/breastfeeding-and-bottle-feeding/breastfeeding-and-lifestyle/medicines/",
+          "scope": "수유 시 약물·한약 재검토와 아기 상태·모든 복용 성분 공유",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://mothertobaby.org/fact-sheets/herbal-products-pregnancy/",
+          "scope": "허브 제품 성분·강도·안전성 자료의 불확실성, 상호작용과 노출 평가; 미국 제도를 한국 한약 규정으로 일반화하지 않음",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "mind-insomnia",
+      "order": 0,
+      "keyword": "불면증",
+      "name": "불면과 얕은 잠",
+      "checks": [
+        "잠들기·수면 유지·이른 각성 중 어떤 어려움이 주로 나타나나요?",
+        "복용약이나 근무 일정이 달라진 시기와 수면 변화가 겹치나요?",
+        "밤중 호흡 이상이나 낮의 참기 어려운 졸림도 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "잠자리 시간은 충분해도 잠의 어려움이 이어집니다.",
+          "possibility": "불면 양상과 낮 기능을 확인합니다.",
+          "distinction": "생활 일정과 병력을 종합해야 하며 이 항목만으로 진단하지 않습니다.",
+          "related_id": "mind-insomnia"
+        },
+        {
+          "observation": "잠의 어려움과 함께 큰 코골이·헐떡임이 있습니다.",
+          "possibility": "수면 호흡장애를 감별할 수 있습니다.",
+          "distinction": "불면과 함께 있을 수도 있어 진찰과 필요한 수면검사를 논의합니다.",
+          "related_id": "mind-sleep-assessment"
+        }
+      ],
+      "faq": [
+        {
+          "question": "문진과 검사는 어떤 관계인가요?",
+          "answer": "문진에서 얻은 단서에 따라 검사 필요성과 종류를 선택합니다."
+        },
+        {
+          "question": "좋고 나쁜 밤이 섞여도 기록해야 하나요?",
+          "answer": "네. 평일과 휴일을 포함한 기록이 일정과 증상의 관계를 살피는 데 도움이 됩니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nhlbi.nih.gov/health/insomnia/symptoms",
+          "scope": "입면·중간 각성·이른 각성·낮 집중과 기분 등 증상 관찰",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/insomnia/causes",
+          "scope": "스트레스, 수면 걱정, 일정·빛·카페인·음주·환경과 불면의 관계",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms",
+          "scope": "수면 중 호흡 이상, 낮 피로·졸림과 아이의 행동 변화",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/insomnia",
+          "scope": "수면 기회가 있어도 잠들기·유지·회복감에 어려움이 있고 낮 기능에 영향을 주는 불면의 개념",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis",
+          "scope": "병력·진찰·수면검사를 종합한 수면무호흡 평가와 검사 해석",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/diagnosis-treatment",
+          "scope": "수면 부족·낮 졸림의 병력과 기록, 동반 수면질환에 따른 선택적 수면검사",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/insomnia/diagnosis",
+          "scope": "수면 일지, 약과 질환 이력, 근무 일정 및 선택적 검사",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "mind-sleep-assessment",
+      "order": 0,
+      "keyword": "수면장애",
+      "name": "수면 문제의 종류와 평가",
+      "checks": [
+        "잘 기회는 충분한데 낮에 반복해서 잠에 빠지나요?",
+        "잠자는 동안 숨이 끊기거나 헐떡인다는 말을 들었나요?",
+        "밤이나 휴식 중에 다리를 움직이고 싶은 불편이 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "수면 중 호흡 멈춤과 낮 졸림이 함께 관찰됩니다.",
+          "possibility": "수면 호흡장애 평가를 고려합니다.",
+          "distinction": "목격 소견만으로 확진하지 않으며 필요한 검사로 확인합니다.",
+          "related_id": "mind-sleep-assessment"
+        },
+        {
+          "observation": "낮의 갑작스러운 졸림이 활동을 방해합니다.",
+          "possibility": "과도한 낮 졸림의 원인을 검토합니다.",
+          "distinction": "기면증으로 단정하지 않고 수면 기회와 약물 등도 확인합니다.",
+          "related_id": "mind-sleepiness"
+        }
+      ],
+      "faq": [
+        {
+          "question": "두 가지 양상이 겹치면 어떻게 하나요?",
+          "answer": "함께 있는 관찰을 모두 전하세요. 진료에서 검사 목적과 우선순위를 정할 수 있습니다."
+        },
+        {
+          "question": "결과가 나오기 전 수면 약을 추가해도 되나요?",
+          "answer": "특히 호흡 문제가 의심될 때는 임의로 추가하지 말고 현재 복용 상태를 의료진에게 알리세요."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nhs.uk/conditions/excessive-daytime-sleepiness-hypersomnia/",
+          "scope": "피로와 반복적으로 잠에 빠지는 졸림의 차이, 약물·수면질환 등 감별",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms",
+          "scope": "수면 중 호흡 이상, 낮 피로·졸림과 아이의 행동 변화",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/restless-legs-syndrome/",
+          "scope": "쉬거나 밤에 심해지는 다리 움직임 충동, 유사 증상과 원인별 평가",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis",
+          "scope": "병력·진찰·수면검사를 종합한 수면무호흡 평가와 검사 해석",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/narcolepsy/",
+          "scope": "참기 힘든 낮 졸림의 다른 원인 감별과 전문적 수면 평가",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/sleep-studies",
+          "scope": "야간 수면검사·낮 졸림검사·활동 기록 등 목적과 의료진의 결과 종합",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+          "scope": "코골이·목격된 호흡 멈춤·낮 졸림과 수면 호흡검사, 평가 전 진정제 주의",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "mind-child-sleep",
+      "order": 0,
+      "keyword": "소아 불면증",
+      "name": "아이의 잠과 밤 울음",
+      "checks": [
+        "취침을 거부하거나 밤에 깨는 시점이 생활 변화와 겹치나요?",
+        "야간 사건 뒤 충분히 깨어 이야기하는지, 다음 날 기억하는지 관찰되나요?",
+        "수면 문제와 낮 활력·학교생활의 변화가 함께 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "취침 순서와 보호자 도움에 따라 달라집니다.",
+          "possibility": "생활·발달 맥락의 수면 문제를 살펴봅니다.",
+          "distinction": "통증·걱정도 확인하며 행동만으로 진단하지 않습니다.",
+          "related_id": "mind-child-sleep"
+        },
+        {
+          "observation": "밤의 호흡 이상과 낮 행동 변화가 동반됩니다.",
+          "possibility": "소아 수면 호흡 문제를 감별합니다.",
+          "distinction": "코골이만으로 확정하지 않고 소아 진찰과 필요한 검사를 논의합니다.",
+          "related_id": "mind-sleep-assessment"
+        }
+      ],
+      "faq": [
+        {
+          "question": "항목이 많으면 중증인가요?",
+          "answer": "수로 매기지 않습니다. 나이·양상·생활 영향을 종합합니다."
+        },
+        {
+          "question": "보조제를 쓴 뒤 더 졸리면 계속 사용하나요?",
+          "answer": "사용 제품과 불편을 소아 의료진에게 알려 필요성과 안전성을 다시 검토하세요."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/ency/article/002392.htm",
+          "scope": "가족·이사 등 생활 변화가 취침 습관에 미치는 영향과 예측 가능한 차분한 취침 순서",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/night-terrors/",
+          "scope": "밤 공포와 악몽의 시점·각성·기억 차이, 안전한 관찰과 반복 시 평가",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.rch.org.au/kidsinfo/fact_sheets/Sleep_problems_children_and_teens/",
+          "scope": "소아·청소년의 생활·불안·통증 등 수면 방해 요인, 나이와 발달에 맞는 생활 관리",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.ouh.nhs.uk/children/services/medical-services/sleep/",
+          "scope": "소아의 다양한 수면 문제, 수면 일지와 진료 평가, 발달·신경학적 맥락의 감별",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/children",
+          "scope": "소아 코골이·호흡 멈춤, 낮 행동·성장 변화 및 진찰·수면검사",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx",
+          "scope": "소아 수면 보조제는 생활 습관 평가와 소아 진료 후 신중히 결정, 상호작용·불확실한 장기 안전성",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "mind-adhd",
+      "order": 0,
+      "keyword": "ADHD",
+      "name": "주의력결핍 과잉행동장애",
+      "checks": [
+        "어린 시절의 비슷한 어려움을 설명할 자료나 관찰이 있나요?",
+        "현재 어려움이 한 과제에만 있는지 여러 생활 영역에 있는지 구분되나요?",
+        "가족·교사·동료의 관찰이 어느 상황에서 다른가요?"
+      ],
+      "branches": [
+        {
+          "observation": "발달 과정과 여러 환경에서 반복된 기능 곤란",
+          "possibility": "ADHD를 포함한 전문 평가",
+          "distinction": "질문지 결과만으로 진단하지 않습니다.",
+          "related_id": "mind-adhd"
+        },
+        {
+          "observation": "최근 정서·건강 변화와 함께 집중이 저하",
+          "possibility": "다른 원인과 동반 문제 검토",
+          "distinction": "ADHD와 다른 문제가 함께 있을 가능성도 남깁니다.",
+          "related_id": "mind-concentration"
+        }
+      ],
+      "faq": [
+        {
+          "question": "이 도표로 치료를 선택하나요?",
+          "answer": "아닙니다. 면담에서 확인할 맥락을 정리하는 용도입니다."
+        },
+        {
+          "question": "학교의 관찰도 진료에 쓰이나요?",
+          "answer": "실제 과제 수행과 지원 반응을 설명하는 데 도움이 됩니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+          "scope": "성인 평가에서 어린 시절부터의 경과, 여러 영역의 어려움과 기능 영향을 확인한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.cdc.gov/adhd/diagnosis/index.html",
+          "scope": "단일 검사로 확진하지 않으며 발달력, 여러 생활 환경과 기능 저하, 다른 원인을 함께 평가한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/adhd-adults/",
+          "scope": "성인의 전문 평가, 다른 정신건강·학습 문제 검토, 생활·직장 조정과 치료 의사결정.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+          "scope": "발달 과정에서 나타나는 ADHD, 동반 문제, 개별화된 치료와 일상 기능 지원.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/adhd-children-teenagers/",
+          "scope": "연령과 발달을 고려한 평가, 비슷한 행동의 다른 이유, 평가 전에도 가능한 가정·학교 지원.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.cdc.gov/adhd/treatment/behavior-therapy.html",
+          "scope": "보호자가 배울 수 있는 구체적 행동 지원과 일관된 대응, 협력 및 치료 과정 확인.",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "mind-concentration",
+      "order": 0,
+      "keyword": "집중력저하",
+      "name": "집중이 잘되지 않을 때",
+      "checks": [
+        "달라진 주의·기억·판단을 생활 예로 설명할 수 있나요?",
+        "걱정이나 흥미 저하가 집중 변화와 함께 시작했나요?",
+        "약물이나 신체 피로에 최근 변화가 있었나요?"
+      ],
+      "branches": [
+        {
+          "observation": "계속되는 걱정이 집중을 방해한다",
+          "possibility": "불안과 기능 영향 평가",
+          "distinction": "걱정만으로 확진하지 않습니다.",
+          "related_id": "mind-anxiety"
+        },
+        {
+          "observation": "특정 읽기·쓰기·계산에서 반복적으로 막힌다",
+          "possibility": "학습 기능과 교육 경험 검토",
+          "distinction": "한 번의 성적 저하로 학습장애를 정하지 않습니다.",
+          "related_id": "mind-learning"
+        }
+      ],
+      "faq": [
+        {
+          "question": "체크 결과로 검사 항목을 고르나요?",
+          "answer": "아닙니다. 진료에서 병력과 진찰을 거쳐 선택합니다."
+        },
+        {
+          "question": "기분 변화도 의료진에게 말해야 하나요?",
+          "answer": "집중과 연관될 수 있어 함께 설명하는 것이 좋습니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nhs.uk/symptoms/memory-loss-amnesia/",
+          "scope": "기억의 일상 영향과 발생 경과, 스트레스·기분 등 가능한 원인, 자가진단 대신 진료.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nimh.nih.gov/health/publications/depression",
+          "scope": "흥미·기분·활력 변화와 함께 나타날 수 있는 집중·기억·결정 어려움, 개별 평가.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/",
+          "scope": "피로의 생활·질환·약물·정서적 원인을 구분하고 필요시 선택하는 검사.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad",
+          "scope": "조절하기 어려운 걱정과 긴장·집중 문제, 신체 원인 검토 및 심리·약물치료.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/signs",
+          "scope": "학습 영역별 다양한 신호, 연령·교육 경험에 따른 해석 및 신호만으로 진단할 수 없는 한계.",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "mind-learning",
+      "order": 0,
+      "keyword": "학습장애",
+      "name": "읽기·쓰기·수학 학습의 어려움",
+      "checks": [
+        "어려움이 특정 학습 기능에 모이는지 여러 영역에 걸치는지 구분되나요?",
+        "교육 기회와 지원을 설명할 자료가 있나요?",
+        "읽기·쓰기와 말 이해·표현의 차이가 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "특정 기능의 어려움이 교육 중 반복된다",
+          "possibility": "학습 영역별 종합 평가",
+          "distinction": "성적이나 단일 행동으로 확정하지 않습니다.",
+          "related_id": "mind-learning"
+        },
+        {
+          "observation": "주의와 정리 문제가 다양한 과제에 걸친다",
+          "possibility": "ADHD 등 동반 가능성 평가",
+          "distinction": "학습장애를 ADHD와 동일시하지 않습니다.",
+          "related_id": "mind-adhd"
+        }
+      ],
+      "faq": [
+        {
+          "question": "도표가 지능을 판단하나요?",
+          "answer": "아닙니다. 특정 학습의 어려움은 전반적 지능과 같지 않습니다."
+        },
+        {
+          "question": "과제 원본이 도움이 되나요?",
+          "answer": "반복 오류와 지원 반응을 설명하는 자료입니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo",
+          "scope": "특정 정보 처리와 읽기·쓰기·수학의 지속적 어려움, 지능이나 의지와 단순히 동일시할 수 없음.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/diagnosed",
+          "scope": "발달·의료·학교 이력, 학습 수행과 지원 반응을 종합하는 평가.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.asha.org/public/speech/disorders/learning-disabilities/",
+          "scope": "언어 기반 학습 문제에서 말 이해·표현·읽기·쓰기의 관계와 언어 평가·지원.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nichd.nih.gov/health/topics/learning/conditioninfo/signs",
+          "scope": "학습 영역별 다양한 신호, 연령·교육 경험에 따른 해석 및 신호만으로 진단할 수 없는 한계.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/adhd-children-teenagers/",
+          "scope": "연령과 발달을 고려한 평가, 비슷한 행동의 다른 이유, 평가 전에도 가능한 가정·학교 지원.",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "mind-palpitations",
+      "order": 0,
+      "keyword": "두근거림",
+      "name": "가슴 두근거림과 심계항진",
+      "checks": [
+        "갑작스러운 시작·종료와 지속 양상을 설명할 수 있나요?",
+        "심장 병력·가족력과 사용 중인 약물 목록이 있나요?",
+        "떨림·더위 민감·체중 변화가 함께 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "간헐적인 증상으로 진료실 기록에 안 잡힌다",
+          "possibility": "발생 빈도에 맞춘 심전도 기록 검토",
+          "distinction": "정상 한 번이 모든 리듬 이상을 배제하지는 않습니다.",
+          "related_id": "mind-palpitations"
+        },
+        {
+          "observation": "예민함과 신체 변화가 함께 나타난다",
+          "possibility": "갑상선 등 전신 원인도 확인",
+          "distinction": "이를 곧바로 자율신경 이상으로 진단하지 않습니다.",
+          "related_id": "mind-overstimulation"
+        }
+      ],
+      "faq": [
+        {
+          "question": "스마트워치만으로 치료를 정하나요?",
+          "answer": "아닙니다. 증상·병력과 의료 검사의 맥락에서 해석합니다."
+        },
+        {
+          "question": "현재 흉통·실신·호흡곤란이 있다면요?",
+          "answer": "정기 추적을 기다리지 않고 즉시 진료를 받아야 합니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nhlbi.nih.gov/health/arrhythmias/symptoms",
+          "scope": "부정맥은 증상만으로 구별하기 어려우며 두근거림과 어지럼·호흡곤란 등의 양상을 기록한다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/health/arrhythmias/diagnosis",
+          "scope": "병력·가족력·진찰, 심전도와 장시간 기록, 필요에 따른 갑상선·전해질 등 검사.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+          "scope": "예민함·두근거림·떨림·더위 민감·체중 변화 등의 조합은 갑상선 등 신체 원인 검토 대상이다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/diagnosis-treatment/drc-20373201",
+          "scope": "간헐 증상의 심전도·홀터·이벤트 기록, 원인에 따른 치료, 진료 준비와 자극 물질 점검.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/symptoms/heart-palpitations/",
+          "scope": "두근거림의 다양한 느낌과 유발 요인, 빈혈·갑상선·리듬 원인 가능성, 재진 및 동반 증상 안전 기준.",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "mind-overstimulation",
+      "order": 0,
+      "keyword": "신경과민",
+      "name": "예민함과 소진감을 느낄 때",
+      "checks": [
+        "예민함을 긴장·짜증·집중 곤란 등으로 구체화할 수 있나요?",
+        "걱정이 이어지는 상황과 회피로 제한된 일이 있나요?",
+        "흥미·활력·신체 상태에 동반 변화가 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "광범위한 걱정이 일상을 방해한다",
+          "possibility": "불안·동반 문제 평가",
+          "distinction": "기간·개수만으로 진단하지 않습니다.",
+          "related_id": "mind-gad"
+        },
+        {
+          "observation": "예민함에 떨림·두근거림 등 신체 단서가 겹친다",
+          "possibility": "전신 원인과 약물 영향 검토",
+          "distinction": "이를 곧바로 자율신경 질환으로 정하지 않습니다.",
+          "related_id": "mind-palpitations"
+        }
+      ],
+      "faq": [
+        {
+          "question": "검증된 진단 척도인가요?",
+          "answer": "아닙니다. 진료에 전할 관찰을 정리합니다."
+        },
+        {
+          "question": "신체·심리 평가를 함께 하나요?",
+          "answer": "필요에 따라 병행하며 한쪽 평가가 다른 원인을 배제하지 않습니다."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/",
+          "scope": "스트레스 반응과 유발 상황, 피로·예민함·기능 영향 관찰 및 대처.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet",
+          "scope": "외부 부담에 대한 스트레스와 지속되는 불안의 차이, 회피·생활 방해 시 전문적 도움.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nimh.nih.gov/health/publications/depression",
+          "scope": "흥미·기분·활력 변화와 함께 나타날 수 있는 집중·기억·결정 어려움, 개별 평가.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad",
+          "scope": "조절하기 어려운 걱정과 긴장·집중 문제, 신체 원인 검토 및 심리·약물치료.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+          "scope": "예민함·두근거림·떨림·더위 민감·체중 변화 등의 조합은 갑상선 등 신체 원인 검토 대상이다.",
+          "checked_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/",
+          "scope": "광범위한 걱정과 기능 영향의 평가, 우울 등 동반 문제와 치료 선택.",
+          "checked_at": "2026-10-27"
+        }
+      ]
+    }
+  ],
+  "profile_updated_at": {
+    "women-after-miscarriage": "2026-10-27",
+    "urology-benign-prostate": "2026-10-26",
+    "urology-urinary-incontinence": "2026-10-26",
+    "women-preconception": "2026-10-27",
+    "women-pregnancy-nausea": "2026-10-27",
+    "women-fibroids": "2026-10-27",
+    "women-endometriosis": "2026-10-27",
+    "women-endometrial-hyperplasia": "2026-10-27",
+    "women-adenomyosis": "2026-10-27",
+    "women-uterine-prolapse": "2026-10-27",
+    "women-early-menopause": "2026-10-27",
+    "women-prenatal-herbs": "2026-10-27",
+    "mind-insomnia": "2026-10-27",
+    "mind-sleep-assessment": "2026-10-27",
+    "mind-child-sleep": "2026-10-27",
+    "mind-adhd": "2026-10-27",
+    "mind-concentration": "2026-10-27",
+    "mind-learning": "2026-10-27",
+    "mind-palpitations": "2026-10-27",
+    "mind-overstimulation": "2026-10-27"
+  }
+}

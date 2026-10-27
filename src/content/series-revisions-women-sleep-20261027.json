@@ -1,0 +1,2514 @@
+{
+  "updated_at": "2026-10-27",
+  "status": "published",
+  "baseline_commit": "b15bd76a0c8bb6b5b2fec386b3279071ed2df11b",
+  "baseline_catalog_sha256": "e6c2b622988ecc60c5fb4bc852c4f696ef3571b6aa05cec5e0d24439fbe41c0c",
+  "profile_ids": [
+    "women-after-miscarriage",
+    "women-preconception",
+    "women-pregnancy-nausea",
+    "women-fibroids",
+    "women-endometriosis",
+    "women-endometrial-hyperplasia",
+    "women-adenomyosis",
+    "women-uterine-prolapse",
+    "women-early-menopause",
+    "women-prenatal-herbs",
+    "mind-insomnia",
+    "mind-sleep-assessment",
+    "mind-child-sleep",
+    "mind-adhd",
+    "mind-concentration",
+    "mind-learning",
+    "mind-palpitations",
+    "mind-overstimulation"
+  ],
+  "profile_count": 18,
+  "detail_count": 108,
+  "core_pages": 126,
+  "new_profile_ids": [],
+  "new_core_pages": 0,
+  "image_revisions": [],
+  "queries": [
+    {
+      "order": 1,
+      "query": "오창 유산후조리",
+      "profile_id": "women-after-miscarriage"
+    },
+    {
+      "order": 2,
+      "query": "오창 임신준비",
+      "profile_id": "women-preconception"
+    },
+    {
+      "order": 3,
+      "query": "오창 임신중 입덧",
+      "profile_id": "women-pregnancy-nausea"
+    },
+    {
+      "order": 4,
+      "query": "오창 자궁근종",
+      "profile_id": "women-fibroids"
+    },
+    {
+      "order": 5,
+      "query": "오창 자궁내막증",
+      "profile_id": "women-endometriosis"
+    },
+    {
+      "order": 6,
+      "query": "오창 자궁내막증식증",
+      "profile_id": "women-endometrial-hyperplasia"
+    },
+    {
+      "order": 7,
+      "query": "오창 자궁선근증",
+      "profile_id": "women-adenomyosis"
+    },
+    {
+      "order": 8,
+      "query": "오창 자궁샘근증",
+      "profile_id": "women-adenomyosis"
+    },
+    {
+      "order": 9,
+      "query": "오창 자궁하수",
+      "profile_id": "women-uterine-prolapse"
+    },
+    {
+      "order": 10,
+      "query": "오창 조기폐경",
+      "profile_id": "women-early-menopause"
+    },
+    {
+      "order": 11,
+      "query": "오창 출산전 한약",
+      "profile_id": "women-prenatal-herbs"
+    },
+    {
+      "order": 12,
+      "query": "오창 불면증",
+      "profile_id": "mind-insomnia"
+    },
+    {
+      "order": 13,
+      "query": "오창 수면장애",
+      "profile_id": "mind-sleep-assessment"
+    },
+    {
+      "order": 14,
+      "query": "오창 소아 불면증",
+      "profile_id": "mind-child-sleep"
+    },
+    {
+      "order": 15,
+      "query": "오창 ADHD",
+      "profile_id": "mind-adhd"
+    },
+    {
+      "order": 16,
+      "query": "오창 adhd",
+      "profile_id": "mind-adhd"
+    },
+    {
+      "order": 17,
+      "query": "오창 집중력저하",
+      "profile_id": "mind-concentration"
+    },
+    {
+      "order": 18,
+      "query": "오창 학습장애",
+      "profile_id": "mind-learning"
+    },
+    {
+      "order": 19,
+      "query": "오창 두근거림",
+      "profile_id": "mind-palpitations"
+    },
+    {
+      "order": 20,
+      "query": "오창 심계항진",
+      "profile_id": "mind-palpitations"
+    },
+    {
+      "order": 21,
+      "query": "오창 신경과민",
+      "profile_id": "mind-overstimulation"
+    }
+  ],
+  "preserved_profile_sha256": {
+    "msk-frozen-shoulder": "ebf964f71a754bed74f0a3f1af3dd5c30cf39eea0bffdde049e2ceacbd32d812",
+    "msk-cervical-disc": "c00b8c9480b1479947f01885a2746c8860b06610fb6ad1f5799c32a1d6a04e29",
+    "msk-lumbar-disc": "a76249aeee27ffc906cec324ceeeaa0353e46bde49ba05a929daa99ede47d26d",
+    "msk-chuna": "0a9a0e26510237445e6446c7a1a468f8e95a623ffeafbcc0571f326871aae4d1",
+    "msk-fibromyalgia": "9be3e7bfeda795061741ba533c32c973602d86c7f6ef08569427008154ae40e5",
+    "msk-carpal-tunnel": "3b23ff303d79fe32ba03620c5b54db563cbdf84fa2e1127e12b1f226d6f1ad2f",
+    "msk-plantar-fascia": "e99562a93f717082fad74d9afe3aeeaea2a048e4f0c5f690cd6d40adba780007",
+    "msk-knee-osteoarthritis": "4b2c180574f49e281056e321faadb45a467d25d5c11191d228307f1cb88f56f6",
+    "msk-low-back-pain": "7b34aa27087f198fcb5f3fedf9bd7a33a9e0841ccd2f31ca4a6e49d17c2df317",
+    "msk-lumbar-stenosis": "1c6eda575993b03ecd00287a857da9a063667adb240bdc91cb5bdf4d9f514db5",
+    "msk-shoulder-impingement": "9021e2e1f70fb9aaf24783eeb2ec452fd587c8d8f6f58843d2ddd75e108b9c86",
+    "msk-tennis-elbow": "0b10ae7f1bec4d850b79e40e244d41b887769b60a6c3dfff410e0ba256f38f4e",
+    "msk-forward-head": "631fd11f93e0ee80ce98644fc2fba66e01cc5d14ea56dc8556ace1a83fcefe42",
+    "msk-hip-pain": "575c738edfcdee640e695fa078335e59f23bf16ed5f8b87d8dbae0d1bb532fe4",
+    "msk-pelvic-pain": "9a6b172a72126213236d7b7fbdf31d62f626121bc6d52e782393d9132dcf71f8",
+    "msk-pelvic-alignment": "7378ca710cbf1ffeb78fd45d5f44ca09334eb51077b6f6b032c17539f434180f",
+    "msk-golfers-elbow": "edeb592ada648239eff987577bc8217f8b30dadaf96638f1c0fc78eedab17939",
+    "msk-kyphosis": "0b30ea775e2d7862062841f3140bc38268a39e6d1b6eaaff25f0215cf5a75de5",
+    "msk-myalgia": "1ce60ebbf859f1628d65d331c9bcdf84dd728247c278d76f808cc15fb559c725",
+    "msk-coccyx-pain": "668e33972c208b41f12708f1e69bbccbe17b3623fa09c7861826173b11f997fa",
+    "msk-leg-numbness": "d547b5548542d38351d3dddf5d54cee2afba726235106fe185a9e6ef83ccb1a9",
+    "msk-leg-pain": "ee4bedde7b8c945c4e49979e5725b1db108cd91f8ff4dba9be61fc64748e2dae",
+    "msk-manual-therapy": "693aa998ed30056c62222473ad57451375eb10aca43a5b806d3bc2b8a4c61ccd",
+    "msk-occipital-pain": "23ba8b5005a8dc01820f05b5abe0bbd268e0ed11adf930f5436bdf069a2ec0ee",
+    "msk-neck-muscle-pain": "2ef31616efccf2c5a0a970cc81ae56e11c3b3ac9c5500a61927197312142018a",
+    "msk-upper-back-pain": "1e7c09f0afaf1755bbcc188e136d4e98635a97736da3dcf7f1c41c890454dc04",
+    "msk-disc-terminology": "7ce346bd792115e7a1ae096a5b13d4ac1fd3cfef453ed84b57148a2307e45894",
+    "msk-rounded-shoulders": "54b291533665c143f1b55b0b8b7a340fabaf3af15e8c011a0580c22821c0f8d7",
+    "msk-neck-tingling": "5fd5716f2c49f96ca30776d6e050dfd449b629f7eade4d878aea7349099b674d",
+    "msk-knee-pain": "f05c78519bee1337f42b76da73aa219f8ceb9790f5f9877f3743bbd3ec1ab2ef",
+    "msk-ankle-sprain": "400df583b0e74f6a49bbfe60e156a0b664d1a14ab1c3d66ab66e9fdf6f90e527",
+    "msk-tarsal-tunnel": "47e36e3efa89dcdd0daa246e17fb522d4a67a7f9d27e1ce359b225ca255af5d8",
+    "msk-scalene-symptoms": "2d7b0f13d63d2b660e691508863500f4f606afc0cb0f950f8b7256c243a7fb38",
+    "msk-hand-numbness": "8ca3cab1959cfba65c789c8c77b0ac1d92537d17b80ccf8083e6b98c30743c4d",
+    "msk-finger-pain": "43a2716df07fbefe1484ddd703e39fd419b7e97dab53958c2bf178cd5b1fe47d",
+    "msk-de-quervain": "1380305407ed1ca8a3a9f92ff2ec8ee6e13dfc38a7db6fd7ca7af242b8f2c1a7",
+    "msk-wrist-pain": "e5bac76cbd2eb5e5ebb24549675497687cc85dced02844ad147f954aedea71e7",
+    "msk-cold-extremities": "53c7278e677279be241348b76f656ed94db2f4a6ded07a350a8c42ad6e0cf8ce",
+    "msk-neuralgia": "f1be3436fb71ca6ea69ffd41dbfef6706f427a14661962132ebe2035058e2588",
+    "msk-achilles-tendinopathy": "54f037db8b9bcd4934c09165136549748e39128e1601a90975c5118272bf15a3",
+    "msk-pharmacopuncture": "f6071d3306bef3f1a682158a3c25524ac8056e7b0ce53f4674a50b1cb33945ef",
+    "msk-shoulder-pain": "83047aa9abeaa8086a4072784c66922f3dc355c23a0522a92022bfd95072cb41",
+    "msk-buttock-pain": "fed30d29a67c94053e078a79dfa0a6526e0d2f7130580c80982198f5831479c9",
+    "msk-flank-pain": "e92af80187c9db7a6ca3e7ee3b47eea9ffad76004adf7af961ea025dcff12381",
+    "msk-lumbar-strain": "faa6c9a6392729f2ee2a485bc2ee79e0f49215e57d3988452ca80ab80097711a",
+    "msk-piriformis": "78efff60a4f5e7083f2e9833a2ac8542a3edf46b380eb0939352c474db30041b",
+    "msk-sciatica": "dec5c67b84a7c6e63593acac43cb1dc4af334dd81d8880d38ff6e992ae645714",
+    "msk-sacroiliac-pain": "6065031e4e9b2853de1a3fa8329ab7ef3b25f3593b079790d3251478711c6ee9",
+    "msk-body-alignment": "388e98b98a5e401709aa0f959f818323bb4ec9be2fb7c9a947abef2086bb44d7",
+    "msk-osteoarthritis": "953d1dbe38d8b6e56f3c78b78e9c901109f733f064ee2c4a35f0946b31e8d703",
+    "msk-elbow-pain": "f6d0e07d51fa52c17f81c43f78970c4461bcc59cdcba33d07e490f15f4b2cd5d",
+    "msk-arm-numbness": "217995f0548df1e627f126c78bff53a1ce3824d0a273ac6ae05a1dc53d62b8ea",
+    "msk-rotator-cuff-tear": "1f564d2479d2c0064b2fe8b6552c5f05fe2744f891654154908d8d7f075293cb",
+    "msk-thoracic-outlet": "17779b80e12cec27b0c6c6f2970e53387ccc3426d0b72a51759a1ea8fb7865e6",
+    "msk-heel-pain": "138a7f5d488d104a734592d3db2e93209db3286d06b68952c688ce1d21109dce",
+    "msk-rotator-cuff-syndrome": "e304ba8448485a3c7c2772682ef2b24d3ffd4ba45467c0ebab8195cdf60bfd08",
+    "msk-jaw-pain-tmd": "e3cd6b1b45dd67820f18e872080654e89548a47f65c79ed4dbf8d065b2b75836",
+    "women-period-pain": "78e3700777c82413a95f5a7b6f8b91087d8e9977ee6e69be57f8fa8edd922fbb",
+    "women-bladder-pain": "b0ea2a21203f2acf34305e80114faa594568d99ebe4ffc249e5885282039d114",
+    "women-menopause": "b373c14c248d1c1a89c1d0d3e2765779be152d41ca4524554c5bf4a6482c0b64",
+    "women-overactive-bladder": "df72ec7f421ee9d8fccf7466afb0595ef7c296ec7f7f7531fbe58b99286bb404",
+    "women-ovarian-reserve": "8db0e8019ef43afa9192fc18fa013f4128763bd77c03c662bb02da81f8d9e68f",
+    "women-ovarian-cyst": "66d824194916646cd24804b6eb9bac577b45dee087b5f02e39bc169f52914f41",
+    "women-male-fertility": "b84f627c45e54e9fd5483c0d054d1b9bf708adbee9b54774e847f1f4680b6281",
+    "women-pcos": "f5fdef4b0d4dff883f21029e337c370d79943964f74fc2efecbdb7eef64ae7f9",
+    "women-recurrent-cystitis": "3ad0477d335fe225ebb72f6b40f80a8cb6faa3bf34b0fe8b76e6e06636b4e318",
+    "women-vaginitis": "760875c1a7b00888190d83eb3ceb317b9416a0b8d9f5f73ef97024d57c73584b",
+    "women-amenorrhea": "a9f81d92376dadd239e934f940e6888de6193b145115e537750bf3a73b16d328",
+    "women-recurrent-loss": "36a801430b7de5cf4c327f6e9fa7bba38adc50bdf29eeedce787c06eb81b9ce9",
+    "women-ovulation-pain": "6ba456ee37077857f51d2458de18e21775137859880a022fa09cc095171783db",
+    "women-assisted-fertility": "0c5c5bbc8b8b593d940c4bd76e78d1ef91df55832561bbcf9d8e9c6047c562c2",
+    "women-gynecology-visit": "fab8e45b88c35b20f3bab040fe569c66d4ef87a3e723c5c6380a8a4674e43394",
+    "women-abnormal-bleeding": "140ce114d7b2c62ae31594ecc7735f23c42c5fb594880c9bd9eb83ec6e393e09",
+    "women-female-fertility": "c70b58fa159b238751d1e4e581cf7aabf7b7713bb4ea6af068c9de388404d70d",
+    "women-postpartum-weight": "743373bd2a90b83b225f4a15d62d01154907a398d0306f5f45647dd210e5b126",
+    "women-postpartum-herbs": "5dfd38ea511a5f44e28f492034152410142855b5fcff957d99113ac9e2347e38",
+    "women-postpartum-recovery": "d7e7b2b19454a113d79a9e28ade16b4ad69b7f3fe296945a7a40f266ecac1e2c",
+    "women-postpartum-swelling": "5e8336ab4b1e4a6ba06c14a0efeeec771e11ff9558bda3b0bb331eb8bb56adfb",
+    "women-lochia": "85eaa0844ed2f21743f41ae2ba07caea76da8a9e88ae9109e6bdcd897e6b3575",
+    "women-pms": "cd8b7071e6838fa6c3853933086b911a5beb2125492c45048b07582551afca5d",
+    "women-heavy-periods": "f66010f3fc59d7a36c3e30f0d5a86f4efeee0ddc9c7283f6ab4cd2ea09e58db4",
+    "women-irregular-cycles": "967f03be586fee87fcd5d98b9a9d6a7483bf7d39aeaa5f6993530c0df5b16655",
+    "women-early-pregnancy-concern": "22f3b6e7a3ec7df8a26ce21287ef36e11cb34547ea59477c265fea55822f88ad",
+    "mind-family-stress": "76c9cb7373680096a3f2958285709cb84ec06bbd639271fd1b548cbfda90b83d",
+    "mind-work-stress": "8f2a7042f2c53fd822534ac9c0cfdf3cd6e74e1003192b5ed0975c79ce7d2cb8",
+    "mind-muscle-tension": "f545291dd317864951d5cf029a1f89d72b213a532f81228a903d86ee5c0d46b6",
+    "mind-mood-fluctuation": "b69deb1af3a5d36a1969967ccee2f768e6a81c239ee15b4462f66f635c8afba3",
+    "mind-mood-disorders": "18fa3f904968740c8ab982054a6696382e3cc2a171b59ead0dad88614b73a351",
+    "mind-ocd": "1799876f7fcd6713f44cfbc547ed7f33ae01771ef60ebf7ac85e351a161b4d59",
+    "mind-menopausal-mood": "acbe3ff30bc274bcff6e20e913ea5378c756419f1c21367beb7125bd370016e2",
+    "mind-forgetfulness": "78d130e2f85f138806791d5ba7c719e5ef60d23141b8808b9c463beafe855c70",
+    "mind-digital-use": "8aa5e0edc949a85a9311191de904e95ce7d7b4c3d468aaafe36f6beb854e9ac7",
+    "mind-panic": "5aed64db37916a5c6bff3aa01238a620766410eeef227327423969a0b135c6fe",
+    "mind-hyperventilation": "6c2d771c32794e8e061fb9133317ed399572aacffdcce89262b997d6a61c9c08",
+    "mind-sleepiness": "4a9f4ee779d6e0935df8650f733c2ccf54b44422b4cece22463ba11d7031a782",
+    "mind-social-anxiety": "0797e8cc0c16a252302143e24477f62d812816b08d5c889f4f848b1a47257543",
+    "mind-cfs": "a8164b32934385fb244a13e0739463d1a8cf12786452b87f296151c30bfdff67",
+    "mind-gad": "a09f3a0c970567b2b3f7bf88f40913941aed1e65946b11a79d15da7e1b6b6437",
+    "mind-anxiety": "5188adc177ce8962d7d90046714485e9dbb7b0c0edcf7a73123e796e31404f4f",
+    "mind-anger": "2534418faba522cad6ca15e048edde8a98c2969971cde9236793da16478b1d09",
+    "mind-hwa-byung": "7768e3a93df32763f9f53e9cacca84ba936235c7d784a9372c4476a99e30b01f",
+    "mind-tremor": "c1703e9e04a63f250d5009bf4d37c3b9f894922c92aef9e0b2c6b34bdb076293",
+    "mind-sweating": "76c2e98659b57804e1a4a8a7ade9bd5640a9e7a31f657789f4eb298b04bd5d50",
+    "mind-headache": "83e4a730a509520c34207d3bf7adc665fedbd250da46b17a08782c3f534afd51",
+    "mind-somatic-symptoms": "13f07d602b6db43212a2ca117d820f1c1148ddcb8e78ff625d5274df8a6d2ee7",
+    "mind-dizziness": "eb95c18923e096004edf9f09ee822869f6bf762b17edc05ab51a82187a7f7b53",
+    "mind-flushing": "141b93e80fdafa300a8896025e795a43871a34a5915bde844fc7af39ce02e765",
+    "mind-study-anxiety": "6423f2b33f9225f173d541f7d5baef871d1adbc2c41b39b319d9ea44707948c5",
+    "mind-trauma": "4a12ef5e99050bf4a5f3dc343b79f42ce60125304227ef230f52210381f6b50b",
+    "mind-depression": "9b7df82bfa84d82ed0fb9ff6f9dc51d2cca62bad2a1c85958db68d5f45c9c709",
+    "mind-miscarriage-emotions": "5e9e78ef94e84a74f2be53a5ec2eae76112e2a31125b7fc160fc0e2470b8d259",
+    "mind-breakup-grief": "f50942dde19d31da93ed7423e86a6a27fd06c764edb150eec28fa9b4f858d1bf",
+    "mind-autonomic": "564c56239a9cc6fd9a9976f8df29f5527c6653328347cb5db9b7176fbabcfc8c",
+    "mind-adolescent-anxiety": "267598e096466fbe82d554f4281786a0bf459e478f64f8d141e16049cd31e9e7",
+    "mind-tics": "5093c035813c026707183882c6976e46e789388c497478fe099f2326e1dae748",
+    "mind-claustrophobia": "ffd7cb1c31c35c9e2196742e3f4ba8a8ce58ae18d67c845ec7ab4a531b4a6b3c",
+    "mind-restless-legs": "8d06370d23b8770490d3276aab7f2a459c5eea90729a7a7c6accf401e810dfcc",
+    "general-dyspepsia": "e1d996fdfc36b4bd2fdb1af0e84daedb2d99a64f166d9d3c3b9cf3810c5335d1",
+    "general-traditional-dyspepsia": "921cc9bd388344f1cb0d557bdcc5b14ca9e5043fe8c25abd20063a8dc0cc69c4",
+    "general-acute-indigestion": "b6e18e54fcc85a672bb70575b5c0ef94fc28e00513041f41b533ff290194d67f",
+    "general-ibs": "be2c419afeab42a73cc2c3883b3b3f7857d737656c2b8b6d9b1977fcc460147c",
+    "general-gastritis": "905ac3046aed320201d7a14e94866041e517de420241c440b833a0800eb2ae14",
+    "general-abdominal-symptoms": "214209ced926f6cec3aa6cacfc4f2cae187a9f23ff953581faea0f85706ab48c",
+    "general-diarrhea": "47cc8955a4aa55b3971d14a6b571cbef030d708830439200dd1041d0ecf6c07c",
+    "general-chronic-enteritis": "5771bd945e0a8869b3b17bb45774fc6be2c8f44ef9e7fccc7d05cf0f21441f2f",
+    "general-appetite-loss": "3acf51b0144dca3107a9744c2f7974597496773ef661102e96a021ad331fb296",
+    "general-gerd": "c96c818c28e030c66a25c5a9d5967678246a9631aff76a0d07af10685f93384d",
+    "general-laryngopharyngeal-reflux": "0fc45e5c17de4045d3b7aee0e1175d813f694ce83b53dcb21b310e5fec0406e6",
+    "general-allergic-rhinitis": "5d95292bcecac0930c76f5db6dea2633b5afa980ab08c9aa3cde9a5c79b5631a",
+    "general-chronic-rhinitis": "3344d331328cfa74661ee4a57b3ad19d0ee093645dde1e6ed213556a7817f61f",
+    "general-recurrent-cold-symptoms": "bee5602f4ddc8340f5ee2d5506fbf92d7c7e9e2d9caf6ac8be56677067d6fa7b",
+    "general-persistent-cough": "70cc702eef0e1d7c98dd67200d7af2c0272316692f8f7aa7343d06642c7689e1",
+    "general-ent-symptom-consultation": "ad7f117ea8d3ac00877c15873ab9d1ed39b5f4597f7787f190f2a9ef24637706",
+    "general-long-covid": "301aa774053b1da3fb827c7760e9a16bf98e9a68c3ffcce82baa982e8ae1d2dd",
+    "general-psoriasis": "cc1b2e7a5d089fe6d96c37b308c4ecf418f8822231e75146f1ef6cb0c972fb95",
+    "general-urticaria": "12135fe40ae17f6c7dd1fe211d650faf15e75899c10a2aba871613336322297e",
+    "general-eczema": "e0b74d2145eedfca72a4ecf0185d8d1fbf33d311ca63248253444c8b75646899",
+    "general-atopic-dermatitis": "9e24f07a105d547e120de31bc65ae8f615f0592822fa948ada88b2f5942b61cf",
+    "general-seborrheic-dermatitis": "b167747790a2798db2a7ebc78802970b0b8ccc2ba15574fdd41232c70b5ca3a2",
+    "general-pompholyx": "929a5cc3a5f1b9901ad133e479b3d7550494a48e2e61417c7c6437cc9677501e",
+    "general-discoid-eczema": "7f12603454b1611cec0c615a84edfb6f1ca4935c471ab00e6865b155dae3879d",
+    "general-skin-symptom-guide": "b59a4f115e4d75e7a17512e31244feaff01574c64f118ea73fc016143cf7c414",
+    "general-male-pattern-hair-loss": "8eb1bc7b8790565f81c0083c63f724a78d06c8d9b17b42f27283dd69a3d9932f",
+    "other-facial-palsy": "c5e46fb37d4da95776dd9d0c0c96957a336b711da041e72b516865663b2d118a",
+    "other-migraine": "a3bccc8660a1cde548e86247e66007fa2fe14b0e11649a55ccebf0052be86308",
+    "other-headache": "3876ffcd70fe65d0e711a3a2e30a471b32f8467495d63c6d6cb6971559d3f5a7",
+    "other-tinnitus": "5339498891ebb43e96e25f866b371873285f0ecc40a32c02b860d11ee9af3ace",
+    "other-dizziness": "10e474dbf5471f951e9d590b10282501873c0920c2e0fef9f0e46cf3bcf0f1d2",
+    "other-meniere": "e0664b78c726241bedf4c9910c34cb4b03935ea16bc632768e7cf1cdaf829f69",
+    "other-vestibular-migraine": "aeae972c4f8f5e709690742bd1c60bbcace8d2fd5709445caf2f129d6ff0076d",
+    "other-burning-mouth": "1ed9ddc852fedef2cfb5a08fdccbc383b3f261c0045d4076869460a7a5b478d3",
+    "other-eyelid-twitch": "d2afc1dd9f5d094df79b81e6e87033fd893e93ccce8c3f084fb38fa7befbcabc",
+    "other-hemifacial-spasm": "8970665e5732e261d873ee94b62c2c0da75bdf092d9aa380a7c357d7a6c83d44",
+    "other-dry-eye": "2515dfa634cde53e699d7176c01241ebbdb93178e0934f5649c5fb723107a46d",
+    "other-stroke-recovery": "1bcacdb9500b741afdc6c90573de5bd60c684dda34007bdfc3b51c97c3844497",
+    "other-occipital-pain": "fe9514a353c1346be6c1f4fc68b4f47e0b11778d72f03025ba057634abf1b314",
+    "other-jaw-disorder": "a42127316ca74196580f4643ffa105b7047bfbe32981c1e5946187d3b78aa9ce",
+    "other-gongjindan": "03b9028c9ff501b271e1e50b31b8f38c1db46b26910162ae70ab34d7c1caa1c3",
+    "other-ingredients": "a2d87ef2407db78d16df5b0fb07a7f8b443bf5424081724ebc873dfdf237a2c0",
+    "other-fatigue": "9570dbb91caf91190c67746576b803b90030ba310d4c921d038663f14cde83aa",
+    "other-underweight": "8243ae9317eadc35565b3b2eaa5ed6c5997f0f5edd9ba65c92e3b7a1ac378a04",
+    "other-tonic": "b74096acac0b46755a4240b8b5c9a083545f8641718178960c99bedcef3ead45",
+    "other-study-support": "4593645197042059a5174392732ef2dc1a318f795f03c0f9583d30d6dd889b36",
+    "other-growth": "db49c645cc5c93f9d7c410144bf6b5ca5699ab55f9cb0706d7503c0676d0776b",
+    "other-early-puberty": "5d0f7b6f5f726d187e3601e7c035a376e9d82b06b43e3e065e25c326277abd8d",
+    "other-weight-management": "d932dfd9b38cb267bc5b11add3a7b6afcdf90b60b51502458a24bbd7783f9a82",
+    "other-herbal-weight": "17314411e8da7ff87ea4f9c7130dd26d0692e8e0d928c51310241cb1c51b3d8e",
+    "other-incretin-medicines": "197d8a3655d8bd31a063a567a7c21c0cdfe20cbed0a520f9198d7bbacb9efcd1",
+    "other-accident-care": "29beeaa28e2541c3281b4a453aa55ac00d0e547bd7610f45fe510b14f622c6a4",
+    "urology-benign-prostate": "88219df62938c2be313f328be6ddfc1a6bb3200ca7b4449e57396e45c30ec9bd",
+    "urology-urinary-incontinence": "f84593e972f012e66c26b154c4ab49d7def6a3f6623117792471fb8af630f11a"
+  },
+  "target_baselines": {
+    "women-after-miscarriage": {
+      "hub_path": "conditions/%EC%9C%A0%EC%82%B0%ED%9B%84%EC%A1%B0%EB%A6%AC",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "회복 중 무엇을 먼저 살피나요?",
+          "points": [
+            "유산 진단·처치 뒤 출혈과 통증이 어떻게 변했는지 날짜로 정리하세요.",
+            "발열·악취·어지럼·몸이 처지는 느낌이 함께 있는지 전합니다.",
+            "수면·식사·업무 복귀와 감정의 어려움도 신체 증상과 별도로 말할 수 있습니다."
+          ],
+          "diagram": [
+            "출혈·통증",
+            "전신 상태",
+            "정서와 일상"
+          ],
+          "path": "guide/ochang-women-after-miscarriage/symptoms",
+          "image": "images/clinical-guides/women-after-miscarriage/symptoms.webp",
+          "image_small": "images/clinical-guides/women-after-miscarriage/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "유산의 원인을 자신의 행동으로 판단해도 되나요?",
+          "points": [
+            "유산의 원인을 항상 확인할 수 있는 것은 아니며 한 가지 생활 행동으로 단정하지 않습니다.",
+            "기다림·약물·시술 중 어떤 관리를 받았는지에 따라 확인할 경과가 달라집니다.",
+            "반복된 유산 이력이 있다면 이번 회복과 원인 평가를 별도 주제로 상의하세요."
+          ],
+          "diagram": [
+            "원인 불확실성",
+            "처치별 경과",
+            "반복 이력"
+          ],
+          "path": "guide/ochang-women-after-miscarriage/context",
+          "image": "images/clinical-guides/women-after-miscarriage/context.webp",
+          "image_small": "images/clinical-guides/women-after-miscarriage/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "추적 진료에는 어떤 정보가 필요한가요?",
+          "points": [
+            "진단 초음파·검사 결과와 처치 내용, 퇴원 후 지침을 준비합니다.",
+            "안내받은 임신검사·혈액검사·초음파 등의 목적과 결과 확인 경로를 물어보세요.",
+            "기존 약·한약·보충제와 임신을 다시 준비할 계획을 의료진에게 공유합니다."
+          ],
+          "diagram": [
+            "진단·처치 기록",
+            "추적 목적",
+            "복용·계획"
+          ],
+          "path": "guide/ochang-women-after-miscarriage/assessment",
+          "image": "images/clinical-guides/women-after-miscarriage/assessment.webp",
+          "image_small": "images/clinical-guides/women-after-miscarriage/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "유산 후 한약 상담은 어떻게 진행하나요?",
+          "points": [
+            "남은 조직·감염·지속 출혈 등 필요한 산과 평가가 마무리됐는지 먼저 확인합니다.",
+            "피로·식사·수면 등 원하는 상담 목적과 처방 성분·상호작용을 구체적으로 질문하세요.",
+            "한약으로 자궁을 반드시 회복시키거나 다음 임신·유산 예방을 보장하는 설명은 피합니다."
+          ],
+          "diagram": [
+            "산과 확인",
+            "구체적 목표",
+            "성과 약속의 한계"
+          ],
+          "path": "guide/ochang-women-after-miscarriage/care",
+          "image": "images/clinical-guides/women-after-miscarriage/care.webp",
+          "image_small": "images/clinical-guides/women-after-miscarriage/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "일상 복귀와 도움은 어떻게 정하나요?",
+          "points": [
+            "몸 상태에 맞게 쉬고 통증·출혈이 악화되는 활동은 의료진에게 상담하세요.",
+            "성관계·위생·다음 임신 시도에 관해서는 증상과 처치에 맞는 안내를 받습니다.",
+            "슬픔을 정해진 기간 안에 극복해야 한다고 생각하지 말고 원하는 정서 지원을 요청하세요."
+          ],
+          "diagram": [
+            "개별 회복",
+            "처치 후 안내",
+            "정서 지원"
+          ],
+          "path": "guide/ochang-women-after-miscarriage/daily",
+          "image": "images/clinical-guides/women-after-miscarriage/daily.webp",
+          "image_small": "images/clinical-guides/women-after-miscarriage/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "어떤 경우 재진을 앞당기나요?",
+          "points": [
+            "출혈·통증이 줄지 않거나 다시 심해지면 안내받은 연락처로 문의합니다.",
+            "다음 월경이나 임신검사 결과가 예상과 다르면 임의 해석 대신 추적 계획을 확인하세요.",
+            "심한 불안·우울로 잠·식사·생활을 유지하기 어렵다면 별도의 도움을 요청합니다."
+          ],
+          "diagram": [
+            "악화·지속",
+            "검사·월경 확인",
+            "생활과 기분"
+          ],
+          "path": "guide/ochang-women-after-miscarriage/followup",
+          "image": "images/clinical-guides/women-after-miscarriage/followup.webp",
+          "image_small": "images/clinical-guides/women-after-miscarriage/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": [
+        {
+          "reading_sections": [
+            {
+              "heading": "관리 방식에 따라 다른 확인 질문",
+              "text": "임신 조직이 자연히 배출되기를 기다리는 관리, 약물, 수술 뒤의 예상 경과와 확인 방법은 다를 수 있습니다. 받은 치료와 결과를 확인한 뒤 추가 관리가 필요한지 판단하며, 출혈 양상만으로 치료 완료를 확정하지 않습니다.",
+              "source_urls": [
+                "https://www.healthnz.govt.nz/health-topics/pregnancy-maternity/miscarriage-and-baby-loss/miscarriage"
+              ]
+            },
+            {
+              "heading": "원인 평가와 회복 확인의 구분",
+              "text": "현재 남은 조직이나 감염 등의 문제를 확인하는 일과 과거 상실의 원인을 찾는 검사는 목적이 다릅니다. 기존 임신 이력과 이번 진단을 함께 검토해 필요한 평가를 선택합니다.",
+              "source_urls": [
+                "https://uihc.org/educational-resources/miscarriage-care-instructions-expectant-management"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "임신 초기 출혈이면 유산으로 확정하나요?",
+              "answer": "출혈의 다른 원인이 있을 수 있습니다. 임신 위치·발달과 검사 경과를 확인한 뒤 판단합니다.",
+              "source_urls": [
+                "https://www.acog.org/womens-health/faqs/early-pregnancy-loss"
+              ]
+            },
+            {
+              "question": "치료 뒤에도 임신호르몬이 남을 수 있나요?",
+              "answer": "남을 수 있어 검사 시점과 변화가 중요합니다. 한 번의 양성만으로 새 임신이나 잔류 조직을 확정하지 않습니다.",
+              "source_urls": [
+                "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/early-miscarriage"
+              ]
+            },
+            {
+              "question": "마음의 상태도 후속 평가에 포함하나요?",
+              "answer": "상실 후 수면·불안·일상 기능과 원하는 지원을 확인할 수 있습니다. 신체 경과와 별개로 다룹니다.",
+              "source_urls": [
+                "https://www.acog.org/womens-health/experts-and-stories/the-latest/what-happens-after-a-miscarriage-an-ob-gyn-discusses-the-options"
+              ]
+            }
+          ]
+        },
+        {
+          "reading_sections": [
+            {
+              "heading": "치료 뒤 예상 경과와 달라진 증상",
+              "text": "치료 방식과 날짜를 기준으로 출혈·통증의 변화, 전신 불편과 분비물을 확인합니다. 지속·악화하는 증상은 잔류 조직이나 감염 등 추가 평가의 단서일 수 있으므로 자가 판정으로 기다리거나 약을 추가하지 않고 담당 기관에 알립니다.",
+              "source_urls": [
+                "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/medical-management-miscarriage"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "출혈이 적으면 치료 실패인가요?",
+              "answer": "양 하나로 판단하지 않습니다. 시행한 치료와 시간 경과, 후속 검사 결과를 함께 봅니다.",
+              "source_urls": [
+                "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/medical-management-miscarriage"
+              ]
+            },
+            {
+              "question": "열이나 악취가 생겨도 통증이 약하면 기다리나요?",
+              "answer": "통증 정도만으로 안전을 판단하지 말고 새 증상을 치료 기관에 신속히 알리세요.",
+              "source_urls": [
+                "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/medical-management-miscarriage"
+              ]
+            }
+          ]
+        },
+        {
+          "reading_sections": [
+            {
+              "heading": "단일 상실의 원인과 반복 이력 구분",
+              "text": "초기 유산은 임신 발달의 염색체 문제와 관련되기도 하지만 매번 원인을 확인할 수 있는 것은 아닙니다. 한 번의 상실에 광범위 검사를 일률적으로 붙이지 않고 과거 경과·병력과 이번 진단을 바탕으로 필요성을 판단합니다.",
+              "source_urls": [
+                "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/causes-of-miscarriage"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "스트레스 검사를 하면 유산 원인을 알 수 있나요?",
+              "answer": "스트레스 정도를 유산의 단일 원인으로 판정하는 검사는 아닙니다.",
+              "source_urls": [
+                "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/causes-of-miscarriage"
+              ]
+            },
+            {
+              "question": "반복유산이라는 말이 곧 특정 질환인가요?",
+              "answer": "여러 원인과 원인 미상 경과를 포함하므로 별도의 병력·검사 평가가 필요합니다.",
+              "source_urls": [
+                "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/causes-of-miscarriage"
+              ]
+            }
+          ]
+        },
+        {
+          "reading_sections": [
+            {
+              "heading": "추적 검사가 답하려는 질문",
+              "text": "증상과 치료 결과에 따라 소변 임신검사, 혈액 임신호르몬이나 초음파를 활용할 수 있습니다. 모든 사람에게 같은 조합을 적용하지 않으며 검사 날짜와 결과를 연결해 완료 여부 또는 추가 평가 필요성을 판단합니다.",
+              "source_urls": [
+                "https://www.nice.org.uk/guidance/ng126/chapter/management-of-miscarriage"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "양성이 계속되면 무엇을 확인하나요?",
+              "answer": "검사 시점과 증상을 검토하고 잔류 조직 등 가능한 원인을 평가합니다.",
+              "source_urls": [
+                "https://www.nice.org.uk/guidance/ng126/chapter/management-of-miscarriage"
+              ]
+            },
+            {
+              "question": "출혈이 남아도 임신검사가 음성이면 괜찮나요?",
+              "answer": "검사 하나가 지속 증상의 원인을 모두 설명하지 않으므로 출혈 경과를 별도로 알리세요.",
+              "source_urls": [
+                "https://www.nice.org.uk/guidance/ng126/chapter/management-of-miscarriage"
+              ]
+            }
+          ]
+        },
+        {
+          "reading_sections": [
+            {
+              "heading": "보완 치료 전 안전성과 진료 연결",
+              "text": "한약·보충제는 성분·용량·기간, 출혈 경과와 동시 복용약을 함께 검토해야 합니다. 임신 가능성이 다시 생길 시기도 고려합니다. 자궁 회복 촉진·다음 출산에 대한 효능이 확립되었다고 전제하지 않으며 산부인과 추적 계획을 유지합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/pregnancy/keeping-well/medicines/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "천연 성분이면 다음 임신에도 안전한가요?",
+              "answer": "천연이라는 이유로 안전성이 확인되는 것은 아닙니다. 임신 계획과 성분별 정보를 공유하세요.",
+              "source_urls": [
+                "https://www.nhs.uk/pregnancy/keeping-well/medicines/"
+              ]
+            },
+            {
+              "question": "복용 중인 약을 빼고 한약으로 바꿔도 되나요?",
+              "answer": "기존 치료 목적과 중단 위험을 확인해 담당 의료진과 결정해야 합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/pregnancy/keeping-well/medicines/"
+              ]
+            }
+          ]
+        },
+        {
+          "reading_sections": [
+            {
+              "heading": "수술 뒤 활동과 개인 회복의 차이",
+              "text": "수술 후에는 통증·피로와 합병증 여부, 수행할 활동의 부담에 따라 복귀 계획을 조정합니다. 침상 안정 기간을 일률적으로 정하거나 빠른 업무 복귀를 회복의 증거로 삼지 않습니다. 신체가 호전되어도 감정의 회복에는 시간이 더 필요할 수 있습니다.",
+              "source_urls": [
+                "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "모든 유산 후에 수술 후 안내를 그대로 따르나요?",
+              "answer": "받은 관리 방식이 다르므로 해당 치료의 개별 안내를 확인해야 합니다.",
+              "source_urls": [
+                "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/"
+              ]
+            },
+            {
+              "question": "가벼운 활동도 모두 중단해야 하나요?",
+              "answer": "현재 상태와 치료 뒤 안내에 맞춰 가능한 활동부터 조정합니다. 획일적인 장기 안정은 스스로 정하지 마세요.",
+              "source_urls": [
+                "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/"
+              ]
+            }
+          ]
+        },
+        {
+          "reading_sections": [
+            {
+              "heading": "검사 결과와 이후 계획 연결",
+              "text": "추적에서 치료 완료 여부와 남은 증상, 추가 검사 필요성을 설명받고 연락할 방법을 확인합니다. 상실 경험이 반복되었으면 별도 평가를 논의하고, 다음 임신 계획은 회복과 개인 선호를 함께 반영합니다. 한 번의 검사로 다음 임신 결과를 예측하지 않습니다.",
+              "source_urls": [
+                "https://www.acog.org/womens-health/experts-and-stories/the-latest/what-happens-after-a-miscarriage-an-ob-gyn-discusses-the-options"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "후속 확인이 정상이어도 재진할 수 있나요?",
+              "answer": "증상이 새로 생기거나 결과·향후 계획에 대한 설명이 더 필요하면 다시 상담할 수 있습니다.",
+              "source_urls": [
+                "https://www.acog.org/womens-health/experts-and-stories/the-latest/what-happens-after-a-miscarriage-an-ob-gyn-discusses-the-options"
+              ]
+            },
+            {
+              "question": "여러 번 유산했다면 회복 확인만 받으면 되나요?",
+              "answer": "현재 회복 확인과 별도로 반복유산 평가의 필요성을 논의하는 것이 좋습니다.",
+              "source_urls": [
+                "https://www.acog.org/womens-health/experts-and-stories/the-latest/what-happens-after-a-miscarriage-an-ob-gyn-discusses-the-options"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "women-preconception": {
+      "hub_path": "conditions/%EC%9E%84%EC%8B%A0%EC%A4%80%EB%B9%84",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "임신 준비에서 먼저 정리할 내용은 무엇인가요?",
+          "points": [
+            "임신을 생각하는 시점과 피임 사용·월경 주기·과거 임신 이력을 적어보세요.",
+            "만성 질환·수술·가족력과 파트너 건강 정보를 함께 준비합니다.",
+            "임신 계획 때문에 불안하거나 성관계·관계 유지에 부담이 생기면 그 점도 말하세요."
+          ],
+          "diagram": [
+            "계획 시점",
+            "양측 건강",
+            "생활 부담"
+          ],
+          "path": "guide/ochang-women-preconception/symptoms",
+          "image": "images/clinical-guides/women-preconception/symptoms.webp",
+          "image_small": "images/clinical-guides/women-preconception/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "기존 질환과 약물은 왜 미리 확인하나요?",
+          "points": [
+            "당뇨병·간질 등 지속 치료가 필요한 질환은 임신 전 치료 계획을 상의하세요.",
+            "처방약·일반약·한약·보충제가 임신 준비에 적절한지 성분별 검토가 필요합니다.",
+            "필요한 약을 임의로 끊으면 건강에 위험할 수 있으므로 처방 의료진과 변경 여부를 결정합니다."
+          ],
+          "diagram": [
+            "만성 질환",
+            "전체 성분",
+            "임의 중단 금지"
+          ],
+          "path": "guide/ochang-women-preconception/context",
+          "image": "images/clinical-guides/women-preconception/context.webp",
+          "image_small": "images/clinical-guides/women-preconception/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "어떤 상담과 검사를 질문하면 되나요?",
+          "points": [
+            "예방접종 기록과 이전 검사 결과를 가져와 추가 확인이 필요한 항목을 묻습니다.",
+            "엽산 등 임신 전 보충제는 개인 위험과 복용약에 맞는 종류·용량을 확인하세요.",
+            "모든 사람에게 같은 고가 검사를 받기보다 목적과 결과가 바꿀 계획을 설명받습니다."
+          ],
+          "diagram": [
+            "접종 기록",
+            "보충제 상담",
+            "검사 목적"
+          ],
+          "path": "guide/ochang-women-preconception/assessment",
+          "image": "images/clinical-guides/women-preconception/assessment.webp",
+          "image_small": "images/clinical-guides/women-preconception/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "한방치료를 고려할 때 무엇을 확인하나요?",
+          "points": [
+            "상담 목적이 통증·수면·식사 불편인지 기존 난임 치료의 병행인지 구분합니다.",
+            "배란 치료·시술 일정과 임신 가능성을 공유해 처방 성분의 적합성을 검토하세요.",
+            "자궁을 강화하거나 착상·임신 성공률을 반드시 높인다는 설명으로 선택하지 않습니다."
+          ],
+          "diagram": [
+            "상담 목적",
+            "일정·임신 공유",
+            "근거의 한계"
+          ],
+          "path": "guide/ochang-women-preconception/care",
+          "image": "images/clinical-guides/women-preconception/care.webp",
+          "image_small": "images/clinical-guides/women-preconception/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "일상 준비는 어디서 시작하나요?",
+          "points": [
+            "금연·절주·균형 잡힌 식사와 지속 가능한 활동 계획을 양측이 함께 상의하세요.",
+            "수면·업무·돌봄 여건을 살피고 단기간의 무리한 감량이나 과도한 보충제를 피합니다.",
+            "주기 앱의 예측만을 정확한 배란·임신 가능성의 증거로 보지 않습니다."
+          ],
+          "diagram": [
+            "생활 건강",
+            "지속 가능한 계획",
+            "예측의 한계"
+          ],
+          "path": "guide/ochang-women-preconception/daily",
+          "image": "images/clinical-guides/women-preconception/daily.webp",
+          "image_small": "images/clinical-guides/women-preconception/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "임신이 안 되거나 임신을 확인하면 어떻게 하나요?",
+          "points": [
+            "나이·시도 기간·월경 중단·기존 질환에 따라 평가 시작 시점을 개별 상담합니다.",
+            "임신을 확인하면 복용 목록을 산과에 알리고 필요한 산전 진료를 준비하세요.",
+            "준비를 잘해도 모든 임신 결과를 통제할 수 없으므로 어려움이 생기면 지원을 요청합니다."
+          ],
+          "diagram": [
+            "평가 시점",
+            "임신 후 연결",
+            "지원 요청"
+          ],
+          "path": "guide/ochang-women-preconception/followup",
+          "image": "images/clinical-guides/women-preconception/followup.webp",
+          "image_small": "images/clinical-guides/women-preconception/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "women-pregnancy-nausea": {
+      "hub_path": "conditions/%EC%9E%84%EC%8B%A0%EC%A4%91-%EC%9E%85%EB%8D%A7",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "구토 횟수 외에 무엇을 기록하나요?",
+          "points": [
+            "메스꺼움이 지속되는 시간과 음식·물을 어느 정도 유지할 수 있는지 적으세요.",
+            "소변 횟수·색, 체중 흐름과 어지럼·기운 없음이 동반되는지 전합니다.",
+            "냄새·음식·이동 등 악화 상황과 일을 하거나 침대에서 일어나기 어려운 정도도 설명하세요."
+          ],
+          "diagram": [
+            "섭취 가능량",
+            "소변·전신 상태",
+            "생활 제한"
+          ],
+          "path": "guide/ochang-women-pregnancy-nausea/symptoms",
+          "image": "images/clinical-guides/women-pregnancy-nausea/symptoms.webp",
+          "image_small": "images/clinical-guides/women-pregnancy-nausea/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "심한 입덧을 그냥 참으면 안 되는 이유는 무엇인가요?",
+          "points": [
+            "반복 구토로 탈수·체중 감소가 생길 수 있어 상태에 맞는 치료가 필요합니다.",
+            "심한 입덧은 의지가 약하거나 음식을 잘못 먹은 탓이라고 판단하지 않습니다.",
+            "발열·심한 복통 등 다른 증상이 있다면 임신오조 외의 원인도 확인해야 합니다."
+          ],
+          "diagram": [
+            "탈수 위험",
+            "본인 탓 금지",
+            "다른 원인"
+          ],
+          "path": "guide/ochang-women-pregnancy-nausea/context",
+          "image": "images/clinical-guides/women-pregnancy-nausea/context.webp",
+          "image_small": "images/clinical-guides/women-pregnancy-nausea/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "산과 상담에 어떤 정보를 가져가나요?",
+          "points": [
+            "임신 주수·이전 임신의 입덧 이력과 최근 먹고 마신 양을 정리하세요.",
+            "항구토제·비타민·철분·한약을 포함한 현재 복용 목록을 공유합니다.",
+            "검사·수액·입원 등 필요한 조치와 집에서 지켜볼 기준을 구체적으로 물어보세요."
+          ],
+          "diagram": [
+            "주수·이력",
+            "전체 복용 목록",
+            "치료 단계"
+          ],
+          "path": "guide/ochang-women-pregnancy-nausea/assessment",
+          "image": "images/clinical-guides/women-pregnancy-nausea/assessment.webp",
+          "image_small": "images/clinical-guides/women-pregnancy-nausea/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "약이나 한약 치료는 어떻게 검토하나요?",
+          "points": [
+            "임신 중 사용 가능한 항구토 치료가 있으므로 위험과 이득을 담당 산과에 상담합니다.",
+            "처방약을 임의로 중단하거나 한약·생약 제품으로 바꾸지 마세요.",
+            "추가 처방은 성분과 임신 주수를 확인하고 탈수 치료를 늦추지 않는 범위에서 논의합니다."
+          ],
+          "diagram": [
+            "산과 치료",
+            "임의 교체 금지",
+            "성분·주수 확인"
+          ],
+          "path": "guide/ochang-women-pregnancy-nausea/care",
+          "image": "images/clinical-guides/women-pregnancy-nausea/care.webp",
+          "image_small": "images/clinical-guides/women-pregnancy-nausea/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "집에서 가능한 대처는 어떻게 고르나요?",
+          "points": [
+            "견딜 수 있는 음식·수분과 악화시키는 냄새를 찾아 본인에게 맞게 조절하세요.",
+            "적게 나누어 먹는 방법을 시도하더라도 섭취가 안 되면 계속 버티지 않습니다.",
+            "휴식·이동·돌봄 도움을 요청하고 구토가 일상·기분에 미치는 영향도 상담합니다."
+          ],
+          "diagram": [
+            "개인별 식사",
+            "섭취 한계",
+            "생활 도움"
+          ],
+          "path": "guide/ochang-women-pregnancy-nausea/daily",
+          "image": "images/clinical-guides/women-pregnancy-nausea/daily.webp",
+          "image_small": "images/clinical-guides/women-pregnancy-nausea/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "어떤 변화가 재평가 기준인가요?",
+          "points": [
+            "섭취·소변·어지럼·체중과 활동 가능 정도를 치료 전후로 비교합니다.",
+            "약을 먹어도 토하거나 점점 먹지 못하면 다음 예약일까지 기다리지 마세요.",
+            "구토가 줄어도 영양·수분을 회복할 계획과 다시 심해질 때 연락 방법을 확인합니다."
+          ],
+          "diagram": [
+            "섭취·소변 비교",
+            "치료 불충분",
+            "연락 계획"
+          ],
+          "path": "guide/ochang-women-pregnancy-nausea/followup",
+          "image": "images/clinical-guides/women-pregnancy-nausea/followup.webp",
+          "image_small": "images/clinical-guides/women-pregnancy-nausea/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "women-fibroids": {
+      "hub_path": "conditions/%EC%9E%90%EA%B6%81%EA%B7%BC%EC%A2%85",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "근종과 관련해 어떤 불편을 설명하나요?",
+          "points": [
+            "월경 양·기간·통증과 아랫배 압박감이 평소와 어떻게 다른지 적어보세요.",
+            "잦은 소변·배변 불편·성관계 통증이 생긴 시점과 생활 제한도 전합니다.",
+            "피로·어지럼·숨참이 있다면 출혈에 따른 빈혈 평가가 필요한지 확인하세요."
+          ],
+          "diagram": [
+            "출혈·통증",
+            "압박·배뇨",
+            "빈혈 관련 불편"
+          ],
+          "path": "guide/ochang-women-fibroids/symptoms",
+          "image": "images/clinical-guides/women-fibroids/symptoms.webp",
+          "image_small": "images/clinical-guides/women-fibroids/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "근종이 발견되면 모두 치료해야 하나요?",
+          "points": [
+            "증상이 없는 근종은 관찰하는 선택도 있어 발견 자체가 수술의 뜻은 아닙니다.",
+            "개수·위치와 증상에 미치는 영향이 다르므로 크기 수치만 비교하지 않습니다.",
+            "임신 계획·폐경 상태·다른 자궁 질환을 함께 고려하는 이유를 설명받으세요."
+          ],
+          "diagram": [
+            "관찰 가능성",
+            "위치와 영향",
+            "개인 상황"
+          ],
+          "path": "guide/ochang-women-fibroids/context",
+          "image": "images/clinical-guides/women-fibroids/context.webp",
+          "image_small": "images/clinical-guides/women-fibroids/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "초음파 결과에서는 무엇을 물어보나요?",
+          "points": [
+            "영상 날짜와 크기·개수·위치를 이전 검사와 같은 기준으로 비교하는지 질문합니다.",
+            "자궁 안 공간에 영향을 주는지와 출혈 원인이 근종으로 설명되는지 확인하세요.",
+            "비정상 출혈이 있다면 다른 원인을 확인할 평가도 필요한지 상담합니다."
+          ],
+          "diagram": [
+            "이전과 비교",
+            "자궁 공간",
+            "다른 출혈 원인"
+          ],
+          "path": "guide/ochang-women-fibroids/assessment",
+          "image": "images/clinical-guides/women-fibroids/assessment.webp",
+          "image_small": "images/clinical-guides/women-fibroids/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "약물·시술·수술 선택은 어떻게 하나요?",
+          "points": [
+            "출혈·통증 조절과 근종에 대한 처치의 목적을 구분해서 설명받으세요.",
+            "임신을 원하면 치료가 자궁과 향후 임신에 미치는 영향까지 산부인과와 상의합니다.",
+            "한약으로 근종을 반드시 없애거나 수술을 피한다는 보장으로 기존 계획을 바꾸지 않습니다."
+          ],
+          "diagram": [
+            "증상 조절",
+            "임신 계획",
+            "선택의 한계"
+          ],
+          "path": "guide/ochang-women-fibroids/care",
+          "image": "images/clinical-guides/women-fibroids/care.webp",
+          "image_small": "images/clinical-guides/women-fibroids/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "추적 중 일상에서는 무엇을 관리하나요?",
+          "points": [
+            "월경 달력과 피로·통증이 심한 날의 활동을 기록해 상담에 활용하세요.",
+            "빈혈 치료나 호르몬 처방이 있다면 복용 지침과 부작용을 확인합니다.",
+            "특정 음식·건강식품만으로 근종을 줄이려 식사를 과도하게 제한하지 않습니다."
+          ],
+          "diagram": [
+            "월경·활동 일지",
+            "처방 관리",
+            "무리한 식이 피하기"
+          ],
+          "path": "guide/ochang-women-fibroids/daily",
+          "image": "images/clinical-guides/women-fibroids/daily.webp",
+          "image_small": "images/clinical-guides/women-fibroids/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "언제 관찰 계획을 다시 검토하나요?",
+          "points": [
+            "출혈·압박감·생활 기능이 바뀌었는지와 영상 변화를 함께 살펴봅니다.",
+            "임신 계획이 달라지거나 약물 효과가 부족하면 다음 선택을 다시 질문하세요.",
+            "갑작스러운 심한 통증이나 새 폐경 후 출혈은 정기 검사일까지 기다리지 않습니다."
+          ],
+          "diagram": [
+            "증상과 영상",
+            "목표 변화",
+            "새 통증·출혈"
+          ],
+          "path": "guide/ochang-women-fibroids/followup",
+          "image": "images/clinical-guides/women-fibroids/followup.webp",
+          "image_small": "images/clinical-guides/women-fibroids/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "women-endometriosis": {
+      "hub_path": "conditions/%EC%9E%90%EA%B6%81%EB%82%B4%EB%A7%89%EC%A6%9D",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "통증의 주기와 범위는 어떻게 정리하나요?",
+          "points": [
+            "월경 전후와 월경 사이의 골반·허리 통증을 나누어 기록하세요.",
+            "배변·배뇨·성관계 때의 통증과 피로가 언제 겹치는지 표시합니다.",
+            "출혈량과 통증 때문에 놓치는 일·활동을 함께 전해 생활 영향을 설명하세요."
+          ],
+          "diagram": [
+            "월경과 관계",
+            "장·방광 불편",
+            "일상 제한"
+          ],
+          "path": "guide/ochang-women-endometriosis/symptoms",
+          "image": "images/clinical-guides/women-endometriosis/symptoms.webp",
+          "image_small": "images/clinical-guides/women-endometriosis/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "심한 생리통만으로 진단할 수 있나요?",
+          "points": [
+            "자궁내막증은 선근증·근종·장 질환 등과 증상이 겹칠 수 있습니다.",
+            "이전에 생리통으로 치료받은 과정과 가족력·수술 이력을 알리세요.",
+            "통증만으로 병변의 위치나 범위를 확정하지 말고 필요한 평가를 질문합니다."
+          ],
+          "diagram": [
+            "비슷한 증상",
+            "이전 진료",
+            "진단의 범위"
+          ],
+          "path": "guide/ochang-women-endometriosis/context",
+          "image": "images/clinical-guides/women-endometriosis/context.webp",
+          "image_small": "images/clinical-guides/women-endometriosis/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "검사 결과는 어떻게 이해하나요?",
+          "points": [
+            "기존 초음파·MRI·수술 기록이 있다면 검사 시점과 함께 준비합니다.",
+            "영상·진찰·복강경 등 각각의 목적과 결과가 치료에 미칠 영향을 설명받으세요.",
+            "한 번의 검사 결과로 모든 통증 원인이 확인됐는지, 남은 의문은 무엇인지 확인합니다."
+          ],
+          "diagram": [
+            "기존 검사",
+            "검사별 역할",
+            "남은 의문"
+          ],
+          "path": "guide/ochang-women-endometriosis/assessment",
+          "image": "images/clinical-guides/women-endometriosis/assessment.webp",
+          "image_small": "images/clinical-guides/women-endometriosis/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "통증 치료와 임신 계획은 어떻게 조율하나요?",
+          "points": [
+            "약물·호르몬 치료·수술 선택은 통증과 임신 의향을 함께 고려합니다.",
+            "임신 시도 중인지와 기존 처방을 공유해 병행 치료의 역할을 나누세요.",
+            "한약·침이 병변을 없애거나 임신 성공을 보장한다는 설명보다 근거·부작용·상호작용을 묻습니다."
+          ],
+          "diagram": [
+            "통증 목표",
+            "임신 의향",
+            "병행 근거"
+          ],
+          "path": "guide/ochang-women-endometriosis/care",
+          "image": "images/clinical-guides/women-endometriosis/care.webp",
+          "image_small": "images/clinical-guides/women-endometriosis/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "일상 활동을 유지하려면 무엇을 하나요?",
+          "points": [
+            "통증이 심한 날의 일정과 휴식을 조절하고 할 수 있는 활동을 나누어 보세요.",
+            "약·온열 등 사용 중인 대처가 어떤 상황에서 도움이 됐는지 기록합니다.",
+            "장기 통증으로 기분·관계가 힘들다면 통증 관리와 정서 지원을 함께 요청할 수 있습니다."
+          ],
+          "diagram": [
+            "일정 조절",
+            "대처 기록",
+            "정서 지원"
+          ],
+          "path": "guide/ochang-women-endometriosis/daily",
+          "image": "images/clinical-guides/women-endometriosis/daily.webp",
+          "image_small": "images/clinical-guides/women-endometriosis/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "치료가 부족하다고 느끼면 무엇을 말하나요?",
+          "points": [
+            "통증 강도뿐 아니라 배변·배뇨·수면·업무의 변화를 비교해 전하세요.",
+            "효과가 없거나 부작용이 있으면 치료 변경·추가 전문 평가의 이유를 질문합니다.",
+            "수술이나 약물 뒤에도 증상이 다시 생길 수 있어 다음 추적 기준을 확인합니다."
+          ],
+          "diagram": [
+            "기능 비교",
+            "치료 재검토",
+            "추적 기준"
+          ],
+          "path": "guide/ochang-women-endometriosis/followup",
+          "image": "images/clinical-guides/women-endometriosis/followup.webp",
+          "image_small": "images/clinical-guides/women-endometriosis/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "women-endometrial-hyperplasia": {
+      "hub_path": "conditions/%EC%9E%90%EA%B6%81%EB%82%B4%EB%A7%89%EC%A6%9D%EC%8B%9D%EC%A6%9D",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "어떤 출혈 변화가 중요하나요?",
+          "points": [
+            "월경이 오래가거나 양이 늘었는지, 월경 사이 출혈이 있는지 구분합니다.",
+            "폐경 후 출혈은 양이 적어도 언제 생겼는지 산부인과에 알리세요.",
+            "증상이 없이 초음파에서 의심된 경우에도 어떤 소견 때문인지 설명을 요청합니다."
+          ],
+          "diagram": [
+            "과다·장기 출혈",
+            "폐경 후 출혈",
+            "무증상 소견"
+          ],
+          "path": "guide/ochang-women-endometrial-hyperplasia/symptoms",
+          "image": "images/clinical-guides/women-endometrial-hyperplasia/symptoms.webp",
+          "image_small": "images/clinical-guides/women-endometrial-hyperplasia/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "자궁내막증·선근증과 같은 질환인가요?",
+          "points": [
+            "내막증식증은 내막의 과도한 성장으로 자궁내막증·선근증과 구분됩니다.",
+            "배란 불규칙·호르몬제·타목시펜 등 관련 이력을 담당 의료진에게 알려주세요.",
+            "원인을 체질 하나로 단정하지 말고 현재 소견과 위험 요인을 함께 검토합니다."
+          ],
+          "diagram": [
+            "내막 과성장",
+            "관련 이력",
+            "질환 구분"
+          ],
+          "path": "guide/ochang-women-endometrial-hyperplasia/context",
+          "image": "images/clinical-guides/women-endometrial-hyperplasia/context.webp",
+          "image_small": "images/clinical-guides/women-endometrial-hyperplasia/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "초음파만으로 확정할 수 있나요?",
+          "points": [
+            "초음파가 의심 소견을 보여도 진단에는 내막 조직검사가 필요할 수 있습니다.",
+            "검사 결과에 비정형 여부·검체 적정성이 어떻게 기록됐는지 물어보세요.",
+            "생검·자궁경 검사의 목적과 통증 조절, 결과를 들을 일정도 미리 확인합니다."
+          ],
+          "diagram": [
+            "영상의 역할",
+            "조직 결과",
+            "검사 준비"
+          ],
+          "path": "guide/ochang-women-endometrial-hyperplasia/assessment",
+          "image": "images/clinical-guides/women-endometrial-hyperplasia/assessment.webp",
+          "image_small": "images/clinical-guides/women-endometrial-hyperplasia/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "치료 결정에서 무엇을 비교하나요?",
+          "points": [
+            "비정형 여부·암 위험·임신 희망에 따라 호르몬 치료나 수술을 산부인과와 논의합니다.",
+            "출혈이 줄었다는 느낌과 조직의 변화는 다르므로 정해진 평가를 유지하세요.",
+            "한약으로 내막을 정상화하거나 암 진행을 막는다는 보장으로 처방·검사를 대체하지 않습니다."
+          ],
+          "diagram": [
+            "위험별 선택",
+            "증상과 조직",
+            "기존 진료 유지"
+          ],
+          "path": "guide/ochang-women-endometrial-hyperplasia/care",
+          "image": "images/clinical-guides/women-endometrial-hyperplasia/care.webp",
+          "image_small": "images/clinical-guides/women-endometrial-hyperplasia/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "추적 중 일상에서는 무엇을 확인하나요?",
+          "points": [
+            "출혈일과 호르몬 치료 뒤 달라진 증상·불편을 간단히 기록하세요.",
+            "체중·대사 건강이나 배란 문제를 관리할 필요가 있다면 지속 가능한 계획을 상의합니다.",
+            "에스트로겐·보충제·한약 등을 새로 시작하기 전 현재 치료와 맞는지 확인하세요."
+          ],
+          "diagram": [
+            "출혈 일지",
+            "건강 계획",
+            "추가 성분 검토"
+          ],
+          "path": "guide/ochang-women-endometrial-hyperplasia/daily",
+          "image": "images/clinical-guides/women-endometrial-hyperplasia/daily.webp",
+          "image_small": "images/clinical-guides/women-endometrial-hyperplasia/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "왜 증상이 없어도 다시 검사하나요?",
+          "points": [
+            "증상만으로 내막이 회복됐는지 알 수 없어 조직 추적이 필요할 수 있습니다.",
+            "검사 간격과 종료 기준은 본인의 조직 결과·치료 반응에 맞춰 설명받으세요.",
+            "새 출혈·치료 부작용·임신 계획 변화가 있으면 예약을 기다리지 말고 상담합니다."
+          ],
+          "diagram": [
+            "조직 반응 확인",
+            "개별 추적",
+            "변화 알리기"
+          ],
+          "path": "guide/ochang-women-endometrial-hyperplasia/followup",
+          "image": "images/clinical-guides/women-endometrial-hyperplasia/followup.webp",
+          "image_small": "images/clinical-guides/women-endometrial-hyperplasia/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "women-adenomyosis": {
+      "hub_path": "conditions/%EC%9E%90%EA%B6%81%EC%84%A0%EA%B7%BC%EC%A6%9D",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "선근증의 불편을 어떻게 기록하나요?",
+          "points": [
+            "월경통의 시작·지속과 출혈량이 평소보다 달라진 부분을 적어보세요.",
+            "월경 사이 골반통·복부 묵직함·성관계 통증도 함께 설명합니다.",
+            "아픈 날의 약 사용·결석·수면 방해와 피로·어지럼을 나누어 전하세요."
+          ],
+          "diagram": [
+            "월경통·양",
+            "지속 골반통",
+            "생활·피로"
+          ],
+          "path": "guide/ochang-women-adenomyosis/symptoms",
+          "image": "images/clinical-guides/women-adenomyosis/symptoms.webp",
+          "image_small": "images/clinical-guides/women-adenomyosis/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "다른 자궁 질환과 어떻게 다른가요?",
+          "points": [
+            "선근증은 자궁 근육층의 문제이며 자궁 밖의 자궁내막증과 구분됩니다.",
+            "근종·용종·내막증식증도 비슷한 출혈이나 통증을 일으킬 수 있습니다.",
+            "증상의 이름만으로 원인을 단정하지 말고 기존 진단과 검사 내용을 확인하세요."
+          ],
+          "diagram": [
+            "근육층의 변화",
+            "비슷한 증상",
+            "진단 확인"
+          ],
+          "path": "guide/ochang-women-adenomyosis/context",
+          "image": "images/clinical-guides/women-adenomyosis/context.webp",
+          "image_small": "images/clinical-guides/women-adenomyosis/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "진찰과 영상에서는 무엇을 묻나요?",
+          "points": [
+            "월경 달력과 과거 초음파·MRI 결과, 출산·수술 이력을 준비합니다.",
+            "영상에서 선근증을 의심한 근거와 다른 원인 평가가 필요한지 질문하세요.",
+            "과다 출혈이 있다면 빈혈 확인과 출혈 원인 검사를 별도로 상의합니다."
+          ],
+          "diagram": [
+            "주기·검사",
+            "영상 소견",
+            "빈혈·출혈 평가"
+          ],
+          "path": "guide/ochang-women-adenomyosis/assessment",
+          "image": "images/clinical-guides/women-adenomyosis/assessment.webp",
+          "image_small": "images/clinical-guides/women-adenomyosis/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "어떤 치료가 본인에게 맞는지 어떻게 정하나요?",
+          "points": [
+            "통증·과다 출혈 조절과 임신 희망을 함께 말해 치료 목표를 정합니다.",
+            "호르몬 기구·약물·시술·수술의 이득·불편과 향후 임신에 미칠 영향을 질문하세요.",
+            "한약이 선근증을 없애거나 수술 필요성을 항상 줄인다는 약속으로 기존 치료를 바꾸지 않습니다."
+          ],
+          "diagram": [
+            "목표와 임신",
+            "선택별 영향",
+            "근거와 한계"
+          ],
+          "path": "guide/ochang-women-adenomyosis/care",
+          "image": "images/clinical-guides/women-adenomyosis/care.webp",
+          "image_small": "images/clinical-guides/women-adenomyosis/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "월경 중 통증 대처는 무엇을 확인하나요?",
+          "points": [
+            "편안한 온열 등 본인에게 도움이 되는 방법을 안전하게 활용해 보세요.",
+            "진통제를 추가할 때는 기존 약과 중복·금기를 약사나 의료진에게 확인합니다.",
+            "무리한 활동을 조절하되 통증 때문에 일상 전체가 제한된다면 치료 계획을 재상담합니다."
+          ],
+          "diagram": [
+            "안전한 온열",
+            "약물 확인",
+            "활동 조절"
+          ],
+          "path": "guide/ochang-women-adenomyosis/daily",
+          "image": "images/clinical-guides/women-adenomyosis/daily.webp",
+          "image_small": "images/clinical-guides/women-adenomyosis/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "다음 진료에서 어떤 변화를 비교하나요?",
+          "points": [
+            "출혈·통증과 함께 업무·수면·외출 가능 정도가 달라졌는지 기록하세요.",
+            "치료 부작용과 효과가 부족한 부분을 설명하고 다음 선택의 이유를 묻습니다.",
+            "평소보다 심한 통증·새 부정출혈·지속 팽만은 기존 질환의 일부로만 넘기지 않습니다."
+          ],
+          "diagram": [
+            "생활 기능",
+            "치료 반응",
+            "새로운 변화"
+          ],
+          "path": "guide/ochang-women-adenomyosis/followup",
+          "image": "images/clinical-guides/women-adenomyosis/followup.webp",
+          "image_small": "images/clinical-guides/women-adenomyosis/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "women-uterine-prolapse": {
+      "hub_path": "conditions/%EC%9E%90%EA%B6%81%ED%95%98%EC%88%98",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "어떤 느낌과 생활 불편을 설명하나요?",
+          "points": [
+            "질 안이나 입구의 불룩함·묵직함·빠지는 느낌이 언제 심한지 적어보세요.",
+            "오래 서기·물건 들기·배변과 불편의 관계를 나누어 설명합니다.",
+            "잔뇨감·요실금·변비·성관계 불편이 함께 있는지도 상담하세요."
+          ],
+          "diagram": [
+            "불룩함·압박",
+            "활동과 관계",
+            "배뇨·배변"
+          ],
+          "path": "guide/ochang-women-uterine-prolapse/symptoms",
+          "image": "images/clinical-guides/women-uterine-prolapse/symptoms.webp",
+          "image_small": "images/clinical-guides/women-uterine-prolapse/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "자궁만 내려오는 문제인가요?",
+          "points": [
+            "골반장기탈출에는 자궁 외에 방광·장 관련 탈출이 함께 있을 수 있습니다.",
+            "출산·골반 수술·폐경과 지속 기침·변비 같은 이력을 전하세요.",
+            "겉으로 느끼는 덩어리만으로 어느 장기나 단계인지 스스로 확정하지 않습니다."
+          ],
+          "diagram": [
+            "여러 장기",
+            "관련 이력",
+            "진찰로 구분"
+          ],
+          "path": "guide/ochang-women-uterine-prolapse/context",
+          "image": "images/clinical-guides/women-uterine-prolapse/context.webp",
+          "image_small": "images/clinical-guides/women-uterine-prolapse/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "진찰 전에는 무엇을 확인하나요?",
+          "points": [
+            "어떤 골반 진찰을 하는지 설명을 듣고 동석자 등 편안하게 받을 방법을 말하세요.",
+            "배뇨가 어렵거나 소변이 새면 추가 방광 평가의 필요성을 질문합니다.",
+            "진찰로 확인한 위치·정도와 생활 불편이 치료 선택에 어떻게 반영되는지 물어보세요."
+          ],
+          "diagram": [
+            "진찰 설명",
+            "방광 평가",
+            "위치와 정도"
+          ],
+          "path": "guide/ochang-women-uterine-prolapse/assessment",
+          "image": "images/clinical-guides/women-uterine-prolapse/assessment.webp",
+          "image_small": "images/clinical-guides/women-uterine-prolapse/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "운동·페서리·수술은 어떻게 고르나요?",
+          "points": [
+            "증상이 적으면 관찰, 불편하면 골반저 운동·페서리·수술 등을 상담할 수 있습니다.",
+            "임신 계획·다른 질환·본인 선호와 기구 관리 부담까지 함께 비교하세요.",
+            "한약·추나만으로 자궁을 원래 위치에 되돌린다는 보장으로 필요한 진료를 대신하지 않습니다."
+          ],
+          "diagram": [
+            "불편에 따른 선택",
+            "기구·수술 부담",
+            "근거의 한계"
+          ],
+          "path": "guide/ochang-women-uterine-prolapse/care",
+          "image": "images/clinical-guides/women-uterine-prolapse/care.webp",
+          "image_small": "images/clinical-guides/women-uterine-prolapse/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "일상에서 부담을 어떻게 줄이나요?",
+          "points": [
+            "무거운 물건 들기나 반복 힘주기처럼 증상을 늘리는 활동을 조절하세요.",
+            "변비·지속 기침이 있다면 원인 관리와 적절한 식사·활동을 상담합니다.",
+            "골반저 운동은 힘주는 방식이 맞는지 지도를 받고 불편을 참으며 반복하지 않습니다."
+          ],
+          "diagram": [
+            "힘주기 줄이기",
+            "변비·기침 관리",
+            "운동 지도"
+          ],
+          "path": "guide/ochang-women-uterine-prolapse/daily",
+          "image": "images/clinical-guides/women-uterine-prolapse/daily.webp",
+          "image_small": "images/clinical-guides/women-uterine-prolapse/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "치료 뒤 어떤 점을 비교하나요?",
+          "points": [
+            "불룩함뿐 아니라 배뇨·배변·걷기·성생활의 불편 변화를 기록하세요.",
+            "페서리를 사용한다면 교체·관리와 출혈·통증 발생 시 연락 기준을 확인합니다.",
+            "배뇨가 갑자기 안 되거나 돌출 부위 통증·출혈이 생기면 재진을 앞당깁니다."
+          ],
+          "diagram": [
+            "기능 변화",
+            "기구 관리",
+            "새 통증·배뇨 문제"
+          ],
+          "path": "guide/ochang-women-uterine-prolapse/followup",
+          "image": "images/clinical-guides/women-uterine-prolapse/followup.webp",
+          "image_small": "images/clinical-guides/women-uterine-prolapse/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "women-early-menopause": {
+      "hub_path": "conditions/%EC%A1%B0%EA%B8%B0%ED%8F%90%EA%B2%BD",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "어떤 변화를 조기폐경 상담에 전하나요?",
+          "points": [
+            "마지막 월경·이전 주기와 월경이 건너뛴 기간을 달력으로 정리하세요.",
+            "열감·밤땀·수면 문제·질 건조·기분 변화가 함께 생겼는지 적습니다.",
+            "나이와 증상이 업무·관계·임신 계획에 미치는 영향도 구체적으로 말하세요."
+          ],
+          "diagram": [
+            "월경 변화",
+            "동반 증상",
+            "나이와 계획"
+          ],
+          "path": "guide/ochang-women-early-menopause/symptoms",
+          "image": "images/clinical-guides/women-early-menopause/symptoms.webp",
+          "image_small": "images/clinical-guides/women-early-menopause/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "월경이 멈추면 곧바로 조기폐경인가요?",
+          "points": [
+            "임신·피임·갑상선 등 다른 무월경 원인도 함께 확인해야 합니다.",
+            "난소 수술·항암·방사선 치료나 가족력과 복용약을 알려주세요.",
+            "AMH 같은 난소예비력 수치 하나만으로 조기폐경을 확정하거나 모든 임신 가능성을 판단하지 않습니다."
+          ],
+          "diagram": [
+            "다른 원인",
+            "치료·가족력",
+            "수치의 한계"
+          ],
+          "path": "guide/ochang-women-early-menopause/context",
+          "image": "images/clinical-guides/women-early-menopause/context.webp",
+          "image_small": "images/clinical-guides/women-early-menopause/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "검사 결과에서는 무엇을 확인하나요?",
+          "points": [
+            "이전 호르몬·초음파 검사 날짜와 검사 당시 월경·약 복용 상태를 준비합니다.",
+            "진단을 뒷받침하는 소견과 재검 필요성, 남은 불확실성을 설명받으세요.",
+            "원인 평가 외에 뼈·심혈관 건강 점검이 필요한지도 의료진에게 질문합니다."
+          ],
+          "diagram": [
+            "검사 조건",
+            "진단과 재검",
+            "장기 건강"
+          ],
+          "path": "guide/ochang-women-early-menopause/assessment",
+          "image": "images/clinical-guides/women-early-menopause/assessment.webp",
+          "image_small": "images/clinical-guides/women-early-menopause/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "호르몬 치료와 한방치료 상담은 어떻게 나누나요?",
+          "points": [
+            "이른 호르몬 저하의 건강 영향을 고려해 호르몬 보충의 이득·금기를 상의합니다.",
+            "임신 의향과 피임 필요성을 구분해 담당 산부인과의 개별 계획을 확인하세요.",
+            "한약으로 난소 기능을 반드시 되돌리거나 호르몬 치료를 대체한다는 보장으로 처방을 중단하지 않습니다."
+          ],
+          "diagram": [
+            "보충의 목적",
+            "임신·피임",
+            "회복 약속의 한계"
+          ],
+          "path": "guide/ochang-women-early-menopause/care",
+          "image": "images/clinical-guides/women-early-menopause/care.webp",
+          "image_small": "images/clinical-guides/women-early-menopause/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "일상과 정서 관리는 무엇을 포함하나요?",
+          "points": [
+            "뼈 건강을 위한 식사·활동과 흡연·음주 등 조절할 부분을 상의하세요.",
+            "불면·열감에 맞춰 생활 리듬과 환경을 조절하고 증상 일지를 활용합니다.",
+            "갑작스러운 진단이 주는 상실감·불안을 말하고 필요하면 정서 지원을 요청하세요."
+          ],
+          "diagram": [
+            "뼈·생활 건강",
+            "증상 기록",
+            "정서 지원"
+          ],
+          "path": "guide/ochang-women-early-menopause/daily",
+          "image": "images/clinical-guides/women-early-menopause/daily.webp",
+          "image_small": "images/clinical-guides/women-early-menopause/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "추적 진료에서 무엇을 다시 결정하나요?",
+          "points": [
+            "증상과 약물 불편, 건강 검사 결과를 함께 비교해 치료를 조정합니다.",
+            "임신 계획이 생기거나 달라졌다면 관련 전문 상담이 필요한지 확인하세요.",
+            "출혈이 새로 생겼을 때는 난소가 회복됐다고 자가 판단하지 말고 원인을 문의합니다."
+          ],
+          "diagram": [
+            "치료 반응",
+            "계획 변화",
+            "새 출혈 확인"
+          ],
+          "path": "guide/ochang-women-early-menopause/followup",
+          "image": "images/clinical-guides/women-early-menopause/followup.webp",
+          "image_small": "images/clinical-guides/women-early-menopause/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "women-prenatal-herbs": {
+      "hub_path": "conditions/%EC%B6%9C%EC%82%B0%EC%A0%84%ED%95%9C%EC%95%BD",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "출산 전 어떤 불편 때문에 상담하나요?",
+          "points": [
+            "수면·소화·통증·불안 중 해결하고 싶은 문제와 시작 시점을 구체화하세요.",
+            "일상과 식사·걷기에 미치는 영향과 기존 산과 상담 내용을 전합니다.",
+            "출혈·양수 의심 분비물·태동 변화 같은 문제를 일반적인 출산 준비 불편으로 포함하지 않습니다."
+          ],
+          "diagram": [
+            "현재 불편",
+            "생활 영향",
+            "산과 증상 구분"
+          ],
+          "path": "guide/ochang-women-prenatal-herbs/symptoms",
+          "image": "images/clinical-guides/women-prenatal-herbs/symptoms.webp",
+          "image_small": "images/clinical-guides/women-prenatal-herbs/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "임신 주수와 산과 정보가 왜 중요한가요?",
+          "points": [
+            "임신 주수와 다태임신·고혈압 등 현재 임신의 주요 진료 정보를 알려주세요.",
+            "예정된 유도분만·제왕절개 등 출산 계획이 있다면 처방 상담에 공유합니다.",
+            "천연 성분이라도 임신 중 안전성이 자동으로 보장되지 않으며 산전 진료를 계속해야 합니다."
+          ],
+          "diagram": [
+            "주수·임신 경과",
+            "출산 계획",
+            "안전성의 한계"
+          ],
+          "path": "guide/ochang-women-prenatal-herbs/context",
+          "image": "images/clinical-guides/women-prenatal-herbs/context.webp",
+          "image_small": "images/clinical-guides/women-prenatal-herbs/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "복용 전에 어떤 목록을 확인하나요?",
+          "points": [
+            "처방약·일반약·영양제·차·한약까지 제품명과 구성 성분을 준비하세요.",
+            "간·신장 질환·알레르기와 과거 복용 뒤 불편을 의료진에게 알립니다.",
+            "누가 복용 적합성을 검토하고 산과 담당자와 어떻게 공유할지 확인합니다."
+          ],
+          "diagram": [
+            "전체 성분",
+            "질환·이상 반응",
+            "담당자 공유"
+          ],
+          "path": "guide/ochang-women-prenatal-herbs/assessment",
+          "image": "images/clinical-guides/women-prenatal-herbs/assessment.webp",
+          "image_small": "images/clinical-guides/women-prenatal-herbs/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "복용 여부는 무엇을 근거로 정하나요?",
+          "points": [
+            "원하는 효과에 대한 근거와 임신 중 안전성 자료가 각각 얼마나 있는지 질문하세요.",
+            "성분이 불명확하거나 개별 위험을 평가하기 어렵다면 복용을 보류하고 산과와 상의합니다.",
+            "진통 유도·유산 예방·순산을 보장하는 목적으로 임의 복용하거나 기존 처방을 바꾸지 않습니다."
+          ],
+          "diagram": [
+            "효과와 안전성",
+            "정보 부족 판단",
+            "결과 약속의 한계"
+          ],
+          "path": "guide/ochang-women-prenatal-herbs/care",
+          "image": "images/clinical-guides/women-prenatal-herbs/care.webp",
+          "image_small": "images/clinical-guides/women-prenatal-herbs/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "출산 준비에서 약 외에 무엇을 정하나요?",
+          "points": [
+            "산과에서 안내한 활동·식사·휴식과 출산 시 연락·이동 계획을 준비하세요.",
+            "새 제품을 추가하기 전 기존 목록과 겹치는 성분이 있는지 확인합니다.",
+            "이미 복용한 것이 걱정되면 제품·양·시각을 정리해 상담하고 혼자 위험을 단정하지 않습니다."
+          ],
+          "diagram": [
+            "출산 연락 계획",
+            "중복 확인",
+            "복용 정보 정리"
+          ],
+          "path": "guide/ochang-women-prenatal-herbs/daily",
+          "image": "images/clinical-guides/women-prenatal-herbs/daily.webp",
+          "image_small": "images/clinical-guides/women-prenatal-herbs/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "복용 후 또는 출산 가까이에는 무엇을 알리나요?",
+          "points": [
+            "새로운 불편이 생기면 제품명·복용 시각과 증상 경과를 함께 전하세요.",
+            "출산 계획이나 입원 시점이 바뀌면 모든 복용 정보를 산과에 다시 알립니다.",
+            "출산 후 계속 먹을지와 수유 중 적합성은 별도 검토하며 남은 약을 자동으로 이어 먹지 않습니다."
+          ],
+          "diagram": [
+            "새 증상",
+            "입원 때 공유",
+            "수유 전 재검토"
+          ],
+          "path": "guide/ochang-women-prenatal-herbs/followup",
+          "image": "images/clinical-guides/women-prenatal-herbs/followup.webp",
+          "image_small": "images/clinical-guides/women-prenatal-herbs/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "mind-insomnia": {
+      "hub_path": "conditions/%EB%B6%88%EB%A9%B4%EC%A6%9D",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "어떤 잠의 어려움을 기록할까요?",
+          "points": [
+            "잠자리에 든 시각과 실제 잠든 것으로 느낀 시각을 나누고, 중간에 깬 횟수와 기상 시각을 적습니다.",
+            "수면 시간이 짧아도 생활에 문제가 없는 날과, 집중 저하·졸림으로 일하기 어려운 날을 구별합니다.",
+            "코골이, 숨 멎음, 다리 불편, 통증 때문에 깨는지 확인해 단순 불면과 다른 수면 문제를 구분합니다."
+          ],
+          "diagram": [
+            "입면 지연",
+            "중간 각성",
+            "낮 기능"
+          ],
+          "path": "guide/ochang-mind-insomnia/symptoms",
+          "image": "images/clinical-guides/mind-insomnia/symptoms.webp",
+          "image_small": "images/clinical-guides/mind-insomnia/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "왜 피곤해도 잠이 오지 않을까요?",
+          "points": [
+            "생활 시간의 변화와 밤늦은 업무, 걱정, 카페인 섭취가 잠을 방해하는지 시간 순서로 살펴봅니다.",
+            "통증·호흡기 증상·기분 변화와 복용 중인 약이 함께 영향을 줄 수 있어 스트레스만을 원인으로 정하지 않습니다.",
+            "잠을 꼭 자야 한다는 부담과 오래 누워 있는 습관이 겹치는지도 상담하며, 개인의 의지 부족으로 설명하지 않습니다."
+          ],
+          "diagram": [
+            "생활 시간",
+            "자극물",
+            "동반 증상"
+          ],
+          "path": "guide/ochang-mind-insomnia/context",
+          "image": "images/clinical-guides/mind-insomnia/context.webp",
+          "image_small": "images/clinical-guides/mind-insomnia/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "진료 전에 무엇을 준비할까요?",
+          "points": [
+            "평일과 휴일의 취침·기상, 낮잠, 음주와 수면 보조제 사용을 적은 수면 기록을 준비합니다.",
+            "최근 시작한 약이나 건강기능식품, 교대근무와 운전 여부를 알려 치료 선택에 필요한 정보를 제공합니다.",
+            "설문 점수만으로 불면증을 확진하지 않으며 다른 수면 질환이 의심될 때 필요한 검사를 상의합니다."
+          ],
+          "diagram": [
+            "수면 일지",
+            "복용 목록",
+            "근무 형태"
+          ],
+          "path": "guide/ochang-mind-insomnia/assessment",
+          "image": "images/clinical-guides/mind-insomnia/assessment.webp",
+          "image_small": "images/clinical-guides/mind-insomnia/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "치료 상담에서는 무엇을 물을까요?",
+          "points": [
+            "지속되는 불면에는 수면 습관 조절과 불면 인지행동치료 같은 선택지를 개인 상황에 맞춰 논의합니다.",
+            "약을 고려한다면 기대하는 도움과 다음 날 졸림, 복용 기간·재평가 계획을 처방 의료진에게 확인합니다.",
+            "기존 처방약을 임의로 늘리거나 끊지 않고, 다른 진료를 받고 있다면 치료 내용을 서로 알립니다."
+          ],
+          "diagram": [
+            "행동 치료",
+            "약물 상담",
+            "재평가"
+          ],
+          "path": "guide/ochang-mind-insomnia/care",
+          "image": "images/clinical-guides/mind-insomnia/care.webp",
+          "image_small": "images/clinical-guides/mind-insomnia/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "오늘부터 어떤 습관을 조정할까요?",
+          "points": [
+            "기상 시각을 가능한 일정하게 유지하고 잠들기 전 자극이 적은 활동으로 하루를 마무리합니다.",
+            "밤의 카페인·음주·화면 사용이 실제 잠에 미치는 영향을 살피며 한 번에 바꿀 습관을 정합니다.",
+            "졸음이 심하면 운전과 위험한 기계 작업을 피하고, 침실에서 수면 시간을 계속 계산하는 습관을 줄입니다."
+          ],
+          "diagram": [
+            "일정한 기상",
+            "취침 준비",
+            "운전 안전"
+          ],
+          "path": "guide/ochang-mind-insomnia/daily",
+          "image": "images/clinical-guides/mind-insomnia/daily.webp",
+          "image_small": "images/clinical-guides/mind-insomnia/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "호전 여부는 어떻게 판단할까요?",
+          "points": [
+            "몇 시간 잤는지만 비교하지 않고 잠드는 부담과 낮의 집중·활동이 나아지는지 함께 확인합니다.",
+            "코골이와 숨 멎음, 과도한 낮 졸림이 새로 확인되면 수면무호흡 등 다른 문제의 평가를 요청합니다.",
+            "수면 기록을 바탕으로 도움이 된 변화와 어려운 점을 다시 상의하며 정해진 횟수의 완치를 약속하지 않습니다."
+          ],
+          "diagram": [
+            "잠의 부담",
+            "낮의 활동",
+            "원인 재검토"
+          ],
+          "path": "guide/ochang-mind-insomnia/followup",
+          "image": "images/clinical-guides/mind-insomnia/followup.webp",
+          "image_small": "images/clinical-guides/mind-insomnia/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "mind-sleep-assessment": {
+      "hub_path": "conditions/%EC%88%98%EB%A9%B4%EC%9E%A5%EC%95%A0",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "수면 문제를 어떻게 나눌까요?",
+          "points": [
+            "잠이 오지 않는지, 자다가 숨 때문에 깨는지, 충분히 잤는데도 낮에 잠드는지 가장 불편한 장면을 정합니다.",
+            "함께 사는 사람이 본 심한 코골이·숨 멎음·뒤척임과 본인이 느끼는 잠의 상태가 다른지도 확인합니다.",
+            "다리 불편이나 늦게 잠들고 늦게 일어나는 일정처럼 특정 조건이 있는지 증상에 맞춰 설명합니다."
+          ],
+          "diagram": [
+            "불면",
+            "수면 중 호흡",
+            "낮 졸림"
+          ],
+          "path": "guide/ochang-mind-sleep-assessment/symptoms",
+          "image": "images/clinical-guides/mind-sleep-assessment/symptoms.webp",
+          "image_small": "images/clinical-guides/mind-sleep-assessment/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "수면 시간이 같아도 왜 다를까요?",
+          "points": [
+            "수면의 길이뿐 아니라 호흡, 깨어나는 빈도와 생체 리듬이 낮의 상태에 영향을 줄 수 있습니다.",
+            "교대근무, 통증, 음주, 약물과 기분 증상을 함께 검토하므로 모든 수면 문제를 불면으로 묶지 않습니다.",
+            "검사 필요성은 증상과 진찰에 따라 달라지며, 모든 사람이 같은 검사를 받는 것은 아닙니다."
+          ],
+          "diagram": [
+            "수면 길이",
+            "수면 질",
+            "수면 시간대"
+          ],
+          "path": "guide/ochang-mind-sleep-assessment/context",
+          "image": "images/clinical-guides/mind-sleep-assessment/context.webp",
+          "image_small": "images/clinical-guides/mind-sleep-assessment/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "첫 상담에 무엇을 가져갈까요?",
+          "points": [
+            "최근 평일·휴일의 수면표와 낮잠, 깜박 졸았던 상황, 졸음 관련 사고 위험을 메모합니다.",
+            "코골이·무호흡에 대한 가족의 관찰과 현재 복용약 목록을 가져가되 밤새 촬영을 의무로 생각하지 않습니다.",
+            "수면검사가 제안되면 확인하려는 질환, 검사 방법과 결과가 치료 선택에 미치는 영향을 질문합니다."
+          ],
+          "diagram": [
+            "생활 기록",
+            "동반 관찰",
+            "검사 목적"
+          ],
+          "path": "guide/ochang-mind-sleep-assessment/assessment",
+          "image": "images/clinical-guides/mind-sleep-assessment/assessment.webp",
+          "image_small": "images/clinical-guides/mind-sleep-assessment/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "평가 뒤 치료는 어떻게 달라질까요?",
+          "points": [
+            "불면에는 행동과 인지에 관한 접근을, 호흡 문제가 의심되면 그에 맞는 수면·호흡 평가를 논의합니다.",
+            "낮 졸림은 수면 부족 외에 질환이나 약물 영향도 확인하며 수면제 추가만으로 해결하려 하지 않습니다.",
+            "여러 의료기관을 이용하면 검사 결과와 처방을 공유해 중복 약물이나 서로 다른 안내를 조정합니다."
+          ],
+          "diagram": [
+            "원인별 치료",
+            "약물 검토",
+            "진료 연계"
+          ],
+          "path": "guide/ochang-mind-sleep-assessment/care",
+          "image": "images/clinical-guides/mind-sleep-assessment/care.webp",
+          "image_small": "images/clinical-guides/mind-sleep-assessment/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "평가 전까지 무엇을 기록할까요?",
+          "points": [
+            "평소의 취침·기상과 식사·근무 시간을 기록해 특별히 잘 자려 한 하루보다 실제 생활을 보여줍니다.",
+            "술로 잠을 유도하거나 새로운 진정 제품을 여러 개 시험하기보다 복용 내용을 의료진과 먼저 확인합니다.",
+            "낮에 잠들 위험이 있으면 운전과 고소 작업의 대안을 마련하고 가족·직장과 필요한 조정을 상의합니다."
+          ],
+          "diagram": [
+            "평소 패턴",
+            "복용 확인",
+            "위험 작업"
+          ],
+          "path": "guide/ochang-mind-sleep-assessment/daily",
+          "image": "images/clinical-guides/mind-sleep-assessment/daily.webp",
+          "image_small": "images/clinical-guides/mind-sleep-assessment/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "다음 진료에서는 무엇을 확인할까요?",
+          "points": [
+            "검사 수치와 실제 졸림·피로·업무 기능을 함께 살펴 결과가 본인의 문제를 설명하는지 질문합니다.",
+            "치료 도구나 약을 시작했다면 사용의 어려움, 부작용, 실제 사용 시간을 숨기지 않고 이야기합니다.",
+            "수면 문제가 남으면 원인과 치료 목표를 다시 검토하며 한 번의 정상 검사로 모든 불편을 부정하지 않습니다."
+          ],
+          "diagram": [
+            "결과 해석",
+            "사용 어려움",
+            "목표 조정"
+          ],
+          "path": "guide/ochang-mind-sleep-assessment/followup",
+          "image": "images/clinical-guides/mind-sleep-assessment/followup.webp",
+          "image_small": "images/clinical-guides/mind-sleep-assessment/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "mind-child-sleep": {
+      "hub_path": "conditions/%EC%86%8C%EC%95%84-%EB%B6%88%EB%A9%B4%EC%A6%9D",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "밤 울음에서 무엇을 관찰할까요?",
+          "points": [
+            "잠든 뒤 언제 깨는지, 얼마나 지속되는지와 달래는 방식에 따른 반응을 간단히 기록합니다.",
+            "코골이·숨 가쁨·구토·가려움·통증처럼 잠을 깨울 수 있는 신체 신호가 함께 있는지 살펴봅니다.",
+            "수면 시간은 나이에 따라 다르므로 다른 아이와의 단순 비교보다 성장·놀이·등원 상태를 봅니다."
+          ],
+          "diagram": [
+            "깨는 시각",
+            "동반 신체 신호",
+            "낮의 상태"
+          ],
+          "path": "guide/ochang-mind-child-sleep/symptoms",
+          "image": "images/clinical-guides/mind-child-sleep/symptoms.webp",
+          "image_small": "images/clinical-guides/mind-child-sleep/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "생활 변화가 잠에 영향을 줄까요?",
+          "points": [
+            "낮잠 시간과 취침 시각, 어린이집 적응이나 이사처럼 최근 바뀐 환경을 차분하게 정리합니다.",
+            "밤에 깬다는 이유만으로 정서 문제나 양육 잘못으로 단정하지 않고 발달 단계의 차이를 고려합니다.",
+            "보호자의 수면 부족과 돌봄 부담도 중요한 상담 내용이므로 아이만의 문제로 떠안지 않습니다."
+          ],
+          "diagram": [
+            "발달 단계",
+            "환경 변화",
+            "돌봄 부담"
+          ],
+          "path": "guide/ochang-mind-child-sleep/context",
+          "image": "images/clinical-guides/mind-child-sleep/context.webp",
+          "image_small": "images/clinical-guides/mind-child-sleep/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "소아 진료 전에 무엇을 준비할까요?",
+          "points": [
+            "아이의 나이, 성장과 식사, 낮잠·밤잠, 코골이 여부를 알려 발달과 신체 상태를 함께 평가받습니다.",
+            "발열·통증이 동반되거나 갑자기 잠이 달라졌다면 기존 패턴과 다른 점을 우선 설명합니다.",
+            "처방약과 감기약·보조제 사용을 알리고, 영상은 필요한 장면만 아이를 방해하지 않는 범위에서 준비합니다."
+          ],
+          "diagram": [
+            "성장·식사",
+            "수면 기록",
+            "약물 확인"
+          ],
+          "path": "guide/ochang-mind-child-sleep/assessment",
+          "image": "images/clinical-guides/mind-child-sleep/assessment.webp",
+          "image_small": "images/clinical-guides/mind-child-sleep/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "어떤 도움을 상담할 수 있을까요?",
+          "points": [
+            "신체 원인이 있으면 그 평가를 우선하고, 생활 리듬과 취침 과정은 아이의 나이에 맞게 조정합니다.",
+            "보호자가 실행 가능한 안정적인 취침 절차와 밤에 깼을 때의 대응을 의료진과 함께 정합니다.",
+            "성인용 수면제나 임의 용량의 수면 보조제를 사용하지 않고 아이에게 약이 필요한지 별도로 확인합니다."
+          ],
+          "diagram": [
+            "원인 확인",
+            "취침 절차",
+            "소아 처방"
+          ],
+          "path": "guide/ochang-mind-child-sleep/care",
+          "image": "images/clinical-guides/mind-child-sleep/care.webp",
+          "image_small": "images/clinical-guides/mind-child-sleep/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "가정에서는 어떻게 도울까요?",
+          "points": [
+            "잠들기 전 조용한 놀이와 익숙한 순서를 유지하고 늦은 화면 사용이나 지나친 자극을 줄여봅니다.",
+            "잠을 못 잔다고 혼내거나 겁주지 않으며, 울 때 다칠 물건과 낙상 위험이 없는 환경을 마련합니다.",
+            "돌봄을 나눌 수 있는 사람과 교대 방법을 정해 지친 보호자가 안전하게 쉴 수 있도록 합니다."
+          ],
+          "diagram": [
+            "조용한 준비",
+            "안전한 공간",
+            "돌봄 교대"
+          ],
+          "path": "guide/ochang-mind-child-sleep/daily",
+          "image": "images/clinical-guides/mind-child-sleep/daily.webp",
+          "image_small": "images/clinical-guides/mind-child-sleep/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "다시 상담할 변화는 무엇인가요?",
+          "points": [
+            "밤 울음의 횟수뿐 아니라 낮의 심한 졸림·짜증, 식사·성장과 등원 어려움이 지속되는지 확인합니다.",
+            "코골이와 숨 멎음, 반복되는 통증이나 발작 같은 움직임이 있으면 관련 소아 평가를 요청합니다.",
+            "생활을 조정해도 문제가 계속되면 기록을 가지고 재상담하며 특정 기간 안에 반드시 통잠을 잔다고 기대하지 않습니다."
+          ],
+          "diagram": [
+            "낮 기능",
+            "호흡·움직임",
+            "재상담"
+          ],
+          "path": "guide/ochang-mind-child-sleep/followup",
+          "image": "images/clinical-guides/mind-child-sleep/followup.webp",
+          "image_small": "images/clinical-guides/mind-child-sleep/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "mind-adhd": {
+      "hub_path": "conditions/adhd",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "어떤 어려움이 반복되나요?",
+          "points": [
+            "해야 할 일을 잊거나 시작·마무리가 어렵고 물건을 자주 잃는 등 구체적인 생활 장면을 모읍니다.",
+            "가만히 있기 어렵거나 말·행동이 앞서는 일이 나이와 상황에 비해 반복되는지 확인합니다.",
+            "집·학교·직장에서 어려움이 비슷한지와 잘 수행되는 조건을 함께 적어 강점도 평가에 포함합니다."
+          ],
+          "diagram": [
+            "주의 조절",
+            "충동 조절",
+            "여러 환경"
+          ],
+          "path": "guide/ochang-mind-adhd/symptoms",
+          "image": "images/clinical-guides/mind-adhd/symptoms.webp",
+          "image_small": "images/clinical-guides/mind-adhd/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "집중 저하와 ADHD는 어떻게 다를까요?",
+          "points": [
+            "잠을 못 잤거나 큰 스트레스가 생긴 뒤 갑자기 시작한 집중 저하는 그 원인을 우선 살펴야 합니다.",
+            "ADHD는 발달력과 지속적인 생활 영향을 함께 보는 진단이므로 온라인 체크리스트 하나로 결정하지 않습니다.",
+            "지능이나 성실성의 문제로 설명하지 않으며, 학습장애·불안·우울 등이 함께 있는지도 구분합니다."
+          ],
+          "diagram": [
+            "수면·기분",
+            "발달력",
+            "동반 문제"
+          ],
+          "path": "guide/ochang-mind-adhd/context",
+          "image": "images/clinical-guides/mind-adhd/context.webp",
+          "image_small": "images/clinical-guides/mind-adhd/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "전문 평가에는 무엇이 도움이 될까요?",
+          "points": [
+            "가능하면 어린 시절 생활과 학업 기록, 본인과 보호자·교사가 관찰한 실제 사례를 준비합니다.",
+            "현재 수면, 약물·카페인 사용, 기분 변화와 청력·시력의 불편도 알려 다른 원인을 점검합니다.",
+            "설문과 면담의 역할, 추가 평가 필요성, 결과가 학교·직장 지원에 어떻게 쓰이는지 질문합니다."
+          ],
+          "diagram": [
+            "과거 기록",
+            "생활 사례",
+            "평가 목적"
+          ],
+          "path": "guide/ochang-mind-adhd/assessment",
+          "image": "images/clinical-guides/mind-adhd/assessment.webp",
+          "image_small": "images/clinical-guides/mind-adhd/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "치료와 지원은 어떻게 고를까요?",
+          "points": [
+            "연령과 불편에 따라 교육, 행동적 지원, 환경 조정과 약물 치료 등 선택지를 전문 의료진과 논의합니다.",
+            "약을 쓰는 경우 목표 행동과 효과 확인 방법, 식사·수면 변화 등 관찰할 항목을 미리 정합니다.",
+            "침이나 보조제 같은 방법만으로 ADHD를 확실히 치료한다고 기대하지 않고 기존 치료와의 병행을 상담합니다."
+          ],
+          "diagram": [
+            "환경 지원",
+            "치료 선택",
+            "부작용 관찰"
+          ],
+          "path": "guide/ochang-mind-adhd/care",
+          "image": "images/clinical-guides/mind-adhd/care.webp",
+          "image_small": "images/clinical-guides/mind-adhd/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "일상을 쉽게 만드는 방법은 무엇인가요?",
+          "points": [
+            "할 일을 짧게 나누고 눈에 보이는 일정·알림을 사용해 기억력에만 의존하지 않도록 합니다.",
+            "공부·업무 공간에서 방해 요소를 줄이고 휴식 시간을 포함한 실행 가능한 계획을 함께 만듭니다.",
+            "실수만 지적하기보다 도움이 된 전략과 성취를 확인하며 아이나 본인에게 수치심을 주는 표현을 피합니다."
+          ],
+          "diagram": [
+            "작은 과제",
+            "보이는 일정",
+            "구체적 격려"
+          ],
+          "path": "guide/ochang-mind-adhd/daily",
+          "image": "images/clinical-guides/mind-adhd/daily.webp",
+          "image_small": "images/clinical-guides/mind-adhd/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "지원이 맞는지 어떻게 확인할까요?",
+          "points": [
+            "점수 하나보다 지각·과제 누락·대인 갈등처럼 정한 생활 목표가 달라지는지 확인합니다.",
+            "치료 후 불면, 식사 변화, 기분 변화나 다른 불편이 생기면 처방 의료진에게 알리고 임의 조절하지 않습니다.",
+            "학년·업무 환경이 바뀌면 필요한 지원도 다시 점검하며 한 번 정한 방법을 평생의 기준으로 삼지 않습니다."
+          ],
+          "diagram": [
+            "생활 목표",
+            "새 불편",
+            "환경 변화"
+          ],
+          "path": "guide/ochang-mind-adhd/followup",
+          "image": "images/clinical-guides/mind-adhd/followup.webp",
+          "image_small": "images/clinical-guides/mind-adhd/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "mind-concentration": {
+      "hub_path": "conditions/%EC%A7%91%EC%A4%91%EB%A0%A5-%EC%A0%80%ED%95%98",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "집중이 안 된다는 느낌을 어떻게 설명할까요?",
+          "points": [
+            "글을 읽어도 내용이 남지 않는지, 일을 시작하기 어려운지, 작은 자극에 주의가 옮겨가는지 구분합니다.",
+            "발생 시간과 지속 시간, 필요한 일의 종류를 적고 충분히 쉰 날이나 조용한 환경과 비교합니다.",
+            "실수·마감 누락·운전 위험 등 생활 영향을 확인하되 바쁜 날의 일시적인 산만함을 병으로 단정하지 않습니다."
+          ],
+          "diagram": [
+            "주의 유지",
+            "과제 시작",
+            "생활 실수"
+          ],
+          "path": "guide/ochang-mind-concentration/symptoms",
+          "image": "images/clinical-guides/mind-concentration/symptoms.webp",
+          "image_small": "images/clinical-guides/mind-concentration/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "함께 살펴볼 원인은 무엇인가요?",
+          "points": [
+            "수면의 질, 낮 졸림, 통증과 식사·카페인 패턴이 주의 유지와 관련되는지 순서를 확인합니다.",
+            "불안한 생각이나 우울감이 집중을 방해할 수 있지만 신체 질환과 약물 영향도 함께 고려합니다.",
+            "어릴 때부터 여러 환경에서 어려웠는지와 최근 환경 변화 뒤 시작됐는지는 평가 방향을 달리합니다."
+          ],
+          "diagram": [
+            "수면·피로",
+            "기분·통증",
+            "발생 시점"
+          ],
+          "path": "guide/ochang-mind-concentration/context",
+          "image": "images/clinical-guides/mind-concentration/context.webp",
+          "image_small": "images/clinical-guides/mind-concentration/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "상담에서 어떤 정보를 전할까요?",
+          "points": [
+            "언제부터 달라졌는지, 이전에 가능했던 일과 현재 어려운 일을 구체적인 예로 준비합니다.",
+            "복용약·보조제와 수면 일정, 최근 질병·외상이나 중요한 생활 사건을 빠짐없이 알립니다.",
+            "필요한 평가가 주의력인지 기억력인지, 기분과 수면인지 질문하고 검사 점수만으로 자기 진단하지 않습니다."
+          ],
+          "diagram": [
+            "이전과 비교",
+            "복용 목록",
+            "평가 범위"
+          ],
+          "path": "guide/ochang-mind-concentration/assessment",
+          "image": "images/clinical-guides/mind-concentration/assessment.webp",
+          "image_small": "images/clinical-guides/mind-concentration/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "도움의 우선순위는 무엇일까요?",
+          "points": [
+            "원인으로 의심되는 수면·기분·신체 문제를 확인하고 가장 시급한 생활 위험부터 줄입니다.",
+            "공부나 업무 계획은 현재 가능한 시간 단위로 조정하고 필요한 학교·직장 지원을 상담합니다.",
+            "집중력 향상을 내세우는 제품을 여러 개 추가하기보다 성분과 기존 약의 병용을 의료진에게 확인합니다."
+          ],
+          "diagram": [
+            "원인 확인",
+            "과제 조정",
+            "제품 검토"
+          ],
+          "path": "guide/ochang-mind-concentration/care",
+          "image": "images/clinical-guides/mind-concentration/care.webp",
+          "image_small": "images/clinical-guides/mind-concentration/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "어떤 기록과 환경 조정이 유용할까요?",
+          "points": [
+            "한 번에 한 과제를 정하고 알림을 줄인 환경에서 짧게 일한 뒤 쉬는 방식을 시험합니다.",
+            "중요한 약속·복용·할 일을 한 곳에 적어 두고 기억에만 의존해 스스로를 탓하는 부담을 줄입니다.",
+            "잠과 식사를 거르며 시간을 늘리기보다 집중이 비교적 나은 시간대에 중요한 일을 배치합니다."
+          ],
+          "diagram": [
+            "단일 과제",
+            "외부 알림",
+            "유리한 시간"
+          ],
+          "path": "guide/ochang-mind-concentration/daily",
+          "image": "images/clinical-guides/mind-concentration/daily.webp",
+          "image_small": "images/clinical-guides/mind-concentration/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "언제 재평가를 받아야 할까요?",
+          "points": [
+            "휴식과 환경 조절 뒤에도 반복되는지와 업무·학업·대인 관계의 어려움이 이어지는지 확인합니다.",
+            "기억 변화, 두통, 심한 졸림이나 기분 증상이 새로 생기면 처음 판단과 달라질 수 있어 다시 알립니다.",
+            "평가 뒤 정한 한두 가지 생활 목표를 비교하며 모든 집중 저하에 같은 치료가 필요하다고 생각하지 않습니다."
+          ],
+          "diagram": [
+            "지속 여부",
+            "새 증상",
+            "목표 비교"
+          ],
+          "path": "guide/ochang-mind-concentration/followup",
+          "image": "images/clinical-guides/mind-concentration/followup.webp",
+          "image_small": "images/clinical-guides/mind-concentration/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "mind-learning": {
+      "hub_path": "conditions/%ED%95%99%EC%8A%B5%EC%9E%A5%EC%95%A0",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "어떤 학습 과정이 특히 어렵나요?",
+          "points": [
+            "글자를 읽는 정확도·속도, 읽은 내용의 이해, 맞춤법·글 구성 중 어려운 부분을 구체적으로 나눕니다.",
+            "수 개념과 계산, 문제의 뜻 이해가 각각 어떤지 살피고 학년이 바뀌며 두드러진 장면을 적습니다.",
+            "모든 과목이 어렵다는 평가보다 강점과 도움을 받으면 가능한 수행도 함께 기록합니다."
+          ],
+          "diagram": [
+            "읽기",
+            "쓰기",
+            "수학"
+          ],
+          "path": "guide/ochang-mind-learning/symptoms",
+          "image": "images/clinical-guides/mind-learning/symptoms.webp",
+          "image_small": "images/clinical-guides/mind-learning/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "불안이나 집중 문제와 어떻게 구별할까요?",
+          "points": [
+            "시험 긴장으로 아는 것을 못 쓰는 상황과 평소에도 특정 기술 습득이 어려운 상황을 구분합니다.",
+            "시력·청력·언어 발달과 수업 언어, 결석·교육 환경의 영향을 확인해야 학습의 어려움을 정확히 이해할 수 있습니다.",
+            "주의력 문제나 불안이 함께 있을 수 있지만 어느 하나가 다른 진단을 자동으로 의미하지는 않습니다."
+          ],
+          "diagram": [
+            "감각·언어",
+            "교육 환경",
+            "주의·불안"
+          ],
+          "path": "guide/ochang-mind-learning/context",
+          "image": "images/clinical-guides/mind-learning/context.webp",
+          "image_small": "images/clinical-guides/mind-learning/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "평가 전에 무엇을 모으면 좋을까요?",
+          "points": [
+            "학교 과제·읽기·필기 예시와 어떤 설명이나 도구가 도움이 됐는지 보호자·교사의 관찰을 모읍니다.",
+            "발달력, 교육 지원을 받은 기간과 방법, 감각·수면·정서 문제를 알려 평가 해석에 도움을 줍니다.",
+            "검사의 목적과 범위, 아이에게 전달할 설명, 학교에서 적용할 지원 내용을 전문가에게 질문합니다."
+          ],
+          "diagram": [
+            "과제 예시",
+            "지원 이력",
+            "검사 목적"
+          ],
+          "path": "guide/ochang-mind-learning/assessment",
+          "image": "images/clinical-guides/mind-learning/assessment.webp",
+          "image_small": "images/clinical-guides/mind-learning/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "지원은 어떤 방향으로 정하나요?",
+          "points": [
+            "평가에서 확인한 기술에 맞는 체계적인 교육 지원과 과제·시험 환경 조정을 학교와 논의합니다.",
+            "단순히 공부 시간을 늘리거나 반복을 강요하기보다 현재 수준에서 성공할 수 있는 단계와 방법을 정합니다.",
+            "의학적 동반 문제가 있으면 별도로 치료를 상의하며 약이나 한 가지 시술로 학습장애를 해결한다고 약속하지 않습니다."
+          ],
+          "diagram": [
+            "맞춤 교육",
+            "환경 조정",
+            "동반 문제"
+          ],
+          "path": "guide/ochang-mind-learning/care",
+          "image": "images/clinical-guides/mind-learning/care.webp",
+          "image_small": "images/clinical-guides/mind-learning/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "가정에서는 어떤 방식이 도움이 될까요?",
+          "points": [
+            "짧고 명확한 지시와 충분한 처리 시간을 제공하고 어려운 과제를 작은 단계로 나눕니다.",
+            "읽어 주기·음성 도구 등 사용할 수 있는 지원을 상담해 지식과 생각을 표현할 경로를 마련합니다.",
+            "형제·또래와 비교하거나 게으르다고 말하지 않고 노력뿐 아니라 효과적인 전략을 구체적으로 칭찬합니다."
+          ],
+          "diagram": [
+            "짧은 지시",
+            "표현 도구",
+            "비교 줄이기"
+          ],
+          "path": "guide/ochang-mind-learning/daily",
+          "image": "images/clinical-guides/mind-learning/daily.webp",
+          "image_small": "images/clinical-guides/mind-learning/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "교육 지원의 효과는 어떻게 살필까요?",
+          "points": [
+            "등수만 보지 않고 목표 기술의 변화, 과제에 드는 시간과 학교 참여·자신감도 함께 확인합니다.",
+            "학년과 학습 요구가 달라지면 지원 계획을 조정하고 보호자·교사·평가자의 정보를 연결합니다.",
+            "학교 거부, 심한 불안이나 우울이 생기면 성적 문제로만 보지 말고 정서적 안전을 함께 평가받습니다."
+          ],
+          "diagram": [
+            "기술 변화",
+            "학교 참여",
+            "정서 안전"
+          ],
+          "path": "guide/ochang-mind-learning/followup",
+          "image": "images/clinical-guides/mind-learning/followup.webp",
+          "image_small": "images/clinical-guides/mind-learning/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "mind-palpitations": {
+      "hub_path": "conditions/%EC%8B%AC%EA%B3%84%ED%95%AD%EC%A7%84",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "두근거림을 어떻게 기록할까요?",
+          "points": [
+            "빠른지 불규칙한지, 한 번에 얼마나 지속되는지와 시작·끝이 갑작스러운지를 적습니다.",
+            "쉬는 중인지 운동·기립·식사 뒤인지, 어지럼·흉통·숨참이 함께 있는지 상황을 구별합니다.",
+            "실제로 측정한 맥박이나 기기 기록이 있으면 가져가되 수치 하나를 진단처럼 해석하지 않습니다."
+          ],
+          "diagram": [
+            "빠름·불규칙",
+            "지속 시간",
+            "동반 증상"
+          ],
+          "path": "guide/ochang-mind-palpitations/symptoms",
+          "image": "images/clinical-guides/mind-palpitations/symptoms.webp",
+          "image_small": "images/clinical-guides/mind-palpitations/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "어떤 유발 요인을 살펴야 할까요?",
+          "points": [
+            "수면 부족, 카페인·음주, 흡연과 최근 시작한 감기약·처방약이 증상과 시간상 관련되는지 확인합니다.",
+            "빈혈·갑상선 질환·심장 질환의 병력과 임신·갱년기 등 몸의 변화도 진료에 필요한 정보입니다.",
+            "스트레스 조절이 도움이 되더라도 심장 리듬 이상이 없다는 증거는 아니므로 반복되면 평가받습니다."
+          ],
+          "diagram": [
+            "자극물",
+            "복용약",
+            "신체 질환"
+          ],
+          "path": "guide/ochang-mind-palpitations/context",
+          "image": "images/clinical-guides/mind-palpitations/context.webp",
+          "image_small": "images/clinical-guides/mind-palpitations/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "어떤 진료와 검사를 질문할까요?",
+          "points": [
+            "증상이 언제 시작됐고 운동 중 생기는지, 실신한 적과 가족의 심장 질환 이력을 의료진에게 알립니다.",
+            "진찰과 심전도 등 필요한 검사의 목적을 묻고, 간헐적 증상이라면 기록·추적 방법을 상의합니다.",
+            "의료진이 추가 검사를 권하면 무엇을 배제하려는지와 결과가 정상일 때의 다음 계획을 확인합니다."
+          ],
+          "diagram": [
+            "병력",
+            "심전도",
+            "추적 계획"
+          ],
+          "path": "guide/ochang-mind-palpitations/assessment",
+          "image": "images/clinical-guides/mind-palpitations/assessment.webp",
+          "image_small": "images/clinical-guides/mind-palpitations/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "원인이 확인되면 어떻게 관리하나요?",
+          "points": [
+            "심장·내분비·혈액 문제나 약물 영향이 확인되면 그 원인에 맞는 진료를 우선합니다.",
+            "불안이 증상과 맞물리면 신체 평가와 함께 불안 관리도 병행할 수 있으며 둘 중 하나만 선택할 필요는 없습니다.",
+            "맥박을 낮춘다는 제품을 임의로 추가하거나 처방약을 끊지 않고 복용 목록을 한 번에 검토받습니다."
+          ],
+          "diagram": [
+            "원인 치료",
+            "불안 병행",
+            "약물 검토"
+          ],
+          "path": "guide/ochang-mind-palpitations/care",
+          "image": "images/clinical-guides/mind-palpitations/care.webp",
+          "image_small": "images/clinical-guides/mind-palpitations/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "증상이 있을 때 무엇에 주의할까요?",
+          "points": [
+            "두근거림이 생기면 활동을 멈추고 안전한 자세에서 동반 증상을 확인하며 무리한 운동으로 시험하지 않습니다.",
+            "카페인·에너지음료와 음주가 영향을 주는지 살펴 섭취량을 조정하고 수면 시간을 확보합니다.",
+            "맥박을 반복 확인해 불안만 커진다면 필요한 기록 범위를 의료진과 정하고 일상으로 돌아갈 방법을 상의합니다."
+          ],
+          "diagram": [
+            "활동 멈춤",
+            "섭취 조정",
+            "기록 범위"
+          ],
+          "path": "guide/ochang-mind-palpitations/daily",
+          "image": "images/clinical-guides/mind-palpitations/daily.webp",
+          "image_small": "images/clinical-guides/mind-palpitations/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "어떤 변화가 재진 이유인가요?",
+          "points": [
+            "지속 시간이 길어지거나 빈도가 늘고 운동 능력이 떨어지면 이전 검사와 상관없이 다시 알립니다.",
+            "진료 뒤 정한 관찰 항목과 경고 신호를 가족에게도 알려 증상이 생길 때 대응이 지연되지 않게 합니다.",
+            "검사 결과와 생활 기록을 함께 보며 불편을 설명할 수 있는지 확인하고 원인 불명 상태를 임의 진단으로 채우지 않습니다."
+          ],
+          "diagram": [
+            "빈도 변화",
+            "운동 영향",
+            "재평가"
+          ],
+          "path": "guide/ochang-mind-palpitations/followup",
+          "image": "images/clinical-guides/mind-palpitations/followup.webp",
+          "image_small": "images/clinical-guides/mind-palpitations/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    },
+    "mind-overstimulation": {
+      "hub_path": "conditions/%EC%8B%A0%EA%B2%BD%EA%B3%BC%EB%AF%BC",
+      "created_at": "2026-10-21",
+      "published_at": "2026-10-21",
+      "topics": [
+        {
+          "id": "symptoms",
+          "question": "예민하다는 말에는 무엇이 포함되나요?",
+          "points": [
+            "작은 소리나 말에 쉽게 긴장하는지, 짜증이 늘었는지, 피로로 자극을 견디기 어려운지 나눠 설명합니다.",
+            "잠·식사·집중·두통처럼 같이 달라진 상태와 언제부터 시작됐는지를 기록합니다.",
+            "쉬면 회복되는지, 특정 사람·장소·업무에서 심한지 확인해 도움이 필요한 상황을 구체화합니다."
+          ],
+          "diagram": [
+            "자극 민감",
+            "피로·수면",
+            "상황 차이"
+          ],
+          "path": "guide/ochang-mind-overstimulation/symptoms",
+          "image": "images/clinical-guides/mind-overstimulation/symptoms.webp",
+          "image_small": "images/clinical-guides/mind-overstimulation/symptoms-480.webp"
+        },
+        {
+          "id": "context",
+          "question": "원인을 하나로 정하면 왜 곤란할까요?",
+          "points": [
+            "업무나 돌봄 부담이 영향을 줄 수 있으나 수면 질환, 통증, 약물 영향이나 신체 문제도 확인해야 합니다.",
+            "우울·불안이 동반될 수 있지만 일시적인 스트레스와 지속적인 질환은 면담과 경과를 통해 구분합니다.",
+            "예민함을 성격 결함이나 기가 약해서라고 설명하지 않고 최근 회복 기회가 충분했는지 살펴봅니다."
+          ],
+          "diagram": [
+            "부담",
+            "신체 요인",
+            "기분 요인"
+          ],
+          "path": "guide/ochang-mind-overstimulation/context",
+          "image": "images/clinical-guides/mind-overstimulation/context.webp",
+          "image_small": "images/clinical-guides/mind-overstimulation/context-480.webp"
+        },
+        {
+          "id": "assessment",
+          "question": "상담 전에 어떤 내용을 적을까요?",
+          "points": [
+            "가장 힘든 하루의 장면과 이전에는 가능했던 활동, 현재 줄어든 활동을 실제 예로 준비합니다.",
+            "수면표, 복용약·보조제, 카페인·음주와 최근 질병·생활 사건을 알려 감별에 도움을 줍니다.",
+            "피로와 신체 증상에 필요한 평가, 정신건강 상담의 역할을 묻고 설문 점수만으로 병명을 정하지 않습니다."
+          ],
+          "diagram": [
+            "생활 예시",
+            "수면·복용",
+            "평가 질문"
+          ],
+          "path": "guide/ochang-mind-overstimulation/assessment",
+          "image": "images/clinical-guides/mind-overstimulation/assessment.webp",
+          "image_small": "images/clinical-guides/mind-overstimulation/assessment-480.webp"
+        },
+        {
+          "id": "care",
+          "question": "도움을 받는 순서는 무엇일까요?",
+          "points": [
+            "휴식이 필요한 영역과 안전 문제가 있는지 먼저 확인하고 조정할 수 있는 부담부터 함께 정합니다.",
+            "확인된 수면·신체·기분 문제는 해당 진료와 연결하며 정체가 불분명한 원인 하나로 모든 증상을 묶지 않습니다.",
+            "한 번의 검사나 자율신경 수치만으로 치료가 확정된다고 믿기보다 목표와 재평가 기준을 질문합니다."
+          ],
+          "diagram": [
+            "부담 조정",
+            "관련 진료",
+            "목표 확인"
+          ],
+          "path": "guide/ochang-mind-overstimulation/care",
+          "image": "images/clinical-guides/mind-overstimulation/care.webp",
+          "image_small": "images/clinical-guides/mind-overstimulation/care-480.webp"
+        },
+        {
+          "id": "daily",
+          "question": "일상에서 어떤 조정을 시도할까요?",
+          "points": [
+            "해야 할 일과 미뤄도 되는 일을 나누고 짧게라도 방해받지 않는 회복 시간을 일정에 넣습니다.",
+            "자극이 큰 시간대나 환경을 파악해 잠깐 쉬거나 요청을 조정하는 문장을 미리 준비합니다.",
+            "술이나 과도한 카페인으로 버티는 패턴이 있다면 다른 휴식·도움 요청 방법을 함께 찾아봅니다."
+          ],
+          "diagram": [
+            "일 나누기",
+            "회복 시간",
+            "도움 요청"
+          ],
+          "path": "guide/ochang-mind-overstimulation/daily",
+          "image": "images/clinical-guides/mind-overstimulation/daily.webp",
+          "image_small": "images/clinical-guides/mind-overstimulation/daily-480.webp"
+        },
+        {
+          "id": "followup",
+          "question": "상태가 오래가면 무엇을 확인하나요?",
+          "points": [
+            "피로·불면·짜증이 줄었는지뿐 아니라 일과 관계를 감당하는 정도가 회복되는지 확인합니다.",
+            "쉬어도 악화되거나 체중 변화·발열·두근거림 같은 새 신호가 있으면 신체 평가를 다시 상의합니다.",
+            "부담을 줄이기 어려운 환경이라면 개인 노력만 반복하기보다 가족·직장·상담 자원을 통한 지원을 구체화합니다."
+          ],
+          "diagram": [
+            "기능 회복",
+            "새 신호",
+            "환경 지원"
+          ],
+          "path": "guide/ochang-mind-overstimulation/followup",
+          "image": "images/clinical-guides/mind-overstimulation/followup.webp",
+          "image_small": "images/clinical-guides/mind-overstimulation/followup-480.webp"
+        }
+      ],
+      "prior_copy_prefix": null
+    }
+  },
+  "priority80_sha256": "06d0dda598d9d28458ebc652fca77764aa7379b15e06472ee44902944a313100",
+  "preserved_additional_assessment_sha256": {
+    "urology-benign-prostate": "5db4cb799c2629d6ed7fecb169e370bd4a5def786857ad1b0e8425f3fecd281a",
+    "urology-urinary-incontinence": "d72b913968e328c4b3c37aedc6cb548c24028cf1b8dca6fb7cb913ac9dfb4a01"
+  },
+  "medical_review_status": "pending",
+  "publication_authorization": {
+    "date": "2026-10-27",
+    "scope": "Owner requested these 21 pregnancy, uterine, sleep and attention search expressions on both sites through deployment."
+  },
+  "search_exposure": {
+    "crawled": "unverified",
+    "indexed": "unverified",
+    "rank_one": "unverified",
+    "carousel": "unverified"
+  }
+}

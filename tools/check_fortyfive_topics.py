@@ -32,13 +32,19 @@ def main():
     assert len(manifest['queries']) == 45 and [x['order'] for x in manifest['queries']] == list(range(1, 46))
     assert {x['profile_id'] for x in manifest['queries']} == set(ids)
     assert all(x['query'].startswith('오창 ') for x in manifest['queries'])
-    assert set(before) == set(profiles)
+    extension_file = CONTENT / 'series-revisions-women-urology-20261026.json'
+    extension = read(extension_file) if extension_file.exists() else {'profile_ids': [], 'new_profile_ids': []}
+    assert set(profiles) == set(before) | set(extension['new_profile_ids'])
+    later_ids = set(extension['profile_ids'])
+    newest_file = CONTENT / 'series-revisions-women-sleep-20261027.json'
+    if newest_file.exists():
+        later_ids.update(read(newest_file)['profile_ids'])
     for pid, profile in profiles.items():
-        if pid not in ids:
+        if pid not in set(ids) | later_ids:
             assert profile == before[pid], pid + ': unrelated profile changed'
     priority = read(CONTENT / 'priority80.json')
     assessment = {p['id']: p for p in priority['profiles']}
-    assert priority['updated_at'] == manifest['updated_at']
+    assert priority['updated_at'] >= manifest['updated_at']
     revised_images = {(x['profile_id'], x['topic']) for x in manifest['image_revisions']}
     bodies, metadata_titles, descriptions = set(), set(), set()
     image_count = 0
@@ -126,7 +132,8 @@ def main():
     result.update({'updated_at': manifest['updated_at'], 'queries': 45, 'profiles': 29, 'core_pages': 203,
                    'source_checks': 'passed', 'rendered_html_pages_checked': rendered,
                    'distinct_detail_bodies': 174, 'image_files_checked': image_count,
-                   'changed_diagrams': len(revised_images), 'other_profiles_unchanged': True,
+                   'changed_diagrams': len(revised_images), 'other_profiles_unchanged': not bool(later_ids),
+                   'later_authorized_profile_revisions': sorted(later_ids),
                    'medical_review_status': 'pending',
                    'search_exposure': manifest['search_exposure']})
     report.parent.mkdir(exist_ok=True)

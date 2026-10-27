@@ -13,13 +13,24 @@
     "women.json",
     "mind.json",
     "digestive-skin.json",
-    "other.json"
+    "other.json",
+    "urology.json"
   ],
   "publication_authorization": {
     "authorized_at": "2026-10-21",
     "instruction": "배포까지 진행해",
     "actor": "site owner in this conversation",
     "scope": "Existing 187 series; audit topics 1-80 enhanced with symptom observations and differentiation on 2026-10-22 by owner instruction.",
-    "medical_review_claimed": false
+    "medical_review_claimed": false,
+    "extensions": [
+      {
+        "date": "2026-10-26",
+        "scope": "Owner requested these 21 search intents on both sites through deployment, including two necessary new clinical series."
+      },
+      {
+        "date": "2026-10-27",
+        "scope": "Owner requested these 21 pregnancy, uterine, sleep and attention search expressions on both sites through deployment."
+      }
+    ]
   }
 }

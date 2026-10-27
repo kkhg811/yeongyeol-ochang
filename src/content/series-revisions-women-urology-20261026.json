@@ -1,0 +1,226 @@
+{
+  "updated_at": "2026-10-26",
+  "status": "published",
+  "baseline_commit": "b15bd76a0c8bb6b5b2fec386b3279071ed2df11b",
+  "queries": [
+    {
+      "order": 1,
+      "query": "오창 생리통",
+      "profile_id": "women-period-pain"
+    },
+    {
+      "order": 2,
+      "query": "오창 월경통",
+      "profile_id": "women-period-pain"
+    },
+    {
+      "order": 3,
+      "query": "오창 방광염",
+      "profile_id": "women-recurrent-cystitis"
+    },
+    {
+      "order": 4,
+      "query": "오창 전립선 비대증",
+      "profile_id": "urology-benign-prostate"
+    },
+    {
+      "order": 5,
+      "query": "오창 절박뇨",
+      "profile_id": "women-overactive-bladder"
+    },
+    {
+      "order": 6,
+      "query": "오창 요실금",
+      "profile_id": "urology-urinary-incontinence"
+    },
+    {
+      "order": 7,
+      "query": "오창 뇨실금",
+      "profile_id": "urology-urinary-incontinence"
+    },
+    {
+      "order": 8,
+      "query": "오창 난소기능저하",
+      "profile_id": "women-ovarian-reserve"
+    },
+    {
+      "order": 9,
+      "query": "오창 난소순환부전",
+      "profile_id": "women-ovarian-reserve"
+    },
+    {
+      "order": 10,
+      "query": "오창 난소낭종",
+      "profile_id": "women-ovarian-cyst"
+    },
+    {
+      "order": 11,
+      "query": "오창 난임",
+      "profile_id": "women-female-fertility"
+    },
+    {
+      "order": 12,
+      "query": "오창 남성난임",
+      "profile_id": "women-male-fertility"
+    },
+    {
+      "order": 13,
+      "query": "오창 여성난임",
+      "profile_id": "women-female-fertility"
+    },
+    {
+      "order": 14,
+      "query": "오창 다낭성 난소증후군",
+      "profile_id": "women-pcos"
+    },
+    {
+      "order": 15,
+      "query": "오창 배뇨통",
+      "profile_id": "women-recurrent-cystitis"
+    },
+    {
+      "order": 16,
+      "query": "오창 질염",
+      "profile_id": "women-vaginitis"
+    },
+    {
+      "order": 17,
+      "query": "오창 무월경",
+      "profile_id": "women-amenorrhea"
+    },
+    {
+      "order": 18,
+      "query": "오창 월경중단",
+      "profile_id": "women-amenorrhea"
+    },
+    {
+      "order": 19,
+      "query": "오창 유산",
+      "profile_id": "women-after-miscarriage"
+    },
+    {
+      "order": 20,
+      "query": "오창 반복유산",
+      "profile_id": "women-recurrent-loss"
+    },
+    {
+      "order": 21,
+      "query": "오창 골반통",
+      "profile_id": "msk-pelvic-pain"
+    }
+  ],
+  "profile_ids": [
+    "women-period-pain",
+    "women-ovarian-reserve",
+    "women-pcos",
+    "women-amenorrhea",
+    "women-female-fertility",
+    "women-male-fertility",
+    "women-after-miscarriage",
+    "women-recurrent-loss",
+    "women-recurrent-cystitis",
+    "women-overactive-bladder",
+    "urology-benign-prostate",
+    "urology-urinary-incontinence",
+    "women-ovarian-cyst",
+    "women-vaginitis",
+    "msk-pelvic-pain"
+  ],
+  "new_profile_ids": [
+    "urology-benign-prostate",
+    "urology-urinary-incontinence"
+  ],
+  "existing_profile_ids": [
+    "women-period-pain",
+    "women-ovarian-reserve",
+    "women-pcos",
+    "women-amenorrhea",
+    "women-female-fertility",
+    "women-male-fertility",
+    "women-after-miscarriage",
+    "women-recurrent-loss",
+    "women-recurrent-cystitis",
+    "women-overactive-bladder",
+    "women-ovarian-cyst",
+    "women-vaginitis",
+    "msk-pelvic-pain"
+  ],
+  "profile_count": 15,
+  "detail_count": 90,
+  "core_pages": 105,
+  "new_core_pages": 14,
+  "revised_core_pages": 91,
+  "image_revisions": [
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "symptoms",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "context",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "assessment",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "care",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "daily",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-benign-prostate",
+      "topic": "followup",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "symptoms",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "context",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "assessment",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "care",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "daily",
+      "action": "created"
+    },
+    {
+      "profile_id": "urology-urinary-incontinence",
+      "topic": "followup",
+      "action": "created"
+    }
+  ],
+  "medical_review_status": "pending",
+  "publication_authorization": {
+    "date": "2026-10-26",
+    "scope": "Owner requested these 21 search intents on both sites through deployment, including two necessary new clinical series."
+  },
+  "search_exposure": {
+    "crawled": "unverified",
+    "indexed": "unverified",
+    "rank_one": "unverified",
+    "carousel": "unverified"
+  }
+}

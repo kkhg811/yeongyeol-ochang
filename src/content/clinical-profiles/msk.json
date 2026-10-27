@@ -3428,6 +3428,13 @@
               "source_urls": [
                 "https://www.nhs.uk/symptoms/pelvic-pain/"
               ]
+            },
+            {
+              "heading": "통증과 동반 장기 증상을 나누어 문진합니다",
+              "text": "분비물·비정상 출혈·배뇨통·배변 변화가 동반되면 각각의 발생 시점을 확인합니다. 골반 주변 근육 통증과 동시에 존재할 수 있어 한 소견으로 모두 설명하려 하지 않고 필요한 감별 범위를 정합니다.",
+              "source_urls": [
+                "https://my.clevelandclinic.org/health/symptoms/12106-pelvic-pain"
+              ]
             }
           ],
           "faq": [
@@ -3443,6 +3450,13 @@
               "answer": "골반통은 누구에게나 생기며 원인을 개별적으로 살핍니다.",
               "source_urls": [
                 "https://www.nhs.uk/symptoms/pelvic-pain/"
+              ]
+            },
+            {
+              "question": "질 증상이 있으면 근골격계 원인을 배제하나요?",
+              "answer": "원인이 겹칠 수 있으므로 두 범주의 증상과 진찰 소견을 나누어 봅니다.",
+              "source_urls": [
+                "https://my.clevelandclinic.org/health/symptoms/12106-pelvic-pain"
               ]
             }
           ],
@@ -3470,6 +3484,13 @@
               "source_urls": [
                 "https://www.nhs.uk/conditions/endometriosis/"
               ]
+            },
+            {
+              "heading": "주기 관련성은 감별 단서로 사용합니다",
+              "text": "월경과 연관된 배뇨·배변 통증이나 성교통은 평가 단서입니다. 자궁내막증과 다른 질환에서 증상이 겹칠 수 있어 연관성만으로 확진하지 않습니다.",
+              "source_urls": [
+                "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/endometriosis/"
+              ]
             }
           ],
           "faq": [
@@ -3485,6 +3506,13 @@
               "answer": "진료와 검사 판단에 필요한 정보이므로 알려주세요.",
               "source_urls": [
                 "https://www.nhs.uk/conditions/endometriosis/"
+              ]
+            },
+            {
+              "question": "초음파가 정상이면 자궁내막증도 배제되나요?",
+              "answer": "영상에 보이지 않는 경우도 있어 증상과 남은 평가를 확인합니다.",
+              "source_urls": [
+                "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/endometriosis/"
               ]
             }
           ],
@@ -3512,6 +3540,13 @@
               "source_urls": [
                 "https://www.niddk.nih.gov/health-information/urologic-diseases/interstitial-cystitis-bladder-pain-syndrome"
               ]
+            },
+            {
+              "heading": "검사별로 답할 수 있는 범위를 구분합니다",
+              "text": "소변검사는 감염 등 일부 원인을, 적절한 검체 검사는 성매개감염 등을 살피는 데 쓰일 수 있습니다. 동의와 증상에 맞춰 검사 목적을 정하고 결과가 설명하지 못하는 부분을 다음 평가에 연결합니다.",
+              "source_urls": [
+                "https://www.nth.nhs.uk/resources/chronic-pelvic-pain/"
+              ]
             }
           ],
           "faq": [
@@ -3527,6 +3562,13 @@
               "answer": "시행 날짜와 당시 증상을 구분해 가져오세요.",
               "source_urls": [
                 "https://www.niddk.nih.gov/health-information/urologic-diseases/interstitial-cystitis-bladder-pain-syndrome"
+              ]
+            },
+            {
+              "question": "질 검체 채취는 설명 없이 진행하나요?",
+              "answer": "목적과 방법을 먼저 설명받고 동의·불편에 대해 말할 수 있어야 합니다.",
+              "source_urls": [
+                "https://www.nth.nhs.uk/resources/chronic-pelvic-pain/"
               ]
             }
           ],
@@ -3554,6 +3596,13 @@
               "source_urls": [
                 "https://www.nhs.uk/tests-and-treatments/physiotherapy/"
               ]
+            },
+            {
+              "heading": "골반저근의 긴장과 약화를 구분합니다",
+              "text": "근육 상태에 따라 재활 목표와 운동 구성이 다릅니다. 긴장이 관련된 통증과 약화가 중심인 상태를 같은 강화 운동으로 묶지 않으며, 필요한 평가 뒤 개별 계획과 반응을 확인합니다.",
+              "source_urls": [
+                "https://my.clevelandclinic.org/departments/rehabilitation/services/pelvic-health"
+              ]
             }
           ],
           "faq": [
@@ -3569,6 +3618,13 @@
               "answer": "필요한 진료 범위를 따로 확인해야 합니다.",
               "source_urls": [
                 "https://www.nhs.uk/tests-and-treatments/physiotherapy/"
+              ]
+            },
+            {
+              "question": "골반저근 재활이 장기 질환 검사도 대체하나요?",
+              "answer": "근육 평가와 장기 관련 감별은 범위가 달라 필요한 진료를 유지합니다.",
+              "source_urls": [
+                "https://my.clevelandclinic.org/departments/rehabilitation/services/pelvic-health"
               ]
             }
           ],
@@ -3596,6 +3652,13 @@
               "source_urls": [
                 "https://www.niddk.nih.gov/health-information/urologic-diseases/interstitial-cystitis-bladder-pain-syndrome"
               ]
+            },
+            {
+              "heading": "기록에서 시간 관계와 기능을 읽습니다",
+              "text": "월경·성관계·배뇨·배변과 통증의 순서, 출혈·피로 등 동반 변화를 나누어 기록합니다. 일지는 원인 확정을 위한 점수표가 아니라 증상 패턴과 수면·일상 영향을 문진하는 자료로 사용합니다.",
+              "source_urls": [
+                "https://www.nbt.nhs.uk/our-services/a-z-services/gynaecology/pelvic-pain-service"
+              ]
             }
           ],
           "faq": [
@@ -3611,6 +3674,13 @@
               "answer": "진찰과 필요한 검사를 함께 고려해야 합니다.",
               "source_urls": [
                 "https://www.niddk.nih.gov/health-information/urologic-diseases/interstitial-cystitis-bladder-pain-syndrome"
+              ]
+            },
+            {
+              "question": "기록 기간을 채우기 전 진료를 미뤄야 하나요?",
+              "answer": "기록이 완성되어야 진료할 수 있는 것은 아니며 현재까지 관찰을 전달하면 됩니다.",
+              "source_urls": [
+                "https://www.nbt.nhs.uk/our-services/a-z-services/gynaecology/pelvic-pain-service"
               ]
             }
           ],
@@ -3638,6 +3708,13 @@
               "source_urls": [
                 "https://www.nhs.uk/symptoms/pelvic-pain/"
               ]
+            },
+            {
+              "heading": "설명되지 않은 통증도 후속 계획을 세웁니다",
+              "text": "원인이 하나로 정리되지 않더라도 통증은 실제 생활을 제한할 수 있습니다. 검사의 한계와 관리 목표를 공유하고, 소변·월경 등 새 증상이 생겼을 때 어떤 평가를 다시 논의할지 정합니다.",
+              "source_urls": [
+                "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/long-term-pelvic-pain/"
+              ]
             }
           ],
           "faq": [
@@ -3653,6 +3730,13 @@
               "answer": "바뀐 증상과 생활 제한, 새 검사 결과부터 알려주세요.",
               "source_urls": [
                 "https://www.nhs.uk/symptoms/pelvic-pain/"
+              ]
+            },
+            {
+              "question": "영상에 이상이 없으면 통증은 심리적인가요?",
+              "answer": "검사 한 번으로 통증을 부정하거나 단일 원인으로 돌리지 않습니다.",
+              "source_urls": [
+                "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/long-term-pelvic-pain/"
               ]
             }
           ],
@@ -3690,6 +3774,48 @@
           "url": "https://www.nhs.uk/tests-and-treatments/physiotherapy/",
           "scope": "기능 평가, 운동·수기 치료의 역할과 집에서 하는 활동의 구분",
           "checked_at": "2026-10-23"
+        },
+        {
+          "title": "RCOG · Long-term pelvic pain",
+          "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/long-term-pelvic-pain/",
+          "scope": "장기 골반통의 복합 원인과 문진·관리 계획",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "RCOG · Endometriosis",
+          "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/endometriosis/",
+          "scope": "주기·배뇨·배변·성관계 통증의 연관과 증상의 비특이성",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "North Tees and Hartlepool NHS Foundation Trust · Chronic Pelvic Pain",
+          "url": "https://www.nth.nhs.uk/resources/chronic-pelvic-pain/",
+          "scope": "2026년 검토 환자 안내의 소변·감염 검사와 평가 범위",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "Cleveland Clinic · Pelvic Health Rehabilitation",
+          "url": "https://my.clevelandclinic.org/departments/rehabilitation/services/pelvic-health",
+          "scope": "골반저근의 약화·긴장 구분과 개별 평가 원칙",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "North Bristol NHS Trust · The Pelvic Pain Service",
+          "url": "https://www.nbt.nhs.uk/our-services/a-z-services/gynaecology/pelvic-pain-service",
+          "scope": "월경·동반 증상·생활 영향을 담은 진료 준비",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "Cleveland Clinic · Pelvic Pain",
+          "url": "https://my.clevelandclinic.org/health/symptoms/12106-pelvic-pain",
+          "scope": "생식기·비뇨기·소화기·근골격계 감별과 재평가",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "Cleveland Clinic · Endometriosis and Chronic Pelvic Pain",
+          "url": "https://my.clevelandclinic.org/departments/obgyn-womens-health/depts/endometriosis-chronic-pelvic-pain",
+          "scope": "복합 골반통 원인과 평가를 연결하는 문진 준비",
+          "checked_at": "2026-10-26"
         }
       ],
       "keywords": [
@@ -3700,22 +3826,16 @@
         "골반-통증": "canonical"
       },
       "grouping_note": "같은 질환을 가리키는 명칭만 동의어로 연결하며 기존 진료 기록의 진단 확인을 대신하지 않습니다.",
-      "source_checked_date": "2026-10-21",
+      "source_checked_date": "2026-10-26",
       "medical_review_status": "pending",
       "publication_status": "review",
       "member_contexts": {},
       "status": "published",
       "published_at": "2026-10-21",
-      "updated_at": "2026-10-23",
+      "updated_at": "2026-10-26",
       "reviewed_by": null,
       "reviewed_at": null,
-      "editorial_revision": {
-        "updated_at": "2026-10-23",
-        "representative_keyword": "오창 골반통증",
-        "authorization": "사이트 소유자의 8개 주제 개정·배포 요청",
-        "scope": "기존 허브와 상세 6개 유지",
-        "medical_review": "pending"
-      },
+      "editorial_revision": "women-urology-expansion-20261026",
       "page_metadata": {
         "title": "청주 오창 골반통증 · 위치·배뇨·배변·주기를 함께 살피기 | 연결한의원 청주오창",
         "description": "오창 골반통증 진찰에서는 근골격계뿐 아니라 장·방광·생식기 관련 원인을 함께 고려합니다. 통증 위치와 배뇨·배변·주기, 임신 가능성 등을 바탕으로 필요한 진료와 검사 범위를 정리하세요."
@@ -3733,6 +3853,13 @@
           "text": "근육·관절 문제가 확인된 경우와 장기 관련 평가가 필요한 경우의 계획은 다를 수 있습니다. 골반이라는 위치만으로 교정·운동 방법을 먼저 정하지 마세요.",
           "source_urls": [
             "https://www.nhs.uk/tests-and-treatments/physiotherapy/"
+          ]
+        },
+        {
+          "heading": "근골격계 평가와 장기 관련 감별을 함께 둡니다",
+          "text": "골반통이라는 증상명만으로 원인이 특정되지는 않습니다. 생식기·비뇨기·장 증상과 근육·관절 불편을 함께 문진하고, 한 번의 검사에서 설명되지 않은 부분은 다음 평가 계획에 남깁니다.",
+          "source_urls": [
+            "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/long-term-pelvic-pain/"
           ]
         }
       ],
@@ -3756,6 +3883,13 @@
           "answer": "동반 증상에 따라 다른 전문 평가가 필요할 수 있습니다.",
           "source_urls": [
             "https://www.nhs.uk/symptoms/pelvic-pain/"
+          ]
+        },
+        {
+          "question": "골반통이 오래되면 산부인과·비뇨기 평가가 불필요한가요?",
+          "answer": "지속 기간으로 진료 범위를 제한하지 않고 동반 증상과 이전 평가에서 확인한 부분을 다시 검토합니다.",
+          "source_urls": [
+            "https://my.clevelandclinic.org/health/symptoms/12106-pelvic-pain"
           ]
         }
       ]

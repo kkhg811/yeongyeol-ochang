@@ -1,0 +1,865 @@
+{
+  "profiles": [
+    {
+      "name": "전립선비대증",
+      "kind": "condition",
+      "category": "비뇨·배뇨",
+      "keywords": [
+        "오창 전립선비대증",
+        "오창 전립선 비대증",
+        "청주 오창 전립선비대증"
+      ],
+      "red_flags": [
+        "소변이 전혀 나오지 않으면 즉시 의료기관에서 평가가 필요합니다.",
+        "새 혈뇨·배뇨통은 기존 비대증 때문으로 단정하지 말고 확인합니다."
+      ],
+      "id": "urology-benign-prostate",
+      "members": [],
+      "canonical_slug": "urology-benign-prostate",
+      "canonical_path": "guide/ochang-urology-benign-prostate",
+      "standalone_hub": true,
+      "created_at": "2026-10-26",
+      "published_at": "2026-10-26",
+      "status": "published",
+      "medical_review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "sources": [
+        {
+          "title": "NIDDK: Enlarged Prostate (Benign Prostatic Hyperplasia)",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/enlarged-prostate-benign-prostatic-hyperplasia",
+          "scope": "전립선비대증의 정의·크기와 증상 차이·평가·관리",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NHS: Enlarged prostate",
+          "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+          "scope": "배뇨 증상·약물 검토·생활 조절·정기 평가",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "Mayo Clinic: Benign prostatic hyperplasia — Symptoms and causes",
+          "url": "https://www.mayoclinic.org/diseases-conditions/benign-prostatic-hyperplasia/symptoms-causes/syc-20370087",
+          "scope": "전립선 크기와 불편의 불일치 및 다른 원인",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "Mayo Clinic: Benign prostatic hyperplasia — Diagnosis and treatment",
+          "url": "https://www.mayoclinic.org/diseases-conditions/benign-prostatic-hyperplasia/diagnosis-treatment/drc-20370093",
+          "scope": "요속·잔뇨·치료 선택·약물과 시술의 한계",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NHS: PSA test",
+          "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+          "scope": "PSA 검사의 목적·교란요인·단독 확진 불가",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NHS England: Making a decision about enlarged prostate",
+          "url": "https://www.england.nhs.uk/wp-content/uploads/2023/11/Decision-support-tool-making-a-decision-about-enlarged-prostate.pdf",
+          "scope": "배뇨·수면·성기능의 목표와 치료 공동 결정",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "Cleveland Clinic: Benign Prostatic Hyperplasia",
+          "url": "https://my.clevelandclinic.org/health/diseases/9100-benign-prostatic-hyperplasia",
+          "scope": "정기 경과 관찰, 약물 선택과 비대증·암의 관계",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Prostate Tests",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/prostate",
+          "scope": "유사한 전립선 증상·병력·PSA 등 검사 선택과 해석 한계",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NCI: Prostate-Specific Antigen (PSA) Test",
+          "url": "https://www.cancer.gov/types/prostate/psa-fact-sheet",
+          "scope": "PSA 비특이성·일시적 영향·개별 평가와 검사 한계",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Symptoms & Causes of Urinary Retention",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/symptoms-causes",
+          "scope": "배출 곤란·잔뇨감·누출과 요폐의 구분",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Diagnosis of Urinary Retention",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/diagnosis",
+          "scope": "잔뇨 측정과 배출 장애의 원인 평가",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Urodynamic Testing",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/urodynamic-testing",
+          "scope": "저장·배출 기능 검사와 요속·잔뇨의 의미",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Symptoms & Causes of Bladder Control Problems",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/symptoms-causes",
+          "scope": "남녀의 누출 양상과 여러 관련 원인",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Prostate Problems",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems",
+          "scope": "서로 다른 전립선 문제·배뇨 증상·평가·관리 선택을 구분하는 일반 설명",
+          "checked_at": "2026-10-26"
+        }
+      ],
+      "sections": {
+        "symptoms": {
+          "question": "어떤 배뇨 불편을 나누어 기록하나요?",
+          "points": [
+            "시작까지 걸리는 시간과 줄기 변화를 관찰합니다.",
+            "잔뇨감과 실제 잔뇨 측정은 구분합니다.",
+            "빈뇨·절박감·야간뇨도 함께 기록합니다."
+          ],
+          "diagram": [
+            "시작 지연",
+            "약한 줄기",
+            "남은 느낌"
+          ],
+          "reading_sections": [
+            {
+              "heading": "저장·배출·배뇨 후 증상을 분리합니다",
+              "text": "문진에서는 급박감과 야간뇨, 시작 지연과 줄기 약화, 배뇨 후 남은 느낌을 구분합니다. 소량씩 자주 보거나 새는 현상이 있어도 배출 장애를 배제할 수 없으므로 동반 양상을 함께 확인합니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/symptoms-causes"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "잔뇨감이 곧 요폐 진단인가요?",
+              "answer": "증상만으로 판정하지 않고 필요 시 잔뇨를 실제 측정합니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/diagnosis"
+              ]
+            },
+            {
+              "question": "통증 없이 오래 불편해도 평가가 필요한가요?",
+              "answer": "만성 배출 장애는 증상이 뚜렷하지 않을 수 있어 지속 변화는 확인합니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/symptoms-causes"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 전립선 비대증 · 어떤 배뇨 불편을 나누어 기록하나요? | 연결한의원 청주오창",
+            "description": "오창 전립선 비대증: 어떤 배뇨 불편을 나누어 기록하나요? 문진에서는 급박감과 야간뇨, 시작 지연과 줄기 약화, 배뇨 후 남은 느낌을 구분합니다. 소량씩 자주 보거나 새는 현상이 있어도 배출 장애를 배제할 수 없으므로 동반 양상을 함께 확인합니다."
+          }
+        },
+        "context": {
+          "question": "남성의 배뇨 불편은 모두 전립선비대증인가요?",
+          "points": [
+            "전립선 크기만으로 증상 강도를 판단하지 않습니다.",
+            "감염·약물·방광 기능 등 다른 원인을 확인합니다.",
+            "비대증은 암과 다르며 필요한 암 평가는 별개입니다."
+          ],
+          "diagram": [
+            "전립선 크기",
+            "다른 배뇨 원인",
+            "별도 암 평가"
+          ],
+          "reading_sections": [
+            {
+              "heading": "전립선 외 원인을 배제하지 않습니다",
+              "text": "요로감염·전립선염·요도 협착·방광 신경 기능 등도 유사한 증상을 보일 수 있습니다. 복용 중인 감기약·진통제 등을 포함한 병력은 감별에 필요합니다. 비대 소견이 있다고 다른 원인 평가가 끝나는 것은 아닙니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/benign-prostatic-hyperplasia/symptoms-causes/syc-20370087"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "비대증은 전립선암 위험을 바로 높이나요?",
+              "answer": "비대증 자체와 암은 별개이며 비슷한 증상이나 동반 가능성을 따로 평가합니다.",
+              "source_urls": [
+                "https://my.clevelandclinic.org/health/diseases/9100-benign-prostatic-hyperplasia"
+              ]
+            },
+            {
+              "question": "크기가 커지면 증상이 반드시 악화되나요?",
+              "answer": "증상 강도와 크기는 단순 비례하지 않습니다. 기능과 경과를 함께 봅니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/enlarged-prostate-benign-prostatic-hyperplasia"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 전립선 비대증 · 남성의 배뇨 불편은 모두 전립선비대증인가요? | 연결한의원 청주오창",
+            "description": "오창 전립선 비대증: 남성의 배뇨 불편은 모두 전립선비대증인가요? 요로감염·전립선염·요도 협착·방광 신경 기능 등도 유사한 증상을 보일 수 있습니다. 복용 중인 감기약·진통제 등을 포함한 병력은 감별에 필요합니다. 비대 소견이 있다고 다른 원인 평가가 끝나는 것은 아닙니다."
+          }
+        },
+        "assessment": {
+          "question": "검사는 어떤 질문에 답하나요?",
+          "points": [
+            "소변검사는 감염 등 다른 소견을 봅니다.",
+            "요속과 잔뇨는 배출 기능을 평가합니다.",
+            "PSA는 병력·진찰과 함께 해석합니다."
+          ],
+          "diagram": [
+            "소변검사",
+            "요속·잔뇨",
+            "PSA 해석"
+          ],
+          "reading_sections": [
+            {
+              "heading": "검사 수치마다 답하는 질문이 다릅니다",
+              "text": "요속검사는 배출 흐름을, 잔뇨 측정은 배뇨 뒤 남은 양을 확인합니다. 흐름이 약한 원인은 폐색뿐 아니라 방광 기능에도 있을 수 있어 결과를 종합합니다. 추가 기능검사는 필요한 경우 선택하며 자동으로 모두 시행하지 않습니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/diagnostic-tests/urodynamic-testing"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "초음파 잔뇨 검사는 어떤 때 도움이 되나요?",
+              "answer": "방광을 충분히 비우는지 확인해 배출 장애의 원인 평가에 보탬이 됩니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/diagnosis"
+              ]
+            },
+            {
+              "question": "PSA 검사 전 감염 이력도 알려야 하나요?",
+              "answer": "감염 등이 결과에 영향을 줄 수 있어 검사 전 기존 상태와 처치를 알립니다.",
+              "source_urls": [
+                "https://www.cancer.gov/types/prostate/psa-fact-sheet"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 전립선 비대증 · 검사는 어떤 질문에 답하나요? | 연결한의원 청주오창",
+            "description": "오창 전립선 비대증: 검사는 어떤 질문에 답하나요? 요속검사는 배출 흐름을, 잔뇨 측정은 배뇨 뒤 남은 양을 확인합니다. 흐름이 약한 원인은 폐색뿐 아니라 방광 기능에도 있을 수 있어 결과를 종합합니다. 추가 기능검사는 필요한 경우 선택하며 자동으로 모두 시행하지 않습니다."
+          }
+        },
+        "care": {
+          "question": "관찰·약물·시술은 어떻게 선택하나요?",
+          "points": [
+            "불편과 합병증, 기존 치료 반응을 확인합니다.",
+            "약마다 목표와 효과 시점·부작용이 다릅니다.",
+            "시술은 기대 이익과 부담을 비교해 논의합니다."
+          ],
+          "diagram": [
+            "경과 관찰",
+            "약물 선택",
+            "시술 논의"
+          ],
+          "reading_sections": [
+            {
+              "heading": "약물의 목표와 시술 적응을 확인합니다",
+              "text": "전립선·방광 주변 근육을 이완시키는 약과 전립선 조직의 성장에 작용하는 약은 목적과 반응 시점이 다릅니다. 증상, 크기, 동반 질환과 기존 반응을 종합해 선택하며, 시술 논의에는 가능한 배뇨·성기능 영향도 포함합니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/benign-prostatic-hyperplasia/diagnosis-treatment/drc-20370093"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "효과가 바로 없으면 모든 약이 맞지 않는 건가요?",
+              "answer": "약의 작용과 필요한 관찰 기간이 다르므로 종류와 복용 경과를 확인합니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/enlarged-prostate-benign-prostatic-hyperplasia"
+              ]
+            },
+            {
+              "question": "가벼운 증상에도 약을 반드시 쓰나요?",
+              "answer": "생활 영향이 적으면 정기적인 경과 관찰을 선택할 수 있습니다.",
+              "source_urls": [
+                "https://my.clevelandclinic.org/health/diseases/9100-benign-prostatic-hyperplasia"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 전립선 비대증 · 관찰·약물·시술은 어떻게 선택하나요? | 연결한의원 청주오창",
+            "description": "오창 전립선 비대증: 관찰·약물·시술은 어떻게 선택하나요? 전립선·방광 주변 근육을 이완시키는 약과 전립선 조직의 성장에 작용하는 약은 목적과 반응 시점이 다릅니다. 증상, 크기, 동반 질환과 기존 반응을 종합해 선택하며, 시술 논의에는 가능한 배뇨·성기능 영향도 포함합니다."
+          }
+        },
+        "daily": {
+          "question": "일상에서 무리 없이 조절할 것은 무엇인가요?",
+          "points": [
+            "수분을 지나치게 줄이지 않고 시간을 조절합니다.",
+            "카페인·술·복용약과 증상의 관계를 봅니다.",
+            "소변을 볼 때 세게 밀어내지 않습니다."
+          ],
+          "diagram": [
+            "수분 시간",
+            "카페인·약물",
+            "편안한 배뇨"
+          ],
+          "reading_sections": [
+            {
+              "heading": "기록을 바탕으로 조절할 항목을 고릅니다",
+              "text": "음료의 양과 시간, 카페인·술, 배변과 복용약을 점검합니다. 생활 조절은 불편 관리의 일부이며 전립선이 줄었다는 근거가 되지는 않습니다. 기존 약의 변경이나 수분 계획은 다른 건강 상태까지 고려해야 합니다.",
+              "source_urls": [
+                "https://www.england.nhs.uk/wp-content/uploads/2023/11/Decision-support-tool-making-a-decision-about-enlarged-prostate.pdf"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "소변을 세게 밀어내면 잔뇨가 줄어드나요?",
+              "answer": "무리하게 힘주지 말고 배출이 어려운 원인을 확인합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/enlarged-prostate/"
+              ]
+            },
+            {
+              "question": "건강기능식품도 치료 계획에 포함해 알려야 하나요?",
+              "answer": "네. 보완 제품의 효과·안전성 한계와 약물 상호작용을 고려해야 합니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/benign-prostatic-hyperplasia/diagnosis-treatment/drc-20370093"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 전립선 비대증 · 일상에서 무리 없이 조절할 것은 무엇인가요? | 연결한의원 청주오창",
+            "description": "오창 전립선 비대증: 일상에서 무리 없이 조절할 것은 무엇인가요? 음료의 양과 시간, 카페인·술, 배변과 복용약을 점검합니다. 생활 조절은 불편 관리의 일부이며 전립선이 줄었다는 근거가 되지는 않습니다. 기존 약의 변경이나 수분 계획은 다른 건강 상태까지 고려해야 합니다."
+          }
+        },
+        "followup": {
+          "question": "어떤 변화로 치료 반응을 확인하나요?",
+          "points": [
+            "수면·외출처럼 중요한 생활 목표를 비교합니다.",
+            "줄기·잔뇨감·누출 등 변화도 함께 봅니다.",
+            "약물·시술 뒤 새 불편을 따로 알립니다."
+          ],
+          "diagram": [
+            "수면·활동",
+            "배뇨 변화",
+            "치료 불편"
+          ],
+          "reading_sections": [
+            {
+              "heading": "기능·생활·안전성의 변화를 대조합니다",
+              "text": "추적 평가에서는 증상 기록과 필요 검사 결과를 비교하고 약물 후 어지럼, 성기능 변화, 새 누출 등을 확인합니다. 잔뇨감이 커지거나 배출이 어려워진 경우에는 횟수 감소만을 호전으로 판단하지 않습니다.",
+              "source_urls": [
+                "https://www.england.nhs.uk/wp-content/uploads/2023/11/Decision-support-tool-making-a-decision-about-enlarged-prostate.pdf"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "경과 관찰이면 재진은 필요 없나요?",
+              "answer": "정기적으로 변화와 악화 여부를 확인하는 계획입니다. 시점은 상태에 따라 정합니다.",
+              "source_urls": [
+                "https://my.clevelandclinic.org/health/diseases/9100-benign-prostatic-hyperplasia"
+              ]
+            },
+            {
+              "question": "새 누출이 생겼는데 약이 잘 듣는 중인가요?",
+              "answer": "배출 장애나 다른 원인도 살펴야 하므로 변화 시점과 약을 함께 알려주세요.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/symptoms-causes"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 전립선 비대증 · 어떤 변화로 치료 반응을 확인하나요? | 연결한의원 청주오창",
+            "description": "오창 전립선 비대증: 어떤 변화로 치료 반응을 확인하나요? 추적 평가에서는 증상 기록과 필요 검사 결과를 비교하고 약물 후 어지럼, 성기능 변화, 새 누출 등을 확인합니다. 잔뇨감이 커지거나 배출이 어려워진 경우에는 횟수 감소만을 호전으로 판단하지 않습니다."
+          }
+        }
+      },
+      "overview": "청주 오창 전립선비대증 평가는 하부요로 증상, 전립선 소견과 배뇨 기능을 종합합니다. 크기·PSA 한 항목으로 증상의 원인이나 치료 필요성을 확정하지 않습니다.",
+      "reading_sections": [
+        {
+          "heading": "증상과 비대 소견의 관계를 확인합니다",
+          "text": "전립선비대증에서 배출 지연·약한 줄기뿐 아니라 절박감과 야간뇨가 보일 수 있습니다. 그러나 전립선 크기와 불편의 정도는 일치하지 않아 병력과 진찰을 함께 해석합니다.",
+          "source_urls": [
+            "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/enlarged-prostate-benign-prostatic-hyperplasia"
+          ]
+        },
+        {
+          "heading": "치료 선택에는 원하는 변화도 포함합니다",
+          "text": "검사 소견 외에 수면·사회 활동·성기능에서 무엇을 중요하게 생각하는지 확인합니다. 치료별 예상 이익과 부담을 비교해야 관찰·약물·시술 중 개인에게 맞는 결정을 논의할 수 있습니다.",
+          "source_urls": [
+            "https://www.england.nhs.uk/wp-content/uploads/2023/11/Decision-support-tool-making-a-decision-about-enlarged-prostate.pdf"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "남성 하부요로 증상과 전립선비대증은 같은가요?",
+          "answer": "하부요로 증상은 여러 원인에서 나타나는 표현으로 비대증과 동의어가 아닙니다.",
+          "source_urls": [
+            "https://www.niddk.nih.gov/health-information/diagnostic-tests/prostate"
+          ]
+        },
+        {
+          "question": "PSA 검사만으로 전립선비대증·암을 구분하나요?",
+          "answer": "단독 검사로 확정하지 않습니다. 감염·시술 등 영향과 진찰·추가 평가 필요성을 함께 봅니다.",
+          "source_urls": [
+            "https://www.cancer.gov/types/prostate/psa-fact-sheet"
+          ]
+        },
+        {
+          "question": "혈뇨가 보여도 기존 비대증 때문으로 보면 되나요?",
+          "answer": "새 혈뇨는 다른 원인도 가능하므로 신속하게 의료기관에서 확인받으세요.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/enlarged-prostate/"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주 오창 전립선비대증 | 배뇨 기능과 검사 해석",
+        "description": "전립선 크기와 증상의 관계, 감염·방광 기능 감별, 요속·잔뇨·PSA의 의미와 치료·추적 평가를 정리합니다."
+      },
+      "updated_at": "2026-10-26",
+      "source_checked_date": "2026-10-26",
+      "editorial_revision": "women-urology-expansion-20261026"
+    },
+    {
+      "name": "요실금",
+      "kind": "symptom",
+      "category": "비뇨·배뇨",
+      "keywords": [
+        "오창 요실금",
+        "오창 뇨실금",
+        "청주 오창 요실금"
+      ],
+      "red_flags": [
+        "누출과 함께 소변을 전혀 보지 못하면 즉시 의료기관에서 확인합니다.",
+        "새 배뇨통·혈뇨는 기존 요실금으로만 설명하지 말고 원인을 확인합니다."
+      ],
+      "id": "urology-urinary-incontinence",
+      "members": [],
+      "canonical_slug": "urology-urinary-incontinence",
+      "canonical_path": "guide/ochang-urology-urinary-incontinence",
+      "standalone_hub": true,
+      "created_at": "2026-10-26",
+      "published_at": "2026-10-26",
+      "status": "published",
+      "medical_review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "sources": [
+        {
+          "title": "NIDDK: Definition & Facts for Bladder Control Problems",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts",
+          "scope": "요실금 정의와 복압성·절박성·혼합·기타 유형",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Symptoms & Causes of Bladder Control Problems",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/symptoms-causes",
+          "scope": "남녀의 누출 양상과 여러 관련 원인",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Diagnosis of Bladder Control Problems",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/diagnosis",
+          "scope": "누출 일지·병력·진찰 및 선택적 검사",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Treatments for Bladder Control Problems",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment",
+          "scope": "유형별 관리·수분·보호용품·피부 관리",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Prevention of Bladder Control Problems & Bladder Health",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/prevention",
+          "scope": "수분 균형·배변·개인별 자극 음료와 생활",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NHS: Urinary incontinence — Causes",
+          "url": "https://www.nhs.uk/conditions/urinary-incontinence/causes/",
+          "scope": "복압성·절박성·일류성 등 기전 구분",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NHS: Urinary incontinence — Diagnosis",
+          "url": "https://www.nhs.uk/conditions/urinary-incontinence/diagnosis/",
+          "scope": "소변·잔뇨 평가와 추가검사 선택",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NHS: Urinary incontinence — Non-surgical treatment",
+          "url": "https://www.nhs.uk/conditions/urinary-incontinence/treatment/",
+          "scope": "골반저근·방광 훈련·약물 및 보호용품",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "Mayo Clinic: Urinary incontinence — Symptoms and causes",
+          "url": "https://www.mayoclinic.org/diseases-conditions/urinary-incontinence/symptoms-causes/syc-20352808",
+          "scope": "누출 유형·기능성 요실금과 생활 영향",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "Mayo Clinic: Urinary incontinence — Diagnosis and treatment",
+          "url": "https://www.mayoclinic.org/diseases-conditions/urinary-incontinence/diagnosis-treatment/drc-20352814",
+          "scope": "유형 확인·일지·잔뇨 및 단계별 개인 관리",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Kegel Exercises",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kegel-exercises",
+          "scope": "남녀의 골반저근 수축·이완 지도, 배뇨 중 반복 중단·과도한 운동의 주의",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NHS: Urinary incontinence — Overview",
+          "url": "https://www.nhs.uk/conditions/urinary-incontinence/",
+          "scope": "복압성·절박성·혼합·일류성 누출과 생활 영향·진료의 필요성",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "Mayo Clinic: Overactive bladder — Symptoms and causes",
+          "url": "https://www.mayoclinic.org/diseases-conditions/overactive-bladder/symptoms-causes/syc-20355715",
+          "scope": "절박뇨·빈뇨·누출의 차이와 유사 원인",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Symptoms & Causes of Urinary Retention",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/symptoms-causes",
+          "scope": "배출 곤란·잔뇨감·누출과 요폐의 구분",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Diagnosis of Urinary Retention",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/diagnosis",
+          "scope": "잔뇨 측정과 배출 장애의 원인 평가",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NIDDK: Urodynamic Testing",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/urodynamic-testing",
+          "scope": "저장·배출 기능 검사와 요속·잔뇨의 의미",
+          "checked_at": "2026-10-26"
+        },
+        {
+          "title": "NHS: Urinary incontinence — Symptoms",
+          "url": "https://www.nhs.uk/conditions/urinary-incontinence/symptoms/",
+          "scope": "복압성·절박성·혼합·일류성 누출 및 하부요로 증상의 구분",
+          "checked_at": "2026-10-26"
+        }
+      ],
+      "sections": {
+        "symptoms": {
+          "question": "언제 새는지 어떻게 구분하나요?",
+          "points": [
+            "기침·웃음·활동 때의 누출을 관찰합니다.",
+            "갑자기 급해진 뒤 새는지 구분합니다.",
+            "배출 곤란·이동 어려움과 다른 누출도 알립니다."
+          ],
+          "diagram": [
+            "기침·움직임",
+            "급한 뒤 누출",
+            "다른 누출"
+          ],
+          "reading_sections": [
+            {
+              "heading": "누출보다 앞선 사건을 문진합니다",
+              "text": "강한 요의가 먼저인지, 기침·재채기·활동과 동시에 샌 것인지 확인합니다. 반복적인 소량 누출과 약한 줄기, 화장실 접근의 어려움도 구분해야 저장 문제와 배출·기능 문제를 섞어 판단하지 않을 수 있습니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/urinary-incontinence/symptoms-causes/syc-20352808"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "절박뇨가 있으면 절박성 요실금인가요?",
+              "answer": "실제 누출이 동반되는지 확인해야 하며 급한 느낌만으로 요실금이라고 하지 않습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/urinary-incontinence/"
+              ]
+            },
+            {
+              "question": "기침할 때 샌다고 모두 골반저근 약화인가요?",
+              "answer": "누출 양상은 단서이며 관련 병력·진찰을 통해 원인을 평가합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/urinary-incontinence/causes/"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 요실금 · 언제 새는지 어떻게 구분하나요? | 연결한의원 청주오창",
+            "description": "오창 요실금: 언제 새는지 어떻게 구분하나요? 강한 요의가 먼저인지, 기침·재채기·활동과 동시에 샌 것인지 확인합니다. 반복적인 소량 누출과 약한 줄기, 화장실 접근의 어려움도 구분해야 저장 문제와 배출·기능 문제를 섞어 판단하지 않을 수 있습니다."
+          }
+        },
+        "context": {
+          "question": "복압성·절박성·혼합형은 어떻게 다른가요?",
+          "points": [
+            "복압성은 압력이 높아지는 활동과 관련됩니다.",
+            "절박성은 강한 요의 뒤 누출되는 양상입니다.",
+            "혼합형·일류성·기능성 등도 함께 살핍니다."
+          ],
+          "diagram": [
+            "복압성",
+            "절박성",
+            "혼합·기타"
+          ],
+          "reading_sections": [
+            {
+              "heading": "일시적인 원인과 지속적인 배경을 살핍니다",
+              "text": "감염·변비·약물이나 신경계 문제는 누출에 영향을 줄 수 있습니다. 일류성 누출은 배출이 충분하지 않은 상황에서 나타날 수 있고, 기능성 누출에서는 이동이나 인지 문제가 중요합니다. 하나의 유형만 있다고 미리 전제하지 않습니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/symptoms-causes"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "배뇨가 어려운데 새는 것은 모순인가요?",
+              "answer": "막힘이나 방광 수축 문제로 비우지 못하면서 조금씩 샐 수 있습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/urinary-incontinence/causes/"
+              ]
+            },
+            {
+              "question": "복압성과 절박성이 함께면 어떤 치료를 하나요?",
+              "answer": "더 불편한 증상과 배경을 정리해 필요한 관리를 조합합니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/urinary-incontinence/diagnosis-treatment/drc-20352814"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 요실금 · 복압성·절박성·혼합형은 어떻게 다른가요? | 연결한의원 청주오창",
+            "description": "오창 요실금: 복압성·절박성·혼합형은 어떻게 다른가요? 감염·변비·약물이나 신경계 문제는 누출에 영향을 줄 수 있습니다. 일류성 누출은 배출이 충분하지 않은 상황에서 나타날 수 있고, 기능성 누출에서는 이동이나 인지 문제가 중요합니다. 하나의 유형만 있다고 미리 전제하지 않습니다."
+          }
+        },
+        "assessment": {
+          "question": "누출 일지와 검사는 무엇을 확인하나요?",
+          "points": [
+            "누출 전 느낌·활동·시간을 기록합니다.",
+            "진찰과 소변검사는 다른 원인도 봅니다.",
+            "잔뇨와 추가 기능검사는 필요에 따라 선택합니다."
+          ],
+          "diagram": [
+            "누출 일지",
+            "진찰·소변",
+            "잔뇨 확인"
+          ],
+          "reading_sections": [
+            {
+              "heading": "소변과 잔뇨의 검사 목적을 구분합니다",
+              "text": "소변검사로 감염·혈액 등 다른 소견을 살피고, 배출 장애가 의심되면 잔뇨를 측정할 수 있습니다. 정밀 기능검사나 내시경은 추가 정보가 필요한지에 따라 선택하며, 누출이 있다는 이유로 모두 시행하지 않습니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/urinary-incontinence/diagnosis/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "배뇨일지에는 누출 횟수만 적나요?",
+              "answer": "수분·배뇨 시간과 양, 누출 전 요의와 활동도 적으면 유형 판단에 도움이 됩니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/diagnosis"
+              ]
+            },
+            {
+              "question": "잔뇨가 많으면 원인이 바로 정해지나요?",
+              "answer": "폐색·방광 신경·근육 기능 등 여러 가능성을 다른 자료와 함께 봅니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/urinary-incontinence/diagnosis-treatment/drc-20352814"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 요실금 · 누출 일지와 검사는 무엇을 확인하나요? | 연결한의원 청주오창",
+            "description": "오창 요실금: 누출 일지와 검사는 무엇을 확인하나요? 소변검사로 감염·혈액 등 다른 소견을 살피고, 배출 장애가 의심되면 잔뇨를 측정할 수 있습니다. 정밀 기능검사나 내시경은 추가 정보가 필요한지에 따라 선택하며, 누출이 있다는 이유로 모두 시행하지 않습니다."
+          }
+        },
+        "care": {
+          "question": "유형에 맞는 관리는 어떻게 고르나요?",
+          "points": [
+            "골반저근 훈련은 올바른 수축·이완을 배웁니다.",
+            "절박성에서는 방광 훈련 등을 논의합니다.",
+            "약물·기구·시술은 원인과 부담을 함께 봅니다."
+          ],
+          "diagram": [
+            "근육 훈련",
+            "방광 훈련",
+            "개별 치료"
+          ],
+          "reading_sections": [
+            {
+              "heading": "유형별 보존적 관리와 추가 선택을 검토합니다",
+              "text": "복압성·절박성·혼합형에 따라 골반저근 훈련, 방광 훈련, 약물 등의 비중이 달라집니다. 운동은 정확한 수행을 확인하고, 충분하지 않으면 원인과 반응을 재검토해 기구·시술 등의 이점과 부담을 논의합니다.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/urinary-incontinence/diagnosis-treatment/drc-20352814"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "골반저근 훈련은 남성에게도 적용하나요?",
+              "answer": "도움이 되는 경우가 있지만 모든 사람에게 같은 운동이 적절한 것은 아니므로 평가 후 지도받습니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/kegel-exercises"
+              ]
+            },
+            {
+              "question": "왜 배뇨 중 반복 중단 연습을 피하나요?",
+              "answer": "충분한 배출을 방해할 수 있어 정기 운동 방식으로 반복하지 않습니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/kegel-exercises"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 요실금 · 유형에 맞는 관리는 어떻게 고르나요? | 연결한의원 청주오창",
+            "description": "오창 요실금: 유형에 맞는 관리는 어떻게 고르나요? 복압성·절박성·혼합형에 따라 골반저근 훈련, 방광 훈련, 약물 등의 비중이 달라집니다. 운동은 정확한 수행을 확인하고, 충분하지 않으면 원인과 반응을 재검토해 기구·시술 등의 이점과 부담을 논의합니다."
+          }
+        },
+        "daily": {
+          "question": "외출·수분·피부는 어떻게 관리하나요?",
+          "points": [
+            "탈수되지 않게 수분을 개인별로 조절합니다.",
+            "화장실 동선과 갈아입을 용품을 준비합니다.",
+            "누출 후 피부 자극과 제품 사용 불편을 확인합니다."
+          ],
+          "diagram": [
+            "수분 균형",
+            "화장실 동선",
+            "피부 보호"
+          ],
+          "reading_sections": [
+            {
+              "heading": "수분과 보호용품을 치료 효과와 구분합니다",
+              "text": "수분의 과잉과 부족을 피하고 개인 상태에 맞게 양과 시간을 조절합니다. 변비와 음료 반응도 함께 봅니다. 광범위한 음식 제한보다 기록한 불편의 변화로 개인별 계획을 논의합니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/prevention"
+              ]
+            },
+            {
+              "heading": "생활 보조와 원인 치료는 구분합니다",
+              "text": "흡수 용품이나 피부 보호는 누출로 인한 생활 부담을 줄이는 보조 수단이며 원인 치료의 성공을 뜻하지는 않습니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "보호용품으로 버티면서 물을 크게 줄이면 되나요?",
+              "answer": "탈수될 정도로 제한하지 않고 원인 평가와 적정 수분 계획을 함께 논의합니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment"
+              ]
+            },
+            {
+              "question": "모든 자극 음식을 한 번에 끊어야 하나요?",
+              "answer": "식이와 누출의 직접 근거에는 한계가 있어 개인 반응을 보며 조절합니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/prevention"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 요실금 · 외출·수분·피부는 어떻게 관리하나요? | 연결한의원 청주오창",
+            "description": "오창 요실금: 외출·수분·피부는 어떻게 관리하나요? 수분의 과잉과 부족을 피하고 개인 상태에 맞게 양과 시간을 조절합니다. 변비와 음료 반응도 함께 봅니다. 광범위한 음식 제한보다 기록한 불편의 변화로 개인별 계획을 논의합니다."
+          }
+        },
+        "followup": {
+          "question": "누출 감소 외에 무엇을 확인하나요?",
+          "points": [
+            "비슷한 활동에서 누출 양상을 비교합니다.",
+            "외출·운동·수면의 회복을 함께 기록합니다.",
+            "배출 곤란이나 치료 후 새 불편도 알립니다."
+          ],
+          "diagram": [
+            "누출 빈도",
+            "생활 회복",
+            "부작용 확인"
+          ],
+          "reading_sections": [
+            {
+              "heading": "생활 목표와 부작용을 같은 평가에 넣습니다",
+              "text": "기존 일지와 비교해 누출 빈도와 일상 활동의 변화를 확인합니다. 약물 후 변비나 배출 곤란, 운동 방법의 어려움은 치료 부담에 해당합니다. 효과가 부족하면 유형과 동반 원인을 다시 검토하고 계획을 조정합니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "누출이 줄면 평생 같은 치료를 계속하나요?",
+              "answer": "지속 필요성과 부작용을 정기적으로 검토해 계획을 조절합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/urinary-incontinence/treatment/"
+              ]
+            },
+            {
+              "question": "배출이 어려워진 느낌은 별도로 평가하나요?",
+              "answer": "네. 필요 시 잔뇨 등을 확인하고 누출 감소만으로 호전을 판단하지 않습니다.",
+              "source_urls": [
+                "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/diagnosis"
+              ]
+            }
+          ],
+          "image_updated_at": "2026-10-26",
+          "page_metadata": {
+            "title": "청주 오창 요실금 · 누출 감소 외에 무엇을 확인하나요? | 연결한의원 청주오창",
+            "description": "오창 요실금: 누출 감소 외에 무엇을 확인하나요? 기존 일지와 비교해 누출 빈도와 일상 활동의 변화를 확인합니다. 약물 후 변비나 배출 곤란, 운동 방법의 어려움은 치료 부담에 해당합니다. 효과가 부족하면 유형과 동반 원인을 다시 검토하고 계획을 조정합니다."
+          }
+        }
+      },
+      "overview": "청주 오창 요실금·뇨실금 평가는 누출의 선행 상황과 배출 기능을 구분하는 데서 시작합니다. 남녀 모두 복압성·절박성·혼합형 및 기타 원인을 검토합니다.",
+      "reading_sections": [
+        {
+          "heading": "요실금 유형은 치료를 고르는 단서입니다",
+          "text": "기침이나 활동과 동시에 새는 복압성, 강한 요의 뒤 새는 절박성, 두 양상이 함께인 혼합형을 구분합니다. 기능성이나 비우기 어려운 상황의 누출도 있어 병력과 진찰을 종합합니다.",
+          "source_urls": [
+            "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts"
+          ]
+        },
+        {
+          "heading": "누출의 양과 불편의 크기는 같은 지표가 아닙니다",
+          "text": "소량이라도 운동·출근·수면을 방해할 수 있습니다. 언제 얼마나 새는지와 생활 제한을 함께 확인하고, 보행·인지·복용약·수술 등 원인 판단에 필요한 배경을 정리합니다.",
+          "source_urls": [
+            "https://www.mayoclinic.org/diseases-conditions/urinary-incontinence/symptoms-causes/syc-20352808"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "요실금은 여성 질환인가요?",
+          "answer": "남성에게도 나타납니다. 전립선 치료 이력이나 배출 장애 등은 개인별로 확인할 배경입니다.",
+          "source_urls": [
+            "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/symptoms-causes"
+          ]
+        },
+        {
+          "question": "뇨실금 페이지를 따로 평가해야 하나요?",
+          "answer": "이 콘텐츠에서는 요실금과 같은 검색 의도로 통합합니다. 실제 평가는 표기보다 누출 양상에 따라 진행합니다.",
+          "source_urls": [
+            "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts"
+          ]
+        },
+        {
+          "question": "새 배뇨통·혈뇨가 동반되면 기존 요실금으로 보나요?",
+          "answer": "감염 등 다른 원인 평가가 필요하므로 새 증상을 의료진에게 알리고 신속히 확인합니다.",
+          "source_urls": [
+            "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/diagnosis"
+          ]
+        }
+      ],
+      "page_metadata": {
+        "title": "청주 오창 요실금·뇨실금 | 유형 감별과 배뇨 평가",
+        "description": "복압성·절박성·혼합형과 기타 요실금의 구분, 누출 일지·소변·잔뇨검사 및 개인별 치료·추적 평가를 살펴봅니다."
+      },
+      "updated_at": "2026-10-26",
+      "source_checked_date": "2026-10-26",
+      "editorial_revision": "women-urology-expansion-20261026"
+    }
+  ]
+}
