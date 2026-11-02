@@ -188,7 +188,7 @@ def main():
             section["description"] = "청주·오창 " + profile["name"] + " 상담을 준비하며 " + section["question"] + " " + section["points"][0]
             if section.get("page_metadata"):
                 section["title"] = section["page_metadata"]["title"]
-                section["h1"] = section["title"].split(" | ")[0]
+                section["h1"] = section.get("page_h1", section["title"].split(" | ")[0])
                 section["description"] = section["page_metadata"]["description"]
             profile["topics"].append(section)
         for member in profile["members"]:

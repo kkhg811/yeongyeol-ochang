@@ -58,6 +58,7 @@ def main():
         for b in owner['reading_sections']+owner['faq']:
             assert set(b['source_urls'])<=evidence and b['source_urls']
     if KMC:
+        assert len({t['h1'] for t in p['topics']}) == 6, 'Detail H1s must identify their topic'
         from html.parser import HTMLParser
         paths=[p['hub_path']]+[t['path'] for t in p['topics']]+['services/accident']
         for path in paths:
