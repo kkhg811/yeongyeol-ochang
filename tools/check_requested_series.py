@@ -41,6 +41,7 @@ def main():
     newest_file = CONTENT / 'series-revisions-women-sleep-20261027.json'
     if newest_file.exists():
         later_ids.update(read(newest_file)['profile_ids'])
+    later_ids.update(read(CONTENT / 'series-revisions-traffic-accident-20261102.json')['profile_ids'])
     for pid, profile in profiles.items():
         if pid not in set(ids) | later_ids:
             assert profile == before[pid], pid + ': unrelated profile changed'

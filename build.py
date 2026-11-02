@@ -357,6 +357,15 @@ def main():
            jsonld=jsonld("guide/ochang-clinic.html", guide_ld))
     render("services_index.html", "services/index.html")
     for s in SERVICES:
+        if s["slug"] == "accident" and CLINICAL:
+            clinical = CLINICAL["profiles_by_id"]["other-accident-care"]
+            service = clinical["service_page"]
+            landing = {**clinical, "overview": service["overview"], "reading_sections": service["reading_sections"]}
+            entry = {"slug": "accident-service", "name": "교통사고 한의원 진료 준비", "display_name": "오창 교통사고 한의원",
+                     "path": "services/accident", "canonical_path": "services/accident", "relationship": "service-context",
+                     "title": service["title"], "description": service["description"]}
+            render_clinical(landing, entry=entry)
+            continue
         faq_ld = {"@context": "https://schema.org", "@type": "FAQPage",
                   "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in s["faq"]]}
         rel = [COND[x] for x in s.get("related", []) if x in COND]

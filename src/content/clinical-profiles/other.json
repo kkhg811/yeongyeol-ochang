@@ -3184,87 +3184,339 @@
         "교통사고-한의원",
         "자동차보험-한의원"
       ],
-      "name": "교통사고 후 증상·재활·진료 준비",
+      "name": "교통사고 후 증상과 진료 준비",
       "kind": "service",
-      "overview": "교통사고 뒤에는 충격 상황과 증상의 시작·변화, 신경학적 이상이나 머리 손상 신호를 먼저 확인해야 합니다. 진료와 재활은 실제 손상과 기능에 따라 상의하며 보험 적용과 비용은 개별 접수·심사 내용을 확인해야 합니다.",
+      "overview": "오창 교통사고 한의원 진료 준비에서는 사고 기전과 현재 증상, 기존 검사·치료를 함께 검토합니다. 진찰에서 구분할 문제, 치료 목표, 자동차보험 적용 확인과 추적 계획을 안내합니다.",
       "sections": {
         "symptoms": {
-          "question": "사고 뒤 어떤 불편을 기록하나요?",
+          "question": "사고 후 불편을 어떤 순서로 설명하나요?",
           "points": [
-            "사고 시점과 충격 방향, 안전장치·머리 충격·의식 소실 여부를 알려 주세요.",
-            "목·허리 통증뿐 아니라 두통·어지럼·메스꺼움·저림이 언제 시작됐는지 적어 주세요.",
-            "바로 없던 증상이 뒤늦게 생겼거나 악화한 경우에도 경과를 구체적으로 설명하세요."
+            "사고 전 증상과 새로 시작한 증상을 나누세요.",
+            "목 통증과 함께 생긴 두통·어지럼 등을 설명하세요.",
+            "수면·업무·일상 활동에서 달라진 점을 전하세요."
           ],
           "diagram": [
-            "충격 상황",
-            "증상 시작",
-            "지연·악화 변화"
-          ]
+            "사고 전후 차이",
+            "동반 증상",
+            "생활 영향"
+          ],
+          "label": "증상·생활 영향 확인",
+          "reading_sections": [
+            {
+              "heading": "증상 목록과 실제 기능 저하를 연결합니다",
+              "text": "같은 목 통증이라도 움직임 제한, 팔의 감각 변화, 수면이나 집중의 불편이 함께 있는지에 따라 확인할 내용이 달라집니다. 증상이 생긴 시점과 계속되는 상황을 설명하세요. 진료에서는 기록과 신체 진찰을 연결해 다른 원인과 동반 문제를 검토합니다.",
+              "source_urls": [
+                "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "늦게 아프면 사고와 무관한가요?",
+              "answer": "편타손상 증상은 지연될 수 있으므로 시작과 경과를 전달하세요.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/whiplash/"
+              ]
+            },
+            {
+              "question": "두통·구토를 모두 목 근육 문제로 보나요?",
+              "answer": "머리 손상과 다른 원인을 확인하며 반복 구토·의식 변화는 신속히 평가해야 합니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/head-injury-and-concussion/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "오창 교통사고 | 증상·생활 영향 확인",
+            "description": "오창 교통사고 후 기존 증상과 새 증상, 두통·어지럼과 수면·업무 영향을 나누어 문진을 준비하세요."
+          },
+          "visual_asset": {
+            "kind": "generated-editorial-photo",
+            "filename": "symptoms-cover-20261102.webp",
+            "thumbnail_filename": "symptoms-cover-20261102-480.webp",
+            "sha256": "371aec99a12a9509f362ec72a2fa1c5ddb9594a14134694d765be3b2b84bdfc3",
+            "thumbnail_sha256": "99ca26f07912ba433ec8fee072eb875ae0b2f437e4752f2db2bae3aa64fcfe5d",
+            "alt": "어깨에 손을 얹고 앉아 있는 성인과 ‘교통사고 후 증상 기록’ 표제의 설명용 생성 이미지",
+            "caption": "교통사고 후\n증상 기록",
+            "provenance": "traffic-accident-image-provenance-20261102.json",
+            "updated_at": "2026-11-02"
+          },
+          "image_updated_at": "2026-11-02"
         },
         "context": {
-          "question": "통증보다 먼저 확인할 신호는 무엇인가요?",
+          "question": "편타손상과 다른 손상은 어떻게 구분하나요?",
           "points": [
-            "팔·다리 힘 빠짐·걷기 어려움·감각 변화 등 새 신경 증상이 있는지 알려 주세요.",
-            "머리를 다친 뒤 의식 변화·반복 구토·심해지는 두통이 있으면 일반 통증 진료를 기다리지 마세요.",
-            "사고 전 증상과 다른 새 변화는 가벼운 접촉이었다는 이유로 넘기지 말고 평가받으세요."
+            "빠른 목 움직임과 증상 발생의 관계를 확인합니다.",
+            "목 통증만으로 손상 조직을 확정하지 않습니다.",
+            "다른 손상과 동반 증상을 진찰에서 구분합니다."
           ],
           "diagram": [
-            "신경 증상",
-            "머리 손상 신호",
-            "새 변화 우선"
-          ]
+            "손상 기전",
+            "동반 양상",
+            "감별 평가"
+          ],
+          "label": "편타손상·다른 원인 구분",
+          "reading_sections": [
+            {
+              "heading": "발생 기전은 단서이며 확진 결과는 아닙니다",
+              "text": "편타손상은 갑작스러운 앞뒤 목 움직임과 관련될 수 있습니다. 통증·뻣뻣함·두통·팔 불편은 설명에 도움이 되지만 어느 조직이 얼마나 손상됐는지를 증상만으로 확정하지 않습니다. 사고 뒤의 불편을 하나의 병명으로 묶기보다 다른 손상 평가의 필요성을 확인하세요.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "자가점검으로 편타손상 등급을 매겨도 되나요?",
+              "answer": "등급과 손상 평가는 문진·진찰을 바탕으로 의료진이 판단합니다.",
+              "source_urls": [
+                "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination"
+              ]
+            },
+            {
+              "question": "검사가 정상이면 다른 설명은 필요 없나요?",
+              "answer": "영상에서 확인되는 범위와 진찰·기능 소견을 함께 설명받아야 합니다.",
+              "source_urls": [
+                "https://www.orthoinfo.org/diseases--conditions/neck-sprain/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "오창 교통사고 | 편타손상·다른 원인 구분",
+            "description": "오창 교통사고 후 편타손상 기전과 동반 증상, 증상만으로 손상 조직을 확정할 수 없는 이유를 설명합니다."
+          },
+          "visual_asset": {
+            "kind": "generated-editorial-photo",
+            "filename": "context-cover-20261102.webp",
+            "thumbnail_filename": "context-cover-20261102-480.webp",
+            "sha256": "5ed79b150109db2f7314900d022be0894ecebc9ea13ec843bcd1b29b49df8ed6",
+            "thumbnail_sha256": "05eb663aa0f132458936a8ba98583781869b377adf3c55bad8ec3c4dff7c3299",
+            "alt": "자동차 머리받침과 안전벨트에 ‘편타손상과 목·허리 불편’ 표제를 붙인 설명용 생성 이미지",
+            "caption": "편타손상과\n목·허리 불편",
+            "provenance": "traffic-accident-image-provenance-20261102.json",
+            "updated_at": "2026-11-02"
+          },
+          "image_updated_at": "2026-11-02"
         },
         "assessment": {
-          "question": "병원·한의원 진료에 무엇을 가져가나요?",
+          "question": "진찰과 검사에서 무엇을 확인하나요?",
           "points": [
-            "이미 받은 진찰·영상검사 결과와 퇴원 안내, 복용약·기존 질환 정보를 준비하세요.",
-            "사고 전 통증이나 수술 이력을 알려 현재 손상과 구분할 수 있게 하세요.",
-            "검사 필요성과 재평가 시점, 다른 진료과와 협력이 필요한지 질문하세요."
+            "사고 경위와 기존 목 질환·증상을 확인합니다.",
+            "움직임·압통과 신경학적 소견을 살핍니다.",
+            "의심하는 손상에 맞춰 영상검사를 선택합니다."
           ],
           "diagram": [
-            "기존 사고 진료",
-            "과거 건강 정보",
-            "검사·협진 상담"
-          ]
+            "병력과 사고 경위",
+            "신체·신경 진찰",
+            "선택적 영상검사"
+          ],
+          "label": "진찰·검사 자료 준비",
+          "reading_sections": [
+            {
+              "heading": "검사 이름보다 해결할 의문을 먼저 확인하세요",
+              "text": "진찰은 통증·움직임과 신경학적 변화, 다른 손상을 함께 평가합니다. 영상검사는 골절·탈구 등 확인할 문제에 따라 달라집니다. 검사 종류보다 결과에 따라 계획이 어떻게 바뀌는지 물어보세요.",
+              "source_urls": [
+                "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "처방약과 보조제 목록도 필요한가요?",
+              "answer": "네. 기존 치료와 반응, 한약·보조제를 포함한 사용 목록을 공유하세요.",
+              "source_urls": [
+                "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926"
+              ]
+            },
+            {
+              "question": "검사 결과와 증상이 다르면 어떻게 하나요?",
+              "answer": "영상에서 보이는 문제와 진찰·생활 영향을 맞춰 다시 해석합니다.",
+              "source_urls": [
+                "https://my.clevelandclinic.org/health/diseases/11982-whiplash"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "오창 교통사고 | 진찰·검사 자료 준비",
+            "description": "오창 교통사고 진찰에서 병력·움직임·신경 소견을 살피고, 의심하는 손상에 따라 검사를 정하는 과정을 안내합니다."
+          },
+          "visual_asset": {
+            "kind": "generated-editorial-photo",
+            "filename": "assessment-cover-20261102.webp",
+            "thumbnail_filename": "assessment-cover-20261102-480.webp",
+            "sha256": "6abd362ad722893f14e192fa5dd9d4cc0e05648aea25ac2a5c2220da40275fd2",
+            "thumbnail_sha256": "cdbba8163361035622f6d78e27527ec6cc16033c7a3d4853e2844ed5ce3c9228",
+            "alt": "빈 서류철과 메모를 정리하는 손, ‘첫 진료 검사 준비’ 표제의 설명용 생성 이미지",
+            "caption": "첫 진료\n검사 준비",
+            "provenance": "traffic-accident-image-provenance-20261102.json",
+            "updated_at": "2026-11-02"
+          },
+          "image_updated_at": "2026-11-02"
         },
         "care": {
-          "question": "한방 재활과 활동은 어떻게 계획하나요?",
+          "question": "치료 계획의 목표와 한계는 무엇인가요?",
           "points": [
-            "손상 평가와 금기를 확인한 뒤 통증·수면·걷기·일상 복귀의 목표를 정하세요.",
-            "침·추나·한약 등 선택지는 예상 이득·위험과 대안을 설명받고 획일적인 횟수로 정하지 마세요.",
-            "목을 오래 고정하거나 무리하게 교정하기보다 상태에 맞는 움직임과 업무 조정을 상의하세요."
+            "현재 불편에 필요한 치료 목표를 구체화합니다.",
+            "근거·이득·위험과 활동 계획을 함께 검토합니다.",
+            "변화가 부족하거나 새 불편이 생기면 재평가합니다."
           ],
           "diagram": [
-            "손상·금기 확인",
-            "개별 치료 목표",
-            "활동·업무 조정"
-          ]
+            "개별 목표",
+            "치료와 활동",
+            "반응 재평가"
+          ],
+          "label": "개별 치료 계획",
+          "reading_sections": [
+            {
+              "heading": "받은 치료와 기능 변화가 연결되는지 살펴봅니다",
+              "text": "급성 편타손상에서는 활동을 유지하고 기능 회복을 확인하는 과정이 중요합니다. 침이나 수기적 접근을 고려할 때도 근거의 한계와 개인의 반응을 설명받으세요. 치료 이름을 많이 나열하는 대신 무엇을 개선하려는지, 계획을 바꿀 조건이 무엇인지 합의합니다.",
+              "source_urls": [
+                "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "침 치료의 부작용도 물어봐야 하나요?",
+              "answer": "네. 현재 건강 상태를 알리고 감염 등 주의할 위험과 대응을 설명받으세요.",
+              "source_urls": [
+                "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety"
+              ]
+            },
+            {
+              "question": "한약을 추가하면 다른 약은 끊어야 하나요?",
+              "answer": "임의로 중단하지 말고 양쪽 의료진과 전체 복용 정보를 검토하세요.",
+              "source_urls": [
+                "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "오창 교통사고 | 개별 치료 계획",
+            "description": "오창 교통사고 치료에서 기대 효과·근거의 한계와 위험을 나누어 묻고, 기능 목표와 반응을 함께 검토하세요."
+          },
+          "visual_asset": {
+            "kind": "generated-editorial-photo",
+            "filename": "care-cover-20261102.webp",
+            "thumbnail_filename": "care-cover-20261102-480.webp",
+            "sha256": "f538187301b8cf8495edb78dee2e6985a6e95435048daea6d4159e129cbf3732",
+            "thumbnail_sha256": "1cb80206aaa8dffc1cb69432739ee30eeb9c6710452af3878454b1d97685039a",
+            "alt": "일반적인 상담 공간의 두 성인과 ‘내게 맞는 치료 선택’ 표제의 설명용 생성 이미지",
+            "caption": "내게 맞는\n치료 선택",
+            "provenance": "traffic-accident-image-provenance-20261102.json",
+            "updated_at": "2026-11-02"
+          },
+          "image_updated_at": "2026-11-02"
         },
         "daily": {
-          "question": "자동차보험과 비용은 어떻게 확인하나요?",
+          "question": "지급보증과 환자 부담은 어떻게 구분하나요?",
           "points": [
-            "진료 전 사고 접수 정보와 담당 보험사 연락 내용을 준비해 실제 접수 가능 여부를 확인하세요.",
-            "적용 항목·본인 부담·필요 서류는 현재 사건과 진료에 대한 안내를 각각 확인하세요.",
-            "무조건 무료·전액 보장·정해진 치료 횟수라고 가정하지 않고 안내 내용을 기록하세요."
+            "보험회사의 지급 의사와 지급 한도를 확인합니다.",
+            "해당 비용의 보상 대상 여부를 구분합니다.",
+            "보증 변경이나 한도 초과 시 안내를 다시 받습니다."
           ],
           "diagram": [
-            "사고 접수 정보",
-            "개별 적용 확인",
-            "비용·서류 안내"
-          ]
+            "지급 의사·한도",
+            "해당 비용의 범위",
+            "변경 시 재확인"
+          ],
+          "label": "보험 적용·비용 확인",
+          "reading_sections": [
+            {
+              "heading": "보험회사 청구 요건과 예외를 확인하세요",
+              "text": "자동차손해배상 보장법은 지급 의사와 한도 통지, 의료기관의 보험회사 청구와 환자 청구 제한을 구분합니다. 지급 의사 철회, 보상 대상이 아닌 비용, 한도 초과 등에는 예외가 있어 일괄적으로 무료라고 단정할 수 없습니다. 구체적인 적용은 보험회사와 진료기관에 확인하세요.",
+              "source_urls": [
+                "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "사고접수번호와 지급보증번호는 같은가요?",
+              "answer": "접수 정보와 지급 의사·한도를 담은 보증 정보는 구분해 확인합니다.",
+              "source_urls": [
+                "https://www.hira.or.kr/bbsDummy.do?brdBltNo=9591&brdScnBltNo=4&pageIndex=1&pgmid=HIRAA020041000100"
+              ]
+            },
+            {
+              "question": "병원에서 설명한 항목은 모두 자동 지급되나요?",
+              "answer": "청구와 심사·지급은 별도 절차이므로 적용 범위를 각각 확인하세요.",
+              "source_urls": [
+                "https://www.hira.or.kr/dummy.do?pgmid=HIRAA020020000004"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "오창 교통사고 | 보험 적용·비용 확인",
+            "description": "오창 교통사고 자동차보험의 지급 의사·한도, 환자 부담 예외와 청구·심사 절차를 구분해 확인하세요."
+          },
+          "visual_asset": {
+            "kind": "generated-editorial-photo",
+            "filename": "daily-cover-20261102.webp",
+            "thumbnail_filename": "daily-cover-20261102-480.webp",
+            "sha256": "2173a98abd703c0f5dcca1788d0f23650f8702d89a5ff1222e439439cc2c042b",
+            "thumbnail_sha256": "7ca2d8683f7e929b4eeb32bb1da6f3c87d50172e6f412b8ce4b6149dd15d1e52",
+            "alt": "자동차 열쇠·빈 서류와 ‘자동차보험 접수와 비용’ 표제의 설명용 생성 이미지",
+            "caption": "자동차보험\n접수와 비용",
+            "provenance": "traffic-accident-image-provenance-20261102.json",
+            "updated_at": "2026-11-02"
+          },
+          "image_updated_at": "2026-11-02"
         },
         "followup": {
-          "question": "회복과 일상 복귀는 무엇으로 판단하나요?",
+          "question": "경과 평가에서 무엇을 비교하나요?",
           "points": [
-            "통증 수치뿐 아니라 수면·걷기·일·운전에서 가능한 활동의 변화를 기록하세요.",
-            "활동을 늘린 뒤 증상 반응을 알려 단계와 치료 계획을 조정하세요.",
-            "새 약화·감각 변화나 회복이 정체되면 치료를 반복하기보다 손상과 진단을 재평가하세요."
+            "목 움직임과 일상 활동의 변화부터 비교합니다.",
+            "활동량을 늘린 뒤의 증상 반응을 확인합니다.",
+            "안전한 운전과 업무 복귀 조건을 따로 논의합니다."
           ],
           "diagram": [
-            "생활 기능",
-            "활동 후 반응",
-            "재평가 신호"
-          ]
+            "가능한 움직임",
+            "활동 후 증상",
+            "운전·업무 안전"
+          ],
+          "label": "기능·생활 복귀 평가",
+          "reading_sections": [
+            {
+              "heading": "치료 기간보다 실제 수행과 부담을 비교합니다",
+              "text": "통증이 줄어도 목 움직임과 약의 영향을 따로 확인합니다. 현재 기능에 맞게 활동과 업무를 단계적으로 조정하세요. 새 감각·근력 변화나 악화가 생기면 다시 평가받습니다.",
+              "source_urls": [
+                "https://www.pah.nhs.uk/resources/whiplash/"
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "question": "업무 복귀는 통증이 0일 때만 하나요?",
+              "answer": "업무 환경과 부담을 조정해 가능한 복귀 계획을 상담할 수 있습니다.",
+              "source_urls": [
+                "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/"
+              ]
+            },
+            {
+              "question": "뇌진탕이 함께 있었다면 운전은 어떻게 하나요?",
+              "answer": "머리 손상 회복과 안전을 별도로 평가하고 안내받은 복귀 계획을 따릅니다.",
+              "source_urls": [
+                "https://www.nhs.uk/conditions/head-injury-and-concussion/"
+              ]
+            }
+          ],
+          "page_metadata": {
+            "title": "오창 교통사고 | 기능·생활 복귀 평가",
+            "description": "오창 교통사고 경과를 목 움직임·활동 후 반응으로 비교하고, 업무·운전의 안전한 복귀 조건을 논의하세요."
+          },
+          "visual_asset": {
+            "kind": "generated-editorial-photo",
+            "filename": "followup-cover-20261102.webp",
+            "thumbnail_filename": "followup-cover-20261102-480.webp",
+            "sha256": "32bcadcf033125da7000b7d3090e755851c3f53aedd45e0513db4a8e1c22fb1f",
+            "thumbnail_sha256": "3b8069c3df200eb4174150cdbccde9007cf5bbc89bf44874fbe32c2e5f7608e1",
+            "alt": "공원에서 가볍게 걷는 성인과 ‘생활 복귀 변화 살피기’ 표제의 설명용 생성 이미지",
+            "caption": "생활 복귀\n변화 살피기",
+            "provenance": "traffic-accident-image-provenance-20261102.json",
+            "updated_at": "2026-11-02"
+          },
+          "image_updated_at": "2026-11-02"
         }
       },
       "red_flags": [
@@ -3274,12 +3526,98 @@
         {
           "title": "NHS · Whiplash",
           "url": "https://www.nhs.uk/conditions/whiplash/",
-          "scope": "사고 후 목 통증·신경 변화와 활동 조절"
+          "scope": "편타손상의 목 통증·뻣뻣함과 지연된 시작, 일상 활동, 새 신경 증상 평가",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "NHS inform · Whiplash",
+          "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/",
+          "scope": "2026-07-24 수정. 편타손상과 동반 증상, 진찰·활동·업무 복귀",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "The Princess Alexandra Hospital NHS Trust · Whiplash",
+          "url": "https://www.pah.nhs.uk/resources/whiplash/",
+          "scope": "편타손상 설명과 점진적 활동·안전한 운전 조건·경과 재평가",
+          "checked_at": "2026-11-02"
         },
         {
           "title": "NHS · Head injury and concussion",
           "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
-          "scope": "머리 손상 후 신속한 평가가 필요한 변화. 자동차보험 기준 자료가 아님"
+          "scope": "머리 손상 뒤 의식·구토·신경 변화 평가와 운전·일상 복귀의 별도 판단",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "SIRA · Quick reference guide for whiplash-associated disorders",
+          "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders",
+          "scope": "현재 공개된 2014 급성 편타손상 지침 요약. 활동·기능 목표, 치료 근거의 한계와 반응 재평가; 한국 자동차보험 기준이 아님",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "SIRA · Do an examination",
+          "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+          "scope": "사고·과거력 문진, 신경학적 진찰, 골절·탈구 의심에 따른 영상검사 선택",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "Mayo Clinic · Whiplash: diagnosis and treatment",
+          "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+          "scope": "2024-02-17 자료. 문진·영상검사의 목적과 한계, 치료 목표·필요에 따른 방문 계획·진료 준비",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "NCCIH · Acupuncture: Effectiveness and Safety",
+          "url": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+          "scope": "침의 안전성·부작용과 건강 상태 공유; 침 근거를 약침 전체에 일반화하지 않음",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "NCCIH · Traditional Chinese Medicine: What You Need To Know",
+          "url": "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know",
+          "scope": "한방 성분 제품의 불확실성과 의료진 간 복용 정보 공유. 중국 약초제품 자료를 한국 한약 전체의 효과·품질에 일반화하지 않음",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "국가법령정보센터 · 자동차손해배상 보장법 제12조",
+          "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR",
+          "scope": "2026-10-02 시행본. 지급 의사·한도 통지, 보험회사 청구 시 환자 청구 제한과 예외; 개별 사건 보장·합의 판단은 하지 않음",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "건강보험심사평가원 · 자동차보험 심사제도",
+          "url": "https://www.hira.or.kr/dummy.do?pgmid=HIRAA020020000004",
+          "scope": "의료기관 청구·심평원 심사·보험회사/공제조합 지급의 업무 구분.",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "건강보험심사평가원 · 지급보증정보 중계서비스 안내",
+          "url": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=9591&brdScnBltNo=4&pageIndex=1&pgmid=HIRAA020041000100",
+          "scope": "2018-05-09 자료. 사고접수번호와 지급보증정보의 구분·지급 의사와 한도라는 정보의 의미를 현행 제12조와 함께 확인; 현재 서비스 범위·보험사 목록은 인용하지 않음",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "Mayo Clinic · Whiplash: symptoms and causes",
+          "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+          "scope": "2024-02-17 자료. 편타손상의 발생 기전, 동반 증상과 다른 손상 평가의 필요성",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "AAOS OrthoInfo · Neck Sprains and Strains",
+          "url": "https://www.orthoinfo.org/diseases--conditions/neck-sprain/",
+          "scope": "목 근육·인대 손상 기전과 증상, 신체 진찰과 X-ray의 연부조직 평가 한계. 본문의 약물·고정치료 일정을 그대로 권하지 않음",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "Cleveland Clinic · Whiplash",
+          "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+          "scope": "2026-05-13 수정. 사고 경위·병력과 신체/신경 진찰, 동반 손상과 검사 필요성의 개별 평가",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "title": "연결한의원 청주오창 오시는 길",
+          "url": "https://www.yeongyeolochangkmc.co.kr/location",
+          "scope": "병원 공식 공개 페이지에서 확인한 주소·대표전화·예약 안내",
+          "checked_at": "2026-11-02"
         }
       ],
       "keywords": [
@@ -3316,7 +3654,87 @@
       },
       "status": "published",
       "published_at": "2026-10-21",
-      "medical_review_status": "pending"
+      "medical_review_status": "pending",
+      "page_metadata": {
+        "title": "오창 교통사고 후 증상 | 진찰·검사·회복 가이드",
+        "description": "오창 교통사고 후 진료를 준비하는 연결한의원 청주오창 안내입니다. 편타손상과 동반 증상, 검사 목적, 치료 선택, 자동차보험 지급보증과 생활 복귀를 확인하세요."
+      },
+      "reading_sections": [
+        {
+          "heading": "충격의 크기 하나로 평가를 끝내지 않습니다",
+          "text": "문진에서는 충돌 상황과 기존 목 문제, 증상 경과를 함께 살핍니다. 움직임·압통·신경학적 소견 등 진찰 결과로 다음 평가와 치료 방향을 정하며 차량 손상 정도만으로 상태를 판단하지 않습니다.",
+          "source_urls": [
+            "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination"
+          ]
+        },
+        {
+          "heading": "통증과 기능을 함께 비교해 치료를 조정합니다",
+          "text": "치료의 목표를 통증 완화뿐 아니라 움직임과 일상 기능으로 구체화합니다. 급성 편타손상에서 일부 수기·침 치료의 근거에는 한계가 있어, 상태에 맞는 활동 계획과 함께 반응을 확인하는 접근이 필요합니다.",
+          "source_urls": [
+            "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders"
+          ]
+        },
+        {
+          "heading": "진료 필요성과 보험 적용을 나누어 확인합니다",
+          "text": "자동차보험 진료비는 의료기관의 청구, 심사평가원의 심사와 보험회사·공제조합의 지급 절차로 이어집니다. 제안받은 진료의 목적과 해당 사건의 비용 처리 범위를 각각 설명받으세요.",
+          "source_urls": [
+            "https://www.hira.or.kr/dummy.do?pgmid=HIRAA020020000004"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "사고 후 목 통증은 모두 편타손상인가요?",
+          "answer": "골절 등 다른 손상도 구분해야 하므로 병력과 진찰이 필요합니다.",
+          "source_urls": [
+            "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921"
+          ]
+        },
+        {
+          "question": "자동차보험 진료비를 환자에게 청구할 수 있나요?",
+          "answer": "보험회사에 청구 가능한 해당 비용은 환자 청구가 제한되지만, 보상 제외·한도 초과 등 예외가 있습니다.",
+          "source_urls": [
+            "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR"
+          ]
+        },
+        {
+          "question": "영상검사 결과만으로 치료를 결정하나요?",
+          "answer": "사고 경위와 신경학적 소견, 생활 기능을 함께 검토합니다.",
+          "source_urls": [
+            "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination"
+          ]
+        },
+        {
+          "question": "침·약침·추나·한약을 모두 같은 근거로 설명하나요?",
+          "answer": "각 방법의 근거와 위험은 구분해야 합니다. 사용 중인 약과 건강 상태를 공유해 개별적으로 상담하세요.",
+          "source_urls": [
+            "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know"
+          ]
+        },
+        {
+          "question": "사고 뒤 의식이 달라지거나 새 마비가 있으면요?",
+          "answer": "일반 통증 치료에 앞서 신속한 의료 평가가 필요합니다.",
+          "source_urls": [
+            "https://www.nhs.uk/conditions/head-injury-and-concussion/"
+          ]
+        }
+      ],
+      "updated_at": "2026-11-02",
+      "image_notice": "설명용 생성 이미지 · 실제 환자나 진료현장 사진이 아닙니다.",
+      "service_page": {
+        "title": "오창 교통사고 한의원 | 진찰·치료 선택·자동차보험 확인",
+        "description": "오창 교통사고 후 진료를 준비하는 연결한의원 청주오창 안내입니다. 편타손상과 동반 증상, 검사 목적, 치료 선택, 자동차보험 지급보증과 생활 복귀를 확인하세요.",
+        "overview": "오창 교통사고 한의원을 찾는 분을 위한 연결한의원 청주오창의 진료 준비 안내입니다. 사고 기록과 기존 진료 자료, 자동차보험 접수 정보를 준비하고 아래 여섯 질문을 살펴보세요.",
+        "reading_sections": [
+          {
+            "heading": "교통사고 진료 예약과 방문 준비",
+            "text": "연결한의원 청주오창은 충북 청주시 청원구 오창읍 2산단로 132, 부민빌딩 3층에 있습니다. 전화 043-715-3688로 현재 진료 일정과 접수 준비사항을 확인할 수 있습니다. 네이버 예약과 오시는 길 안내에서 방문 정보를 확인하세요.",
+            "source_urls": [
+              "https://www.yeongyeolochangkmc.co.kr/location"
+            ]
+          }
+        ]
+      }
     }
   ]
 }

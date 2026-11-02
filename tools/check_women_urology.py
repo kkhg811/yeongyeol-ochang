@@ -28,6 +28,7 @@ def main():
     later_file = CONTENT / 'series-revisions-women-sleep-20261027.json'
     later = read(later_file) if later_file.exists() else {'profile_ids': [], 'updated_at': m['updated_at']}
     later_ids = set(later['profile_ids'])
+    later_ids.update(read(CONTENT / 'series-revisions-traffic-accident-20261102.json')['profile_ids'])
     assert len(ids) == 15 and len(new_ids) == 2
     assert set(profiles) == set(before) | new_ids and not new_ids & set(before)
     assert len(m['queries']) == 21 and [q['order'] for q in m['queries']] == list(range(1, 22))

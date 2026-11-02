@@ -208,6 +208,25 @@ def render_card(task: dict[str, Any]) -> dict[str, Any]:
                 assert image.size == (480, 480)
             return {**previous, "cached": True}
 
+    if task.get("visual_asset"):
+        visual = task["visual_asset"]
+        if not output.is_file() or not thumb.is_file():
+            raise ValueError("Generated image is missing; restore its recorded file, do not synthesize a diagram")
+        if sha256_file(output) != visual["sha256"] or sha256_file(thumb) != visual["thumbnail_sha256"]:
+            raise ValueError("Generated image checksum mismatch")
+        with Image.open(output) as image:
+            assert image.size == (WIDTH, WIDTH) and image.format == "WEBP"
+        with Image.open(thumb) as image:
+            assert image.size == (480, 480) and image.format == "WEBP"
+        return {"profile_id": task["profile_id"], "topic": topic,
+                "path": task["relative_output"], "thumbnail_path": task["relative_thumbnail"],
+                "width": WIDTH, "height": WIDTH, "thumbnail_width": 480, "thumbnail_height": 480,
+                "bytes": output.stat().st_size, "thumbnail_bytes": thumb.stat().st_size,
+                "sha256": visual["sha256"], "thumbnail_sha256": visual["thumbnail_sha256"],
+                "content_hash": task["content_hash"], "alt": visual["alt"],
+                "source_kind": visual["kind"], "provenance": visual["provenance"],
+                "caption": visual["caption"], "cached": True}
+
     image = Image.new("RGB", (WIDTH, WIDTH), PAPER)
     draw = ImageDraw.Draw(image)
     # A quiet editorial header, never an advertising banner.
@@ -336,8 +355,14 @@ def main() -> None:
                        "name": profile_name, "topic": topic, "label": topic_label,
                        "question": question, "diagram": labels}
             content_hash = hashlib.sha256(json.dumps(content, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
-            output = (args.output_root / pid / f"{topic}.webp").resolve()
-            thumbnail = output.with_name(f"{topic}-480.webp")
+            visual = section.get("visual_asset")
+            if visual:
+                if not all(re.fullmatch(r"[a-z0-9-]+[.]webp", visual[k]) for k in ("filename", "thumbnail_filename")):
+                    raise ValueError("Unsafe generated image filename")
+                content["visual_asset"] = visual
+                content_hash = hashlib.sha256(json.dumps(content, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+            output = (args.output_root / pid / (visual["filename"] if visual else f"{topic}.webp")).resolve()
+            thumbnail = output.with_name(visual["thumbnail_filename"] if visual else f"{topic}-480.webp")
             tasks.append({"profile_id": pid, "profile_name": profile_name,
                           "topic": topic, "topic_label": topic_label, "question": question,
                           "labels": labels, "font_path": str(args.font.resolve()),
@@ -345,7 +370,7 @@ def main() -> None:
                           "relative_output": relative_path(output),
                           "relative_thumbnail": relative_path(thumbnail),
                           "content_hash": content_hash,
-                          "previous": existing.get((pid, topic))})
+                          "visual_asset": visual, "previous": existing.get((pid, topic))})
     if args.workers == 1 or len(tasks) <= 6:
         results = [render_card(task) for task in tasks]
     else:
@@ -353,7 +378,7 @@ def main() -> None:
             results = list(executor.map(render_card, tasks, chunksize=6))
     manifest = {
         "renderer_version": VERSION,
-        "renderer": "Pillow / exact text and editorial shapes; no generative model",
+        "renderer": "Pillow diagrams plus checksum-verified generated covers with recorded provenance",
         "diagram_policy": "Supplied observation/discussion labels only; not a diagnostic algorithm or treatment outcome graphic",
         "built_at": datetime.now(ZoneInfo("Asia/Seoul")).isoformat(timespec="seconds"),
         "catalog_path": relative_path(args.catalog),
@@ -362,13 +387,15 @@ def main() -> None:
         "font_sha256": font_hash,
         "font_license": "SIL Open Font License 1.1; tools/fonts/OFL-NotoSansKR.txt",
         "profiles": len(profiles),
-        "original_diagrams": len(results),
+        "original_diagrams": sum(not x.get("source_kind") for x in results),
+        "generated_covers": sum(bool(x.get("source_kind")) for x in results),
         "total_renditions": len(results) * 2,
         "assets": results,
     }
     args.manifest.parent.mkdir(parents=True, exist_ok=True)
     args.manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"profiles": len(profiles), "original_diagrams": len(results),
+    print(json.dumps({"profiles": len(profiles), "original_diagrams": sum(not x.get("source_kind") for x in results),
+        "generated_covers": sum(bool(x.get("source_kind")) for x in results),
                       "cached": sum(x["cached"] for x in results),
                       "bytes": sum(x["bytes"] + x["thumbnail_bytes"] for x in results),
                       "manifest": str(args.manifest.resolve())}, ensure_ascii=False))

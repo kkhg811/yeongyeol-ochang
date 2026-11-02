@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "profile_ids": [
+    "other-accident-care"
+  ],
+  "unchanged_other_profiles": 188,
+  "old_core_urls_preserved": 7,
+  "generated_covers": 6,
+  "optimized_renditions": 12,
+  "old_image_urls_preserved": 12,
+  "original_priority80_unchanged": true,
+  "prior_extra_assessments_unchanged": 20,
+  "legacy_mappings_unchanged": true,
+  "source_status": "Primary sources checked; clinical review pending",
+  "search_exposure": {
+    "crawled": "unverified",
+    "indexed": "unverified",
+    "rank_one": "unverified",
+    "carousel": "unverified"
+  }
+}

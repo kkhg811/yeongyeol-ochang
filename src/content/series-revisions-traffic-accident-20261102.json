@@ -1,0 +1,523 @@
+{
+  "updated_at": "2026-11-02",
+  "baseline_commit": "632ac497be168db45662f0d7f79ef909f467306e",
+  "profile_ids": [
+    "other-accident-care"
+  ],
+  "queries": [
+    "오창 교통사고 한의원",
+    "오창 교통사고"
+  ],
+  "target_baseline": {
+    "id": "other-accident-care",
+    "canonical_slug": "accident",
+    "members": [
+      "accident",
+      "교통사고-병원",
+      "교통사고-한방-재활",
+      "교통사고-한의원",
+      "자동차보험-한의원"
+    ],
+    "name": "교통사고 후 증상·재활·진료 준비",
+    "kind": "service",
+    "overview": "교통사고 뒤에는 충격 상황과 증상의 시작·변화, 신경학적 이상이나 머리 손상 신호를 먼저 확인해야 합니다. 진료와 재활은 실제 손상과 기능에 따라 상의하며 보험 적용과 비용은 개별 접수·심사 내용을 확인해야 합니다.",
+    "sections": {
+      "symptoms": {
+        "question": "사고 뒤 어떤 불편을 기록하나요?",
+        "points": [
+          "사고 시점과 충격 방향, 안전장치·머리 충격·의식 소실 여부를 알려 주세요.",
+          "목·허리 통증뿐 아니라 두통·어지럼·메스꺼움·저림이 언제 시작됐는지 적어 주세요.",
+          "바로 없던 증상이 뒤늦게 생겼거나 악화한 경우에도 경과를 구체적으로 설명하세요."
+        ],
+        "diagram": [
+          "충격 상황",
+          "증상 시작",
+          "지연·악화 변화"
+        ]
+      },
+      "context": {
+        "question": "통증보다 먼저 확인할 신호는 무엇인가요?",
+        "points": [
+          "팔·다리 힘 빠짐·걷기 어려움·감각 변화 등 새 신경 증상이 있는지 알려 주세요.",
+          "머리를 다친 뒤 의식 변화·반복 구토·심해지는 두통이 있으면 일반 통증 진료를 기다리지 마세요.",
+          "사고 전 증상과 다른 새 변화는 가벼운 접촉이었다는 이유로 넘기지 말고 평가받으세요."
+        ],
+        "diagram": [
+          "신경 증상",
+          "머리 손상 신호",
+          "새 변화 우선"
+        ]
+      },
+      "assessment": {
+        "question": "병원·한의원 진료에 무엇을 가져가나요?",
+        "points": [
+          "이미 받은 진찰·영상검사 결과와 퇴원 안내, 복용약·기존 질환 정보를 준비하세요.",
+          "사고 전 통증이나 수술 이력을 알려 현재 손상과 구분할 수 있게 하세요.",
+          "검사 필요성과 재평가 시점, 다른 진료과와 협력이 필요한지 질문하세요."
+        ],
+        "diagram": [
+          "기존 사고 진료",
+          "과거 건강 정보",
+          "검사·협진 상담"
+        ]
+      },
+      "care": {
+        "question": "한방 재활과 활동은 어떻게 계획하나요?",
+        "points": [
+          "손상 평가와 금기를 확인한 뒤 통증·수면·걷기·일상 복귀의 목표를 정하세요.",
+          "침·추나·한약 등 선택지는 예상 이득·위험과 대안을 설명받고 획일적인 횟수로 정하지 마세요.",
+          "목을 오래 고정하거나 무리하게 교정하기보다 상태에 맞는 움직임과 업무 조정을 상의하세요."
+        ],
+        "diagram": [
+          "손상·금기 확인",
+          "개별 치료 목표",
+          "활동·업무 조정"
+        ]
+      },
+      "daily": {
+        "question": "자동차보험과 비용은 어떻게 확인하나요?",
+        "points": [
+          "진료 전 사고 접수 정보와 담당 보험사 연락 내용을 준비해 실제 접수 가능 여부를 확인하세요.",
+          "적용 항목·본인 부담·필요 서류는 현재 사건과 진료에 대한 안내를 각각 확인하세요.",
+          "무조건 무료·전액 보장·정해진 치료 횟수라고 가정하지 않고 안내 내용을 기록하세요."
+        ],
+        "diagram": [
+          "사고 접수 정보",
+          "개별 적용 확인",
+          "비용·서류 안내"
+        ]
+      },
+      "followup": {
+        "question": "회복과 일상 복귀는 무엇으로 판단하나요?",
+        "points": [
+          "통증 수치뿐 아니라 수면·걷기·일·운전에서 가능한 활동의 변화를 기록하세요.",
+          "활동을 늘린 뒤 증상 반응을 알려 단계와 치료 계획을 조정하세요.",
+          "새 약화·감각 변화나 회복이 정체되면 치료를 반복하기보다 손상과 진단을 재평가하세요."
+        ],
+        "diagram": [
+          "생활 기능",
+          "활동 후 반응",
+          "재평가 신호"
+        ]
+      }
+    },
+    "red_flags": [
+      "사고 후 새 팔다리 약화·걷기 어려움·의식 저하·경련·반복 구토가 있으면 즉시 응급 평가를 받으세요."
+    ],
+    "sources": [
+      {
+        "title": "NHS · Whiplash",
+        "url": "https://www.nhs.uk/conditions/whiplash/",
+        "scope": "사고 후 목 통증·신경 변화와 활동 조절"
+      },
+      {
+        "title": "NHS · Head injury and concussion",
+        "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+        "scope": "머리 손상 후 신속한 평가가 필요한 변화. 자동차보험 기준 자료가 아님"
+      }
+    ],
+    "keywords": [
+      "교통사고 후 통증",
+      "편타 손상",
+      "사고 후 재활",
+      "자동차보험 진료"
+    ],
+    "member_relationships": {
+      "accident": "canonical",
+      "교통사고-병원": "service-context",
+      "교통사고-한방-재활": "service-context",
+      "교통사고-한의원": "service-context",
+      "자동차보험-한의원": "service-context"
+    },
+    "grouping_note": "사고 후 진료와 재활의 질문을 연결합니다. 출처는 임상 안전 정보이며 국내 자동차보험의 보장 범위·금액·횟수 근거로 사용하지 않습니다.",
+    "member_contexts": {
+      "교통사고-병원": [
+        "교통사고 후 진료기관을 찾을 때는 충격 상황과 머리 손상·신경 증상 여부를 먼저 알리는 것이 중요합니다.",
+        "이미 받은 응급·외래 진료와 검사 결과를 가져와 필요한 추가 평가와 협진 방향을 확인하세요."
+      ],
+      "교통사고-한방-재활": [
+        "교통사고 한방 재활은 사고 손상과 금기를 확인한 뒤 통증뿐 아니라 수면·걷기·업무 복귀의 목표를 정해 상담합니다.",
+        "특정 치료나 횟수를 일괄 적용하기보다 이득·위험·대안을 확인하고 활동을 늘린 뒤의 반응을 공유하세요."
+      ],
+      "교통사고-한의원": [
+        "교통사고 한의원 방문 전에는 사고 이후 증상의 시작·악화와 기존 질환·복용약·다른 기관의 검사 내용을 정리하세요.",
+        "의식 변화나 새 팔다리 약화 등 위험 신호가 있다면 일반 통증 예약을 기다리지 말고 응급 평가를 받으세요."
+      ],
+      "자동차보험-한의원": [
+        "자동차보험 한의원 진료의 접수·적용·본인 부담은 실제 사건과 현재 안내를 확인해야 하며 이 문서가 보장을 확정하지 않습니다.",
+        "사고 접수 정보로 보험사와 진료기관에 필요한 서류·적용 항목·비용을 확인하고 무료나 횟수 보장을 임의로 가정하지 마세요."
+      ]
+    },
+    "status": "published",
+    "published_at": "2026-10-21",
+    "medical_review_status": "pending",
+    "editorial_source": "other.json",
+    "hub_path": "conditions/accident",
+    "category": "교통사고",
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "search_terms": "교통사고 후 증상·재활·진료 준비 교통사고 후 통증 편타 손상 사고 후 재활 자동차보험 진료 교통사고 후유증 accident 교통사고 병원 교통사고 병원 교통사고 한방 재활 교통사고 한방 재활 교통사고 한의원 교통사고 한의원 자동차보험 한의원 자동차보험 한의원",
+    "topics": [
+      {
+        "question": "사고 뒤 어떤 불편을 기록하나요?",
+        "points": [
+          "사고 시점과 충격 방향, 안전장치·머리 충격·의식 소실 여부를 알려 주세요.",
+          "목·허리 통증뿐 아니라 두통·어지럼·메스꺼움·저림이 언제 시작됐는지 적어 주세요.",
+          "바로 없던 증상이 뒤늦게 생겼거나 악화한 경우에도 경과를 구체적으로 설명하세요."
+        ],
+        "diagram": [
+          "충격 상황",
+          "증상 시작",
+          "지연·악화 변화"
+        ],
+        "id": "symptoms",
+        "label": "증상·대상 확인",
+        "position": 1,
+        "path": "guide/ochang-other-accident-care/symptoms",
+        "image": "images/clinical-guides/other-accident-care/symptoms.webp",
+        "image_small": "images/clinical-guides/other-accident-care/symptoms-480.webp",
+        "image_alt": "교통사고 후 증상·재활·진료 준비 증상·대상 확인: 충격 상황, 증상 시작, 지연·악화 변화 세 항목을 정리한 설명 도식",
+        "h1": "청주·오창 교통사고 후 증상·재활·진료 준비 · 사고 뒤 어떤 불편을 기록하나요?",
+        "title": "청주·오창 교통사고 후 증상·재활·진료 준비 · 사고 뒤 어떤 불편을 기록하나요? | 연결한의원 청주오창",
+        "description": "청주·오창 교통사고 후 증상·재활·진료 준비 상담을 준비하며 사고 뒤 어떤 불편을 기록하나요? 사고 시점과 충격 방향, 안전장치·머리 충격·의식 소실 여부를 알려 주세요."
+      },
+      {
+        "question": "통증보다 먼저 확인할 신호는 무엇인가요?",
+        "points": [
+          "팔·다리 힘 빠짐·걷기 어려움·감각 변화 등 새 신경 증상이 있는지 알려 주세요.",
+          "머리를 다친 뒤 의식 변화·반복 구토·심해지는 두통이 있으면 일반 통증 진료를 기다리지 마세요.",
+          "사고 전 증상과 다른 새 변화는 가벼운 접촉이었다는 이유로 넘기지 말고 평가받으세요."
+        ],
+        "diagram": [
+          "신경 증상",
+          "머리 손상 신호",
+          "새 변화 우선"
+        ],
+        "id": "context",
+        "label": "원인·배경 살피기",
+        "position": 2,
+        "path": "guide/ochang-other-accident-care/context",
+        "image": "images/clinical-guides/other-accident-care/context.webp",
+        "image_small": "images/clinical-guides/other-accident-care/context-480.webp",
+        "image_alt": "교통사고 후 증상·재활·진료 준비 원인·배경 살피기: 신경 증상, 머리 손상 신호, 새 변화 우선 세 항목을 정리한 설명 도식",
+        "h1": "청주·오창 교통사고 후 증상·재활·진료 준비 · 통증보다 먼저 확인할 신호는 무엇인가요?",
+        "title": "청주·오창 교통사고 후 증상·재활·진료 준비 · 통증보다 먼저 확인할 신호는 무엇인가요? | 연결한의원 청주오창",
+        "description": "청주·오창 교통사고 후 증상·재활·진료 준비 상담을 준비하며 통증보다 먼저 확인할 신호는 무엇인가요? 팔·다리 힘 빠짐·걷기 어려움·감각 변화 등 새 신경 증상이 있는지 알려 주세요."
+      },
+      {
+        "question": "병원·한의원 진료에 무엇을 가져가나요?",
+        "points": [
+          "이미 받은 진찰·영상검사 결과와 퇴원 안내, 복용약·기존 질환 정보를 준비하세요.",
+          "사고 전 통증이나 수술 이력을 알려 현재 손상과 구분할 수 있게 하세요.",
+          "검사 필요성과 재평가 시점, 다른 진료과와 협력이 필요한지 질문하세요."
+        ],
+        "diagram": [
+          "기존 사고 진료",
+          "과거 건강 정보",
+          "검사·협진 상담"
+        ],
+        "id": "assessment",
+        "label": "진찰·검사 준비",
+        "position": 3,
+        "path": "guide/ochang-other-accident-care/assessment",
+        "image": "images/clinical-guides/other-accident-care/assessment.webp",
+        "image_small": "images/clinical-guides/other-accident-care/assessment-480.webp",
+        "image_alt": "교통사고 후 증상·재활·진료 준비 진찰·검사 준비: 기존 사고 진료, 과거 건강 정보, 검사·협진 상담 세 항목을 정리한 설명 도식",
+        "h1": "청주·오창 교통사고 후 증상·재활·진료 준비 · 병원·한의원 진료에 무엇을 가져가나요?",
+        "title": "청주·오창 교통사고 후 증상·재활·진료 준비 · 병원·한의원 진료에 무엇을 가져가나요? | 연결한의원 청주오창",
+        "description": "청주·오창 교통사고 후 증상·재활·진료 준비 상담을 준비하며 병원·한의원 진료에 무엇을 가져가나요? 이미 받은 진찰·영상검사 결과와 퇴원 안내, 복용약·기존 질환 정보를 준비하세요."
+      },
+      {
+        "question": "한방 재활과 활동은 어떻게 계획하나요?",
+        "points": [
+          "손상 평가와 금기를 확인한 뒤 통증·수면·걷기·일상 복귀의 목표를 정하세요.",
+          "침·추나·한약 등 선택지는 예상 이득·위험과 대안을 설명받고 획일적인 횟수로 정하지 마세요.",
+          "목을 오래 고정하거나 무리하게 교정하기보다 상태에 맞는 움직임과 업무 조정을 상의하세요."
+        ],
+        "diagram": [
+          "손상·금기 확인",
+          "개별 치료 목표",
+          "활동·업무 조정"
+        ],
+        "id": "care",
+        "label": "치료·상담 선택",
+        "position": 4,
+        "path": "guide/ochang-other-accident-care/care",
+        "image": "images/clinical-guides/other-accident-care/care.webp",
+        "image_small": "images/clinical-guides/other-accident-care/care-480.webp",
+        "image_alt": "교통사고 후 증상·재활·진료 준비 치료·상담 선택: 손상·금기 확인, 개별 치료 목표, 활동·업무 조정 세 항목을 정리한 설명 도식",
+        "h1": "청주·오창 교통사고 후 증상·재활·진료 준비 · 한방 재활과 활동은 어떻게 계획하나요?",
+        "title": "청주·오창 교통사고 후 증상·재활·진료 준비 · 한방 재활과 활동은 어떻게 계획하나요? | 연결한의원 청주오창",
+        "description": "청주·오창 교통사고 후 증상·재활·진료 준비 상담을 준비하며 한방 재활과 활동은 어떻게 계획하나요? 손상 평가와 금기를 확인한 뒤 통증·수면·걷기·일상 복귀의 목표를 정하세요."
+      },
+      {
+        "question": "자동차보험과 비용은 어떻게 확인하나요?",
+        "points": [
+          "진료 전 사고 접수 정보와 담당 보험사 연락 내용을 준비해 실제 접수 가능 여부를 확인하세요.",
+          "적용 항목·본인 부담·필요 서류는 현재 사건과 진료에 대한 안내를 각각 확인하세요.",
+          "무조건 무료·전액 보장·정해진 치료 횟수라고 가정하지 않고 안내 내용을 기록하세요."
+        ],
+        "diagram": [
+          "사고 접수 정보",
+          "개별 적용 확인",
+          "비용·서류 안내"
+        ],
+        "id": "daily",
+        "label": "생활에서 관리하기",
+        "position": 5,
+        "path": "guide/ochang-other-accident-care/daily",
+        "image": "images/clinical-guides/other-accident-care/daily.webp",
+        "image_small": "images/clinical-guides/other-accident-care/daily-480.webp",
+        "image_alt": "교통사고 후 증상·재활·진료 준비 생활에서 관리하기: 사고 접수 정보, 개별 적용 확인, 비용·서류 안내 세 항목을 정리한 설명 도식",
+        "h1": "청주·오창 교통사고 후 증상·재활·진료 준비 · 자동차보험과 비용은 어떻게 확인하나요?",
+        "title": "청주·오창 교통사고 후 증상·재활·진료 준비 · 자동차보험과 비용은 어떻게 확인하나요? | 연결한의원 청주오창",
+        "description": "청주·오창 교통사고 후 증상·재활·진료 준비 상담을 준비하며 자동차보험과 비용은 어떻게 확인하나요? 진료 전 사고 접수 정보와 담당 보험사 연락 내용을 준비해 실제 접수 가능 여부를 확인하세요."
+      },
+      {
+        "question": "회복과 일상 복귀는 무엇으로 판단하나요?",
+        "points": [
+          "통증 수치뿐 아니라 수면·걷기·일·운전에서 가능한 활동의 변화를 기록하세요.",
+          "활동을 늘린 뒤 증상 반응을 알려 단계와 치료 계획을 조정하세요.",
+          "새 약화·감각 변화나 회복이 정체되면 치료를 반복하기보다 손상과 진단을 재평가하세요."
+        ],
+        "diagram": [
+          "생활 기능",
+          "활동 후 반응",
+          "재평가 신호"
+        ],
+        "id": "followup",
+        "label": "변화·재평가 확인",
+        "position": 6,
+        "path": "guide/ochang-other-accident-care/followup",
+        "image": "images/clinical-guides/other-accident-care/followup.webp",
+        "image_small": "images/clinical-guides/other-accident-care/followup-480.webp",
+        "image_alt": "교통사고 후 증상·재활·진료 준비 변화·재평가 확인: 생활 기능, 활동 후 반응, 재평가 신호 세 항목을 정리한 설명 도식",
+        "h1": "청주·오창 교통사고 후 증상·재활·진료 준비 · 회복과 일상 복귀는 무엇으로 판단하나요?",
+        "title": "청주·오창 교통사고 후 증상·재활·진료 준비 · 회복과 일상 복귀는 무엇으로 판단하나요? | 연결한의원 청주오창",
+        "description": "청주·오창 교통사고 후 증상·재활·진료 준비 상담을 준비하며 회복과 일상 복귀는 무엇으로 판단하나요? 통증 수치뿐 아니라 수면·걷기·일·운전에서 가능한 활동의 변화를 기록하세요."
+      }
+    ]
+  },
+  "preserved_profile_sha256": {
+    "msk-frozen-shoulder": "ebf964f71a754bed74f0a3f1af3dd5c30cf39eea0bffdde049e2ceacbd32d812",
+    "msk-cervical-disc": "c00b8c9480b1479947f01885a2746c8860b06610fb6ad1f5799c32a1d6a04e29",
+    "msk-lumbar-disc": "a76249aeee27ffc906cec324ceeeaa0353e46bde49ba05a929daa99ede47d26d",
+    "msk-chuna": "0a9a0e26510237445e6446c7a1a468f8e95a623ffeafbcc0571f326871aae4d1",
+    "msk-fibromyalgia": "9be3e7bfeda795061741ba533c32c973602d86c7f6ef08569427008154ae40e5",
+    "msk-carpal-tunnel": "3b23ff303d79fe32ba03620c5b54db563cbdf84fa2e1127e12b1f226d6f1ad2f",
+    "msk-plantar-fascia": "e99562a93f717082fad74d9afe3aeeaea2a048e4f0c5f690cd6d40adba780007",
+    "msk-knee-osteoarthritis": "4b2c180574f49e281056e321faadb45a467d25d5c11191d228307f1cb88f56f6",
+    "msk-low-back-pain": "7b34aa27087f198fcb5f3fedf9bd7a33a9e0841ccd2f31ca4a6e49d17c2df317",
+    "msk-lumbar-stenosis": "1c6eda575993b03ecd00287a857da9a063667adb240bdc91cb5bdf4d9f514db5",
+    "msk-shoulder-impingement": "9021e2e1f70fb9aaf24783eeb2ec452fd587c8d8f6f58843d2ddd75e108b9c86",
+    "msk-tennis-elbow": "0b10ae7f1bec4d850b79e40e244d41b887769b60a6c3dfff410e0ba256f38f4e",
+    "msk-forward-head": "631fd11f93e0ee80ce98644fc2fba66e01cc5d14ea56dc8556ace1a83fcefe42",
+    "msk-hip-pain": "575c738edfcdee640e695fa078335e59f23bf16ed5f8b87d8dbae0d1bb532fe4",
+    "msk-pelvic-pain": "9a6b172a72126213236d7b7fbdf31d62f626121bc6d52e782393d9132dcf71f8",
+    "msk-pelvic-alignment": "7378ca710cbf1ffeb78fd45d5f44ca09334eb51077b6f6b032c17539f434180f",
+    "msk-golfers-elbow": "edeb592ada648239eff987577bc8217f8b30dadaf96638f1c0fc78eedab17939",
+    "msk-kyphosis": "0b30ea775e2d7862062841f3140bc38268a39e6d1b6eaaff25f0215cf5a75de5",
+    "msk-myalgia": "1ce60ebbf859f1628d65d331c9bcdf84dd728247c278d76f808cc15fb559c725",
+    "msk-coccyx-pain": "668e33972c208b41f12708f1e69bbccbe17b3623fa09c7861826173b11f997fa",
+    "msk-leg-numbness": "d547b5548542d38351d3dddf5d54cee2afba726235106fe185a9e6ef83ccb1a9",
+    "msk-leg-pain": "ee4bedde7b8c945c4e49979e5725b1db108cd91f8ff4dba9be61fc64748e2dae",
+    "msk-manual-therapy": "693aa998ed30056c62222473ad57451375eb10aca43a5b806d3bc2b8a4c61ccd",
+    "msk-occipital-pain": "23ba8b5005a8dc01820f05b5abe0bbd268e0ed11adf930f5436bdf069a2ec0ee",
+    "msk-neck-muscle-pain": "2ef31616efccf2c5a0a970cc81ae56e11c3b3ac9c5500a61927197312142018a",
+    "msk-upper-back-pain": "1e7c09f0afaf1755bbcc188e136d4e98635a97736da3dcf7f1c41c890454dc04",
+    "msk-disc-terminology": "7ce346bd792115e7a1ae096a5b13d4ac1fd3cfef453ed84b57148a2307e45894",
+    "msk-rounded-shoulders": "54b291533665c143f1b55b0b8b7a340fabaf3af15e8c011a0580c22821c0f8d7",
+    "msk-neck-tingling": "5fd5716f2c49f96ca30776d6e050dfd449b629f7eade4d878aea7349099b674d",
+    "msk-knee-pain": "f05c78519bee1337f42b76da73aa219f8ceb9790f5f9877f3743bbd3ec1ab2ef",
+    "msk-ankle-sprain": "400df583b0e74f6a49bbfe60e156a0b664d1a14ab1c3d66ab66e9fdf6f90e527",
+    "msk-tarsal-tunnel": "47e36e3efa89dcdd0daa246e17fb522d4a67a7f9d27e1ce359b225ca255af5d8",
+    "msk-scalene-symptoms": "2d7b0f13d63d2b660e691508863500f4f606afc0cb0f950f8b7256c243a7fb38",
+    "msk-hand-numbness": "8ca3cab1959cfba65c789c8c77b0ac1d92537d17b80ccf8083e6b98c30743c4d",
+    "msk-finger-pain": "43a2716df07fbefe1484ddd703e39fd419b7e97dab53958c2bf178cd5b1fe47d",
+    "msk-de-quervain": "1380305407ed1ca8a3a9f92ff2ec8ee6e13dfc38a7db6fd7ca7af242b8f2c1a7",
+    "msk-wrist-pain": "e5bac76cbd2eb5e5ebb24549675497687cc85dced02844ad147f954aedea71e7",
+    "msk-cold-extremities": "53c7278e677279be241348b76f656ed94db2f4a6ded07a350a8c42ad6e0cf8ce",
+    "msk-neuralgia": "f1be3436fb71ca6ea69ffd41dbfef6706f427a14661962132ebe2035058e2588",
+    "msk-achilles-tendinopathy": "54f037db8b9bcd4934c09165136549748e39128e1601a90975c5118272bf15a3",
+    "msk-pharmacopuncture": "f6071d3306bef3f1a682158a3c25524ac8056e7b0ce53f4674a50b1cb33945ef",
+    "msk-shoulder-pain": "83047aa9abeaa8086a4072784c66922f3dc355c23a0522a92022bfd95072cb41",
+    "msk-buttock-pain": "fed30d29a67c94053e078a79dfa0a6526e0d2f7130580c80982198f5831479c9",
+    "msk-flank-pain": "e92af80187c9db7a6ca3e7ee3b47eea9ffad76004adf7af961ea025dcff12381",
+    "msk-lumbar-strain": "faa6c9a6392729f2ee2a485bc2ee79e0f49215e57d3988452ca80ab80097711a",
+    "msk-piriformis": "78efff60a4f5e7083f2e9833a2ac8542a3edf46b380eb0939352c474db30041b",
+    "msk-sciatica": "dec5c67b84a7c6e63593acac43cb1dc4af334dd81d8880d38ff6e992ae645714",
+    "msk-sacroiliac-pain": "6065031e4e9b2853de1a3fa8329ab7ef3b25f3593b079790d3251478711c6ee9",
+    "msk-body-alignment": "388e98b98a5e401709aa0f959f818323bb4ec9be2fb7c9a947abef2086bb44d7",
+    "msk-osteoarthritis": "953d1dbe38d8b6e56f3c78b78e9c901109f733f064ee2c4a35f0946b31e8d703",
+    "msk-elbow-pain": "f6d0e07d51fa52c17f81c43f78970c4461bcc59cdcba33d07e490f15f4b2cd5d",
+    "msk-arm-numbness": "217995f0548df1e627f126c78bff53a1ce3824d0a273ac6ae05a1dc53d62b8ea",
+    "msk-rotator-cuff-tear": "1f564d2479d2c0064b2fe8b6552c5f05fe2744f891654154908d8d7f075293cb",
+    "msk-thoracic-outlet": "17779b80e12cec27b0c6c6f2970e53387ccc3426d0b72a51759a1ea8fb7865e6",
+    "msk-heel-pain": "138a7f5d488d104a734592d3db2e93209db3286d06b68952c688ce1d21109dce",
+    "msk-rotator-cuff-syndrome": "e304ba8448485a3c7c2772682ef2b24d3ffd4ba45467c0ebab8195cdf60bfd08",
+    "msk-jaw-pain-tmd": "e3cd6b1b45dd67820f18e872080654e89548a47f65c79ed4dbf8d065b2b75836",
+    "women-period-pain": "78e3700777c82413a95f5a7b6f8b91087d8e9977ee6e69be57f8fa8edd922fbb",
+    "women-bladder-pain": "b0ea2a21203f2acf34305e80114faa594568d99ebe4ffc249e5885282039d114",
+    "women-menopause": "b373c14c248d1c1a89c1d0d3e2765779be152d41ca4524554c5bf4a6482c0b64",
+    "women-overactive-bladder": "df72ec7f421ee9d8fccf7466afb0595ef7c296ec7f7f7531fbe58b99286bb404",
+    "women-ovarian-reserve": "8db0e8019ef43afa9192fc18fa013f4128763bd77c03c662bb02da81f8d9e68f",
+    "women-ovarian-cyst": "66d824194916646cd24804b6eb9bac577b45dee087b5f02e39bc169f52914f41",
+    "women-male-fertility": "b84f627c45e54e9fd5483c0d054d1b9bf708adbee9b54774e847f1f4680b6281",
+    "women-pcos": "f5fdef4b0d4dff883f21029e337c370d79943964f74fc2efecbdb7eef64ae7f9",
+    "women-recurrent-cystitis": "3ad0477d335fe225ebb72f6b40f80a8cb6faa3bf34b0fe8b76e6e06636b4e318",
+    "women-vaginitis": "760875c1a7b00888190d83eb3ceb317b9416a0b8d9f5f73ef97024d57c73584b",
+    "women-amenorrhea": "a9f81d92376dadd239e934f940e6888de6193b145115e537750bf3a73b16d328",
+    "women-recurrent-loss": "36a801430b7de5cf4c327f6e9fa7bba38adc50bdf29eeedce787c06eb81b9ce9",
+    "women-ovulation-pain": "6ba456ee37077857f51d2458de18e21775137859880a022fa09cc095171783db",
+    "women-assisted-fertility": "0c5c5bbc8b8b593d940c4bd76e78d1ef91df55832561bbcf9d8e9c6047c562c2",
+    "women-gynecology-visit": "fab8e45b88c35b20f3bab040fe569c66d4ef87a3e723c5c6380a8a4674e43394",
+    "women-abnormal-bleeding": "140ce114d7b2c62ae31594ecc7735f23c42c5fb594880c9bd9eb83ec6e393e09",
+    "women-female-fertility": "c70b58fa159b238751d1e4e581cf7aabf7b7713bb4ea6af068c9de388404d70d",
+    "women-postpartum-weight": "743373bd2a90b83b225f4a15d62d01154907a398d0306f5f45647dd210e5b126",
+    "women-postpartum-herbs": "5dfd38ea511a5f44e28f492034152410142855b5fcff957d99113ac9e2347e38",
+    "women-postpartum-recovery": "d7e7b2b19454a113d79a9e28ade16b4ad69b7f3fe296945a7a40f266ecac1e2c",
+    "women-postpartum-swelling": "5e8336ab4b1e4a6ba06c14a0efeeec771e11ff9558bda3b0bb331eb8bb56adfb",
+    "women-lochia": "85eaa0844ed2f21743f41ae2ba07caea76da8a9e88ae9109e6bdcd897e6b3575",
+    "women-pms": "cd8b7071e6838fa6c3853933086b911a5beb2125492c45048b07582551afca5d",
+    "women-heavy-periods": "f66010f3fc59d7a36c3e30f0d5a86f4efeee0ddc9c7283f6ab4cd2ea09e58db4",
+    "women-irregular-cycles": "967f03be586fee87fcd5d98b9a9d6a7483bf7d39aeaa5f6993530c0df5b16655",
+    "women-after-miscarriage": "dc98fd319779b26e2a76ce9544025bdf925bb7cc7da91dbac9b5c5c9d60b64cb",
+    "women-preconception": "a9b1cbb97b5e5bc9ef952296b2c740286db0078757402c644755f04172e39268",
+    "women-pregnancy-nausea": "c6aa7f9c594845b7909885c2004c181de7e0fb088279d0370aa749aafd65f08a",
+    "women-early-pregnancy-concern": "22f3b6e7a3ec7df8a26ce21287ef36e11cb34547ea59477c265fea55822f88ad",
+    "women-fibroids": "57dce84f571e2439f121efc44324953d40b8acdca4e71bf06806cf4ddc34b655",
+    "women-endometriosis": "6d3dd239e6f11908f859171c3cf791f4db9f846ce767d15a08bf9970af350cdd",
+    "women-endometrial-hyperplasia": "7f96a5735f4538c13c1c1b8651f8bf549e48d39335dc58b0be1e3ef417b469de",
+    "women-adenomyosis": "ed462486042286e7092fb8c7690718b9bee6474d6f2d7d944f115dad2e272fa6",
+    "women-uterine-prolapse": "7c71684804323f8e5af3ef6b18d19f7b152966d93d9e438fb9e01260ae0bfbaa",
+    "women-early-menopause": "cff1774e54a7902df3fe4deb79f01d651496150526a75ee8e7ba56e6b79fad95",
+    "women-prenatal-herbs": "b8f6feb977c1de15d88fb176b86701a1086f5b3222ef2abaa39a3571b57b4940",
+    "mind-insomnia": "e233e4c83f04f83f7a7cde0e63ef43919c9979176da04292dece187d7365bc2a",
+    "mind-sleep-assessment": "920a8d484297ac6ead4844fc7696b075de4ebe22f9c7667865369b308b6894ec",
+    "mind-child-sleep": "9cb6a4f41d8e8f158fdef6e5478b15e6aa05831f83fbdd25b26cbb60f8e29df0",
+    "mind-adhd": "fb093da6f7bd767d1b6ec6b737dfc0b7440ff499f15099da81f9bbaab28c32e7",
+    "mind-concentration": "f266288b2b2f295acd622cfd01f455c809f6e9cd6c2c5d3df693422757cc3f3b",
+    "mind-learning": "7b5e14a1dab465104c17aef30c9daeb07e603849d156a51b8a5ef3e8143d97e1",
+    "mind-palpitations": "3dca158832e74a1cb7db4eacb3243a80b38c82f29f2d96fbd31698651a6edd87",
+    "mind-overstimulation": "6b9bb95b17befd721f0ceceb915699a14369825aec20dde3385adf7791089dd6",
+    "mind-family-stress": "76c9cb7373680096a3f2958285709cb84ec06bbd639271fd1b548cbfda90b83d",
+    "mind-work-stress": "8f2a7042f2c53fd822534ac9c0cfdf3cd6e74e1003192b5ed0975c79ce7d2cb8",
+    "mind-muscle-tension": "f545291dd317864951d5cf029a1f89d72b213a532f81228a903d86ee5c0d46b6",
+    "mind-mood-fluctuation": "b69deb1af3a5d36a1969967ccee2f768e6a81c239ee15b4462f66f635c8afba3",
+    "mind-mood-disorders": "18fa3f904968740c8ab982054a6696382e3cc2a171b59ead0dad88614b73a351",
+    "mind-ocd": "1799876f7fcd6713f44cfbc547ed7f33ae01771ef60ebf7ac85e351a161b4d59",
+    "mind-menopausal-mood": "acbe3ff30bc274bcff6e20e913ea5378c756419f1c21367beb7125bd370016e2",
+    "mind-forgetfulness": "78d130e2f85f138806791d5ba7c719e5ef60d23141b8808b9c463beafe855c70",
+    "mind-digital-use": "8aa5e0edc949a85a9311191de904e95ce7d7b4c3d468aaafe36f6beb854e9ac7",
+    "mind-panic": "5aed64db37916a5c6bff3aa01238a620766410eeef227327423969a0b135c6fe",
+    "mind-hyperventilation": "6c2d771c32794e8e061fb9133317ed399572aacffdcce89262b997d6a61c9c08",
+    "mind-sleepiness": "4a9f4ee779d6e0935df8650f733c2ccf54b44422b4cece22463ba11d7031a782",
+    "mind-social-anxiety": "0797e8cc0c16a252302143e24477f62d812816b08d5c889f4f848b1a47257543",
+    "mind-cfs": "a8164b32934385fb244a13e0739463d1a8cf12786452b87f296151c30bfdff67",
+    "mind-gad": "a09f3a0c970567b2b3f7bf88f40913941aed1e65946b11a79d15da7e1b6b6437",
+    "mind-anxiety": "5188adc177ce8962d7d90046714485e9dbb7b0c0edcf7a73123e796e31404f4f",
+    "mind-anger": "2534418faba522cad6ca15e048edde8a98c2969971cde9236793da16478b1d09",
+    "mind-hwa-byung": "7768e3a93df32763f9f53e9cacca84ba936235c7d784a9372c4476a99e30b01f",
+    "mind-tremor": "c1703e9e04a63f250d5009bf4d37c3b9f894922c92aef9e0b2c6b34bdb076293",
+    "mind-sweating": "76c2e98659b57804e1a4a8a7ade9bd5640a9e7a31f657789f4eb298b04bd5d50",
+    "mind-headache": "83e4a730a509520c34207d3bf7adc665fedbd250da46b17a08782c3f534afd51",
+    "mind-somatic-symptoms": "13f07d602b6db43212a2ca117d820f1c1148ddcb8e78ff625d5274df8a6d2ee7",
+    "mind-dizziness": "eb95c18923e096004edf9f09ee822869f6bf762b17edc05ab51a82187a7f7b53",
+    "mind-flushing": "141b93e80fdafa300a8896025e795a43871a34a5915bde844fc7af39ce02e765",
+    "mind-study-anxiety": "6423f2b33f9225f173d541f7d5baef871d1adbc2c41b39b319d9ea44707948c5",
+    "mind-trauma": "4a12ef5e99050bf4a5f3dc343b79f42ce60125304227ef230f52210381f6b50b",
+    "mind-depression": "9b7df82bfa84d82ed0fb9ff6f9dc51d2cca62bad2a1c85958db68d5f45c9c709",
+    "mind-miscarriage-emotions": "5e9e78ef94e84a74f2be53a5ec2eae76112e2a31125b7fc160fc0e2470b8d259",
+    "mind-breakup-grief": "f50942dde19d31da93ed7423e86a6a27fd06c764edb150eec28fa9b4f858d1bf",
+    "mind-autonomic": "564c56239a9cc6fd9a9976f8df29f5527c6653328347cb5db9b7176fbabcfc8c",
+    "mind-adolescent-anxiety": "267598e096466fbe82d554f4281786a0bf459e478f64f8d141e16049cd31e9e7",
+    "mind-tics": "5093c035813c026707183882c6976e46e789388c497478fe099f2326e1dae748",
+    "mind-claustrophobia": "ffd7cb1c31c35c9e2196742e3f4ba8a8ce58ae18d67c845ec7ab4a531b4a6b3c",
+    "mind-restless-legs": "8d06370d23b8770490d3276aab7f2a459c5eea90729a7a7c6accf401e810dfcc",
+    "general-dyspepsia": "e1d996fdfc36b4bd2fdb1af0e84daedb2d99a64f166d9d3c3b9cf3810c5335d1",
+    "general-traditional-dyspepsia": "921cc9bd388344f1cb0d557bdcc5b14ca9e5043fe8c25abd20063a8dc0cc69c4",
+    "general-acute-indigestion": "b6e18e54fcc85a672bb70575b5c0ef94fc28e00513041f41b533ff290194d67f",
+    "general-ibs": "be2c419afeab42a73cc2c3883b3b3f7857d737656c2b8b6d9b1977fcc460147c",
+    "general-gastritis": "905ac3046aed320201d7a14e94866041e517de420241c440b833a0800eb2ae14",
+    "general-abdominal-symptoms": "214209ced926f6cec3aa6cacfc4f2cae187a9f23ff953581faea0f85706ab48c",
+    "general-diarrhea": "47cc8955a4aa55b3971d14a6b571cbef030d708830439200dd1041d0ecf6c07c",
+    "general-chronic-enteritis": "5771bd945e0a8869b3b17bb45774fc6be2c8f44ef9e7fccc7d05cf0f21441f2f",
+    "general-appetite-loss": "3acf51b0144dca3107a9744c2f7974597496773ef661102e96a021ad331fb296",
+    "general-gerd": "c96c818c28e030c66a25c5a9d5967678246a9631aff76a0d07af10685f93384d",
+    "general-laryngopharyngeal-reflux": "0fc45e5c17de4045d3b7aee0e1175d813f694ce83b53dcb21b310e5fec0406e6",
+    "general-allergic-rhinitis": "5d95292bcecac0930c76f5db6dea2633b5afa980ab08c9aa3cde9a5c79b5631a",
+    "general-chronic-rhinitis": "3344d331328cfa74661ee4a57b3ad19d0ee093645dde1e6ed213556a7817f61f",
+    "general-recurrent-cold-symptoms": "bee5602f4ddc8340f5ee2d5506fbf92d7c7e9e2d9caf6ac8be56677067d6fa7b",
+    "general-persistent-cough": "70cc702eef0e1d7c98dd67200d7af2c0272316692f8f7aa7343d06642c7689e1",
+    "general-ent-symptom-consultation": "ad7f117ea8d3ac00877c15873ab9d1ed39b5f4597f7787f190f2a9ef24637706",
+    "general-long-covid": "301aa774053b1da3fb827c7760e9a16bf98e9a68c3ffcce82baa982e8ae1d2dd",
+    "general-psoriasis": "cc1b2e7a5d089fe6d96c37b308c4ecf418f8822231e75146f1ef6cb0c972fb95",
+    "general-urticaria": "12135fe40ae17f6c7dd1fe211d650faf15e75899c10a2aba871613336322297e",
+    "general-eczema": "e0b74d2145eedfca72a4ecf0185d8d1fbf33d311ca63248253444c8b75646899",
+    "general-atopic-dermatitis": "9e24f07a105d547e120de31bc65ae8f615f0592822fa948ada88b2f5942b61cf",
+    "general-seborrheic-dermatitis": "b167747790a2798db2a7ebc78802970b0b8ccc2ba15574fdd41232c70b5ca3a2",
+    "general-pompholyx": "929a5cc3a5f1b9901ad133e479b3d7550494a48e2e61417c7c6437cc9677501e",
+    "general-discoid-eczema": "7f12603454b1611cec0c615a84edfb6f1ca4935c471ab00e6865b155dae3879d",
+    "general-skin-symptom-guide": "b59a4f115e4d75e7a17512e31244feaff01574c64f118ea73fc016143cf7c414",
+    "general-male-pattern-hair-loss": "8eb1bc7b8790565f81c0083c63f724a78d06c8d9b17b42f27283dd69a3d9932f",
+    "other-facial-palsy": "c5e46fb37d4da95776dd9d0c0c96957a336b711da041e72b516865663b2d118a",
+    "other-migraine": "a3bccc8660a1cde548e86247e66007fa2fe14b0e11649a55ccebf0052be86308",
+    "other-headache": "3876ffcd70fe65d0e711a3a2e30a471b32f8467495d63c6d6cb6971559d3f5a7",
+    "other-tinnitus": "5339498891ebb43e96e25f866b371873285f0ecc40a32c02b860d11ee9af3ace",
+    "other-dizziness": "10e474dbf5471f951e9d590b10282501873c0920c2e0fef9f0e46cf3bcf0f1d2",
+    "other-meniere": "e0664b78c726241bedf4c9910c34cb4b03935ea16bc632768e7cf1cdaf829f69",
+    "other-vestibular-migraine": "aeae972c4f8f5e709690742bd1c60bbcace8d2fd5709445caf2f129d6ff0076d",
+    "other-burning-mouth": "1ed9ddc852fedef2cfb5a08fdccbc383b3f261c0045d4076869460a7a5b478d3",
+    "other-eyelid-twitch": "d2afc1dd9f5d094df79b81e6e87033fd893e93ccce8c3f084fb38fa7befbcabc",
+    "other-hemifacial-spasm": "8970665e5732e261d873ee94b62c2c0da75bdf092d9aa380a7c357d7a6c83d44",
+    "other-dry-eye": "2515dfa634cde53e699d7176c01241ebbdb93178e0934f5649c5fb723107a46d",
+    "other-stroke-recovery": "1bcacdb9500b741afdc6c90573de5bd60c684dda34007bdfc3b51c97c3844497",
+    "other-occipital-pain": "fe9514a353c1346be6c1f4fc68b4f47e0b11778d72f03025ba057634abf1b314",
+    "other-jaw-disorder": "a42127316ca74196580f4643ffa105b7047bfbe32981c1e5946187d3b78aa9ce",
+    "other-gongjindan": "03b9028c9ff501b271e1e50b31b8f38c1db46b26910162ae70ab34d7c1caa1c3",
+    "other-ingredients": "a2d87ef2407db78d16df5b0fb07a7f8b443bf5424081724ebc873dfdf237a2c0",
+    "other-fatigue": "9570dbb91caf91190c67746576b803b90030ba310d4c921d038663f14cde83aa",
+    "other-underweight": "8243ae9317eadc35565b3b2eaa5ed6c5997f0f5edd9ba65c92e3b7a1ac378a04",
+    "other-tonic": "b74096acac0b46755a4240b8b5c9a083545f8641718178960c99bedcef3ead45",
+    "other-study-support": "4593645197042059a5174392732ef2dc1a318f795f03c0f9583d30d6dd889b36",
+    "other-growth": "db49c645cc5c93f9d7c410144bf6b5ca5699ab55f9cb0706d7503c0676d0776b",
+    "other-early-puberty": "5d0f7b6f5f726d187e3601e7c035a376e9d82b06b43e3e065e25c326277abd8d",
+    "other-weight-management": "d932dfd9b38cb267bc5b11add3a7b6afcdf90b60b51502458a24bbd7783f9a82",
+    "other-herbal-weight": "17314411e8da7ff87ea4f9c7130dd26d0692e8e0d928c51310241cb1c51b3d8e",
+    "other-incretin-medicines": "197d8a3655d8bd31a063a567a7c21c0cdfe20cbed0a520f9198d7bbacb9efcd1",
+    "urology-benign-prostate": "88219df62938c2be313f328be6ddfc1a6bb3200ca7b4449e57396e45c30ec9bd",
+    "urology-urinary-incontinence": "f84593e972f012e66c26b154c4ab49d7def6a3f6623117792471fb8af630f11a"
+  },
+  "preserved_priority80_sha256": "06d0dda598d9d28458ebc652fca77764aa7379b15e06472ee44902944a313100",
+  "preserved_additional_assessments": {
+    "women-after-miscarriage": "d405786a331e22924a02448bc654014d5ea6fd1dcd55b9891605b4655432afb2",
+    "urology-benign-prostate": "5db4cb799c2629d6ed7fecb169e370bd4a5def786857ad1b0e8425f3fecd281a",
+    "urology-urinary-incontinence": "d72b913968e328c4b3c37aedc6cb548c24028cf1b8dca6fb7cb913ac9dfb4a01",
+    "women-preconception": "839e3f445533911db1f33eb970bb61ccd883247b02a69fd2c0929dc5160aae44",
+    "women-pregnancy-nausea": "126c94fc0e7ebf55ef6ef173007dbf7ac8f0d24773d53f87d404bb6a4bc16701",
+    "women-fibroids": "5970acc5448b3b28a377d3bfee477aea83d11693111abb0a505b5f121d17dc52",
+    "women-endometriosis": "7b940466a79d892abfe0293c4f3e4d966e6467e2fca66af1771b11b151060492",
+    "women-endometrial-hyperplasia": "8a8fa0b2d0da7ae16fb8571b6f7376554ace3496af177f3a623918abb2afd390",
+    "women-adenomyosis": "5a8a1f935836fa0be1895b04893d2193f5fc8a8a2316d234ff8583161e90dd3d",
+    "women-uterine-prolapse": "5e2f0f1ff3757a5d5f25b1b8c61aa2b320ea0d8bb2809bbff727b862fa61bb7b",
+    "women-early-menopause": "2ae0d6081077fecaa38392c9298088172cc22d48d337416b6e66894d7476bede",
+    "women-prenatal-herbs": "2621f178d5065e8807d9f48a279102079cc2437cb0ef1a84c6385f7daff8c97e",
+    "mind-insomnia": "5713c179e15aaa106760b627c82e19ff5ea29489fa53a046a4a53efe3ac14cb6",
+    "mind-sleep-assessment": "30e27d391d21b224bb66b9c4b914f6c7566d7e65358e9851961ab57b9ed7f1ad",
+    "mind-child-sleep": "f4180a7add73b7b9b6612b92de893ff5fc9a633b08f2dd294dd7b2753afae350",
+    "mind-adhd": "d0ff3ebf713b3329fa3dc79b3357e0ea42382db8601000ed0fbe95b6f0360bf6",
+    "mind-concentration": "aeb6193b54356d197f3b4c46584ebc89b995ac077c4854415b1677704fb9ecc4",
+    "mind-learning": "b4e0651acf2d4756deda7e774e94af918f922739fe81ba40ad585dee4ff5d25a",
+    "mind-palpitations": "ac84acbbfd0623a3fd31435999ea283a54480dd790bb63291edba1f835c936a4",
+    "mind-overstimulation": "b1924c565deec80904e9d9618b93dbd08b0c92620047dd33156a63380eedd8f3"
+  },
+  "mapping_sha256": "b85c05c2e40b0c9b0d0d1cb3af89384991739f275560be00a6a6e8c06d80f49c",
+  "search_exposure": {
+    "crawled": "unverified",
+    "indexed": "unverified",
+    "rank_one": "unverified",
+    "carousel": "unverified"
+  }
+}
