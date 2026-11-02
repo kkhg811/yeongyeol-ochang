@@ -19,11 +19,15 @@
       <div class="clinical-heading-links"><a href="/{{ profile.hub_path }}">{{ profile.name }} 전체 가이드 ↗</a><a href="#reading">본문 읽기 ↓</a></div>
     </header>
     {% if profile.id == 'other-accident-care' %}<nav class="clinical-heading-links" aria-label="교통사고 진료 준비"><a href="/services/accident">오창 교통사고 한의원 진료 안내 ↗</a><a href="/{{ profile.hub_path }}">사고 후 증상과 진찰 가이드</a><a href="#symptom-check">증상 관찰 체크</a><a href="/location">위치·진료시간</a><a href="{{ site.naver_booking }}">네이버 예약 ↗</a></nav>{% endif %}
+    {% if profile.id == "other-accident-care" %}{% include "partials/traffic_accident_contact.html" %}{% endif %}
     {% include "partials/clinical_cards.html" %}
   </div>
   <div class="container clinical-reading" id="reading">
     <article class="clinical-article">
-      {% if is_column %}
+      {% if traffic_landing %}
+      {% include "partials/traffic_accident_care.html" %}
+      {% for section in profile.reading_sections %}<section class="clinical-section"><h2>{{ section.heading }}</h2><p>{{ section.text }}</p></section>{% endfor %}
+      {% elif is_column %}
       <section class="clinical-section" aria-labelledby="article-question"><p class="eyebrow">생활 속 질문</p><h2 id="article-question">{{ entry.title.split(' | ')[-1] }}</h2>
         <p>{{ profile.overview }}</p><p class="clinical-editorial">인용부호 문장은 상황을 설명하기 위한 질문 예시입니다. 실제 환자의 치료 후기로 제시하지 않습니다.</p>
         {% for block in article_blocks %}{% if block.tag == 'h2' %}<h2>{{ block.text }}</h2>{% elif block.tag == 'h3' %}<h3>{{ block.text }}</h3>{% elif block.tag == 'li' %}<ul><li>{{ block.text }}</li></ul>{% else %}<p>{{ block.text }}</p>{% endif %}{% endfor %}
@@ -63,6 +67,7 @@
     <aside class="clinical-side" aria-label="관련 주제와 방문 준비"><div><p class="eyebrow">이 시리즈에서</p><nav><a href="/{{ profile.hub_path }}">{{ profile.name }} 전체 가이드</a>{% for part in profile.topics %}<a href="/{{ part.path }}"{% if topic and topic.id == part.id %} aria-current="page"{% endif %}>0{{ part.position }} {{ part.label }}</a>{% endfor %}<a href="#sources">출처와 참고 범위</a></nav>{% if related_articles %}<h2>같이 읽는 생활 질문</h2><ul>{% for article in related_articles %}<li><a href="/{{ article.path }}">{{ article.title }}</a></li>{% endfor %}</ul>{% endif %}</div></aside>
   </div>
   <section class="clinical-local"><div class="container"><p class="eyebrow">CHEONGJU · OCHANG</p><h2>청주 오창에서 상담을 준비하신다면</h2><p>{{ site.name }} · {{ site.address }}</p><p>진료 일정과 예약 가능 여부는 방문 전 확인해 주세요.</p><div class="clinical-heading-links"><a href="/location">오시는 길·진료시간 ↗</a><a href="/about">의료진 소개 ↗</a><a href="tel:{{ site.phone_tel }}">{{ site.phone }} 전화 상담</a></div></div></section>
+  {% if profile.id == "other-accident-care" and not traffic_landing %}<p class="container traffic-return"><a href="/services/accident">오창 교통사고 한의원 · 자동차보험·의료진·방문 안내 →</a></p>{% endif %}
   <div class="container clinical-ending">
     {% if topic %}<nav class="clinical-pager" aria-label="이전·다음 상세 페이지"><a href="/{{ previous_topic.path if previous_topic else profile.hub_path }}"{% if previous_topic %} rel="prev"{% endif %}><span>← {{ '이전 주제' if previous_topic else '전체 가이드' }}</span><b>{{ previous_topic.question if previous_topic else profile.name }}</b></a><a href="/{{ next_topic.path if next_topic else profile.hub_path }}"{% if next_topic %} rel="next"{% endif %}><span>{{ '다음 주제' if next_topic else '전체 가이드' }} →</span><b>{{ next_topic.question if next_topic else profile.name }}</b></a></nav>{% endif %}
     <nav class="clinical-bottom-nav" aria-label="시리즈 전체 탐색"><a href="/{{ profile.hub_path }}">전체 가이드</a>{% for part in profile.topics %}<a href="/{{ part.path }}"{% if topic and topic.id == part.id %} aria-current="page"{% endif %}>{{ part.label }}</a>{% endfor %}</nav>
