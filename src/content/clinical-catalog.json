@@ -90119,7 +90119,8 @@
             "provenance": "traffic-accident-image-provenance-20261102.json",
             "updated_at": "2026-11-02"
           },
-          "image_updated_at": "2026-11-02"
+          "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 증상·생활 영향 확인"
         },
         "context": {
           "question": "편타손상과 다른 손상은 어떻게 구분하나요?",
@@ -90174,7 +90175,8 @@
             "provenance": "traffic-accident-image-provenance-20261102.json",
             "updated_at": "2026-11-02"
           },
-          "image_updated_at": "2026-11-02"
+          "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 편타손상·다른 원인 구분"
         },
         "assessment": {
           "question": "진찰과 검사에서 무엇을 확인하나요?",
@@ -90229,7 +90231,8 @@
             "provenance": "traffic-accident-image-provenance-20261102.json",
             "updated_at": "2026-11-02"
           },
-          "image_updated_at": "2026-11-02"
+          "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 진찰·검사 자료 준비"
         },
         "care": {
           "question": "치료 계획의 목표와 한계는 무엇인가요?",
@@ -90284,7 +90287,8 @@
             "provenance": "traffic-accident-image-provenance-20261102.json",
             "updated_at": "2026-11-02"
           },
-          "image_updated_at": "2026-11-02"
+          "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 개별 치료 계획"
         },
         "daily": {
           "question": "지급보증과 환자 부담은 어떻게 구분하나요?",
@@ -90339,7 +90343,8 @@
             "provenance": "traffic-accident-image-provenance-20261102.json",
             "updated_at": "2026-11-02"
           },
-          "image_updated_at": "2026-11-02"
+          "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 보험 적용·비용 확인"
         },
         "followup": {
           "question": "경과 평가에서 무엇을 비교하나요?",
@@ -90394,7 +90399,8 @@
             "provenance": "traffic-accident-image-provenance-20261102.json",
             "updated_at": "2026-11-02"
           },
-          "image_updated_at": "2026-11-02"
+          "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 기능·생활 복귀 평가"
         }
       },
       "red_flags": [
@@ -90613,6 +90619,7 @@
           }
         ]
       },
+      "comparison_caption": "교통사고 후 증상 양상의 구분",
       "priority": {
         "id": "other-accident-care",
         "order": 0,
@@ -90737,13 +90744,14 @@
             "updated_at": "2026-11-02"
           },
           "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 증상·생활 영향 확인",
           "id": "symptoms",
           "position": 1,
           "path": "guide/ochang-other-accident-care/symptoms",
           "image": "images/clinical-guides/other-accident-care/symptoms-cover-20261102.webp",
           "image_small": "images/clinical-guides/other-accident-care/symptoms-cover-20261102-480.webp",
           "image_alt": "어깨에 손을 얹고 앉아 있는 성인과 ‘교통사고 후 증상 기록’ 표제의 설명용 생성 이미지",
-          "h1": "오창 교통사고",
+          "h1": "오창 교통사고 · 증상·생활 영향 확인",
           "title": "오창 교통사고 | 증상·생활 영향 확인",
           "description": "오창 교통사고 후 기존 증상과 새 증상, 두통·어지럼과 수면·업무 영향을 나누어 문진을 준비하세요."
         },
@@ -90801,13 +90809,14 @@
             "updated_at": "2026-11-02"
           },
           "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 편타손상·다른 원인 구분",
           "id": "context",
           "position": 2,
           "path": "guide/ochang-other-accident-care/context",
           "image": "images/clinical-guides/other-accident-care/context-cover-20261102.webp",
           "image_small": "images/clinical-guides/other-accident-care/context-cover-20261102-480.webp",
           "image_alt": "자동차 머리받침과 안전벨트에 ‘편타손상과 목·허리 불편’ 표제를 붙인 설명용 생성 이미지",
-          "h1": "오창 교통사고",
+          "h1": "오창 교통사고 · 편타손상·다른 원인 구분",
           "title": "오창 교통사고 | 편타손상·다른 원인 구분",
           "description": "오창 교통사고 후 편타손상 기전과 동반 증상, 증상만으로 손상 조직을 확정할 수 없는 이유를 설명합니다."
         },
@@ -90865,13 +90874,14 @@
             "updated_at": "2026-11-02"
           },
           "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 진찰·검사 자료 준비",
           "id": "assessment",
           "position": 3,
           "path": "guide/ochang-other-accident-care/assessment",
           "image": "images/clinical-guides/other-accident-care/assessment-cover-20261102.webp",
           "image_small": "images/clinical-guides/other-accident-care/assessment-cover-20261102-480.webp",
           "image_alt": "빈 서류철과 메모를 정리하는 손, ‘첫 진료 검사 준비’ 표제의 설명용 생성 이미지",
-          "h1": "오창 교통사고",
+          "h1": "오창 교통사고 · 진찰·검사 자료 준비",
           "title": "오창 교통사고 | 진찰·검사 자료 준비",
           "description": "오창 교통사고 진찰에서 병력·움직임·신경 소견을 살피고, 의심하는 손상에 따라 검사를 정하는 과정을 안내합니다."
         },
@@ -90929,13 +90939,14 @@
             "updated_at": "2026-11-02"
           },
           "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 개별 치료 계획",
           "id": "care",
           "position": 4,
           "path": "guide/ochang-other-accident-care/care",
           "image": "images/clinical-guides/other-accident-care/care-cover-20261102.webp",
           "image_small": "images/clinical-guides/other-accident-care/care-cover-20261102-480.webp",
           "image_alt": "일반적인 상담 공간의 두 성인과 ‘내게 맞는 치료 선택’ 표제의 설명용 생성 이미지",
-          "h1": "오창 교통사고",
+          "h1": "오창 교통사고 · 개별 치료 계획",
           "title": "오창 교통사고 | 개별 치료 계획",
           "description": "오창 교통사고 치료에서 기대 효과·근거의 한계와 위험을 나누어 묻고, 기능 목표와 반응을 함께 검토하세요."
         },
@@ -90993,13 +91004,14 @@
             "updated_at": "2026-11-02"
           },
           "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 보험 적용·비용 확인",
           "id": "daily",
           "position": 5,
           "path": "guide/ochang-other-accident-care/daily",
           "image": "images/clinical-guides/other-accident-care/daily-cover-20261102.webp",
           "image_small": "images/clinical-guides/other-accident-care/daily-cover-20261102-480.webp",
           "image_alt": "자동차 열쇠·빈 서류와 ‘자동차보험 접수와 비용’ 표제의 설명용 생성 이미지",
-          "h1": "오창 교통사고",
+          "h1": "오창 교통사고 · 보험 적용·비용 확인",
           "title": "오창 교통사고 | 보험 적용·비용 확인",
           "description": "오창 교통사고 자동차보험의 지급 의사·한도, 환자 부담 예외와 청구·심사 절차를 구분해 확인하세요."
         },
@@ -91057,13 +91069,14 @@
             "updated_at": "2026-11-02"
           },
           "image_updated_at": "2026-11-02",
+          "page_h1": "오창 교통사고 · 기능·생활 복귀 평가",
           "id": "followup",
           "position": 6,
           "path": "guide/ochang-other-accident-care/followup",
           "image": "images/clinical-guides/other-accident-care/followup-cover-20261102.webp",
           "image_small": "images/clinical-guides/other-accident-care/followup-cover-20261102-480.webp",
           "image_alt": "공원에서 가볍게 걷는 성인과 ‘생활 복귀 변화 살피기’ 표제의 설명용 생성 이미지",
-          "h1": "오창 교통사고",
+          "h1": "오창 교통사고 · 기능·생활 복귀 평가",
           "title": "오창 교통사고 | 기능·생활 복귀 평가",
           "description": "오창 교통사고 경과를 목 움직임·활동 후 반응으로 비교하고, 업무·운전의 안전한 복귀 조건을 논의하세요."
         }
