@@ -26,6 +26,7 @@ def main():
     if extension_file.exists():later.update(json.loads(extension_file.read_text())['profile_ids'])
     latest_file=ROOT/'src/content/series-revisions-women-sleep-20261027.json'
     if latest_file.exists():later.update(json.loads(latest_file.read_text())['profile_ids'])
+    later.update(json.loads((ROOT/'src/content/series-revisions-traffic-accident-20261102.json').read_text())['profile_ids'])
     for p in raw['profiles']:
         if p['id'] not in set(IDS)|later:assert p==before[p['id']],p['id']+' unexpectedly changed'
     ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9','i':'http://www.google.com/schemas/sitemap-image/1.1'}

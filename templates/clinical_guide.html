@@ -18,6 +18,7 @@
       <p class="clinical-deck">{{ topic.points[0] if topic else (article_lead if is_column else profile.overview) }}</p>
       <div class="clinical-heading-links"><a href="/{{ profile.hub_path }}">{{ profile.name }} 전체 가이드 ↗</a><a href="#reading">본문 읽기 ↓</a></div>
     </header>
+    {% if profile.id == 'other-accident-care' %}<nav class="clinical-heading-links" aria-label="교통사고 진료 준비"><a href="/services/accident">오창 교통사고 한의원 진료 안내 ↗</a><a href="/{{ profile.hub_path }}">사고 후 증상과 진찰 가이드</a><a href="#symptom-check">증상 관찰 체크</a><a href="/location">위치·진료시간</a><a href="{{ site.naver_booking }}">네이버 예약 ↗</a></nav>{% endif %}
     {% include "partials/clinical_cards.html" %}
   </div>
   <div class="container clinical-reading" id="reading">
@@ -27,19 +28,19 @@
         <p>{{ profile.overview }}</p><p class="clinical-editorial">인용부호 문장은 상황을 설명하기 위한 질문 예시입니다. 실제 환자의 치료 후기로 제시하지 않습니다.</p>
         {% for block in article_blocks %}{% if block.tag == 'h2' %}<h2>{{ block.text }}</h2>{% elif block.tag == 'h3' %}<h3>{{ block.text }}</h3>{% elif block.tag == 'li' %}<ul><li>{{ block.text }}</li></ul>{% else %}<p>{{ block.text }}</p>{% endif %}{% endfor %}
       </section>
-      {% for part in [article_focus, article_companion] %}<section class="clinical-section"><p class="eyebrow">{{ part.label }}</p><h2>{{ part.question }}</h2><div class="clinical-points">{% for point in part.points %}<div><span>0{{ loop.index }}</span><p>{{ point }}</p></div>{% endfor %}</div><a class="clinical-more" href="/{{ part.path }}">확인사항과 설명 도식 읽기 →</a></section>{% endfor %}
+      {% for part in [article_focus, article_companion] %}<section class="clinical-section"><p class="eyebrow">{{ part.label }}</p><h2>{{ part.question }}</h2><div class="clinical-points">{% for point in part.points %}<div><span>0{{ loop.index }}</span><p>{{ point }}</p></div>{% endfor %}</div><a class="clinical-more" href="/{{ part.path }}">{{ "확인사항과 상세 설명 읽기 →" if profile.image_notice else "확인사항과 설명 도식 읽기 →" }}</a></section>{% endfor %}
       {% elif topic %}
       <section class="clinical-section" aria-labelledby="topic-question"><p class="eyebrow">0{{ topic.position }} · {{ topic.label }}</p><h2 id="topic-question">{{ topic.question }}</h2>
         <p class="clinical-topic-context">{{ profile.overview }}</p>
         <div class="clinical-points">{% for point in topic.points %}<div><span>0{{ loop.index }}</span><p>{{ point }}</p></div>{% endfor %}</div>
       </section>
       {% for section in topic.reading_sections|default([]) %}<section class="clinical-section"><h2>{{ section.heading }}</h2><p>{{ section.text }}</p></section>{% endfor %}
-      <figure class="clinical-feature"><img src="/{{ topic.image }}" srcset="/{{ topic.image_small }} 480w, /{{ topic.image }} 1080w" sizes="(min-width: 800px) 480px, 90vw" width="1080" height="1080" loading="lazy" decoding="async" alt="{{ topic.image_alt }}"><figcaption>상담 내용을 정리한 설명 도식 · 실제 환자나 해부학적 검사 영상이 아닙니다.</figcaption></figure>
+      <figure class="clinical-feature"><img src="/{{ topic.image }}" srcset="/{{ topic.image_small }} 480w, /{{ topic.image }} 1080w" sizes="(min-width: 800px) 480px, 90vw" width="1080" height="1080" loading="lazy" decoding="async" alt="{{ topic.image_alt }}"><figcaption>{{ profile.image_notice|default("상담 내용을 정리한 설명 도식 · 실제 환자나 해부학적 검사 영상이 아닙니다.") }}</figcaption></figure>
       <section class="clinical-check" aria-labelledby="check-title"><p class="eyebrow">상담 메모</p><h2 id="check-title">{{ topic.label }}에서 기록할 세 항목</h2><ul>{% for label in topic.diagram %}<li><b>{{ label }}</b><span>해당되는 경험과 시점, 이전과 달라진 점을 한 줄로 남겨보세요.</span></li>{% endfor %}</ul><p>모든 항목에 답할 필요는 없습니다. 기록은 대화를 위한 자료이며, 진단 점수나 자가검사로 사용하지 않습니다.</p></section>
       {% else %}
       {% if entry.relationship == 'alias' %}<p class="clinical-alias">{{ entry.name }}은 이 시리즈에서 {{ profile.name }} 안내로 함께 다룹니다. <a href="/{{ profile.hub_path }}">대표 가이드 보기 →</a></p>{% endif %}
       {% if entry_context %}<section class="clinical-section"><h2>{{ entry.name }} 상담에서 먼저 확인할 점</h2>{% for text in entry_context %}<p>{{ text }}</p>{% endfor %}</section>{% endif %}
-      <section class="clinical-section"><p class="eyebrow">핵심 요약</p><h2>{{ profile.name }}, 여섯 질문의 흐름</h2><p>{{ profile.overview }}</p><div class="clinical-overview">{% for part in profile.topics %}<section id="overview-{{ part.id }}"><span>0{{ part.position }} · {{ part.label }}</span><h3>{{ part.question }}</h3><p>{{ part.points[0] }}</p><a href="/{{ part.path }}">확인사항과 설명 도식 읽기 →</a></section>{% endfor %}</div></section>
+      <section class="clinical-section"><p class="eyebrow">핵심 요약</p><h2>{{ profile.name }}, 여섯 질문의 흐름</h2><p>{{ profile.overview }}</p><div class="clinical-overview">{% for part in profile.topics %}<section id="overview-{{ part.id }}"><span>0{{ part.position }} · {{ part.label }}</span><h3>{{ part.question }}</h3><p>{{ part.points[0] }}</p><a href="/{{ part.path }}">{{ "확인사항과 상세 설명 읽기 →" if profile.image_notice else "확인사항과 설명 도식 읽기 →" }}</a></section>{% endfor %}</div></section>
       <section class="clinical-check"><h2>첫 진찰에 가져갈 메모</h2><ul>{% for point in profile.sections.assessment.points %}<li>{{ point }}</li>{% endfor %}</ul></section>
       {% for section in profile.reading_sections|default([]) %}<section class="clinical-section"><h2>{{ section.heading }}</h2><p>{{ section.text }}</p></section>{% endfor %}
       {% endif %}

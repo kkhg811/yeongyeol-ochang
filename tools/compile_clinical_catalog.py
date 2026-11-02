@@ -172,11 +172,17 @@ def main():
         profile["topics"] = []
         for position, (key, label) in enumerate(PHASES, 1):
             section = dict(profile["sections"][key])
-            section.update({"id": key, "label": label, "position": position,
+            section.update({"id": key, "label": section.get("label", label), "position": position,
                             "path": "guide/ochang-" + profile["id"] + "/" + key,
                             "image": "images/clinical-guides/" + profile["id"] + "/" + key + ".webp",
                             "image_small": "images/clinical-guides/" + profile["id"] + "/" + key + "-480.webp"})
             section["image_alt"] = profile["name"] + " " + label + ": " + ", ".join(section["diagram"]) + " 세 항목을 정리한 설명 도식"
+            if section.get("visual_asset"):
+                visual = section["visual_asset"]
+                if not all(re.fullmatch(r"[a-z0-9-]+[.]webp", visual[k]) for k in ("filename", "thumbnail_filename")):
+                    raise ValueError("Unsafe visual asset filename")
+                prefix = "images/clinical-guides/" + profile["id"] + "/"
+                section.update(image=prefix + visual["filename"], image_small=prefix + visual["thumbnail_filename"], image_alt=visual["alt"])
             section["h1"] = "청주·오창 " + profile["name"] + " · " + section["question"]
             section["title"] = section["h1"] + " | 연결한의원 청주오창"
             section["description"] = "청주·오창 " + profile["name"] + " 상담을 준비하며 " + section["question"] + " " + section["points"][0]

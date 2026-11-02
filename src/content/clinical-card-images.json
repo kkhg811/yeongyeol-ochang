@@ -1,15 +1,16 @@
 {
   "renderer_version": "clinical-information-diagrams-v2",
-  "renderer": "Pillow / exact text and editorial shapes; no generative model",
+  "renderer": "Pillow diagrams plus checksum-verified generated covers with recorded provenance",
   "diagram_policy": "Supplied observation/discussion labels only; not a diagnostic algorithm or treatment outcome graphic",
-  "built_at": "2026-10-27T20:34:56+09:00",
+  "built_at": "2026-11-02T18:28:32+09:00",
   "catalog_path": "src/content/clinical-catalog.json",
-  "catalog_sha256": "c4fe43568b53c381b74a6a40924a5c8f0d14f60d8f11e6ae9a28bcce421fbbd7",
+  "catalog_sha256": "1e6a5a94cbfb7b25fd33f29d79478a678727fe291048ce7752b85bf8ab2b007c",
   "font_path": "tools/fonts/NotoSansKR-Variable.ttf",
   "font_sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
   "font_license": "SIL Open Font License 1.1; tools/fonts/OFL-NotoSansKR.txt",
   "profiles": 189,
-  "original_diagrams": 1134,
+  "original_diagrams": 1128,
+  "generated_covers": 6,
   "total_renditions": 2268,
   "assets": [
     {
@@ -91527,493 +91528,121 @@
     {
       "profile_id": "other-accident-care",
       "topic": "symptoms",
-      "topic_label": "상담 목적",
-      "question": "사고 뒤 어떤 불편을 기록하나요?",
-      "labels": [
-        "충격 상황",
-        "증상 시작",
-        "지연·악화 변화"
-      ],
-      "path": "docs/images/clinical-guides/other-accident-care/symptoms.webp",
-      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/symptoms-480.webp",
+      "path": "docs/images/clinical-guides/other-accident-care/symptoms-cover-20261102.webp",
+      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/symptoms-cover-20261102-480.webp",
       "width": 1080,
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 27390,
-      "thumbnail_bytes": 12162,
-      "sha256": "ae23d68c520f3ad83c16028949edd9a5212bb6c05555eef04d48770037967661",
-      "thumbnail_sha256": "c028e42ff6273c986b2c5e4f4c10ab5828784911f4e1e15b7d5cca02ca3e3148",
-      "content_hash": "364c1c6872e1b9f2d3b4ba8e7dffa869e8c71b141bea9d7d90fdb2585837c323",
-      "alt": "교통사고 후 증상·재활·진료 준비: 상담 목적. 충격 상황, 증상 시작, 지연·악화 변화을 정리한 정보도식",
-      "text_layout": {
-        "profile": {
-          "font_size": 59,
-          "lines": [
-            "교통사고 후 증상·재활·진료 준비"
-          ],
-          "bounds": [
-            [
-              76,
-              161,
-              892,
-              216
-            ]
-          ]
-        },
-        "label_1": {
-          "font_size": 76,
-          "lines": [
-            "충격 상황"
-          ],
-          "bounds": [
-            [
-              230,
-              406,
-              527,
-              477
-            ]
-          ]
-        },
-        "label_2": {
-          "font_size": 76,
-          "lines": [
-            "증상 시작"
-          ],
-          "bounds": [
-            [
-              230,
-              590,
-              527,
-              661
-            ]
-          ]
-        },
-        "label_3": {
-          "font_size": 76,
-          "lines": [
-            "지연·악화 변화"
-          ],
-          "bounds": [
-            [
-              230,
-              774,
-              711,
-              845
-            ]
-          ]
-        }
-      },
+      "bytes": 85570,
+      "thumbnail_bytes": 26876,
+      "sha256": "371aec99a12a9509f362ec72a2fa1c5ddb9594a14134694d765be3b2b84bdfc3",
+      "thumbnail_sha256": "99ca26f07912ba433ec8fee072eb875ae0b2f437e4752f2db2bae3aa64fcfe5d",
+      "content_hash": "9df415e5476bb0005eefc4d451b7f368ac29a9442a6248880254e509cca64eb2",
+      "alt": "어깨에 손을 얹고 앉아 있는 성인과 ‘교통사고 후 증상 기록’ 표제의 설명용 생성 이미지",
+      "source_kind": "generated-editorial-photo",
+      "provenance": "traffic-accident-image-provenance-20261102.json",
+      "caption": "교통사고 후\n증상 기록",
       "cached": true
     },
     {
       "profile_id": "other-accident-care",
       "topic": "context",
-      "topic_label": "진료 배경",
-      "question": "통증보다 먼저 확인할 신호는 무엇인가요?",
-      "labels": [
-        "신경 증상",
-        "머리 손상 신호",
-        "새 변화 우선"
-      ],
-      "path": "docs/images/clinical-guides/other-accident-care/context.webp",
-      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/context-480.webp",
+      "path": "docs/images/clinical-guides/other-accident-care/context-cover-20261102.webp",
+      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/context-cover-20261102-480.webp",
       "width": 1080,
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 26604,
-      "thumbnail_bytes": 12170,
-      "sha256": "3577ea1b81240196fd1b50dc76eeda9d1ce0650ee4c69e74f19997e514250ff7",
-      "thumbnail_sha256": "0012d85ba8548692d3f6be44e73cbf7cc7f2bac6e754442212fcbca6c1ce2fc8",
-      "content_hash": "c0d6c7455033abc9434dd7637a1951521affd6a30c3824d381d6fa9e61344962",
-      "alt": "교통사고 후 증상·재활·진료 준비: 진료 배경. 신경 증상, 머리 손상 신호, 새 변화 우선을 정리한 정보도식",
-      "text_layout": {
-        "profile": {
-          "font_size": 59,
-          "lines": [
-            "교통사고 후 증상·재활·진료 준비"
-          ],
-          "bounds": [
-            [
-              76,
-              161,
-              892,
-              216
-            ]
-          ]
-        },
-        "label_1": {
-          "font_size": 76,
-          "lines": [
-            "신경 증상"
-          ],
-          "bounds": [
-            [
-              230,
-              406,
-              527,
-              477
-            ]
-          ]
-        },
-        "label_2": {
-          "font_size": 76,
-          "lines": [
-            "머리 손상 신호"
-          ],
-          "bounds": [
-            [
-              230,
-              590,
-              684,
-              661
-            ]
-          ]
-        },
-        "label_3": {
-          "font_size": 76,
-          "lines": [
-            "새 변화 우선"
-          ],
-          "bounds": [
-            [
-              230,
-              774,
-              614,
-              845
-            ]
-          ]
-        }
-      },
+      "bytes": 139314,
+      "thumbnail_bytes": 30560,
+      "sha256": "5ed79b150109db2f7314900d022be0894ecebc9ea13ec843bcd1b29b49df8ed6",
+      "thumbnail_sha256": "05eb663aa0f132458936a8ba98583781869b377adf3c55bad8ec3c4dff7c3299",
+      "content_hash": "c15663eb097ba675b78ccbf7c9050df91352cccde6b45eea36004186658b1530",
+      "alt": "자동차 머리받침과 안전벨트에 ‘편타손상과 목·허리 불편’ 표제를 붙인 설명용 생성 이미지",
+      "source_kind": "generated-editorial-photo",
+      "provenance": "traffic-accident-image-provenance-20261102.json",
+      "caption": "편타손상과\n목·허리 불편",
       "cached": true
     },
     {
       "profile_id": "other-accident-care",
       "topic": "assessment",
-      "topic_label": "상태 확인",
-      "question": "병원·한의원 진료에 무엇을 가져가나요?",
-      "labels": [
-        "기존 사고 진료",
-        "과거 건강 정보",
-        "검사·협진 상담"
-      ],
-      "path": "docs/images/clinical-guides/other-accident-care/assessment.webp",
-      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/assessment-480.webp",
+      "path": "docs/images/clinical-guides/other-accident-care/assessment-cover-20261102.webp",
+      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/assessment-cover-20261102-480.webp",
       "width": 1080,
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 26410,
-      "thumbnail_bytes": 12650,
-      "sha256": "16dd2165ddcb52e7eb047d7b5f627fcb523b29337ac7fb9998c97fe6595601cb",
-      "thumbnail_sha256": "416c10cd2b1cc48e4ec35a57bf3ab8fd18c514af8e214e4c56e9a4c1c0ffc627",
-      "content_hash": "a393b0d84beb03e8b67476cffd186a1329cd6e645d2f1edb1c9707c7614df3e5",
-      "alt": "교통사고 후 증상·재활·진료 준비: 상태 확인. 기존 사고 진료, 과거 건강 정보, 검사·협진 상담을 정리한 정보도식",
-      "text_layout": {
-        "profile": {
-          "font_size": 59,
-          "lines": [
-            "교통사고 후 증상·재활·진료 준비"
-          ],
-          "bounds": [
-            [
-              76,
-              161,
-              892,
-              216
-            ]
-          ]
-        },
-        "label_1": {
-          "font_size": 76,
-          "lines": [
-            "기존 사고 진료"
-          ],
-          "bounds": [
-            [
-              230,
-              406,
-              684,
-              477
-            ]
-          ]
-        },
-        "label_2": {
-          "font_size": 76,
-          "lines": [
-            "과거 건강 정보"
-          ],
-          "bounds": [
-            [
-              230,
-              590,
-              684,
-              661
-            ]
-          ]
-        },
-        "label_3": {
-          "font_size": 76,
-          "lines": [
-            "검사·협진 상담"
-          ],
-          "bounds": [
-            [
-              230,
-              774,
-              711,
-              845
-            ]
-          ]
-        }
-      },
+      "bytes": 81106,
+      "thumbnail_bytes": 27330,
+      "sha256": "6abd362ad722893f14e192fa5dd9d4cc0e05648aea25ac2a5c2220da40275fd2",
+      "thumbnail_sha256": "cdbba8163361035622f6d78e27527ec6cc16033c7a3d4853e2844ed5ce3c9228",
+      "content_hash": "85897771fe477feda1b019cd295add49a208f0237a76adfc7fa4c6df513a6748",
+      "alt": "빈 서류철과 메모를 정리하는 손, ‘첫 진료 검사 준비’ 표제의 설명용 생성 이미지",
+      "source_kind": "generated-editorial-photo",
+      "provenance": "traffic-accident-image-provenance-20261102.json",
+      "caption": "첫 진료\n검사 준비",
       "cached": true
     },
     {
       "profile_id": "other-accident-care",
       "topic": "care",
-      "topic_label": "방법 선택",
-      "question": "한방 재활과 활동은 어떻게 계획하나요?",
-      "labels": [
-        "손상·금기 확인",
-        "개별 치료 목표",
-        "활동·업무 조정"
-      ],
-      "path": "docs/images/clinical-guides/other-accident-care/care.webp",
-      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/care-480.webp",
+      "path": "docs/images/clinical-guides/other-accident-care/care-cover-20261102.webp",
+      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/care-cover-20261102-480.webp",
       "width": 1080,
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 27600,
-      "thumbnail_bytes": 12722,
-      "sha256": "371221c5f5c15188153593202136c64031b1783fa20b8cee2fc028f7407651d2",
-      "thumbnail_sha256": "b763d078d5e936db52a2ec5ccdc11de64448f816defcb988e932fc669033bbe1",
-      "content_hash": "3767f841f934c6c3dfe8a7ffb522b8417fc87fb5001e072e9617269ee469ec81",
-      "alt": "교통사고 후 증상·재활·진료 준비: 방법 선택. 손상·금기 확인, 개별 치료 목표, 활동·업무 조정을 정리한 정보도식",
-      "text_layout": {
-        "profile": {
-          "font_size": 59,
-          "lines": [
-            "교통사고 후 증상·재활·진료 준비"
-          ],
-          "bounds": [
-            [
-              76,
-              161,
-              892,
-              216
-            ]
-          ]
-        },
-        "label_1": {
-          "font_size": 76,
-          "lines": [
-            "손상·금기 확인"
-          ],
-          "bounds": [
-            [
-              230,
-              406,
-              711,
-              477
-            ]
-          ]
-        },
-        "label_2": {
-          "font_size": 76,
-          "lines": [
-            "개별 치료 목표"
-          ],
-          "bounds": [
-            [
-              230,
-              590,
-              684,
-              661
-            ]
-          ]
-        },
-        "label_3": {
-          "font_size": 76,
-          "lines": [
-            "활동·업무 조정"
-          ],
-          "bounds": [
-            [
-              230,
-              774,
-              711,
-              846
-            ]
-          ]
-        }
-      },
+      "bytes": 58338,
+      "thumbnail_bytes": 21818,
+      "sha256": "f538187301b8cf8495edb78dee2e6985a6e95435048daea6d4159e129cbf3732",
+      "thumbnail_sha256": "1cb80206aaa8dffc1cb69432739ee30eeb9c6710452af3878454b1d97685039a",
+      "content_hash": "1c96ec2aab1f6f8564f3809273439f63638b34712b76163faa014faea6cda232",
+      "alt": "일반적인 상담 공간의 두 성인과 ‘내게 맞는 치료 선택’ 표제의 설명용 생성 이미지",
+      "source_kind": "generated-editorial-photo",
+      "provenance": "traffic-accident-image-provenance-20261102.json",
+      "caption": "내게 맞는\n치료 선택",
       "cached": true
     },
     {
       "profile_id": "other-accident-care",
       "topic": "daily",
-      "topic_label": "준비·관리",
-      "question": "자동차보험과 비용은 어떻게 확인하나요?",
-      "labels": [
-        "사고 접수 정보",
-        "개별 적용 확인",
-        "비용·서류 안내"
-      ],
-      "path": "docs/images/clinical-guides/other-accident-care/daily.webp",
-      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/daily-480.webp",
+      "path": "docs/images/clinical-guides/other-accident-care/daily-cover-20261102.webp",
+      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/daily-cover-20261102-480.webp",
       "width": 1080,
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 26850,
-      "thumbnail_bytes": 12710,
-      "sha256": "a946287073085477f531ada71bd55262a814047a56165e6d10fbf86157ea0490",
-      "thumbnail_sha256": "c7f58c4c23a8565dbfed8422ecb99159f361728134d161e16898403a5b3b9371",
-      "content_hash": "9f0f1e4c9d8a324224745af5b20384d895ffa8ff168a325c61004e3a51f51dda",
-      "alt": "교통사고 후 증상·재활·진료 준비: 준비·관리. 사고 접수 정보, 개별 적용 확인, 비용·서류 안내을 정리한 정보도식",
-      "text_layout": {
-        "profile": {
-          "font_size": 59,
-          "lines": [
-            "교통사고 후 증상·재활·진료 준비"
-          ],
-          "bounds": [
-            [
-              76,
-              161,
-              892,
-              216
-            ]
-          ]
-        },
-        "label_1": {
-          "font_size": 76,
-          "lines": [
-            "사고 접수 정보"
-          ],
-          "bounds": [
-            [
-              230,
-              406,
-              684,
-              477
-            ]
-          ]
-        },
-        "label_2": {
-          "font_size": 76,
-          "lines": [
-            "개별 적용 확인"
-          ],
-          "bounds": [
-            [
-              230,
-              590,
-              684,
-              661
-            ]
-          ]
-        },
-        "label_3": {
-          "font_size": 76,
-          "lines": [
-            "비용·서류 안내"
-          ],
-          "bounds": [
-            [
-              230,
-              774,
-              711,
-              845
-            ]
-          ]
-        }
-      },
+      "bytes": 80984,
+      "thumbnail_bytes": 24930,
+      "sha256": "2173a98abd703c0f5dcca1788d0f23650f8702d89a5ff1222e439439cc2c042b",
+      "thumbnail_sha256": "7ca2d8683f7e929b4eeb32bb1da6f3c87d50172e6f412b8ce4b6149dd15d1e52",
+      "content_hash": "7ff0a207495e1708cf9cfe46e92a7a3b44551ba1f0a1a0d3e15429bea7b66f7d",
+      "alt": "자동차 열쇠·빈 서류와 ‘자동차보험 접수와 비용’ 표제의 설명용 생성 이미지",
+      "source_kind": "generated-editorial-photo",
+      "provenance": "traffic-accident-image-provenance-20261102.json",
+      "caption": "자동차보험\n접수와 비용",
       "cached": true
     },
     {
       "profile_id": "other-accident-care",
       "topic": "followup",
-      "topic_label": "경과 확인",
-      "question": "회복과 일상 복귀는 무엇으로 판단하나요?",
-      "labels": [
-        "생활 기능",
-        "활동 후 반응",
-        "재평가 신호"
-      ],
-      "path": "docs/images/clinical-guides/other-accident-care/followup.webp",
-      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/followup-480.webp",
+      "path": "docs/images/clinical-guides/other-accident-care/followup-cover-20261102.webp",
+      "thumbnail_path": "docs/images/clinical-guides/other-accident-care/followup-cover-20261102-480.webp",
       "width": 1080,
       "height": 1080,
       "thumbnail_width": 480,
       "thumbnail_height": 480,
-      "bytes": 26088,
-      "thumbnail_bytes": 11682,
-      "sha256": "e94754a38b7183331818b30074a3bf513bd4d1431f46c6f5aa26a9bd2582b6d4",
-      "thumbnail_sha256": "a6e416b33dfd1bc924f3c15ddd409299fad842ccf568d2715c968118eba86fcd",
-      "content_hash": "2fe504d278b35b1fa9e0d37ea120d933262f8138a9ca84c7f41d61c115c443f5",
-      "alt": "교통사고 후 증상·재활·진료 준비: 경과 확인. 생활 기능, 활동 후 반응, 재평가 신호을 정리한 정보도식",
-      "text_layout": {
-        "profile": {
-          "font_size": 59,
-          "lines": [
-            "교통사고 후 증상·재활·진료 준비"
-          ],
-          "bounds": [
-            [
-              76,
-              161,
-              892,
-              216
-            ]
-          ]
-        },
-        "label_1": {
-          "font_size": 76,
-          "lines": [
-            "생활 기능"
-          ],
-          "bounds": [
-            [
-              230,
-              406,
-              527,
-              478
-            ]
-          ]
-        },
-        "label_2": {
-          "font_size": 76,
-          "lines": [
-            "활동 후 반응"
-          ],
-          "bounds": [
-            [
-              230,
-              590,
-              614,
-              662
-            ]
-          ]
-        },
-        "label_3": {
-          "font_size": 76,
-          "lines": [
-            "재평가 신호"
-          ],
-          "bounds": [
-            [
-              230,
-              774,
-              597,
-              845
-            ]
-          ]
-        }
-      },
+      "bytes": 129260,
+      "thumbnail_bytes": 46852,
+      "sha256": "32bcadcf033125da7000b7d3090e755851c3f53aedd45e0513db4a8e1c22fb1f",
+      "thumbnail_sha256": "3b8069c3df200eb4174150cdbccde9007cf5bbc89bf44874fbe32c2e5f7608e1",
+      "content_hash": "3558a850fba7911270ec435f13785812b11813f3afb63eeeae83b8328f12ffab",
+      "alt": "공원에서 가볍게 걷는 성인과 ‘생활 복귀 변화 살피기’ 표제의 설명용 생성 이미지",
+      "source_kind": "generated-editorial-photo",
+      "provenance": "traffic-accident-image-provenance-20261102.json",
+      "caption": "생활 복귀\n변화 살피기",
       "cached": true
     },
     {

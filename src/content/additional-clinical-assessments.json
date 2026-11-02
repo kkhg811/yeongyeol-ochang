@@ -1,6 +1,6 @@
 {
   "status": "published",
-  "updated_at": "2026-10-27",
+  "updated_at": "2026-11-02",
   "medical_review_status": "pending",
   "reviewed_by": null,
   "reviewed_at": null,
@@ -1150,6 +1150,68 @@
           "checked_at": "2026-10-27"
         }
       ]
+    },
+    {
+      "id": "other-accident-care",
+      "order": 0,
+      "keyword": "교통사고",
+      "name": "교통사고 후 증상과 진료 준비",
+      "checks": [
+        "사고 전과 다른 목·허리 불편이 언제 시작됐는지 설명할 수 있나요?",
+        "기존 통증과 새 감각·근력 변화를 나누어 말할 수 있나요?",
+        "수면·일·운전에서 실제 제한된 활동이 있나요?"
+      ],
+      "branches": [
+        {
+          "observation": "목의 통증·움직임 제한이 중심입니다.",
+          "possibility": "편타손상과 다른 목 원인을 함께 평가합니다.",
+          "distinction": "사고 경위와 진찰을 연결해야 하며 체크로 확진하지 않습니다.",
+          "related_id": "msk-neck-muscle-pain"
+        },
+        {
+          "observation": "통증과 함께 새 저림·힘 변화가 있습니다.",
+          "possibility": "신경 소견과 다른 손상 여부를 검토합니다.",
+          "distinction": "기존 질환이 있어도 새로운 변화를 같은 원인으로 단정하지 않습니다.",
+          "related_id": "msk-cervical-disc"
+        }
+      ],
+      "faq": [
+        {
+          "question": "이 도표가 영상검사 필요성을 결정하나요?",
+          "answer": "아닙니다. 의료진이 사고 경위와 신체·신경 진찰로 판단합니다."
+        },
+        {
+          "question": "두 분기 모두 맞으면 어느 쪽을 고르나요?",
+          "answer": "증상이 겹칠 수 있습니다. 각각의 시작과 변화를 함께 전하세요."
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+          "scope": "사고·과거력 문진, 신경학적 진찰, 골절·탈구 의심에 따른 영상검사 선택",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/",
+          "scope": "2026-07-24 수정. 편타손상과 동반 증상, 진찰·활동·업무 복귀",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+          "scope": "2024-02-17 자료. 문진·영상검사의 목적과 한계, 치료 목표·필요에 따른 방문 계획·진료 준비",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+          "scope": "2026-05-13 수정. 사고 경위·병력과 신체/신경 진찰, 동반 손상과 검사 필요성의 개별 평가",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://www.orthoinfo.org/diseases--conditions/neck-sprain/",
+          "scope": "목 근육·인대 손상 기전과 증상, 신체 진찰과 X-ray의 연부조직 평가 한계. 본문의 약물·고정치료 일정을 그대로 권하지 않음",
+          "checked_at": "2026-11-02"
+        }
+      ]
     }
   ],
   "profile_updated_at": {
@@ -1172,6 +1234,7 @@
     "mind-concentration": "2026-10-27",
     "mind-learning": "2026-10-27",
     "mind-palpitations": "2026-10-27",
-    "mind-overstimulation": "2026-10-27"
+    "mind-overstimulation": "2026-10-27",
+    "other-accident-care": "2026-11-02"
   }
 }

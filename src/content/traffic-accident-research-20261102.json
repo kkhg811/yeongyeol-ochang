@@ -1,0 +1,758 @@
+{
+  "checked_at": "2026-11-02",
+  "primary_sources": 15,
+  "source_word_budget_notes": "신규 본문·FAQ·개요·카드 질문/포인트/도표·메타데이터·관찰/분기 문구를 한국어 공백 단위로 양 사이트 합산. 출처 제목·범위 설명은 연구 목록에서 한 번씩 추가 집계. 직접 인용 없음. 일반 탐색 문구도 보수적으로 포함.",
+  "source_word_budgets": {
+    "https://www.nhs.uk/conditions/whiplash/": 165,
+    "https://www.hira.or.kr/bbsDummy.do?brdBltNo=9591&brdScnBltNo=4&pageIndex=1&pgmid=HIRAA020041000100": 152,
+    "https://www.pah.nhs.uk/resources/whiplash/": 194,
+    "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR": 175,
+    "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination": 188,
+    "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926": 192,
+    "https://www.nhs.uk/conditions/head-injury-and-concussion/": 129,
+    "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921": 192,
+    "https://www.orthoinfo.org/diseases--conditions/neck-sprain/": 146,
+    "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety": 125,
+    "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know": 77,
+    "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders": 161,
+    "https://www.hira.or.kr/dummy.do?pgmid=HIRAA020020000004": 71,
+    "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/": 133,
+    "https://my.clevelandclinic.org/health/diseases/11982-whiplash": 186
+  },
+  "budget_allocations": [
+    {
+      "source": "nhs",
+      "url": "https://www.nhs.uk/conditions/whiplash/",
+      "words": 32,
+      "location": "new/hub/1"
+    },
+    {
+      "source": "guarantee",
+      "url": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=9591&brdScnBltNo=4&pageIndex=1&pgmid=HIRAA020041000100",
+      "words": 31,
+      "location": "new/hub/2"
+    },
+    {
+      "source": "pah",
+      "url": "https://www.pah.nhs.uk/resources/whiplash/",
+      "words": 21,
+      "location": "new/hub/3"
+    },
+    {
+      "source": "nhs",
+      "url": "https://www.nhs.uk/conditions/whiplash/",
+      "words": 17,
+      "location": "new/hub/faq1"
+    },
+    {
+      "source": "law",
+      "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR",
+      "words": 19,
+      "location": "new/hub/faq2"
+    },
+    {
+      "source": "exam",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "words": 15,
+      "location": "new/hub/faq3"
+    },
+    {
+      "source": "mayo",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+      "words": 15,
+      "location": "new/hub/faq4"
+    },
+    {
+      "source": "head",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "words": 17,
+      "location": "new/hub/faq5"
+    },
+    {
+      "source": "nhs",
+      "url": "https://www.nhs.uk/conditions/whiplash/",
+      "words": 54,
+      "location": "new/symptoms/card-meta"
+    },
+    {
+      "source": "nhs",
+      "url": "https://www.nhs.uk/conditions/whiplash/",
+      "words": 36,
+      "location": "new/symptoms/body"
+    },
+    {
+      "source": "mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+      "words": 12,
+      "location": "new/symptoms/faq"
+    },
+    {
+      "source": "head",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "words": 17,
+      "location": "new/symptoms/faq"
+    },
+    {
+      "source": "aaos",
+      "url": "https://www.orthoinfo.org/diseases--conditions/neck-sprain/",
+      "words": 53,
+      "location": "new/context/card-meta"
+    },
+    {
+      "source": "aaos",
+      "url": "https://www.orthoinfo.org/diseases--conditions/neck-sprain/",
+      "words": 37,
+      "location": "new/context/body"
+    },
+    {
+      "source": "exam",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "words": 13,
+      "location": "new/context/faq"
+    },
+    {
+      "source": "mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+      "words": 14,
+      "location": "new/context/faq"
+    },
+    {
+      "source": "mayo",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+      "words": 51,
+      "location": "new/assessment/card-meta"
+    },
+    {
+      "source": "mayo",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+      "words": 33,
+      "location": "new/assessment/body"
+    },
+    {
+      "source": "exam",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "words": 13,
+      "location": "new/assessment/faq"
+    },
+    {
+      "source": "mayo",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+      "words": 12,
+      "location": "new/assessment/faq"
+    },
+    {
+      "source": "acu",
+      "url": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+      "words": 52,
+      "location": "new/care/card-meta"
+    },
+    {
+      "source": "acu",
+      "url": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+      "words": 40,
+      "location": "new/care/body"
+    },
+    {
+      "source": "herb",
+      "url": "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know",
+      "words": 15,
+      "location": "new/care/faq"
+    },
+    {
+      "source": "sira",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders",
+      "words": 15,
+      "location": "new/care/faq"
+    },
+    {
+      "source": "guarantee",
+      "url": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=9591&brdScnBltNo=4&pageIndex=1&pgmid=HIRAA020041000100",
+      "words": 46,
+      "location": "new/daily/card-meta"
+    },
+    {
+      "source": "guarantee",
+      "url": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=9591&brdScnBltNo=4&pageIndex=1&pgmid=HIRAA020041000100",
+      "words": 39,
+      "location": "new/daily/body"
+    },
+    {
+      "source": "law",
+      "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR",
+      "words": 19,
+      "location": "new/daily/faq"
+    },
+    {
+      "source": "hira",
+      "url": "https://www.hira.or.kr/dummy.do?pgmid=HIRAA020020000004",
+      "words": 14,
+      "location": "new/daily/faq"
+    },
+    {
+      "source": "pah",
+      "url": "https://www.pah.nhs.uk/resources/whiplash/",
+      "words": 50,
+      "location": "new/followup/card-meta"
+    },
+    {
+      "source": "pah",
+      "url": "https://www.pah.nhs.uk/resources/whiplash/",
+      "words": 28,
+      "location": "new/followup/body"
+    },
+    {
+      "source": "inform",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/",
+      "words": 13,
+      "location": "new/followup/faq"
+    },
+    {
+      "source": "head",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "words": 16,
+      "location": "new/followup/faq"
+    },
+    {
+      "source": "exam",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "words": 32,
+      "location": "kmc/hub/1"
+    },
+    {
+      "source": "sira",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders",
+      "words": 32,
+      "location": "kmc/hub/2"
+    },
+    {
+      "source": "hira",
+      "url": "https://www.hira.or.kr/dummy.do?pgmid=HIRAA020020000004",
+      "words": 26,
+      "location": "kmc/hub/3"
+    },
+    {
+      "source": "mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+      "words": 15,
+      "location": "kmc/hub/faq1"
+    },
+    {
+      "source": "law",
+      "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR",
+      "words": 20,
+      "location": "kmc/hub/faq2"
+    },
+    {
+      "source": "exam",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "words": 12,
+      "location": "kmc/hub/faq3"
+    },
+    {
+      "source": "herb",
+      "url": "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know",
+      "words": 19,
+      "location": "kmc/hub/faq4"
+    },
+    {
+      "source": "head",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "words": 15,
+      "location": "kmc/hub/faq5"
+    },
+    {
+      "source": "inform",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/",
+      "words": 54,
+      "location": "kmc/symptoms/card-meta"
+    },
+    {
+      "source": "inform",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/",
+      "words": 39,
+      "location": "kmc/symptoms/body"
+    },
+    {
+      "source": "nhs",
+      "url": "https://www.nhs.uk/conditions/whiplash/",
+      "words": 12,
+      "location": "kmc/symptoms/faq"
+    },
+    {
+      "source": "head",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "words": 17,
+      "location": "kmc/symptoms/faq"
+    },
+    {
+      "source": "mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+      "words": 54,
+      "location": "kmc/context/card-meta"
+    },
+    {
+      "source": "mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+      "words": 37,
+      "location": "kmc/context/body"
+    },
+    {
+      "source": "exam",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "words": 12,
+      "location": "kmc/context/faq"
+    },
+    {
+      "source": "aaos",
+      "url": "https://www.orthoinfo.org/diseases--conditions/neck-sprain/",
+      "words": 14,
+      "location": "kmc/context/faq"
+    },
+    {
+      "source": "exam",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "words": 48,
+      "location": "kmc/assessment/card-meta"
+    },
+    {
+      "source": "exam",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "words": 29,
+      "location": "kmc/assessment/body"
+    },
+    {
+      "source": "mayo",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+      "words": 13,
+      "location": "kmc/assessment/faq"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 14,
+      "location": "kmc/assessment/faq"
+    },
+    {
+      "source": "sira",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders",
+      "words": 51,
+      "location": "kmc/care/card-meta"
+    },
+    {
+      "source": "sira",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders",
+      "words": 37,
+      "location": "kmc/care/body"
+    },
+    {
+      "source": "acu",
+      "url": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+      "words": 16,
+      "location": "kmc/care/faq"
+    },
+    {
+      "source": "herb",
+      "url": "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know",
+      "words": 15,
+      "location": "kmc/care/faq"
+    },
+    {
+      "source": "law",
+      "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR",
+      "words": 54,
+      "location": "kmc/daily/card-meta"
+    },
+    {
+      "source": "law",
+      "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR",
+      "words": 40,
+      "location": "kmc/daily/body"
+    },
+    {
+      "source": "guarantee",
+      "url": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=9591&brdScnBltNo=4&pageIndex=1&pgmid=HIRAA020041000100",
+      "words": 12,
+      "location": "kmc/daily/faq"
+    },
+    {
+      "source": "hira",
+      "url": "https://www.hira.or.kr/dummy.do?pgmid=HIRAA020020000004",
+      "words": 14,
+      "location": "kmc/daily/faq"
+    },
+    {
+      "source": "pah",
+      "url": "https://www.pah.nhs.uk/resources/whiplash/",
+      "words": 52,
+      "location": "kmc/followup/card-meta"
+    },
+    {
+      "source": "pah",
+      "url": "https://www.pah.nhs.uk/resources/whiplash/",
+      "words": 28,
+      "location": "kmc/followup/body"
+    },
+    {
+      "source": "inform",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/",
+      "words": 16,
+      "location": "kmc/followup/faq"
+    },
+    {
+      "source": "head",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "words": 16,
+      "location": "kmc/followup/faq"
+    },
+    {
+      "source": "mayo",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+      "words": 50,
+      "location": "new/hub/overview-meta"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 51,
+      "location": "kmc/hub/overview-meta"
+    },
+    {
+      "source": "head",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "words": 6,
+      "location": "new/assessment/check-neuro"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 14,
+      "location": "new/assessment/check-context"
+    },
+    {
+      "source": "mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+      "words": 20,
+      "location": "new/assessment/branch"
+    },
+    {
+      "source": "mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+      "words": 22,
+      "location": "new/assessment/branch"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 14,
+      "location": "new/assessment/faq"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 13,
+      "location": "new/assessment/faq"
+    },
+    {
+      "source": "head",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "words": 9,
+      "location": "kmc/assessment/check-neuro"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 15,
+      "location": "kmc/assessment/check-context"
+    },
+    {
+      "source": "aaos",
+      "url": "https://www.orthoinfo.org/diseases--conditions/neck-sprain/",
+      "words": 18,
+      "location": "kmc/assessment/branch"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 21,
+      "location": "kmc/assessment/branch"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 12,
+      "location": "kmc/assessment/faq"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 16,
+      "location": "kmc/assessment/faq"
+    },
+    {
+      "source": "nhs",
+      "url": "https://www.nhs.uk/conditions/whiplash/",
+      "words": 14,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "inform",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/",
+      "words": 11,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "pah",
+      "url": "https://www.pah.nhs.uk/resources/whiplash/",
+      "words": 15,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "head",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "words": 16,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "sira",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders",
+      "words": 26,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "exam",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "words": 14,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "mayo",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+      "words": 18,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "acu",
+      "url": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+      "words": 17,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "herb",
+      "url": "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know",
+      "words": 28,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "law",
+      "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR",
+      "words": 23,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "hira",
+      "url": "https://www.hira.or.kr/dummy.do?pgmid=HIRAA020020000004",
+      "words": 17,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "guarantee",
+      "url": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=9591&brdScnBltNo=4&pageIndex=1&pgmid=HIRAA020041000100",
+      "words": 24,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+      "words": 18,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "aaos",
+      "url": "https://www.orthoinfo.org/diseases--conditions/neck-sprain/",
+      "words": 24,
+      "location": "source-citation-and-scope"
+    },
+    {
+      "source": "cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "words": 16,
+      "location": "source-citation-and-scope"
+    }
+  ],
+  "limitations": [
+    "의료진 임상 검수는 미확인입니다. 출처 확인일을 검수일로 표시하지 않습니다.",
+    "SIRA는 현재 공개된 2014 지침 요약이며 2026 신설 지침으로 표시하지 않습니다. 호주의 보험·의뢰 규정을 한국 제도로 제시하지 않습니다.",
+    "HIRA 자동차보험 심사제도는 공식 검색 제공 본문을 확인했으나 직접 열기는 timeout입니다. 지급보증 자료는2018년 자료로 현행 법 제12조와 함께 정보의 의미만 사용했습니다.",
+    "HIRA 2026 검사기준 공고는 검색에서 확인했으나 원문·첨부 전체 접근 제한으로 본문 근거에서 제외했습니다.",
+    "NINDS whiplash는403, SIRA recovering-from-whiplash는timeout이어서 인용하지 않았습니다.",
+    "침 일반자료를 약침 효과 근거로 확장하지 않습니다. 약침·추나·한약의 사고 후 효과·치료 횟수·회복 기간을 보장하지 않습니다.",
+    "독립된 응급진료 섹션 없이, 신속한 평가가 필요한 변화는 보통 문답에서 짧게 설명합니다. 개별 보험 보장·과실·합의 결과를 판단하지 않습니다."
+  ],
+  "validation": {
+    "checked_at": "2026-11-02",
+    "schema": {
+      "new": {
+        "hub_sections": 3,
+        "hub_faq": 5,
+        "topics": [
+          "symptoms",
+          "context",
+          "assessment",
+          "care",
+          "daily",
+          "followup"
+        ],
+        "each_topic": {
+          "points": 3,
+          "diagram": 3,
+          "reading_sections": 1,
+          "faq": 2
+        },
+        "assessment": {
+          "checks": 3,
+          "branches": 2,
+          "faq": 2,
+          "evidence": 4
+        }
+      },
+      "kmc": {
+        "hub_sections": 3,
+        "hub_faq": 5,
+        "topics": [
+          "symptoms",
+          "context",
+          "assessment",
+          "care",
+          "daily",
+          "followup"
+        ],
+        "each_topic": {
+          "points": 3,
+          "diagram": 3,
+          "reading_sections": 1,
+          "faq": 2
+        },
+        "assessment": {
+          "checks": 3,
+          "branches": 2,
+          "faq": 2,
+          "evidence": 5
+        }
+      }
+    },
+    "unique_page_titles": 14,
+    "unique_page_descriptions": 14,
+    "unique_reading_sections": 18,
+    "unique_faq_questions": 38,
+    "known_source_urls_only": true,
+    "actual_catalog_related_ids": {
+      "new": {
+        "msk-neck-muscle-pain": true,
+        "msk-cervical-disc": true
+      },
+      "kmc": {
+        "msk-neck-muscle-pain": true,
+        "msk-cervical-disc": true
+      }
+    },
+    "source_budget_max_words": 194,
+    "source_budget_over_200": 0,
+    "public_identity_and_publication_fields_in_patch": false,
+    "medical_review_claimed": false,
+    "independent_emergency_section": false,
+    "self_checks_are_passive": true,
+    "file_edits_ended": true
+  },
+  "sources": [
+    {
+      "title": "NHS · Whiplash",
+      "url": "https://www.nhs.uk/conditions/whiplash/",
+      "scope": "편타손상의 목 통증·뻣뻣함과 지연된 시작, 일상 활동, 새 신경 증상 평가",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "NHS inform · Whiplash",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/",
+      "scope": "2026-07-24 수정. 편타손상과 동반 증상, 진찰·활동·업무 복귀",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "The Princess Alexandra Hospital NHS Trust · Whiplash",
+      "url": "https://www.pah.nhs.uk/resources/whiplash/",
+      "scope": "편타손상 설명과 점진적 활동·안전한 운전 조건·경과 재평가",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "NHS · Head injury and concussion",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "scope": "머리 손상 뒤 의식·구토·신경 변화 평가와 운전·일상 복귀의 별도 판단",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "SIRA · Quick reference guide for whiplash-associated disorders",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders",
+      "scope": "현재 공개된 2014 급성 편타손상 지침 요약. 활동·기능 목표, 치료 근거의 한계와 반응 재평가; 한국 자동차보험 기준이 아님",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "SIRA · Do an examination",
+      "url": "https://www.sira.nsw.gov.au/resources-library/motor-accident-resources/publications/for-professionals/whiplash-resources/quick-reference-guide-for-the-management-of-whiplash-associated-disorders/1.-do-an-examination/1.-do-an-examination",
+      "scope": "사고·과거력 문진, 신경학적 진찰, 골절·탈구 의심에 따른 영상검사 선택",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "Mayo Clinic · Whiplash: diagnosis and treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/diagnosis-treatment/drc-20378926",
+      "scope": "2024-02-17 자료. 문진·영상검사의 목적과 한계, 치료 목표·필요에 따른 방문 계획·진료 준비",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "NCCIH · Acupuncture: Effectiveness and Safety",
+      "url": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+      "scope": "침의 안전성·부작용과 건강 상태 공유; 침 근거를 약침 전체에 일반화하지 않음",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "NCCIH · Traditional Chinese Medicine: What You Need To Know",
+      "url": "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know",
+      "scope": "한방 성분 제품의 불확실성과 의료진 간 복용 정보 공유. 중국 약초제품 자료를 한국 한약 전체의 효과·품질에 일반화하지 않음",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "국가법령정보센터 · 자동차손해배상 보장법 제12조",
+      "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0012&lsiSeq=290659&urlMode=lsScJoRltInfoR",
+      "scope": "2026-10-02 시행본. 지급 의사·한도 통지, 보험회사 청구 시 환자 청구 제한과 예외; 개별 사건 보장·합의 판단은 하지 않음",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "건강보험심사평가원 · 자동차보험 심사제도",
+      "url": "https://www.hira.or.kr/dummy.do?pgmid=HIRAA020020000004",
+      "scope": "의료기관 청구·심평원 심사·보험회사/공제조합 지급의 업무 구분. 검색 제공 본문 확인; 직접 열기 timeout",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "건강보험심사평가원 · 지급보증정보 중계서비스 안내",
+      "url": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=9591&brdScnBltNo=4&pageIndex=1&pgmid=HIRAA020041000100",
+      "scope": "2018-05-09 자료. 사고접수번호와 지급보증정보의 구분·지급 의사와 한도라는 정보의 의미를 현행 제12조와 함께 확인; 현재 서비스 범위·보험사 목록은 인용하지 않음",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "Mayo Clinic · Whiplash: symptoms and causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/whiplash/symptoms-causes/syc-20378921",
+      "scope": "2024-02-17 자료. 편타손상의 발생 기전, 동반 증상과 다른 손상 평가의 필요성",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "AAOS OrthoInfo · Neck Sprains and Strains",
+      "url": "https://www.orthoinfo.org/diseases--conditions/neck-sprain/",
+      "scope": "목 근육·인대 손상 기전과 증상, 신체 진찰과 X-ray의 연부조직 평가 한계. 본문의 약물·고정치료 일정을 그대로 권하지 않음",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "title": "Cleveland Clinic · Whiplash",
+      "url": "https://my.clevelandclinic.org/health/diseases/11982-whiplash",
+      "scope": "2026-05-13 수정. 사고 경위·병력과 신체/신경 진찰, 동반 손상과 검사 필요성의 개별 평가",
+      "checked_at": "2026-11-02"
+    }
+  ]
+}

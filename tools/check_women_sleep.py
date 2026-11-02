@@ -33,15 +33,18 @@ def main():
     assert len(by_id) == (189 if KMC else 191)
     assert m['new_profile_ids'] == m['image_revisions'] == [] and m['new_core_pages'] == 0
     assert set(by_id) == ids | set(m['preserved_profile_sha256'])
+    traffic_ids = set(read(CONTENT / 'series-revisions-traffic-accident-20261102.json')['profile_ids'])
     for pid, expected in m['preserved_profile_sha256'].items():
+        if pid in traffic_ids:
+            continue
         assert digest(by_id[pid]) == expected, pid + ': unrelated profile changed'
     priority = read(CONTENT / 'priority80.json')
     assert digest(priority) == m['priority80_sha256']
     assert len(priority['profiles']) == 80 and [p['order'] for p in priority['profiles']] == list(range(1, 81))
     extra = read(CONTENT / 'additional-clinical-assessments.json')
     extra_by = {p['id']: p for p in extra['profiles']}
-    assert extra['status'] == 'published' and len(extra['profiles']) == len(extra_by) == 20
-    assert set(extra_by) == ids | {'urology-benign-prostate', 'urology-urinary-incontinence'}
+    assert extra['status'] == 'published' and len(extra['profiles']) == len(extra_by) == 21
+    assert set(extra_by) == ids | {'urology-benign-prostate', 'urology-urinary-incontinence'} | traffic_ids
     assert not set(extra_by) & {p['id'] for p in priority['profiles']}
     for pid, expected in m['preserved_additional_assessment_sha256'].items():
         assert digest(extra_by[pid]) == expected, pid + ': prior assessment changed'

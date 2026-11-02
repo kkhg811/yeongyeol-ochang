@@ -11,10 +11,10 @@
     "true_alias_urls": 19
   },
   "rendered_clinical_pages_checked": 1753,
-  "unique_internal_targets_checked": 3893,
+  "unique_internal_targets_checked": 3894,
   "original_images_checked": 1134,
   "responsive_renditions_checked": 1134,
-  "largest_image_bytes": 29730,
+  "largest_image_bytes": 139314,
   "medical_review": "pending",
   "browser_http_checks": "see browser-qa.json",
   "search_exposure": {
