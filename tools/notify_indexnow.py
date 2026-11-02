@@ -20,7 +20,7 @@ from site_info import SITE
 
 ORIGIN = SITE["url"].rstrip("/")
 ENDPOINT = "https://searchadvisor.naver.com/indexnow"
-USER_AGENT = "Mozilla/5.0 (compatible; YeongyeolOchangSiteUpdate/1.0)"
+USER_AGENT = "YeongyeolOchangSiteUpdate/1.0"
 
 
 class PageInfo(HTMLParser):

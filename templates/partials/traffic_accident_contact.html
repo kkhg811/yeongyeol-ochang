@@ -1,0 +1,4 @@
+<aside class="traffic-contact{% if not traffic_landing %} traffic-contact-compact{% endif %}" aria-label="교통사고 진료 방문 정보">
+  <div><p class="eyebrow">연결한의원 청주오창</p><h2>교통사고 진료·방문 안내</h2><p>{{ traffic_clinic.address }}</p>{% if traffic_landing %}<p>{{ traffic_clinic.hours }}<br>실제 담당 원장과 접수 가능 여부는 방문 전 확인해 주세요.</p>{% endif %}</div>
+  <div class="traffic-actions"><a href="{{ site.naver_booking }}">네이버 예약 ↗</a><a href="tel:{{ traffic_clinic.phone_tel }}">{{ traffic_clinic.phone }} 전화</a><a href="/location">진료시간·주차 안내</a></div>
+</aside>

@@ -11,6 +11,7 @@
 import json
 import os
 import sys
+from pathlib import Path
 import urllib.parse
 from html import unescape
 
@@ -20,6 +21,7 @@ from PIL import Image
 
 from site_info import SITE, NAV, DIRECTORS, FEATURED, TICKER_ROW1, TICKER_ROW2, STATS, CORE, WHO, WHY, HOME_FAQ, RECORD
 from services import SERVICES
+TRAFFIC_CLINIC = json.loads((Path(__file__).parent / "src/content/traffic-accident-clinic.json").read_text())
 from columns import PRINCIPLES, PATIENT_QUESTIONS, FAQ_GROUPS
 from pain_series import load_series, schemas as pain_schemas
 from clinical_guides import load_catalog, page_nodes as clinical_nodes, clean_column_blocks, column_focus
@@ -266,6 +268,8 @@ def render_clinical(profile, entry=None, topic=None, column=None):
     render("clinical_guide.html", path + ".html", profile=profile, entry=entry, topic=topic,
            is_column=bool(column), article_blocks=blocks, article_lead=first,
            is_profile_hub=path == profile["hub_path"],
+           traffic_clinic=TRAFFIC_CLINIC,
+           traffic_landing=profile["id"] == "other-accident-care" and path == "services/accident",
            article_focus=focus, article_companion=companion,
            related_articles=related, entry_context=context,
            previous_topic=all_topics[i-1] if topic and i else None,
@@ -360,7 +364,7 @@ def main():
         if s["slug"] == "accident" and CLINICAL:
             clinical = CLINICAL["profiles_by_id"]["other-accident-care"]
             service = clinical["service_page"]
-            landing = {**clinical, "overview": service["overview"], "reading_sections": service["reading_sections"]}
+            landing = {**clinical, "overview": service["overview"], "reading_sections": service["reading_sections"], "faq": service["faq"]}
             entry = {"slug": "accident-service", "name": "교통사고 한의원 진료 준비", "display_name": "오창 교통사고 한의원",
                      "path": "services/accident", "canonical_path": "services/accident", "relationship": "service-context",
                      "title": service["title"], "description": service["description"]}

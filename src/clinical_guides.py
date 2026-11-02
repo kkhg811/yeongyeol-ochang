@@ -80,6 +80,14 @@ def page_nodes(catalog, profile, origin, path, *, entry=None, topic=None, is_col
         if entry and entry.get("published_at"):
             node["datePublished"] = entry["published_at"]
     nodes.append(node)
+    if profile["id"] == "other-accident-care":
+        if path == "services/accident":
+            nodes.append({"@context": "https://schema.org", "@type": "Service", "@id": url + "#service",
+                          "name": "오창 교통사고 한의원 진료", "serviceType": "교통사고 후 불편에 대한 한방진료",
+                          "url": url, "provider": {"@id": origin + "/#clinic"}, "description": description,
+                          "areaServed": {"@type": "AdministrativeArea", "name": "충북 청주시 청원구 오창읍"}})
+        elif article:
+            node["about"] = {"@id": origin + "/services/accident#service"}
     return nodes
 
 
