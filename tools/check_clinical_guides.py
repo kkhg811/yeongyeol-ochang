@@ -23,6 +23,7 @@ class Page(HTMLParser):
     def __init__(self, html):
         super().__init__(convert_charrefs=True)
         self.meta, self.ids, self.links, self.images = {}, set(), [], []
+        self.og_images = []
         self.cards, self.schemas, self.h1, self.titles = [], [], [], []
         self.guide_terms = []
         self.title_on = self.h1_on = self.script_on = False
@@ -40,6 +41,8 @@ class Page(HTMLParser):
             self.ids.add(a["id"])
         if tag == "meta":
             self.meta[a.get("name", a.get("property", ""))] = a.get("content", "")
+            if a.get("property") == "og:image":
+                self.og_images.append(a.get("content", ""))
         if tag == "link" and a.get("rel") == "canonical":
             self.canonical = a.get("href")
         if tag in ("a", "link") and a.get("href"):
@@ -146,7 +149,10 @@ def main():
             check("chatgpt.site" not in html and "검토용 원고" not in html, path + ": review content leaked into production")
         check(page.meta.get("og:url") == page.canonical, path + ": OG URL mismatch")
         expected_image = origin + "/" + (topic or profile["topics"][0])["image"]
-        check(page.meta.get("og:image") == expected_image, path + ": OG image mismatch")
+        expected_images = ([origin + "/" + t["image"] for t in profile["topics"]]
+                           if profile["id"] == "other-accident-care" and not topic and not path.startswith("column/")
+                           else [expected_image])
+        check(page.og_images == expected_images, path + ": OG image mismatch")
         check(page.meta.get("twitter:image") == expected_image, path + ": Twitter image mismatch")
         check(len(page.cards) == 6, path + ": expected six initial HTML cards")
         itemlists = [n for n in page.schemas if n.get("@type") == "ItemList"]

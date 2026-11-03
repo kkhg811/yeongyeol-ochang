@@ -28,7 +28,8 @@ def main():
     assert len(a['checks'])==3 and len(a['branches'])==len(a['faq'])==2
     assert all(b['related_id'] in profiles for b in a['branches'])
     for key in ['hub_path','created_at','published_at','members','keywords']:assert p[key]==old[key],key
-    assert p['updated_at']==m['updated_at']=='2026-11-02'
+    carousel=read(CONTENT/'traffic-accident-carousel-20261103.json')
+    assert m['updated_at']=='2026-11-02' and p['updated_at']==carousel['updated_at']=='2026-11-03'
     assert p['medical_review_status']=='pending' and p['reviewed_by'] is None and p['reviewed_at'] is None
     assert len(p['faq'])>=4 and len(p['reading_sections'])>=2
     assert p['image_notice'].startswith('설명용 생성 이미지')

@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "core_pages": 8,
+  "other_profiles_preserved": 188,
+  "body_titles_images_urls_preserved": true,
+  "pages": [
+    {
+      "path": "services/accident",
+      "cards": 6,
+      "og_images": 6,
+      "ordered_original_pairs": true
+    },
+    {
+      "path": "conditions/accident",
+      "cards": 6,
+      "og_images": 6,
+      "ordered_original_pairs": true
+    },
+    {
+      "path": "guide/ochang-other-accident-care/symptoms",
+      "cards": 6,
+      "og_images": 1,
+      "ordered_original_pairs": true
+    },
+    {
+      "path": "guide/ochang-other-accident-care/context",
+      "cards": 6,
+      "og_images": 1,
+      "ordered_original_pairs": true
+    },
+    {
+      "path": "guide/ochang-other-accident-care/assessment",
+      "cards": 6,
+      "og_images": 1,
+      "ordered_original_pairs": true
+    },
+    {
+      "path": "guide/ochang-other-accident-care/care",
+      "cards": 6,
+      "og_images": 1,
+      "ordered_original_pairs": true
+    },
+    {
+      "path": "guide/ochang-other-accident-care/daily",
+      "cards": 6,
+      "og_images": 1,
+      "ordered_original_pairs": true
+    },
+    {
+      "path": "guide/ochang-other-accident-care/followup",
+      "cards": 6,
+      "og_images": 1,
+      "ordered_original_pairs": true
+    }
+  ],
+  "search_exposure": "Observed separately; not inferred from markup"
+}

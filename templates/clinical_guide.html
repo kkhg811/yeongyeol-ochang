@@ -7,7 +7,9 @@
 {% block head %}
 <meta name="twitter:title" content="{{ self.title() }}"><meta name="twitter:description" content="{{ self.description() }}">
 <meta name="twitter:image" content="{{ site.url }}/{{ topic.image if topic else profile.topics[0].image }}">
-<meta property="og:image:alt" content="{{ topic.image_alt if topic else profile.topics[0].image_alt }}"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="1080">
+<meta property="og:image:alt" content="{{ topic.image_alt if topic else profile.topics[0].image_alt }}"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="1080">{% if profile.id == "other-accident-care" and not topic and not is_column %}{% for card in profile.topics[1:] %}
+<meta property="og:image" content="{{ site.url }}/{{ card.image }}"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="1080"><meta property="og:image:alt" content="{{ card.image_alt }}">
+{% endfor %}{% endif +%}
 {% endblock %}
 {% block content %}
 <div class="clinical-page">
